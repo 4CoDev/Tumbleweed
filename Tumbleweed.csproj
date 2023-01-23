@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <Folder Include="WithGodot" />
+      <Folder Include="WithSystem" />
     </ItemGroup>
 
 </Project>

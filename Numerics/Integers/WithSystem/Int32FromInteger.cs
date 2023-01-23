@@ -1,7 +1,8 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
-using Tumbleweed.System.Numerics.Ints32;
+using Tumbleweed.WithSystem.Numerics.Ints32;
+using Tumbleweed.WithSystem.Numerics.Ints32.FromTumbleweed;
 
 namespace Tumbleweed.Numerics.Integers.WithSystem;
 

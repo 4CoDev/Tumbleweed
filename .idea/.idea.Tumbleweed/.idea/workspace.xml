@@ -13,19 +13,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/thisischico/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/thisischico/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/thisischico/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/thisischico/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/thisischico/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/thisischico/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
+    <configuration name="Publish Tumbleweed to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="5811874096985359044" uuid_low="-6769441802704002762" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish Tumbleweed to folder (2)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="5811874096985359044" uuid_low="-6769441802704002762" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish Tumbleweed to folder (3)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="5811874096985359044" uuid_low="-6769441802704002762" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish Tumbleweed to folder (4)" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="5811874096985359044" uuid_low="-6769441802704002762" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish Tumbleweed to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="5811874096985359044" uuid_low="-6769441802704002762" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

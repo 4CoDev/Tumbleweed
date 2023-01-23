@@ -1,5 +1,5 @@
 using Tumbleweed.Scalars;
-using Tumbleweed.System.Numerics.Ints32;
+using Tumbleweed.WithSystem.Numerics.Ints32;
 
 namespace Tumbleweed.Bits.WithSystem.FromBytes.Scalar;
 

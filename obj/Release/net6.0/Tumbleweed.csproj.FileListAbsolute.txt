@@ -1,0 +1,12 @@
+/Users/thisischico/Documents/Projects/Tumbleweed/bin/Release/net6.0/Tumbleweed.deps.json
+/Users/thisischico/Documents/Projects/Tumbleweed/bin/Release/net6.0/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/bin/Release/net6.0/Tumbleweed.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.csproj.AssemblyReference.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.AssemblyInfoInputs.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.AssemblyInfo.cs
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.csproj.CoreCompileInputs.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/refint/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/Tumbleweed.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/obj/Release/net6.0/ref/Tumbleweed.dll
