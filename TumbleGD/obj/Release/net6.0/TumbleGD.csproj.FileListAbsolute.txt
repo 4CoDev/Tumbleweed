@@ -1,0 +1,15 @@
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/TumbleGD.deps.json
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/TumbleGD.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/TumbleGD.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/Tumbleweed.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.csproj.AssemblyReference.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.AssemblyInfoInputs.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.AssemblyInfo.cs
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.csproj.CoreCompileInputs.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.csproj.CopyComplete
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/refint/TumbleGD.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/TumbleGD.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/obj/Release/net6.0/ref/TumbleGD.dll

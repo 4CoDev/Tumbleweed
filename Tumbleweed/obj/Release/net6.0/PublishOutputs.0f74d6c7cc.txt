@@ -1,0 +1,4 @@
+/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/bin/Release/net6.0/publish/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/bin/Release/net6.0/publish/Tumbleweed.deps.json
+/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/bin/Release/net6.0/publish/Tumbleweed.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/bin/Release/net6.0/publish/GodotSharp.dll
