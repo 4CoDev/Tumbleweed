@@ -1,5 +1,3 @@
-
-
 using Tumbleweed.Numerics.Planar;
 
 namespace Tumbleweed.Numerics.Decimals.Planar;
