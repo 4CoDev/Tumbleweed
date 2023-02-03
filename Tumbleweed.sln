@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumbleweed", "Tumbleweed\Tu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumbleGD", "TumbleGD\TumbleGD.csproj", "{1C9CF6B1-1496-4C6A-BF07-E2E32D40459F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumbleSystem", "TumbleSystem\TumbleSystem.csproj", "{089D95A5-2AC7-4339-9E75-CBDBFF03AF5B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +18,5 @@ Global
 		{1C9CF6B1-1496-4C6A-BF07-E2E32D40459F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C9CF6B1-1496-4C6A-BF07-E2E32D40459F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C9CF6B1-1496-4C6A-BF07-E2E32D40459F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{089D95A5-2AC7-4339-9E75-CBDBFF03AF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{089D95A5-2AC7-4339-9E75-CBDBFF03AF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{089D95A5-2AC7-4339-9E75-CBDBFF03AF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{089D95A5-2AC7-4339-9E75-CBDBFF03AF5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
