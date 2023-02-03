@@ -1,6 +1,7 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Bits.FromBytes.FromSystem;
 using Tumbleweed.Enumerables;
+using Tumbleweed.Enumerables.FromSystem;
 
 namespace Tumbleweed.Bytes;
 

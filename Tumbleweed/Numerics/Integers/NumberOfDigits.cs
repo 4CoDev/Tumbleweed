@@ -6,7 +6,7 @@ public sealed class NumberOfDigits : IntegerEnvelope
 {
 	public NumberOfDigits(IInteger integer) : base
 	(
-		new CommonLogarithm(integer)
+		new Logarithm(integer)
 	)
 	{
 	}

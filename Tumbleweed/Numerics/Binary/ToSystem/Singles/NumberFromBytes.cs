@@ -1,6 +1,7 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Bytes.ToSystem;
 using Tumbleweed.Enumerables;
+using Tumbleweed.Enumerables.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binary.ToSystem.Singles;

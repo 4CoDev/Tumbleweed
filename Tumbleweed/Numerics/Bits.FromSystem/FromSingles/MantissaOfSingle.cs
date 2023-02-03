@@ -1,5 +1,6 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Enumerables;
+using Tumbleweed.Enumerables.FromSystem;
 using Tumbleweed.Numerics.Integers;
 using Tumbleweed.Scalars;
 

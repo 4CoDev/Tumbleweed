@@ -6,6 +6,13 @@ namespace Tumbleweed.Numerics.Integers.Arithmetic;
 
 public sealed class Logarithm : IntegerEnvelope
 {
+	public Logarithm(IInteger argument) : this
+	(
+		new IntegerFromInt32(10), argument
+	)
+	{
+	}
+
 	public Logarithm(IInteger @base, IInteger argument) : base
 	(
 		new IntegerFromInt32(

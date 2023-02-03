@@ -4,6 +4,13 @@ namespace Tumbleweed.Enumerables;
 
 public abstract class EnumerableEnvelope<T> : IEnumerable<T>
 {
+	protected EnumerableEnvelope(Func<IEnumerable<T>> @delegate) : this
+	(
+		new EnumerableOfDelegate<T>(@delegate)
+	)
+	{
+	}
+
 	protected EnumerableEnvelope(IEnumerable<T> enumerable)
 	{
 		this.enumerable = enumerable;
