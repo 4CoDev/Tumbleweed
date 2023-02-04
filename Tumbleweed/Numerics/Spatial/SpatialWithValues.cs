@@ -1,8 +1,8 @@
 namespace Tumbleweed.Numerics.Spatial;
 
-public sealed class SpatialFromValues<T> : ISpatial<T>
+public sealed class SpatialWithValues<T> : ISpatial<T>
 {
-	public SpatialFromValues(T x, T y, T z)
+	public SpatialWithValues(T x, T y, T z)
 	{
 		X = x;
 		Y = y;
