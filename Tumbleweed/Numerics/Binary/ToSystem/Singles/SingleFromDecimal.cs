@@ -5,11 +5,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binary.ToSystem.Singles;
 
-public sealed class NumberFromDecimal : ScalarEnvelope<float>
+public sealed class SingleFromDecimal : ScalarEnvelope<float>
 {
-	public NumberFromDecimal(IDecimal @decimal) : base
+	public SingleFromDecimal(IDecimal @decimal) : base
 	(
-		new NumberFromBits(
+		new SingleFromBits(
 			new EnumerableWithElements<IBit>(
 				@decimal.Mantissa.Natural,
 				@decimal.Exponent.Natural,

@@ -1,4 +1,4 @@
-using Tumbleweed.Numerics.Integers.Arithmetic;
+using Tumbleweed.Numerics.Integers.Arithmetics;
 
 namespace Tumbleweed.Numerics.Integers;
 

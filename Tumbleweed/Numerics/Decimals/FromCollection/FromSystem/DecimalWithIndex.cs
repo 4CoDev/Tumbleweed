@@ -22,7 +22,8 @@ public sealed class DecimalWithIndex : DecimalEnvelope
 		IScalar<int> index
 	) : base
 	(
-		() => decimals.ElementAt(index.Value())
+		new DecimalOfDelegate(
+			() => decimals.ElementAt(index.Value()))
 	)
 	{
 	}

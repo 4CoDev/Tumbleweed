@@ -4,13 +4,6 @@ namespace Tumbleweed.Numerics.Decimals;
 
 public abstract class DecimalEnvelope : IDecimal
 {
-	protected DecimalEnvelope(Func<IDecimal> @delegate) : this
-	(
-		new DecimalOfDelegate(@delegate)
-	)
-	{
-	}
-	
 	protected DecimalEnvelope(IDecimal @decimal)
 	{
 		this.@decimal = @decimal;

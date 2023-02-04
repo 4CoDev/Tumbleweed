@@ -2,7 +2,7 @@ using Tumbleweed.Numerics.Integers.FromSystem;
 using Tumbleweed.Numerics.Integers.ToSystem.Ints32;
 using Tumbleweed.Scalars;
 
-namespace Tumbleweed.Numerics.Integers.Arithmetic;
+namespace Tumbleweed.Numerics.Integers.Arithmetics;
 
 public sealed class Logarithm : IntegerEnvelope
 {

@@ -4,23 +4,23 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binary.OfSystem.Singles;
 
-public sealed class NumberFromBytes : ScalarEnvelope<float>
+public sealed class SingleFromBytes : ScalarEnvelope<float>
 {
-	public NumberFromBytes(IEnumerable<IScalar<byte>> bytes) : this
+	public SingleFromBytes(IEnumerable<IScalar<byte>> bytes) : this
 	(
 		new ValuesOfScalars<byte>(bytes)
 	)
 	{
 	}
 	
-	public NumberFromBytes(IEnumerable<byte> bytes) : this
+	public SingleFromBytes(IEnumerable<byte> bytes) : this
 	(
 		new SpanFromEnumerable<byte>(bytes)
 	)
 	{
 	}
 	
-	public NumberFromBytes(IReadOnlySpan<byte> bytes) : base
+	public SingleFromBytes(IReadOnlySpan<byte> bytes) : base
 	(
 		() => BitConverter.ToSingle(
 			new SpanWithSize<byte>(bytes, 4).Value)

@@ -4,11 +4,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binary.ToSystem.Singles;
 
-public sealed class NumberFromBits : ScalarEnvelope<float>
+public sealed class SingleFromBits : ScalarEnvelope<float>
 {
-	public NumberFromBits(IEnumerable<IBit> bits) : base
+	public SingleFromBits(IEnumerable<IBit> bits) : base
 	(
-		new NumberFromBytes(
+		new SingleFromBytes(
 			new BytesFromBits(bits))
 	)
 	{
