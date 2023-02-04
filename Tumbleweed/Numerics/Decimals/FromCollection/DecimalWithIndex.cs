@@ -13,7 +13,7 @@ public sealed class DecimalWithIndex : DecimalEnvelope
 	(
 		new FromSystem.DecimalWithIndex(
 			decimals,
-			new NumberFromInteger(index))
+			new Int32FromInteger(index))
 	)
 	{
 	}

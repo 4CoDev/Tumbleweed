@@ -9,7 +9,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 	(
 		new FromSystem.CollectionWithSize<T>(
 			collection,
-			new NumberFromInteger(size))
+			new Int32FromInteger(size))
 	)
 	{
 	}

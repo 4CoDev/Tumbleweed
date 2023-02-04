@@ -7,7 +7,7 @@ public sealed class PlanarFromCollection : PlanarEnvelope<IDecimal>
 {
 	public PlanarFromCollection(ICollection<IDecimal> collection) : base
 	(
-		new PlanarFromValues<IDecimal>(
+		new PlanarWithValues<IDecimal>(
 			new DecimalWithIndex(collection, 0),
 			new DecimalWithIndex(collection, 1))
 	)

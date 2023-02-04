@@ -6,9 +6,9 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.ToSystem.Ints32;
 
-public sealed class NumberFromBytes : ScalarEnvelope<int>
+public sealed class Int32FromBytes : ScalarEnvelope<int>
 {
-	public NumberFromBytes(IEnumerable<IEnumerable<IBit>> bytes) : base
+	public Int32FromBytes(IEnumerable<IEnumerable<IBit>> bytes) : base
 	(
 		new OfSystem.Ints32.NumberFromBytes(
 			new EnumerableWithSize<byte>(

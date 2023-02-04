@@ -6,11 +6,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.ToSystem.Ints32;
 
-public sealed class NumberFromBits : ScalarEnvelope<int>
+public sealed class Int32FromBits : ScalarEnvelope<int>
 {
-	public NumberFromBits(IEnumerable<IBit> bits) : base
+	public Int32FromBits(IEnumerable<IBit> bits) : base
 	(
-		new NumberFromBytes(
+		new Int32FromBytes(
 			new BytesFromBits(
 				new EnumerableWithSize<IBit>(bits, 32)))
 	)
