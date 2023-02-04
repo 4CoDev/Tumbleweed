@@ -1,6 +1,6 @@
 using Tumbleweed.Numerics.Spatial;
 
-namespace Tumbleweed.Numerics.Decimals.Spatial;
+namespace Tumbleweed.Numerics.Decimals.Spatials;
 
 public sealed class SpatialFromEnumerable : SpatialEnvelope<IDecimal>
 {

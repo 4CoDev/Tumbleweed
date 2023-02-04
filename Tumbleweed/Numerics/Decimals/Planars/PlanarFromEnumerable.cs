@@ -1,6 +1,6 @@
 using Tumbleweed.Numerics.Planar;
 
-namespace Tumbleweed.Numerics.Decimals.Planar;
+namespace Tumbleweed.Numerics.Decimals.Planars;
 
 public sealed class PlanarFromEnumerable : PlanarEnvelope<IDecimal>
 {

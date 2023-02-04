@@ -1,7 +1,7 @@
 using Tumbleweed.Numerics.Decimals.Arithmetics;
 using Tumbleweed.Numerics.Spatial;
 
-namespace Tumbleweed.Numerics.Decimals.Spatial.Arithmetics;
+namespace Tumbleweed.Numerics.Decimals.Spatials.Arithmetics;
 
 public sealed class SumOfSpatials : SpatialEnvelope<IDecimal>
 {

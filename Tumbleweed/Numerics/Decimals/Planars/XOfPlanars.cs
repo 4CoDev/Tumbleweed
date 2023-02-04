@@ -1,7 +1,7 @@
 using Tumbleweed.Enumerables;
 using Tumbleweed.Numerics.Planar;
 
-namespace Tumbleweed.Numerics.Decimals.Planar;
+namespace Tumbleweed.Numerics.Decimals.Planars;
 
 public sealed class XOfPlanars : EnumerableEnvelope<IDecimal>
 {

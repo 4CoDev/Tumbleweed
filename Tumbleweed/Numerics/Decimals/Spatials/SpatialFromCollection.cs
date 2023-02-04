@@ -1,7 +1,7 @@
 using Tumbleweed.Numerics.Decimals.FromCollection.FromSystem;
 using Tumbleweed.Numerics.Spatial;
 
-namespace Tumbleweed.Numerics.Decimals.Spatial;
+namespace Tumbleweed.Numerics.Decimals.Spatials;
 
 public sealed class SpatialFromCollection : SpatialEnvelope<IDecimal>
 {

@@ -1,7 +1,7 @@
 using Tumbleweed.Numerics.Decimals.Arithmetics;
 using Tumbleweed.Numerics.Planar;
 
-namespace Tumbleweed.Numerics.Decimals.Planar.Arithmetics;
+namespace Tumbleweed.Numerics.Decimals.Planars.Arithmetics;
 
 public sealed class QuotientOfPlanars : PlanarEnvelope<IDecimal>
 {

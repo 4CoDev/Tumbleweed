@@ -1,8 +1,7 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Spatial;
 
-namespace Tumbleweed.Numerics.Decimals.Spatial;
+namespace Tumbleweed.Numerics.Decimals.Spatials;
 
 public sealed class ZOfSpatials : EnumerableEnvelope<IDecimal>
 {
