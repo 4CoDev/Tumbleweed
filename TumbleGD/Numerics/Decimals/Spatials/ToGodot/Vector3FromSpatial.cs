@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Numerics.Binary.ToSystem.Singles;
+using Tumbleweed.Numerics.Binaries.ToSystem.Singles;
 using Tumbleweed.Numerics.Decimals;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Spatial;

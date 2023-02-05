@@ -1,6 +1,7 @@
 using Godot;
-using Tumbleweed.Measurement.Planars;
-using Tumbleweed.Measurement.Spatials;
+using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Planar;
+using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Vertices;
@@ -12,12 +13,12 @@ public sealed class VertexFromScalar : IVertex
 		this.scalar = scalar;
 	}
 	
-	public ISpatial<float> Translation
+	public ISpatial<IDecimal> Translation
 	{
 		get => scalar.Value().Translation;
 	}
 
-	public ISpatial<float> Normal
+	public ISpatial<IDecimal> Normal
 	{
 		get => scalar.Value().Normal;
 	}
@@ -27,7 +28,7 @@ public sealed class VertexFromScalar : IVertex
 		get => scalar.Value().Color;
 	}
 
-	public IPlanar<float> UV
+	public IPlanar<IDecimal> UV
 	{
 		get => scalar.Value().UV;
 	}

@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numerics.Binary.OfSystem.Singles.Arithmetics;
-using Tumbleweed.Numerics.Binary.ToSystem.Singles;
+using Tumbleweed.Numerics.Binaries.OfSystem.Singles.Arithmetics;
+using Tumbleweed.Numerics.Binaries.ToSystem.Singles;
 using Tumbleweed.Numerics.Decimals.FromSystem;
 
 namespace Tumbleweed.Numerics.Decimals.Arithmetics;

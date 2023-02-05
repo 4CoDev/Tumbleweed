@@ -1,17 +1,18 @@
 using Godot;
-using Tumbleweed.Measurement.Planars;
-using Tumbleweed.Measurement.Spatials;
+using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Planar;
+using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Vertices;
 
 public interface IVertex
 {
-	ISpatial<float> Translation { get; }
+	ISpatial<IDecimal> Translation { get; }
 
-	ISpatial<float> Normal { get; }
+	ISpatial<IDecimal> Normal { get; }
 	
 	IScalar<Color> Color { get; }
 	
-	IPlanar<float> UV { get; }
+	IPlanar<IDecimal> UV { get; }
 }

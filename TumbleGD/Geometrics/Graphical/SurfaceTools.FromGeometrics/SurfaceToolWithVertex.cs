@@ -1,7 +1,7 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.Vertices;
-using Tumbleweed.Measurement.Planars.Scalars;
-using Tumbleweed.Measurement.Spatials.Scalar;
+using TumbleGD.Numerics.Decimals.Planars.ToGodot;
+using TumbleGD.Numerics.Decimals.Spatials.ToGodot;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.SurfaceTools.

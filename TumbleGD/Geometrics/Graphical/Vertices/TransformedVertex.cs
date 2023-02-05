@@ -1,5 +1,5 @@
 using Godot;
-using TumbleGD.Measurement.Spatials;
+using TumbleGD.Numerics.Decimals.Spatials.FromGodot;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Vertices;
@@ -12,7 +12,7 @@ public sealed class TransformedVertex : VertexEnvelope
 		IScalar<Transform3D> transform
 	) : base
 	(
-		new VertexFromValues(
+		new VertexWithValues(
 			new TransformedSpatial(vertex.Translation, transform),
 			vertex.Normal,
 			vertex.Color,
