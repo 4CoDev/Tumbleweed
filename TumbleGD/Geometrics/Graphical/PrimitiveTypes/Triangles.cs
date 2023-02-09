@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.PrimitiveTypes;
+namespace TumbleGD.Geometrics.Graphical.PrimitiveTypes;
 
 public sealed class Triangles : ScalarEnvelope<Mesh.PrimitiveType>
 {

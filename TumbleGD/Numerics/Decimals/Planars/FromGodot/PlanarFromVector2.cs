@@ -18,8 +18,8 @@ public sealed class PlanarFromVector2 : PlanarEnvelope<IDecimal>
 	public PlanarFromVector2(IScalar<Vector2> vector) : base
 	(
 		new PlanarWithValues<IDecimal>(
-			new DecimalFromSingle(vector.Value().x),
-			new DecimalFromSingle(vector.Value().y))
+			new DecimalFromSingle(vector.Value().X),
+			new DecimalFromSingle(vector.Value().Y))
 	)
 	{
 	}

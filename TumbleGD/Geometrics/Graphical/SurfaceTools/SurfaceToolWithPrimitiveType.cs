@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.SurfaceTools;
+namespace TumbleGD.Geometrics.Graphical.SurfaceTools;
 
 public sealed class SurfaceToolWithPrimitiveType : IScalar<SurfaceTool>
 {

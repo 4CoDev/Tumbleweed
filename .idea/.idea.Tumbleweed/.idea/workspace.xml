@@ -27,7 +27,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
@@ -37,7 +37,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
+  <component name="RunManager" selected="Publish to folder.Publish TumbleGD to folder">
     <configuration name="Publish TumbleGD to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="2061793969843883114" uuid_low="-4681523822283700833" />
       <method v="2" />

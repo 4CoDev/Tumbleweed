@@ -41,7 +41,7 @@ public sealed class VertexWithIndex : IVertex
 	public IPlanar<IDecimal> UV
 	{
 		get => new PlanarFromVector2(
-			meshDataTool.Value().GetVertexUv(vertex.Value()));
+			meshDataTool.Value().GetVertexUV(vertex.Value()));
 	}
 
 	private readonly IScalar<MeshDataTool> meshDataTool;

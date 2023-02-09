@@ -18,9 +18,9 @@ public sealed class SpatialFromVector3 : SpatialEnvelope<IDecimal>
 	public SpatialFromVector3(IScalar<Vector3> vector) : base
 	(
 		new SpatialWithValues<IDecimal>(
-			new DecimalFromSingle(vector.Value().x),
-			new DecimalFromSingle(vector.Value().y),
-			new DecimalFromSingle(vector.Value().z))
+			new DecimalFromSingle(vector.Value().X),
+			new DecimalFromSingle(vector.Value().Y),
+			new DecimalFromSingle(vector.Value().Z))
 	)
 	{
 	}

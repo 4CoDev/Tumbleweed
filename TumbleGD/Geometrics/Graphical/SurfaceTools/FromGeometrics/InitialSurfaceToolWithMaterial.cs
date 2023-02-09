@@ -1,6 +1,5 @@
 using Godot;
-using TumbleGD.PrimitiveTypes;
-using TumbleGD.SurfaceTools;
+using TumbleGD.Geometrics.Graphical.PrimitiveTypes;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.SurfaceTools.FromGeometrics;

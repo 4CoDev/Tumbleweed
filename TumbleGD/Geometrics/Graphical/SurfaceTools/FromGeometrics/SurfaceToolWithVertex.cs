@@ -20,7 +20,7 @@ public sealed class SurfaceToolWithVertex : IScalar<SurfaceTool>
 		SurfaceTool result = tool.Value();
 		result.SetNormal(new Vector3FromSpatial(vertex.Normal).Value());
 		result.SetColor(vertex.Color.Value());
-		result.SetUv(new Vector2FromPlanar(vertex.UV).Value());
+		result.SetUV(new Vector2FromPlanar(vertex.UV).Value());
 		result.AddVertex(new Vector3FromSpatial(vertex.Translation).Value());
 		return result;
 	}

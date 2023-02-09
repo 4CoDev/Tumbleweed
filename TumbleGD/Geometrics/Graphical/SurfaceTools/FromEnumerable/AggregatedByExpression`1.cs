@@ -2,7 +2,7 @@ using Godot;
 using Tumbleweed.Scalars;
 using Tumbleweed.Scalars.FromEnumerable;
 
-namespace TumbleGD.SurfaceTools.FromEnumerable;
+namespace TumbleGD.Geometrics.Graphical.SurfaceTools.FromEnumerable;
 
 public sealed class AggregatedByExpression<TFrom>
 	: ScalarEnvelope<SurfaceTool>

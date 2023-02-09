@@ -8,13 +8,13 @@
     ".NETCoreApp,Version=v6.0": {
       "Tumbleweed/1.0.0": {
         "dependencies": {
-          "GodotSharp": "4.0.0-beta2"
+          "GodotSharp": "4.0.0-rc.1"
         },
         "runtime": {
           "Tumbleweed.dll": {}
         }
       },
-      "GodotSharp/4.0.0-beta2": {
+      "GodotSharp/4.0.0-rc.1": {
         "runtime": {
           "lib/net6.0/GodotSharp.dll": {
             "assemblyVersion": "4.0.0.0",
@@ -30,12 +30,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "GodotSharp/4.0.0-beta2": {
+    "GodotSharp/4.0.0-rc.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AmO2/nxXA/0XcmkKZcGTrGZfWJNa4v0aC1HweYmAsOuUi2jTzPitkqtt+3jMe14HeDQ9QQFr3KDP8oswW7b/VA==",
-      "path": "godotsharp/4.0.0-beta2",
-      "hashPath": "godotsharp.4.0.0-beta2.nupkg.sha512"
+      "sha512": "sha512-Pty10l6LAcCKepCG+LQkfonDMMDxYbn550ZZDg/0QkRq1aKv0bf6SGikYFxGN5JD/HRjljhpplGYyHdsFR7mBQ==",
+      "path": "godotsharp/4.0.0-rc.1",
+      "hashPath": "godotsharp.4.0.0-rc.1.nupkg.sha512"
     }
   }
 }
