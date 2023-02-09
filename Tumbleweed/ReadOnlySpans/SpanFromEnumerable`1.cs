@@ -1,4 +1,4 @@
-using Tumbleweed.Arrays.ToSystem;
+using Tumbleweed.Arrays.Linears.ToSystem;
 
 namespace Tumbleweed.ReadOnlySpans;
 

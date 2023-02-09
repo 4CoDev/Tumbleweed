@@ -1,6 +1,6 @@
 using Tumbleweed.Scalars;
 
-namespace Tumbleweed.Arrays.ToSystem;
+namespace Tumbleweed.Arrays.Linears.ToSystem;
 
 public sealed class ArrayFromEnumerable<T> : IScalar<T[]>
 {

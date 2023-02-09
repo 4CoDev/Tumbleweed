@@ -4,13 +4,6 @@ namespace Tumbleweed.Collections;
 
 public abstract class CollectionEnvelope<T> : ICollection<T>
 {
-	protected CollectionEnvelope(Func<ICollection<T>> @delegate) : this
-	(
-		new CollectionOfDelegate<T>(@delegate)
-	)
-	{
-	}
-
 	protected CollectionEnvelope(ICollection<T> collection)
 	{
 		this.collection = collection;

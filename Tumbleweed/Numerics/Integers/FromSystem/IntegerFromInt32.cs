@@ -12,11 +12,11 @@ public class IntegerFromInt32 : IntegerEnvelope
 	{
 	}
 
-	public IntegerFromInt32(IScalar<int> integer) : base
+	public IntegerFromInt32(IScalar<int> ints) : base
 	(
 		new IntegerWithValues(
-			new IsPositiveInt32(integer), 
-			new NaturalOfInt32(integer))
+			new IsPositiveInt32(ints), 
+			new NaturalOfInt32(ints))
 	)
 	{
 	}

@@ -1,5 +1,5 @@
 using Tumbleweed.Scalars;
-using Tumbleweed.Scalars.FromEnumerable;
+using Tumbleweed.Scalars.FromEnumerable.FromSystem;
 
 namespace Tumbleweed.Enumerables.FromSystem;
 

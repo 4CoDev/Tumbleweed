@@ -4,20 +4,35 @@ namespace Tumbleweed.Collections.FromSystem;
 
 public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 {
-	public CollectionWithSize(ICollection<T> collection, int size) : this
+	public CollectionWithSize
+	(
+		ICollection<T> collection,
+		int size
+	) : this
 	(
 		collection, new ScalarOfValue<int>(size)
 	)
 	{
 	}
-	
+
 	public CollectionWithSize
 	(
 		ICollection<T> collection,
 		IScalar<int> size
 	) : base
 	(
-		() => Result(collection, size)
+		new CollectionOfDelegate<T>(
+			() => Result(collection, size))
+	)
+	{
+	}
+	
+	public CollectionWithSize
+	(
+	) : base
+	(
+		new CollectionOfDelegate<T>(
+			() => throw new InvalidOperationException("Test."))
 	)
 	{
 	}
