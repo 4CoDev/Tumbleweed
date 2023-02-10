@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.ArrayMeshes;
+namespace TumbleGD.Geometrics.Graphical.ArrayMeshes;
 
 public sealed class ArrayMeshWithSurfaceTools : IScalar<ArrayMesh>
 {
