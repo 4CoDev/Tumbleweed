@@ -22,8 +22,9 @@ public sealed class SingleFromBytes : ScalarEnvelope<float>
 	
 	public SingleFromBytes(IReadOnlySpan<byte> bytes) : base
 	(
-		() => BitConverter.ToSingle(
-			new SpanWithSize<byte>(bytes, 4).Value)
+		new ScalarOfDelegate<float>(
+			() => BitConverter.ToSingle(
+				new SpanWithSize<byte>(bytes, 4).Value))
 	)
 	{
 	}

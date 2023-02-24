@@ -47,15 +47,9 @@ public abstract class DictionaryEnvelope<TKey, TValue> :
 		return dictionary.Remove(item);
 	}
 
-	public int Count
-	{
-		get => dictionary.Count;
-	}
+	public int Count => dictionary.Count;
 
-	public bool IsReadOnly
-	{
-		get => dictionary.IsReadOnly;
-	}
+	public bool IsReadOnly => dictionary.IsReadOnly;
 
 	public void Add(TKey key, TValue value)
 	{
@@ -83,15 +77,9 @@ public abstract class DictionaryEnvelope<TKey, TValue> :
 		set => dictionary[key] = value;
 	}
 
-	public ICollection<TKey> Keys
-	{
-		get => dictionary.Keys;
-	}
+	public ICollection<TKey> Keys => dictionary.Keys;
 
-	public ICollection<TValue> Values
-	{
-		get => dictionary.Values;
-	}
+	public ICollection<TValue> Values => dictionary.Values;
 
 	private readonly IDictionary<TKey, TValue> dictionary;
 }

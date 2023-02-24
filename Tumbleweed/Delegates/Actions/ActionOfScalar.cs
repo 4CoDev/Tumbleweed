@@ -1,6 +1,6 @@
 using Tumbleweed.Scalars;
 
-namespace Tumbleweed.Actions;
+namespace Tumbleweed.Delegates.Actions;
 
 public sealed class ActionOfScalar : IAction
 {

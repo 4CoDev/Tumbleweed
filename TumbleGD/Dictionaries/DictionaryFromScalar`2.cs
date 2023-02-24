@@ -48,15 +48,9 @@ public sealed class DictionaryFromScalar<TKey, TValue> :
 		return scalar.Value().Remove(item);
 	}
 
-	public int Count
-	{
-		get => scalar.Value().Count;
-	}
+	public int Count => scalar.Value().Count;
 
-	public bool IsReadOnly
-	{
-		get => scalar.Value().IsReadOnly;
-	}
+	public bool IsReadOnly => scalar.Value().IsReadOnly;
 
 	public void Add(TKey key, TValue value)
 	{
@@ -84,15 +78,9 @@ public sealed class DictionaryFromScalar<TKey, TValue> :
 		set => scalar.Value()[key] = value;
 	}
 
-	public ICollection<TKey> Keys
-	{
-		get => scalar.Value().Keys;
-	}
+	public ICollection<TKey> Keys => scalar.Value().Keys;
 
-	public ICollection<TValue> Values
-	{
-		get => scalar.Value().Values;
-	}
+	public ICollection<TValue> Values => scalar.Value().Values;
 
 	private readonly IScalar<IDictionary<TKey, TValue>> scalar;
 }

@@ -13,25 +13,13 @@ public abstract class VertexEnvelope : IVertex
 		this.vertex = vertex;
 	}
 
-	public ISpatial<IDecimal> Translation
-	{
-		get => vertex.Translation;
-	}
+	public ISpatial<IDecimal> Translation => vertex.Translation;
 
-	public ISpatial<IDecimal> Normal
-	{
-		get => vertex.Normal;
-	}
+	public ISpatial<IDecimal> Normal => vertex.Normal;
 
-	public IScalar<Color> Color
-	{
-		get => vertex.Color;
-	}
+	public IScalar<Color> Color => vertex.Color;
 
-	public IPlanar<IDecimal> UV
-	{
-		get => vertex.UV;
-	}
-	
+	public IPlanar<IDecimal> UV => vertex.UV;
+
 	private readonly IVertex vertex;
 }

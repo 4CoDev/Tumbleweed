@@ -21,28 +21,19 @@ public sealed class VertexWithIndex : IVertex
 		this.vertex = vertex;
 	}
 	
-	public ISpatial<IDecimal> Translation
-	{
-		get => new SpatialFromVector3(
+	public ISpatial<IDecimal> Translation =>
+		new SpatialFromVector3(
 			meshDataTool.Value().GetVertex(vertex.Value()));
-	}
-	
-	public ISpatial<IDecimal> Normal
-	{
-		get => new SpatialFromVector3(
+
+	public ISpatial<IDecimal> Normal =>
+		new SpatialFromVector3(
 			meshDataTool.Value().GetVertexNormal(vertex.Value()));
-	}
 
-	public IScalar<Color> Color
-	{
-		get => new ColorFromMeshDataTool(meshDataTool, vertex);
-	}
+	public IScalar<Color> Color => new ColorFromMeshDataTool(meshDataTool, vertex);
 
-	public IPlanar<IDecimal> UV
-	{
-		get => new PlanarFromVector2(
+	public IPlanar<IDecimal> UV =>
+		new PlanarFromVector2(
 			meshDataTool.Value().GetVertexUV(vertex.Value()));
-	}
 
 	private readonly IScalar<MeshDataTool> meshDataTool;
 	

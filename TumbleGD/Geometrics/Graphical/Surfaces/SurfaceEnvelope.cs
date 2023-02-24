@@ -11,15 +11,9 @@ public abstract class SurfaceEnvelope : ISurface
 		this.surface = surface;
 	}
 
-	public IEnumerable<IEnumerable<IVertex>> Polygons
-	{
-		get => surface.Polygons;
-	}
+	public IEnumerable<IEnumerable<IVertex>> Polygons => surface.Polygons;
 
-	public IScalar<Material> Material
-	{
-		get => surface.Material;
-	}
-	
+	public IScalar<Material> Material => surface.Material;
+
 	private readonly ISurface surface;
 }

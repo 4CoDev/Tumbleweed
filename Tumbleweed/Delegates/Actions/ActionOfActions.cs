@@ -1,10 +1,10 @@
-namespace Tumbleweed.Actions;
+namespace Tumbleweed.Delegates.Actions;
 
 public sealed class ActionOfActions : ActionEnvelope
 {
 	public ActionOfActions(IEnumerable<IAction> actions) : base
 	(
-		new ActionOfDelegate(() => Result(actions))
+		new ActionFromSystem(() => Result(actions))
 	)
 	{
 	}
