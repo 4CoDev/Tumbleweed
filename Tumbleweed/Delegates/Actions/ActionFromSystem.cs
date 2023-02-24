@@ -20,7 +20,7 @@ public class ActionFromSystem : IAction
 		new HashCodeOfObject(@delegate).Value;
 
 	public override string? ToString() =>
-		new ObjectAsNullableString(@delegate).ToString();
+		new NullableFromObject(@delegate).ToString();
 
 	private readonly Action @delegate;
 }

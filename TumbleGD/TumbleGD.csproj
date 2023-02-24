@@ -12,4 +12,8 @@
       <ProjectReference Include="..\Tumbleweed\Tumbleweed.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Nodes\FromTree" />
+    </ItemGroup>
+
 </Project>

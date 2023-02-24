@@ -2,7 +2,7 @@ using Godot;
 using TumbleGD.Nodes.Paths.FromSystem;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.OnPath.OfGodot;
+namespace TumbleGD.Nodes.FromTree.OnPath.OfGodot;
 
 public sealed class NodeOnPath<T> : ScalarEnvelope<T> where T : Node
 {

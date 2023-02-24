@@ -18,7 +18,7 @@ public sealed class ScalarOfDelegate<T> : IScalar<T>
 		new HashCodeOfObject(@delegate).Value;
 
 	public override string? ToString() =>
-		new ObjectAsNullableString(@delegate).Value;
+		new NullableFromObject(@delegate).Value;
 
 	private readonly Func<T> @delegate;
 }
