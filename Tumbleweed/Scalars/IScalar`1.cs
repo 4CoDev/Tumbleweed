@@ -2,5 +2,5 @@ namespace Tumbleweed.Scalars;
 
 public interface IScalar<out T>
 {
-	T Value();
+	T Value { get; }
 }

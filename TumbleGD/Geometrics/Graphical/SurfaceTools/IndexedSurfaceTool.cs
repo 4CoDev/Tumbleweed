@@ -10,12 +10,15 @@ public sealed class IndexedSurfaceTool : IScalar<SurfaceTool>
 		this.origin = origin;
 	}
 
-	public SurfaceTool Value()
+	public SurfaceTool Value
 	{
-		SurfaceTool indexed = origin.Value();
-		indexed.Index();
-		return indexed;
+		get
+		{
+			SurfaceTool indexed = origin.Value;
+			indexed.Index();
+			return indexed;
+		}
 	}
-	
+
 	private readonly IScalar<SurfaceTool> origin;
 }

@@ -18,7 +18,7 @@ public sealed class ArrayFromEnumerable<T> : IArray<T>
 	{
 		get => new ScalarAtIndex<T>(
 			enumerable,
-			new SingleElementOfEnumerable(indices)).Value();
+			new SingleElementOfEnumerable(indices)).Value;
 	}
 
 	private readonly IEnumerable<T> enumerable;

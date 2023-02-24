@@ -12,7 +12,7 @@ public sealed class CollectionOfScalar<T> : ICollection<T>
 
 	public IEnumerator<T> GetEnumerator()
 	{
-		return scalar.Value().GetEnumerator();
+		return scalar.Value.GetEnumerator();
 	}
 
 	IEnumerator IEnumerable.GetEnumerator()
@@ -22,37 +22,37 @@ public sealed class CollectionOfScalar<T> : ICollection<T>
 
 	public void Add(T item)
 	{
-		scalar.Value().Add(item);
+		scalar.Value.Add(item);
 	}
 
 	public void Clear()
 	{
-		scalar.Value().Clear();
+		scalar.Value.Clear();
 	}
 
 	public bool Contains(T item)
 	{
-		return scalar.Value().Contains(item);
+		return scalar.Value.Contains(item);
 	}
 
 	public void CopyTo(T[] array, int arrayIndex)
 	{
-		scalar.Value().CopyTo(array, arrayIndex);
+		scalar.Value.CopyTo(array, arrayIndex);
 	}
 
 	public bool Remove(T item)
 	{
-		return scalar.Value().Remove(item);
+		return scalar.Value.Remove(item);
 	}
 
 	public int Count
 	{
-		get => scalar.Value().Count;
+		get => scalar.Value.Count;
 	}
 
 	public bool IsReadOnly
 	{
-		get => scalar.Value().IsReadOnly;
+		get => scalar.Value.IsReadOnly;
 	}
 	
 	private readonly IScalar<ICollection<T>> scalar;

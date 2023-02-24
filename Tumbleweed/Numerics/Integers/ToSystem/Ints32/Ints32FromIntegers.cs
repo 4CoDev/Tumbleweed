@@ -17,7 +17,7 @@ public sealed class Ints32FromIntegers : EnumerableEnvelope<int>
 	(
 		new SelectedByExpression<IInteger, int>(
 			integers,
-			integer => new Int32FromInteger(integer).Value())
+			integer => new Int32FromInteger(integer).Value)
 	)
 	{
 	}

@@ -12,7 +12,7 @@ public sealed class TakedEnumerable<T> : EnumerableEnvelope<T>
 	(
 		new EnumerableOfScalar<T>(
 			new ScalarOfDelegate<IEnumerable<T>>(
-				() => enumerable.Take(elements.Value())))
+				() => enumerable.Take(elements.Value)))
 	)
 	{
 	}

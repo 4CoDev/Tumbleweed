@@ -15,11 +15,8 @@ public sealed class ColorFromMeshDataTool : IScalar<Color>
 		this.vertex = vertex;
 	}
 
-	public Color Value()
-	{
-		return meshDataTool.Value().GetVertexColor(vertex.Value());
-	}
-	
+	public Color Value => meshDataTool.Value.GetVertexColor(vertex.Value);
+
 	private readonly IScalar<MeshDataTool> meshDataTool;
 	
 	private readonly IScalar<int> vertex;

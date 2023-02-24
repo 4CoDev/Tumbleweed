@@ -18,7 +18,7 @@ public sealed class Vector2FromPlanar : ScalarEnvelope<Vector2>
 	private static Vector2 Result(IPlanar<IDecimal> planar)
 	{
 		return new Vector2(
-			new SingleFromDecimal(planar.X).Value(),
-			new SingleFromDecimal(planar.Y).Value());
+			new SingleFromDecimal(planar.X).Value,
+			new SingleFromDecimal(planar.Y).Value);
 	}
 }

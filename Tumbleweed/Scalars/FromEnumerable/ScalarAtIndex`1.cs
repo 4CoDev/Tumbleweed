@@ -11,13 +11,10 @@ public sealed class ScalarAtIndex<T> : IScalar<T>
 		this.index = index;
 	}
 
-	public T Value()
-	{
-		return new FromSystem.ScalarAtIndex<T>(
-				enumerable,
-				new Int32FromInteger(index))
-			.Value();
-	}
+	public T Value =>
+		new FromSystem.ScalarAtIndex<T>(
+			enumerable,
+			new Int32FromInteger(index)).Value;
 
 	private readonly IEnumerable<T> enumerable;
 

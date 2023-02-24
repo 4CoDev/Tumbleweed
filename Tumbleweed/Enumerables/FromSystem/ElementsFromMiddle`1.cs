@@ -27,8 +27,8 @@ public sealed class ElementsFromMiddle<T> : EnumerableEnvelope<T>
 	(
 		new EnumerableOfDelegate<T>(
 			() => collection
-				.Skip(from.Value())
-				.Take(to.Value() - from.Value() + 1))
+				.Skip(from.Value)
+				.Take(to.Value - from.Value + 1))
 	)
 	{
 	}

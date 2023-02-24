@@ -6,12 +6,9 @@ public sealed class ScalarOfDoubleScalar<T> : IScalar<T>
 	{
 		this.scalar = scalar;
 	}
-	
-	public T Value()
-	{
-		return scalar.Value().Value();
-	}
-	
+
+	public T Value => scalar.Value.Value;
+
 	private readonly IScalar<IScalar<T>> scalar;
 	
 }

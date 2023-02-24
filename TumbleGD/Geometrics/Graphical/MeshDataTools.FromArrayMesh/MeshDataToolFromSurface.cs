@@ -14,12 +14,15 @@ public sealed class MeshDataToolFromSurface : IScalar<MeshDataTool>
 		this.mesh = mesh;
 		this.surface = surface;
 	}
-	
-	public MeshDataTool Value()
+
+	public MeshDataTool Value
 	{
-		MeshDataTool meshDataTool = new MeshDataTool();
-		meshDataTool.CreateFromSurface(mesh.Value(), surface.Value());
-		return meshDataTool;
+		get
+		{
+			MeshDataTool meshDataTool = new MeshDataTool();
+			meshDataTool.CreateFromSurface(mesh.Value, surface.Value);
+			return meshDataTool;
+		}
 	}
 
 	private readonly IScalar<ArrayMesh> mesh;

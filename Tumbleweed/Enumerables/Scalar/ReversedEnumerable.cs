@@ -8,11 +8,8 @@ public sealed class ReversedEnumerable<T> : IScalar<IEnumerable<T>>
 	{
 		this.origin = origin;
 	}
-	
-	public IEnumerable<T> Value()
-	{
-		return origin.Reverse();
-	}
-	
+
+	public IEnumerable<T> Value => origin.Reverse();
+
 	private readonly IEnumerable<T> origin;
 }

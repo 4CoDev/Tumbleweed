@@ -7,7 +7,7 @@ public sealed class SizeOfArray<T> : ScalarEnvelope<int>
 	public SizeOfArray(IScalar<T[]> array) : base
 	(
 		new ScalarOfDelegate<int>(
-			() => array.Value().Length)
+			() => array.Value.Length)
 	)
 	{
 	}

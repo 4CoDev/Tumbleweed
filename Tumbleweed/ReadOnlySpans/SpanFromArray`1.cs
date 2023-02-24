@@ -13,7 +13,7 @@ public sealed class SpanFromArray<T> : SpanEnvelope<T>
 	
 	public SpanFromArray(IScalar<T[]> array) : base
 	(
-		() => new ReadOnlySpan<T>(array.Value())
+		() => new ReadOnlySpan<T>(array.Value)
 	)
 	{
 	}

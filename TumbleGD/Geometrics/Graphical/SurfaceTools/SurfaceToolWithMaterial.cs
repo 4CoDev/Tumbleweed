@@ -14,14 +14,17 @@ public sealed class SurfaceToolWithMaterial : IScalar<SurfaceTool>
 		this.origin = origin;
 		this.material = material;
 	}
-	
-	public SurfaceTool Value()
+
+	public SurfaceTool Value
 	{
-		SurfaceTool result = origin.Value();
-		result.SetMaterial(material.Value());
-		return result;
+		get
+		{
+			SurfaceTool result = origin.Value;
+			result.SetMaterial(material.Value);
+			return result;
+		}
 	}
-	
+
 	private readonly IScalar<SurfaceTool> origin;
 	
 	private readonly IScalar<Material> material;

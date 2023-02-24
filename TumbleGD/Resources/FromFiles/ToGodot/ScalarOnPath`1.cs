@@ -15,7 +15,7 @@ public sealed class ScalarOnPath<T> : ScalarEnvelope<T> where T : class
 	public ScalarOnPath(IScalar<string> path) : base
 	(
 		new ScalarOfDelegate<T>(
-			() => ResourceLoader.Load<T>(path.Value()))
+			() => ResourceLoader.Load<T>(path.Value))
 	)
 	{
 	}

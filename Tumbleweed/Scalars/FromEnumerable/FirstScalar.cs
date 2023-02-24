@@ -6,11 +6,8 @@ public sealed class FirstScalar<T> : IScalar<T>
 	{
 		this.enumerable = enumerable;
 	}
-	
-	public T Value()
-	{
-		return enumerable.First();
-	}
-	
+
+	public T Value => enumerable.First();
+
 	private readonly IEnumerable<T> enumerable;
 }

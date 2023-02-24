@@ -9,7 +9,7 @@ public sealed class EnumerableFromSpatial<T> : EnumerableEnvelope<T>
 		IScalar<T[,,]> array
 	) : base
 	(
-		new EnumerableOfDelegate<T>(array.Value().Cast<T>)
+		new EnumerableOfDelegate<T>(array.Value.Cast<T>)
 	)
 	{
 	}

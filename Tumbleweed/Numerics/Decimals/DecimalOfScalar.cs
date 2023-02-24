@@ -12,12 +12,12 @@ public sealed class DecimalOfScalar : IDecimal
 	
 	public IInteger Mantissa
 	{
-		get => scalar.Value().Mantissa;
+		get => scalar.Value.Mantissa;
 	}
 
 	public IInteger Exponent
 	{
-		get => scalar.Value().Exponent;
+		get => scalar.Value.Exponent;
 	}
 	
 	private readonly IScalar<IDecimal> scalar;

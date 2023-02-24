@@ -11,7 +11,7 @@ public sealed class BytesOfSingle : EnumerableEnvelope<IEnumerable<IBit>>
 	(
 		new BytesFromSystem(
 			new EnumerableOfDelegate<byte>(
-				() => BitConverter.GetBytes(@float.Value())))
+				() => BitConverter.GetBytes(@float.Value)))
 	)
 	{
 	}

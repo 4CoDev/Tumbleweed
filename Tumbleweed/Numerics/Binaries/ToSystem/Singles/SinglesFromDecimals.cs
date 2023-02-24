@@ -9,7 +9,7 @@ public sealed class SinglesFromDecimals : EnumerableEnvelope<float>
 	(
 		new SelectedByExpression<IDecimal, float>(
 			decimals,
-			@decimal => new SingleFromDecimal(@decimal).Value())
+			@decimal => new SingleFromDecimal(@decimal).Value)
 	)
 	{
 	}

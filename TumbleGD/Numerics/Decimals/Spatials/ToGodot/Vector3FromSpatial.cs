@@ -19,8 +19,8 @@ public sealed class Vector3FromSpatial : ScalarEnvelope<Vector3>
 	private static Vector3 Result(ISpatial<IDecimal> spatial)
 	{
 		return new Vector3(
-			new SingleFromDecimal(spatial.X).Value(),
-			new SingleFromDecimal(spatial.Y).Value(),
-			new SingleFromDecimal(spatial.Z).Value());
+			new SingleFromDecimal(spatial.X).Value,
+			new SingleFromDecimal(spatial.Y).Value,
+			new SingleFromDecimal(spatial.Z).Value);
 	}
 }

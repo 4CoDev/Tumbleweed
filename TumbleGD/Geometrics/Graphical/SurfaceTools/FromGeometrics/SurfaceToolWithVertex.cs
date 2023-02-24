@@ -14,17 +14,20 @@ public sealed class SurfaceToolWithVertex : IScalar<SurfaceTool>
 		this.tool = tool;
 		this.vertex = vertex;
 	}
-	
-	public SurfaceTool Value()
+
+	public SurfaceTool Value
 	{
-		SurfaceTool result = tool.Value();
-		result.SetNormal(new Vector3FromSpatial(vertex.Normal).Value());
-		result.SetColor(vertex.Color.Value());
-		result.SetUV(new Vector2FromPlanar(vertex.UV).Value());
-		result.AddVertex(new Vector3FromSpatial(vertex.Translation).Value());
-		return result;
+		get
+		{
+			SurfaceTool result = tool.Value;
+			result.SetNormal(new Vector3FromSpatial(vertex.Normal).Value);
+			result.SetColor(vertex.Color.Value);
+			result.SetUV(new Vector2FromPlanar(vertex.UV).Value);
+			result.AddVertex(new Vector3FromSpatial(vertex.Translation).Value);
+			return result;
+		}
 	}
-	
+
 	private readonly IScalar<SurfaceTool> tool;
 	
 	private readonly IVertex vertex;

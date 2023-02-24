@@ -14,10 +14,10 @@ public sealed class SelectedByExpression<TFrom, TTo>
 		this.from = from;
 		this.expression = expression;
 	}
-	
-	public IEnumerable<TTo> Value()
+
+	public IEnumerable<TTo> Value
 	{
-		return from.Select(item => expression(item));
+		get { return from.Select(item => expression(item)); }
 	}
 
 	private readonly IEnumerable<TFrom> from;

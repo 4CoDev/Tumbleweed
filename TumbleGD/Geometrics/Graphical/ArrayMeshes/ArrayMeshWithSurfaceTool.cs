@@ -14,12 +14,9 @@ public sealed class ArrayMeshWithSurfaceTool : IScalar<ArrayMesh>
 		this.tool = tool;
 		this.mesh = mesh;
 	}
-	
-	public ArrayMesh Value()
-	{
-		return tool.Value().Commit(mesh.Value());
-	}
-	
+
+	public ArrayMesh Value => tool.Value.Commit(mesh.Value);
+
 	private readonly IScalar<SurfaceTool> tool;
 	
 	private readonly IScalar<ArrayMesh> mesh;

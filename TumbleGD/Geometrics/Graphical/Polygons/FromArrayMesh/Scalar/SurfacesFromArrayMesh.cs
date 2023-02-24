@@ -11,16 +11,19 @@ public sealed class SurfacesFromArrayMesh : IScalar<IEnumerable<ISurface>>
 	{
 		this.mesh = mesh;
 	}
-	
-	public IEnumerable<ISurface> Value()
+
+	public IEnumerable<ISurface> Value
 	{
-		IList<ISurface> surfaces = new List<ISurface>();
-		for (int surface = 0; surface < mesh.Value().GetSurfaceCount(); surface++)
+		get
 		{
-			surfaces.Add(new SurfaceWithIndex(mesh, new ScalarOfValue<int>(surface)));
+			IList<ISurface> surfaces = new List<ISurface>();
+			for (int surface = 0; surface < mesh.Value.GetSurfaceCount(); surface++)
+			{
+				surfaces.Add(new SurfaceWithIndex(mesh, new ScalarOfValue<int>(surface)));
+			}
+			return surfaces;
 		}
-		return surfaces;
 	}
-	
+
 	private readonly IScalar<ArrayMesh> mesh;
 }

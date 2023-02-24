@@ -11,7 +11,7 @@ public sealed class BytesOfInt32 : EnumerableEnvelope<IEnumerable<IBit>>
 	(
 		new BytesFromSystem(
 			new EnumerableOfDelegate<byte>(
-				() => BitConverter.GetBytes(integer.Value())))
+				() => BitConverter.GetBytes(integer.Value)))
 	)
 	{
 	}

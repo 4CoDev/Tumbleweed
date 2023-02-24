@@ -11,17 +11,17 @@ public sealed class SpatialOfScalar<T> : ISpatial<T>
 	
 	public T X
 	{
-		get => scalar.Value().X;
+		get => scalar.Value.X;
 	}
 
 	public T Y
 	{
-		get => scalar.Value().Y;
+		get => scalar.Value.Y;
 	}
 
 	public T Z
 	{
-		get => scalar.Value().Z;
+		get => scalar.Value.Z;
 	}
 	
 	private readonly IScalar<ISpatial<T>> scalar;

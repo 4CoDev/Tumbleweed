@@ -6,11 +6,8 @@ public sealed class LastScalar<T> : IScalar<T>
 	{
 		this.enumerable = enumerable;
 	}
-	
-	public T Value()
-	{
-		return enumerable.Last();
-	}
-	
+
+	public T Value => enumerable.Last();
+
 	private readonly IEnumerable<T> enumerable;
 }

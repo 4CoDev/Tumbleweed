@@ -18,8 +18,8 @@ public sealed class Logarithm : IntegerEnvelope
 		new IntegerFromInt32(
 			new ScalarOfDelegate<int>(
 				() => (int)Math.Log(
-					new Int32FromInteger(@base).Value(),
-					new Int32FromInteger(argument).Value())))
+					new Int32FromInteger(@base).Value,
+					new Int32FromInteger(argument).Value)))
 	)
 	{
 	}

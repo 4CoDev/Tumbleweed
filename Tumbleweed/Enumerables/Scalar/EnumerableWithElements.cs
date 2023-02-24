@@ -9,10 +9,10 @@ public sealed class EnumerableWithElements<T> : IScalar<IEnumerable<T>>
 		this.enumerables = enumerables;
 	}
 
-	public IEnumerable<T> Value()
+	public IEnumerable<T> Value
 	{
-		return enumerables.SelectMany(enumerable => enumerable);
+		get { return enumerables.SelectMany(enumerable => enumerable); }
 	}
-	
+
 	private readonly IEnumerable<IEnumerable<T>> enumerables;
 }

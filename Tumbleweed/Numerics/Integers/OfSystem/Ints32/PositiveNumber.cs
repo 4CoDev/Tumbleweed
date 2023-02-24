@@ -9,11 +9,14 @@ public sealed class PositiveNumber : IScalar<int>
 		this.integer = integer;
 	}
 
-	public int Value()
+	public int Value
 	{
-		if (integer.Value() >= 0) return integer.Value();
-		throw new InvalidOperationException("Value is negative.");
+		get
+		{
+			if (integer.Value >= 0) return integer.Value;
+			throw new InvalidOperationException("Value is negative.");
+		}
 	}
-	
+
 	private readonly IScalar<int> integer;
 }

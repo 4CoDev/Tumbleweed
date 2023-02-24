@@ -6,9 +6,8 @@ public abstract class ScalarEnvelope<T> : IScalar<T>
 {
 	protected ScalarEnvelope(IScalar<T> scalar) =>
 		this.scalar = scalar;
-	
-	public T Value() =>
-		scalar.Value();
+
+	public T Value => scalar.Value;
 
 	public override bool Equals(object? other) =>
 		scalar.Equals(other);

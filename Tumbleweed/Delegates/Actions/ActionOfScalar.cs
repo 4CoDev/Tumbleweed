@@ -11,7 +11,7 @@ public sealed class ActionOfScalar : IAction
 	
 	public void Action()
 	{
-		scalar.Value().Action();
+		scalar.Value.Action();
 	}
 	
 	private readonly IScalar<IAction> scalar;

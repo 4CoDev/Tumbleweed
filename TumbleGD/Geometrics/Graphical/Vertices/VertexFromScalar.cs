@@ -13,13 +13,13 @@ public sealed class VertexFromScalar : IVertex
 		this.scalar = scalar;
 	}
 	
-	public ISpatial<IDecimal> Translation => scalar.Value().Translation;
+	public ISpatial<IDecimal> Translation => scalar.Value.Translation;
 
-	public ISpatial<IDecimal> Normal => scalar.Value().Normal;
+	public ISpatial<IDecimal> Normal => scalar.Value.Normal;
 
-	public IScalar<Color> Color => scalar.Value().Color;
+	public IScalar<Color> Color => scalar.Value.Color;
 
-	public IPlanar<IDecimal> UV => scalar.Value().UV;
+	public IPlanar<IDecimal> UV => scalar.Value.UV;
 
 	private readonly IScalar<IVertex> scalar;
 }

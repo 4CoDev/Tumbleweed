@@ -13,13 +13,16 @@ public sealed class VertexIndicesFromSurfaceTool
 		this.surfaceTool = surfaceTool;
 	}
 
-	public IEnumerable<IScalar<int>> Value()
+	public IEnumerable<IScalar<int>> Value
 	{
-		Array surfaceAsArrays = surfaceTool.Value().CommitToArrays();
-		const int indexArrayType = (int)Mesh.ArrayType.Index;
-		int[] indicesAsValues = surfaceAsArrays[indexArrayType].AsInt32Array();
-		return new ScalarsOfValues<int>(indicesAsValues);
+		get
+		{
+			Array surfaceAsArrays = surfaceTool.Value.CommitToArrays();
+			const int indexArrayType = (int) Mesh.ArrayType.Index;
+			int[] indicesAsValues = surfaceAsArrays[indexArrayType].AsInt32Array();
+			return new ScalarsOfValues<int>(indicesAsValues);
+		}
 	}
-	
+
 	private readonly IScalar<SurfaceTool> surfaceTool;
 }

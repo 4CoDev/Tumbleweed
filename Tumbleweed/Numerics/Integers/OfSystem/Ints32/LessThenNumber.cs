@@ -10,12 +10,15 @@ public sealed class LessThenNumber : IScalar<int>
 		this.max = max;
 	}
 
-	public int Value()
+	public int Value
 	{
-		if (value.Value() < max.Value()) return value.Value();
-		throw new InvalidOperationException("Value is greater then max");
+		get
+		{
+			if (value.Value < max.Value) return value.Value;
+			throw new InvalidOperationException("Value is greater then max");
+		}
 	}
-	
+
 	private readonly IScalar<int> value;
 	
 	private readonly IScalar<int> max;

@@ -25,13 +25,16 @@ public sealed class SurfaceToolWithPrimitiveType : IScalar<SurfaceTool>
 		this.type = type;
 	}
 
-	public SurfaceTool Value()
+	public SurfaceTool Value
 	{
-		SurfaceTool result = origin.Value();
-		result.Begin(type.Value());
-		return result;
+		get
+		{
+			SurfaceTool result = origin.Value;
+			result.Begin(type.Value);
+			return result;
+		}
 	}
-	
+
 	private readonly IScalar<SurfaceTool> origin;
 	
 	private readonly IScalar<Mesh.PrimitiveType> type;

@@ -14,15 +14,18 @@ public sealed class LessThenNumbers : IScalar<IEnumerable<IScalar<int>>>
 		this.max = max;
 	}
 
-	public IEnumerable<IScalar<int>> Value()
+	public IEnumerable<IScalar<int>> Value
 	{
-		if (values.Any(value => value.Value() > max.Value()))
+		get
 		{
-			throw new InvalidOperationException("Value is greater then max");
+			if (values.Any(value => value.Value > max.Value))
+			{
+				throw new InvalidOperationException("Value is greater then max");
+			}
+			return values;
 		}
-		return values;
 	}
-	
+
 	private readonly IEnumerable<IScalar<int>> values;
 	
 	private readonly IScalar<int> max;

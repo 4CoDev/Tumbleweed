@@ -14,17 +14,20 @@ public sealed class ArrayMeshWithSurfaceTools : IScalar<ArrayMesh>
 		this.tools = tools;
 		this.mesh = mesh;
 	}
-	
-	public ArrayMesh Value()
+
+	public ArrayMesh Value
 	{
-		IScalar<ArrayMesh> result = mesh;
-		foreach (IScalar<SurfaceTool> tool in tools)
+		get
 		{
-			result = new ArrayMeshWithSurfaceTool(tool, result);
+			IScalar<ArrayMesh> result = mesh;
+			foreach (IScalar<SurfaceTool> tool in tools)
+			{
+				result = new ArrayMeshWithSurfaceTool(tool, result);
+			}
+			return result.Value;
 		}
-		return result.Value();
 	}
-	
+
 	private readonly IEnumerable<IScalar<SurfaceTool>> tools;
 	
 	private readonly IScalar<ArrayMesh> mesh;

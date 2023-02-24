@@ -12,7 +12,7 @@ public sealed class ArrayOfScalar<T> : IArray<T>
 	
 	public T this[IEnumerable<IInteger> indices]
 	{
-		get => scalar.Value()[indices];
+		get => scalar.Value[indices];
 	}
 	
 	private readonly IScalar<IArray<T>> scalar;

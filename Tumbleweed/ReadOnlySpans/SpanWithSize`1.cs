@@ -25,7 +25,7 @@ public sealed class SpanWithSize<T> : SpanEnvelope<T>
 		IScalar<int> size
 	)
 	{
-		if (span.Value.Length == size.Value()) return span.Value;
+		if (span.Value.Length == size.Value) return span.Value;
 		throw new InvalidOperationException("ReadOnlySpan size is wrong.");
 	}
 }

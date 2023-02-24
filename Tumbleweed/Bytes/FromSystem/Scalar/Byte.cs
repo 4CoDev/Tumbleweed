@@ -11,11 +11,14 @@ public sealed class Byte : IScalar<IEnumerable<IBit>>
 		this.@byte = @byte;
 	}
 
-	public IEnumerable<IBit> Value()
+	public IEnumerable<IBit> Value
 	{
-		for (int index = 0; index < 8; index++)
+		get
 		{
-			yield return new BitWithIndex(@byte, index);
+			for (int index = 0; index < 8; index++)
+			{
+				yield return new BitWithIndex(@byte, index);
+			}
 		}
 	}
 

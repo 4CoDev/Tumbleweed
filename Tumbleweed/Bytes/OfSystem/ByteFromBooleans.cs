@@ -23,21 +23,24 @@ public sealed class ByteFromBooleans : IScalar<byte>
 	{
 		this.booleans = booleans;
 	}
-	
-	public byte Value()
+
+	public byte Value
 	{
-		if (booleans.Count > 8)
+		get
 		{
-			throw new ArgumentException("Byte must have 8 bits");
+			if (booleans.Count > 8)
+			{
+				throw new ArgumentException("Byte must have 8 bits");
+			}
+			byte result = 0;
+			for (int i = 0; i < booleans.Count; i++)
+			{
+				bool boolean = booleans[i];
+				if (boolean) result |= (byte) (1 << i);
+			}
+			return result;
 		}
-		byte result = 0;
-		for (int i = 0; i < booleans.Count; i++)
-		{
-			bool boolean = booleans[i];
-			if (boolean) result |= (byte)(1 << i);
-		}
-		return result;
 	}
-	
+
 	private readonly IList<bool> booleans;
 }

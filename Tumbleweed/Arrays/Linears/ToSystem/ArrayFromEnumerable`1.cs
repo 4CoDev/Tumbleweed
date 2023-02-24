@@ -8,11 +8,8 @@ public sealed class ArrayFromEnumerable<T> : IScalar<T[]>
 	{
 		this.enumerable = enumerable;
 	}
-	
-	public T[] Value()
-	{
-		return enumerable.ToArray();
-	}
-	
+
+	public T[] Value => enumerable.ToArray();
+
 	private readonly IEnumerable<T> enumerable;
 }

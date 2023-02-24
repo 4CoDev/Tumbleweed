@@ -15,10 +15,7 @@ public sealed class MaterialOfSurface : IScalar<Material>
 		this.surface = surface;
 	}
 
-	public Material Value()
-	{
-		return mesh.Value().SurfaceGetMaterial(surface.Value());
-	}
+	public Material Value => mesh.Value.SurfaceGetMaterial(surface.Value);
 
 	private readonly IScalar<ArrayMesh> mesh;
 

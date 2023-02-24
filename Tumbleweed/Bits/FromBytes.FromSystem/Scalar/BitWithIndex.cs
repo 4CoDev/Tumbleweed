@@ -11,16 +11,19 @@ public sealed class BitWithIndex : IScalar<IBit>
 		this.@byte = @byte;
 		this.index = index;
 	}
-	
-	public IBit Value()
+
+	public IBit Value
 	{
-		IScalar<int> positive = new PositiveNumber(index);
-		IScalar<int> bounded = new LessThenNumber(positive, new NumberOfBits());
-		return new BitFromBoolean(
-			new ScalarOfDelegate<bool>(
-				() => (@byte.Value() & (1 << bounded.Value())) != 0));
+		get
+		{
+			IScalar<int> positive = new PositiveNumber(index);
+			IScalar<int> bounded = new LessThenNumber(positive, new NumberOfBits());
+			return new BitFromBoolean(
+				new ScalarOfDelegate<bool>(
+					() => (@byte.Value & (1 << bounded.Value)) != 0));
+		}
 	}
-	
+
 	private readonly IScalar<byte> @byte;
 	
 	private readonly IScalar<int> index;

@@ -12,7 +12,7 @@ public sealed class ElementsFromRight<T> : EnumerableEnvelope<T>
 	(
 		new EnumerableOfScalar<T>(
 			new ScalarOfDelegate<IEnumerable<T>>(
-				() => enumerable.Skip(number.Value())))
+				() => enumerable.Skip(number.Value)))
 	)
 	{
 	}

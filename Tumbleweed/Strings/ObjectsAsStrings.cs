@@ -9,7 +9,7 @@ public sealed class ObjectsAsStrings : EnumerableEnvelope<string>
 		new SelectedByExpression<object, string>(
 			objects,
 			@object => new EmptyableFromNullable(
-				new ObjectAsNullableString(@object)).Value())
+				new ObjectAsNullableString(@object)).Value)
 	)
 	{
 	}

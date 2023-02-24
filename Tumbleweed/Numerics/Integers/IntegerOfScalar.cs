@@ -12,12 +12,12 @@ public sealed class IntegerOfScalar : IInteger
 
 	public IBit Positive
 	{
-		get => scalar.Value().Positive;
+		get => scalar.Value.Positive;
 	}
 	
 	public IEnumerable<IBit> Natural
 	{
-		get => scalar.Value().Natural;
+		get => scalar.Value.Natural;
 	}
 	
 	private readonly IScalar<IInteger> scalar;

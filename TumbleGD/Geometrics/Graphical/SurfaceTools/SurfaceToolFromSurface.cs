@@ -14,14 +14,17 @@ public sealed class SurfaceToolFromSurface : IScalar<SurfaceTool>
 		this.mesh = mesh;
 		this.surface = surface;
 	}
-	
-	public SurfaceTool Value()
+
+	public SurfaceTool Value
 	{
-		SurfaceTool surfaceTool = new SurfaceTool();
-		surfaceTool.CreateFrom(mesh.Value(), surface.Value());
-		return surfaceTool;
+		get
+		{
+			SurfaceTool surfaceTool = new SurfaceTool();
+			surfaceTool.CreateFrom(mesh.Value, surface.Value);
+			return surfaceTool;
+		}
 	}
-	
+
 	private readonly IScalar<ArrayMesh> mesh;
 	
 	private readonly IScalar<int> surface;

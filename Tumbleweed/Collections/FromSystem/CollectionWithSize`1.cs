@@ -43,7 +43,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 		IScalar<int> size
 	)
 	{
-		if (collection.Count == size.Value()) return collection;
+		if (collection.Count == size.Value) return collection;
 		throw new InvalidOperationException("Collection size is wrong.");
 	}
 }

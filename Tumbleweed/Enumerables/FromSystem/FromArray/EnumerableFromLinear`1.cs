@@ -9,7 +9,7 @@ public sealed class EnumerableFromLinear<T> : EnumerableEnvelope<T>
 		IScalar<T[]> array
 	) : base
 	(
-		new EnumerableOfDelegate<T>(array.Value)
+		new EnumerableOfDelegate<T>(array.Value.AsEnumerable)
 	)
 	{
 	}

@@ -17,7 +17,7 @@ public sealed class EnumerableOfScalar<T> : IEnumerable<T>
 	
 	public IEnumerator<T> GetEnumerator()
 	{
-		return scalar.Value().GetEnumerator();
+		return scalar.Value.GetEnumerator();
 	}
 
 	private readonly IScalar<IEnumerable<T>> scalar;

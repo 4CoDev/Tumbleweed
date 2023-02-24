@@ -8,7 +8,7 @@ public sealed class ValuesOfScalars<T> : EnumerableEnvelope<T>
 	(
 		new SelectedByExpression<IScalar<T>, T>(
 			enumerable,
-			scalar => scalar.Value())
+			scalar => scalar.Value)
 	)
 	{
 	}

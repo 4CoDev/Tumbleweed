@@ -20,7 +20,7 @@ public sealed class MultidimensionalArray<T> : IArray<T>
 	{
 		get => new ScalarAtIndex<T>(
 			elements,
-			new FlatIndexFromIndices(indices, dimensions)).Value();
+			new FlatIndexFromIndices(indices, dimensions)).Value;
 	}
 
 	private readonly IEnumerable<T> elements;

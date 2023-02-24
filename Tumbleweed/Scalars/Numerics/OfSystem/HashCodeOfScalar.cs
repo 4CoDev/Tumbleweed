@@ -6,7 +6,7 @@ public sealed class HashCodeOfScalar<T> : ScalarEnvelope<int>
 	public HashCodeOfScalar(IScalar<T> scalar) : base
 	(
 		new ScalarOfDelegate<int>(
-			() => scalar.Value().GetHashCode())
+			() => scalar.Value.GetHashCode())
 	)
 	{
 	}

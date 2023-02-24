@@ -14,12 +14,9 @@ public sealed class ScalarAtIndex<T> : IScalar<T>
 		this.enumerable = enumerable;
 		this.index = index;
 	}
-	
-	public T Value()
-	{
-		return enumerable.ElementAt(index.Value());
-	}
-	
+
+	public T Value => enumerable.ElementAt(index.Value);
+
 	private readonly IEnumerable<T> enumerable;
 	
 	private readonly IScalar<int> index;

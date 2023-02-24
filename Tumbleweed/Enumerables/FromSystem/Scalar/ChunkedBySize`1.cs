@@ -10,10 +10,7 @@ public sealed class ChunkedBySize<T> : IScalar<IEnumerable<IEnumerable<T>>>
 		this.size = size;
 	}
 
-	public IEnumerable<IEnumerable<T>> Value()
-	{
-		return enumerable.Chunk(size.Value());
-	}
+	public IEnumerable<IEnumerable<T>> Value => enumerable.Chunk(size.Value);
 
 	private readonly IEnumerable<T> enumerable;
 

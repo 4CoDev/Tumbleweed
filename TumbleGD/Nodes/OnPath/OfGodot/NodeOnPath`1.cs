@@ -34,7 +34,7 @@ public sealed class NodeOnPath<T> : ScalarEnvelope<T> where T : Node
 	) : base
 	(
 		new ScalarOfDelegate<T>(
-			() => relation.Value().GetNode<T>(path.Value()))
+			() => relation.Value.GetNode<T>(path.Value))
 	)
 	{
 	}

@@ -15,17 +15,20 @@ public sealed class DictionaryFromEnumerable<TKey, TValue> :
 		this.enumerable = enumerable;
 		this.defaultValue = defaultValue;
 	}
-	
-	public IDictionary<TKey, TValue> Value()
+
+	public IDictionary<TKey, TValue> Value
 	{
-		IDictionary<TKey, TValue> dictionary = new Dictionary<TKey, TValue>();
-		foreach (TKey key in enumerable)
+		get
 		{
-			dictionary.Add(key, defaultValue);
+			IDictionary<TKey, TValue> dictionary = new Dictionary<TKey, TValue>();
+			foreach (TKey key in enumerable)
+			{
+				dictionary.Add(key, defaultValue);
+			}
+			return dictionary;
 		}
-		return dictionary;
 	}
-	
+
 	private readonly IEnumerable<TKey> enumerable;
 	
 	private readonly TValue defaultValue;

@@ -23,7 +23,7 @@ public sealed class DecimalWithIndex : DecimalEnvelope
 	) : base
 	(
 		new DecimalOfDelegate(
-			() => decimals.ElementAt(index.Value()))
+			() => decimals.ElementAt(index.Value))
 	)
 	{
 	}
