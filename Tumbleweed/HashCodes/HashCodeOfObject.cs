@@ -4,16 +4,9 @@ namespace Tumbleweed.HashCodes;
 
 public sealed class HashCodeOfObject : ScalarEnvelope<int>
 {
-	public HashCodeOfObject(object @object) : this
+	public HashCodeOfObject(object @object) : base
 	(
-		new ScalarOfValue<object>(@object)
-	)
-	{
-	}
-	
-	public HashCodeOfObject(IScalar<object> @object) : base
-	(
-		new ScalarOfDelegate<int>(@object.GetHashCode)
+		new ValueOfDelegate<int>(@object.GetHashCode)
 	)
 	{
 	}

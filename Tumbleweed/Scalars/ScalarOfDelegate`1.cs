@@ -1,3 +1,4 @@
+using Tumbleweed.Delegates.Functions.Nullary;
 using Tumbleweed.HashCodes;
 using Tumbleweed.Strings;
 
@@ -5,20 +6,26 @@ namespace Tumbleweed.Scalars;
 
 public sealed class ScalarOfDelegate<T> : IScalar<T>
 {
-	public ScalarOfDelegate(Func<T> @delegate) =>
-		this.@delegate = @delegate;
+	public ScalarOfDelegate(Func<IScalar<T>> function) : this
+	(
+		new NullaryFromSystem<IScalar<T>>(function)
+	)
+	{
+	}
 
-	public T Value => @delegate();
-
+	public ScalarOfDelegate(INullaryFunction<IScalar<T>> function) =>
+		this.function = function;
+	
+	public T Value => function.Invoke().Value;
+	
 	public override bool Equals(object? @object) =>
-		@object is ScalarOfDelegate<T> action &&
-		action.@delegate.Equals(@delegate);
+		new Equality.TwoNullableScalars<T>(this, @object).State;
 
 	public override int GetHashCode() =>
-		new HashCodeOfObject(@delegate).Value;
+		new HashCodeOfObject(function).Value;
 
 	public override string? ToString() =>
-		new NullableFromObject(@delegate).Value;
+		new NullableFromObject(function).Value;
 
-	private readonly Func<T> @delegate;
+	private readonly INullaryFunction<IScalar<T>> function;
 }

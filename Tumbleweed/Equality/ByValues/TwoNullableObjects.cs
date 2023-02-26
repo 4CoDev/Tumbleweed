@@ -3,9 +3,9 @@ using Tumbleweed.Bits.FromSystem;
 
 namespace Tumbleweed.Equality.ByValues;
 
-public sealed class EqualityOfTwoNullables : BitEnvelope
+public sealed class TwoNullableObjects : BitEnvelope
 {
-	public EqualityOfTwoNullables
+	public TwoNullableObjects
 	(
 		object? first,
 		object? second

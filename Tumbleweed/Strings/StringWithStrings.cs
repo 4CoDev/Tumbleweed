@@ -28,7 +28,7 @@ public sealed class StringWithStrings : ScalarEnvelope<string>
 	
 	public StringWithStrings(IEnumerable<string> strings) : base
 	(
-		new ScalarOfDelegate<string>(
+		new ValueOfDelegate<string>(
 			() => string.Concat(strings))
 	)
 	{

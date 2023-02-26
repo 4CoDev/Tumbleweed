@@ -3,7 +3,7 @@ using Tumbleweed.HashCodes;
 using Tumbleweed.Scalars;
 using Tumbleweed.Strings;
 
-namespace TumbleGD.Nodes.Placement;
+namespace TumbleGD.Nodes.Placement.OfGodot;
 
 public sealed class PlacementOfNode : INodePlacement
 {

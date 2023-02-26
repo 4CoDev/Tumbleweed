@@ -1,14 +1,13 @@
 namespace Tumbleweed.Scalars;
 
-public sealed class ScalarOfDoubleScalar<T> : IScalar<T>
+public sealed class ScalarOfDoubleScalar<T> : ScalarEnvelope<T>
 {
-	public ScalarOfDoubleScalar(IScalar<IScalar<T>> scalar)
+	public ScalarOfDoubleScalar(IScalar<IScalar<T>> scalar) : base
+	(
+		new ValueOfDelegate<T>(
+			() => scalar.Value.Value)
+	)
 	{
-		this.scalar = scalar;
 	}
-
-	public T Value => scalar.Value.Value;
-
-	private readonly IScalar<IScalar<T>> scalar;
 	
 }

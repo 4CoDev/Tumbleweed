@@ -7,7 +7,7 @@ public sealed class EnumerableOfDelegate<T> : EnumerableEnvelope<T>
 	public EnumerableOfDelegate(Func<IEnumerable<T>> @delegate) : base
 	(
 		new EnumerableOfScalar<T>(
-			new ScalarOfDelegate<IEnumerable<T>>(@delegate))
+			new ValueOfDelegate<IEnumerable<T>>(@delegate))
 	)
 	{
 	}

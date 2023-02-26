@@ -1,8 +1,8 @@
 namespace TumbleGD.Nodes.Placement;
 
-public class PlacementEnvelope : INodePlacement
+public abstract class PlacementEnvelope : INodePlacement
 {
-	public PlacementEnvelope(INodePlacement placement) =>
+	protected PlacementEnvelope(INodePlacement placement) =>
 		this.placement = placement;
 	
 	public void Place() => placement.Place();

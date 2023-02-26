@@ -22,7 +22,7 @@ public sealed class NumberFromBytes : ScalarEnvelope<int>
 	
 	public NumberFromBytes(IReadOnlySpan<byte> bytes) : base
 	(
-		new ScalarOfDelegate<int>(
+		new ValueOfDelegate<int>(
 			() => BitConverter.ToInt32(
 				new SpanWithSize<byte>(bytes, 4).Value))
 	)

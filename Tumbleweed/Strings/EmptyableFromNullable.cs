@@ -13,7 +13,7 @@ public sealed class EmptyableFromNullable : ScalarEnvelope<string>
 	
 	public EmptyableFromNullable(IScalar<string?> nullable) : base
 	(
-		new ScalarOfDelegate<string>(() => nullable.Value ?? "")
+		new ValueOfDelegate<string>(() => nullable.Value ?? "")
 	)
 	{
 	}

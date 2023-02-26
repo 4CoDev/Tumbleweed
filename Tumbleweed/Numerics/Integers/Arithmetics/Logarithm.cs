@@ -16,7 +16,7 @@ public sealed class Logarithm : IntegerEnvelope
 	public Logarithm(IInteger @base, IInteger argument) : base
 	(
 		new IntegerFromInt32(
-			new ScalarOfDelegate<int>(
+			new ValueOfDelegate<int>(
 				() => (int)Math.Log(
 					new Int32FromInteger(@base).Value,
 					new Int32FromInteger(argument).Value)))

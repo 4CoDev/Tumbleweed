@@ -7,7 +7,7 @@ public sealed class IntegerOfDelegate : IntegerEnvelope
 	public IntegerOfDelegate(Func<IInteger> @delegate) : base
 	(
 		new IntegerOfScalar(
-			new ScalarOfDelegate<IInteger>(@delegate))
+			new ValueOfDelegate<IInteger>(@delegate))
 	)
 	{
 	}

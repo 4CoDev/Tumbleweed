@@ -1,12 +1,11 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Bits.FromSystem;
-using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Equality.ByReference;
 
-public sealed class EqualityOfTwoNullables : BitEnvelope
+public sealed class TwoNullableObjects : BitEnvelope
 {
-	public EqualityOfTwoNullables
+	public TwoNullableObjects
 	(
 		object? first,
 		object? second

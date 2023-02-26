@@ -11,7 +11,7 @@ public sealed class ElementsFromRight<T> : EnumerableEnvelope<T>
 	) : base
 	(
 		new EnumerableOfScalar<T>(
-			new ScalarOfDelegate<IEnumerable<T>>(
+			new ValueOfDelegate<IEnumerable<T>>(
 				() => enumerable.Skip(number.Value)))
 	)
 	{

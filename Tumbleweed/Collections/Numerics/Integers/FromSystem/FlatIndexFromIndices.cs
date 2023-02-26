@@ -10,7 +10,7 @@ public sealed class FlatIndexFromIndices : ScalarEnvelope<int>
 		ICollection<int> dimensions
 	) : base
 	(
-		new ScalarOfDelegate<int>(() => Result(indices, dimensions))
+		new ValueOfDelegate<int>(() => Result(indices, dimensions))
 	)
 	{
 	}

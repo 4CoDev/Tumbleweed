@@ -11,7 +11,7 @@ public sealed class Vector3FromSpatial : ScalarEnvelope<Vector3>
 {
 	public Vector3FromSpatial(ISpatial<IDecimal> spatial) : base
 	(
-		new ScalarOfDelegate<Vector3>(() => Result(spatial))
+		new ValueOfDelegate<Vector3>(() => Result(spatial))
 	)
 	{
 	}

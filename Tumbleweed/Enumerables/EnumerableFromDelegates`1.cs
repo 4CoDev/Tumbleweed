@@ -42,7 +42,7 @@ public sealed class EnumerableOfDelegates<T> : EnumerableEnvelope<T>
 		new ValuesOfScalars<T>(
 			new SelectedByExpression<Func<T>, IScalar<T>>(
 				delegates,
-				@delegate => new ScalarOfDelegate<T>(@delegate)))
+				@delegate => new ValueOfDelegate<T>(@delegate)))
 	)
 	{
 	}

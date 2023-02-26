@@ -15,7 +15,7 @@ public sealed class NodeOnPath<T> : ScalarEnvelope<T> where T : Node
 	
 	public NodeOnPath(IScalar<string> path) : base
 	(
-		new ScalarOfDelegate<T>(
+		new ValueOfDelegate<T>(
 			() => new ScalarOnPath<PackedScene>(path).Value.Instantiate<T>())
 	)
 	{

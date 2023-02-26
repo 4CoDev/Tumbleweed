@@ -13,7 +13,7 @@ public sealed class NullableFromObject : ScalarEnvelope<string?>
 
 	public NullableFromObject(IScalar<object> @object) : base
 	(
-		new ScalarOfDelegate<string?>(@object.ToString)
+		new ValueOfDelegate<string?>(@object.ToString)
 	)
 	{
 	}

@@ -7,7 +7,7 @@ public sealed class DecimalOfDelegate : DecimalEnvelope
 	public DecimalOfDelegate(Func<IDecimal> @delegate) : base
 	(
 		new DecimalOfScalar(
-			new ScalarOfDelegate<IDecimal>(@delegate))
+			new ValueOfDelegate<IDecimal>(@delegate))
 	)
 	{
 	}

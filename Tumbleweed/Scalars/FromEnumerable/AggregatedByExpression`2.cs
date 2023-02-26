@@ -10,7 +10,7 @@ public sealed class AggregatedByExpression<TFrom, TAccumulate>
 		Func<TAccumulate, TFrom, TAccumulate> func
 	) : base
 	(
-		new ScalarOfDelegate<TAccumulate>(
+		new ValueOfDelegate<TAccumulate>(
 			() => from.Aggregate(seed, func))
 	)
 	{

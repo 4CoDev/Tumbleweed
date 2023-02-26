@@ -14,7 +14,7 @@ public sealed class HashCodeFromObjects : ScalarEnvelope<int>
 	
 	public HashCodeFromObjects(IEnumerable<object> objects) : base
 	(
-		new ScalarOfDelegate<int>(
+		new ValueOfDelegate<int>(
 			() => HashCode.Combine(objects))
 	)
 	{

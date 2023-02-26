@@ -7,7 +7,7 @@ public sealed class SpatialOfDelegate<T> : SpatialEnvelope<T>
 	public SpatialOfDelegate(Func<ISpatial<T>> @delegate) : base
 	(
 		new SpatialOfScalar<T>(
-			new ScalarOfDelegate<ISpatial<T>>(@delegate))
+			new ValueOfDelegate<ISpatial<T>>(@delegate))
 	)
 	{
 	}
