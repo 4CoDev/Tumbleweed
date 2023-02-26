@@ -12,7 +12,7 @@ public sealed class EqualityOfTwoObjects : BitEnvelope
 		object second
 	) : base
 	(
-		new TwoNullableObjects(first, second)
+		new EqualityOfTwoNullables(first, second)
 	)
 	{
 	}

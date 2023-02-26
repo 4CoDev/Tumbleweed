@@ -4,9 +4,9 @@ using Tumbleweed.Scalars;
 
 namespace TumbleGD.Nodes.Placement.FromFiles.OfGodot;
 
-public sealed class NodeOnPath : PlacementEnvelope
+public sealed class PlacementOfNode : PlacementEnvelope
 {
-	public NodeOnPath(Node relation, string path) : this
+	public PlacementOfNode(Node relation, string path) : this
 	(
 		new ScalarOfValue<Node>(relation),
 		new ScalarOfValue<string>(path)
@@ -14,7 +14,7 @@ public sealed class NodeOnPath : PlacementEnvelope
 	{
 	}
 
-	public NodeOnPath
+	public PlacementOfNode
 	(
 		IScalar<Node> relation,
 		IScalar<string> path

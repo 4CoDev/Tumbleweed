@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerables;
 
-namespace Tumbleweed.Strings;
+namespace Tumbleweed.Strings.FromObjects;
 
 public sealed class StringsFromObjects : EnumerableEnvelope<string>
 {

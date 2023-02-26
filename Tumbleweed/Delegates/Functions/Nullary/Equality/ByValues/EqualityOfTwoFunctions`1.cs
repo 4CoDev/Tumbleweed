@@ -24,7 +24,7 @@ public sealed class EqualityOfTwoFunctions<TResult> : BitEnvelope
 	) : base
 	(
 		new BitOfDelegate(
-			() => new TwoNullableObjects(
+			() => new EqualityOfTwoNullables(
 				first.Invoke(),
 				second.Invoke()))
 	)

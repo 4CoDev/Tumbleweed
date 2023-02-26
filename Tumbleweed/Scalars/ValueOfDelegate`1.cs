@@ -1,6 +1,6 @@
 using Tumbleweed.Delegates.Functions.Nullary;
-using Tumbleweed.HashCodes;
-using Tumbleweed.Strings;
+using Tumbleweed.Hashes;
+using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Scalars;
 
@@ -19,13 +19,13 @@ public sealed class ValueOfDelegate<T> : IScalar<T>
 	public T Value => function.Invoke();
 
 	public override bool Equals(object? @object) =>
-		new Equality.TwoNullableScalars<T>(this, @object).State;
+		new Equality.EqualityOfTwoNullables<T>(this, @object).State;
 
 	public override int GetHashCode() =>
-		new HashCodeOfObject(function).Value;
+		new CodeOfNullable(Value).Value;
 
 	public override string? ToString() =>
-		new NullableFromObject(function).Value;
+		new NullableFromNullable(Value).Value;
 
 	private readonly INullaryFunction<T> function;
 }

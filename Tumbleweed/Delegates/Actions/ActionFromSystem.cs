@@ -1,5 +1,5 @@
-using Tumbleweed.HashCodes;
-using Tumbleweed.Strings;
+using Tumbleweed.Hashes;
+using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Delegates.Actions;
 
@@ -17,7 +17,7 @@ public class ActionFromSystem : IAction
 	);
 
 	public override int GetHashCode() =>
-		new HashCodeOfObject(@delegate).Value;
+		new CodeOfObject(@delegate).Value;
 
 	public override string? ToString() =>
 		new NullableFromObject(@delegate).ToString();

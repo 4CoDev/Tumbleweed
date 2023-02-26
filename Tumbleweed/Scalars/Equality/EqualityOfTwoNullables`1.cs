@@ -3,9 +3,9 @@ using Tumbleweed.Equality.ByReference;
 
 namespace Tumbleweed.Scalars.Equality;
 
-public sealed class TwoNullableScalars<T> : BitEnvelope
+public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 {
-	public TwoNullableScalars
+	public EqualityOfTwoNullables
 	(
 		object? first,
 		object? second
@@ -19,7 +19,7 @@ public sealed class TwoNullableScalars<T> : BitEnvelope
 	{
 	}
 	
-	public TwoNullableScalars
+	public EqualityOfTwoNullables
 	(
 		IScalar<T>? first,
 		IScalar<T>? second
@@ -39,10 +39,10 @@ public sealed class TwoNullableScalars<T> : BitEnvelope
 	{
 		if (first != null && second != null)
 			return new EqualityOfTwoScalars<T>(first, second);
-		return new TwoNullableObjects(first, second);
+		return new EqualityOfTwoNullables(first, second);
 	}
 
-	private TwoNullableScalars(IBit bit) : base(bit)
+	private EqualityOfTwoNullables(IBit bit) : base(bit)
 	{
 	}
 }

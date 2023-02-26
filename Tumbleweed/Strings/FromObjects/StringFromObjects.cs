@@ -2,7 +2,7 @@ using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
 using Tumbleweed.Strings.FromEnumerable;
 
-namespace Tumbleweed.Strings;
+namespace Tumbleweed.Strings.FromObjects;
 
 public sealed class StringFromObjects : ScalarEnvelope<string>
 {
