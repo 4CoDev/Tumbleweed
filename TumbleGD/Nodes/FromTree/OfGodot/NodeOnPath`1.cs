@@ -6,6 +6,14 @@ namespace TumbleGD.Nodes.FromTree.OfGodot;
 
 public sealed class NodeOnPath<T> : ScalarEnvelope<T> where T : Node
 {
+	public NodeOnPath(Node relation, string path) : this
+	(
+		new ScalarOfValue<Node>(relation),
+		path
+	)
+	{
+	}
+	
 	public NodeOnPath(IScalar<Node> relation, string path) : this
 	(
 		relation, new ScalarOfValue<string>(path)

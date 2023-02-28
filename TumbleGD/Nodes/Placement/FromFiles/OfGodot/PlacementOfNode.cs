@@ -13,6 +13,18 @@ public sealed class PlacementOfNode : PlacementEnvelope
 	)
 	{
 	}
+	
+	public PlacementOfNode
+	(
+		IScalar<Node> relation,
+		string path
+	) : this
+	(
+		relation,
+		new ScalarOfValue<string>(path)
+	)
+	{
+	}
 
 	public PlacementOfNode
 	(
@@ -22,7 +34,7 @@ public sealed class PlacementOfNode : PlacementEnvelope
 	(
 		new Placement.OfGodot.PlacementOfNode(
 			relation,
-			new NodeOnPath<Node>(path))
+			new NodeOnPath(path))
 	)
 	{
 	}
