@@ -1,4 +1,5 @@
 using Tumbleweed.Delegates.Actions;
+using Tumbleweed.Delegates.Actions.Nullary;
 
 namespace TumbleGD.Nodes.Pools;
 
@@ -6,9 +7,9 @@ public sealed class PoolWithValues : INodePool
 {
 	public PoolWithValues
 	(
-		IDictionary<object, IAction> graphicals,
-		IDictionary<object, IAction> physicals,
-		IDictionary<object, IAction> inputtings,
+		IDictionary<object, INullaryAction> graphicals,
+		IDictionary<object, INullaryAction> physicals,
+		IDictionary<object, INullaryAction> inputtings,
 		IDictionary<object, object> listenings
 	)
 	{
@@ -18,11 +19,11 @@ public sealed class PoolWithValues : INodePool
 		Listenings = listenings;
 	}
 	
-	public IDictionary<object, IAction> Graphicals { get; }
+	public IDictionary<object, INullaryAction> Graphicals { get; }
 
-	public IDictionary<object, IAction> Physicals { get; }
+	public IDictionary<object, INullaryAction> Physicals { get; }
 
-	public IDictionary<object, IAction> Inputs { get; }
+	public IDictionary<object, INullaryAction> Inputs { get; }
 	
 	public IDictionary<object, object> Listenings { get; }
 }

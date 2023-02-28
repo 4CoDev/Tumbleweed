@@ -1,14 +1,14 @@
 using Tumbleweed.Hashes;
 using Tumbleweed.Strings.FromObjects;
 
-namespace Tumbleweed.Delegates.Actions;
+namespace Tumbleweed.Delegates.Actions.Nullary;
 
-public class ActionFromSystem : IAction
+public class ActionFromSystem : INullaryAction
 {
 	public ActionFromSystem(Action @delegate) =>
 		this.@delegate = @delegate;
 
-	public void Action() => @delegate();
+	public void Invoke() => @delegate();
 
 	public override bool Equals(object? @object) =>
 	(
