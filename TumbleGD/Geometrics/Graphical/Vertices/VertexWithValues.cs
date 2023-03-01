@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
@@ -10,10 +10,10 @@ public sealed class VertexWithValues : IVertex
 {
 	public VertexWithValues
 	(
-		ISpatial<IDecimal> translation,
-		ISpatial<IDecimal> normal,
+		ISpatial<IFractional> translation,
+		ISpatial<IFractional> normal,
 		IScalar<Color> color,
-		IPlanar<IDecimal> uv
+		IPlanar<IFractional> uv
 	)
 	{
 		Translation = translation;
@@ -22,11 +22,11 @@ public sealed class VertexWithValues : IVertex
 		UV = uv;
 	}
 	
-	public ISpatial<IDecimal> Translation { get; }
+	public ISpatial<IFractional> Translation { get; }
 	
-	public ISpatial<IDecimal> Normal { get; }
+	public ISpatial<IFractional> Normal { get; }
 	
 	public IScalar<Color> Color { get; }
 	
-	public IPlanar<IDecimal> UV { get; }
+	public IPlanar<IFractional> UV { get; }
 }

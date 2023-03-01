@@ -1,4 +1,5 @@
 using Tumbleweed.Numerics.Integers;
+using Tumbleweed.Numerics.Integers.Signed;
 
 namespace Tumbleweed.Arrays;
 
@@ -9,7 +10,7 @@ public abstract class ArrayEnvelope<T> : IArray<T>
 		this.array = array;
 	}
 	
-	public T this[IEnumerable<IInteger> indices]
+	public T this[IEnumerable<ISignedInteger> indices]
 	{
 		get => array[indices];
 	}

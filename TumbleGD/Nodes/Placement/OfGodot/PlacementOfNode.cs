@@ -23,13 +23,11 @@ public sealed class PlacementOfNode : INodePlacement
 		this.node = node;
 	}
 
-	public void Place()
-	{
+	public void Place() =>
 		relation.Value.AddChild(node.Value);
-	}
 
 	public void Remove() =>
-		node.Value.QueueFree();
+		relation.Value.RemoveChild(node.Value);
 
 	private readonly IScalar<Node> relation;
 

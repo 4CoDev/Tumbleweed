@@ -1,6 +1,5 @@
 using Godot;
 using TumbleGD.Numerics.Decimals.Spatials.ToGodot;
-using Tumbleweed.Numerics.Decimals;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
 

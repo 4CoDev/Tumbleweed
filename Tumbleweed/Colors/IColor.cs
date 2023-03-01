@@ -1,12 +1,12 @@
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 
 namespace Tumbleweed.Colors;
 
 public interface IColor
 {
-	IDecimal Red { get; }
+	IFractional Red { get; }
 	
-	IDecimal Green { get; }
+	IFractional Green { get; }
 	
-	IDecimal Blue { get; }
+	IFractional Blue { get; }
 }

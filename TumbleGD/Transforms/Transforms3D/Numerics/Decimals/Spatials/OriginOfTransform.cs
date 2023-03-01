@@ -1,12 +1,12 @@
 using Godot;
 using TumbleGD.Numerics.Decimals.Spatials.FromGodot;
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Transforms.Transforms3D.Numerics.Decimals.Spatials;
 
-public sealed class OriginOfTransform : SpatialEnvelope<IDecimal>
+public sealed class OriginOfTransform : SpatialEnvelope<IFractional>
 {
 	public OriginOfTransform(IScalar<Transform3D> transform) : base
 	(

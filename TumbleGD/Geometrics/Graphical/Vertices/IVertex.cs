@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
@@ -8,11 +8,11 @@ namespace TumbleGD.Geometrics.Graphical.Vertices;
 
 public interface IVertex
 {
-	ISpatial<IDecimal> Translation { get; }
+	ISpatial<IFractional> Translation { get; }
 
-	ISpatial<IDecimal> Normal { get; }
+	ISpatial<IFractional> Normal { get; }
 	
 	IScalar<Color> Color { get; }
 	
-	IPlanar<IDecimal> UV { get; }
+	IPlanar<IFractional> UV { get; }
 }

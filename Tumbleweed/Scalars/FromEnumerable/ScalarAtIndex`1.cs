@@ -1,11 +1,12 @@
 using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.ToSystem.Ints32;
+using Tumbleweed.Numerics.Integers.Signed;
+using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
 
 namespace Tumbleweed.Scalars.FromEnumerable;
 
 public sealed class ScalarAtIndex<T> : IScalar<T>
 {
-	public ScalarAtIndex(IEnumerable<T> enumerable, IInteger index)
+	public ScalarAtIndex(IEnumerable<T> enumerable, ISignedInteger index)
 	{
 		this.enumerable = enumerable;
 		this.index = index;
@@ -14,9 +15,9 @@ public sealed class ScalarAtIndex<T> : IScalar<T>
 	public T Value =>
 		new FromSystem.ScalarAtIndex<T>(
 			enumerable,
-			new Int32FromInteger(index)).Value;
+			new Int32FromSigned(index)).Value;
 
 	private readonly IEnumerable<T> enumerable;
 
-	private readonly IInteger index;
+	private readonly ISignedInteger index;
 }

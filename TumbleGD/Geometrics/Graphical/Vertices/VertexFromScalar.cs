@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
@@ -13,13 +13,13 @@ public sealed class VertexFromScalar : IVertex
 		this.scalar = scalar;
 	}
 	
-	public ISpatial<IDecimal> Translation => scalar.Value.Translation;
+	public ISpatial<IFractional> Translation => scalar.Value.Translation;
 
-	public ISpatial<IDecimal> Normal => scalar.Value.Normal;
+	public ISpatial<IFractional> Normal => scalar.Value.Normal;
 
 	public IScalar<Color> Color => scalar.Value.Color;
 
-	public IPlanar<IDecimal> UV => scalar.Value.UV;
+	public IPlanar<IFractional> UV => scalar.Value.UV;
 
 	private readonly IScalar<IVertex> scalar;
 }

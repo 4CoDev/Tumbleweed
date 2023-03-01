@@ -1,17 +1,17 @@
 using Godot;
 using TumbleGD.Transforms.Transforms3D.FromSpatials;
 using TumbleGD.Transforms.Transforms3D.Numerics.Binaries.Spatials.OfGodot;
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Numerics.Decimals.Spatials.FromGodot;
 
-public sealed class TransformedSpatial : SpatialEnvelope<IDecimal>
+public sealed class TransformedSpatial : SpatialEnvelope<IFractional>
 {
 	public TransformedSpatial
 	(
-		ISpatial<IDecimal> spatial,
+		ISpatial<IFractional> spatial,
 		IScalar<Transform3D> transform
 	) : base
 	(

@@ -1,5 +1,5 @@
 using Tumbleweed.Bits.FromSystem;
-using Tumbleweed.Numerics.Integers.OfSystem.Ints32;
+using Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Bits.FromBytes.FromSystem.Scalar;
@@ -16,8 +16,8 @@ public sealed class BitWithIndex : IScalar<IBit>
 	{
 		get
 		{
-			IScalar<int> positive = new PositiveNumber(index);
-			IScalar<int> bounded = new LessThenNumber(positive, new NumberOfBits());
+			IScalar<int> positive = new PositiveInt32(index);
+			IScalar<int> bounded = new LessThenInt32(positive, new NumberOfBits());
 			return new BitFromBoolean(
 				new ValueOfDelegate<bool>(
 					() => (@byte.Value & (1 << bounded.Value)) != 0));

@@ -1,5 +1,6 @@
 using Tumbleweed.Enumerables.Numerics.Integers;
 using Tumbleweed.Numerics.Integers;
+using Tumbleweed.Numerics.Integers.Signed;
 using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Arrays.FromEnumerable;
@@ -9,14 +10,14 @@ public sealed class MultidimensionalArray<T> : IArray<T>
 	public MultidimensionalArray
 	(
 		IEnumerable<T> elements,
-		IEnumerable<IInteger> dimensions
+		IEnumerable<ISignedInteger> dimensions
 	)
 	{
 		this.elements = elements;
 		this.dimensions = dimensions;
 	}
 
-	public T this[IEnumerable<IInteger> indices]
+	public T this[IEnumerable<ISignedInteger> indices]
 	{
 		get => new ScalarAtIndex<T>(
 			elements,
@@ -25,5 +26,5 @@ public sealed class MultidimensionalArray<T> : IArray<T>
 
 	private readonly IEnumerable<T> elements;
 
-	private readonly IEnumerable<IInteger> dimensions;
+	private readonly IEnumerable<ISignedInteger> dimensions;
 }

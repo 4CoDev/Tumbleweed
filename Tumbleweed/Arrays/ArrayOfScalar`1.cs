@@ -1,4 +1,5 @@
 using Tumbleweed.Numerics.Integers;
+using Tumbleweed.Numerics.Integers.Signed;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays;
@@ -10,7 +11,7 @@ public sealed class ArrayOfScalar<T> : IArray<T>
 		this.scalar = scalar;
 	}
 	
-	public T this[IEnumerable<IInteger> indices]
+	public T this[IEnumerable<ISignedInteger> indices]
 	{
 		get => scalar.Value[indices];
 	}

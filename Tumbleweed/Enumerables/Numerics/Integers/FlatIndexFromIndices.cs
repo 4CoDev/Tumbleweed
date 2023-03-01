@@ -1,17 +1,18 @@
 using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.FromSystem;
+using Tumbleweed.Numerics.Integers.Signed;
+using Tumbleweed.Numerics.Integers.Signed.FromSystem;
 
 namespace Tumbleweed.Enumerables.Numerics.Integers;
 
-public sealed class FlatIndexFromIndices : IntegerEnvelope
+public sealed class FlatIndexFromIndices : SignedEnvelope
 {
 	public FlatIndexFromIndices
 	(
-		IEnumerable<IInteger> indices,
-		IEnumerable<IInteger> dimensions
+		IEnumerable<ISignedInteger> indices,
+		IEnumerable<ISignedInteger> dimensions
 	) : base
 	(
-		new IntegerFromInt32(
+		new SignedFromInt32(
 			new ToSystem.FlatIndexFromIndices(indices, dimensions))
 	)
 	{

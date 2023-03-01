@@ -1,4 +1,4 @@
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 
 namespace Tumbleweed.Colors;
 
@@ -6,9 +6,9 @@ public sealed class ColorWithValues : IColor
 {
 	public ColorWithValues
 	(
-		IDecimal red,
-		IDecimal green,
-		IDecimal blue
+		IFractional red,
+		IFractional green,
+		IFractional blue
 	)
 	{
 		Red = red;
@@ -16,9 +16,9 @@ public sealed class ColorWithValues : IColor
 		Blue = blue;
 	}
 	
-	public IDecimal Red { get; }
+	public IFractional Red { get; }
 	
-	public IDecimal Green { get; }
+	public IFractional Green { get; }
 	
-	public IDecimal Blue { get; }
+	public IFractional Blue { get; }
 }

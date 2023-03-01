@@ -2,7 +2,7 @@ using Godot;
 using TumbleGD.Colors;
 using TumbleGD.Numerics.Decimals.Planars.FromGodot;
 using TumbleGD.Numerics.Decimals.Spatials.FromGodot;
-using Tumbleweed.Numerics.Decimals;
+using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Spatial;
 using Tumbleweed.Scalars;
@@ -21,17 +21,17 @@ public sealed class VertexWithIndex : IVertex
 		this.vertex = vertex;
 	}
 	
-	public ISpatial<IDecimal> Translation =>
+	public ISpatial<IFractional> Translation =>
 		new SpatialFromVector3(
 			meshDataTool.Value.GetVertex(vertex.Value));
 
-	public ISpatial<IDecimal> Normal =>
+	public ISpatial<IFractional> Normal =>
 		new SpatialFromVector3(
 			meshDataTool.Value.GetVertexNormal(vertex.Value));
 
 	public IScalar<Color> Color => new ColorFromMeshDataTool(meshDataTool, vertex);
 
-	public IPlanar<IDecimal> UV =>
+	public IPlanar<IFractional> UV =>
 		new PlanarFromVector2(
 			meshDataTool.Value.GetVertexUV(vertex.Value));
 
