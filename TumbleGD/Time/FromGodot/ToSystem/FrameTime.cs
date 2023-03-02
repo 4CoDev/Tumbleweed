@@ -5,10 +5,17 @@ namespace TumbleGD.Time.FromGodot.ToSystem;
 
 public sealed class FrameTime : ScalarEnvelope<double>
 {
-	public FrameTime() : base
+	public FrameTime(Node node) : this
+	(
+		new ScalarOfValue<Node>(node)
+	)
+	{
+	}
+	
+	public FrameTime(IScalar<Node> node) : base
 	(
 		new ValueOfDelegate<double>(
-			() => 1.0 / Engine.GetFramesPerSecond())
+			() => node.Value.GetProcessDeltaTime())
 	)
 	{
 	}

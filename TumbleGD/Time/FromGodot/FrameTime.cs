@@ -1,14 +1,23 @@
+using Godot;
 using Tumbleweed.Numerics.Fractional;
 using Tumbleweed.Numerics.Fractional.FromSystem;
+using Tumbleweed.Scalars;
 
 namespace TumbleGD.Time.FromGodot;
 
 public sealed class FrameTime : FractionalEnvelope
 {
-	public FrameTime() : base
+	public FrameTime(Node node) : this
+	(
+		new ScalarOfValue<Node>(node)
+	)
+	{
+	}
+	
+	public FrameTime(IScalar<Node> node) : base
 	(
 		new FractionalFromDouble(
-			new ToSystem.FrameTime())
+			new ToSystem.FrameTime(node))
 	)
 	{
 	}

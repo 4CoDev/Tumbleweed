@@ -5,10 +5,17 @@ namespace TumbleGD.Time.FromGodot.ToSystem;
 
 public sealed class PhysicsTime : ScalarEnvelope<double>
 {
-	public PhysicsTime() : base
+	public PhysicsTime(Node node) : this
+	(
+		new ScalarOfValue<Node>(node)
+	)
+	{
+	}
+	
+	public PhysicsTime(IScalar<Node> node) : base
 	(
 		new ValueOfDelegate<double>(
-			() => 1.0 / Engine.PhysicsTicksPerSecond)
+			() => node.Value.GetPhysicsProcessDeltaTime())
 	)
 	{
 	}

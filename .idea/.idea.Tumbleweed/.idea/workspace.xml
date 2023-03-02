@@ -12,8 +12,8 @@
     <setting file="file://$PROJECT_DIR$/TumbleGD/Numerics/Decimals/Spatials/ToGodot/Vector3FromSpatial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Arrays/Linears/ArrayFromEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Bytes/BytesFromBits.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Tumbleweed/Numerics/Decimals/Planars/Arithmetics/DifferenceOfPlanars.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Tumbleweed/Numerics/Integers/OfSystem/Ints32/LessThenNumbers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tumbleweed/Numerics/Fractional/Planars/Arithmetics/DifferenceOfPlanars.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tumbleweed/Numerics/Integers/Signed/OfSystem/Ints32/LessThenInts32.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Scalars/Equality/EqualityOfTwoNullables`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Strings/EmptyableFromNullable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -40,7 +40,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish TumbleGD to folder">
+  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
     <configuration name="Publish TumbleGD to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="2061793969843883114" uuid_low="-4681523822283700833" />
       <method v="2" />
