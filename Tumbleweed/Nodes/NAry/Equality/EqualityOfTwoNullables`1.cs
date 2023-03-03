@@ -1,7 +1,8 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Equality.ByReference;
+using Tumbleweed.Scalars;
 
-namespace Tumbleweed.Scalars.Equality;
+namespace Tumbleweed.Nodes.NAry.Equality;
 
 public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 {
@@ -23,28 +24,28 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 		IScalar<object?> second
 	) : this
 	(
-		new NullableAsType<IScalar<T>>(first),
-		new NullableAsType<IScalar<T>>(second)
+		new NullableAsType<INAryNode<T>>(first),
+		new NullableAsType<INAryNode<T>>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<T>? first,
-		IScalar<T>? second
+		INAryNode<T>? first,
+		INAryNode<T>? second
 	) : this
 	(
-		new ScalarOfValue<IScalar<T>?>(first),
-		new ScalarOfValue<IScalar<T>?>(second)
+		new ScalarOfValue<INAryNode<T>?>(first),
+		new ScalarOfValue<INAryNode<T>?>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<IScalar<T>?> first,
-		IScalar<IScalar<T>?> second
+		IScalar<INAryNode<T>?> first,
+		IScalar<INAryNode<T>?> second
 	) : base
 	(
 		new BitOfDelegate(
@@ -57,12 +58,12 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 
 	private static IBit Function
 	(
-		IScalar<T>? first,
-		IScalar<T>? second
+		INAryNode<T>? first,
+		INAryNode<T>? second
 	)
 	{
 		if (first != null && second != null)
-			return new EqualityOfTwoScalars<T>(first, second);
+			return new EqualityOfTwoNodes<T>(first, second);
 		return new EqualityOfTwoNullables(first, second);
 	}
 }

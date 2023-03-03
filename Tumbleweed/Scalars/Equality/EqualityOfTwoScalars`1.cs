@@ -11,8 +11,8 @@ public sealed class EqualityOfTwoScalars<T> : BitEnvelope
 		object second
 	) : this
 	(
-		new ScalarFromObject<T>(first),
-		new ScalarFromObject<T>(second)
+		new ObjectAsScalar<T>(first),
+		new ObjectAsScalar<T>(second)
 	)
 	{
 	}

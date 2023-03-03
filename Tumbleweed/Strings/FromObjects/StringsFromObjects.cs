@@ -15,7 +15,7 @@ public sealed class StringsFromObjects : EnumerableEnvelope<string>
 	(
 		new SelectedByExpression<object, string>(
 			objects,
-			@object => new EmptyableFromNullable(
+			@object => new EmptyWhenNull(
 				new NullableFromObject(@object)).Value)
 	)
 	{
