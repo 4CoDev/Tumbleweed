@@ -24,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/TumbleGD/Numerics/Decimals/Spatials/ToGodot/Vector3FromSpatial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Arrays/Linears/ArrayFromEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Bytes/BytesFromBits.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tumbleweed/Nodes/NAry/Equality/EqualityOfTwoNodes`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Numerics/Fractional/Planars/Arithmetics/DifferenceOfPlanars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Numerics/Integers/Signed/OfSystem/Ints32/LessThenInts32.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Scalars/Equality/EqualityOfTwoNullables`1.cs" root0="FORCE_HIGHLIGHTING" />
