@@ -1,9 +1,8 @@
-using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.Signed;
+using Tumbleweed.Numerics.Integers.Natural;
 
 namespace Tumbleweed.Arrays;
 
 public interface IArray<out T>
 {
-	T this[IEnumerable<ISignedInteger> indices] { get; }
+	T this[IEnumerable<INaturalInteger> indices] { get; }
 }

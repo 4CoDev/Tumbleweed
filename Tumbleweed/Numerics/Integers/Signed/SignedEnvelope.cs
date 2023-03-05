@@ -1,23 +1,16 @@
 using Tumbleweed.Bits;
+using Tumbleweed.Numerics.Integers.Natural;
 
 namespace Tumbleweed.Numerics.Integers.Signed;
 
 public abstract class SignedEnvelope : ISignedInteger
 {
-	protected SignedEnvelope(ISignedInteger integer)
-	{
+	protected SignedEnvelope(ISignedInteger integer) =>
 		this.integer = integer;
-	}
 	
-	public IBit Positive
-	{
-		get => integer.Positive;
-	}
+	public IBit Positive => integer.Positive;
 
-	public IEnumerable<IBit> Number
-	{
-		get => integer.Number;
-	}
-	
+	public INaturalInteger Natural => integer.Natural;
+
 	private readonly ISignedInteger integer;
 }

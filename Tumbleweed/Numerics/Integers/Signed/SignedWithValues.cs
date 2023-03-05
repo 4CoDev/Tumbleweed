@@ -1,16 +1,17 @@
 using Tumbleweed.Bits;
+using Tumbleweed.Numerics.Integers.Natural;
 
 namespace Tumbleweed.Numerics.Integers.Signed;
 
 public sealed class SignedWithValues : ISignedInteger
 {
-	public SignedWithValues(IBit positive, IEnumerable<IBit> bits)
+	public SignedWithValues(IBit positive, INaturalInteger natural)
 	{
 		Positive = positive;
-		Number = bits;
+		Natural = natural;
 	}
 	
 	public IBit Positive { get; }
 	
-	public IEnumerable<IBit> Number { get; }
+	public INaturalInteger Natural { get; }
 }

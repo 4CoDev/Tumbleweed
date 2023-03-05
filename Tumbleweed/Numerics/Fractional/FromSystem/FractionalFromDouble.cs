@@ -1,4 +1,5 @@
-using Tumbleweed.Numerics.Bits.FromSystem.FromDoubles;
+using Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Exponent;
+using Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Mantissa;
 using Tumbleweed.Numerics.Integers.Signed.FromSystem;
 using Tumbleweed.Scalars;
 

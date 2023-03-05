@@ -1,6 +1,5 @@
-using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.Signed;
-using Tumbleweed.Numerics.Integers.Signed.FromEnumerable;
+using Tumbleweed.Numerics.Integers.Natural;
+using Tumbleweed.Numerics.Integers.Natural.FromEnumerable;
 using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Arrays.Linears;
@@ -15,12 +14,12 @@ public sealed class ArrayFromEnumerable<T> : IArray<T>
 		this.enumerable = enumerable;
 	}
 
-	public T this[IEnumerable<ISignedInteger> indices]
-	{
-		get => new ScalarAtIndex<T>(
+	public T this[IEnumerable<INaturalInteger> indices] => 
+	(
+		new ScalarAtIndex<T>(
 			enumerable,
-			new SingleElementOfEnumerable(indices)).Value;
-	}
+			new SingleElementOfEnumerable(indices)).Value
+	);
 
 	private readonly IEnumerable<T> enumerable;
 }

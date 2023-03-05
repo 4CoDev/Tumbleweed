@@ -1,16 +1,15 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.Signed;
-using Tumbleweed.Numerics.Integers.Signed.FromSystem;
+using Tumbleweed.Numerics.Integers.Natural;
+using Tumbleweed.Numerics.Integers.Natural.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Spatials.FromSystem;
 
-public sealed class SizeOfArray<T> : EnumerableEnvelope<ISignedInteger>
+public sealed class SizeOfArray<T> : EnumerableEnvelope<INaturalInteger>
 {
 	public SizeOfArray(IScalar<T[,,]> array) : base
 	(
-		new SignedsFromInts32(
+		new NaturalsFromInts32(
 			new OfSystem.SizeOfArray<T>(array))
 	)
 	{

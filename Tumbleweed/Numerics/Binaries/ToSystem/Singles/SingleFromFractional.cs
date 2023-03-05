@@ -11,8 +11,8 @@ public sealed class SingleFromFractional : ScalarEnvelope<float>
 	(
 		new SingleFromBits(
 			new EnumerableWithElements<IBit>(
-				fractional.Mantissa.Number,
-				fractional.Exponent.Number,
+				fractional.Mantissa.Natural.Bits,
+				fractional.Exponent.Natural.Bits,
 				new EnumerableWithElements<IBit>(
 					fractional.Exponent.Positive,
 					fractional.Mantissa.Positive)))

@@ -16,10 +16,7 @@ public sealed class BitFromBoolean : IBit
 		this.boolean = boolean;
 	}
 
-	public bool State
-	{
-		get => boolean.Value;
-	}
+	public bool State => boolean.Value;
 
 	private readonly IScalar<bool> boolean;
 }

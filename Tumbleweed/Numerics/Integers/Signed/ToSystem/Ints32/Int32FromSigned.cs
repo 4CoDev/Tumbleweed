@@ -10,7 +10,7 @@ public sealed class Int32FromSigned : ScalarEnvelope<int>
 	(
 		new Int32FromBits(
 			new EnumerableWithElement<IBit>(
-				integer.Number,
+				integer.Natural.Bits,
 				integer.Positive))
 	)
 	{

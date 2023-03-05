@@ -9,10 +9,7 @@ public abstract class BitEnvelope : IBit
 		this.bit = bit;
 	}
 
-	public bool State
-	{
-		get => bit.State;
-	}
-	
+	public bool State => bit.State;
+
 	private readonly IBit bit;
 }

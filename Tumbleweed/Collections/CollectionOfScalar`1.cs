@@ -45,15 +45,9 @@ public sealed class CollectionOfScalar<T> : ICollection<T>
 		return scalar.Value.Remove(item);
 	}
 
-	public int Count
-	{
-		get => scalar.Value.Count;
-	}
+	public int Count => scalar.Value.Count;
 
-	public bool IsReadOnly
-	{
-		get => scalar.Value.IsReadOnly;
-	}
-	
+	public bool IsReadOnly => scalar.Value.IsReadOnly;
+
 	private readonly IScalar<ICollection<T>> scalar;
 }

@@ -9,20 +9,11 @@ public sealed class ColorEnvelope : IColor
 		this.color = color;
 	}
 
-	public IFractional Red
-	{
-		get => color.Red;
-	}
+	public IFractional Red => color.Red;
 
-	public IFractional Green
-	{
-		get => color.Green;
-	}
+	public IFractional Green => color.Green;
 
-	public IFractional Blue
-	{
-		get => color.Blue;
-	}
-	
+	public IFractional Blue => color.Blue;
+
 	private readonly IColor color;
 }
