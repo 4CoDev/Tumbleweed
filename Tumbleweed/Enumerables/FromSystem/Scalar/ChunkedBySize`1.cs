@@ -4,7 +4,7 @@ namespace Tumbleweed.Enumerables.FromSystem.Scalar;
 
 public sealed class ChunkedBySize<T> : IScalar<IEnumerable<IEnumerable<T>>>
 {
-	public ChunkedBySize(IEnumerable<T> enumerable, IScalar<int> size)
+	public ChunkedBySize(IEnumerable<T> enumerable, IScalar<Int32> size)
 	{
 		this.enumerable = enumerable;
 		this.size = size;
@@ -14,5 +14,5 @@ public sealed class ChunkedBySize<T> : IScalar<IEnumerable<IEnumerable<T>>>
 
 	private readonly IEnumerable<T> enumerable;
 
-	private readonly IScalar<int> size;
+	private readonly IScalar<Int32> size;
 }

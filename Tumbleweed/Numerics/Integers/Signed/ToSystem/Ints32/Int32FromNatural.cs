@@ -6,7 +6,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
 
-public sealed class Int32FromNatural : ScalarEnvelope<int>
+public sealed class Int32FromNatural : ScalarEnvelope<Int32>
 {
 	public Int32FromNatural(INaturalInteger natural) : base
 	(

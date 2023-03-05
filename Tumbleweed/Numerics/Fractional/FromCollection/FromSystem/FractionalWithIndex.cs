@@ -7,11 +7,11 @@ public sealed class FractionalWithIndex : FractionalEnvelope
 	public FractionalWithIndex
 	(
 		ICollection<IFractional> decimals,
-		int index
+		Int32 index
 	) : this
 	(
 		decimals,
-		new ScalarOfValue<int>(index)
+		new ScalarOfValue<Int32>(index)
 	)
 	{
 	}
@@ -19,7 +19,7 @@ public sealed class FractionalWithIndex : FractionalEnvelope
 	public FractionalWithIndex
 	(
 		ICollection<IFractional> decimals,
-		IScalar<int> index
+		IScalar<Int32> index
 	) : base
 	(
 		new FractionalOfDelegate(

@@ -2,14 +2,14 @@ namespace Tumbleweed.Scalars;
 
 public sealed class NullableAsType<T> : ScalarEnvelope<T?>
 {
-	public NullableAsType(object? value) : this
+	public NullableAsType(Object? value) : this
 	(
-		new ScalarOfValue<object?>(value)
+		new ScalarOfValue<Object?>(value)
 	)
 	{
 	}
 	
-	public NullableAsType(IScalar<object?> scalar) : base
+	public NullableAsType(IScalar<Object?> scalar) : base
 	(
 		new ValueOfDelegate<T?>(
 			() => (T?) scalar.Value)

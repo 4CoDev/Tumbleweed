@@ -6,11 +6,11 @@ namespace TumbleGD.Nodes.Pools;
 
 public interface INodePool
 {
-	IDictionary<object, INullaryAction> Graphicals { get; }
+	IDictionary<Object, INullaryAction> Graphicals { get; }
 	
-	IDictionary<object, INullaryAction> Physicals { get; }
+	IDictionary<Object, INullaryAction> Physicals { get; }
 	
-	IDictionary<object, INullaryAction> Inputs { get; }
+	IDictionary<Object, INullaryAction> Inputs { get; }
 	
-	IDictionary<object, object> Listenings { get; }
+	IDictionary<Object, Object> Listenings { get; }
 }

@@ -8,7 +8,7 @@ public sealed class MeshDataToolFromSurface : IScalar<MeshDataTool>
 	public MeshDataToolFromSurface
 	(
 		IScalar<ArrayMesh> mesh,
-		IScalar<int> surface
+		IScalar<Int32> surface
 	)
 	{
 		this.mesh = mesh;
@@ -27,5 +27,5 @@ public sealed class MeshDataToolFromSurface : IScalar<MeshDataTool>
 
 	private readonly IScalar<ArrayMesh> mesh;
 	
-	private readonly IScalar<int> surface;
+	private readonly IScalar<Int32> surface;
 }

@@ -5,9 +5,9 @@ namespace Tumbleweed.Enumerables.FromSystem;
 
 public sealed class EnumerableWithSize<T> : EnumerableEnvelope<T>
 {
-	public EnumerableWithSize(IEnumerable<T> enumerable, int size) : this
+	public EnumerableWithSize(IEnumerable<T> enumerable, Int32 size) : this
 	(
-		enumerable, new ScalarOfValue<int>(size)
+		enumerable, new ScalarOfValue<Int32>(size)
 	)
 	{
 	}
@@ -15,7 +15,7 @@ public sealed class EnumerableWithSize<T> : EnumerableEnvelope<T>
 	public EnumerableWithSize
 	(
 		IEnumerable<T> enumerable,
-		IScalar<int> size
+		IScalar<Int32> size
 	) : base
 	(
 		new CollectionWithSize<T>(new List<T>(enumerable), size)

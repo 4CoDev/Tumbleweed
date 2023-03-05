@@ -4,16 +4,16 @@ namespace Tumbleweed.Numerics.Integers.Signed.FromSystem;
 
 public class SignedsFromInts32 : EnumerableEnvelope<ISignedInteger>
 {
-	public SignedsFromInts32(params int[] ints) : this
+	public SignedsFromInts32(params Int32[] ints) : this
 	(
-		new EnumerableWithElements<int>(ints)
+		new EnumerableWithElements<Int32>(ints)
 	)
 	{
 	}
 
-	public SignedsFromInts32(IEnumerable<int> ints) : base
+	public SignedsFromInts32(IEnumerable<Int32> ints) : base
 	(
-		new SelectedByExpression<int, ISignedInteger>(
+		new SelectedByExpression<Int32, ISignedInteger>(
 			ints,
 			@int => new SignedFromInt32(@int))
 	)

@@ -2,11 +2,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Strings.FromCollection;
 
-public sealed class CommaSeparatedStrings : ScalarEnvelope<string>
+public sealed class CommaSeparatedStrings : ScalarEnvelope<String>
 {
-	public CommaSeparatedStrings(ICollection<string> strings) : base
+	public CommaSeparatedStrings(ICollection<String> strings) : base
 	(
-		new ValueOfDelegate<string>(
+		new ValueOfDelegate<String>(
 			() => string.Join(", ", strings))
 	)
 	{

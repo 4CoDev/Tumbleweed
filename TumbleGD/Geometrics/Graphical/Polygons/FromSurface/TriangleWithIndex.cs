@@ -12,8 +12,8 @@ public sealed class TriangleWithIndex : EnumerableEnvelope<IVertex>
 	public TriangleWithIndex
 	(
 		IScalar<ArrayMesh> mesh,
-		IScalar<int> surface,
-		IScalar<int> triangle
+		IScalar<Int32> surface,
+		IScalar<Int32> triangle
 	) : base
 	(
 		new VerticesWithIndices(

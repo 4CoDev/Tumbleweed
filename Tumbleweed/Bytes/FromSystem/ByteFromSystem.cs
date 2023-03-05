@@ -6,7 +6,7 @@ namespace Tumbleweed.Bytes.FromSystem;
 
 public sealed class ByteFromSystem : EnumerableEnvelope<IBit>
 {
-	public ByteFromSystem(IScalar<byte> @byte) : base
+	public ByteFromSystem(IScalar<Byte> @byte) : base
 	(
 		new EnumerableOfScalar<IBit>(
 			new Scalar.Byte(@byte))

@@ -5,14 +5,14 @@ namespace TumbleGD.Nodes.FromFiles.OfGodot;
 
 public sealed class NodeOnPath : ScalarEnvelope<Node> 
 {
-	public NodeOnPath(string path) : this
+	public NodeOnPath(String path) : this
 	(
-		new ScalarOfValue<string>(path)
+		new ScalarOfValue<String>(path)
 	)
 	{
 	}
 	
-	public NodeOnPath(IScalar<string> path) : base
+	public NodeOnPath(IScalar<String> path) : base
 	(
 		new NodeOnPath<Node>(path)
 	)

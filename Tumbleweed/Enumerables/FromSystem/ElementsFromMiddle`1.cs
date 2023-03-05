@@ -7,13 +7,13 @@ public sealed class ElementsFromMiddle<T> : EnumerableEnvelope<T>
 	public ElementsFromMiddle
 	(
 		IEnumerable<T> collection,
-		int from,
-		int to
+		Int32 from,
+		Int32 to
 	) : this
 	(
 		collection,
-		new ScalarOfValue<int>(from),
-		new ScalarOfValue<int>(to)
+		new ScalarOfValue<Int32>(from),
+		new ScalarOfValue<Int32>(to)
 	)
 	{
 	}
@@ -21,8 +21,8 @@ public sealed class ElementsFromMiddle<T> : EnumerableEnvelope<T>
 	public ElementsFromMiddle
 	(
 		IEnumerable<T> collection,
-		IScalar<int> from,
-		IScalar<int> to
+		IScalar<Int32> from,
+		IScalar<Int32> to
 	) : base
 	(
 		new EnumerableOfDelegate<T>(

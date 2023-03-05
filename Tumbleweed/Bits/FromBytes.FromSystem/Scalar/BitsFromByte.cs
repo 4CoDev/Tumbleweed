@@ -4,7 +4,7 @@ namespace Tumbleweed.Bits.FromBytes.FromSystem.Scalar;
 
 public sealed class BitsFromByte : IScalar<IEnumerable<IBit>>
 {
-	public BitsFromByte(IScalar<byte> @byte)
+	public BitsFromByte(IScalar<Byte> @byte)
 	{
 		this.@byte = @byte;
 	}
@@ -13,14 +13,14 @@ public sealed class BitsFromByte : IScalar<IEnumerable<IBit>>
 	{
 		get
 		{
-			for (int position = 0; position < new NumberOfBits().Value; position++)
+			for (Int32 position = 0; position < new NumberOfBits().Value; position++)
 			{
 				yield return new FromSystem.BitWithIndex(
 					@byte,
-					new ScalarOfValue<int>(position));
+					new ScalarOfValue<Int32>(position));
 			}
 		}
 	}
 
-	private readonly IScalar<byte> @byte;
+	private readonly IScalar<Byte> @byte;
 }

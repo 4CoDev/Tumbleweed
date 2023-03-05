@@ -2,14 +2,14 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
 
-public sealed class PositiveInt32 : IScalar<int>
+public sealed class PositiveInt32 : IScalar<Int32>
 {
-	public PositiveInt32(IScalar<int> integer)
+	public PositiveInt32(IScalar<Int32> integer)
 	{
 		this.integer = integer;
 	}
 
-	public int Value
+	public Int32 Value
 	{
 		get
 		{
@@ -18,5 +18,5 @@ public sealed class PositiveInt32 : IScalar<int>
 		}
 	}
 
-	private readonly IScalar<int> integer;
+	private readonly IScalar<Int32> integer;
 }

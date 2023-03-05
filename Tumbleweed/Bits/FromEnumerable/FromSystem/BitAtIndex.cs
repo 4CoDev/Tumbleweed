@@ -4,28 +4,28 @@ namespace Tumbleweed.Bits.FromEnumerable.FromSystem;
 
 public sealed class BitAtIndex : BitEnvelope
 {
-	public BitAtIndex(IEnumerable<IBit> bits, int index) : this
+	public BitAtIndex(IEnumerable<IBit> bits, Int32 index) : this
 	(
-		new List<IBit>(bits), new ScalarOfValue<int>(index)
+		new List<IBit>(bits), new ScalarOfValue<Int32>(index)
 	)
 	{
 	}
 	
-	public BitAtIndex(IEnumerable<IBit> bits, IScalar<int> index) : this
+	public BitAtIndex(IEnumerable<IBit> bits, IScalar<Int32> index) : this
 	(
 		new List<IBit>(bits), index
 	)
 	{
 	}
 	
-	public BitAtIndex(ICollection<IBit> bits, int index) : this
+	public BitAtIndex(ICollection<IBit> bits, Int32 index) : this
 	(
-		bits, new ScalarOfValue<int>(index)
+		bits, new ScalarOfValue<Int32>(index)
 	)
 	{
 	}
 	
-	public BitAtIndex(ICollection<IBit> bits, IScalar<int> index) : base
+	public BitAtIndex(ICollection<IBit> bits, IScalar<Int32> index) : base
 	(
 		new BitOfDelegate(
 			() => bits.ElementAt(index.Value))

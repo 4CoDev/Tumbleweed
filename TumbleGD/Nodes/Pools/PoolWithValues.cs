@@ -7,10 +7,10 @@ public sealed class PoolWithValues : INodePool
 {
 	public PoolWithValues
 	(
-		IDictionary<object, INullaryAction> graphicals,
-		IDictionary<object, INullaryAction> physicals,
-		IDictionary<object, INullaryAction> inputtings,
-		IDictionary<object, object> listenings
+		IDictionary<Object, INullaryAction> graphicals,
+		IDictionary<Object, INullaryAction> physicals,
+		IDictionary<Object, INullaryAction> inputtings,
+		IDictionary<Object, Object> listenings
 	)
 	{
 		Graphicals = graphicals;
@@ -19,11 +19,11 @@ public sealed class PoolWithValues : INodePool
 		Listenings = listenings;
 	}
 	
-	public IDictionary<object, INullaryAction> Graphicals { get; }
+	public IDictionary<Object, INullaryAction> Graphicals { get; }
 
-	public IDictionary<object, INullaryAction> Physicals { get; }
+	public IDictionary<Object, INullaryAction> Physicals { get; }
 
-	public IDictionary<object, INullaryAction> Inputs { get; }
+	public IDictionary<Object, INullaryAction> Inputs { get; }
 	
-	public IDictionary<object, object> Listenings { get; }
+	public IDictionary<Object, Object> Listenings { get; }
 }

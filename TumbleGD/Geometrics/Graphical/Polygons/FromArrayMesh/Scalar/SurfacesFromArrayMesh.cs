@@ -17,9 +17,9 @@ public sealed class SurfacesFromArrayMesh : IScalar<IEnumerable<ISurface>>
 		get
 		{
 			IList<ISurface> surfaces = new List<ISurface>();
-			for (int surface = 0; surface < mesh.Value.GetSurfaceCount(); surface++)
+			for (Int32 surface = 0; surface < mesh.Value.GetSurfaceCount(); surface++)
 			{
-				surfaces.Add(new SurfaceWithIndex(mesh, new ScalarOfValue<int>(surface)));
+				surfaces.Add(new SurfaceWithIndex(mesh, new ScalarOfValue<Int32>(surface)));
 			}
 			return surfaces;
 		}

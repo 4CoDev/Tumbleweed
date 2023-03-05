@@ -7,8 +7,8 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 {
 	public EqualityOfTwoNullables
 	(
-		object? first,
-		object? second
+		Object? first,
+		Object? second
 	) : base
 	(
 		new BitOfDelegate(

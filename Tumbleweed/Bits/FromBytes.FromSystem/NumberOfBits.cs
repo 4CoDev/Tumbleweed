@@ -2,7 +2,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Bits.FromBytes.FromSystem;
 
-public sealed class NumberOfBits : IScalar<int>
+public sealed class NumberOfBits : IScalar<Int32>
 {
-	public int Value => new ScalarOfValue<int>(8).Value;
+	public Int32 Value => new ScalarOfValue<Int32>(8).Value;
 }

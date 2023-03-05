@@ -14,7 +14,7 @@ public sealed class VertexWithIndex : IVertex
 	public VertexWithIndex
 	(
 		IScalar<MeshDataTool> meshDataTool,
-		IScalar<int> vertex
+		IScalar<Int32> vertex
 	)
 	{
 		this.meshDataTool = meshDataTool;
@@ -37,5 +37,5 @@ public sealed class VertexWithIndex : IVertex
 
 	private readonly IScalar<MeshDataTool> meshDataTool;
 	
-	private readonly IScalar<int> vertex;
+	private readonly IScalar<Int32> vertex;
 }

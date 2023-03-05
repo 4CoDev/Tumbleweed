@@ -10,16 +10,16 @@ public abstract class PoolEnvelope : INodePool
 		this.pool = pool;
 	}
 	
-	public IDictionary<object, INullaryAction> Graphicals =>
+	public IDictionary<Object, INullaryAction> Graphicals =>
 		pool.Graphicals;
 
-	public IDictionary<object, INullaryAction> Physicals =>
+	public IDictionary<Object, INullaryAction> Physicals =>
 		pool.Physicals;
 
-	public IDictionary<object, INullaryAction> Inputs =>
+	public IDictionary<Object, INullaryAction> Inputs =>
 		pool.Inputs;
 
-	public IDictionary<object, object> Listenings =>
+	public IDictionary<Object, Object> Listenings =>
 		pool.Listenings;
 
 	private readonly INodePool pool;

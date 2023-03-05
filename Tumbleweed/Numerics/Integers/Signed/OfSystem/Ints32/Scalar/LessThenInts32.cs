@@ -2,19 +2,19 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32.Scalar;
 
-public sealed class LessThenInts32 : IScalar<IEnumerable<IScalar<int>>>
+public sealed class LessThenInts32 : IScalar<IEnumerable<IScalar<Int32>>>
 {
 	public LessThenInts32
 	(
-		IEnumerable<IScalar<int>> values,
-		IScalar<int> max
+		IEnumerable<IScalar<Int32>> values,
+		IScalar<Int32> max
 	)
 	{
 		this.values = values;
 		this.max = max;
 	}
 
-	public IEnumerable<IScalar<int>> Value
+	public IEnumerable<IScalar<Int32>> Value
 	{
 		get
 		{
@@ -26,7 +26,7 @@ public sealed class LessThenInts32 : IScalar<IEnumerable<IScalar<int>>>
 		}
 	}
 
-	private readonly IEnumerable<IScalar<int>> values;
+	private readonly IEnumerable<IScalar<Int32>> values;
 	
-	private readonly IScalar<int> max;
+	private readonly IScalar<Int32> max;
 }

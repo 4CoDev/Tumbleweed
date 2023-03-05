@@ -7,10 +7,10 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles;
 
 public sealed class BytesOfDouble : EnumerableEnvelope<IEnumerable<IBit>>
 {
-	public BytesOfDouble(IScalar<double> @double) : base
+	public BytesOfDouble(IScalar<Double> @double) : base
 	(
 		new BytesFromSystem(
-			new EnumerableOfDelegate<byte>(
+			new EnumerableOfDelegate<Byte>(
 				() => BitConverter.GetBytes(@double.Value)))
 	)
 	{

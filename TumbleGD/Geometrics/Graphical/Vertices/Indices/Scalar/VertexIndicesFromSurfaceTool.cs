@@ -6,21 +6,21 @@ using Array = Godot.Collections.Array;
 namespace TumbleGD.Geometrics.Graphical.Vertices.Indices.Scalar;
 
 public sealed class VertexIndicesFromSurfaceTool
-	: IScalar<IEnumerable<IScalar<int>>>
+	: IScalar<IEnumerable<IScalar<Int32>>>
 {
 	public VertexIndicesFromSurfaceTool(IScalar<SurfaceTool> surfaceTool)
 	{
 		this.surfaceTool = surfaceTool;
 	}
 
-	public IEnumerable<IScalar<int>> Value
+	public IEnumerable<IScalar<Int32>> Value
 	{
 		get
 		{
 			Array surfaceAsArrays = surfaceTool.Value.CommitToArrays();
-			const int indexArrayType = (int) Mesh.ArrayType.Index;
-			int[] indicesAsValues = surfaceAsArrays[indexArrayType].AsInt32Array();
-			return new ScalarsOfValues<int>(indicesAsValues);
+			const Int32 indexArrayType = (Int32) Mesh.ArrayType.Index;
+			Int32[] indicesAsValues = surfaceAsArrays[indexArrayType].AsInt32Array();
+			return new ScalarsOfValues<Int32>(indicesAsValues);
 		}
 	}
 

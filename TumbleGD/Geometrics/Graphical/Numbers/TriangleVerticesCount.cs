@@ -2,11 +2,11 @@ using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Numbers;
 
-public sealed class TriangleVerticesCount : ScalarEnvelope<int>
+public sealed class TriangleVerticesCount : ScalarEnvelope<Int32>
 {
 	public TriangleVerticesCount() : base
 	(
-		new ScalarOfValue<int>(3)
+		new ScalarOfValue<Int32>(3)
 	)
 	{
 	}

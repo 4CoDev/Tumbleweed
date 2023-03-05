@@ -3,13 +3,13 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
 
-public sealed class DifferenceOfInts32 : ScalarEnvelope<int>
+public sealed class DifferenceOfInts32 : ScalarEnvelope<Int32>
 {
-	public DifferenceOfInts32(IEnumerable<IScalar<int>> numbers) : base
+	public DifferenceOfInts32(IEnumerable<IScalar<Int32>> numbers) : base
 	(
 		new AggregatedByExpression(
 			numbers,
-			new ScalarOfValue<int>(0),
+			new ScalarOfValue<Int32>(0),
 			(left, right) =>
 				new DifferenceOfTwoInts32(left, right))
 	)

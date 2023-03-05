@@ -7,8 +7,8 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 {
 	public EqualityOfTwoNullables
 	(
-		object? first,
-		object? second
+		Object? first,
+		Object? second
 	) : base
 	(
 		new BitOfDelegate(
@@ -17,7 +17,7 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 	{
 	}
 
-	private static IBit Function(object? first, object? second) =>
+	private static IBit Function(Object? first, Object? second) =>
 	(
 		new BitFromBoolean(
 			first == second ||

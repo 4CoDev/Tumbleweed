@@ -8,7 +8,7 @@ public sealed class MaterialOfSurface : IScalar<Material>
 	public MaterialOfSurface
 	(
 		IScalar<ArrayMesh> mesh,
-		IScalar<int> surface
+		IScalar<Int32> surface
 	)
 	{
 		this.mesh = mesh;
@@ -19,5 +19,5 @@ public sealed class MaterialOfSurface : IScalar<Material>
 
 	private readonly IScalar<ArrayMesh> mesh;
 
-	private readonly IScalar<int> surface;
+	private readonly IScalar<Int32> surface;
 }

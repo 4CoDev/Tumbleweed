@@ -4,17 +4,17 @@ using Tumbleweed.Scalars.FromEnumerable;
 namespace Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32.FromEnumerable;
 
 public sealed class AggregatedByExpression<TFrom>
-	: ScalarEnvelope<int>
+	: ScalarEnvelope<Int32>
 {
 	public AggregatedByExpression
 	(
 		IEnumerable<TFrom> from,
-		IScalar<int> seed,
-		Func<IScalar<int>, TFrom, IScalar<int>> func
+		IScalar<Int32> seed,
+		Func<IScalar<Int32>, TFrom, IScalar<Int32>> func
 	) : base
 	(
-		new ScalarOfDoubleScalar<int>(
-			new AggregatedByExpression<TFrom, IScalar<int>>(from, seed, func))
+		new ScalarOfDoubleScalar<Int32>(
+			new AggregatedByExpression<TFrom, IScalar<Int32>>(from, seed, func))
 	)
 	{
 	}

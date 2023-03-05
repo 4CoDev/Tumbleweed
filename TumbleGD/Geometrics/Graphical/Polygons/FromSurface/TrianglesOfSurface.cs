@@ -13,7 +13,7 @@ public sealed class TrianglesOfSurface
 	public TrianglesOfSurface
 	(
 		IScalar<ArrayMesh> mesh,
-		IScalar<int> surface
+		IScalar<Int32> surface
 	) : base
 	(
 		new TrianglesWithVertexIndices(

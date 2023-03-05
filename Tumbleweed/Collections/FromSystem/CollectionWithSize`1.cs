@@ -7,10 +7,10 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 	public CollectionWithSize
 	(
 		ICollection<T> collection,
-		int size
+		Int32 size
 	) : this
 	(
-		collection, new ScalarOfValue<int>(size)
+		collection, new ScalarOfValue<Int32>(size)
 	)
 	{
 	}
@@ -18,7 +18,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 	public CollectionWithSize
 	(
 		ICollection<T> collection,
-		IScalar<int> size
+		IScalar<Int32> size
 	) : base
 	(
 		new CollectionOfDelegate<T>(
@@ -40,7 +40,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 	private static ICollection<T> Result
 	(
 		ICollection<T> collection,
-		IScalar<int> size
+		IScalar<Int32> size
 	)
 	{
 		if (collection.Count == size.Value) return collection;

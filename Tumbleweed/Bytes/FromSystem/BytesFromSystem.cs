@@ -6,16 +6,16 @@ namespace Tumbleweed.Bytes.FromSystem;
 
 public sealed class BytesFromSystem : EnumerableEnvelope<IEnumerable<IBit>>
 {
-	public BytesFromSystem(IEnumerable<byte> bytes) : this
+	public BytesFromSystem(IEnumerable<Byte> bytes) : this
 	(
-		new ScalarsOfValues<byte>(bytes)
+		new ScalarsOfValues<Byte>(bytes)
 	)
 	{
 	}
 	
-	public BytesFromSystem(IEnumerable<IScalar<byte>> bytes) : base
+	public BytesFromSystem(IEnumerable<IScalar<Byte>> bytes) : base
 	(
-		new SelectedByExpression<IScalar<byte>, IEnumerable<IBit>>(
+		new SelectedByExpression<IScalar<Byte>, IEnumerable<IBit>>(
 			bytes,
 			@byte => new ByteFromSystem(@byte))
 	)

@@ -7,14 +7,14 @@ namespace TumbleGD.Geometrics.Graphical.Vertices.Indices.
 	FromIndices;
 
 public sealed class VertexIndicesOfTriangles
-	: EnumerableEnvelope<IEnumerable<IScalar<int>>>
+	: EnumerableEnvelope<IEnumerable<IScalar<Int32>>>
 {
 	public VertexIndicesOfTriangles
 	(
-		IEnumerable<IScalar<int>> indices
+		IEnumerable<IScalar<Int32>> indices
 	) : base
 	(
-		new ChunkedBySize<IScalar<int>>(indices, new TriangleVerticesCount())
+		new ChunkedBySize<IScalar<Int32>>(indices, new TriangleVerticesCount())
 	)
 	{
 	}

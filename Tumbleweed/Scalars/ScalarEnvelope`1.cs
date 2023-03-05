@@ -9,7 +9,7 @@ public abstract class ScalarEnvelope<T> : IScalar<T>
 
 	public T Value => scalar.Value;
 
-	public override bool Equals(object? other) =>
+	public override bool Equals(Object? other) =>
 		scalar.Equals(other);
 
 	public override int GetHashCode() =>

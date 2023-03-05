@@ -7,10 +7,10 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles;
 
 public sealed class BytesOfSingle : EnumerableEnvelope<IEnumerable<IBit>>
 {
-	public BytesOfSingle(IScalar<float> @float) : base
+	public BytesOfSingle(IScalar<Single> @float) : base
 	(
 		new BytesFromSystem(
-			new EnumerableOfDelegate<byte>(
+			new EnumerableOfDelegate<Byte>(
 				() => BitConverter.GetBytes(@float.Value)))
 	)
 	{

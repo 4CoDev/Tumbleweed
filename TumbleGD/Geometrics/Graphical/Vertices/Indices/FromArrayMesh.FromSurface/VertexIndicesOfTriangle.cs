@@ -6,13 +6,13 @@ namespace TumbleGD.Geometrics.Graphical.Vertices.Indices.FromArrayMesh.
 	FromSurface;
 
 public sealed class VertexIndicesOfTriangle
-	: EnumerableEnvelope<IScalar<int>>
+	: EnumerableEnvelope<IScalar<Int32>>
 {
 	public VertexIndicesOfTriangle
 	(
 		IScalar<ArrayMesh> mesh,
-		IScalar<int> surface,
-		IScalar<int> triangle
+		IScalar<Int32> surface,
+		IScalar<Int32> triangle
 	) : base
 	(
 		new FromIndices.VertexIndicesOfTriangle(

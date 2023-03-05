@@ -5,14 +5,14 @@ namespace Tumbleweed.Bits.FromBytes.FromSystem;
 
 public sealed class BitsFromByte : EnumerableEnvelope<IBit>
 {
-	public BitsFromByte(byte @byte) : this
+	public BitsFromByte(Byte @byte) : this
 	(
-		new ScalarOfValue<byte>(@byte)
+		new ScalarOfValue<Byte>(@byte)
 	)
 	{
 	}
 	
-	public BitsFromByte(IScalar<byte> @byte) : base
+	public BitsFromByte(IScalar<Byte> @byte) : base
 	(
 		new EnumerableOfScalar<IBit>(
 				new Scalar.BitsFromByte(@byte))

@@ -2,11 +2,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles.Mantissa;
 
-public sealed class MantissaSize : ScalarEnvelope<int>
+public sealed class MantissaSize : ScalarEnvelope<Int32>
 {
 	public MantissaSize() : base
 	(
-		new ScalarOfValue<int>(23)
+		new ScalarOfValue<Int32>(23)
 	)
 	{
 	}

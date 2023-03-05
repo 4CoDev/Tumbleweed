@@ -8,8 +8,8 @@ public sealed class EqualityOfTwoObjects : BitEnvelope
 {
 	public EqualityOfTwoObjects
 	(
-		object first,
-		object second
+		Object first,
+		Object second
 	) : base
 	(
 		new EqualityOfTwoNullables(first, second)

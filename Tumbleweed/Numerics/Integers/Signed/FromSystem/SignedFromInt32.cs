@@ -6,14 +6,14 @@ namespace Tumbleweed.Numerics.Integers.Signed.FromSystem;
 
 public class SignedFromInt32 : SignedEnvelope
 {
-	public SignedFromInt32(int integer) : this
+	public SignedFromInt32(Int32 integer) : this
 	(
-		new ScalarOfValue<int>(integer)
+		new ScalarOfValue<Int32>(integer)
 	)
 	{
 	}
 
-	public SignedFromInt32(IScalar<int> ints) : base
+	public SignedFromInt32(IScalar<Int32> ints) : base
 	(
 		new SignedWithValues(
 			new IsPositiveInt32(ints), 

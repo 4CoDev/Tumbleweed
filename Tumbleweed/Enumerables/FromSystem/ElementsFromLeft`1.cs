@@ -7,7 +7,7 @@ public sealed class ElementsFromLeft<T> : EnumerableEnvelope<T>
 	public ElementsFromLeft
 	(
 		IEnumerable<T> enumerable,
-		IScalar<int> number
+		IScalar<Int32> number
 	) : this
 	(
 		new List<T>(enumerable),
@@ -19,7 +19,7 @@ public sealed class ElementsFromLeft<T> : EnumerableEnvelope<T>
 	public ElementsFromLeft
 	(
 		ICollection<T> list,
-		IScalar<int> number
+		IScalar<Int32> number
 	) : base
 	(
 		new TakedEnumerable<T>(

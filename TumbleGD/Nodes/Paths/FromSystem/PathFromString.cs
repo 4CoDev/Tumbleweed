@@ -5,14 +5,14 @@ namespace TumbleGD.Nodes.Paths.FromSystem;
 
 public sealed class PathFromString : ScalarEnvelope<NodePath>
 {
-	public PathFromString(string path) : this
+	public PathFromString(String path) : this
 	(
-		new ScalarOfValue<string>(path)
+		new ScalarOfValue<String>(path)
 	)
 	{
 	}
 	
-	public PathFromString(IScalar<string> path) : base
+	public PathFromString(IScalar<String> path) : base
 	(
 		new ValueOfDelegate<NodePath>(
 			() => new NodePath(path.Value))

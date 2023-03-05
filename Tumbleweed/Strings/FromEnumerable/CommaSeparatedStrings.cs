@@ -2,12 +2,12 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Strings.FromEnumerable;
 
-public sealed class CommaSeparatedStrings : ScalarEnvelope<string>
+public sealed class CommaSeparatedStrings : ScalarEnvelope<String>
 {
-	public CommaSeparatedStrings(IEnumerable<string> strings) : base
+	public CommaSeparatedStrings(IEnumerable<String> strings) : base
 	(
 		new FromCollection.CommaSeparatedStrings(
-			new List<string>(strings))
+			new List<String>(strings))
 	)
 	{
 	}

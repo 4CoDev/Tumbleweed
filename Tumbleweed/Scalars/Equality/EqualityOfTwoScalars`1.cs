@@ -7,8 +7,8 @@ public sealed class EqualityOfTwoScalars<T> : BitEnvelope
 {
 	public EqualityOfTwoScalars
 	(
-		object first,
-		object second
+		Object first,
+		Object second
 	) : this
 	(
 		new ObjectAsScalar<T>(first),

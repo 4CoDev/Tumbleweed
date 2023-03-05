@@ -8,7 +8,7 @@ public sealed class ColorFromMeshDataTool : IScalar<Color>
 	public ColorFromMeshDataTool
 	(
 		IScalar<MeshDataTool> meshDataTool,
-		IScalar<int> vertex
+		IScalar<Int32> vertex
 	)
 	{
 		this.meshDataTool = meshDataTool;
@@ -19,5 +19,5 @@ public sealed class ColorFromMeshDataTool : IScalar<Color>
 
 	private readonly IScalar<MeshDataTool> meshDataTool;
 	
-	private readonly IScalar<int> vertex;
+	private readonly IScalar<Int32> vertex;
 }

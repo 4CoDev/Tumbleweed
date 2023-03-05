@@ -6,14 +6,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromInts32;
 
 public sealed class NaturalOfInt32 : EnumerableEnvelope<IBit>
 {
-	public NaturalOfInt32(int integer) : this
+	public NaturalOfInt32(Int32 integer) : this
 	(
-		new ScalarOfValue<int>(integer)
+		new ScalarOfValue<Int32>(integer)
 	)
 	{
 	}
 	
-	public NaturalOfInt32(IScalar<int> integer) : base
+	public NaturalOfInt32(IScalar<Int32> integer) : base
 	(
 		new WithoutLastElement<IBit>(
 			new BitsOfInt32(integer))

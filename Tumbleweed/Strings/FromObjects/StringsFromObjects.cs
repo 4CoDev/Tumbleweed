@@ -2,18 +2,18 @@ using Tumbleweed.Enumerables;
 
 namespace Tumbleweed.Strings.FromObjects;
 
-public sealed class StringsFromObjects : EnumerableEnvelope<string>
+public sealed class StringsFromObjects : EnumerableEnvelope<String>
 {
-	public StringsFromObjects(params object[] objects) : this
+	public StringsFromObjects(params Object[] objects) : this
 	(
-		new EnumerableWithElements<object>(objects)
+		new EnumerableWithElements<Object>(objects)
 	)
 	{
 	}
 	
-	public StringsFromObjects(IEnumerable<object> objects) : base
+	public StringsFromObjects(IEnumerable<Object> objects) : base
 	(
-		new SelectedByExpression<object, string>(
+		new SelectedByExpression<Object, String>(
 			objects,
 			@object => new EmptyWhenNull(
 				new NullableFromObject(@object)).Value)

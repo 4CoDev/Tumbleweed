@@ -5,7 +5,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Exponent;
 
 public sealed class NaturalOfExponent : NaturalEnvelope
 {
-	public NaturalOfExponent(IScalar<double> @double) : base
+	public NaturalOfExponent(IScalar<Double> @double) : base
 	(
 		new NaturalWithBits(
 			new BitsOfExponent(@double))

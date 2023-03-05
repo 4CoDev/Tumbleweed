@@ -1,8 +1,6 @@
 using Tumbleweed.Numerics.Integers.Natural;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Numerics.Planar.ToEnumerables;
-using Tumbleweed.Numerics.Spatial;
-using Tumbleweed.Numerics.Spatial.ToEnumerables;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Planars;

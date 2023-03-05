@@ -3,18 +3,18 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Hashes;
 
-public sealed class CodeFromNullables : ScalarEnvelope<int>
+public sealed class CodeFromNullables : ScalarEnvelope<Int32>
 {
-	public CodeFromNullables(params object?[] objects) : this
+	public CodeFromNullables(params Object?[] objects) : this
 	(
-		new EnumerableWithElements<object?>(objects)
+		new EnumerableWithElements<Object?>(objects)
 	)
 	{
 	}
 	
-	public CodeFromNullables(IEnumerable<object?> objects) : base
+	public CodeFromNullables(IEnumerable<Object?> objects) : base
 	(
-		new ValueOfDelegate<int>(
+		new ValueOfDelegate<Int32>(
 			() => HashCode.Combine(objects))
 	)
 	{

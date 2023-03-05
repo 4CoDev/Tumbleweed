@@ -4,14 +4,14 @@ namespace Tumbleweed.Bits.FromBytes.FromSystem;
 
 public sealed class BitWithIndex : BitEnvelope
 {
-	public BitWithIndex(IScalar<byte> @byte, int index) : this
+	public BitWithIndex(IScalar<Byte> @byte, Int32 index) : this
 	(
-		@byte, new ScalarOfValue<int>(index)
+		@byte, new ScalarOfValue<Int32>(index)
 	)
 	{
 	}
 	
-	public BitWithIndex(IScalar<byte> @byte, IScalar<int> index) : base
+	public BitWithIndex(IScalar<Byte> @byte, IScalar<Int32> index) : base
 	(
 		new BitOfScalar(
 			new Scalar.BitWithIndex(@byte, index))

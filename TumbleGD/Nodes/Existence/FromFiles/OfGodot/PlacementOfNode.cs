@@ -7,10 +7,10 @@ namespace TumbleGD.Nodes.Existence.FromFiles.OfGodot;
 
 public sealed class PlacementOfNode : ActionEnvelope
 {
-	public PlacementOfNode(Node parent, string path) : this
+	public PlacementOfNode(Node parent, String path) : this
 	(
 		new ScalarOfValue<Node>(parent),
-		new ScalarOfValue<string>(path)
+		new ScalarOfValue<String>(path)
 	)
 	{
 	}
@@ -18,11 +18,11 @@ public sealed class PlacementOfNode : ActionEnvelope
 	public PlacementOfNode
 	(
 		IScalar<Node> parent,
-		string path
+		String path
 	) : this
 	(
 		parent,
-		new ScalarOfValue<string>(path)
+		new ScalarOfValue<String>(path)
 	)
 	{
 	}
@@ -30,7 +30,7 @@ public sealed class PlacementOfNode : ActionEnvelope
 	public PlacementOfNode
 	(
 		IScalar<Node> parent,
-		IScalar<string> path
+		IScalar<String> path
 	) : base
 	(
 		new Existence.OfGodot.PlacementOfNode(

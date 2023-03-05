@@ -5,7 +5,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binaries.ToSystem.Singles;
 
-public sealed class SingleFromFractional : ScalarEnvelope<float>
+public sealed class SingleFromFractional : ScalarEnvelope<Single>
 {
 	public SingleFromFractional(IFractional fractional) : base
 	(

@@ -8,7 +8,7 @@ namespace TumbleGD.Geometrics.Graphical.Polygons.FromArrayMesh;
 
 public sealed class SurfaceWithIndex : SurfaceEnvelope
 {
-	public SurfaceWithIndex(IScalar<ArrayMesh> mesh, IScalar<int> index) : base
+	public SurfaceWithIndex(IScalar<ArrayMesh> mesh, IScalar<Int32> index) : base
 	(
 		new SurfaceWithValues(
 			new TrianglesOfSurface(mesh, index),

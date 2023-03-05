@@ -5,14 +5,14 @@ namespace TumbleGD.Resources.FromFiles.ToGodot;
 
 public sealed class ScalarOnPath<T> : ScalarEnvelope<T> where T : class
 {
-	public ScalarOnPath(string path) : this
+	public ScalarOnPath(String path) : this
 	(
-		new ScalarOfValue<string>(path)
+		new ScalarOfValue<String>(path)
 	)
 	{
 	}
 	
-	public ScalarOnPath(IScalar<string> path) : base
+	public ScalarOnPath(IScalar<String> path) : base
 	(
 		new ValueOfDelegate<T>(
 			() => ResourceLoader.Load<T>(path.Value))

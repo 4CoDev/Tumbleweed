@@ -6,16 +6,16 @@ namespace Tumbleweed.Numerics.Integers.Natural.FromSystem;
 
 public class NaturalsFromInts32 : EnumerableEnvelope<INaturalInteger>
 {
-	public NaturalsFromInts32(params int[] ints) : this
+	public NaturalsFromInts32(params Int32[] ints) : this
 	(
-		new EnumerableWithElements<int>(ints)
+		new EnumerableWithElements<Int32>(ints)
 	)
 	{
 	}
 
-	public NaturalsFromInts32(IEnumerable<int> ints) : base
+	public NaturalsFromInts32(IEnumerable<Int32> ints) : base
 	(
-		new SelectedByExpression<int, INaturalInteger>(
+		new SelectedByExpression<Int32, INaturalInteger>(
 			ints,
 			@int => new NaturalFromInt32(@int))
 	)

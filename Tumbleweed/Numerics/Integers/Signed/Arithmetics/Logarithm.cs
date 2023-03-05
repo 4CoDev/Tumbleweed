@@ -16,8 +16,8 @@ public sealed class Logarithm : SignedEnvelope
 	public Logarithm(ISignedInteger @base, ISignedInteger argument) : base
 	(
 		new SignedFromInt32(
-			new ValueOfDelegate<int>(
-				() => (int)Math.Log(
+			new ValueOfDelegate<Int32>(
+				() => (Int32)Math.Log(
 					new Int32FromSigned(@base).Value,
 					new Int32FromSigned(argument).Value)))
 	)

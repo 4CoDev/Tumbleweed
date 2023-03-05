@@ -2,15 +2,15 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
 
-public sealed class LessThenInt32 : IScalar<int>
+public sealed class LessThenInt32 : IScalar<Int32>
 {
-	public LessThenInt32(IScalar<int> value, IScalar<int> max)
+	public LessThenInt32(IScalar<Int32> value, IScalar<Int32> max)
 	{
 		this.value = value;
 		this.max = max;
 	}
 
-	public int Value
+	public Int32 Value
 	{
 		get
 		{
@@ -19,7 +19,7 @@ public sealed class LessThenInt32 : IScalar<int>
 		}
 	}
 
-	private readonly IScalar<int> value;
+	private readonly IScalar<Int32> value;
 	
-	private readonly IScalar<int> max;
+	private readonly IScalar<Int32> max;
 }

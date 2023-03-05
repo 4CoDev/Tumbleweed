@@ -4,14 +4,14 @@ namespace Tumbleweed.Strings.FromObjects;
 
 public sealed class NullableFromNullable : ScalarEnvelope<string?>
 {
-	public NullableFromNullable(object? @object) : this
+	public NullableFromNullable(Object? @object) : this
 	(
-		new ScalarOfValue<object?>(@object)
+		new ScalarOfValue<Object?>(@object)
 	)
 	{
 	}
 	
-	public NullableFromNullable(IScalar<object?> @object) : base
+	public NullableFromNullable(IScalar<Object?> @object) : base
 	(
 		new ValueOfDelegate<string?>(
 			() => @object.Value?.ToString())

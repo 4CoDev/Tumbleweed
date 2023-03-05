@@ -7,12 +7,12 @@ namespace
 	TumbleGD.Geometrics.Graphical.Vertices.Indices.FromArrayMesh.
 	FromSurface;
 
-public sealed class VertexIndicesOfSurface : EnumerableEnvelope<IScalar<int>>
+public sealed class VertexIndicesOfSurface : EnumerableEnvelope<IScalar<Int32>>
 {
 	public VertexIndicesOfSurface
 	(
 		IScalar<ArrayMesh> mesh,
-		IScalar<int> surface
+		IScalar<Int32> surface
 	) : base
 	(
 		new VertexIndicesFromSurfaceTool(

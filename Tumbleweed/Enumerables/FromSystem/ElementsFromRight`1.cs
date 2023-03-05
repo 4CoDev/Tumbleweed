@@ -7,7 +7,7 @@ public sealed class ElementsFromRight<T> : EnumerableEnvelope<T>
 	public ElementsFromRight
 	(
 		IEnumerable<T> enumerable,
-		IScalar<int> number
+		IScalar<Int32> number
 	) : base
 	(
 		new EnumerableOfScalar<T>(

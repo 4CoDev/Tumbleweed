@@ -5,14 +5,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles.Exponent;
 
 public sealed class NaturalOfExponent : NaturalEnvelope
 {
-	public NaturalOfExponent(float single) : this
+	public NaturalOfExponent(Single single) : this
 	(
-		new ScalarOfValue<float>(single)
+		new ScalarOfValue<Single>(single)
 	)
 	{
 	}
 	
-	public NaturalOfExponent(IScalar<float> single) : base
+	public NaturalOfExponent(IScalar<Single> single) : base
 	(
 		new NaturalWithBits(
 			new BitsOfExponent(single))

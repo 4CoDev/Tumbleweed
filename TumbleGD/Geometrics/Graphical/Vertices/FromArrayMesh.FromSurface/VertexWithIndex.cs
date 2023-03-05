@@ -10,8 +10,8 @@ public sealed class VertexWithIndex : VertexEnvelope
 	public VertexWithIndex
 	(
 		IScalar<ArrayMesh> arrayMesh,
-		IScalar<int> surface,
-		IScalar<int> vertex
+		IScalar<Int32> surface,
+		IScalar<Int32> vertex
 	) : base
 	(
 		new FromMeshDataTool.VertexWithIndex(

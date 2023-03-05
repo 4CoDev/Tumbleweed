@@ -4,7 +4,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
 
-public sealed class Int32FromSigned : ScalarEnvelope<int>
+public sealed class Int32FromSigned : ScalarEnvelope<Int32>
 {
 	public Int32FromSigned(ISignedInteger integer) : base
 	(

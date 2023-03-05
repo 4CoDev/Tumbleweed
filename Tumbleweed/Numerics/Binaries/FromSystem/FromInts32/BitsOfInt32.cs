@@ -6,7 +6,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromInts32;
 
 public sealed class BitsOfInt32 : EnumerableEnvelope<IBit>
 {
-	public BitsOfInt32(IScalar<int> integer) : base
+	public BitsOfInt32(IScalar<Int32> integer) : base
 	(
 		new BitsOfBytes(
 			new BytesOfInt32(integer))

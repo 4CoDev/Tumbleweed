@@ -2,18 +2,18 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Hashes;
 
-public sealed class CodeOfObject : ScalarEnvelope<int>
+public sealed class CodeOfObject : ScalarEnvelope<Int32>
 {
-	public CodeOfObject(object @object) : this
+	public CodeOfObject(Object @object) : this
 	(
-		new ScalarOfValue<object>(@object)
+		new ScalarOfValue<Object>(@object)
 	)
 	{
 	}
 	
-	public CodeOfObject(IScalar<object> @object) : base
+	public CodeOfObject(IScalar<Object> @object) : base
 	(
-		new ValueOfDelegate<int>(
+		new ValueOfDelegate<Int32>(
 			() => @object.Value.GetHashCode())
 	)
 	{

@@ -2,27 +2,27 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Strings.FromObjects;
 
-public sealed class WordWhenNull : ScalarEnvelope<string>
+public sealed class WordWhenNull : ScalarEnvelope<String>
 {
-	public WordWhenNull(object? origin, string word) : this
+	public WordWhenNull(Object? origin, String word) : this
 	(
-		new ScalarOfValue<object?>(origin),
-		new ScalarOfValue<string>(word)
+		new ScalarOfValue<Object?>(origin),
+		new ScalarOfValue<String>(word)
 	)
 	{
 	}
 	
-	public WordWhenNull(IScalar<object?> origin, string word) : this
+	public WordWhenNull(IScalar<Object?> origin, String word) : this
 	(
 		origin,
-		new ScalarOfValue<string>(word)
+		new ScalarOfValue<String>(word)
 	)
 	{
 	}
 	
-	public WordWhenNull(object? origin, IScalar<string> word) : this
+	public WordWhenNull(Object? origin, IScalar<String> word) : this
 	(
-		new ScalarOfValue<object?>(origin),
+		new ScalarOfValue<Object?>(origin),
 		word
 	)
 	{
@@ -30,11 +30,11 @@ public sealed class WordWhenNull : ScalarEnvelope<string>
 	
 	public WordWhenNull
 	(
-		IScalar<object?> origin,
-		IScalar<string> word
+		IScalar<Object?> origin,
+		IScalar<String> word
 	) : base
 	(
-		new ValueOfDelegate<string>(
+		new ValueOfDelegate<String>(
 			() => new NullableFromNullable(origin.Value).Value ?? word.Value)
 	)
 	{

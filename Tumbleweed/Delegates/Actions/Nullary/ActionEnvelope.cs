@@ -7,13 +7,13 @@ public abstract class ActionEnvelope : INullaryAction
 	
 	public void Invoke() => nullaryAction.Invoke();
 
-	public override bool Equals(object? @object) =>
+	public override Boolean Equals(Object? @object) =>
 		nullaryAction.Equals(@object);
 
-	public override int GetHashCode() =>
+	public override Int32 GetHashCode() =>
 		nullaryAction.GetHashCode();
 
-	public override string? ToString() =>
+	public override String? ToString() =>
 		nullaryAction.ToString();
 
 	private readonly INullaryAction nullaryAction;

@@ -6,7 +6,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Enumerables.Numerics.Integers.ToSystem;
 
-public sealed class FlatIndexFromIndices : ScalarEnvelope<int>
+public sealed class FlatIndexFromIndices : ScalarEnvelope<Int32>
 {
 	public FlatIndexFromIndices
 	(

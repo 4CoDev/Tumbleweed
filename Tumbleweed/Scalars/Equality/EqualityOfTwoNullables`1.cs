@@ -7,20 +7,20 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 {
 	public EqualityOfTwoNullables
 	(
-		object? first,
-		object? second
+		Object? first,
+		Object? second
 	) : this
 	(
-		new ScalarOfValue<object?>(first),
-		new ScalarOfValue<object?>(second)
+		new ScalarOfValue<Object?>(first),
+		new ScalarOfValue<Object?>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<object?> first,
-		IScalar<object?> second
+		IScalar<Object?> first,
+		IScalar<Object?> second
 	) : this
 	(
 		new NullableAsType<IScalar<T>>(first),

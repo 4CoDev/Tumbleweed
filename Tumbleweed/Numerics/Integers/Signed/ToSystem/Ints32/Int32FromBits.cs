@@ -5,7 +5,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
 
-public sealed class Int32FromBits : ScalarEnvelope<int>
+public sealed class Int32FromBits : ScalarEnvelope<Int32>
 {
 	public Int32FromBits(IEnumerable<IBit> bits) : base
 	(

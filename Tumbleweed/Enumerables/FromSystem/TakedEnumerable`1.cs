@@ -7,7 +7,7 @@ public sealed class TakedEnumerable<T> : EnumerableEnvelope<T>
 	public TakedEnumerable
 	(
 		IEnumerable<T> enumerable,
-		IScalar<int> elements
+		IScalar<Int32> elements
 	) : base
 	(
 		new EnumerableOfScalar<T>(

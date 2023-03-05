@@ -10,16 +10,16 @@ public class ActionFromSystem : INullaryAction
 
 	public void Invoke() => @delegate();
 
-	public override bool Equals(object? @object) =>
+	public override Boolean Equals(Object? @object) =>
 	(
 		@object is ActionFromSystem action &&
 		action.@delegate.Equals(@delegate)
 	);
 
-	public override int GetHashCode() =>
+	public override Int32 GetHashCode() =>
 		new CodeOfObject(@delegate).Value;
 
-	public override string? ToString() =>
+	public override String? ToString() =>
 		new NullableFromObject(@delegate).ToString();
 
 	private readonly Action @delegate;

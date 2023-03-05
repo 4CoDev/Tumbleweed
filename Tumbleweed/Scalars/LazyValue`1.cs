@@ -37,13 +37,13 @@ public sealed class LazyValue<T> : IScalar<T>
 		this.origin = origin;
 	}
 
-		public override bool Equals(object? @object) =>
+		public override Boolean Equals(Object? @object) =>
 		new EqualityOfTwoNullables<T>(this, @object).State;
 		
-		public override int GetHashCode() =>
+		public override Int32 GetHashCode() =>
 		new CodeOfNullable(Value).Value;
 
-	public override string? ToString() =>
+	public override String? ToString() =>
 		new NullableFromNullable(Value).Value;
 
 	public T Value

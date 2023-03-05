@@ -8,7 +8,7 @@ public sealed class EnumerableAtIndex<T> : EnumerableEnvelope<T>
 	public EnumerableAtIndex
 	(
 		IEnumerable<IEnumerable<T>> enumerable,
-		IScalar<int> index
+		IScalar<Int32> index
 	) : base
 	(
 		new EnumerableOfScalar<T>(

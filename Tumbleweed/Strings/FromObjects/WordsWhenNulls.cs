@@ -3,27 +3,27 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Strings.FromObjects;
 
-public sealed class WordsWhenNulls : EnumerableEnvelope<string>
+public sealed class WordsWhenNulls : EnumerableEnvelope<String>
 {
 	public WordsWhenNulls
 	(
-		IEnumerable<object?> nullables,
-		string word
+		IEnumerable<Object?> nullables,
+		String word
 	) : this
 	(
 		nullables,
-		new ScalarOfValue<string>(word)
+		new ScalarOfValue<String>(word)
 	)
 	{
 	}
 	
 	public WordsWhenNulls
 	(
-		IEnumerable<object?> nullables,
-		IScalar<string> word
+		IEnumerable<Object?> nullables,
+		IScalar<String> word
 	) : base
 	(
-		new SelectedByExpression<object?, string>(
+		new SelectedByExpression<Object?, String>(
 			nullables,
 			nullable => new WordWhenNull(nullable, word).Value)
 	)

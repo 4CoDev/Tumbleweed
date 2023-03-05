@@ -4,21 +4,21 @@ using Tumbleweed.Strings.FromEnumerable;
 
 namespace Tumbleweed.Strings.FromObjects;
 
-public sealed class StringFromObjects : ScalarEnvelope<string>
+public sealed class StringFromObjects : ScalarEnvelope<String>
 {
-	public StringFromObjects(params object[] objects) : this
+	public StringFromObjects(params Object[] objects) : this
 	(
-		new EnumerableWithElements<object>(objects)
+		new EnumerableWithElements<Object>(objects)
 	)
 	{
 	}
 	
-	public StringFromObjects(IEnumerable<object> objects) : base
+	public StringFromObjects(IEnumerable<Object> objects) : base
 	(
 		new StringWithStrings(
 			new CommaSeparatedStrings(
 				new StringsFromObjects(objects)),
-			new ScalarOfValue<string>("."))
+			new ScalarOfValue<String>("."))
 	)
 	{
 	}

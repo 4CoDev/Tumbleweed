@@ -5,14 +5,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles.Exponent;
 
 public sealed class ExponentOfSingle : SignedEnvelope
 {
-	public ExponentOfSingle(float single) : this
+	public ExponentOfSingle(Single single) : this
 	(
-		new ScalarOfValue<float>(single)
+		new ScalarOfValue<Single>(single)
 	)
 	{
 	}
 	
-	public ExponentOfSingle(IScalar<float> single) : base
+	public ExponentOfSingle(IScalar<Single> single) : base
 	(
 		new SignedWithValues(
 			new IsPositiveExponent(single),

@@ -7,14 +7,14 @@ namespace Tumbleweed.Numerics.Fractional.FromSystem;
 
 public sealed class FractionalFromSingle : FractionalEnvelope
 {
-	public FractionalFromSingle(float single) : this
+	public FractionalFromSingle(Single single) : this
 	(
-		new ScalarOfValue<float>(single)
+		new ScalarOfValue<Single>(single)
 	)
 	{
 	}
 
-	public FractionalFromSingle(IScalar<float> single) : base
+	public FractionalFromSingle(IScalar<Single> single) : base
 	(
 		new FractionalWithValues(
 			new MantissaOfSingle(single),

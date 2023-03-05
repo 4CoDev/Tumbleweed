@@ -7,7 +7,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Exponent;
 
 public sealed class BitsOfExponent : EnumerableEnvelope<IBit>
 {
-	public BitsOfExponent(IScalar<double> @double) : base
+	public BitsOfExponent(IScalar<Double> @double) : base
 	(
 		new ElementsFromMiddle<IBit>(
 			new BitsOfDouble(@double), 52, 61)
