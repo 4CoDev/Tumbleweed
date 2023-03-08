@@ -9,7 +9,7 @@ public sealed class BitOfScalar : IBit
 		this.scalar = scalar;
 	}
 	
-	public bool State => scalar.Value.State;
+	public Boolean State => scalar.Value.State;
 
 	private readonly IScalar<IBit> scalar;
 }
