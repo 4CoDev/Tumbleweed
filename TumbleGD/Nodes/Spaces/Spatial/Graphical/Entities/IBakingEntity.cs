@@ -2,7 +2,7 @@ using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Existence;
 
-namespace TumbleGD.Nodes.Baking.Spatial.Entities;
+namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
 
 public interface IBakingEntity
 {

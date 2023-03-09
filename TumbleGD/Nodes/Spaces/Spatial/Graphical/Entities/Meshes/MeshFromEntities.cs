@@ -1,7 +1,7 @@
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Enumerables;
 
-namespace TumbleGD.Nodes.Baking.Spatial.Entities.Meshes;
+namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Meshes;
 
 public sealed class MeshFromEntities : EnumerableEnvelope<ISurface>
 {

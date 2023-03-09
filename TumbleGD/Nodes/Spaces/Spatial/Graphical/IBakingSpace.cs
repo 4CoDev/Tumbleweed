@@ -1,7 +1,7 @@
-using TumbleGD.Nodes.Baking.Spatial.Entities;
+using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
 using Tumbleweed.Arrays;
 
-namespace TumbleGD.Nodes.Baking.Spatial.Spaces;
+namespace TumbleGD.Nodes.Spaces.Spatial.Graphical;
 
 public interface IBakingSpace
 {

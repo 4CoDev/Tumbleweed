@@ -1,7 +1,7 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Baking.Spatial.Entities.Equality;
+namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Equality;
 
 public sealed class EqualityOfTwoNullables : BitEnvelope
 {

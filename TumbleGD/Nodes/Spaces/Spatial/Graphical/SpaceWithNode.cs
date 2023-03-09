@@ -1,12 +1,12 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.ArrayMeshes;
-using TumbleGD.Nodes.Baking.Spatial.Entities;
-using TumbleGD.Nodes.Baking.Spatial.Entities.Meshes;
 using TumbleGD.Nodes.FromTree.OfGodot;
+using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
+using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Meshes;
 using Tumbleweed.Arrays;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Baking.Spatial.Spaces;
+namespace TumbleGD.Nodes.Spaces.Spatial.Graphical;
 
 public sealed class SpaceWithNode : IBakingSpace
 {

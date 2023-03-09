@@ -3,7 +3,7 @@ using TumbleGD.Nodes.Existence.OfGodot;
 using Tumbleweed.Delegates.Actions.Nullary;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Baking.Spatial.Spaces.Existence;
+namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Existence;
 
 public sealed class PlacementOfSpace : ActionEnvelope
 {
