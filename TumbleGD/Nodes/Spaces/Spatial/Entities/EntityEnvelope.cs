@@ -2,11 +2,11 @@ using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Existence;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
-public abstract class EntityEnvelope : IBakingEntity
+public abstract class EntityEnvelope : ISpatialEntity
 {
-	protected EntityEnvelope(IBakingEntity entity) =>
+	protected EntityEnvelope(ISpatialEntity entity) =>
 		this.entity = entity;
 
 	public override Boolean Equals(Object? @object) =>
@@ -22,5 +22,5 @@ public abstract class EntityEnvelope : IBakingEntity
 
 	public IEnumerable<ISurface> Mesh => entity.Mesh;
 	
-	private readonly IBakingEntity entity;
+	private readonly ISpatialEntity entity;
 }

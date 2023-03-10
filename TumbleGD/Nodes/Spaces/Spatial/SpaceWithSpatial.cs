@@ -1,20 +1,20 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.ArrayMeshes;
 using TumbleGD.Nodes.FromTree.OfGodot;
-using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
-using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Meshes;
+using TumbleGD.Nodes.Spaces.Spatial.Entities;
+using TumbleGD.Nodes.Spaces.Spatial.Entities.Meshes;
 using Tumbleweed.Arrays;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical;
+namespace TumbleGD.Nodes.Spaces.Spatial;
 
-public sealed class SpaceWithNode : IBakingSpace
+public sealed class SpaceWithSpatial : ISpatialSpace
 {
-	public SpaceWithNode
+	public SpaceWithSpatial
 	(
 		IScalar<Node> node,
-		IArray<IBakingSpace> spaces,
-		IEnumerable<IBakingEntity> entities
+		IArray<ISpatialSpace> spaces,
+		IEnumerable<ISpatialEntity> entities
 	)
 	{
 		this.node = node;
@@ -22,9 +22,9 @@ public sealed class SpaceWithNode : IBakingSpace
 		Entities = entities;
 	}
 	
-	public IArray<IBakingSpace> Spaces { get; }
+	public IArray<ISpatialSpace> Spaces { get; }
 
-	public IEnumerable<IBakingEntity> Entities { get; }
+	public IEnumerable<ISpatialEntity> Entities { get; }
 
 	public void Update()
 	{

@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical;
+namespace TumbleGD.Nodes.Spaces.Spatial;
 
 public sealed class SpaceNode : ScalarEnvelope<Node>
 {

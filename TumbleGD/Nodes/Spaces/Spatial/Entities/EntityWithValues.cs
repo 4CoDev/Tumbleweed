@@ -1,13 +1,13 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
-using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Equality;
+using TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 using Tumbleweed.Existence;
 using Tumbleweed.Hashes;
 using Tumbleweed.Strings.FromObjects;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
-public sealed class EntityWithValues : IBakingEntity
+public sealed class EntityWithValues : ISpatialEntity
 {
 	public EntityWithValues
 	(

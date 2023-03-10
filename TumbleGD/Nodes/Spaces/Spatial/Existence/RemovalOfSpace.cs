@@ -3,7 +3,7 @@ using TumbleGD.Nodes.Existence.OfGodot;
 using Tumbleweed.Delegates.Actions.Nullary;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Existence;
+namespace TumbleGD.Nodes.Spaces.Spatial.Existence;
 
 public sealed class RemovalOfSpace : ActionEnvelope
 {

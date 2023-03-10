@@ -1,16 +1,16 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
-using TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Equality;
+using TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 using Tumbleweed.Existence;
 using Tumbleweed.Hashes;
 using Tumbleweed.Scalars;
 using Tumbleweed.Strings.FromObjects;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
-public sealed class EntityOfScalar : IBakingEntity
+public sealed class EntityOfScalar : ISpatialEntity
 {
-	public EntityOfScalar(IScalar<IBakingEntity> scalar) =>
+	public EntityOfScalar(IScalar<ISpatialEntity> scalar) =>
 		this.scalar = scalar;
 	
 	public override Boolean Equals(Object? @object) =>
@@ -28,5 +28,5 @@ public sealed class EntityOfScalar : IBakingEntity
 	public IEnumerable<ISurface> Mesh =>
 		scalar.Value.Mesh;
 
-	private readonly IScalar<IBakingEntity> scalar;
+	private readonly IScalar<ISpatialEntity> scalar;
 }

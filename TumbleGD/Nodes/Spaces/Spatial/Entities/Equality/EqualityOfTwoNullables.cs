@@ -1,7 +1,7 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Equality;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 
 public sealed class EqualityOfTwoNullables : BitEnvelope
 {
@@ -31,20 +31,20 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 	
 	public EqualityOfTwoNullables
 	(
-		IBakingEntity? first,
-		IBakingEntity? second
+		ISpatialEntity? first,
+		ISpatialEntity? second
 	) : this
 	(
-		new ScalarOfValue<IBakingEntity?>(first),
-		new ScalarOfValue<IBakingEntity?>(second)
+		new ScalarOfValue<ISpatialEntity?>(first),
+		new ScalarOfValue<ISpatialEntity?>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<IBakingEntity?> first,
-		IScalar<IBakingEntity?> second
+		IScalar<ISpatialEntity?> first,
+		IScalar<ISpatialEntity?> second
 	) : base
 	(
 		new BitOfDelegate(
@@ -57,8 +57,8 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 
 	private static IBit Function
 	(
-		IBakingEntity? first,
-		IBakingEntity? second
+		ISpatialEntity? first,
+		ISpatialEntity? second
 	)
 	{
 		if (first != null && second != null)

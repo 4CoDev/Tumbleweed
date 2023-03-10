@@ -5,7 +5,7 @@ using Tumbleweed.Bits.Booleans;
 using Tumbleweed.Delegates.Functions.Nullary.Equality.ByValues;
 using Tumbleweed.Existence;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities.Equality;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 
 public sealed class EqualityOfTwoEntities : BitEnvelope
 {
@@ -23,8 +23,8 @@ public sealed class EqualityOfTwoEntities : BitEnvelope
 	
 	public EqualityOfTwoEntities
 	(
-		IBakingEntity first,
-		IBakingEntity second
+		ISpatialEntity first,
+		ISpatialEntity second
 	) : base
 	(
 		new BitAndBit(

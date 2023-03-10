@@ -2,9 +2,9 @@ using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Existence;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
-public interface IBakingEntity
+public interface ISpatialEntity
 {
 	IExistence<Node> Node { get; }
 	

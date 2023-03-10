@@ -1,13 +1,13 @@
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Spaces.Spatial.Graphical.Entities;
+namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
 public sealed class ObjectAsEntity : EntityEnvelope
 {
 	public ObjectAsEntity(Object @object) : base
 	(
 		new EntityOfScalar(
-			new ValueAsType<IBakingEntity>(@object))
+			new ValueAsType<ISpatialEntity>(@object))
 	)
 	{
 	}
