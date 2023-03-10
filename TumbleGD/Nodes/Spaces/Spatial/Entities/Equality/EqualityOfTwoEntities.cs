@@ -3,7 +3,7 @@ using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Bits;
 using Tumbleweed.Bits.Booleans;
 using Tumbleweed.Delegates.Functions.Nullary.Equality.ByValues;
-using Tumbleweed.Existence;
+using Tumbleweed.Nullability;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 
@@ -28,7 +28,7 @@ public sealed class EqualityOfTwoEntities : BitEnvelope
 	) : base
 	(
 		new BitAndBit(
-			new EqualityOfTwoFunctions<IExistence<Node>>(
+			new EqualityOfTwoFunctions<INullable<Node>>(
 				() => first.Node,
 				() => second.Node),
 			new EqualityOfTwoFunctions<IEnumerable<ISurface>>(

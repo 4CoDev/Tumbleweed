@@ -1,8 +1,8 @@
 using Tumbleweed.Bits;
 
-namespace Tumbleweed.Existence;
+namespace Tumbleweed.Nullability;
 
-public interface IExistence<out T>
+public interface INullable<out T>
 {
 	T Value { get; }
 	

@@ -1,8 +1,8 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
-using Tumbleweed.Existence;
 using Tumbleweed.Hashes;
+using Tumbleweed.Nullability;
 using Tumbleweed.Strings.FromObjects;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
@@ -11,7 +11,7 @@ public sealed class EntityWithValues : ISpatialEntity
 {
 	public EntityWithValues
 	(
-		IExistence<Node> node,
+		INullable<Node> node,
 		IEnumerable<ISurface> mesh
 	)
 	{
@@ -28,7 +28,7 @@ public sealed class EntityWithValues : ISpatialEntity
 	public override String ToString() =>
 		new StringFromObjects(Node, Mesh).Value;
 
-	public IExistence<Node> Node { get; }
+	public INullable<Node> Node { get; }
 
 	public IEnumerable<ISurface> Mesh { get; }
 }

@@ -1,6 +1,6 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.Surfaces;
-using Tumbleweed.Existence;
+using Tumbleweed.Nullability;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
@@ -18,7 +18,7 @@ public abstract class EntityEnvelope : ISpatialEntity
 	public override String? ToString() =>
 		entity.ToString();
 
-	public IExistence<Node> Node => entity.Node;
+	public INullable<Node> Node => entity.Node;
 
 	public IEnumerable<ISurface> Mesh => entity.Mesh;
 	
