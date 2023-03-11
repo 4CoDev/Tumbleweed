@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Meshes;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 using Tumbleweed.Hashes;
@@ -25,7 +26,7 @@ public sealed class EntityOfScalar : ISpatialEntity
 	public INullable<Node> Node =>
 		scalar.Value.Node;
 
-	public IEnumerable<ISurface> Mesh =>
+	public IMesh Mesh =>
 		scalar.Value.Mesh;
 
 	private readonly IScalar<ISpatialEntity> scalar;

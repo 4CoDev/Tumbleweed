@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Meshes;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
 using Tumbleweed.Hashes;
@@ -9,11 +10,7 @@ namespace TumbleGD.Nodes.Spaces.Spatial.Entities;
 
 public sealed class EntityWithValues : ISpatialEntity
 {
-	public EntityWithValues
-	(
-		INullable<Node> node,
-		IEnumerable<ISurface> mesh
-	)
+	public EntityWithValues(INullable<Node> node, IMesh mesh)
 	{
 		Node = node;
 		Mesh = mesh;
@@ -30,5 +27,5 @@ public sealed class EntityWithValues : ISpatialEntity
 
 	public INullable<Node> Node { get; }
 
-	public IEnumerable<ISurface> Mesh { get; }
+	public IMesh Mesh { get; }
 }

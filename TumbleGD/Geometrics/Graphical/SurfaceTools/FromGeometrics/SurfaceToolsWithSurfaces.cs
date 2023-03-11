@@ -11,11 +11,9 @@ public sealed class SurfaceToolsWithSurfaces
 {
 	public SurfaceToolsWithSurfaces(IEnumerable<ISurface> surfaces) : base
 	(
-		new SelectedByExpression<ISurface, IScalar<SurfaceTool>>
-		(
+		new SelectedByExpression<ISurface, IScalar<SurfaceTool>>(
 			surfaces,
-			surface => new SurfaceToolWithSurface(surface)
-		)
+			surface => new SurfaceToolWithSurface(surface))
 	)
 	{
 	}

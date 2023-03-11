@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Meshes;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Nullability;
 
@@ -8,5 +9,5 @@ public interface ISpatialEntity
 {
 	INullable<Node> Node { get; }
 	
-	IEnumerable<ISurface> Mesh { get; }
+	IMesh Mesh { get; }
 }

@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Meshes;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Bits;
 using Tumbleweed.Bits.Booleans;
@@ -31,7 +32,7 @@ public sealed class EqualityOfTwoEntities : BitEnvelope
 			new EqualityOfTwoFunctions<INullable<Node>>(
 				() => first.Node,
 				() => second.Node),
-			new EqualityOfTwoFunctions<IEnumerable<ISurface>>(
+			new EqualityOfTwoFunctions<IMesh>(
 				() => first.Mesh,
 				() => second.Mesh))
 	)

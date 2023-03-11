@@ -1,17 +1,17 @@
-using TumbleGD.Geometrics.Graphical.Surfaces;
+using TumbleGD.Geometrics.Graphical.Meshes;
 using Tumbleweed.Enumerables;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities.Meshes;
 
-public sealed class MeshFromEntities : EnumerableEnvelope<ISurface>
+public sealed class MeshFromEntities : MeshEnvelope
 {
 	public MeshFromEntities
 	(
 		IEnumerable<ISpatialEntity> entities
 	) : base
 	(
-		new EnumerableWithElements<ISurface>(
-			new SelectedByExpression<ISpatialEntity, IEnumerable<ISurface>>(
+		new MergedMeshes(
+			new SelectedByExpression<ISpatialEntity, IMesh>(
 				entities,
 				entity => entity.Mesh))
 	)

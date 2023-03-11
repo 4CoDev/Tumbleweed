@@ -28,7 +28,7 @@ public sealed class SpaceWithSpatial : ISpatialSpace
 
 	public void Update()
 	{
-		Mesh.Mesh = new ArrayMeshFromSurfaces(
+		Mesh.Mesh = new ArrayMeshFromMesh(
 			new MeshFromEntities(Entities)).Value;
 	}
 

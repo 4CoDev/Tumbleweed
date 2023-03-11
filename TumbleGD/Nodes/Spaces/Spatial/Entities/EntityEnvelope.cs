@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Meshes;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using Tumbleweed.Nullability;
 
@@ -20,7 +21,7 @@ public abstract class EntityEnvelope : ISpatialEntity
 
 	public INullable<Node> Node => entity.Node;
 
-	public IEnumerable<ISurface> Mesh => entity.Mesh;
+	public IMesh Mesh => entity.Mesh;
 	
 	private readonly ISpatialEntity entity;
 }
