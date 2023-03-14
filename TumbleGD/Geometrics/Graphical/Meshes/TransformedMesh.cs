@@ -10,6 +10,18 @@ public sealed class TransformedMesh : MeshEnvelope
 	public TransformedMesh
 	(
 		IMesh mesh,
+		Transform3D transform
+	) : this
+	(
+		mesh,
+		new ScalarOfValue<Transform3D>(transform)
+	)
+	{
+	}
+	
+	public TransformedMesh
+	(
+		IMesh mesh,
 		IScalar<Transform3D> transform
 	) : base
 	(
