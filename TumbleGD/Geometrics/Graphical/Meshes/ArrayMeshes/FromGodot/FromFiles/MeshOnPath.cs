@@ -6,6 +6,13 @@ namespace TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.FromGodot.FromFiles;
 
 public sealed class MeshOnPath : ScalarEnvelope<ArrayMesh>
 {
+	public MeshOnPath(String path) : this
+	(
+		new ScalarOfValue<String>(path)
+	)
+	{
+	}
+	
 	public MeshOnPath(IScalar<String> path) : base
 	(
 		new ResourceOnPath<ArrayMesh>(path)
