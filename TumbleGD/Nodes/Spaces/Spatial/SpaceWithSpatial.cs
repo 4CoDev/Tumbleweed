@@ -1,5 +1,5 @@
 using Godot;
-using TumbleGD.Geometrics.Graphical.ArrayMeshes;
+using TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.FromGodot;
 using TumbleGD.Nodes.FromTree.OfGodot;
 using TumbleGD.Nodes.Spaces.Spatial.Entities;
 using TumbleGD.Nodes.Spaces.Spatial.Entities.Meshes;
@@ -28,7 +28,7 @@ public sealed class SpaceWithSpatial : ISpatialSpace
 
 	public void Update()
 	{
-		Mesh.Mesh = new ArrayMeshFromMesh(
+		Mesh.Mesh = new MeshFromMesh(
 			new MeshFromEntities(Entities)).Value;
 	}
 

@@ -12,10 +12,10 @@ public sealed class VerticesWithIndices
 	(
 		IScalar<ArrayMesh> mesh,
 		IScalar<Int32> surface,
-		IEnumerable<IScalar<Int32>> indices
+		IEnumerable<Int32> indices
 	) : base
 	(
-		new SelectedByExpression<IScalar<Int32>, IVertex>(
+		new SelectedByExpression<Int32, IVertex>(
 			indices,
 			index => new VertexWithIndex(mesh, surface, index))
 	)
