@@ -6,14 +6,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Mantissa;
 
 public sealed class IsPositiveMantissa : BitEnvelope
 {
-	public IsPositiveMantissa(double @double) : this
+	public IsPositiveMantissa(Double @double) : this
 	(
-		new ScalarOfValue<double>(@double)
+		new ScalarOfValue<Double>(@double)
 	)
 	{
 	}
 	
-	public IsPositiveMantissa(IScalar<double> @double) : base
+	public IsPositiveMantissa(IScalar<Double> @double) : base
 	(
 		new LastBit(
 			new BitsOfDouble(@double))

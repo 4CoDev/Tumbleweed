@@ -10,7 +10,7 @@ public sealed class BytesOfSingle : EnumerableEnvelope<IEnumerable<IBit>>
 	public BytesOfSingle(IScalar<Single> @float) : base
 	(
 		new BytesFromSystem(
-			new EnumerableOfDelegate<Byte>(
+			new EnumerableOfFunction<Byte>(
 				() => BitConverter.GetBytes(@float.Value)))
 	)
 	{

@@ -14,7 +14,7 @@ public sealed class ByteFromBits : EnumerableEnvelope<IBit>
 
 	public ByteFromBits(ICollection<IBit> bits) : base
 	(
-		new EnumerableOfDelegate<IBit>(() =>
+		new EnumerableOfFunction<IBit>(() =>
 		{
 			if (bits.Count <= 8) return bits;
 			throw new ArgumentException("Byte doesn't have more than 8 bits");

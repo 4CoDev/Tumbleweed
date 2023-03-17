@@ -1,3 +1,5 @@
+using Tumbleweed.Scalars.FromEnumerable;
+
 namespace Tumbleweed.Numerics.Integers.Signed.FromEnumerable;
 
 public sealed class SingleElementOfEnumerable : SignedEnvelope
@@ -8,8 +10,7 @@ public sealed class SingleElementOfEnumerable : SignedEnvelope
 	) : base
 	(
 		new SignedOfScalar(
-			new Scalars.FromEnumerable
-				.SingleElementOfEnumerable<ISignedInteger>(enumerable))
+			new SingleElementOfEnumerable<ISignedInteger>(enumerable))
 	)
 	{
 	}

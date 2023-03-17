@@ -10,7 +10,7 @@ public sealed class Vector2FromPlanar : ScalarEnvelope<Vector2>
 {
 	public Vector2FromPlanar(IPlanar<IFractional> planar) : base
 	(
-		new ValueOfDelegate<Vector2>(() => Result(planar))
+		new ValueOfFunction<Vector2>(() => Result(planar))
 	)
 	{
 	}

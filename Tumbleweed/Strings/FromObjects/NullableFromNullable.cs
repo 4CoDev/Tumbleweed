@@ -2,7 +2,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Strings.FromObjects;
 
-public sealed class NullableFromNullable : ScalarEnvelope<string?>
+public sealed class NullableFromNullable : ScalarEnvelope<String?>
 {
 	public NullableFromNullable(Object? @object) : this
 	(
@@ -13,7 +13,7 @@ public sealed class NullableFromNullable : ScalarEnvelope<string?>
 	
 	public NullableFromNullable(IScalar<Object?> @object) : base
 	(
-		new ValueOfDelegate<string?>(
+		new ValueOfFunction<String?>(
 			() => @object.Value?.ToString())
 	)
 	{

@@ -1,6 +1,6 @@
 using Tumbleweed.Scalars;
 
-namespace Tumbleweed.ReadOnlySpans;
+namespace Tumbleweed.ReadOnlySpans.FromSystem;
 
 public sealed class SpanFromArray<T> : SpanEnvelope<T>
 {
@@ -13,7 +13,8 @@ public sealed class SpanFromArray<T> : SpanEnvelope<T>
 	
 	public SpanFromArray(IScalar<T[]> array) : base
 	(
-		() => new ReadOnlySpan<T>(array.Value)
+		new SpanOfFunction<T>(
+			() => new ReadOnlySpan<T>(array.Value))
 	)
 	{
 	}

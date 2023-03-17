@@ -10,7 +10,7 @@ public sealed class NullableFromSystem<T> : NullableEnvelope<T>
 		new NullableWithValues<T>(
 			origin!,
 			new BitFromBoolean(
-				new BooleanOfDelegate(
+				new BooleanOfFunction(
 					() => origin != null)))
 	)
 	{

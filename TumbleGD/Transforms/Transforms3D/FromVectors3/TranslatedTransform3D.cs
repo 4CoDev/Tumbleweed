@@ -13,7 +13,7 @@ public sealed class TranslatedTransform3D : ScalarEnvelope<Transform3D>
 		IScalar<Vector3> translation
 	) : base
 	(
-		new ValueOfDelegate<Transform3D>(
+		new ValueOfFunction<Transform3D>(
 			() => transform.Value.Translated(translation.Value))
 	)
 	{

@@ -13,7 +13,7 @@ public sealed class EqualityOfTwoObjects : BitEnvelope
 	) : base
 	(
 		new BitFromBoolean(
-			new BooleanOfDelegate(
+			new BooleanOfFunction(
 				() => first.Equals(second)))
 	)
 	{

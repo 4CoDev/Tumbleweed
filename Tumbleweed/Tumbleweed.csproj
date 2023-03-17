@@ -14,6 +14,7 @@
 
     <ItemGroup>
       <Folder Include="Numerics\Binaries\FromSystem" />
+      <Folder Include="ReadOnlySpans\ToSystem" />
     </ItemGroup>
 
 </Project>

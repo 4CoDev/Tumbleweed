@@ -10,7 +10,7 @@ public sealed class BytesOfDouble : EnumerableEnvelope<IEnumerable<IBit>>
 	public BytesOfDouble(IScalar<Double> @double) : base
 	(
 		new BytesFromSystem(
-			new EnumerableOfDelegate<Byte>(
+			new EnumerableOfFunction<Byte>(
 				() => BitConverter.GetBytes(@double.Value)))
 	)
 	{

@@ -7,14 +7,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Mantissa;
 
 public sealed class BitsOfMantissa : EnumerableEnvelope<IBit>
 {
-	public BitsOfMantissa(double @double) : this
+	public BitsOfMantissa(Double @double) : this
 	(
-		new ScalarOfValue<double>(@double)
+		new ScalarOfValue<Double>(@double)
 	)
 	{
 	}
 	
-	public BitsOfMantissa(IScalar<double> @double) : base
+	public BitsOfMantissa(IScalar<Double> @double) : base
 	(
 		new ElementsFromLeft<IBit>(
 			new BitsOfDouble(@double),

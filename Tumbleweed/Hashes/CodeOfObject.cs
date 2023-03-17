@@ -13,7 +13,7 @@ public sealed class CodeOfObject : ScalarEnvelope<Int32>
 	
 	public CodeOfObject(IScalar<Object> @object) : base
 	(
-		new ValueOfDelegate<Int32>(
+		new ValueOfFunction<Int32>(
 			() => @object.Value.GetHashCode())
 	)
 	{

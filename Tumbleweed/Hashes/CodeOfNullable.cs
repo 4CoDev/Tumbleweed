@@ -13,7 +13,7 @@ public sealed class CodeOfNullable : ScalarEnvelope<Int32>
 	
 	public CodeOfNullable(IScalar<Object?> @object) : base
 	(
-		new ValueOfDelegate<Int32>(
+		new ValueOfFunction<Int32>(
 			() => Function(@object.Value))
 	)
 	{

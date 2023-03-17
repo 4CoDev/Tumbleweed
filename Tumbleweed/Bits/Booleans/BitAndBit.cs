@@ -8,7 +8,7 @@ public sealed class BitAndBit : BitEnvelope
 	public BitAndBit(IBit first, IBit second) : base
 	(
 		new BitFromBoolean(
-			new BooleanOfDelegate(
+			new BooleanOfFunction(
 				() => first.State && second.State))
 	)
 	{

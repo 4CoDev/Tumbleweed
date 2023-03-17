@@ -1,6 +1,6 @@
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Dictionaries.Scalar;
+namespace Tumbleweed.Dictionaries.Scalar;
 
 public sealed class DictionaryFromEnumerable<TKey, TValue> :
 	IScalar<IDictionary<TKey, TValue>>

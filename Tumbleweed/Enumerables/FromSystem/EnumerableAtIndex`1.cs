@@ -12,7 +12,7 @@ public sealed class EnumerableAtIndex<T> : EnumerableEnvelope<T>
 	) : base
 	(
 		new EnumerableOfScalar<T>(
-			new ScalarAtIndex<IEnumerable<T>>(enumerable, index))
+			new ElementAtIndex<IEnumerable<T>>(enumerable, index))
 	)
 	{
 	}

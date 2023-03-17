@@ -1,3 +1,5 @@
+using Tumbleweed.Scalars.FromEnumerable;
+
 namespace Tumbleweed.Numerics.Fractional.FromEnumerable;
 
 public sealed class SingleElementOfEnumerable : FractionalEnvelope
@@ -5,8 +7,7 @@ public sealed class SingleElementOfEnumerable : FractionalEnvelope
 	public SingleElementOfEnumerable(IEnumerable<IFractional> enumerable) : base
 	(
 		new FractionalOfScalar(
-			new Scalars.FromEnumerable
-				.SingleElementOfEnumerable<IFractional>(enumerable))
+			new SingleElementOfEnumerable<IFractional>(enumerable))
 	)
 	{
 	}

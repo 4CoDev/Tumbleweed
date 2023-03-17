@@ -7,7 +7,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles.Mantissa;
 
 public sealed class BitsOfMantissa : EnumerableEnvelope<IBit>
 {
-	public BitsOfMantissa(IScalar<float> single) : base
+	public BitsOfMantissa(IScalar<Single> single) : base
 	(
 		new ElementsFromLeft<IBit>(
 			new BitsOfSingle(single),

@@ -13,7 +13,7 @@ public sealed class AggregatedByExpression<TFrom>
 		Func<IScalar<Int32>, TFrom, IScalar<Int32>> func
 	) : base
 	(
-		new ScalarOfDoubleScalar<Int32>(
+		new ScalarOfNested<Int32>(
 			new AggregatedByExpression<TFrom, IScalar<Int32>>(from, seed, func))
 	)
 	{

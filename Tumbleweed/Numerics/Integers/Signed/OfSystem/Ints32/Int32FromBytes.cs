@@ -1,5 +1,6 @@
 using Tumbleweed.Enumerables;
 using Tumbleweed.ReadOnlySpans;
+using Tumbleweed.ReadOnlySpans.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
@@ -22,7 +23,7 @@ public sealed class Int32FromBytes : ScalarEnvelope<Int32>
 	
 	public Int32FromBytes(IReadOnlySpan<Byte> bytes) : base
 	(
-		new ValueOfDelegate<Int32>(
+		new ValueOfFunction<Int32>(
 			() => BitConverter.ToInt32(
 				new SpanWithSize<Byte>(bytes, 4).Value))
 	)

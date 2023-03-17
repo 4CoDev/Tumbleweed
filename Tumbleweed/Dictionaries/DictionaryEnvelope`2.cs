@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 
-namespace TumbleGD.Dictionaries;
+namespace Tumbleweed.Dictionaries;
 
 public abstract class DictionaryEnvelope<TKey, TValue> :
 	IDictionary<TKey, TValue>

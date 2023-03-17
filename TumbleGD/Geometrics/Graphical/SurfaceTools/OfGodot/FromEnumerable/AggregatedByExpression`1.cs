@@ -14,7 +14,7 @@ public sealed class AggregatedByExpression<TFrom>
 		Func<IScalar<SurfaceTool>, TFrom, IScalar<SurfaceTool>> func
 	) : base
 	(
-		new ScalarOfDoubleScalar<SurfaceTool>(
+		new ScalarOfNested<SurfaceTool>(
 			new AggregatedByExpression<TFrom, IScalar<SurfaceTool>>(from, seed, func))
 	)
 	{

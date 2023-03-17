@@ -11,7 +11,7 @@ public sealed class NullableAsType<T> : ScalarEnvelope<T?>
 	
 	public NullableAsType(IScalar<Object?> scalar) : base
 	(
-		new ValueOfDelegate<T?>(
+		new ValueOfFunction<T?>(
 			() => (T?) scalar.Value)
 	)
 	{

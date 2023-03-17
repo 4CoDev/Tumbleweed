@@ -9,7 +9,7 @@ public sealed class SurfacesFromMesh : EnumerableEnvelope<ISurface>
 {
 	public SurfacesFromMesh(IScalar<ArrayMesh> mesh) : base
 	(
-		new EnumerableOfDelegate<ISurface>(
+		new EnumerableOfFunction<ISurface>(
 			() => Function(mesh))
 	)
 	{

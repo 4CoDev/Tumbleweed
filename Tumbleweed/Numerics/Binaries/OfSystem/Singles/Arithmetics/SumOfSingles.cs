@@ -4,37 +4,37 @@ using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Numerics.Binaries.OfSystem.Singles.Arithmetics;
 
-public sealed class SumOfSingles : ScalarEnvelope<float>
+public sealed class SumOfSingles : ScalarEnvelope<Single>
 {
-	public SumOfSingles(params IScalar<float>[] singles) : this
+	public SumOfSingles(params IScalar<Single>[] singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public SumOfSingles(IEnumerable<IScalar<float>> singles) : this
+	public SumOfSingles(IEnumerable<IScalar<Single>> singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public SumOfSingles(params float[] singles) : this
+	public SumOfSingles(params Single[] singles) : this
 	(
-		new EnumerableWithElements<float>(singles)
+		new EnumerableWithElements<Single>(singles)
 	)
 	{
 	}
 
-	public SumOfSingles(IEnumerable<float> singles) : base
+	public SumOfSingles(IEnumerable<Single> singles) : base
 	(
-		new AggregatedByExpression<float>(singles, 0, Expression)
+		new AggregatedByExpression<Single>(singles, 0, Expression)
 	)
 	{
 	}
 
-	private static float Expression(float augend, float addend)
+	private static Single Expression(Single augend, Single addend)
 	{
 		return augend + addend;
 	}

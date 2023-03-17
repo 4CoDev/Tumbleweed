@@ -10,7 +10,7 @@ public sealed class BytesOfInt32 : EnumerableEnvelope<IEnumerable<IBit>>
 	public BytesOfInt32(IScalar<Int32> integer) : base
 	(
 		new BytesFromSystem(
-			new EnumerableOfDelegate<Byte>(
+			new EnumerableOfFunction<Byte>(
 				() => BitConverter.GetBytes(integer.Value)))
 	)
 	{

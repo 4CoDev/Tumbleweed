@@ -2,7 +2,7 @@ using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Dictionaries;
+namespace Tumbleweed.Dictionaries;
 
 public sealed class DictionaryFromScalar<TKey, TValue> :
 	IDictionary<TKey, TValue>
@@ -33,41 +33,41 @@ public sealed class DictionaryFromScalar<TKey, TValue> :
 		scalar.Value.Clear();
 	}
 
-	public bool Contains(KeyValuePair<TKey, TValue> item)
+	public Boolean Contains(KeyValuePair<TKey, TValue> item)
 	{
 		return scalar.Value.Contains(item);
 	}
 
-	public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
+	public void CopyTo(KeyValuePair<TKey, TValue>[] array, Int32 arrayIndex)
 	{
 		scalar.Value.CopyTo(array, arrayIndex);
 	}
 
-	public bool Remove(KeyValuePair<TKey, TValue> item)
+	public Boolean Remove(KeyValuePair<TKey, TValue> item)
 	{
 		return scalar.Value.Remove(item);
 	}
 
-	public int Count => scalar.Value.Count;
+	public Int32 Count => scalar.Value.Count;
 
-	public bool IsReadOnly => scalar.Value.IsReadOnly;
+	public Boolean IsReadOnly => scalar.Value.IsReadOnly;
 
 	public void Add(TKey key, TValue value)
 	{
 		scalar.Value.Add(key, value);
 	}
 
-	public bool ContainsKey(TKey key)
+	public Boolean ContainsKey(TKey key)
 	{
 		return scalar.Value.ContainsKey(key);
 	}
 
-	public bool Remove(TKey key)
+	public Boolean Remove(TKey key)
 	{
 		return scalar.Value.Remove(key);
 	}
 
-	public bool TryGetValue(TKey key, [MaybeNullWhen(false)] out TValue value)
+	public Boolean TryGetValue(TKey key, [MaybeNullWhen(false)] out TValue value)
 	{
 		return scalar.Value.TryGetValue(key, out value);
 	}

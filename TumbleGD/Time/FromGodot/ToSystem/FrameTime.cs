@@ -3,7 +3,7 @@ using Tumbleweed.Scalars;
 
 namespace TumbleGD.Time.FromGodot.ToSystem;
 
-public sealed class FrameTime : ScalarEnvelope<double>
+public sealed class FrameTime : ScalarEnvelope<Double>
 {
 	public FrameTime(Node node) : this
 	(
@@ -14,7 +14,7 @@ public sealed class FrameTime : ScalarEnvelope<double>
 	
 	public FrameTime(IScalar<Node> node) : base
 	(
-		new ValueOfDelegate<double>(
+		new ValueOfFunction<Double>(
 			() => node.Value.GetProcessDeltaTime())
 	)
 	{

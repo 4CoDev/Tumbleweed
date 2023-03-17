@@ -10,7 +10,7 @@ public sealed class IndicesFromSurfaceTool : EnumerableEnvelope<Int32>
 {
 	public IndicesFromSurfaceTool(IScalar<SurfaceTool> tool) : base
 	(
-		new EnumerableOfDelegate<Int32>(
+		new EnumerableOfFunction<Int32>(
 			() => Function(tool))
 	)
 	{

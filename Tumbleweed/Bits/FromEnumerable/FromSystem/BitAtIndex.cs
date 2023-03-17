@@ -27,7 +27,7 @@ public sealed class BitAtIndex : BitEnvelope
 	
 	public BitAtIndex(ICollection<IBit> bits, IScalar<Int32> index) : base
 	(
-		new BitOfDelegate(
+		new BitOfFunction(
 			() => bits.ElementAt(index.Value))
 	)
 	{

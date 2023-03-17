@@ -5,14 +5,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Mantissa;
 
 public sealed class MantissaOfDouble : SignedEnvelope
 {
-	public MantissaOfDouble(double @double) : this
+	public MantissaOfDouble(Double @double) : this
 	(
-		new ScalarOfValue<double>(@double)
+		new ScalarOfValue<Double>(@double)
 	)
 	{
 	}
 	
-	public MantissaOfDouble(IScalar<double> @double) : base
+	public MantissaOfDouble(IScalar<Double> @double) : base
 	(
 		new SignedWithValues(
 			new IsPositiveMantissa(@double),

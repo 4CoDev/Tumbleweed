@@ -1,6 +1,5 @@
 using Tumbleweed.Bits;
 using Tumbleweed.Bits.FromSystem;
-using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Equality.ByReference;
 

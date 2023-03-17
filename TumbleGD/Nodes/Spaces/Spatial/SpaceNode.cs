@@ -7,15 +7,15 @@ public sealed class SpaceNode : ScalarEnvelope<Node>
 {
 	public SpaceNode() : base
 	(
-		new ValueOfDelegate<Node>(Function)
+		new ValueOfFunction<Node>(Function)
 	)
 	{
 	}
 
 	private static Node Function()
 	{
-		Node space = new Node();
-		MeshInstance3D mesh = new MeshInstance3D();
+		Node space = new Node { Name = "Space" };
+		MeshInstance3D mesh = new MeshInstance3D { Name = "Mesh" };
 		space.AddChild(mesh);
 		return space;
 	}

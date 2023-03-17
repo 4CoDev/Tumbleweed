@@ -4,37 +4,37 @@ using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Numerics.Binaries.OfSystem.Singles.Arithmetics;
 
-public sealed class DifferenceOfSingles : ScalarEnvelope<float>
+public sealed class DifferenceOfSingles : ScalarEnvelope<Single>
 {
-	public DifferenceOfSingles(params IScalar<float>[] singles) : this
+	public DifferenceOfSingles(params IScalar<Single>[] singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public DifferenceOfSingles(IEnumerable<IScalar<float>> singles) : this
+	public DifferenceOfSingles(IEnumerable<IScalar<Single>> singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public DifferenceOfSingles(params float[] singles) : this
+	public DifferenceOfSingles(params Single[] singles) : this
 	(
-		new EnumerableWithElements<float>(singles)
+		new EnumerableWithElements<Single>(singles)
 	)
 	{
 	}
 	
-	public DifferenceOfSingles(IEnumerable<float> singles) : base
+	public DifferenceOfSingles(IEnumerable<Single> singles) : base
 	(
-		new AggregatedByExpression<float>(singles, 0, Expression)
+		new AggregatedByExpression<Single>(singles, 0, Expression)
 	)
 	{
 	}
 
-	private static float Expression(float minuend, float subtrahend)
+	private static Single Expression(Single minuend, Single subtrahend)
 	{
 		return minuend - subtrahend;
 	}

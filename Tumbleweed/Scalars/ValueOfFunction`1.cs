@@ -4,16 +4,16 @@ using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Scalars;
 
-public sealed class ValueOfDelegate<T> : IScalar<T>
+public sealed class ValueOfFunction<T> : IScalar<T>
 {
-	public ValueOfDelegate(Func<T> function) : this
+	public ValueOfFunction(Func<T> function) : this
 	(
 		new NullaryFromSystem<T>(function)
 	)
 	{
 	}
 	
-	public ValueOfDelegate(INullaryFunction<T> function) =>
+	public ValueOfFunction(INullaryFunction<T> function) =>
 		this.function = function;
 
 	public T Value => function.Invoke();

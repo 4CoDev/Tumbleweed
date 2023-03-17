@@ -1,7 +1,6 @@
 using TumbleGD.Geometrics.Graphical.Polygons.Triangles.Numeric.OfSystem;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Enumerables.FromSystem;
-using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Vertices.
 	Indices;

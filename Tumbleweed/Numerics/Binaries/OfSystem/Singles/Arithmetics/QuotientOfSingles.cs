@@ -4,37 +4,37 @@ using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Numerics.Binaries.OfSystem.Singles.Arithmetics;
 
-public sealed class QuotientOfSingles : ScalarEnvelope<float>
+public sealed class QuotientOfSingles : ScalarEnvelope<Single>
 {
-	public QuotientOfSingles(params IScalar<float>[] singles) : this
+	public QuotientOfSingles(params IScalar<Single>[] singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public QuotientOfSingles(IEnumerable<IScalar<float>> singles) : this
+	public QuotientOfSingles(IEnumerable<IScalar<Single>> singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public QuotientOfSingles(params float[] singles) : this
+	public QuotientOfSingles(params Single[] singles) : this
 	(
-		new EnumerableWithElements<float>(singles)
+		new EnumerableWithElements<Single>(singles)
 	)
 	{
 	}
 
-	public QuotientOfSingles(IEnumerable<float> singles) : base
+	public QuotientOfSingles(IEnumerable<Single> singles) : base
 	(
-		new AggregatedByExpression<float>(singles, 0, Expression)
+		new AggregatedByExpression<Single>(singles, 0, Expression)
 	)
 	{
 	}
 
-	private static float Expression(float dividend, float divisor)
+	private static Single Expression(Single dividend, Single divisor)
 	{
 		return dividend / divisor;
 	}

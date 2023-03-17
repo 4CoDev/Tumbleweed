@@ -6,7 +6,7 @@ public abstract class EnumerableEnvelope<T> : IEnumerable<T>
 {
 	protected EnumerableEnvelope(Func<IEnumerable<T>> @delegate) : this
 	(
-		new EnumerableOfDelegate<T>(@delegate)
+		new EnumerableOfFunction<T>(@delegate)
 	)
 	{
 	}

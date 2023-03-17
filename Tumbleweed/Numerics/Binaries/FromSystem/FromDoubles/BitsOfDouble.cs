@@ -6,7 +6,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles;
 
 public sealed class BitsOfDouble : EnumerableEnvelope<IBit>
 {
-	public BitsOfDouble(IScalar<double> @double) : base
+	public BitsOfDouble(IScalar<Double> @double) : base
 	(
 		new BitsOfBytes(
 			new BytesOfDouble(@double))

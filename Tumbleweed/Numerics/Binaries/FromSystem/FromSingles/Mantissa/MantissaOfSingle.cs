@@ -5,7 +5,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles.Mantissa;
 
 public sealed class MantissaOfSingle : SignedEnvelope
 {
-	public MantissaOfSingle(IScalar<float> single) : base
+	public MantissaOfSingle(IScalar<Single> single) : base
 	(
 		new SignedWithValues(
 			new IsPositiveMantissa(single),

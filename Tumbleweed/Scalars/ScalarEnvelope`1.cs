@@ -1,5 +1,3 @@
-using Tumbleweed.Bits;
-
 namespace Tumbleweed.Scalars;
 
 public abstract class ScalarEnvelope<T> : IScalar<T>
@@ -9,13 +7,13 @@ public abstract class ScalarEnvelope<T> : IScalar<T>
 
 	public T Value => scalar.Value;
 
-	public override bool Equals(Object? other) =>
+	public override Boolean Equals(Object? other) =>
 		scalar.Equals(other);
 
-	public override int GetHashCode() =>
+	public override Int32 GetHashCode() =>
 		scalar.GetHashCode();
 
-	public override string? ToString() =>
+	public override String? ToString() =>
 		scalar.ToString();
 
 	private readonly IScalar<T> scalar;

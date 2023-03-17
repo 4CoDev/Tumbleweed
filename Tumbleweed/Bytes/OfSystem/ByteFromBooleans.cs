@@ -3,28 +3,28 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Bytes.OfSystem;
 
-public sealed class ByteFromBooleans : IScalar<byte>
+public sealed class ByteFromBooleans : IScalar<Byte>
 {
-	public ByteFromBooleans(IEnumerable<IScalar<bool>> booleans) : this
+	public ByteFromBooleans(IEnumerable<IScalar<Boolean>> booleans) : this
 	(
-		new ValuesOfScalars<bool>(booleans)
+		new ValuesOfScalars<Boolean>(booleans)
 	)
 	{
 	}
 	
-	public ByteFromBooleans(IEnumerable<bool> booleans) : this
+	public ByteFromBooleans(IEnumerable<Boolean> booleans) : this
 	(
-		new List<bool>(booleans)
+		new List<Boolean>(booleans)
 	)
 	{
 	}
 	
-	public ByteFromBooleans(IList<bool> booleans)
+	public ByteFromBooleans(IList<Boolean> booleans)
 	{
 		this.booleans = booleans;
 	}
 
-	public byte Value
+	public Byte Value
 	{
 		get
 		{
@@ -32,15 +32,15 @@ public sealed class ByteFromBooleans : IScalar<byte>
 			{
 				throw new ArgumentException("Byte must have 8 bits");
 			}
-			byte result = 0;
-			for (int i = 0; i < booleans.Count; i++)
+			Byte result = 0;
+			for (Int32 i = 0; i < booleans.Count; i++)
 			{
-				bool boolean = booleans[i];
-				if (boolean) result |= (byte) (1 << i);
+				Boolean boolean = booleans[i];
+				if (boolean) result |= (Byte) (1 << i);
 			}
 			return result;
 		}
 	}
 
-	private readonly IList<bool> booleans;
+	private readonly IList<Boolean> booleans;
 }

@@ -1,6 +1,6 @@
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Dictionaries;
+namespace Tumbleweed.Dictionaries;
 
 public sealed class DictionaryFromKeyEnumerable<TKey, TValue> :
 	DictionaryEnvelope<TKey, TValue>

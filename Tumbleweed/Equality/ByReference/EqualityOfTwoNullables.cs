@@ -11,7 +11,7 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		Object? second
 	) : base
 	(
-		new BitOfDelegate(
+		new BitOfFunction(
 			() => new BitFromBoolean(
 				ReferenceEquals(first, second)))
 	)

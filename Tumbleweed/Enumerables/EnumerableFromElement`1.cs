@@ -7,7 +7,7 @@ public sealed class EnumerableFromElement<T> : EnumerableEnvelope<T>
 		T element
 	) : base
 	(
-		new EnumerableOfDelegate<T>(
+		new EnumerableOfFunction<T>(
 			() => new T[] { element })
 	)
 	{

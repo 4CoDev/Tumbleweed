@@ -6,7 +6,7 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromSingles;
 
 public sealed class BitsOfSingle : EnumerableEnvelope<IBit>
 {
-	public BitsOfSingle(IScalar<float> @float) : base
+	public BitsOfSingle(IScalar<Single> @float) : base
 	(
 		new BitsOfBytes(
 			new BytesOfSingle(@float))

@@ -4,37 +4,37 @@ using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Numerics.Binaries.OfSystem.Singles.Arithmetics;
 
-public sealed class ProductOfSingles : ScalarEnvelope<float>
+public sealed class ProductOfSingles : ScalarEnvelope<Single>
 {
-	public ProductOfSingles(params IScalar<float>[] singles) : this
+	public ProductOfSingles(params IScalar<Single>[] singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public ProductOfSingles(IEnumerable<IScalar<float>> singles) : this
+	public ProductOfSingles(IEnumerable<IScalar<Single>> singles) : this
 	(
-		new ValuesOfScalars<float>(singles)
+		new ValuesOfScalars<Single>(singles)
 	)
 	{
 	}
 	
-	public ProductOfSingles(params float[] singles) : this
+	public ProductOfSingles(params Single[] singles) : this
 	(
-		new EnumerableWithElements<float>(singles)
+		new EnumerableWithElements<Single>(singles)
 	)
 	{
 	}
 	
-	public ProductOfSingles(IEnumerable<float> singles) : base
+	public ProductOfSingles(IEnumerable<Single> singles) : base
 	(
-		new AggregatedByExpression<float>(singles, 0, Expression)
+		new AggregatedByExpression<Single>(singles, 0, Expression)
 	)
 	{
 	}
 
-	private static float Expression(float multiplicand, float multiplier)
+	private static Single Expression(Single multiplicand, Single multiplier)
 	{
 		return multiplicand * multiplier;
 	}

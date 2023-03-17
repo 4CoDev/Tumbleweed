@@ -47,7 +47,7 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 		IScalar<IScalar<T>?> second
 	) : base
 	(
-		new BitOfDelegate(
+		new BitOfFunction(
 			() => Function(
 				first.Value,
 				second.Value))

@@ -4,7 +4,7 @@ public sealed class ScalarOfValue<T> : ScalarEnvelope<T>
 {
 	public ScalarOfValue(T value) : base
 	(
-		new ValueOfDelegate<T>(() => value)
+		new ValueOfFunction<T>(() => value)
 	)
 	{
 	}

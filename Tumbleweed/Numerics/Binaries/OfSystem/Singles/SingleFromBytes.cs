@@ -1,5 +1,6 @@
 using Tumbleweed.Enumerables;
 using Tumbleweed.ReadOnlySpans;
+using Tumbleweed.ReadOnlySpans.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Binaries.OfSystem.Singles;
@@ -22,7 +23,7 @@ public sealed class SingleFromBytes : ScalarEnvelope<Single>
 	
 	public SingleFromBytes(IReadOnlySpan<Byte> bytes) : base
 	(
-		new ValueOfDelegate<Single>(
+		new ValueOfFunction<Single>(
 			() => BitConverter.ToSingle(
 				new SpanWithSize<Byte>(bytes, 4).Value))
 	)

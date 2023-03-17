@@ -1,8 +1,8 @@
 namespace Tumbleweed.Scalars.FromEnumerable;
 
-public sealed class LastScalar<T> : IScalar<T>
+public sealed class LastElementOfEnumerable<T> : IScalar<T>
 {
-	public LastScalar(IEnumerable<T> enumerable)
+	public LastElementOfEnumerable(IEnumerable<T> enumerable)
 	{
 		this.enumerable = enumerable;
 	}

@@ -14,7 +14,7 @@ public sealed class LazyFunction<T> : ScalarEnvelope<T>
 	public LazyFunction(INullaryFunction<T> function) : base
 	(
 		new LazyValue<T>(
-			new ValueOfDelegate<T>(function))
+			new ValueOfFunction<T>(function))
 	)
 	{
 	}

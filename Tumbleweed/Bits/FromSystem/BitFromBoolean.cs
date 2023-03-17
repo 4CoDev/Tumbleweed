@@ -4,19 +4,19 @@ namespace Tumbleweed.Bits.FromSystem;
 
 public sealed class BitFromBoolean : IBit
 {
-	public BitFromBoolean(bool boolean) : this
+	public BitFromBoolean(Boolean boolean) : this
 	(
-		new ScalarOfValue<bool>(boolean)
+		new ScalarOfValue<Boolean>(boolean)
 	)
 	{
 	}
 	
-	public BitFromBoolean(IScalar<bool> boolean)
+	public BitFromBoolean(IScalar<Boolean> boolean)
 	{
 		this.boolean = boolean;
 	}
 
-	public bool State => boolean.Value;
+	public Boolean State => boolean.Value;
 
-	private readonly IScalar<bool> boolean;
+	private readonly IScalar<Boolean> boolean;
 }

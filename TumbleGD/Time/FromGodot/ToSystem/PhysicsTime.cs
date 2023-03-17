@@ -3,7 +3,7 @@ using Tumbleweed.Scalars;
 
 namespace TumbleGD.Time.FromGodot.ToSystem;
 
-public sealed class PhysicsTime : ScalarEnvelope<double>
+public sealed class PhysicsTime : ScalarEnvelope<Double>
 {
 	public PhysicsTime(Node node) : this
 	(
@@ -14,7 +14,7 @@ public sealed class PhysicsTime : ScalarEnvelope<double>
 	
 	public PhysicsTime(IScalar<Node> node) : base
 	(
-		new ValueOfDelegate<double>(
+		new ValueOfFunction<Double>(
 			() => node.Value.GetPhysicsProcessDeltaTime())
 	)
 	{

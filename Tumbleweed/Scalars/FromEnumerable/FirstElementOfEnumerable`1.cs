@@ -1,8 +1,8 @@
 namespace Tumbleweed.Scalars.FromEnumerable;
 
-public sealed class FirstScalar<T> : IScalar<T>
+public sealed class FirstElementOfEnumerable<T> : IScalar<T>
 {
-	public FirstScalar(IEnumerable<T> enumerable)
+	public FirstElementOfEnumerable(IEnumerable<T> enumerable)
 	{
 		this.enumerable = enumerable;
 	}

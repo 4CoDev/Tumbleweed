@@ -18,7 +18,7 @@ public sealed class MultidimensionalArray<T> : IArray<T>
 
 	public T this[IEnumerable<INaturalInteger> indices] =>
 	(
-		new ScalarAtIndex<T>(
+		new ElementAtIndex<T>(
 			elements,
 			new FlatIndexFromIndices(indices, dimensions)).Value
 	);

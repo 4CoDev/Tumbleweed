@@ -16,7 +16,7 @@ public sealed class ArrayFromEnumerable<T> : IArray<T>
 
 	public T this[IEnumerable<INaturalInteger> indices] => 
 	(
-		new ScalarAtIndex<T>(
+		new ElementAtIndex<T>(
 			enumerable,
 			new SingleElementOfEnumerable(indices)).Value
 	);

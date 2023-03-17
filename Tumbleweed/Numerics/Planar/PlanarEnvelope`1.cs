@@ -7,15 +7,9 @@ public abstract class PlanarEnvelope<T> : IPlanar<T>
 		this.planar = planar;
 	}
 
-	public T X
-	{
-		get => planar.X;
-	}
-	
-	public T Y
-	{
-		get => planar.Y;
-	}
-	
+	public T X => planar.X;
+
+	public T Y => planar.Y;
+
 	private readonly IPlanar<T> planar;
 }

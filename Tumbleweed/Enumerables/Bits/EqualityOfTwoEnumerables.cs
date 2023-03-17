@@ -11,7 +11,7 @@ public sealed class EqualityOfTwoEnumerables<T> : BitEnvelope
 		IEnumerable<T> second
 	) : base
 	(
-		new BitOfDelegate(
+		new BitOfFunction(
 			() => new BitFromBoolean(
 				first.SequenceEqual(second)))
 	)

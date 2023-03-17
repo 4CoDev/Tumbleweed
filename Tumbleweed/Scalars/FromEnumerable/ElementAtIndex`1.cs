@@ -3,16 +3,16 @@ using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
 
 namespace Tumbleweed.Scalars.FromEnumerable;
 
-public sealed class ScalarAtIndex<T> : IScalar<T>
+public sealed class ElementAtIndex<T> : IScalar<T>
 {
-	public ScalarAtIndex(IEnumerable<T> enumerable, INaturalInteger index)
+	public ElementAtIndex(IEnumerable<T> enumerable, INaturalInteger index)
 	{
 		this.enumerable = enumerable;
 		this.index = index;
 	}
 
 	public T Value =>
-		new FromSystem.ScalarAtIndex<T>(
+		new FromSystem.ElementAtIndex<T>(
 			enumerable,
 			new Int32FromNatural(index)).Value;
 

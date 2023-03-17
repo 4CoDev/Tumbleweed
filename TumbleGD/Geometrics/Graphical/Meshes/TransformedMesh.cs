@@ -27,7 +27,7 @@ public sealed class TransformedMesh : MeshEnvelope
 	(
 		new MeshWithSurfaces(
 			new TransformedSurfaces(
-				new EnumerableOfDelegate<ISurface>(
+				new EnumerableOfFunction<ISurface>(
 					() => mesh.Surfaces),
 				transform))
 	)

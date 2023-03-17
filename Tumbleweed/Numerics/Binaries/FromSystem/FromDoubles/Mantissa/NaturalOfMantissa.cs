@@ -5,14 +5,14 @@ namespace Tumbleweed.Numerics.Binaries.FromSystem.FromDoubles.Mantissa;
 
 public sealed class NaturalOfMantissa : NaturalEnvelope
 {
-	public NaturalOfMantissa(double @double) : this
+	public NaturalOfMantissa(Double @double) : this
 	(
-		new ScalarOfValue<double>(@double)
+		new ScalarOfValue<Double>(@double)
 	)
 	{
 	}
 	
-	public NaturalOfMantissa(IScalar<double> @double) : base
+	public NaturalOfMantissa(IScalar<Double> @double) : base
 	(
 		new NaturalWithBits(
 			new BitsOfMantissa(@double))

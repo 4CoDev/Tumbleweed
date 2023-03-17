@@ -11,7 +11,7 @@ public sealed class EnumerableWithElement<T> : EnumerableEnvelope<T>
 	) : base
 	(
 		new EnumerableOfScalar<T>(
-			new ValueOfDelegate<IEnumerable<T>>(
+			new ValueOfFunction<IEnumerable<T>>(
 				() => enumerable.Append(element)))
 	)
 	{

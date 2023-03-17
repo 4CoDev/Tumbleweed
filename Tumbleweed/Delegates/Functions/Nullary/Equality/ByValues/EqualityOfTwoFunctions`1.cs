@@ -23,7 +23,7 @@ public sealed class EqualityOfTwoFunctions<TResult> : BitEnvelope
 		INullaryFunction<TResult> second
 	) : base
 	(
-		new BitOfDelegate(
+		new BitOfFunction(
 			() => new EqualityOfTwoNullables(
 				first.Invoke(),
 				second.Invoke()))

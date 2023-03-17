@@ -21,7 +21,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 		IScalar<Int32> size
 	) : base
 	(
-		new CollectionOfDelegate<T>(
+		new CollectionOfFunction<T>(
 			() => Result(collection, size))
 	)
 	{
@@ -31,7 +31,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 	(
 	) : base
 	(
-		new CollectionOfDelegate<T>(
+		new CollectionOfFunction<T>(
 			() => throw new InvalidOperationException("Test."))
 	)
 	{

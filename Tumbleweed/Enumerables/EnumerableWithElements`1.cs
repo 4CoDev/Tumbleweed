@@ -4,14 +4,14 @@ public sealed class EnumerableWithElements<T> : EnumerableEnvelope<T>
 {
 	public EnumerableWithElements(params T[] elements) : this
 	(
-		new EnumerableOfDelegate<T>(elements.AsEnumerable)
+		new EnumerableOfFunction<T>(elements.AsEnumerable)
 	)
 	{
 	}
 	
 	public EnumerableWithElements(params IEnumerable<T>[] elements) : this
 	(
-		new EnumerableOfDelegate<IEnumerable<T>>(elements.AsEnumerable)
+		new EnumerableOfFunction<IEnumerable<T>>(elements.AsEnumerable)
 	)
 	{
 	}

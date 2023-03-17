@@ -1,3 +1,5 @@
+using Tumbleweed.Scalars.FromEnumerable;
+
 namespace Tumbleweed.Numerics.Integers.Natural.FromEnumerable;
 
 public sealed class SingleElementOfEnumerable : NaturalEnvelope
@@ -8,7 +10,7 @@ public sealed class SingleElementOfEnumerable : NaturalEnvelope
 	) : base
 	(
 		new NaturalOfScalar(
-			new Scalars.FromEnumerable.SingleElementOfEnumerable<INaturalInteger>(
+			new SingleElementOfEnumerable<INaturalInteger>(
 				enumerable))
 	)
 	{

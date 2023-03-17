@@ -25,7 +25,7 @@ public sealed class ElementsFromMiddle<T> : EnumerableEnvelope<T>
 		IScalar<Int32> to
 	) : base
 	(
-		new EnumerableOfDelegate<T>(
+		new EnumerableOfFunction<T>(
 			() => collection
 				.Skip(from.Value)
 				.Take(to.Value - from.Value + 1))

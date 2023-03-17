@@ -9,7 +9,7 @@ public sealed class SingleElementOfEnumerable<T> : ScalarEnvelope<T>
 		IEnumerable<T> enumerable
 	) : base
 	(
-		new FromSystem.ScalarAtIndex<T>(
+		new FromSystem.ElementAtIndex<T>(
 			new EnumerableWithSize<T>(enumerable, 1),
 			0)
 	)

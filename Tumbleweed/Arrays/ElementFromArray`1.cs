@@ -11,7 +11,7 @@ public sealed class ElementFromArray<T> : ScalarEnvelope<T>
 		IEnumerable<INaturalInteger> indices
 	) : base
 	(
-		new ValueOfDelegate<T>(
+		new ValueOfFunction<T>(
 			() => array[indices])
 	)
 	{

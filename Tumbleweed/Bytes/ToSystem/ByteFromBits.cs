@@ -5,7 +5,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Bytes.ToSystem;
 
-public sealed class ByteFromBits : ScalarEnvelope<byte>
+public sealed class ByteFromBits : ScalarEnvelope<Byte>
 {
 	public ByteFromBits(IEnumerable<IBit> bits) : base
 	(

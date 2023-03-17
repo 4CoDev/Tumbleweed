@@ -6,7 +6,7 @@ public sealed class CommaSeparatedStrings : ScalarEnvelope<String>
 {
 	public CommaSeparatedStrings(ICollection<String> strings) : base
 	(
-		new ValueOfDelegate<String>(
+		new ValueOfFunction<String>(
 			() => string.Join(", ", strings))
 	)
 	{
