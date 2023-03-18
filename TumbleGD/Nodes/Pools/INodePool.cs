@@ -1,13 +1,12 @@
-using Tumbleweed.Delegates.Actions;
-using Tumbleweed.Delegates.Actions.Nullary;
+using Tumbleweed.Delegates.Events.Nullary;
 
 namespace TumbleGD.Nodes.Pools;
 
 public interface INodePool
 {
-	IDictionary<Object, INullaryAction> Graphicals { get; }
+	INullaryEvent Graphicals { get; }
 	
-	IDictionary<Object, INullaryAction> Physicals { get; }
+	INullaryEvent Physicals { get; }
 	
-	IDictionary<Object, INullaryAction> Inputs { get; }
+	INullaryEvent Inputs { get; }
 }

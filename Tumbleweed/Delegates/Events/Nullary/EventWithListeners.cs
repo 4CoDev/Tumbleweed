@@ -2,9 +2,9 @@ using Tumbleweed.Delegates.Actions.Nullary;
 
 namespace Tumbleweed.Delegates.Events.Nullary;
 
-public sealed class EventWithValues : INullaryEvent
+public sealed class EventWithListeners : INullaryEvent
 {
-	public EventWithValues
+	public EventWithListeners
 	(
 		IDictionary<Object, INullaryAction> listeners
 	)

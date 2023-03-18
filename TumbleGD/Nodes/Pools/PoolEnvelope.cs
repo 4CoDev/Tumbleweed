@@ -1,5 +1,4 @@
-using Tumbleweed.Delegates.Actions;
-using Tumbleweed.Delegates.Actions.Nullary;
+using Tumbleweed.Delegates.Events.Nullary;
 
 namespace TumbleGD.Nodes.Pools;
 
@@ -8,13 +7,13 @@ public abstract class PoolEnvelope : INodePool
 	protected PoolEnvelope(INodePool pool) =>
 		this.pool = pool;
 
-	public IDictionary<Object, INullaryAction> Graphicals =>
+	public INullaryEvent Graphicals =>
 		pool.Graphicals;
 
-	public IDictionary<Object, INullaryAction> Physicals =>
+	public INullaryEvent Physicals =>
 		pool.Physicals;
 
-	public IDictionary<Object, INullaryAction> Inputs =>
+	public INullaryEvent Inputs =>
 		pool.Inputs;
 
 	private readonly INodePool pool;
