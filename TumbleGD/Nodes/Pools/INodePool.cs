@@ -10,6 +10,4 @@ public interface INodePool
 	IDictionary<Object, INullaryAction> Physicals { get; }
 	
 	IDictionary<Object, INullaryAction> Inputs { get; }
-	
-	IDictionary<Object, Object> Listenings { get; }
 }

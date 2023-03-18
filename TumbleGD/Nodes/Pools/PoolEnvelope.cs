@@ -5,11 +5,9 @@ namespace TumbleGD.Nodes.Pools;
 
 public abstract class PoolEnvelope : INodePool
 {
-	protected PoolEnvelope(INodePool pool)
-	{
+	protected PoolEnvelope(INodePool pool) =>
 		this.pool = pool;
-	}
-	
+
 	public IDictionary<Object, INullaryAction> Graphicals =>
 		pool.Graphicals;
 
@@ -18,9 +16,6 @@ public abstract class PoolEnvelope : INodePool
 
 	public IDictionary<Object, INullaryAction> Inputs =>
 		pool.Inputs;
-
-	public IDictionary<Object, Object> Listenings =>
-		pool.Listenings;
 
 	private readonly INodePool pool;
 }

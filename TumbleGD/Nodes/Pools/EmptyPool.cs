@@ -10,8 +10,7 @@ public class EmptyPool : PoolEnvelope
 		new PoolWithValues(
 			new Dictionary<Object, INullaryAction>(),
 			new Dictionary<Object, INullaryAction>(),
-			new Dictionary<Object, INullaryAction>(),
-			new Dictionary<Object, Object>())
+			new Dictionary<Object, INullaryAction>())
 	)
 	{
 	}
