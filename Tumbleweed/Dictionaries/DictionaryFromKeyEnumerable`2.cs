@@ -22,7 +22,7 @@ public sealed class DictionaryFromKeyEnumerable<TKey, TValue> :
 		IScalar<IDictionary<TKey, TValue>> scalar
 	) : base
 	(
-		new DictionaryFromScalar<TKey, TValue>(scalar)
+		new DictionaryOfScalar<TKey, TValue>(scalar)
 	)
 	{
 	}

@@ -4,11 +4,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Dictionaries;
 
-public sealed class DictionaryFromScalar<TKey, TValue> :
+public sealed class DictionaryOfScalar<TKey, TValue> :
 	IDictionary<TKey, TValue>
 	where TKey : notnull
 {
-	public DictionaryFromScalar(IScalar<IDictionary<TKey, TValue>> scalar)
+	public DictionaryOfScalar(IScalar<IDictionary<TKey, TValue>> scalar)
 	{
 		this.scalar = scalar;
 	}
