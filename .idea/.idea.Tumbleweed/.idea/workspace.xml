@@ -10,6 +10,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/SurfaceTools/ToGodot/SurfaceToolsWithSurfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/Surfaces/FromArrayMeshes/FromGodot/SurfacesFromMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Nodes/FromTree/OfGodot/NodeOnPath`1.cs" root0="FORCE_HIGHLIGHTING" />
