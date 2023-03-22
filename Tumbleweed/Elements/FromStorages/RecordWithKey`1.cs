@@ -4,7 +4,7 @@ using Tumbleweed.Storages;
 
 namespace Tumbleweed.Elements.FromStorages;
 
-public sealed class RecordWithKey<T> : ElementEnvelope<T>
+public sealed class RecordWithKey<T> : ElementEnvelope<T> where T : notnull
 {
 	public RecordWithKey(IStorage storage, params Object[] key) : this
 	(

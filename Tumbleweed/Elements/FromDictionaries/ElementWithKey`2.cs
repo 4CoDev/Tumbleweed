@@ -2,7 +2,9 @@ using Tumbleweed.Nullability;
 
 namespace Tumbleweed.Elements.FromDictionaries;
 
-public sealed class ElementWithKey<TKey, TElement> : IElement<TElement>
+public sealed class ElementWithKey<TKey, TElement> :
+	IElement<TElement>
+	where TElement : notnull
 {
 	public ElementWithKey
 	(

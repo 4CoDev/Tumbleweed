@@ -4,7 +4,9 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Elements;
 
-public sealed class ElementOfFunction<T> : ElementEnvelope<T>
+public sealed class ElementOfFunction<T> :
+	ElementEnvelope<T>
+	where T : notnull
 {
 	public ElementOfFunction
 	(

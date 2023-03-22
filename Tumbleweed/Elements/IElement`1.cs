@@ -2,7 +2,7 @@ using Tumbleweed.Nullability;
 
 namespace Tumbleweed.Elements;
 
-public interface IElement<T>
+public interface IElement<T> where T : notnull
 {
 	INullable<T> Value { get; }
 

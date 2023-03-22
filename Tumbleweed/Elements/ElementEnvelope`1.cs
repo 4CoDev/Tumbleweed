@@ -2,7 +2,7 @@ using Tumbleweed.Nullability;
 
 namespace Tumbleweed.Elements;
 
-public abstract class ElementEnvelope<T> : IElement<T>
+public abstract class ElementEnvelope<T> : IElement<T> where T : notnull
 {
 	protected ElementEnvelope(IElement<T> element) =>
 		this.element = element;

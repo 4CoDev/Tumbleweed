@@ -4,7 +4,9 @@ using Tumbleweed.Storages;
 
 namespace Tumbleweed.Elements.FromStorages;
 
-public sealed class GlobalWithKey<T> : ElementEnvelope<T>
+public sealed class GlobalWithKey<T> :
+	ElementEnvelope<T>
+	where T : notnull
 {
 	public GlobalWithKey(params Object[] key) : this
 	(

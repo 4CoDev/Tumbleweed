@@ -13,8 +13,8 @@ public sealed class EqualityOfTwoEnumerables : BitEnvelope
 		Object second
 	) : this
 	(
-		new ObjectAsScalar<IEnumerable>(first),
-		new ObjectAsScalar<IEnumerable>(second)
+		new ObjectAsType<IEnumerable>(first),
+		new ObjectAsType<IEnumerable>(second)
 	)
 	{
 	}
