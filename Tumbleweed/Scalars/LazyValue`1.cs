@@ -15,17 +15,16 @@ public sealed class LazyValue<T> : IScalar<T>
 	)
 	{
 	}
-	
+
 	public LazyValue(IScalar<T> origin) : this
 	(
 		origin,
 		new MutableWithValue<T?>(default),
-		new MutableWithValue<IBit>(
-			new BitFromBoolean(false))
+		new MutableWithValue<IBit>(new NegativeBit())
 	)
 	{
 	}
-	
+
 	public LazyValue
 	(
 		IScalar<T> origin,
@@ -37,10 +36,10 @@ public sealed class LazyValue<T> : IScalar<T>
 		this.origin = origin;
 	}
 
-		public override Boolean Equals(Object? @object) =>
+	public override Boolean Equals(Object? @object) =>
 		new EqualityOfTwoNullables<T>(this, @object).State;
-		
-		public override Int32 GetHashCode() =>
+
+	public override Int32 GetHashCode() =>
 		new CodeOfNullable(Value).Value;
 
 	public override String? ToString() =>
@@ -53,12 +52,12 @@ public sealed class LazyValue<T> : IScalar<T>
 			if (!cached.Value.State)
 			{
 				cache.Value = origin.Value;
-				cached.Value = new BitFromBoolean(true);
+				cached.Value = new PositiveBit();
 			}
 			return cache.Value!;
 		}
 	}
-	
+
 	private readonly IMutable<T?> cache;
 
 	private readonly IMutable<IBit> cached;
