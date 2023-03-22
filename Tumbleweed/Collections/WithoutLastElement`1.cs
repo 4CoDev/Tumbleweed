@@ -6,9 +6,10 @@ public sealed class WithoutLastElement<T> : EnumerableEnvelope<T>
 {
 	public WithoutLastElement(ICollection<T> collection) : base
 	(
-		() => new List<T>(
-			collection.Take(
-				collection.Count - 1))
+		new EnumerableOfFunction<T>(
+			() => new List<T>(
+				collection.Take(
+					collection.Count - 1)))
 	)
 	{
 	}

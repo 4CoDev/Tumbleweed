@@ -4,27 +4,23 @@ namespace Tumbleweed.Enumerables;
 
 public abstract class EnumerableEnvelope<T> : IEnumerable<T>
 {
-	protected EnumerableEnvelope(Func<IEnumerable<T>> @delegate) : this
-	(
-		new EnumerableOfFunction<T>(@delegate)
-	)
-	{
-	}
-
-	protected EnumerableEnvelope(IEnumerable<T> enumerable)
-	{
+	protected EnumerableEnvelope(IEnumerable<T> enumerable) =>
 		this.enumerable = enumerable;
-	}
 	
-	IEnumerator IEnumerable.GetEnumerator()
-	{
-		return GetEnumerator();
-	}
+	IEnumerator IEnumerable.GetEnumerator() =>
+		GetEnumerator();
 	
-	public IEnumerator<T> GetEnumerator()
-	{
-		return enumerable.GetEnumerator();
-	}
+	public IEnumerator<T> GetEnumerator() =>
+		enumerable.GetEnumerator();
+	
+	public override Boolean Equals(Object? @object) =>
+		enumerable.Equals(@object);
+
+	public override Int32 GetHashCode() =>
+		enumerable.GetHashCode();
+
+	public override String? ToString() =>
+		enumerable.ToString();
 
 	private readonly IEnumerable<T> enumerable;
 }

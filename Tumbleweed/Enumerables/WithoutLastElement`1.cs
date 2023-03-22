@@ -4,7 +4,8 @@ public sealed class WithoutLastElement<T> : EnumerableEnvelope<T>
 {
 	public WithoutLastElement(IEnumerable<T> enumerable) : base
 	(
-		new Collections.WithoutLastElement<T>(new List<T>(enumerable))
+		new Collections.WithoutLastElement<T>(
+			new List<T>(enumerable))
 	)
 	{
 	}
