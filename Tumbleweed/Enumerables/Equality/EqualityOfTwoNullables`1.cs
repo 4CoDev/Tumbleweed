@@ -1,10 +1,10 @@
+using System.Collections;
 using Tumbleweed.Bits;
-using Tumbleweed.Equality.ByReference;
 using Tumbleweed.Nullability;
 
-namespace Tumbleweed.Scalars.Equality;
+namespace Tumbleweed.Enumerables.Equality;
 
-public sealed class EqualityOfTwoNullables<T> : BitEnvelope
+public sealed class EqualityOfTwoNullables : BitEnvelope
 {
 	public EqualityOfTwoNullables
 	(
@@ -24,28 +24,28 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 		INullable<Object> second
 	) : this
 	(
-		new NullableAsType<IScalar<T>>(first),
-		new NullableAsType<IScalar<T>>(second)
+		new NullableAsType<IEnumerable>(first),
+		new NullableAsType<IEnumerable>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<T>? first,
-		IScalar<T>? second
+		IEnumerable? first,
+		IEnumerable? second
 	) : this
 	(
-		new NullableFromSystem<IScalar<T>>(first),
-		new NullableFromSystem<IScalar<T>>(second)
+		new NullableFromSystem<IEnumerable>(first),
+		new NullableFromSystem<IEnumerable>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		INullable<IScalar<T>> first,
-		INullable<IScalar<T>> second
+		INullable<IEnumerable> first,
+		INullable<IEnumerable> second
 	) : base
 	(
 		new BitOfFunction(
@@ -56,12 +56,12 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 
 	private static IBit Function
 	(
-		INullable<IScalar<T>> first,
-		INullable<IScalar<T>> second
+		INullable<IEnumerable> first,
+		INullable<IEnumerable> second
 	)
 	{
 		if (first.Exists.State && second.Exists.State)
-			return new EqualityOfTwoScalars<T>(first, second);
+			return new EqualityOfTwoEnumerables(first, second);
 		return new EqualityOfTwoNullables(first, second);
 	}
 }

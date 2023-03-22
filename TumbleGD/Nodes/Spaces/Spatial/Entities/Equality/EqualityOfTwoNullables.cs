@@ -1,4 +1,5 @@
 using Tumbleweed.Bits;
+using Tumbleweed.Nullability;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities.Equality;
@@ -11,20 +12,20 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		Object? second
 	) : this
 	(
-		new ScalarOfValue<Object?>(first),
-		new ScalarOfValue<Object?>(second)
+		new NullableFromSystem<Object>(first),
+		new NullableFromSystem<Object>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<Object?> first,
-		IScalar<Object?> second
+		INullable<Object> first,
+		INullable<Object> second
 	) : this
 	(
-		new NullableAsEntity(first),
-		new NullableAsEntity(second)
+		new NullableAsType<ISpatialEntity>(first),
+		new NullableAsType<ISpatialEntity>(second)
 	)
 	{
 	}
@@ -35,33 +36,31 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		ISpatialEntity? second
 	) : this
 	(
-		new ScalarOfValue<ISpatialEntity?>(first),
-		new ScalarOfValue<ISpatialEntity?>(second)
+		new NullableFromSystem<ISpatialEntity>(first),
+		new NullableFromSystem<ISpatialEntity>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		IScalar<ISpatialEntity?> first,
-		IScalar<ISpatialEntity?> second
+		INullable<ISpatialEntity> first,
+		INullable<ISpatialEntity> second
 	) : base
 	(
 		new BitOfFunction(
-			() => Function(
-				first.Value,
-				second.Value))
+			() => Function(first, second))
 	)
 	{
 	}
 
 	private static IBit Function
 	(
-		ISpatialEntity? first,
-		ISpatialEntity? second
+		INullable<ISpatialEntity> first,
+		INullable<ISpatialEntity> second
 	)
 	{
-		if (first != null && second != null)
+		if (first.Exists.State && second.Exists.State)
 			return new EqualityOfTwoEntities(first, second);
 		return new EqualityOfTwoNullables(first, second);
 	}

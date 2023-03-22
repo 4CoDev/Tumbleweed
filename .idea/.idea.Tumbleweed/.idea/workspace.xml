@@ -8,10 +8,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/SurfaceTools/ToGodot/SurfaceToolsWithSurfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/Surfaces/FromArrayMeshes/FromGodot/SurfacesFromMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Nodes/FromTree/OfGodot/NodeOnPath`1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,7 +44,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
+  <component name="RunManager" selected="Publish to folder.Publish TumbleGD to folder">
     <configuration name="Publish TumbleGD to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="2061793969843883114" uuid_low="-4681523822283700833" />
       <method v="2" />

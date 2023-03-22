@@ -13,6 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Arrays\Equality" />
       <Folder Include="Numerics\Binaries\FromSystem" />
       <Folder Include="ReadOnlySpans\ToSystem" />
     </ItemGroup>

@@ -2,7 +2,7 @@ using Tumbleweed.Bits;
 
 namespace Tumbleweed.Nullability;
 
-public abstract class NullableEnvelope<T> : INullable<T>
+public abstract class NullableEnvelope<T> : INullable<T> where T : notnull
 {
 	protected NullableEnvelope(INullable<T> nullable) =>
 		this.nullable = nullable;

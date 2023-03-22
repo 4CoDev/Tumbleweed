@@ -2,7 +2,7 @@ using Tumbleweed.Bits;
 
 namespace Tumbleweed.Nullability;
 
-public sealed class NullableAsType<T> : INullable<T>
+public sealed class NullableAsType<T> : INullable<T> where T : notnull
 {
 	public NullableAsType(INullable<Object> origin) =>
 		this.origin = origin;

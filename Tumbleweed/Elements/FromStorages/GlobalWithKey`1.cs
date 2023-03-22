@@ -1,3 +1,4 @@
+using Tumbleweed.Arrays.Equality.OfSystem;
 using Tumbleweed.Scalars;
 using Tumbleweed.Storages;
 
@@ -7,7 +8,7 @@ public sealed class GlobalWithKey<T> : ElementEnvelope<T>
 {
 	public GlobalWithKey(params Object[] key) : this
 	(
-		new ValueAsType<Object>(key)
+		new EquatableArray(key)
 	)
 	{
 	}

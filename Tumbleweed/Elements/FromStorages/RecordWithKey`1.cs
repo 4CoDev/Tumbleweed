@@ -1,3 +1,4 @@
+using Tumbleweed.Arrays.Equality.OfSystem;
 using Tumbleweed.Scalars;
 using Tumbleweed.Storages;
 
@@ -7,7 +8,7 @@ public sealed class RecordWithKey<T> : ElementEnvelope<T>
 {
 	public RecordWithKey(IStorage storage, params Object[] key) : this
 	(
-		storage, new ValueAsType<Object>(key)
+		storage, new EquatableArray(key)
 	)
 	{
 	}

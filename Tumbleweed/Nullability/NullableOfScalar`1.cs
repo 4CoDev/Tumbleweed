@@ -3,7 +3,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Nullability;
 
-public sealed class NullableOfScalar<T> : INullable<T>
+public sealed class NullableOfScalar<T> : INullable<T> where T : notnull
 {
 	public NullableOfScalar(IScalar<INullable<T>> scalar) =>
 		this.scalar = scalar;

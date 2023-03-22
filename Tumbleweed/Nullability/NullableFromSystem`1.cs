@@ -3,7 +3,8 @@ using Tumbleweed.Bits.OfSystem;
 
 namespace Tumbleweed.Nullability;
 
-public sealed class NullableFromSystem<T> : NullableEnvelope<T>
+public sealed class NullableFromSystem<T> :
+	NullableEnvelope<T> where T : notnull
 {
 	public NullableFromSystem(T? origin) : base
 	(

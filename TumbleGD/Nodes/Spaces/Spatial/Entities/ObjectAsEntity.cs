@@ -7,7 +7,7 @@ public sealed class ObjectAsEntity : EntityEnvelope
 	public ObjectAsEntity(Object @object) : base
 	(
 		new EntityOfScalar(
-			new ValueAsType<ISpatialEntity>(@object))
+			new ObjectAsType<ISpatialEntity>(@object))
 	)
 	{
 	}

@@ -2,7 +2,7 @@ using Tumbleweed.Bits;
 
 namespace Tumbleweed.Nullability;
 
-public sealed class NullableWithValues<T> : INullable<T>
+public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 {
 	public NullableWithValues(T value, IBit exists)
 	{
