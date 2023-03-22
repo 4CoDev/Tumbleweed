@@ -21,7 +21,7 @@ public sealed class EquatableArray : IScalar<Array>
 		new EqualityOfTwoNullables(this, @object).State;
 
 	public override Int32 GetHashCode() =>
-		new CodeOfObject(Value).Value;
+		new CodeFromObjects(Value).Value;
 
 	public override String? ToString() =>
 		new NullableFromObject(Value).Value;
