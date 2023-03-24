@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net7.0": {
       "GodotSharp/4.0.0-rc.1": {
         "type": "package",
         "compile": {
@@ -17,7 +17,7 @@
       },
       "Tumbleweed/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "GodotSharp": "4.0.0-rc.1"
         },
@@ -51,7 +51,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net7.0": [
       "Tumbleweed >= 1.0.0"
     ]
   },
@@ -76,14 +76,14 @@
         "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {
             "/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/Tumbleweed.csproj": {
               "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/Tumbleweed.csproj"
@@ -98,8 +98,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
@@ -111,16 +111,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.15, 6.0.15]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.15, 6.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
