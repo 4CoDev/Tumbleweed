@@ -20,7 +20,7 @@ public sealed class EntityWithValues : ISpatialEntity
 		new EqualityOfTwoNullables(this, @object).State;
 
 	public override Int32 GetHashCode() =>
-		new CodeFromObjects(Node, Mesh).Value;
+		new HashFromObjects(Node, Mesh).Value;
 
 	public override String ToString() =>
 		new StringFromObjects(Node, Mesh).Value;

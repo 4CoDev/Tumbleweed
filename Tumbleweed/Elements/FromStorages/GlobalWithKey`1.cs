@@ -1,5 +1,4 @@
-using Tumbleweed.Arrays.Equality.OfSystem;
-using Tumbleweed.Scalars;
+using Tumbleweed.Enumerables.Equality;
 using Tumbleweed.Storages;
 
 namespace Tumbleweed.Elements.FromStorages;
@@ -10,19 +9,12 @@ public sealed class GlobalWithKey<T> :
 {
 	public GlobalWithKey(params Object[] key) : this
 	(
-		new EquatableArray(key)
+		new EquatableEnumerable(key)
 	)
 	{
 	}
 
-	public GlobalWithKey(Object key) : this
-	(
-		new ScalarOfValue(key)
-	)
-	{
-	}
-	
-	public GlobalWithKey(IScalar<Object> key) : base
+	public GlobalWithKey(Object key) : base
 	(
 		new RecordWithKey<T>(
 			new GlobalStorage(),

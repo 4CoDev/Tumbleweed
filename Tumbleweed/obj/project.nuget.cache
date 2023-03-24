@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5Fxvubt5KD/LccNDRCociLh8ODMSIFbhKMf48Unw71a5ppw8wA1skWdVXiPiLesdRggg9kQDp8Cg99yk2Sz6zA==",
+  "dgSpecHash": "0KfficGYTvdIbmtnw+3vQqXlI8BIa3b84Gm6eKNfeZtfx8+uZcXJbi9bYsp9xzArP9wv+RtVg+SwjQ6FNF/Muw==",
   "success": true,
   "projectFilePath": "/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/Tumbleweed.csproj",
   "expectedPackageFiles": [
-    "/Users/thisischico/.nuget/packages/godotsharp/4.0.0-rc.1/godotsharp.4.0.0-rc.1.nupkg.sha512"
+    "/Users/thisischico/.nuget/packages/godotsharp/4.0.0-rc.1/godotsharp.4.0.0-rc.1.nupkg.sha512",
+    "/Users/thisischico/.nuget/packages/microsoft.netcore.app.ref/6.0.15/microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
+    "/Users/thisischico/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.15/microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512"
   ],
   "logs": []
 }

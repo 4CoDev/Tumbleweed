@@ -1,6 +1,7 @@
 using System.Collections;
 using Tumbleweed.Bits;
 using Tumbleweed.Nullability;
+using Tumbleweed.Nullability.FromSystem;
 
 namespace Tumbleweed.Enumerables.Equality;
 
@@ -61,7 +62,7 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 	)
 	{
 		if (first.Exists.State && second.Exists.State)
-			return new EqualityOfTwoEnumerables(first, second);
+			return new EqualityOfTwoEnumerables(first.Value, second.Value);
 		return new EqualityOfTwoNullables(first, second);
 	}
 }

@@ -40,7 +40,7 @@ public sealed class LazyValue<T> : IScalar<T>
 		new EqualityOfTwoNullables<T>(this, @object).State;
 
 	public override Int32 GetHashCode() =>
-		new CodeOfNullable(Value).Value;
+		new ZeroHashWhenNull(Value).Value;
 
 	public override String? ToString() =>
 		new NullableFromNullable(Value).Value;

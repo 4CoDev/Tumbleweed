@@ -17,7 +17,7 @@ public class ActionFromSystem : INullaryAction
 	);
 
 	public override Int32 GetHashCode() =>
-		new CodeOfObject(@delegate).Value;
+		new HashOfObject(@delegate).Value;
 
 	public override String? ToString() =>
 		new NullableFromObject(@delegate).ToString();

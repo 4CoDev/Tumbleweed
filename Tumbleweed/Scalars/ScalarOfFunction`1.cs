@@ -17,16 +17,16 @@ public sealed class ScalarOfFunction<T> : IScalar<T>
 	public ScalarOfFunction(INullaryFunction<IScalar<T>> function) =>
 		this.function = function;
 	
-	public T Value => function.Invoke().Value;
-	
 	public override Boolean Equals(Object? @object) =>
 		new EqualityOfTwoNullables<T>(this, @object).State;
 
 	public override Int32 GetHashCode() =>
-		new CodeOfNullable(Value).Value;
+		new HashOfNullable(Value).Value;
 
 	public override String? ToString() =>
 		new NullableFromNullable(Value).Value;
+	
+	public T Value => function.Invoke().Value;
 
 	private readonly INullaryFunction<IScalar<T>> function;
 }

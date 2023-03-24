@@ -6,10 +6,10 @@ public sealed class AggregatedByExpression<T> : ScalarEnvelope<T>
 	(
 		IEnumerable<T> from,
 		T seed,
-		Func<T, T, T> func
+		Func<T, T, T> expression
 	) : base
 	(
-		new AggregatedByExpression<T, T>(from, seed, func)
+		new AggregatedByExpression<T, T>(from, seed, expression)
 	)
 	{
 	}
