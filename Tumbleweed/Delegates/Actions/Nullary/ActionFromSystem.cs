@@ -5,22 +5,22 @@ namespace Tumbleweed.Delegates.Actions.Nullary;
 
 public class ActionFromSystem : INullaryAction
 {
-	public ActionFromSystem(Action @delegate) =>
-		this.@delegate = @delegate;
+	public ActionFromSystem(Action function) =>
+		this.function = function;
 
-	public void Invoke() => @delegate();
+	public void Invoke() => function();
 
 	public override Boolean Equals(Object? @object) =>
 	(
 		@object is ActionFromSystem action &&
-		action.@delegate.Equals(@delegate)
+		action.function.Equals(function)
 	);
 
 	public override Int32 GetHashCode() =>
-		new HashOfObject(@delegate).Value;
+		new HashOfObject(function).Value;
 
 	public override String? ToString() =>
-		new NullableFromObject(@delegate).ToString();
+		new NullableFromObject(function).ToString();
 
-	private readonly Action @delegate;
+	private readonly Action function;
 }
