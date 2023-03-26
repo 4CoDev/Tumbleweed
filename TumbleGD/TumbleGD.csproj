@@ -16,7 +16,6 @@
       <Folder Include="Geometrics\Graphical\Polygons\Triangles\FromGodot" />
       <Folder Include="Geometrics\Graphical\Vertices\Indices\FromSurfaceTools" />
       <Folder Include="Nodes\FromTree" />
-      <Folder Include="Nodes\Placement\OnTree" />
     </ItemGroup>
 
 </Project>

@@ -2,8 +2,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Delegates.Actions.Unary;
 
-public sealed class ActionOfScalar<T> :
-	IUnaryAction<T>
+public sealed class ActionOfScalar<T> : IUnaryAction<T>
 {
 	public ActionOfScalar
 	(

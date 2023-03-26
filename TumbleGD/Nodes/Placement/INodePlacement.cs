@@ -5,7 +5,7 @@ namespace TumbleGD.Nodes.Placement;
 
 public interface INodePlacement
 {
-	void Place(IScalar<Node> parent);
+	void Place(Node parent);
 
 	void Remove();
 }

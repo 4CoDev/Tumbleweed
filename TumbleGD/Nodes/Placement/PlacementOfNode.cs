@@ -1,10 +1,9 @@
 using Godot;
-using Tumbleweed.Delegates.Actions.Nullary;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Nodes.Placement;
 
-public sealed class PlacementOfNode : PlacementEnvelope
+public sealed class PlacementOfNode : INodePlacement
 {
 	public PlacementOfNode(Node node) : this
 	(
@@ -13,12 +12,14 @@ public sealed class PlacementOfNode : PlacementEnvelope
 	{
 	}
 	
-	public PlacementOfNode(IScalar<Node> node) : base
-	(
-		new PlacementWithMembers(
-			parent => parent.Value.AddChild(node.Value),
-			() => node.Value.GetParent().RemoveChild(node.Value))
-	)
-	{
-	}
+	public PlacementOfNode(IScalar<Node> node) =>
+		this.node = node;
+
+	public void Place(Node parent) =>
+		parent.AddChild(node.Value);
+
+	public void Remove() =>
+		node.Value.GetParent().RemoveChild(node.Value);
+	
+	private readonly IScalar<Node> node;
 }

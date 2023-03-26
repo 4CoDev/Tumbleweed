@@ -8,7 +8,7 @@ public sealed class PlacementOfScalar : INodePlacement
 	public PlacementOfScalar(IScalar<INodePlacement> scalar) =>
 		this.scalar = scalar;
 
-	public void Place(IScalar<Node> parent) =>
+	public void Place(Node parent) =>
 		scalar.Value.Place(parent);
 
 	public void Remove() => scalar.Value.Remove();
