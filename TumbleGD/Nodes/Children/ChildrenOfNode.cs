@@ -6,17 +6,24 @@ namespace TumbleGD.Nodes.Children;
 
 public sealed class ChildrenOfNode : IList<Node>
 {
-	public ChildrenOfNode(IScalar<Node> node) =>
-		this.node = node;
+	public ChildrenOfNode(Node parent) : this
+	(
+		new ScalarOfValue<Node>(parent)
+	)
+	{
+	}
+
+	public ChildrenOfNode(IScalar<Node> parent) =>
+		this.parent = parent;
 
 	public IEnumerator<Node> GetEnumerator() =>
-		node.Value.GetChildren().GetEnumerator();
+		parent.Value.GetChildren().GetEnumerator();
 
 	IEnumerator IEnumerable.GetEnumerator() =>
 		GetEnumerator();
 
 	public void Add(Node child) =>
-		node.Value.AddChild(child);
+		parent.Value.AddChild(child);
 
 	public void Clear()
 	{
@@ -24,41 +31,41 @@ public sealed class ChildrenOfNode : IList<Node>
 	}
 
 	public Boolean Contains(Node child) =>
-		node.Value.GetChildren().Contains(child);
+		parent.Value.GetChildren().Contains(child);
 
 	public void CopyTo(Node[] array, Int32 index) =>
-		node.Value.GetChildren().CopyTo(array, index);
+		parent.Value.GetChildren().CopyTo(array, index);
 
 	public Boolean Remove(Node child)
 	{
 		Boolean contains = Contains(child);
-		node.Value.RemoveChild(child);
+		parent.Value.RemoveChild(child);
 		return contains;
 	}
 
-	public Int32 Count => node.Value.GetChildren().Count;
+	public Int32 Count => parent.Value.GetChildren().Count;
 
 	public Boolean IsReadOnly =>
-		node.Value.GetChildren().IsReadOnly;
+		parent.Value.GetChildren().IsReadOnly;
 
 	public Int32 IndexOf(Node hild) =>
-		node.Value.GetChildren().IndexOf(hild);
+		parent.Value.GetChildren().IndexOf(hild);
 
 	public void Insert(Int32 index, Node child)
 	{
-		node.Value.AddChild(child);
-		node.Value.MoveChild(child, index);
+		parent.Value.AddChild(child);
+		parent.Value.MoveChild(child, index);
 	}
 
 	public void RemoveAt(Int32 index)
 	{
-		Node child = node.Value.GetChild(index);
-		node.Value.RemoveChild(child);
+		Node child = parent.Value.GetChild(index);
+		parent.Value.RemoveChild(child);
 	}
 
 	public Node this[Int32 index]
 	{
-		get => node.Value.GetChild(index);
+		get => parent.Value.GetChild(index);
 		set
 		{
 			RemoveAt(index);
@@ -66,5 +73,5 @@ public sealed class ChildrenOfNode : IList<Node>
 		}
 	}
 
-	private readonly IScalar<Node> node;
+	private readonly IScalar<Node> parent;
 }
