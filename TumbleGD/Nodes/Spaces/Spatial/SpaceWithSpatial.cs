@@ -12,7 +12,7 @@ public sealed class SpaceWithSpatial : ISpatialSpace
 {
 	public SpaceWithSpatial
 	(
-		IScalar<Node> node,
+		IScalar<Node3D> node,
 		IArray<ISpatialSpace> spaces,
 		IEnumerable<ISpatialEntity> entities
 	)
@@ -35,5 +35,5 @@ public sealed class SpaceWithSpatial : ISpatialSpace
 	private MeshInstance3D Mesh =>
 		new NodeOnPath<MeshInstance3D>(node, "Mesh").Value;
 	
-	private readonly IScalar<Node> node;
+	private readonly IScalar<Node3D> node;
 }
