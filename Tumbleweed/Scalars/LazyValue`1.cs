@@ -19,8 +19,8 @@ public sealed class LazyValue<T> : IScalar<T>
 	public LazyValue(IScalar<T> origin) : this
 	(
 		origin,
-		new MutableWithValue<T?>(default),
-		new MutableWithValue<IBit>(new NegativeBit())
+		new MutableValue<T?>(default),
+		new MutableValue<IBit>(new NegativeBit())
 	)
 	{
 	}
