@@ -8,7 +8,7 @@ namespace TumbleGD.Geometrics.Graphical.Polygons.Triangles.FromGodot.
 	FromSurface;
 
 public sealed class TrianglesWithVertexIndices
-	: EnumerableEnvelope<IEnumerable<IVertex>>
+	: EnumerableEnvelope<IPolygon>
 {
 	public TrianglesWithVertexIndices
 	(
@@ -17,11 +17,20 @@ public sealed class TrianglesWithVertexIndices
 		IEnumerable<IEnumerable<Int32>> triangles
 	) : base
 	(
-		new SelectedByExpression<IEnumerable<Int32>, IEnumerable<IVertex>>(
+		new SelectedByExpression<IEnumerable<Int32>, IPolygon>(
 			triangles,
-			triangle =>
-				new VerticesWithIndices(mesh, surface, triangle))
+			vertices => Expression(mesh, surface, vertices))
 	)
 	{
 	}
+
+	private static IPolygon Expression
+	(
+		IScalar<ArrayMesh> mesh,
+		IScalar<Int32> surface,
+		IEnumerable<Int32> vertices
+	) =>
+	(
+		new TriangleWithVertexIndices(mesh, surface, vertices)
+	);
 }

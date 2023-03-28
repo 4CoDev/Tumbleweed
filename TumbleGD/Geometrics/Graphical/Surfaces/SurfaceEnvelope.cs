@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Polygons;
 using TumbleGD.Geometrics.Graphical.Vertices;
 using Tumbleweed.Scalars;
 
@@ -11,7 +12,7 @@ public abstract class SurfaceEnvelope : ISurface
 		this.surface = surface;
 	}
 
-	public IEnumerable<IEnumerable<IVertex>> Polygons => surface.Polygons;
+	public IEnumerable<IPolygon> Polygons => surface.Polygons;
 
 	public IScalar<Material> Material => surface.Material;
 

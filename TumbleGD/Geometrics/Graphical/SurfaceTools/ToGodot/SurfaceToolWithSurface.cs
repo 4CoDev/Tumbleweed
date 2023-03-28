@@ -1,4 +1,6 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Materials;
+using TumbleGD.Geometrics.Graphical.Polygons;
 using TumbleGD.Geometrics.Graphical.Surfaces;
 using TumbleGD.Geometrics.Graphical.SurfaceTools.OfGodot.FromEnumerable;
 using TumbleGD.Geometrics.Graphical.Vertices;
@@ -10,9 +12,10 @@ public sealed class SurfaceToolWithSurface : ScalarEnvelope<SurfaceTool>
 {
 	public SurfaceToolWithSurface(ISurface surface) : base
 	(
-		new AggregatedByExpression<IEnumerable<IVertex>>(
-			surface.Polygons,
-			new InitialSurfaceToolWithMaterial(surface.Material),
+		new AggregatedByExpression<IPolygon>(
+			new PolygonsOfSurface(surface),
+			new InitialSurfaceToolWithMaterial(
+				new MaterialOfSurface(surface)),
 			Expression)
 	)
 	{
@@ -21,9 +24,9 @@ public sealed class SurfaceToolWithSurface : ScalarEnvelope<SurfaceTool>
 	private static IScalar<SurfaceTool> Expression
 	(
 		IScalar<SurfaceTool> current,
-		IEnumerable<IVertex> vertices
+		IPolygon polygon
 	) =>
 	(
-		new SurfaceToolWithVertices(vertices, current)
+		new SurfaceToolWithPolygon(polygon, current)
 	);
 }

@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Polygons;
 using TumbleGD.Geometrics.Graphical.Vertices;
 using Tumbleweed.Scalars;
 
@@ -8,7 +9,7 @@ public sealed class SurfaceWithValues : ISurface
 {
 	public SurfaceWithValues
 	(
-		IEnumerable<IEnumerable<IVertex>> polygons,
+		IEnumerable<IPolygon> polygons,
 		IScalar<Material> material
 	)
 	{
@@ -16,7 +17,7 @@ public sealed class SurfaceWithValues : ISurface
 		Material = material;
 	}
 	
-	public IEnumerable<IEnumerable<IVertex>> Polygons { get; }
+	public IEnumerable<IPolygon> Polygons { get; }
 	
 	public IScalar<Material> Material { get; }
 }

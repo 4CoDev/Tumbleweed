@@ -6,17 +6,17 @@ using Tumbleweed.Scalars;
 namespace TumbleGD.Geometrics.Graphical.Polygons;
 
 public sealed class TransformedPolygons
-	: EnumerableEnvelope<IEnumerable<IVertex>>
+	: EnumerableEnvelope<IPolygon>
 {
 	public TransformedPolygons
 	(
-		IEnumerable<IEnumerable<IVertex>> polygons,
+		IEnumerable<IPolygon> polygons,
 		IScalar<Transform3D> transform
 	) : base
 	(
-		new SelectedByExpression<IEnumerable<IVertex>>(
+		new SelectedByExpression<IPolygon>(
 			polygons,
-			polygon => new TransformedVertices(polygon, transform))
+			polygon => new TransformedPolygon(polygon, transform))
 	)
 	{
 	}

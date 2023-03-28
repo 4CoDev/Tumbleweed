@@ -8,7 +8,7 @@ namespace TumbleGD.Geometrics.Graphical.Polygons.Triangles.FromGodot.
 	FromSurface;
 
 public sealed class TrianglesOfSurface
-	: EnumerableEnvelope<IEnumerable<IVertex>>
+	: EnumerableEnvelope<IPolygon>
 {
 	public TrianglesOfSurface
 	(
