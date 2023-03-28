@@ -1,4 +1,5 @@
 using Godot;
+using TumbleGD.Geometrics.Graphical.Meshes.ArrayTypes;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
 using GodotArray = Godot.Collections.Array;
@@ -18,9 +19,9 @@ public sealed class IndicesFromSurfaceTool : EnumerableEnvelope<Int32>
 
 	private static IEnumerable<Int32> Function(IScalar<SurfaceTool> tool)
 	{
-		GodotArray surfaceAsArrays = tool.Value.CommitToArrays();
-		const Int32 indexArrayType = (Int32) Mesh.ArrayType.Index;
-		Int32[] indicesAsValues = surfaceAsArrays[indexArrayType].AsInt32Array();
-		return indicesAsValues;
+		GodotArray arrays = tool.Value.CommitToArrays();
+		Int32 indexArrayType = new IndexArray().Value;
+		Int32[] indices = arrays[indexArrayType].AsInt32Array();
+		return indices;
 	}
 }

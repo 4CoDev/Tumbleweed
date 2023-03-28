@@ -13,9 +13,17 @@ public sealed class SurfaceToolWithSurface : ScalarEnvelope<SurfaceTool>
 		new AggregatedByExpression<IEnumerable<IVertex>>(
 			surface.Polygons,
 			new InitialSurfaceToolWithMaterial(surface.Material),
-			(result, vertices) =>
-				new SurfaceToolWithVertices(vertices, result))
+			Expression)
 	)
 	{
 	}
+
+	private static IScalar<SurfaceTool> Expression
+	(
+		IScalar<SurfaceTool> current,
+		IEnumerable<IVertex> vertices
+	) =>
+	(
+		new SurfaceToolWithVertices(vertices, current)
+	);
 }

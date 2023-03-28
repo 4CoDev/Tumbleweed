@@ -17,9 +17,17 @@ public sealed class SurfaceToolWithVertices : ScalarEnvelope<SurfaceTool>
 		new AggregatedByExpression<IVertex>(
 			vertices,
 			origin,
-			(result, vertex) =>
-				new SurfaceToolWithVertex(result, vertex))
+			Expression)
 	)
 	{
 	}
+
+	private static IScalar<SurfaceTool> Expression
+	(
+		IScalar<SurfaceTool> current,
+		IVertex vertex
+	) =>
+	(
+		new SurfaceToolWithVertex(current, vertex)
+	);
 }

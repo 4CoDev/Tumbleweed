@@ -6,9 +6,9 @@ using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Vertices;
 
-public sealed class VertexFromScalar : IVertex
+public sealed class VertexOfScalar : IVertex
 {
-	public VertexFromScalar(IScalar<IVertex> scalar)
+	public VertexOfScalar(IScalar<IVertex> scalar)
 	{
 		this.scalar = scalar;
 	}

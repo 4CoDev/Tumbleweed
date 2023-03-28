@@ -2,7 +2,7 @@ using Godot;
 using TumbleGD.Resources.FromFiles.ToGodot;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.FromGodot.FromFiles;
+namespace TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.OfGodot.FromFiles;
 
 public sealed class MeshOnPath : ScalarEnvelope<ArrayMesh>
 {

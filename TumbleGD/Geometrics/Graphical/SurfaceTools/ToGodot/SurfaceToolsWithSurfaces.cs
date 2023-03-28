@@ -7,13 +7,13 @@ namespace TumbleGD.Geometrics.Graphical.SurfaceTools.
 	ToGodot;
 
 public sealed class SurfaceToolsWithSurfaces
-	: EnumerableEnvelope<IScalar<SurfaceTool>>
+	: EnumerableEnvelope<SurfaceTool>
 {
 	public SurfaceToolsWithSurfaces(IEnumerable<ISurface> surfaces) : base
 	(
-		new SelectedByExpression<ISurface, IScalar<SurfaceTool>>(
+		new SelectedByExpression<ISurface, SurfaceTool>(
 			surfaces,
-			surface => new SurfaceToolWithSurface(surface))
+			surface => new SurfaceToolWithSurface(surface).Value)
 	)
 	{
 	}
