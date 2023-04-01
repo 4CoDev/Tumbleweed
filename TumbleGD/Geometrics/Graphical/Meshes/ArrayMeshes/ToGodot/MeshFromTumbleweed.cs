@@ -1,6 +1,6 @@
 using Godot;
 using TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.OfGodot;
-using TumbleGD.Geometrics.Graphical.SurfaceTools.ToGodot;
+using TumbleGD.Geometrics.Graphical.Surfaces.SurfaceTools.ToGodot;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.ToGodot;

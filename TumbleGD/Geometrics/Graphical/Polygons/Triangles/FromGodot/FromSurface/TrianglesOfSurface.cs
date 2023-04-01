@@ -1,8 +1,9 @@
 using Godot;
-using TumbleGD.Geometrics.Graphical.Vertices;
-using TumbleGD.Geometrics.Graphical.Vertices.Indices.FromArrayMesh.FromSurface;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
+using VertexIndicesOfTriangles =
+	TumbleGD.Geometrics.Graphical.Vertices.Indices.FromArrayMesh.FromSurface.
+	IndicesOfTriangles;
 
 namespace TumbleGD.Geometrics.Graphical.Polygons.Triangles.FromGodot.
 	FromSurface;
@@ -19,7 +20,7 @@ public sealed class TrianglesOfSurface
 		new TrianglesWithVertexIndices(
 			mesh,
 			surface,
-			new IndicesOfTriangles(mesh, surface))
+			new VertexIndicesOfTriangles(mesh, surface))
 	)
 	{
 	}

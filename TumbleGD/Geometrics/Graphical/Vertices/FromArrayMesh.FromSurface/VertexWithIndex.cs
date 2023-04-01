@@ -1,5 +1,5 @@
 using Godot;
-using TumbleGD.Geometrics.Graphical.MeshDataTools.FromArrayMesh;
+using TumbleGD.Geometrics.Graphical.Meshes.MeshDataTools.FromArrayMesh;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Geometrics.Graphical.Vertices.FromArrayMesh.

@@ -4,10 +4,8 @@ namespace Tumbleweed.Numerics.Spatial;
 
 public sealed class SpatialOfScalar<T> : ISpatial<T>
 {
-	public SpatialOfScalar(IScalar<ISpatial<T>> scalar)
-	{
+	public SpatialOfScalar(IScalar<ISpatial<T>> scalar) =>
 		this.scalar = scalar;
-	}
 	
 	public T X => scalar.Value.X;
 

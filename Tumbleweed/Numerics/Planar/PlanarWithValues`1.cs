@@ -1,14 +1,28 @@
+using Tumbleweed.Scalars;
+
 namespace Tumbleweed.Numerics.Planar;
 
 public sealed class PlanarWithValues<T> : IPlanar<T>
 {
-	public PlanarWithValues(T x, T y)
+	public PlanarWithValues(T x, T y) : this
+	(
+		new ScalarOfValue<T>(x),
+		new ScalarOfValue<T>(y)
+	)
 	{
-		X = x;
-		Y = y;
+	}
+	
+	public PlanarWithValues(IScalar<T> x, IScalar<T> y)
+	{
+		this.x = x;
+		this.y = y;
 	}
 
-	public T X { get; }
+	public T X => x.Value;
 
-	public T Y { get; }
+	private readonly IScalar<T> x;
+
+	public T Y => y.Value;
+	
+	private readonly IScalar<T> y;
 }

@@ -1,5 +1,8 @@
 using Godot;
 using TumbleGD.Colors;
+using TumbleGD.Geometrics.Graphical.Normals.FromMeshDataTool;
+using TumbleGD.Geometrics.Graphical.Translations.FromMeshDataTool;
+using TumbleGD.Geometrics.Graphical.UVs.FromMeshDataTool;
 using TumbleGD.Numerics.Decimals.Planars.FromGodot;
 using TumbleGD.Numerics.Decimals.Spatials.FromGodot;
 using Tumbleweed.Numerics.Fractional;
@@ -13,36 +16,27 @@ public sealed class VertexWithIndex : IVertex
 {
 	public VertexWithIndex
 	(
-		IScalar<MeshDataTool> meshDataTool,
+		IScalar<MeshDataTool> mesh,
 		IScalar<Int32> vertex
 	)
 	{
-		this.meshDataTool = meshDataTool;
+		this.mesh = mesh;
 		this.vertex = vertex;
 	}
-	
+
 	public ISpatial<IFractional> Translation =>
-	(
-		new SpatialFromVector3(
-			meshDataTool.Value.GetVertex(vertex.Value))
-	);
+		new TranslationOfVertex(mesh, vertex);
 
 	public ISpatial<IFractional> Normal =>
-	(
-		new SpatialFromVector3(
-			meshDataTool.Value.GetVertexNormal(vertex.Value))
-	);
+		new NormalOfVertex(mesh, vertex);
 
 	public IScalar<Color> Color =>
-		new ColorFromMeshDataTool(meshDataTool, vertex);
+		new ColorFromMeshDataTool(mesh, vertex);
 
 	public IPlanar<IFractional> UV =>
-	(
-		new PlanarFromVector2(
-			meshDataTool.Value.GetVertexUV(vertex.Value))
-	);
+		new UVOfVertex(mesh, vertex);
 
-	private readonly IScalar<MeshDataTool> meshDataTool;
+	private readonly IScalar<MeshDataTool> mesh;
 	
 	private readonly IScalar<Int32> vertex;
 }

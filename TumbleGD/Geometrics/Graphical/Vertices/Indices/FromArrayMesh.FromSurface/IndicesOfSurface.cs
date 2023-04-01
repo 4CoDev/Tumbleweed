@@ -1,5 +1,5 @@
 using Godot;
-using TumbleGD.Geometrics.Graphical.SurfaceTools.OfGodot;
+using TumbleGD.Geometrics.Graphical.Surfaces.SurfaceTools.OfGodot;
 using TumbleGD.Geometrics.Graphical.Vertices.Indices.FromSurfaceTools.FromGodot;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
