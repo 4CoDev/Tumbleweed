@@ -8,7 +8,7 @@ public sealed class ArrayFromSystem<T> : ArrayEnvelope<T>
 {
 	public ArrayFromSystem(T[,] array) : this
 	(
-		new ScalarOfValue<T[,]>(array)
+		new ScalarValue<T[,]>(array)
 	)
 	{
 	}

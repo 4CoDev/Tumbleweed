@@ -14,7 +14,7 @@ public sealed class HolisticWithIndex : SurfaceEnvelope
 	) : this
 	(
 		mesh,
-		new ScalarOfValue<Int32>(index)
+		new ScalarValue<Int32>(index)
 	)
 	{
 	}

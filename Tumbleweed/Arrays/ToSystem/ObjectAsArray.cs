@@ -6,7 +6,7 @@ public sealed class ObjectAsArray : ScalarEnvelope<Array>
 {
 	public ObjectAsArray(Object @object) : this
 	(
-		new ScalarOfValue(@object)
+		new ScalarValue(@object)
 	)
 	{
 	}

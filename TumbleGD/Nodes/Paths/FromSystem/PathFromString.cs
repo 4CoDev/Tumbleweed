@@ -7,7 +7,7 @@ public sealed class PathFromString : ScalarEnvelope<NodePath>
 {
 	public PathFromString(String path) : this
 	(
-		new ScalarOfValue<String>(path)
+		new ScalarValue<String>(path)
 	)
 	{
 	}

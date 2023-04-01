@@ -6,8 +6,8 @@ public sealed class PlanarWithValues<T> : IPlanar<T>
 {
 	public PlanarWithValues(T x, T y) : this
 	(
-		new ScalarOfValue<T>(x),
-		new ScalarOfValue<T>(y)
+		new ScalarValue<T>(x),
+		new ScalarValue<T>(y)
 	)
 	{
 	}

@@ -11,7 +11,7 @@ public sealed class FractionalWithIndex : FractionalEnvelope
 	) : this
 	(
 		decimals,
-		new ScalarOfValue<Int32>(index)
+		new ScalarValue<Int32>(index)
 	)
 	{
 	}

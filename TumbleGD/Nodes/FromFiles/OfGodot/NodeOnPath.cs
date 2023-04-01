@@ -7,7 +7,7 @@ public sealed class NodeOnPath : ScalarEnvelope<Node>
 {
 	public NodeOnPath(String path) : this
 	(
-		new ScalarOfValue<String>(path)
+		new ScalarValue<String>(path)
 	)
 	{
 	}

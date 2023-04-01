@@ -6,7 +6,7 @@ public sealed class EmptyWhenNull : ScalarEnvelope<String>
 {
 	public EmptyWhenNull(String? nullable) : this
 	(
-		new ScalarOfValue<String?>(nullable)
+		new ScalarValue<String?>(nullable)
 	)
 	{
 	}

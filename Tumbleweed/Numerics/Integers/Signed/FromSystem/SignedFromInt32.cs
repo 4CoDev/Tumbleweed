@@ -8,7 +8,7 @@ public class SignedFromInt32 : SignedEnvelope
 {
 	public SignedFromInt32(Int32 integer) : this
 	(
-		new ScalarOfValue<Int32>(integer)
+		new ScalarValue<Int32>(integer)
 	)
 	{
 	}

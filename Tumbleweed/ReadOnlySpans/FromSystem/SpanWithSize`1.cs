@@ -11,7 +11,7 @@ public sealed class SpanWithSize<T> : SpanEnvelope<T>
 	) : this
 	(
 		span,
-		new ScalarOfValue<Int32>(size)
+		new ScalarValue<Int32>(size)
 	)
 	{
 	}

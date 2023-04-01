@@ -6,9 +6,9 @@ public sealed class SpatialWithValues<T> : ISpatial<T>
 {
 	public SpatialWithValues(T x, T y, T z) : this
 	(
-		new ScalarOfValue<T>(x),
-		new ScalarOfValue<T>(y),
-		new ScalarOfValue<T>(z)
+		new ScalarValue<T>(x),
+		new ScalarValue<T>(y),
+		new ScalarValue<T>(z)
 	)
 	{
 	}

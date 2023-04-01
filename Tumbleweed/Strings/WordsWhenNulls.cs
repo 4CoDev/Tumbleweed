@@ -12,7 +12,7 @@ public sealed class WordsWhenNulls : EnumerableEnvelope<String>
 	) : this
 	(
 		nullables,
-		new ScalarOfValue<String>(word)
+		new ScalarValue<String>(word)
 	)
 	{
 	}

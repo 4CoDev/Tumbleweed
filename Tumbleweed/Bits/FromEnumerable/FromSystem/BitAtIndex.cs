@@ -6,7 +6,7 @@ public sealed class BitAtIndex : BitEnvelope
 {
 	public BitAtIndex(IEnumerable<IBit> bits, Int32 index) : this
 	(
-		new List<IBit>(bits), new ScalarOfValue<Int32>(index)
+		new List<IBit>(bits), new ScalarValue<Int32>(index)
 	)
 	{
 	}
@@ -20,7 +20,7 @@ public sealed class BitAtIndex : BitEnvelope
 	
 	public BitAtIndex(ICollection<IBit> bits, Int32 index) : this
 	(
-		bits, new ScalarOfValue<Int32>(index)
+		bits, new ScalarValue<Int32>(index)
 	)
 	{
 	}

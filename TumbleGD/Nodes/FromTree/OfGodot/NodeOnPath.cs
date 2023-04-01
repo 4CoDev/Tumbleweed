@@ -8,7 +8,7 @@ public sealed class NodeOnPath : ScalarEnvelope<Node>
 {
 	public NodeOnPath(Node relation, String path) : this
 	(
-		new ScalarOfValue<Node>(relation),
+		new ScalarValue<Node>(relation),
 		path
 	)
 	{
@@ -16,7 +16,7 @@ public sealed class NodeOnPath : ScalarEnvelope<Node>
 	
 	public NodeOnPath(IScalar<Node> relation, String path) : this
 	(
-		relation, new ScalarOfValue<String>(path)
+		relation, new ScalarValue<String>(path)
 	)
 	{
 	}
@@ -30,7 +30,7 @@ public sealed class NodeOnPath : ScalarEnvelope<Node>
 	
 	public NodeOnPath(IScalar<Node> relation, NodePath path) : this
 	(
-		relation, new ScalarOfValue<NodePath>(path)
+		relation, new ScalarValue<NodePath>(path)
 	)
 	{
 	}

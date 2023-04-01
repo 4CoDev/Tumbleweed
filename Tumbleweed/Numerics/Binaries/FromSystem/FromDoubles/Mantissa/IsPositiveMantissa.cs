@@ -8,7 +8,7 @@ public sealed class IsPositiveMantissa : BitEnvelope
 {
 	public IsPositiveMantissa(Double @double) : this
 	(
-		new ScalarOfValue<Double>(@double)
+		new ScalarValue<Double>(@double)
 	)
 	{
 	}

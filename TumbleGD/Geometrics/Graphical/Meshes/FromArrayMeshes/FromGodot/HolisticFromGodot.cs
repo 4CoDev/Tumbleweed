@@ -8,7 +8,7 @@ public sealed class HolisticFromGodot : MeshEnvelope
 {
 	public HolisticFromGodot(ArrayMesh mesh) : this
 	(
-		new ScalarOfValue<ArrayMesh>(mesh)
+		new ScalarValue<ArrayMesh>(mesh)
 	)
 	{
 	}

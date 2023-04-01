@@ -10,7 +10,7 @@ public sealed class ScalarsOfValues<T>
 		new SelectedByExpression<T, IScalar<T>>
 		(
 			values,
-			value => new ScalarOfValue<T>(value)
+			value => new ScalarValue<T>(value)
 		)
 	)
 	{

@@ -8,7 +8,7 @@ public sealed class ChildrenOfNode : IList<Node>
 {
 	public ChildrenOfNode(Node parent) : this
 	(
-		new ScalarOfValue<Node>(parent)
+		new ScalarValue<Node>(parent)
 	)
 	{
 	}

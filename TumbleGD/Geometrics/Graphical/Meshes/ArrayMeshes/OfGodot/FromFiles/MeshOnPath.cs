@@ -8,7 +8,7 @@ public sealed class MeshOnPath : ScalarEnvelope<ArrayMesh>
 {
 	public MeshOnPath(String path) : this
 	(
-		new ScalarOfValue<String>(path)
+		new ScalarValue<String>(path)
 	)
 	{
 	}

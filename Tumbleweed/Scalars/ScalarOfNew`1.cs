@@ -5,7 +5,7 @@ public sealed class ScalarOfNew<T> : ScalarEnvelope<T>
 {
 	public ScalarOfNew() : base
 	(
-		new ScalarOfValue<T>(new T())
+		new ScalarValue<T>(new T())
 	)
 	{
 	}

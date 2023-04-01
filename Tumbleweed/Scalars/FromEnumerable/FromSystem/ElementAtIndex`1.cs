@@ -4,7 +4,7 @@ public sealed class ElementAtIndex<T> : IScalar<T>
 {
 	public ElementAtIndex(IEnumerable<T> enumerable, Int32 index) : this
 	(
-		enumerable, new ScalarOfValue<Int32>(index)
+		enumerable, new ScalarValue<Int32>(index)
 	)
 	{
 	}

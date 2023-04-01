@@ -7,7 +7,7 @@ public sealed class NaturalOfMantissa : NaturalEnvelope
 {
 	public NaturalOfMantissa(Double @double) : this
 	(
-		new ScalarOfValue<Double>(@double)
+		new ScalarValue<Double>(@double)
 	)
 	{
 	}

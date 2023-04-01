@@ -7,7 +7,7 @@ public sealed class TrianglesType : ScalarEnvelope<Mesh.PrimitiveType>
 {
 	public TrianglesType() : base
 	(
-		new ScalarOfValue<Mesh.PrimitiveType>(
+		new ScalarValue<Mesh.PrimitiveType>(
 			Mesh.PrimitiveType.Triangles)
 	)
 	{

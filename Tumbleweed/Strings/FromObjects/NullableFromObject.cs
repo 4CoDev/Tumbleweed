@@ -6,7 +6,7 @@ public sealed class NullableFromObject : ScalarEnvelope<String?>
 {
 	public NullableFromObject(Object @object) : this
 	(
-		new ScalarOfValue<Object>(@object)
+		new ScalarValue<Object>(@object)
 	)
 	{
 	}

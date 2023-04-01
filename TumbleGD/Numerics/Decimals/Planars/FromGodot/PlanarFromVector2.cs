@@ -10,7 +10,7 @@ public sealed class PlanarFromVector2 : PlanarEnvelope<IFractional>
 {
 	public PlanarFromVector2(Vector2 vector) : this
 	(
-		new ScalarOfValue<Vector2>(vector)
+		new ScalarValue<Vector2>(vector)
 	)
 	{
 	}

@@ -13,7 +13,7 @@ public sealed class SurfaceWithIndex : SurfaceEnvelope
 		Int32 index
 	) : this
 	(
-		mesh, new ScalarOfValue<Int32>(index)
+		mesh, new ScalarValue<Int32>(index)
 	)
 	{
 	}

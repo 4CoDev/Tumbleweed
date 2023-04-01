@@ -11,7 +11,7 @@ public sealed class LazyValue<T> : IScalar<T>
 {
 	public LazyValue(T origin) : this
 	(
-		new ScalarOfValue<T>(origin)
+		new ScalarValue<T>(origin)
 	)
 	{
 	}

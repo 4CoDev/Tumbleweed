@@ -17,7 +17,7 @@ public sealed class BitsFromByte : IScalar<IEnumerable<IBit>>
 			{
 				yield return new FromSystem.BitWithIndex(
 					@byte,
-					new ScalarOfValue<Int32>(position));
+					new ScalarValue<Int32>(position));
 			}
 		}
 	}

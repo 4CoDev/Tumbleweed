@@ -7,7 +7,7 @@ public sealed class FrameTime : ScalarEnvelope<Double>
 {
 	public FrameTime(Node node) : this
 	(
-		new ScalarOfValue<Node>(node)
+		new ScalarValue<Node>(node)
 	)
 	{
 	}

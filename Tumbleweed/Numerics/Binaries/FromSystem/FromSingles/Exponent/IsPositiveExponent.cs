@@ -8,7 +8,7 @@ public sealed class IsPositiveExponent : BitEnvelope
 {
 	public IsPositiveExponent(Single single) : this
 	(
-		new ScalarOfValue<Single>(single)
+		new ScalarValue<Single>(single)
 	)
 	{
 	}

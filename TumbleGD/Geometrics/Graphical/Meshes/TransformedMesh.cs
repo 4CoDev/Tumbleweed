@@ -14,7 +14,7 @@ public sealed class TransformedMesh : MeshEnvelope
 	) : this
 	(
 		mesh,
-		new ScalarOfValue<Transform3D>(transform)
+		new ScalarValue<Transform3D>(transform)
 	)
 	{
 	}

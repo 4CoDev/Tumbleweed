@@ -11,7 +11,7 @@ public sealed class MeshWithSurfaceTool : IScalar<ArrayMesh>
 		IScalar<ArrayMesh> mesh
 	) : this
 	(
-		new ScalarOfValue<SurfaceTool>(tool),
+		new ScalarValue<SurfaceTool>(tool),
 		mesh
 	)
 	{
@@ -24,7 +24,7 @@ public sealed class MeshWithSurfaceTool : IScalar<ArrayMesh>
 	) : this
 	(
 		tool,
-		new ScalarOfValue<ArrayMesh>(mesh)
+		new ScalarValue<ArrayMesh>(mesh)
 	)
 	{
 	}

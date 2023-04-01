@@ -8,7 +8,7 @@ public sealed class CloneOnPath<T> : ScalarEnvelope<T> where T : Node
 {
 	public CloneOnPath(String path) : this
 	(
-		new ScalarOfValue<String>(path)
+		new ScalarValue<String>(path)
 	)
 	{
 	}

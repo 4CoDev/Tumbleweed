@@ -9,7 +9,7 @@ public sealed class FractionalFromDouble : FractionalEnvelope
 {
 	public FractionalFromDouble(Double @double) : this
 	(
-		new ScalarOfValue<Double>(@double)
+		new ScalarValue<Double>(@double)
 	)
 	{
 	}

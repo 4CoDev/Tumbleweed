@@ -8,7 +8,7 @@ public sealed class NaturalOfInt32 : EnumerableEnvelope<IBit>
 {
 	public NaturalOfInt32(Int32 integer) : this
 	(
-		new ScalarOfValue<Int32>(integer)
+		new ScalarValue<Int32>(integer)
 	)
 	{
 	}

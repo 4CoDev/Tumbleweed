@@ -8,7 +8,7 @@ public sealed class ZeroHashWhenNull : ScalarEnvelope<Int32>
 {
 	public ZeroHashWhenNull(Object? nullable) : this
 	(
-		new ScalarOfValue<Object?>(nullable)
+		new ScalarValue<Object?>(nullable)
 	)
 	{
 	}

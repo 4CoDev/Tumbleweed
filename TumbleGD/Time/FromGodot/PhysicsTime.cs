@@ -9,7 +9,7 @@ public sealed class PhysicsTime : FractionalEnvelope
 {
 	public PhysicsTime(Node node) : this
 	(
-		new ScalarOfValue<Node>(node)
+		new ScalarValue<Node>(node)
 	)
 	{
 	}

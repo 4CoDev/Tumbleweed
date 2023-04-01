@@ -10,7 +10,7 @@ public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 {
 	public NullableWithValues(T value, IBit exists) : this
 	(
-		new ScalarOfValue<T>(value),
+		new ScalarValue<T>(value),
 		exists
 	)
 	{

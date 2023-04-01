@@ -7,7 +7,7 @@ public sealed class MantissaOfDouble : SignedEnvelope
 {
 	public MantissaOfDouble(Double @double) : this
 	(
-		new ScalarOfValue<Double>(@double)
+		new ScalarValue<Double>(@double)
 	)
 	{
 	}

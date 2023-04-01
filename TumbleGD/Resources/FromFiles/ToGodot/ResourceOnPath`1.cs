@@ -7,7 +7,7 @@ public sealed class ResourceOnPath<T> : ScalarEnvelope<T> where T : class
 {
 	public ResourceOnPath(String path) : this
 	(
-		new ScalarOfValue<String>(path)
+		new ScalarValue<String>(path)
 	)
 	{
 	}

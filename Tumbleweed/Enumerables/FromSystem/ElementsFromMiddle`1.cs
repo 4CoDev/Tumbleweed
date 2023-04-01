@@ -12,8 +12,8 @@ public sealed class ElementsFromMiddle<T> : EnumerableEnvelope<T>
 	) : this
 	(
 		collection,
-		new ScalarOfValue<Int32>(from),
-		new ScalarOfValue<Int32>(to)
+		new ScalarValue<Int32>(from),
+		new ScalarValue<Int32>(to)
 	)
 	{
 	}

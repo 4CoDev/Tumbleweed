@@ -9,7 +9,7 @@ public sealed class DifferenceOfInts32 : ScalarEnvelope<Int32>
 	(
 		new AggregatedByExpression(
 			numbers,
-			new ScalarOfValue<Int32>(0),
+			new ScalarValue<Int32>(0),
 			(left, right) =>
 				new DifferenceOfTwoInts32(left, right))
 	)

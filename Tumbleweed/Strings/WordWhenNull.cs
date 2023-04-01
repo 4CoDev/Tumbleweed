@@ -6,8 +6,8 @@ public sealed class WordWhenNull : ScalarEnvelope<String>
 {
 	public WordWhenNull(String? origin, String word) : this
 	(
-		new ScalarOfValue<String?>(origin),
-		new ScalarOfValue<String>(word)
+		new ScalarValue<String?>(origin),
+		new ScalarValue<String>(word)
 	)
 	{
 	}
@@ -15,14 +15,14 @@ public sealed class WordWhenNull : ScalarEnvelope<String>
 	public WordWhenNull(IScalar<String?> origin, String word) : this
 	(
 		origin,
-		new ScalarOfValue<String>(word)
+		new ScalarValue<String>(word)
 	)
 	{
 	}
 	
 	public WordWhenNull(String? origin, IScalar<String> word) : this
 	(
-		new ScalarOfValue<String?>(origin),
+		new ScalarValue<String?>(origin),
 		word
 	)
 	{

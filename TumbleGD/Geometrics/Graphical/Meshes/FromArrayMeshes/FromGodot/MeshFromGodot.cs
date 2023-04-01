@@ -8,7 +8,7 @@ public sealed class MeshFromGodot : MeshEnvelope
 {
 	public MeshFromGodot(ArrayMesh mesh) : this
 	(
-		new ScalarOfValue<ArrayMesh>(mesh)
+		new ScalarValue<ArrayMesh>(mesh)
 	)
 	{
 	}

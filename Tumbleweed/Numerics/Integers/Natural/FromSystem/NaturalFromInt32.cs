@@ -7,7 +7,7 @@ public sealed class NaturalFromInt32 : NaturalEnvelope
 {
 	public NaturalFromInt32(Int32 integer) : this
 	(
-		new ScalarOfValue<Int32>(integer)
+		new ScalarValue<Int32>(integer)
 	)
 	{
 	}

@@ -4,7 +4,7 @@ public sealed class ObjectAsType<T> : ScalarEnvelope<T>
 {
 	public ObjectAsType(Object value) : this
 	(
-		new ScalarOfValue<Object>(value)
+		new ScalarValue<Object>(value)
 	)
 	{
 	}

@@ -10,7 +10,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 		Int32 size
 	) : this
 	(
-		collection, new ScalarOfValue<Int32>(size)
+		collection, new ScalarValue<Int32>(size)
 	)
 	{
 	}

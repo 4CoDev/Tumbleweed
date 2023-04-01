@@ -7,7 +7,7 @@ public sealed class NaturalOfExponent : NaturalEnvelope
 {
 	public NaturalOfExponent(Single single) : this
 	(
-		new ScalarOfValue<Single>(single)
+		new ScalarValue<Single>(single)
 	)
 	{
 	}

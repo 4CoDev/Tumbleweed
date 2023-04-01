@@ -10,7 +10,7 @@ public sealed class SpatialFromVector3 : SpatialEnvelope<IFractional>
 {
 	public SpatialFromVector3(Vector3 vector) : this
 	(
-		new ScalarOfValue<Vector3>(vector)
+		new ScalarValue<Vector3>(vector)
 	)
 	{
 	}

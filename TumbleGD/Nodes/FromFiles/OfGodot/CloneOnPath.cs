@@ -7,7 +7,7 @@ public sealed class CloneOnPath : ScalarEnvelope<Node>
 {
 	public CloneOnPath(String path) : this
 	(
-		new ScalarOfValue<String>(path)
+		new ScalarValue<String>(path)
 	)
 	{
 	}

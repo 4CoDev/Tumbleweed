@@ -6,7 +6,7 @@ public sealed class BitWithIndex : BitEnvelope
 {
 	public BitWithIndex(IScalar<Byte> @byte, Int32 index) : this
 	(
-		@byte, new ScalarOfValue<Int32>(index)
+		@byte, new ScalarValue<Int32>(index)
 	)
 	{
 	}

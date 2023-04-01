@@ -15,8 +15,8 @@ public sealed class VertexWithIndex : VertexEnvelope
 	) : this
 	(
 		mesh,
-		new ScalarOfValue<Int32>(surface),
-		new ScalarOfValue<Int32>(vertex)
+		new ScalarValue<Int32>(surface),
+		new ScalarValue<Int32>(vertex)
 	)
 	{
 	}
@@ -30,7 +30,7 @@ public sealed class VertexWithIndex : VertexEnvelope
 	(
 		mesh,
 		surface,
-		new ScalarOfValue<Int32>(vertex)
+		new ScalarValue<Int32>(vertex)
 	)
 	{
 	}

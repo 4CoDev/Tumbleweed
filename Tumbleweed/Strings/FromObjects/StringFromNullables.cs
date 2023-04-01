@@ -18,7 +18,7 @@ public sealed class StringFromNullables : ScalarEnvelope<String>
 		new StringWithStrings(
 			new CommaSeparatedStrings(
 				new WordsWhenNulls(objects, "null")),
-			new ScalarOfValue<String>("."))
+			new ScalarValue<String>("."))
 	)
 	{
 	}

@@ -9,7 +9,7 @@ public sealed class BitsOfMantissa : EnumerableEnvelope<IBit>
 {
 	public BitsOfMantissa(Double @double) : this
 	(
-		new ScalarOfValue<Double>(@double)
+		new ScalarValue<Double>(@double)
 	)
 	{
 	}

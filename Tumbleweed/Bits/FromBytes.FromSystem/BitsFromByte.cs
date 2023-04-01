@@ -7,7 +7,7 @@ public sealed class BitsFromByte : EnumerableEnvelope<IBit>
 {
 	public BitsFromByte(Byte @byte) : this
 	(
-		new ScalarOfValue<Byte>(@byte)
+		new ScalarValue<Byte>(@byte)
 	)
 	{
 	}

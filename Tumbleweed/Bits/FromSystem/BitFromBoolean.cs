@@ -6,7 +6,7 @@ public sealed class BitFromBoolean : IBit
 {
 	public BitFromBoolean(Boolean boolean) : this
 	(
-		new ScalarOfValue<Boolean>(boolean)
+		new ScalarValue<Boolean>(boolean)
 	)
 	{
 	}

@@ -7,7 +7,7 @@ public sealed class ExponentOfSingle : SignedEnvelope
 {
 	public ExponentOfSingle(Single single) : this
 	(
-		new ScalarOfValue<Single>(single)
+		new ScalarValue<Single>(single)
 	)
 	{
 	}

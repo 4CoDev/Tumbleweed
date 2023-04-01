@@ -7,7 +7,7 @@ public sealed class PhysicsTime : ScalarEnvelope<Double>
 {
 	public PhysicsTime(Node node) : this
 	(
-		new ScalarOfValue<Node>(node)
+		new ScalarValue<Node>(node)
 	)
 	{
 	}

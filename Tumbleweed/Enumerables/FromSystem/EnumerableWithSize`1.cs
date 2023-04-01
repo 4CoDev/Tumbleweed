@@ -7,7 +7,7 @@ public sealed class EnumerableWithSize<T> : EnumerableEnvelope<T>
 {
 	public EnumerableWithSize(IEnumerable<T> enumerable, Int32 size) : this
 	(
-		enumerable, new ScalarOfValue<Int32>(size)
+		enumerable, new ScalarValue<Int32>(size)
 	)
 	{
 	}

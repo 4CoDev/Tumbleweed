@@ -18,7 +18,7 @@ public sealed class StringFromObjects : ScalarEnvelope<String>
 		new StringWithStrings(
 			new CommaSeparatedStrings(
 				new StringsFromObjects(objects)),
-			new ScalarOfValue<String>("."))
+			new ScalarValue<String>("."))
 	)
 	{
 	}

@@ -6,7 +6,7 @@ public sealed class TriangleVerticesCount : ScalarEnvelope<Int32>
 {
 	public TriangleVerticesCount() : base
 	(
-		new ScalarOfValue<Int32>(3)
+		new ScalarValue<Int32>(3)
 	)
 	{
 	}

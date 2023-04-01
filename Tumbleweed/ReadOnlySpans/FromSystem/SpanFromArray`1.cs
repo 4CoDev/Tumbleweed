@@ -6,7 +6,7 @@ public sealed class SpanFromArray<T> : SpanEnvelope<T>
 {
 	public SpanFromArray(T[] array) : this
 	(
-		new ScalarOfValue<T[]>(array)
+		new ScalarValue<T[]>(array)
 	)
 	{
 	}
