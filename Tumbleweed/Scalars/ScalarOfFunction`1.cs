@@ -9,7 +9,7 @@ public sealed class ScalarOfFunction<T> : IScalar<T>
 {
 	public ScalarOfFunction(Func<IScalar<T>> function) : this
 	(
-		new NullaryFromSystem<IScalar<T>>(function)
+		new FunctionFromSystem<IScalar<T>>(function)
 	)
 	{
 	}

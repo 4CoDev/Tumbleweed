@@ -5,9 +5,7 @@ namespace TumbleGD.Nodes.Spaces.Spatial;
 
 public interface ISpatialSpace
 {
-	IArray<ISpatialSpace> Spaces { get; }
+	IArray<ISpatialSpace> Subspaces { get; }
 	
 	IEnumerable<ISpatialEntity> Entities { get; }
-	
-	void Update();
 }

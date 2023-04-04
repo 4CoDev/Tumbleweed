@@ -2,9 +2,9 @@ using Godot;
 using TumbleGD.Nodes.Paths.FromSystem;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.FromTree.OfGodot;
+namespace TumbleGD.Nodes.FromTree;
 
-public sealed class NodeOnPath : ScalarEnvelope<Node>
+public sealed class NodeOnPath<T> : ScalarEnvelope<T> where T : Node
 {
 	public NodeOnPath(Node relation, String path) : this
 	(
@@ -41,7 +41,8 @@ public sealed class NodeOnPath : ScalarEnvelope<Node>
 		IScalar<NodePath> path
 	) : base
 	(
-		new NodeOnPath<Node>(relation, path)
+		new ValueOfFunction<T>(
+			() => relation.Value.GetNode<T>(path.Value))
 	)
 	{
 	}

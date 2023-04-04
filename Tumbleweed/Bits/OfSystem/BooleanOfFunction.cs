@@ -7,7 +7,7 @@ public sealed class BooleanOfFunction : ScalarEnvelope<Boolean>
 {
 	public BooleanOfFunction(Func<Boolean> function) : this
 	(
-		new NullaryFromSystem<Boolean>(function)
+		new FunctionFromSystem<Boolean>(function)
 	)
 	{
 	}

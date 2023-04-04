@@ -8,7 +8,7 @@ public sealed class EventOfFunction : EventEnvelope
 {
 	public EventOfFunction(Func<INullaryEvent> function) : this
 	(
-		new NullaryFromSystem<INullaryEvent>(function)
+		new FunctionFromSystem<INullaryEvent>(function)
 	)
 	{
 	}

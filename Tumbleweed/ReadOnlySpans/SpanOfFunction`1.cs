@@ -9,7 +9,7 @@ public sealed class SpanOfFunction<T> : IReadOnlySpan<T>
 		Func<IReadOnlySpan<T>> function
 	) : this
 	(
-		new NullaryFromSystem<IReadOnlySpan<T>>(function)
+		new FunctionFromSystem<IReadOnlySpan<T>>(function)
 	)
 	{
 	}

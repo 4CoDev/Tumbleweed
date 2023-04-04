@@ -6,7 +6,7 @@ public sealed class LazyFunction<T> : ScalarEnvelope<T>
 {
 	public LazyFunction(Func<T> function) : this
 	(
-		new NullaryFromSystem<T>(function)
+		new FunctionFromSystem<T>(function)
 	)
 	{
 	}

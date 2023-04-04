@@ -4,7 +4,7 @@ namespace Tumbleweed.Elements;
 
 public interface IElement<T> where T : notnull
 {
-	INullable<T> Value { get; }
+	INullable<T> Nullability { get; }
 
 	void Remove();
 

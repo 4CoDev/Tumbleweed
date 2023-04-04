@@ -7,7 +7,7 @@ public sealed class SpatialOfFunction<T> : SpatialEnvelope<T>
 {
 	public SpatialOfFunction(Func<ISpatial<T>> function) : this
 	(
-		new NullaryFromSystem<ISpatial<T>>(function)
+		new FunctionFromSystem<ISpatial<T>>(function)
 	)
 	{
 	}

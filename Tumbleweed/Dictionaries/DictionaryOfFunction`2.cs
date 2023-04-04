@@ -12,7 +12,7 @@ public sealed class DictionaryOfFunction<TKey, TValue> :
 		Func<IDictionary<TKey, TValue>> function
 	) : this
 	(
-		new NullaryFromSystem<IDictionary<TKey, TValue>>(function)
+		new FunctionFromSystem<IDictionary<TKey, TValue>>(function)
 	)
 	{
 	}

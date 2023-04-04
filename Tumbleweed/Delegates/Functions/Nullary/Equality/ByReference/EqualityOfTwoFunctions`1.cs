@@ -11,8 +11,8 @@ public sealed class EqualityOfTwoFunctions<TResult> : BitEnvelope
 		Func<TResult> second
 	) : this
 	(
-		new NullaryFromSystem<TResult>(first),
-		new NullaryFromSystem<TResult>(second)
+		new FunctionFromSystem<TResult>(first),
+		new FunctionFromSystem<TResult>(second)
 	)
 	{
 	}

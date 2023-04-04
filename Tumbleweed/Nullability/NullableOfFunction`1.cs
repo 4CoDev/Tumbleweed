@@ -9,6 +9,16 @@ public sealed class NullableOfFunction<T> :
 {
 	public NullableOfFunction
 	(
+		Func<INullable<T>> function
+	) : this
+	(
+		new FunctionFromSystem<INullable<T>>(function)
+	)
+	{
+	}
+	
+	public NullableOfFunction
+	(
 		INullaryFunction<INullable<T>> function
 	) : base
 	(

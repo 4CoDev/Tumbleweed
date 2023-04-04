@@ -10,7 +10,7 @@ public sealed class EnumerableOfFunction<T> : EnumerableEnvelope<T>
 		Func<IEnumerable<T>> function
 	) : this
 	(
-		new NullaryFromSystem<IEnumerable<T>>(function)
+		new FunctionFromSystem<IEnumerable<T>>(function)
 	)
 	{
 	}

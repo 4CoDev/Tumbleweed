@@ -1,8 +1,8 @@
 namespace Tumbleweed.Delegates.Functions.Nullary;
 
-public class NullaryFromSystem<TResult> : INullaryFunction<TResult>
+public class FunctionFromSystem<TResult> : INullaryFunction<TResult>
 {
-	public NullaryFromSystem(Func<TResult> function) =>
+	public FunctionFromSystem(Func<TResult> function) =>
 		this.function = function;
 
 	public TResult Invoke() => function.Invoke();

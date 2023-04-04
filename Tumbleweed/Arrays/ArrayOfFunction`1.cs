@@ -7,7 +7,7 @@ public sealed class ArrayOfFunction<T> : ArrayEnvelope<T>
 {
 	public ArrayOfFunction(Func<IArray<T>> function) : this
 	(
-		new NullaryFromSystem<IArray<T>>(function)
+		new FunctionFromSystem<IArray<T>>(function)
 	)
 	{
 	}

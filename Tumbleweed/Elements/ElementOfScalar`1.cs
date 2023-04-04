@@ -8,7 +8,7 @@ public sealed class ElementOfScalar<T> : IElement<T> where T : notnull
 	public ElementOfScalar(IScalar<IElement<T>> scalar) =>
 		this.scalar = scalar;
 	
-	public INullable<T> Value => scalar.Value.Value;
+	public INullable<T> Nullability => scalar.Value.Nullability;
 
 	public void Remove() => scalar.Value.Remove();
 

@@ -1,8 +1,8 @@
 namespace Tumbleweed.Mutables;
 
-public sealed class MutableEnvelope<T> : IMutable<T>
+public abstract class MutableEnvelope<T> : IMutable<T>
 {
-	public MutableEnvelope(IMutable<T> mutable) =>
+	protected MutableEnvelope(IMutable<T> mutable) =>
 		this.mutable = mutable;
 
 	public override Boolean Equals(Object? @object) =>

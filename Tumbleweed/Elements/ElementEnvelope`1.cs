@@ -16,7 +16,7 @@ public abstract class ElementEnvelope<T> : IElement<T> where T : notnull
 	public override String? ToString() =>
 		element.ToString();
 
-	public INullable<T> Value => element.Value;
+	public INullable<T> Nullability => element.Nullability;
 
 	public void Remove() => element.Remove();
 

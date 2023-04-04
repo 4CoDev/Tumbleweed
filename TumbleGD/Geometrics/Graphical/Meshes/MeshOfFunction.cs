@@ -7,7 +7,7 @@ public sealed class MeshOfFunction : MeshEnvelope
 {
 	public MeshOfFunction(Func<IMesh> function) : this
 	(
-		new NullaryFromSystem<IMesh>(function)
+		new FunctionFromSystem<IMesh>(function)
 	)
 	{
 	}

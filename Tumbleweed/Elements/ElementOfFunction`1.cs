@@ -13,7 +13,7 @@ public sealed class ElementOfFunction<T> :
 		Func<IElement<T>> function
 	) : this
 	(
-		new NullaryFromSystem<IElement<T>>(function)
+		new FunctionFromSystem<IElement<T>>(function)
 	)
 	{
 	}

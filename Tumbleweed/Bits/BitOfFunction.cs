@@ -7,7 +7,7 @@ public sealed class BitOfFunction : BitEnvelope
 {
 	public BitOfFunction(Func<IBit> function) : this
 	(
-		new NullaryFromSystem<IBit>(function)
+		new FunctionFromSystem<IBit>(function)
 	)
 	{
 	}

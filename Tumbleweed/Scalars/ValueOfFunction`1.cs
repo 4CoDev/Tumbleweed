@@ -9,7 +9,7 @@ public sealed class ValueOfFunction<T> : IScalar<T>
 {
 	public ValueOfFunction(Func<T> function) : this
 	(
-		new NullaryFromSystem<T>(function)
+		new FunctionFromSystem<T>(function)
 	)
 	{
 	}

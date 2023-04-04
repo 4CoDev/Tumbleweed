@@ -7,7 +7,7 @@ public sealed class PlanarOfFunction<T> : PlanarEnvelope<T>
 {
 	public PlanarOfFunction(Func<IPlanar<T>> function) : this
 	(
-		new NullaryFromSystem<IPlanar<T>>(function)
+		new FunctionFromSystem<IPlanar<T>>(function)
 	)
 	{
 	}

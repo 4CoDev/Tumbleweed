@@ -17,7 +17,7 @@ public sealed class ElementWithKey<TKey, TElement> :
 		this.key = key;
 	}
 
-	public INullable<TElement> Value =>
+	public INullable<TElement> Nullability =>
 		new NullableFromSystem<TElement>(dictionary[key]);
 
 	public void Remove() => dictionary.Remove(key);

@@ -7,7 +7,7 @@ public sealed class ElementAsType<T> : IElement<T> where T : notnull
 	public ElementAsType(IElement<Object> origin) =>
 		this.origin = origin;
 	
-	public INullable<T> Value => new NullableAsType<T>(origin.Value);
+	public INullable<T> Nullability => new NullableAsType<T>(origin.Nullability);
 
 	public void Remove() => origin.Remove();
 

@@ -17,14 +17,11 @@ public abstract class SpaceEnvelope : ISpatialSpace
 	public override String? ToString() =>
 		spatialSpace.ToString();
 
-	public IArray<ISpatialSpace> Spaces =>
-		spatialSpace.Spaces;
+	public IArray<ISpatialSpace> Subspaces =>
+		spatialSpace.Subspaces;
 	
 	public IEnumerable<ISpatialEntity> Entities =>
 		spatialSpace.Entities;
-
-	public void Update() =>
-		spatialSpace.Update();
 
 	private readonly ISpatialSpace spatialSpace;
 }
