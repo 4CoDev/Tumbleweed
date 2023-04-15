@@ -7,5 +7,5 @@ public interface ISpatialSpace
 {
 	IArray<ISpatialSpace> Subspaces { get; }
 	
-	IEnumerable<ISpatialEntity> Entities { get; }
+	ICollection<ISpatialEntity> Entities { get; }
 }

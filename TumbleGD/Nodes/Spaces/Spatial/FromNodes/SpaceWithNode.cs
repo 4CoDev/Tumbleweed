@@ -14,7 +14,7 @@ public sealed class SpaceWithNode : ISpatialSpace
 	public IArray<ISpatialSpace> Subspaces =>
 		new SubspacesOfNode(node);
 
-	public IEnumerable<ISpatialEntity> Entities =>
+	public ICollection<ISpatialEntity> Entities =>
 		new EntitiesOfSpace(node);
 
 	private readonly IScalar<Node3D> node;

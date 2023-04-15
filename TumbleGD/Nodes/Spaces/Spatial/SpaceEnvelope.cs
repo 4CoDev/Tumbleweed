@@ -5,23 +5,23 @@ namespace TumbleGD.Nodes.Spaces.Spatial;
 
 public abstract class SpaceEnvelope : ISpatialSpace
 {
-	protected SpaceEnvelope(ISpatialSpace spatialSpace) =>
-		this.spatialSpace = spatialSpace;
+	protected SpaceEnvelope(ISpatialSpace space) =>
+		this.space = space;
 
 	public override Boolean Equals(Object? @object) =>
-		spatialSpace.Equals(@object);
+		space.Equals(@object);
 
 	public override Int32 GetHashCode() =>
-		spatialSpace.GetHashCode();
+		space.GetHashCode();
 
 	public override String? ToString() =>
-		spatialSpace.ToString();
+		space.ToString();
 
 	public IArray<ISpatialSpace> Subspaces =>
-		spatialSpace.Subspaces;
+		space.Subspaces;
 	
-	public IEnumerable<ISpatialEntity> Entities =>
-		spatialSpace.Entities;
+	public ICollection<ISpatialEntity> Entities =>
+		space.Entities;
 
-	private readonly ISpatialSpace spatialSpace;
+	private readonly ISpatialSpace space;
 }
