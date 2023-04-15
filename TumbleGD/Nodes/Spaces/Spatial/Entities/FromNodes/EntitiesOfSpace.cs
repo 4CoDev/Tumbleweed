@@ -1,16 +1,17 @@
 using Godot;
+using Tumbleweed.Collections;
 using Tumbleweed.Elements.FromStorages;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities.FromNodes;
 
-public sealed class EntitiesOfSpace : EnumerableEnvelope<ISpatialEntity>
+public sealed class EntitiesOfSpace : CollectionEnvelope<ISpatialEntity>
 {
 	public EntitiesOfSpace(IScalar<Node3D> node) : base
 	(
-		new EnumerableOfElement<ISpatialEntity>(
-			new GlobalWithKey<IEnumerable<ISpatialEntity>>(
+		new CollectionOfElement<ISpatialEntity>(
+			new GlobalWithKey<ICollection<ISpatialEntity>>(
 				node, "Entities"))
 	)
 	{

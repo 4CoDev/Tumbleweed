@@ -7,7 +7,7 @@ public sealed class LastBit : BitEnvelope
 	public LastBit(IEnumerable<IBit> enumerable) : base
 	(
 		new BitOfScalar(
-			new LastElementOfEnumerable<IBit>(enumerable))
+			new LastOfEnumerable<IBit>(enumerable))
 	)
 	{
 	}

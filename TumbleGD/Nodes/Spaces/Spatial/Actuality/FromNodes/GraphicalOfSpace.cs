@@ -21,7 +21,7 @@ public sealed class GraphicalOfSpace : ISpaceActuality
 
 	public void Update()
 	{
-		mesh.Value =
+		mesh.Variable =
 			new MeshFromEntities(
 				new EntitiesOfSpace(node));
 	}

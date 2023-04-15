@@ -40,7 +40,7 @@ public sealed class MutableWithMembers<T> : IMutable<T>
 		this.mutator = mutator;
 	}
 
-	public T Value
+	public T Variable
 	{
 		get => accessor.Value;
 		set => mutator.Invoke(value);

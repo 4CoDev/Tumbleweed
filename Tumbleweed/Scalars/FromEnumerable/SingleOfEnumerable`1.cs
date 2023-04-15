@@ -2,9 +2,9 @@ using Tumbleweed.Enumerables.FromSystem;
 
 namespace Tumbleweed.Scalars.FromEnumerable;
 
-public sealed class SingleElementOfEnumerable<T> : ScalarEnvelope<T>
+public sealed class SingleOfEnumerable<T> : ScalarEnvelope<T>
 {
-	public SingleElementOfEnumerable
+	public SingleOfEnumerable
 	(
 		IEnumerable<T> enumerable
 	) : base

@@ -2,15 +2,15 @@ using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Numerics.Integers.Natural.FromEnumerable;
 
-public sealed class SingleElementOfEnumerable : NaturalEnvelope
+public sealed class SingleOfEnumerable : NaturalEnvelope
 {
-	public SingleElementOfEnumerable
+	public SingleOfEnumerable
 	(
 		IEnumerable<INaturalInteger> enumerable
 	) : base
 	(
 		new NaturalOfScalar(
-			new SingleElementOfEnumerable<INaturalInteger>(
+			new SingleOfEnumerable<INaturalInteger>(
 				enumerable))
 	)
 	{

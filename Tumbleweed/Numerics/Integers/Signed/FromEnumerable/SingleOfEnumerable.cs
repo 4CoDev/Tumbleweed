@@ -2,15 +2,15 @@ using Tumbleweed.Scalars.FromEnumerable;
 
 namespace Tumbleweed.Numerics.Integers.Signed.FromEnumerable;
 
-public sealed class SingleElementOfEnumerable : SignedEnvelope
+public sealed class SingleOfEnumerable : SignedEnvelope
 {
-	public SingleElementOfEnumerable
+	public SingleOfEnumerable
 	(
 		IEnumerable<ISignedInteger> enumerable
 	) : base
 	(
 		new SignedOfScalar(
-			new SingleElementOfEnumerable<ISignedInteger>(enumerable))
+			new SingleOfEnumerable<ISignedInteger>(enumerable))
 	)
 	{
 	}

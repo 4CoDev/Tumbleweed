@@ -7,7 +7,7 @@ public sealed class SingleElementOfEnumerable : FractionalEnvelope
 	public SingleElementOfEnumerable(IEnumerable<IFractional> enumerable) : base
 	(
 		new FractionalOfScalar(
-			new SingleElementOfEnumerable<IFractional>(enumerable))
+			new SingleOfEnumerable<IFractional>(enumerable))
 	)
 	{
 	}

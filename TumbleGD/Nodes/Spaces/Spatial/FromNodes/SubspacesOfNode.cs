@@ -3,7 +3,7 @@ using Tumbleweed.Arrays;
 using Tumbleweed.Elements.FromStorages;
 using Tumbleweed.Scalars;
 
-namespace TumbleGD.Nodes.Spaces.Spatial;
+namespace TumbleGD.Nodes.Spaces.Spatial.FromNodes;
 
 public sealed class SubspacesOfNode : ArrayEnvelope<ISpatialSpace>
 {

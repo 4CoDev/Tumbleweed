@@ -1,14 +1,10 @@
 using Godot;
-using TumbleGD.Geometrics.Graphical.Meshes.ArrayMeshes.ToGodot;
 using TumbleGD.Nodes.Spaces.Spatial.Entities;
 using TumbleGD.Nodes.Spaces.Spatial.Entities.FromNodes;
-using TumbleGD.Nodes.Spaces.Spatial.Entities.Meshes;
 using Tumbleweed.Arrays;
-using Tumbleweed.Elements.FromStorages;
 using Tumbleweed.Scalars;
-using Tumbleweed.Storages;
 
-namespace TumbleGD.Nodes.Spaces.Spatial;
+namespace TumbleGD.Nodes.Spaces.Spatial.FromNodes;
 
 public sealed class SpaceWithNode : ISpatialSpace
 {
