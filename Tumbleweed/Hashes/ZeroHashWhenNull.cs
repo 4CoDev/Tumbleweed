@@ -30,7 +30,7 @@ public sealed class ZeroHashWhenNull : ScalarEnvelope<Int32>
 
 	private static Int32 Function(INullable<Object> nullable)
 	{
-		if (nullable.Exists.State) return new HashOfObject(nullable).Value;
+		if (nullable.Existing.State) return new HashOfObject(nullable).Value;
 		return 0;
 	}
 }

@@ -61,7 +61,7 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		INullable<ISpatialEntity> second
 	)
 	{
-		if (first.Exists.State && second.Exists.State)
+		if (first.Existing.State && second.Existing.State)
 			return new EqualityOfTwoEntities(first, second);
 		return new EqualityOfTwoNullables(first, second);
 	}

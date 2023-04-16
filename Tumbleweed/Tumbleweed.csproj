@@ -13,11 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Arrays\Measurement" />
-      <Folder Include="Arrays\Reading\Linears\FromSystem" />
-      <Folder Include="Arrays\Reading\Linears\OfSystem" />
-      <Folder Include="Arrays\Reading\Spatials\OfSystem" />
-      <Folder Include="Arrays\Writing" />
       <Folder Include="Numerics\Binaries\FromSystem" />
       <Folder Include="ReadOnlySpans\ToSystem" />
     </ItemGroup>

@@ -61,7 +61,7 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		INullable<IEnumerable> second
 	)
 	{
-		if (first.Exists.State && second.Exists.State)
+		if (first.Existing.State && second.Existing.State)
 			return new EqualityOfTwoEnumerables(first.Value, second.Value);
 		return new EqualityOfTwoNullables(first, second);
 	}

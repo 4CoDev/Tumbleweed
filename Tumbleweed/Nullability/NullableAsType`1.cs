@@ -12,7 +12,7 @@ public sealed class NullableAsType<T> :
 		new NullableWithValues<T>(
 			new ObjectAsType<T>(
 				new ValueOfFunction<Object>(() => origin.Value)),
-			new BitOfFunction(() => origin.Exists))
+			new BitOfFunction(() => origin.Existing))
 	)
 	{
 	}

@@ -1,12 +1,12 @@
-using Tumbleweed.Elements;
+using Tumbleweed.Storages.Elements;
 
-namespace Tumbleweed.Collections;
+namespace Tumbleweed.Collections.FromStorages;
 
 public sealed class CollectionOfElement<T> : CollectionEnvelope<T>
 {
 	public CollectionOfElement
 	(
-		IElement<ICollection<T>> element
+		IStorageElement<ICollection<T>> element
 	) : base
 	(
 		new CollectionOfScalar<T>(

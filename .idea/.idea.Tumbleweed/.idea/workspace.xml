@@ -21,6 +21,8 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/Surfaces/FromArrayMeshes/FromGodot/SurfacesFromMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/Surfaces/SurfaceTools/ToGodot/SurfaceToolsWithSurfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TumbleGD/Geometrics/Graphical/Vertices/FromMeshDataTool/VertexWithIndex.cs" root0="FORCE_HIGHLIGHTING" />

@@ -1,6 +1,6 @@
 using Tumbleweed.Scalars;
 
-namespace Tumbleweed.Enumerables;
+namespace Tumbleweed.Enumerables.Lazy;
 
 public sealed class LazyEnumerable<T> : EnumerableEnvelope<T>
 {

@@ -22,7 +22,7 @@ public sealed class ActualOfSpace : EnumerableEnvelope<Node>
 	{
 		IEnumerable<INullable<Node>> nullables = new ActualNullablesOfSpace(space);
 		foreach (INullable<Node> nullable in nullables)
-			if (nullable.Exists.State)
+			if (nullable.Existing.State)
 				yield return nullable.Value;
 	}
 }

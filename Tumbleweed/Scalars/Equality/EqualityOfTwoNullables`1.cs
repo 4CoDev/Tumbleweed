@@ -61,7 +61,7 @@ public sealed class EqualityOfTwoNullables<T> : BitEnvelope
 		INullable<IScalar<T>> second
 	)
 	{
-		if (first.Exists.State && second.Exists.State)
+		if (first.Existing.State && second.Existing.State)
 			return new EqualityOfTwoScalars<T>(first, second);
 		return new EqualityOfTwoNullables(first, second);
 	}

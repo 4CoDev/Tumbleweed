@@ -1,8 +1,8 @@
 using Godot;
 using Tumbleweed.Collections;
-using Tumbleweed.Elements.FromStorages;
-using Tumbleweed.Enumerables;
+using Tumbleweed.Collections.FromStorages;
 using Tumbleweed.Scalars;
+using Tumbleweed.Storages.Elements;
 
 namespace TumbleGD.Nodes.Spaces.Spatial.Entities.FromNodes;
 

@@ -4,7 +4,7 @@ public sealed class EmptyStorage : StorageEnvelope
 {
 	public EmptyStorage() : base
 	(
-		new StorageWithRecords(
+		new StorageFromDictionary(
 			new Dictionary<Object, Object>())
 	)
 	{

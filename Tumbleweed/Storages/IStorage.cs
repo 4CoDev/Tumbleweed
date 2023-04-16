@@ -1,6 +1,12 @@
+using Tumbleweed.Nullability;
+
 namespace Tumbleweed.Storages;
 
 public interface IStorage
 {
-	IDictionary<Object, Object> Records { get; }
+	INullable<Object> ValueWith(Object key);
+	
+	void Add(Object key, Object value);
+	
+	void RemoveBy(Object key);
 }

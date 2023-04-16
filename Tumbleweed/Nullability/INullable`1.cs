@@ -2,9 +2,9 @@ using Tumbleweed.Bits;
 
 namespace Tumbleweed.Nullability;
 
-public interface INullable<out T> where T : notnull
+public interface INullable<out T>
 {
 	T Value { get; }
 	
-	IBit Exists { get; }
+	IBit Existing { get; }
 }

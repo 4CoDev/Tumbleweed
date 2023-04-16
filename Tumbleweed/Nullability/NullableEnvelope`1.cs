@@ -18,7 +18,7 @@ public abstract class NullableEnvelope<T> : INullable<T> where T : notnull
 
 	public T Value => nullable.Value;
 
-	public IBit Exists => nullable.Exists;
+	public IBit Existing => nullable.Existing;
 	
 	private readonly INullable<T> nullable;
 }

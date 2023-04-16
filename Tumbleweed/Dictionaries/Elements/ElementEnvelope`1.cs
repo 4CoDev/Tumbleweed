@@ -1,10 +1,10 @@
 using Tumbleweed.Nullability;
 
-namespace Tumbleweed.Elements;
+namespace Tumbleweed.Dictionaries.Elements;
 
-public abstract class ElementEnvelope<T> : IElement<T> where T : notnull
+public abstract class ElementEnvelope<T> : IDictionaryElement<T> where T : notnull
 {
-	protected ElementEnvelope(IElement<T> element) =>
+	protected ElementEnvelope(IDictionaryElement<T> element) =>
 		this.element = element;
 
 	public override Boolean Equals(Object? @object) =>
@@ -20,7 +20,7 @@ public abstract class ElementEnvelope<T> : IElement<T> where T : notnull
 
 	public void Remove() => element.Remove();
 
-	public void Create(T value) => element.Create(value);
+	public void Place(T value) => element.Place(value);
 	
-	private readonly IElement<T> element;
+	private readonly IDictionaryElement<T> element;
 }

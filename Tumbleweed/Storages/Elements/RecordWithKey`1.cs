@@ -1,8 +1,6 @@
 using Tumbleweed.Enumerables.Equality;
-using Tumbleweed.Scalars;
-using Tumbleweed.Storages;
 
-namespace Tumbleweed.Elements.FromStorages;
+namespace Tumbleweed.Storages.Elements;
 
 public sealed class RecordWithKey<T> :
 	ElementEnvelope<T>

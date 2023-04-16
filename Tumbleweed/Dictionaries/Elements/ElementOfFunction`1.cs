@@ -1,8 +1,7 @@
 using Tumbleweed.Delegates.Functions.Nullary;
-using Tumbleweed.Nullability;
 using Tumbleweed.Scalars;
 
-namespace Tumbleweed.Elements;
+namespace Tumbleweed.Dictionaries.Elements;
 
 public sealed class ElementOfFunction<T> :
 	ElementEnvelope<T>
@@ -10,21 +9,21 @@ public sealed class ElementOfFunction<T> :
 {
 	public ElementOfFunction
 	(
-		Func<IElement<T>> function
+		Func<IDictionaryElement<T>> function
 	) : this
 	(
-		new FunctionFromSystem<IElement<T>>(function)
+		new FunctionFromSystem<IDictionaryElement<T>>(function)
 	)
 	{
 	}
 	
 	public ElementOfFunction
 	(
-		INullaryFunction<IElement<T>> function
+		INullaryFunction<IDictionaryElement<T>> function
 	) : base
 	(
 		new ElementOfScalar<T>(
-			new ValueOfFunction<IElement<T>>(
+			new ValueOfFunction<IDictionaryElement<T>>(
 				function))
 	)
 	{

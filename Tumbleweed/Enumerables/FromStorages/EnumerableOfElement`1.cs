@@ -1,12 +1,12 @@
-using Tumbleweed.Elements;
+using Tumbleweed.Storages.Elements;
 
-namespace Tumbleweed.Enumerables;
+namespace Tumbleweed.Enumerables.FromStorages;
 
 public sealed class EnumerableOfElement<T> : EnumerableEnvelope<T>
 {
 	public EnumerableOfElement
 	(
-		IElement<IEnumerable<T>> element
+		IStorageElement<IEnumerable<T>> element
 	) : base
 	(
 		new EnumerableOfScalar<T>(

@@ -19,7 +19,7 @@ public sealed class NullableOfScalar<T> : INullable<T> where T : notnull
 
 	public T Value => scalar.Value.Value;
 
-	public IBit Exists => scalar.Value.Exists;
+	public IBit Existing => scalar.Value.Existing;
 
 	private readonly IScalar<INullable<T>> scalar;
 }

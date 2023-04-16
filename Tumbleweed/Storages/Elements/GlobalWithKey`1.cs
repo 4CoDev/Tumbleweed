@@ -1,11 +1,10 @@
-using System.Collections;
 using Tumbleweed.Enumerables.Equality;
-using Tumbleweed.Scalars;
-using Tumbleweed.Storages;
 
-namespace Tumbleweed.Elements.FromStorages;
+namespace Tumbleweed.Storages.Elements;
 
-public sealed class GlobalWithKey : ElementEnvelope<Object>
+public sealed class GlobalWithKey<T> :
+	ElementEnvelope<T>
+	where T : notnull
 {
 	public GlobalWithKey(params Object[] key) : this
 	(
@@ -13,10 +12,10 @@ public sealed class GlobalWithKey : ElementEnvelope<Object>
 	)
 	{
 	}
-	
+
 	public GlobalWithKey(Object key) : base
 	(
-		new RecordWithKey(
+		new RecordWithKey<T>(
 			new GlobalStorage(),
 			key)
 	)

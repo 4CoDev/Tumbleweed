@@ -1,10 +1,10 @@
 using Tumbleweed.Nullability;
 using Tumbleweed.Nullability.FromSystem;
 
-namespace Tumbleweed.Elements.FromDictionaries;
+namespace Tumbleweed.Dictionaries.Elements;
 
 public sealed class ElementWithKey<TKey, TElement> :
-	IElement<TElement>
+	IDictionaryElement<TElement>
 	where TElement : notnull
 {
 	public ElementWithKey
@@ -22,7 +22,7 @@ public sealed class ElementWithKey<TKey, TElement> :
 
 	public void Remove() => dictionary.Remove(key);
 
-	public void Create(TElement value) =>
+	public void Place(TElement value) =>
 		dictionary.Add(key, value);
 
 	private readonly IDictionary<TKey, TElement> dictionary;
