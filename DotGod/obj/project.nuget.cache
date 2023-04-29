@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lr2WYD1rpxOJ4gBMVkosWL+9TAFhymZIIZL1QFy4qXDTGhSXe77nkuHEKgGumfhs4QKTrnMRflxXBDBos+kO3A==",
+  "success": true,
+  "projectFilePath": "/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/DotGod.csproj",
+  "expectedPackageFiles": [
+    "/Users/thisischico/.nuget/packages/godotsharp/4.0.0-rc.1/godotsharp.4.0.0-rc.1.nupkg.sha512"
+  ],
+  "logs": []
+}

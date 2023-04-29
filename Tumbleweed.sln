@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumbleweed", "Tumbleweed\Tumbleweed.csproj", "{50A7ECB2-D61B-42C4-A20E-1C8BE625E136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumbleGD", "TumbleGD\TumbleGD.csproj", "{1C9CF6B1-1496-4C6A-BF07-E2E32D40459F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotGod", "DotGod\DotGod.csproj", "{1C9CF6B1-1496-4C6A-BF07-E2E32D40459F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
