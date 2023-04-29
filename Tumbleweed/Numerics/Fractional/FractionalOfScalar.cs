@@ -1,4 +1,3 @@
-using Tumbleweed.Bits;
 using Tumbleweed.Numerics.Integers;
 using Tumbleweed.Numerics.Integers.Signed;
 using Tumbleweed.Scalars;

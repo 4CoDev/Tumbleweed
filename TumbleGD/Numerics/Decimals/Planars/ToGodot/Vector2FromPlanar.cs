@@ -1,6 +1,6 @@
 using Godot;
-using Tumbleweed.Numerics.Binaries.ToSystem.Singles;
 using Tumbleweed.Numerics.Fractional;
+using Tumbleweed.Numerics.Fractional.Binaries.ToSystem.Singles;
 using Tumbleweed.Numerics.Planar;
 using Tumbleweed.Scalars;
 

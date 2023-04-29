@@ -1,11 +1,11 @@
 using System.Collections;
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Nullability;
 using Tumbleweed.Nullability.FromSystem;
 
 namespace Tumbleweed.Enumerables.Equality;
 
-public sealed class EqualityOfTwoNullables : BitEnvelope
+public sealed class EqualityOfTwoNullables : BooleanEnvelope
 {
 	public EqualityOfTwoNullables
 	(
@@ -49,13 +49,13 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		INullable<IEnumerable> second
 	) : base
 	(
-		new BitOfFunction(
+		new BooleanOfFunction(
 			() => Function(first, second))
 	)
 	{
 	}
 
-	private static IBit Function
+	private static IBoolean Function
 	(
 		INullable<IEnumerable> first,
 		INullable<IEnumerable> second

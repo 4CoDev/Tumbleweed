@@ -1,11 +1,11 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 
 namespace Tumbleweed.Numerics.Integers.Natural;
 
 public sealed class NaturalWithBits : INaturalInteger
 {
-	public NaturalWithBits(IEnumerable<IBit> bits) =>
+	public NaturalWithBits(IEnumerable<IBoolean> bits) =>
 		Bits = bits;
 	
-	public IEnumerable<IBit> Bits { get; }
+	public IEnumerable<IBoolean> Bits { get; }
 }

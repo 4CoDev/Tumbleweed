@@ -1,14 +1,14 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Enumerables;
 
 namespace Tumbleweed.Bytes;
 
 public sealed class BytesFromChunkedBits
-	: EnumerableEnvelope<IEnumerable<IBit>>
+	: EnumerableEnvelope<IEnumerable<IBoolean>>
 {
-	public BytesFromChunkedBits(IEnumerable<IEnumerable<IBit>> bytes) : base
+	public BytesFromChunkedBits(IEnumerable<IEnumerable<IBoolean>> bytes) : base
 	(
-		new SelectedByExpression<IEnumerable<IBit>>(
+		new SelectedByExpression<IEnumerable<IBoolean>>(
 			bytes,
 			@byte => new ByteFromBits(@byte))
 	)

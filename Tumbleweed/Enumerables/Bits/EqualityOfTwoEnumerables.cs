@@ -1,9 +1,9 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromSystem;
 
 namespace Tumbleweed.Enumerables.Bits;
 
-public sealed class EqualityOfTwoEnumerables<T> : BitEnvelope
+public sealed class EqualityOfTwoEnumerables<T> : BooleanEnvelope
 {
 	public EqualityOfTwoEnumerables
 	(
@@ -11,8 +11,8 @@ public sealed class EqualityOfTwoEnumerables<T> : BitEnvelope
 		IEnumerable<T> second
 	) : base
 	(
-		new BitOfFunction(
-			() => new BitFromBoolean(
+		new BooleanOfFunction(
+			() => new BooleanFromSystem(
 				first.SequenceEqual(second)))
 	)
 	{

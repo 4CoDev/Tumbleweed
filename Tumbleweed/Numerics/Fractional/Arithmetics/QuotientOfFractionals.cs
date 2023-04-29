@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numerics.Binaries.OfSystem.Singles.Arithmetics;
-using Tumbleweed.Numerics.Binaries.ToSystem.Singles;
+using Tumbleweed.Numerics.Fractional.Binaries.Singles.Arithmetics;
+using Tumbleweed.Numerics.Fractional.Binaries.ToSystem.Singles;
 using Tumbleweed.Numerics.Fractional.FromSystem;
 
 namespace Tumbleweed.Numerics.Fractional.Arithmetics;

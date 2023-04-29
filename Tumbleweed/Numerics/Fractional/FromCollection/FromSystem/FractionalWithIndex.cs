@@ -22,7 +22,7 @@ public sealed class FractionalWithIndex : FractionalEnvelope
 		IScalar<Int32> index
 	) : base
 	(
-		new FractionalOfDelegate(
+		new FractionalOfFunction(
 			() => decimals.ElementAt(index.Value))
 	)
 	{

@@ -1,5 +1,5 @@
-using Tumbleweed.Bits.FromSystem;
-using Tumbleweed.Bits.OfSystem;
+using Tumbleweed.Booleans.FromSystem;
+using Tumbleweed.Booleans.OfSystem;
 
 namespace Tumbleweed.Nullability.FromSystem;
 
@@ -11,7 +11,7 @@ public sealed class NullableFromSystem<T> :
 	(
 		new NullableWithValues<T>(
 			origin!,
-			new BitFromBoolean(
+			new BooleanFromSystem(
 				new BooleanOfFunction(
 					() => origin != null)))
 	)

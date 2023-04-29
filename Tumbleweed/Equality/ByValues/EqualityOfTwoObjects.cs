@@ -1,10 +1,10 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
-using Tumbleweed.Bits.OfSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromSystem;
+using BooleanOfFunction = Tumbleweed.Booleans.OfSystem.BooleanOfFunction;
 
 namespace Tumbleweed.Equality.ByValues;
 
-public sealed class EqualityOfTwoObjects : BitEnvelope
+public sealed class EqualityOfTwoObjects : BooleanEnvelope
 {
 	public EqualityOfTwoObjects
 	(
@@ -12,7 +12,7 @@ public sealed class EqualityOfTwoObjects : BitEnvelope
 		Object second
 	) : base
 	(
-		new BitFromBoolean(
+		new BooleanFromSystem(
 			new BooleanOfFunction(
 				() => first.Equals(second)))
 	)

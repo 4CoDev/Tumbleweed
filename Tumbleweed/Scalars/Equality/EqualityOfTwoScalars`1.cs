@@ -1,9 +1,9 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Delegates.Functions.Nullary.Equality.ByValues;
 
 namespace Tumbleweed.Scalars.Equality;
 
-public sealed class EqualityOfTwoScalars<T> : BitEnvelope
+public sealed class EqualityOfTwoScalars<T> : BooleanEnvelope
 {
 	public EqualityOfTwoScalars
 	(

@@ -1,9 +1,8 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
 
 namespace Tumbleweed.Equality.ByReference;
 
-public sealed class EqualityOfTwoObjects : BitEnvelope
+public sealed class EqualityOfTwoObjects : BooleanEnvelope
 {
 	public EqualityOfTwoObjects
 	(

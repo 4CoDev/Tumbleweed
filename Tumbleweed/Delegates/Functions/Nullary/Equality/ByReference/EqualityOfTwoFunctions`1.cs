@@ -1,9 +1,9 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Equality.ByReference;
 
 namespace Tumbleweed.Delegates.Functions.Nullary.Equality.ByReference;
 
-public sealed class EqualityOfTwoFunctions<TResult> : BitEnvelope
+public sealed class EqualityOfTwoFunctions<TResult> : BooleanEnvelope
 {
 	public EqualityOfTwoFunctions
 	(

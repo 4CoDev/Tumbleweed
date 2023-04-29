@@ -1,4 +1,3 @@
-using Tumbleweed.Bits;
 using Tumbleweed.Enumerables;
 
 namespace Tumbleweed.Numerics.Integers.Natural.FromSystem;

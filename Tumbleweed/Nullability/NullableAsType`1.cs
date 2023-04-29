@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Nullability;
@@ -12,7 +12,7 @@ public sealed class NullableAsType<T> :
 		new NullableWithValues<T>(
 			new ObjectAsType<T>(
 				new ValueOfFunction<Object>(() => origin.Value)),
-			new BitOfFunction(() => origin.Existing))
+			new BooleanOfFunction(() => origin.Existing))
 	)
 	{
 	}

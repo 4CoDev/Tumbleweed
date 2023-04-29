@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 
 namespace Tumbleweed.Nullability;
 
@@ -7,5 +7,5 @@ public sealed class NonExistent<T> : INullable<T> where T : notnull
 	public T Value =>
 		throw new NullReferenceException("That object does not exist");
 
-	public IBit Existing => new NegativeBit();
+	public IBoolean Existing => new False();
 }

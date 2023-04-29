@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
 
@@ -6,10 +6,10 @@ namespace Tumbleweed.Bytes.ToSystem;
 
 public sealed class BytesFromChunkedBits : EnumerableEnvelope<Byte>
 {
-	public BytesFromChunkedBits(IEnumerable<IEnumerable<IBit>> bytes) : base
+	public BytesFromChunkedBits(IEnumerable<IEnumerable<IBoolean>> bytes) : base
 	(
 		new ValuesOfScalars<Byte>(
-			new SelectedByExpression<IEnumerable<IBit>, IScalar<Byte>>(
+			new SelectedByExpression<IEnumerable<IBoolean>, IScalar<Byte>>(
 				bytes,
 				@byte => new ByteFromBits(@byte)))
 	)

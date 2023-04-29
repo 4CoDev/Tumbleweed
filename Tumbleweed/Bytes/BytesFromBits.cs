@@ -1,16 +1,16 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromBytes.FromSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromBytes.FromSystem;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Enumerables.FromSystem;
 
 namespace Tumbleweed.Bytes;
 
-public sealed class BytesFromBits : EnumerableEnvelope<IEnumerable<IBit>>
+public sealed class BytesFromBits : EnumerableEnvelope<IEnumerable<IBoolean>>
 {
-	public BytesFromBits(IEnumerable<IBit> bits) : base
+	public BytesFromBits(IEnumerable<IBoolean> bits) : base
 	(
 		new BytesFromChunkedBits(
-			new ChunkedBySize<IBit>(bits, new NumberOfBits()))
+			new ChunkedBySize<IBoolean>(bits, new NumberOfBits()))
 	)
 	{
 	}

@@ -1,5 +1,5 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromSystem;
 using Tumbleweed.Equality.ByValues;
 using Tumbleweed.Hashes;
 using Tumbleweed.Scalars;
@@ -12,7 +12,7 @@ public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 	public NullableWithValues(T value, Boolean existing) : this
 	(
 		value,
-		new BitFromBoolean(existing)
+		new BooleanFromSystem(existing)
 	)
 	{
 	}
@@ -20,12 +20,12 @@ public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 	public NullableWithValues(T value, IScalar<Boolean> existing) : this
 	(
 		value,
-		new BitFromBoolean(existing)
+		new BooleanFromSystem(existing)
 	)
 	{
 	}
 	
-	public NullableWithValues(T value, IBit existing) : this
+	public NullableWithValues(T value, IBoolean existing) : this
 	(
 		new ScalarValue<T>(value),
 		existing
@@ -33,7 +33,7 @@ public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 	{
 	}
 	
-	public NullableWithValues(IScalar<T> value, IBit existing)
+	public NullableWithValues(IScalar<T> value, IBoolean existing)
 	{
 		this.value = value;
 		Existing = existing;
@@ -52,5 +52,5 @@ public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 
 	private readonly IScalar<T> value;
 
-	public IBit Existing { get; }
+	public IBoolean Existing { get; }
 }

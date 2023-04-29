@@ -1,8 +1,8 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 
 namespace Tumbleweed.Numerics.Integers.Natural;
 
 public interface INaturalInteger
 {
-	IEnumerable<IBit> Bits { get; }
+	IEnumerable<IBoolean> Bits { get; }
 }

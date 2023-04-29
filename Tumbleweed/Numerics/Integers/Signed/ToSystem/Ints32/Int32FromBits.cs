@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Bytes;
 using Tumbleweed.Enumerables.FromSystem;
 using Tumbleweed.Scalars;
@@ -7,11 +7,11 @@ namespace Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
 
 public sealed class Int32FromBits : ScalarEnvelope<Int32>
 {
-	public Int32FromBits(IEnumerable<IBit> bits) : base
+	public Int32FromBits(IEnumerable<IBoolean> bits) : base
 	(
 		new Int32FromBytes(
 			new BytesFromBits(
-				new EnumerableWithSize<IBit>(bits, 32)))
+				new EnumerableWithSize<IBoolean>(bits, 32)))
 	)
 	{
 	}

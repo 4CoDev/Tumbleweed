@@ -1,9 +1,9 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromSystem;
 
 namespace Tumbleweed.Equality.ByValues;
 
-public sealed class EqualityOfTwoNullables : BitEnvelope
+public sealed class EqualityOfTwoNullables : BooleanEnvelope
 {
 	public EqualityOfTwoNullables
 	(
@@ -11,15 +11,15 @@ public sealed class EqualityOfTwoNullables : BitEnvelope
 		Object? second
 	) : base
 	(
-		new BitOfFunction(
+		new BooleanOfFunction(
 			() => Function(first, second))
 	)
 	{
 	}
 
-	private static IBit Function(Object? first, Object? second) =>
+	private static IBoolean Function(Object? first, Object? second) =>
 	(
-		new BitFromBoolean(
+		new BooleanFromSystem(
 			first == second ||
 			first != null && second != null &&
 			first.Equals(second))

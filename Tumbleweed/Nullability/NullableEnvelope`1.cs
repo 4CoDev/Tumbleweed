@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 
 namespace Tumbleweed.Nullability;
 
@@ -18,7 +18,7 @@ public abstract class NullableEnvelope<T> : INullable<T> where T : notnull
 
 	public T Value => nullable.Value;
 
-	public IBit Existing => nullable.Existing;
+	public IBoolean Existing => nullable.Existing;
 	
 	private readonly INullable<T> nullable;
 }

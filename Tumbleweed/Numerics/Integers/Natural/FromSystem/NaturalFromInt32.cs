@@ -1,4 +1,4 @@
-using Tumbleweed.Numerics.Binaries.FromSystem.FromInts32;
+using Tumbleweed.Numerics.Fractional.Binaries.FromSystem.FromInts32;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numerics.Integers.Natural.FromSystem;

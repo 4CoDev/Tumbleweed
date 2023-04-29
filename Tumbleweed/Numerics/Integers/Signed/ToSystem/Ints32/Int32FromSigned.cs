@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Scalars;
 
@@ -9,7 +9,7 @@ public sealed class Int32FromSigned : ScalarEnvelope<Int32>
 	public Int32FromSigned(ISignedInteger integer) : base
 	(
 		new Int32FromBits(
-			new EnumerableWithElement<IBit>(
+			new EnumerableWithElement<IBoolean>(
 				integer.Natural.Bits,
 				integer.Positive))
 	)

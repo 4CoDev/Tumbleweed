@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Nullability;
@@ -19,7 +19,7 @@ public sealed class NullableOfScalar<T> : INullable<T> where T : notnull
 
 	public T Value => scalar.Value.Value;
 
-	public IBit Existing => scalar.Value.Existing;
+	public IBoolean Existing => scalar.Value.Existing;
 
 	private readonly IScalar<INullable<T>> scalar;
 }

@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 
 namespace Tumbleweed.Nullability;
 
@@ -6,5 +6,5 @@ public interface INullable<out T>
 {
 	T Value { get; }
 	
-	IBit Existing { get; }
+	IBoolean Existing { get; }
 }

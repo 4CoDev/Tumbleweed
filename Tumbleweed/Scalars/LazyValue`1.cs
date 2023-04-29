@@ -1,5 +1,4 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
 using Tumbleweed.Hashes;
 using Tumbleweed.Mutables;
 using Tumbleweed.Scalars.Equality;
@@ -20,7 +19,7 @@ public sealed class LazyValue<T> : IScalar<T>
 	(
 		origin,
 		new MutableValue<T?>(default),
-		new MutableValue<IBit>(new NegativeBit())
+		new MutableValue<IBoolean>(new False())
 	)
 	{
 	}
@@ -29,7 +28,7 @@ public sealed class LazyValue<T> : IScalar<T>
 	(
 		IScalar<T> origin,
 		IMutable<T?> cache,
-		IMutable<IBit> cached)
+		IMutable<IBoolean> cached)
 	{
 		this.cache = cache;
 		this.cached = cached;
@@ -52,7 +51,7 @@ public sealed class LazyValue<T> : IScalar<T>
 			if (!cached.Variable.State)
 			{
 				cache.Variable = origin.Value;
-				cached.Variable = new PositiveBit();
+				cached.Variable = new True();
 			}
 			return cache.Variable!;
 		}
@@ -60,7 +59,7 @@ public sealed class LazyValue<T> : IScalar<T>
 
 	private readonly IMutable<T?> cache;
 
-	private readonly IMutable<IBit> cached;
+	private readonly IMutable<IBoolean> cached;
 
 	private readonly IScalar<T> origin;
 }

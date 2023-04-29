@@ -1,5 +1,5 @@
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromSystem;
 using Tumbleweed.Enumerables;
 using Tumbleweed.Numerics.Integers.Natural;
 using Tumbleweed.Scalars;
@@ -11,9 +11,9 @@ public sealed class Int32FromNatural : ScalarEnvelope<Int32>
 	public Int32FromNatural(INaturalInteger natural) : base
 	(
 		new Int32FromBits(
-			new EnumerableWithElement<IBit>(
+			new EnumerableWithElement<IBoolean>(
 				natural.Bits,
-				new BitFromBoolean(false)))
+				new BooleanFromSystem(false)))
 	)
 	{
 	}

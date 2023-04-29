@@ -1,4 +1,4 @@
-using Tumbleweed.Bits;
+using Tumbleweed.Booleans;
 using Tumbleweed.Numerics.Integers.Natural;
 
 namespace Tumbleweed.Numerics.Integers.Signed;
@@ -8,7 +8,7 @@ public abstract class SignedEnvelope : ISignedInteger
 	protected SignedEnvelope(ISignedInteger integer) =>
 		this.integer = integer;
 	
-	public IBit Positive => integer.Positive;
+	public IBoolean Positive => integer.Positive;
 
 	public INaturalInteger Natural => integer.Natural;
 

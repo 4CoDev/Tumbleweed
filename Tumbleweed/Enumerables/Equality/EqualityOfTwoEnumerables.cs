@@ -1,11 +1,11 @@
 using System.Collections;
-using Tumbleweed.Bits;
-using Tumbleweed.Bits.FromSystem;
+using Tumbleweed.Booleans;
+using Tumbleweed.Booleans.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Enumerables.Equality;
 
-public sealed class EqualityOfTwoEnumerables : BitEnvelope
+public sealed class EqualityOfTwoEnumerables : BooleanEnvelope
 {
 	public EqualityOfTwoEnumerables
 	(
@@ -25,13 +25,13 @@ public sealed class EqualityOfTwoEnumerables : BitEnvelope
 		IScalar<IEnumerable> second
 	) : base
 	(
-		new BitOfFunction(
+		new BooleanOfFunction(
 			() => Function(first.Value, second.Value))
 	)
 	{
 	}
 
-	private static IBit Function
+	private static IBoolean Function
 	(
 		IEnumerable first,
 		IEnumerable second
@@ -42,13 +42,13 @@ public sealed class EqualityOfTwoEnumerables : BitEnvelope
 			second.Cast<Object>())
 	);
 	
-	private static IBit Function
+	private static IBoolean Function
 	(
 		IEnumerable<Object> first,
 		IEnumerable<Object> second
 	) =>
 	(
-		new BitFromBoolean(
+		new BooleanFromSystem(
 			first.SequenceEqual(second))
 	);
 }
