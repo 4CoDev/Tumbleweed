@@ -1,11 +1,11 @@
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Occupation;
 
 public interface IOccupiedSpace
 {
-	ISpatial<IFractional> From { get; }
+	ISpatial<IReal> From { get; }
 	
-	ISpatial<IFractional> To { get; }
+	ISpatial<IReal> To { get; }
 }

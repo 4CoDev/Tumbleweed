@@ -1,7 +1,7 @@
 using DotGod.Nodes.BatchMaps.Spatial.Occupation.Points;
 using Tumbleweed.Booleans;
 using Tumbleweed.Booleans.Algebra;
-using Tumbleweed.Numerics.Fractional.Spatial.Comparison;
+using Tumbleweed.Numbers.Real.Spatial.Comparison;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Occupation;
 

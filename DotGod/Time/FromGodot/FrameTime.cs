@@ -1,11 +1,11 @@
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.FromSystem;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Time.FromGodot;
 
-public sealed class FrameTime : FractionalEnvelope
+public sealed class FrameTime : RealEnvelope
 {
 	public FrameTime(Node node) : this
 	(
@@ -16,7 +16,7 @@ public sealed class FrameTime : FractionalEnvelope
 	
 	public FrameTime(IScalar<Node> node) : base
 	(
-		new FractionalFromDouble(
+		new RealFromDouble(
 			new ToSystem.FrameTime(node))
 	)
 	{

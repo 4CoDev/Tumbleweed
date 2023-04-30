@@ -5,9 +5,9 @@ using DotGod.Geometrics.Graphical.UVs.FromMeshDataTool;
 using Godot;
 using DotGod.Numerics.Decimals.Planars.FromGodot;
 using DotGod.Numerics.Decimals.Spatials.FromGodot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Planar;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.Vertices.FromMeshDataTool;
@@ -24,16 +24,16 @@ public sealed class VertexWithIndex : IVertex
 		this.vertex = vertex;
 	}
 
-	public ISpatial<IFractional> Translation =>
+	public ISpatial<IReal> Translation =>
 		new TranslationOfVertex(mesh, vertex);
 
-	public ISpatial<IFractional> Normal =>
+	public ISpatial<IReal> Normal =>
 		new NormalOfVertex(mesh, vertex);
 
 	public IScalar<Color> Color =>
 		new ColorFromMeshDataTool(mesh, vertex);
 
-	public IPlanar<IFractional> UV =>
+	public IPlanar<IReal> UV =>
 		new UVOfVertex(mesh, vertex);
 
 	private readonly IScalar<MeshDataTool> mesh;

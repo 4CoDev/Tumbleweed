@@ -1,14 +1,14 @@
 using DotGod.Geometrics.Graphical.Vertices;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Planar;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
 
 namespace DotGod.Geometrics.Graphical.UVs;
 
-public sealed class UVOfVertex : PlanarEnvelope<IFractional>
+public sealed class UVOfVertex : PlanarEnvelope<IReal>
 {
 	public UVOfVertex(IVertex vertex) : base
 	(
-		new PlanarOfFunction<IFractional>(() => vertex.UV)
+		new PlanarOfFunction<IReal>(() => vertex.UV)
 	)
 	{
 	}

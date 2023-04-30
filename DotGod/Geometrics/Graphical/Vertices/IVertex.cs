@@ -1,18 +1,18 @@
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Planar;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.Vertices;
 
 public interface IVertex
 {
-	ISpatial<IFractional> Translation { get; }
+	ISpatial<IReal> Translation { get; }
 
-	ISpatial<IFractional> Normal { get; }
+	ISpatial<IReal> Normal { get; }
 	
 	IScalar<Color> Color { get; }
 	
-	IPlanar<IFractional> UV { get; }
+	IPlanar<IReal> UV { get; }
 }

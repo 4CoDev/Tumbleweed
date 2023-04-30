@@ -1,5 +1,5 @@
 using Tumbleweed.Booleans.FromSystem;
-using Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
+using Tumbleweed.Numbers.Integers.Signed.OfSystem.Ints32;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Booleans.FromBytes.FromSystem.Scalar;

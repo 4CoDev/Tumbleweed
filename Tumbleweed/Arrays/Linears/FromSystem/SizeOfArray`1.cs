@@ -1,5 +1,5 @@
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Natural.FromSystem;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Natural.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Linears.FromSystem;

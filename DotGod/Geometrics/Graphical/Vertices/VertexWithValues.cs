@@ -1,7 +1,7 @@
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Planar;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.Vertices;
@@ -10,10 +10,10 @@ public sealed class VertexWithValues : IVertex
 {
 	public VertexWithValues
 	(
-		ISpatial<IFractional> translation,
-		ISpatial<IFractional> normal,
+		ISpatial<IReal> translation,
+		ISpatial<IReal> normal,
 		IScalar<Color> color,
-		IPlanar<IFractional> uv
+		IPlanar<IReal> uv
 	)
 	{
 		Translation = translation;
@@ -22,11 +22,11 @@ public sealed class VertexWithValues : IVertex
 		UV = uv;
 	}
 	
-	public ISpatial<IFractional> Translation { get; }
+	public ISpatial<IReal> Translation { get; }
 	
-	public ISpatial<IFractional> Normal { get; }
+	public ISpatial<IReal> Normal { get; }
 	
 	public IScalar<Color> Color { get; }
 	
-	public IPlanar<IFractional> UV { get; }
+	public IPlanar<IReal> UV { get; }
 }

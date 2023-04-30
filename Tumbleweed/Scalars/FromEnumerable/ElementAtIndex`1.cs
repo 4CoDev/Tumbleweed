@@ -1,11 +1,11 @@
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Signed.ToSystem.Ints32;
 
 namespace Tumbleweed.Scalars.FromEnumerable;
 
 public sealed class ElementAtIndex<T> : IScalar<T>
 {
-	public ElementAtIndex(IEnumerable<T> enumerable, INaturalInteger index)
+	public ElementAtIndex(IEnumerable<T> enumerable, INatural index)
 	{
 		this.enumerable = enumerable;
 		this.index = index;
@@ -18,5 +18,5 @@ public sealed class ElementAtIndex<T> : IScalar<T>
 
 	private readonly IEnumerable<T> enumerable;
 
-	private readonly INaturalInteger index;
+	private readonly INatural index;
 }

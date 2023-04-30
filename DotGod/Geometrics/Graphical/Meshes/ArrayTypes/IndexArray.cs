@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Numerics.Integers.Signed.OfSystem.Ints32;
+using Tumbleweed.Numbers.Integers.Signed.OfSystem.Ints32;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.Meshes.ArrayTypes;

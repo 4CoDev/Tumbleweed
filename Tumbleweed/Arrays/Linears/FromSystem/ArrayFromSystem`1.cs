@@ -1,6 +1,6 @@
 using Tumbleweed.Arrays.Linears.Elements.FromSystem;
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numerics.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Natural;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Linears.FromSystem;
@@ -17,15 +17,15 @@ public sealed class ArrayFromSystem<T> : IArray<T>
 	public ArrayFromSystem(IScalar<T[]> array) =>
 		this.array = array;
 	
-	public T this[IEnumerable<INaturalInteger> indices]
+	public T this[IEnumerable<INatural> indices]
 	{
 		get => new ElementOfArray<T>(array, indices).Variable;
 		set => new ElementOfArray<T>(array, indices).Variable = value;
 	}
 
-	public IEnumerable<INaturalInteger> Size =>
+	public IEnumerable<INatural> Size =>
 	(
-		new EnumerableFromElement<INaturalInteger>(
+		new EnumerableFromElement<INatural>(
 			new SizeOfArray<T>(array))
 	);
 

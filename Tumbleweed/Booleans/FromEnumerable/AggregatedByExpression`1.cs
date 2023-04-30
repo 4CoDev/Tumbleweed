@@ -1,5 +1,4 @@
 using Tumbleweed.Delegates.Functions.Binary;
-using Tumbleweed.Numerics.Spatial;
 
 namespace Tumbleweed.Booleans.FromEnumerable;
 

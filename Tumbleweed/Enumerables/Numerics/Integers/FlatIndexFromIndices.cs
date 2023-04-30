@@ -1,5 +1,5 @@
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Natural.FromSystem;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Natural.FromSystem;
 
 namespace Tumbleweed.Enumerables.Numerics.Integers;
 
@@ -7,8 +7,8 @@ public sealed class FlatIndexFromIndices : NaturalEnvelope
 {
 	public FlatIndexFromIndices
 	(
-		IEnumerable<INaturalInteger> indices,
-		IEnumerable<INaturalInteger> dimensions
+		IEnumerable<INatural> indices,
+		IEnumerable<INatural> dimensions
 	) : base
 	(
 		new NaturalFromInt32(

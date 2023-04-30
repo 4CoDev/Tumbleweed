@@ -1,8 +1,6 @@
 using DotGod.Nodes.BatchMaps.Spatial.Batches.Measurement;
 using DotGod.Nodes.BatchMaps.Spatial.Occupation;
 using DotGod.Nodes.BatchMaps.Spatial.Entities;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches;
 

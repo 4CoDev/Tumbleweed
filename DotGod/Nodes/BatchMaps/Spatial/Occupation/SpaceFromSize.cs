@@ -1,19 +1,18 @@
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.Spatial;
-using Tumbleweed.Numerics.Fractional.Spatial.Arithmetics;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.Spatial.Arithmetics;
+using Tumbleweed.Numbers.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Occupation;
 
 public sealed class SpaceFromSize : IOccupiedSpace
 {
-	public SpaceFromSize(ISpatial<IFractional> size) =>
+	public SpaceFromSize(ISpatial<IReal> size) =>
 		half = new QuotientByFractional(size, 2);
 
-	public ISpatial<IFractional> From =>
+	public ISpatial<IReal> From =>
 		new NegativeSpatial(half);
 	
-	public ISpatial<IFractional> To => half;
+	public ISpatial<IReal> To => half;
 
-	private readonly ISpatial<IFractional> half;
+	private readonly ISpatial<IReal> half;
 }

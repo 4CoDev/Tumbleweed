@@ -1,21 +1,21 @@
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.Binaries.ToSystem.Singles;
-using Tumbleweed.Numerics.Planar;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.Binaries.ToSystem.Singles;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Numerics.Decimals.Planars.ToGodot;
 
 public sealed class Vector2FromPlanar : ScalarEnvelope<Vector2>
 {
-	public Vector2FromPlanar(IPlanar<IFractional> planar) : base
+	public Vector2FromPlanar(IPlanar<IReal> planar) : base
 	(
 		new ValueOfFunction<Vector2>(() => Result(planar))
 	)
 	{
 	}
 
-	private static Vector2 Result(IPlanar<IFractional> planar)
+	private static Vector2 Result(IPlanar<IReal> planar)
 	{
 		return new Vector2(
 			new SingleFromFractional(planar.X).Value,

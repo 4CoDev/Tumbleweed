@@ -1,6 +1,5 @@
 using Tumbleweed.Collections;
-using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.Signed;
+using Tumbleweed.Numbers.Integers.Signed;
 
 namespace Tumbleweed.Enumerables;
 
@@ -9,7 +8,7 @@ public sealed class EnumerableWithSize<T> : EnumerableEnvelope<T>
 	public EnumerableWithSize
 	(
 		IEnumerable<T> enumerable,
-		ISignedInteger size
+		ISigned size
 	) : base
 	(
 		new CollectionWithSize<T>(new List<T>(enumerable), size)

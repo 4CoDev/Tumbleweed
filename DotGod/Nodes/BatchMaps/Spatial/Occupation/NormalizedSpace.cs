@@ -1,7 +1,7 @@
 using DotGod.Nodes.BatchMaps.Spatial.Occupation.Points;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.Spatial.Comparison;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.Spatial.Comparison;
+using Tumbleweed.Numbers.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Occupation;
 
@@ -10,13 +10,13 @@ public sealed class NormalizedSpace : IOccupiedSpace
 	public NormalizedSpace(IOccupiedSpace occupation) =>
 		this.occupation = occupation;
 
-	public ISpatial<IFractional> From => 
+	public ISpatial<IReal> From => 
 	(
 		new SmallestOfSpatials(
 			new BothPointsOfSpace(occupation))
 	);
 
-	public ISpatial<IFractional> To => 
+	public ISpatial<IReal> To => 
 	(
 		new LargestOfSpatials(
 			new BothPointsOfSpace(occupation))

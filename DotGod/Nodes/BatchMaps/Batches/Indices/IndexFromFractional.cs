@@ -1,25 +1,24 @@
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.Comparison;
-using Tumbleweed.Numerics.Fractional.FromSystem;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Natural.FromSystem;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Natural.FromSystem;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.Comparison;
 
 namespace DotGod.Nodes.BatchMaps.Batches.Indices;
 
 public sealed class IndexFromFractional : NaturalEnvelope
 {
-	public IndexFromFractional(IFractional fractional) : base
+	public IndexFromFractional(IReal real) : base
 	(
 		new NaturalOfFunction(
-			() => Function(fractional))
+			() => Function(real))
 			
 	)
 	{
 	}
 
-	private static INaturalInteger Function(IFractional fractional)
+	private static INatural Function(IReal real)
 	{
-		if (new IsGreaterThanZero(fractional).State)
+		if (new IsGreaterThanZero(real).State)
 			return new NaturalFromInt32(0);
 		return new NaturalFromInt32(1);
 	}

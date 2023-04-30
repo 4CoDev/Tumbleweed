@@ -1,0 +1,15 @@
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/DotGod.deps.json
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/DotGod.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/DotGod.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/Tumbleweed.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.csproj.AssemblyReference.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.AssemblyInfoInputs.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.AssemblyInfo.cs
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.csproj.CoreCompileInputs.cache
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.csproj.CopyComplete
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/refint/DotGod.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/DotGod.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/obj/Release/net7.0/ref/DotGod.dll

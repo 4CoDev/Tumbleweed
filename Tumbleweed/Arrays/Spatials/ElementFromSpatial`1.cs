@@ -1,6 +1,6 @@
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Spatial;
-using Tumbleweed.Numerics.Spatial.ToEnumerables;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Numbers.Spatial.ToEnumerables;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Spatials;
@@ -10,12 +10,12 @@ public sealed class ElementFromSpatial<T> : ScalarEnvelope<T>
 	public ElementFromSpatial
 	(
 		IArray<T> array,
-		ISpatial<INaturalInteger> indices
+		ISpatial<INatural> indices
 	) : base
 	(
 		new ElementFromArray<T>(
 			array,
-			new EnumerableFromSpatial<INaturalInteger>(indices))
+			new EnumerableFromSpatial<INatural>(indices))
 	)
 	{
 	}

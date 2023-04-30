@@ -1,6 +1,6 @@
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Planar;
-using Tumbleweed.Numerics.Planar.ToEnumerables;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Planar.ToEnumerables;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Planars;
@@ -10,12 +10,12 @@ public sealed class ElementFromPlanar<T> : ScalarEnvelope<T>
 	public ElementFromPlanar
 	(
 		IArray<T> array,
-		IPlanar<INaturalInteger> indices
+		IPlanar<INatural> indices
 	) : base
 	(
 		new ElementFromArray<T>(
 			array,
-			new EnumerableFromPlanar<INaturalInteger>(indices))
+			new EnumerableFromPlanar<INatural>(indices))
 	)
 	{
 	}

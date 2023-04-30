@@ -1,5 +1,5 @@
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Occupation;
 
@@ -7,15 +7,15 @@ public sealed class SpaceWithPoints : IOccupiedSpace
 {
 	public SpaceWithPoints
 	(
-		ISpatial<IFractional> from,
-		ISpatial<IFractional> to
+		ISpatial<IReal> from,
+		ISpatial<IReal> to
 	)
 	{
 		From = from;
 		To = to;
 	}
 
-	public ISpatial<IFractional> From { get; }
+	public ISpatial<IReal> From { get; }
 
-	public ISpatial<IFractional> To { get; }
+	public ISpatial<IReal> To { get; }
 }

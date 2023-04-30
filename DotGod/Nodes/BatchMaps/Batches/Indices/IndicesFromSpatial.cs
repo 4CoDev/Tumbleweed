@@ -1,15 +1,15 @@
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.Spatial.Coordinates;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.Spatial.Coordinates;
+using Tumbleweed.Numbers.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Batches.Indices;
 
-public sealed class IndicesFromSpatial : SpatialEnvelope<INaturalInteger>
+public sealed class IndicesFromSpatial : SpatialEnvelope<INatural>
 {
-	public IndicesFromSpatial(ISpatial<IFractional> spatial) : base
+	public IndicesFromSpatial(ISpatial<IReal> spatial) : base
 	(
-		new SpatialWithCoordinates<INaturalInteger>(
+		new SpatialWithCoordinates<INatural>(
 			new IndexFromFractional(new XOfSpatial(spatial)),
 			new IndexFromFractional(new YOfSpatial(spatial)),
 			new IndexFromFractional(new ZOfSpatial(spatial)))

@@ -1,7 +1,6 @@
 using Tumbleweed.Mutables;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Natural.FromEnumerable;
-using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Signed.ToSystem.Ints32;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Arrays.Planars.Elements.FromSystem;
@@ -11,7 +10,7 @@ public sealed class ElementOfArray<T> : IMutable<T>
 	public ElementOfArray
 	(
 		IScalar<T[,]> array,
-		IEnumerable<INaturalInteger> indices
+		IEnumerable<INatural> indices
 	) : this
 	(
 		array,

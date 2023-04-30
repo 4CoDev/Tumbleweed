@@ -1,12 +1,12 @@
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.FromSystem;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.FromSystem;
+using Tumbleweed.Numbers.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Numerics.Decimals.Spatials.FromGodot;
 
-public sealed class SpatialFromVector3 : SpatialEnvelope<IFractional>
+public sealed class SpatialFromVector3 : SpatialEnvelope<IReal>
 {
 	public SpatialFromVector3(Vector3 vector) : this
 	(
@@ -17,10 +17,10 @@ public sealed class SpatialFromVector3 : SpatialEnvelope<IFractional>
 
 	public SpatialFromVector3(IScalar<Vector3> vector) : base
 	(
-		new SpatialWithCoordinates<IFractional>(
-			new FractionalFromSingle(vector.Value.X),
-			new FractionalFromSingle(vector.Value.Y),
-			new FractionalFromSingle(vector.Value.Z))
+		new SpatialWithCoordinates<IReal>(
+			new RealFromSingle(vector.Value.X),
+			new RealFromSingle(vector.Value.Y),
+			new RealFromSingle(vector.Value.Z))
 	)
 	{
 	}

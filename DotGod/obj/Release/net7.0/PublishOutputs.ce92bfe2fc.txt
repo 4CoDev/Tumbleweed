@@ -1,6 +1,6 @@
-/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/TumbleGD.dll
-/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/TumbleGD.deps.json
-/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/TumbleGD.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/DotGod.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/DotGod.deps.json
+/Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/DotGod.pdb
 /Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/GodotSharp.dll
 /Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/Tumbleweed.dll
 /Users/thisischico/Documents/Projects/Tumbleweed/TumbleGD/bin/Release/net6.0/publish/Tumbleweed.pdb

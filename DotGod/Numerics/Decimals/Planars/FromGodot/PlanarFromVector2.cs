@@ -1,12 +1,12 @@
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Fractional.FromSystem;
-using Tumbleweed.Numerics.Planar;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Real.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Numerics.Decimals.Planars.FromGodot;
 
-public sealed class PlanarFromVector2 : PlanarEnvelope<IFractional>
+public sealed class PlanarFromVector2 : PlanarEnvelope<IReal>
 {
 	public PlanarFromVector2(Vector2 vector) : this
 	(
@@ -17,9 +17,9 @@ public sealed class PlanarFromVector2 : PlanarEnvelope<IFractional>
 
 	public PlanarFromVector2(IScalar<Vector2> vector) : base
 	(
-		new PlanarWithValues<IFractional>(
-			new FractionalFromSingle(vector.Value.X),
-			new FractionalFromSingle(vector.Value.Y))
+		new PlanarWithValues<IReal>(
+			new RealFromSingle(vector.Value.X),
+			new RealFromSingle(vector.Value.Y))
 	)
 	{
 	}

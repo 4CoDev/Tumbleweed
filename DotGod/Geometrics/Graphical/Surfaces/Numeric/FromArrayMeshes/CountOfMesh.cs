@@ -1,6 +1,6 @@
 using Godot;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Natural.FromSystem;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Natural.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.Surfaces.Numeric.

@@ -1,7 +1,5 @@
-using Tumbleweed.Numerics.Integers;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Signed;
-using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Signed.ToSystem.Ints32;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Enumerables.Numerics.Integers.ToSystem;
@@ -10,8 +8,8 @@ public sealed class FlatIndexFromIndices : ScalarEnvelope<Int32>
 {
 	public FlatIndexFromIndices
 	(
-		IEnumerable<INaturalInteger> indices,
-		IEnumerable<INaturalInteger> dimensions
+		IEnumerable<INatural> indices,
+		IEnumerable<INatural> dimensions
 	) : base
 	(
 		new OfSystem.FlatIndexFromIndices(

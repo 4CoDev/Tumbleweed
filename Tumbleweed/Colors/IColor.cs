@@ -1,12 +1,12 @@
-using Tumbleweed.Numerics.Fractional;
+using Tumbleweed.Numbers.Real;
 
 namespace Tumbleweed.Colors;
 
 public interface IColor
 {
-	IFractional Red { get; }
+	IReal Red { get; }
 	
-	IFractional Green { get; }
+	IReal Green { get; }
 	
-	IFractional Blue { get; }
+	IReal Blue { get; }
 }

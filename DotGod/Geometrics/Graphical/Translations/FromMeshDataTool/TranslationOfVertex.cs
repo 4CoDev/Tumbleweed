@@ -1,19 +1,19 @@
 using DotGod.Numerics.Decimals.Spatials.FromGodot;
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
-using Tumbleweed.Numerics.Spatial;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Signed.ToSystem.Ints32;
+using Tumbleweed.Numbers.Real;
+using Tumbleweed.Numbers.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.Translations.FromMeshDataTool;
 
-public sealed class TranslationOfVertex : SpatialEnvelope<IFractional>
+public sealed class TranslationOfVertex : SpatialEnvelope<IReal>
 {
 	public TranslationOfVertex
 	(
 		IScalar<MeshDataTool> tool,
-		INaturalInteger vertex
+		INatural vertex
 	) : this
 	(
 		tool,

@@ -1,19 +1,19 @@
 using DotGod.Numerics.Decimals.Planars.FromGodot;
 using Godot;
-using Tumbleweed.Numerics.Fractional;
-using Tumbleweed.Numerics.Integers.Natural;
-using Tumbleweed.Numerics.Integers.Signed.ToSystem.Ints32;
-using Tumbleweed.Numerics.Planar;
+using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Signed.ToSystem.Ints32;
+using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Numbers.Real;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Geometrics.Graphical.UVs.FromMeshDataTool;
 
-public sealed class UVOfVertex : PlanarEnvelope<IFractional>
+public sealed class UVOfVertex : PlanarEnvelope<IReal>
 {
 	public UVOfVertex
 	(
 		IScalar<MeshDataTool> tool,
-		INaturalInteger vertex
+		INatural vertex
 	) : this
 	(
 		tool,
