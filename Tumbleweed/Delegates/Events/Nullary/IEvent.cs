@@ -2,7 +2,7 @@ using Tumbleweed.Delegates.Actions.Nullary;
 
 namespace Tumbleweed.Delegates.Events.Nullary;
 
-public interface INullaryEvent
+public interface IEvent
 {
-	IDictionary<Object, INullaryAction> Listeners { get; }
+	IDictionary<Object, IAction> Listeners { get; }
 }

@@ -7,7 +7,7 @@ public sealed class SignedOfFunction : SignedEnvelope
 	public SignedOfFunction(Func<ISigned> @delegate) : base
 	(
 		new SignedOfScalar(
-			new ValueOfFunction<ISigned>(@delegate))
+			new ResultOfFunction<ISigned>(@delegate))
 	)
 	{
 	}

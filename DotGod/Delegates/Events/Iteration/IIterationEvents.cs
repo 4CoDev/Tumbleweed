@@ -4,7 +4,7 @@ namespace DotGod.Delegates.Events.Iteration;
 
 public interface IIterationEvents
 {
-	INullaryEvent Graphical { get; }
+	IEvent Graphical { get; }
 	
-	INullaryEvent Physical { get; }
+	IEvent Physical { get; }
 }

@@ -13,7 +13,7 @@ public sealed class AbsoluteSingle : ScalarEnvelope<Single>
 	
 	public AbsoluteSingle(IScalar<Single> single) : base
 	(
-		new ValueOfFunction<Single>(
+		new ResultOfFunction<Single>(
 			() => Math.Abs(single.Value))
 	)
 	{

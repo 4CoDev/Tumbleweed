@@ -11,7 +11,7 @@ public sealed class NullableAsType<T> :
 	(
 		new NullableWithValues<T>(
 			new ObjectAsType<T>(
-				new ValueOfFunction<Object>(() => origin.Value)),
+				new ResultOfFunction<Object>(() => origin.Value)),
 			new BooleanOfFunction(() => origin.Existing))
 	)
 	{

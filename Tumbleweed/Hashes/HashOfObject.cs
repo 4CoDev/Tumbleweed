@@ -6,7 +6,7 @@ public sealed class HashOfObject : ScalarEnvelope<Int32>
 {
 	public HashOfObject(Object @object) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			@object.GetHashCode)
 	)
 	{

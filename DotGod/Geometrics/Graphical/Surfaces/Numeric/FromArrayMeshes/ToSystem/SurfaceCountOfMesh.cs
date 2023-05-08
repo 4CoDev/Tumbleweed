@@ -8,7 +8,7 @@ public sealed class SurfaceCountOfMesh : ScalarEnvelope<Int32>
 {
 	public SurfaceCountOfMesh(IScalar<ArrayMesh> mesh) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			() => mesh.Value.GetSurfaceCount())
 	)
 	{

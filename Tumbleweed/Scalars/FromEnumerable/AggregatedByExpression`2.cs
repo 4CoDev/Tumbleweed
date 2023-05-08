@@ -23,11 +23,11 @@ public sealed class AggregatedByExpression<TFrom, TAccumulate>
 	(
 		IEnumerable<TFrom> from,
 		TAccumulate seed,
-		IBinaryFunction<TAccumulate, TFrom, TAccumulate> expression
+		IFunction<TAccumulate, TFrom, TAccumulate> expression
 	) : base
 	(
-		new ValueOfFunction<TAccumulate>(
-			() => from.Aggregate(seed, expression.Invoke))
+		new ResultOfFunction<TAccumulate>(
+			() => from.Aggregate(seed, expression.ResultWith))
 	)
 	{
 	}

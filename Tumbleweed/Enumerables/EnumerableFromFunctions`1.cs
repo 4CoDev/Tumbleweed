@@ -42,7 +42,7 @@ public sealed class EnumerableOfFunctions<T> : EnumerableEnvelope<T>
 		new ValuesOfScalars<T>(
 			new SelectedByExpression<Func<T>, IScalar<T>>(
 				functions,
-				@delegate => new ValueOfFunction<T>(@delegate)))
+				@delegate => new ResultOfFunction<T>(@delegate)))
 	)
 	{
 	}

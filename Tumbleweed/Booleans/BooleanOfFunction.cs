@@ -12,10 +12,10 @@ public sealed class BooleanOfFunction : BooleanEnvelope
 	{
 	}
 	
-	public BooleanOfFunction(INullaryFunction<IBoolean> function) : base
+	public BooleanOfFunction(IFunction<IBoolean> function) : base
 	(
 		new BooleanOfScalar(
-			new ValueOfFunction<IBoolean>(function))
+			new ResultOfFunction<IBoolean>(function))
 	)
 	{
 	}

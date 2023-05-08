@@ -23,7 +23,7 @@ public sealed class AggregatedByExpression<TFrom>
 	(
 		IEnumerable<TFrom> from,
 		IBoolean seed,
-		IBinaryFunction<IBoolean, TFrom, IBoolean> 
+		IFunction<IBoolean, TFrom, IBoolean> 
 		expression
 	) : base
 	(

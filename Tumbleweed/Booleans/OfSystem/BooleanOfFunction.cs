@@ -12,9 +12,9 @@ public sealed class BooleanOfFunction : ScalarEnvelope<Boolean>
 	{
 	}
 	
-	public BooleanOfFunction(INullaryFunction<Boolean> function) : base
+	public BooleanOfFunction(IFunction<Boolean> function) : base
 	(
-		new ValueOfFunction<Boolean>(function)
+		new ResultOfFunction<Boolean>(function)
 	)
 	{
 	}

@@ -2,15 +2,15 @@ using Tumbleweed.Delegates.Actions.Nullary;
 
 namespace Tumbleweed.Delegates.Events.Nullary;
 
-public sealed class EventWithListeners : INullaryEvent
+public sealed class EventWithListeners : IEvent
 {
 	public EventWithListeners
 	(
-		IDictionary<Object, INullaryAction> listeners
+		IDictionary<Object, IAction> listeners
 	)
 	{
 		Listeners = listeners;
 	}
 	
-	public IDictionary<Object, INullaryAction> Listeners { get; }
+	public IDictionary<Object, IAction> Listeners { get; }
 }

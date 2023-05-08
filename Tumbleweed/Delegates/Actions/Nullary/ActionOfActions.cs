@@ -4,22 +4,22 @@ namespace Tumbleweed.Delegates.Actions.Nullary;
 
 public sealed class ActionOfActions : ActionEnvelope
 {
-	public ActionOfActions(params INullaryAction[] actions) : this
+	public ActionOfActions(params IAction[] actions) : this
 	(
-		new EnumerableWithElements<INullaryAction>(actions)
+		new EnumerableWithElements<IAction>(actions)
 	)
 	{
 	}
 	
-	public ActionOfActions(IEnumerable<INullaryAction> actions) : base
+	public ActionOfActions(IEnumerable<IAction> actions) : base
 	(
 		new ActionFromSystem(() => Result(actions))
 	)
 	{
 	}
 	
-	private static void Result(IEnumerable<INullaryAction> actions)
+	private static void Result(IEnumerable<IAction> actions)
 	{
-		foreach (INullaryAction action in actions) action.Invoke();
+		foreach (IAction action in actions) action.Invoke();
 	}
 }

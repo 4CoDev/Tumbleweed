@@ -5,16 +5,16 @@ using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Scalars;
 
-public sealed class ScalarOfFunction<T> : IScalar<T>
+public sealed class ResultOfFunction<T> : IScalar<T>
 {
-	public ScalarOfFunction(Func<IScalar<T>> function) : this
+	public ResultOfFunction(Func<T> function) : this
 	(
-		new FunctionFromSystem<IScalar<T>>(function)
+		new FunctionFromSystem<T>(function)
 	)
 	{
 	}
-
-	public ScalarOfFunction(INullaryFunction<IScalar<T>> function) =>
+	
+	public ResultOfFunction(IFunction<T> function) =>
 		this.function = function;
 	
 	public override Boolean Equals(Object? @object) =>
@@ -25,8 +25,9 @@ public sealed class ScalarOfFunction<T> : IScalar<T>
 
 	public override String? ToString() =>
 		new NullableFromNullable(Value).Value;
-	
-	public T Value => function.Invoke().Value;
 
-	private readonly INullaryFunction<IScalar<T>> function;
+	public T Value =>
+		function.Result;
+
+	private readonly IFunction<T> function;
 }

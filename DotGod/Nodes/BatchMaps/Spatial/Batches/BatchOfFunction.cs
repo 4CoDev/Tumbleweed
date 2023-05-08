@@ -17,11 +17,11 @@ public sealed class BatchOfFunction : BatchEnvelope
 	
 	public BatchOfFunction
 	(
-		INullaryFunction<IBatch> function
+		IFunction<IBatch> function
 	) : base
 	(
 		new BatchOfScalar(
-			new ValueOfFunction<IBatch>(function))
+			new ResultOfFunction<IBatch>(function))
 	)
 	{
 	}

@@ -11,7 +11,7 @@ public sealed class ObjectAsType<T> : ScalarEnvelope<T>
 	
 	public ObjectAsType(IScalar<Object> value) : base
 	(
-		new ValueOfFunction<T>(
+		new ResultOfFunction<T>(
 			() => (T) value.Value)
 	)
 	{

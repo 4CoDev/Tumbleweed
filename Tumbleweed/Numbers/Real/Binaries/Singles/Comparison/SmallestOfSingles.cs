@@ -28,7 +28,7 @@ public sealed class SmallestOfSingles : ScalarEnvelope<Single>
 
 	public SmallestOfSingles(IEnumerable<Single> singles) : base
 	(
-		new ValueOfFunction<Single>(singles.Min)
+		new ResultOfFunction<Single>(singles.Min)
 	)
 	{
 	}

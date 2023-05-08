@@ -7,7 +7,7 @@ public sealed class RealOfFunction : RealEnvelope
 	public RealOfFunction(Func<IReal> @delegate) : base
 	(
 		new RealOfScalar(
-			new ValueOfFunction<IReal>(@delegate))
+			new ResultOfFunction<IReal>(@delegate))
 	)
 	{
 	}

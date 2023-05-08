@@ -7,7 +7,7 @@ public sealed class EmptyEvent : EventEnvelope
 	public EmptyEvent() : base
 	(
 		new EventWithListeners(
-			new Dictionary<Object, INullaryAction>())
+			new Dictionary<Object, IAction>())
 	)
 	{
 	}

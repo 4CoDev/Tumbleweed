@@ -22,7 +22,7 @@ public sealed class AggregatedByExpression<T> : ScalarEnvelope<T>
 	(
 		IEnumerable<T> from,
 		T seed,
-		IBinaryFunction<T, T, T> expression
+		IFunction<T, T, T> expression
 	) : base
 	(
 		new AggregatedByExpression<T, T>(from, seed, expression)
@@ -45,11 +45,11 @@ public sealed class AggregatedByExpression<T> : ScalarEnvelope<T>
 	public AggregatedByExpression
 	(
 		IEnumerable<T> from,
-		IBinaryFunction<T, T, T> expression
+		IFunction<T, T, T> expression
 	) : base
 	(
-		new ValueOfFunction<T>(
-			() => from.Aggregate(expression.Invoke))
+		new ResultOfFunction<T>(
+			() => from.Aggregate(expression.ResultWith))
 	)
 	{
 	}

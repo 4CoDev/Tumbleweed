@@ -19,11 +19,11 @@ public sealed class NullableOfFunction<T> :
 	
 	public NullableOfFunction
 	(
-		INullaryFunction<INullable<T>> function
+		IFunction<INullable<T>> function
 	) : base
 	(
 		new NullableOfScalar<T>(
-			new ValueOfFunction<INullable<T>>(function))
+			new ResultOfFunction<INullable<T>>(function))
 	)
 	{
 	}

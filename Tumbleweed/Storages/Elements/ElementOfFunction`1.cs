@@ -19,11 +19,11 @@ public sealed class ElementOfFunction<T> :
 	
 	public ElementOfFunction
 	(
-		INullaryFunction<IStorageElement<T>> function
+		IFunction<IStorageElement<T>> function
 	) : base
 	(
 		new ElementOfScalar<T>(
-			new ValueOfFunction<IStorageElement<T>>(
+			new ResultOfFunction<IStorageElement<T>>(
 				function))
 	)
 	{

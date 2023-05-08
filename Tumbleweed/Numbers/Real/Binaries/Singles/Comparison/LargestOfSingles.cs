@@ -28,7 +28,7 @@ public sealed class LargestOfSingles : ScalarEnvelope<Single>
 
 	public LargestOfSingles(IEnumerable<Single> singles) : base
 	(
-		new ValueOfFunction<Single>(singles.Max)
+		new ResultOfFunction<Single>(singles.Max)
 	)
 	{
 	}

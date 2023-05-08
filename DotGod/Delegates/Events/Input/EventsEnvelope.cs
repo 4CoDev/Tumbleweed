@@ -7,9 +7,9 @@ public abstract class EventsEnvelope : IInputEvents
 	protected EventsEnvelope(IInputEvents events) =>
 		this.events = events;
 
-	public INullaryEvent Handled => events.Handled;
+	public IEvent Handled => events.Handled;
 
-	public INullaryEvent Unhandled => events.Unhandled;
+	public IEvent Unhandled => events.Unhandled;
 
 	private readonly IInputEvents events;
 }

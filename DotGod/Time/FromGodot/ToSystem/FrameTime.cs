@@ -14,7 +14,7 @@ public sealed class FrameTime : ScalarEnvelope<Double>
 	
 	public FrameTime(IScalar<Node> node) : base
 	(
-		new ValueOfFunction<Double>(
+		new ResultOfFunction<Double>(
 			() => node.Value.GetProcessDeltaTime())
 	)
 	{

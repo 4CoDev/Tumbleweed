@@ -11,7 +11,7 @@ public sealed class TakedEnumerable<T> : EnumerableEnvelope<T>
 	) : base
 	(
 		new EnumerableOfScalar<T>(
-			new ValueOfFunction<IEnumerable<T>>(
+			new ResultOfFunction<IEnumerable<T>>(
 				() => enumerable.Take(elements.Value)))
 	)
 	{

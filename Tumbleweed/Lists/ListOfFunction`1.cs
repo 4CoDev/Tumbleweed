@@ -7,11 +7,11 @@ public sealed class ListOfFunction<T> : ListEnvelope<T>
 {
 	public ListOfFunction
 	(
-		INullaryFunction<IList<T>> function
+		IFunction<IList<T>> function
 	) : base
 	(
 		new ListOfScalar<T>(
-			new ValueOfFunction<IList<T>>(function))
+			new ResultOfFunction<IList<T>>(function))
 	)
 	{
 	}

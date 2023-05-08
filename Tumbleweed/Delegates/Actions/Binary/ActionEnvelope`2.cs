@@ -1,12 +1,12 @@
 namespace Tumbleweed.Delegates.Actions.Binary;
 
-public abstract class ActionEnvelope<T1, T2> : IBinaryAction<T1, T2>
+public abstract class ActionEnvelope<T1, T2> : IAction<T1, T2>
 {
-	protected ActionEnvelope(IBinaryAction<T1, T2> binaryAction) =>
-		this.binaryAction = binaryAction;
+	protected ActionEnvelope(IAction<T1, T2> action) =>
+		this.action = action;
 	
-	public void Invoke(T1 parameter1, T2 parameter2) =>
-		binaryAction.Invoke(parameter1, parameter2);
+	public void InvokeWith(T1 first, T2 second) =>
+		action.InvokeWith(first, second);
 
-	private readonly IBinaryAction<T1, T2> binaryAction;
+	private readonly IAction<T1, T2> action;
 }

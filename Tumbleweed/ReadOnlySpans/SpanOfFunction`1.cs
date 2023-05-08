@@ -16,13 +16,14 @@ public sealed class SpanOfFunction<T> : IReadOnlySpan<T>
 	
 	public SpanOfFunction
 	(
-		INullaryFunction<IReadOnlySpan<T>> function
+		IFunction<IReadOnlySpan<T>> function
 	)
 	{
 		this.function = function;
 	}
 
-	public ReadOnlySpan<T> Value => function.Invoke().Value;
+	public ReadOnlySpan<T> Value =>
+		function.Result.Value;
 
-	private readonly INullaryFunction<IReadOnlySpan<T>> function;
+	private readonly IFunction<IReadOnlySpan<T>> function;
 }

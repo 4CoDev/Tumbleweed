@@ -6,15 +6,15 @@ public sealed class EventsWithValues : IIterationEvents
 {
 	public EventsWithValues
 	(
-		INullaryEvent graphicals,
-		INullaryEvent physicals
+		IEvent graphicals,
+		IEvent physicals
 	)
 	{
 		Graphical = graphicals;
 		Physical = physicals;
 	}
 	
-	public INullaryEvent Graphical { get; }
+	public IEvent Graphical { get; }
 
-	public INullaryEvent Physical { get; }
+	public IEvent Physical { get; }
 }

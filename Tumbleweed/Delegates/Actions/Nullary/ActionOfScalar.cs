@@ -2,14 +2,13 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Delegates.Actions.Nullary;
 
-public sealed class ActionOfScalar : INullaryAction
+public sealed class ActionOfScalar : IAction
 {
-	public ActionOfScalar(IScalar<INullaryAction> scalar)
-	{
+	public ActionOfScalar(IScalar<IAction> scalar) =>
 		this.scalar = scalar;
-	}
 	
-	public void Invoke() => scalar.Value.Invoke();
+	public void Invoke() =>
+		scalar.Value.Invoke();
 	
-	private readonly IScalar<INullaryAction> scalar;
+	private readonly IScalar<IAction> scalar;
 }

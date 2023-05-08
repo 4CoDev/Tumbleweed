@@ -2,18 +2,18 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Delegates.Actions.Binary;
 
-public sealed class ActionOfScalar<T1, T2> : IBinaryAction<T1, T2>
+public sealed class ActionOfScalar<T1, T2> : IAction<T1, T2>
 {
 	public ActionOfScalar
 	(
-		IScalar<IBinaryAction<T1, T2>> scalar
+		IScalar<IAction<T1, T2>> scalar
 	)
 	{
 		this.scalar = scalar;
 	}
 	
-	public void Invoke(T1 parameter1, T2 parameter2) =>
-		scalar.Value.Invoke(parameter1, parameter2);
+	public void InvokeWith(T1 first, T2 second) =>
+		scalar.Value.InvokeWith(first, second);
 	
-	private readonly IScalar<IBinaryAction<T1, T2>> scalar;
+	private readonly IScalar<IAction<T1, T2>> scalar;
 }

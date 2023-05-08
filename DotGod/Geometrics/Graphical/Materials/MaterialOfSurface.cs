@@ -8,8 +8,8 @@ public sealed class MaterialOfSurface : ScalarEnvelope<Material>
 {
 	public MaterialOfSurface(ISurface surface) : base
 	(
-		new ScalarOfFunction<Material>(
-			() => surface.Material)
+			new ResultOfFunction<Material>(
+				() => surface.Material.Value)
 	)
 	{
 	}

@@ -6,8 +6,8 @@ public sealed class EventsWithValues : IInputEvents
 {
 	public EventsWithValues
 	(
-		INullaryEvent handled,
-		INullaryEvent unhandled
+		IEvent handled,
+		IEvent unhandled
 	)
 	{
 		Handled = handled;
@@ -15,7 +15,7 @@ public sealed class EventsWithValues : IInputEvents
 	}
 
 
-	public INullaryEvent Handled { get; }
+	public IEvent Handled { get; }
 
-	public INullaryEvent Unhandled { get; }
+	public IEvent Unhandled { get; }
 }

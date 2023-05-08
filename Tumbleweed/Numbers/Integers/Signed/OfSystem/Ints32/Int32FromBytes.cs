@@ -23,7 +23,7 @@ public sealed class Int32FromBytes : ScalarEnvelope<Int32>
 	
 	public Int32FromBytes(IReadOnlySpan<Byte> bytes) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			() => BitConverter.ToInt32(
 				new SpanWithSize<Byte>(bytes, 4).Value))
 	)

@@ -14,7 +14,7 @@ public sealed class PhysicsTime : ScalarEnvelope<Double>
 	
 	public PhysicsTime(IScalar<Node> node) : base
 	(
-		new ValueOfFunction<Double>(
+		new ResultOfFunction<Double>(
 			() => node.Value.GetPhysicsProcessDeltaTime())
 	)
 	{

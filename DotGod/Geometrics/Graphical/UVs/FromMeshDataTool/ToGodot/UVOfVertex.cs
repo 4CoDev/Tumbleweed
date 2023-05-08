@@ -26,7 +26,7 @@ public sealed class UVOfVertex : ScalarEnvelope<Vector2>
 		IScalar<Int32> vertex
 	) : base
 	(
-		new ValueOfFunction<Vector2>(
+		new ResultOfFunction<Vector2>(
 			() => tool.Value.GetVertexUV(vertex.Value))
 	)
 	{

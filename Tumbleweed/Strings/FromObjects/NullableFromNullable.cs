@@ -13,7 +13,7 @@ public sealed class NullableFromNullable : ScalarEnvelope<String?>
 	
 	public NullableFromNullable(IScalar<Object?> @object) : base
 	(
-		new ValueOfFunction<String?>(
+		new ResultOfFunction<String?>(
 			() => @object.Value?.ToString())
 	)
 	{

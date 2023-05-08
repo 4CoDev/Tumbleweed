@@ -23,7 +23,7 @@ public sealed class AggregatedByExpression<TFrom, TTo>
 	(
 		IEnumerable<TFrom> from,
 		ISpatial<TTo> seed,
-		IBinaryFunction<ISpatial<TTo>, TFrom, ISpatial<TTo>> 
+		IFunction<ISpatial<TTo>, TFrom, ISpatial<TTo>> 
 		expression
 	) : base
 	(

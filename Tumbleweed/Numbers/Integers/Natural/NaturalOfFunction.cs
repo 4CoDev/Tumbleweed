@@ -17,11 +17,11 @@ public sealed class NaturalOfFunction : NaturalEnvelope
 	
 	public NaturalOfFunction
 	(
-		INullaryFunction<INatural> function
+		IFunction<INatural> function
 	) : base
 	(
 		new NaturalOfScalar(
-			new ValueOfFunction<INatural>(function))
+			new ResultOfFunction<INatural>(function))
 	)
 	{
 	}

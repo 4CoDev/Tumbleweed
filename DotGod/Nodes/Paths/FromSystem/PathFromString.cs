@@ -14,7 +14,7 @@ public sealed class PathFromString : ScalarEnvelope<NodePath>
 	
 	public PathFromString(IScalar<String> path) : base
 	(
-		new ValueOfFunction<NodePath>(
+		new ResultOfFunction<NodePath>(
 			() => new NodePath(path.Value))
 	)
 	{

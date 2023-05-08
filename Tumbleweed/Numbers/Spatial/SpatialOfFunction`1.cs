@@ -12,10 +12,10 @@ public sealed class SpatialOfFunction<T> : SpatialEnvelope<T>
 	{
 	}
 	
-	public SpatialOfFunction(INullaryFunction<ISpatial<T>> function) : base
+	public SpatialOfFunction(IFunction<ISpatial<T>> function) : base
 	(
 		new SpatialOfScalar<T>(
-			new ValueOfFunction<ISpatial<T>>(function))
+			new ResultOfFunction<ISpatial<T>>(function))
 	)
 	{
 	}

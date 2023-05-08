@@ -3,13 +3,13 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Delegates.Events.Nullary;
 
-public sealed class EventOfScalar : INullaryEvent
+public sealed class EventOfScalar : IEvent
 {
-	public EventOfScalar(IScalar<INullaryEvent> scalar) =>
+	public EventOfScalar(IScalar<IEvent> scalar) =>
 		this.scalar = scalar;
 
-	public IDictionary<Object, INullaryAction> Listeners =>
+	public IDictionary<Object, IAction> Listeners =>
 		scalar.Value.Listeners;
 
-	private readonly IScalar<INullaryEvent> scalar;
+	private readonly IScalar<IEvent> scalar;
 }

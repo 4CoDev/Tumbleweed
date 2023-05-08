@@ -3,7 +3,7 @@ using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Delegates.Actions.Nullary;
 
-public class ActionFromSystem : INullaryAction
+public class ActionFromSystem : IAction
 {
 	public ActionFromSystem(Action function) =>
 		this.function = function;

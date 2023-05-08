@@ -19,11 +19,11 @@ public sealed class DictionaryOfFunction<TKey, TValue> :
 	
 	public DictionaryOfFunction
 	(
-		INullaryFunction<IDictionary<TKey, TValue>> function
+		IFunction<IDictionary<TKey, TValue>> function
 	) : base
 	(
 		new DictionaryOfScalar<TKey, TValue>(
-			new ValueOfFunction<IDictionary<TKey, TValue>>(function))
+			new ResultOfFunction<IDictionary<TKey, TValue>>(function))
 	)
 	{
 	}

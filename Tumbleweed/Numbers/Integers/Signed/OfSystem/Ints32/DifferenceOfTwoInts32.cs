@@ -10,7 +10,7 @@ public class DifferenceOfTwoInts32 : ScalarEnvelope<Int32>
 		IScalar<Int32> right
 	) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			() => left.Value - right.Value)
 	)
 	{

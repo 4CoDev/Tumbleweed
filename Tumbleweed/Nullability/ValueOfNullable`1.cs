@@ -8,7 +8,7 @@ public sealed class ValueOfNullable<T> :
 {
 	public ValueOfNullable(INullable<T> nullable) : base
 	(
-		new ValueOfFunction<T>(
+		new ResultOfFunction<T>(
 			() => nullable.Value)
 	)
 	{

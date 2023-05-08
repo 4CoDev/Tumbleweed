@@ -19,11 +19,11 @@ public sealed class ElementOfFunction<T> :
 	
 	public ElementOfFunction
 	(
-		INullaryFunction<IDictionaryElement<T>> function
+		IFunction<IDictionaryElement<T>> function
 	) : base
 	(
 		new ElementOfScalar<T>(
-			new ValueOfFunction<IDictionaryElement<T>>(
+			new ResultOfFunction<IDictionaryElement<T>>(
 				function))
 	)
 	{

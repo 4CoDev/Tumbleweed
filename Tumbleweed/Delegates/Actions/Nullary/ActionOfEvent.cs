@@ -5,10 +5,10 @@ namespace Tumbleweed.Delegates.Actions.Nullary;
 
 public sealed class ActionOfEvent : ActionEnvelope
 {
-	public ActionOfEvent(INullaryEvent @event) : base
+	public ActionOfEvent(IEvent @event) : base
 	(
 		new ActionOfActions(
-			new EnumerableOfFunction<INullaryAction>(
+			new EnumerableOfFunction<IAction>(
 				() => @event.Listeners.Values))
 	)
 	{

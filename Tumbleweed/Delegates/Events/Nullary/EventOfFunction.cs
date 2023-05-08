@@ -6,20 +6,20 @@ namespace Tumbleweed.Delegates.Events.Nullary;
 
 public sealed class EventOfFunction : EventEnvelope
 {
-	public EventOfFunction(Func<INullaryEvent> function) : this
+	public EventOfFunction(Func<IEvent> function) : this
 	(
-		new FunctionFromSystem<INullaryEvent>(function)
+		new FunctionFromSystem<IEvent>(function)
 	)
 	{
 	}
 	
 	public EventOfFunction
 	(
-		INullaryFunction<INullaryEvent> function
+		IFunction<IEvent> function
 	) : base
 	(
 		new EventOfScalar(
-			new ValueOfFunction<INullaryEvent>(function))
+			new ResultOfFunction<IEvent>(function))
 	)
 	{
 	}

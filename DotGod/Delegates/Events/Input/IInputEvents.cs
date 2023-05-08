@@ -4,7 +4,7 @@ namespace DotGod.Delegates.Events.Input;
 
 public interface IInputEvents
 {
-	INullaryEvent Handled { get; }
+	IEvent Handled { get; }
 	
-	INullaryEvent Unhandled { get; }
+	IEvent Unhandled { get; }
 }

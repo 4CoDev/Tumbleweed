@@ -34,7 +34,7 @@ public sealed class WordWhenNull : ScalarEnvelope<String>
 		IScalar<String> word
 	) : base
 	(
-		new ValueOfFunction<String>(
+		new ResultOfFunction<String>(
 			() => origin.Value ?? word.Value)
 	)
 	{

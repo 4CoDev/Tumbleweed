@@ -23,7 +23,7 @@ public sealed class AggregatedByExpression<T>
 	(
 		IEnumerable<ISpatial<T>> from,
 		ISpatial<T> seed,
-		IBinaryFunction<ISpatial<T>, ISpatial<T>, ISpatial<T>> expression
+		IFunction<ISpatial<T>, ISpatial<T>, ISpatial<T>> expression
 	) : base
 	(
 		new SpatialOfScalar<T>(
@@ -50,7 +50,7 @@ public sealed class AggregatedByExpression<T>
 	public AggregatedByExpression
 	(
 		IEnumerable<ISpatial<T>> from,
-		IBinaryFunction<ISpatial<T>, ISpatial<T>, ISpatial<T>> expression
+		IFunction<ISpatial<T>, ISpatial<T>, ISpatial<T>> expression
 	) : base
 	(
 		new SpatialOfScalar<T>(

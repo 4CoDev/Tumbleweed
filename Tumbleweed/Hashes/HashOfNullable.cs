@@ -15,7 +15,7 @@ public sealed class HashOfNullable : ScalarEnvelope<Int32>
 	
 	public HashOfNullable(INullable<Object> nullable) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			nullable.GetHashCode)
 	)
 	{

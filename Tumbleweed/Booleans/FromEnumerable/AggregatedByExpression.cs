@@ -20,7 +20,7 @@ public sealed class AggregatedByExpression
 	public AggregatedByExpression
 	(
 		IEnumerable<IBoolean> from,
-		IBinaryFunction<IBoolean, IBoolean, IBoolean> expression
+		IFunction<IBoolean, IBoolean, IBoolean> expression
 	) : base
 	(
 		new BooleanOfScalar(

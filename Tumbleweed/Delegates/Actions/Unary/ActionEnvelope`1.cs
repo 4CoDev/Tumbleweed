@@ -1,12 +1,12 @@
 namespace Tumbleweed.Delegates.Actions.Unary;
 
-public abstract class ActionEnvelope<T> : IUnaryAction<T>
+public abstract class ActionEnvelope<T> : IAction<T>
 {
-	protected ActionEnvelope(IUnaryAction<T> unaryAction) =>
-		this.unaryAction = unaryAction;
+	protected ActionEnvelope(IAction<T> action) =>
+		this.action = action;
 	
-	public void Invoke(T parameter) =>
-		unaryAction.Invoke(parameter);
+	public void InvokeWith(T parameter) =>
+		action.InvokeWith(parameter);
 
-	private readonly IUnaryAction<T> unaryAction;
+	private readonly IAction<T> action;
 }

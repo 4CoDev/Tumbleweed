@@ -7,7 +7,7 @@ public sealed class CollectionOfFunction<T> : CollectionEnvelope<T>
 	public CollectionOfFunction(Func<ICollection<T>> @delegate) : base
 	(
 		new CollectionOfScalar<T>(
-			new ValueOfFunction<ICollection<T>>(@delegate))
+			new ResultOfFunction<ICollection<T>>(@delegate))
 	)
 	{
 	}

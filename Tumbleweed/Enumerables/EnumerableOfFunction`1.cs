@@ -17,11 +17,11 @@ public sealed class EnumerableOfFunction<T> : EnumerableEnvelope<T>
 	
 	public EnumerableOfFunction
 	(
-		INullaryFunction<IEnumerable<T>> function
+		IFunction<IEnumerable<T>> function
 	) : base
 	(
 		new EnumerableOfScalar<T>(
-			new ValueOfFunction<IEnumerable<T>>(function))
+			new ResultOfFunction<IEnumerable<T>>(function))
 	)
 	{
 	}

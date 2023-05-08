@@ -2,9 +2,9 @@ using Tumbleweed.Delegates.Actions.Nullary;
 
 namespace Tumbleweed.Delegates.Events.Nullary;
 
-public abstract class EventEnvelope : INullaryEvent
+public abstract class EventEnvelope : IEvent
 {
-	protected EventEnvelope(INullaryEvent @event) =>
+	protected EventEnvelope(IEvent @event) =>
 		this.@event = @event;
 
 	public override Boolean Equals(Object? @object) =>
@@ -16,8 +16,8 @@ public abstract class EventEnvelope : INullaryEvent
 	public override String? ToString() =>
 		@event.ToString();
 
-	public IDictionary<Object, INullaryAction> Listeners =>
+	public IDictionary<Object, IAction> Listeners =>
 		@event.Listeners;
 
-	private readonly INullaryEvent @event;
+	private readonly IEvent @event;
 }

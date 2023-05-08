@@ -8,7 +8,7 @@ public sealed class BatchNode : ScalarEnvelope<Node3D>
 {
 	public BatchNode() : base
 	(
-		new ValueOfFunction<Node3D>(Function)
+		new ResultOfFunction<Node3D>(Function)
 	)
 	{
 	}

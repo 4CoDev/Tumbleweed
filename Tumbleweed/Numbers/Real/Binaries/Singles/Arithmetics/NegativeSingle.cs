@@ -6,7 +6,7 @@ public sealed class NegativeSingle : ScalarEnvelope<Single>
 {
 	public NegativeSingle(IScalar<Single> single) : base
 	(
-		new ValueOfFunction<Single>(
+		new ResultOfFunction<Single>(
 			() => -single.Value)
 	)
 	{

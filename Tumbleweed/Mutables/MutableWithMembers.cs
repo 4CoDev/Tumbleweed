@@ -20,11 +20,11 @@ public sealed class MutableWithMembers<T> : IMutable<T>
 
 	public MutableWithMembers
 	(
-		INullaryFunction<T> accessor,
-		IUnaryAction<T> mutator
+		IFunction<T> accessor,
+		IAction<T> mutator
 	) : this
 	(
-		new ValueOfFunction<T>(accessor),
+		new ResultOfFunction<T>(accessor),
 		mutator
 	)
 	{
@@ -33,7 +33,7 @@ public sealed class MutableWithMembers<T> : IMutable<T>
 	public MutableWithMembers
 	(
 		IScalar<T> accessor,
-		IUnaryAction<T> mutator
+		IAction<T> mutator
 	)
 	{
 		this.accessor = accessor;
@@ -43,10 +43,10 @@ public sealed class MutableWithMembers<T> : IMutable<T>
 	public T Variable
 	{
 		get => accessor.Value;
-		set => mutator.Invoke(value);
+		set => mutator.InvokeWith(value);
 	}
 	
 	private readonly IScalar<T> accessor;
 	
-	private readonly IUnaryAction<T> mutator;
+	private readonly IAction<T> mutator;
 }

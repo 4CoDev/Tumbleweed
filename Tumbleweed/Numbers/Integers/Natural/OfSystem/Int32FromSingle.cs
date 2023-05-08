@@ -13,7 +13,7 @@ public sealed class Int32FromSingle : ScalarEnvelope<Int32>
 	
 	public Int32FromSingle(IScalar<Single> single) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			() => (Int32) single.Value)
 	)
 	{

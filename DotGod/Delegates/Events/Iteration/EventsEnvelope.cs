@@ -7,10 +7,10 @@ public abstract class EventsEnvelope : IIterationEvents
 	protected EventsEnvelope(IIterationEvents pool) =>
 		this.pool = pool;
 
-	public INullaryEvent Graphical =>
+	public IEvent Graphical =>
 		pool.Graphical;
 
-	public INullaryEvent Physical =>
+	public IEvent Physical =>
 		pool.Physical;
 
 	private readonly IIterationEvents pool;

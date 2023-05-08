@@ -17,11 +17,11 @@ public sealed class SpaceOfFunction : SpaceEnvelope
 	
 	public SpaceOfFunction
 	(
-		INullaryFunction<ISpace> function
+		IFunction<ISpace> function
 	) : base
 	(
 		new SpaceOfScalar(
-			new ValueOfFunction<ISpace>(
+			new ResultOfFunction<ISpace>(
 				function))
 	)
 	{

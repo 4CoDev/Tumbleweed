@@ -12,10 +12,10 @@ public sealed class PlanarOfFunction<T> : PlanarEnvelope<T>
 	{
 	}
 	
-	public PlanarOfFunction(INullaryFunction<IPlanar<T>> function) : base
+	public PlanarOfFunction(IFunction<IPlanar<T>> function) : base
 	(
 		new PlanarOfScalar<T>(
-			new ValueOfFunction<IPlanar<T>>(function))
+			new ResultOfFunction<IPlanar<T>>(function))
 	)
 	{
 	}

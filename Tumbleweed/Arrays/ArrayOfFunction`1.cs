@@ -12,10 +12,10 @@ public sealed class ArrayOfFunction<T> : ArrayEnvelope<T>
 	{
 	}
 	
-	public ArrayOfFunction(INullaryFunction<IArray<T>> function) : base
+	public ArrayOfFunction(IFunction<IArray<T>> function) : base
 	(
 		new ArrayOfScalar<T>(
-			new ValueOfFunction<IArray<T>>(function))
+			new ResultOfFunction<IArray<T>>(function))
 	)
 	{
 	}

@@ -10,7 +10,7 @@ public sealed class Vector3FromSpatial : ScalarEnvelope<Vector3>
 {
 	public Vector3FromSpatial(ISpatial<IReal> spatial) : base
 	(
-		new ValueOfFunction<Vector3>(() => Result(spatial))
+		new ResultOfFunction<Vector3>(() => Result(spatial))
 	)
 	{
 	}

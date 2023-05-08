@@ -14,7 +14,7 @@ public sealed class ResourceOnPath<T> : ScalarEnvelope<T> where T : class
 	
 	public ResourceOnPath(IScalar<String> path) : base
 	(
-		new ValueOfFunction<T>(
+		new ResultOfFunction<T>(
 			() => ResourceLoader.Load<T>(path.Value))
 	)
 	{

@@ -27,7 +27,7 @@ public sealed class TranslationOfVertex : ScalarEnvelope<Vector3>
 		IScalar<Int32> vertex
 	) : base
 	(
-		new ValueOfFunction<Vector3>(
+		new ResultOfFunction<Vector3>(
 			() => mesh.Value.GetVertex(vertex.Value))
 	)
 	{

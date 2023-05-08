@@ -8,7 +8,8 @@ public sealed class ColorOfVertex : ScalarEnvelope<Color>
 {
 	public ColorOfVertex(IVertex vertex) : base
 	(
-		new ScalarOfFunction<Color>(() => vertex.Color)
+		new ResultOfFunction<Color>(
+			() => vertex.Color.Value)
 	)
 	{
 	}

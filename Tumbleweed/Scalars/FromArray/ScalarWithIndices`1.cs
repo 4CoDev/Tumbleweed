@@ -11,7 +11,7 @@ public sealed class ScalarWithIndices<T> : ScalarEnvelope<T>
 		IEnumerable<INatural> indices
 	) : base
 	(
-		new ValueOfFunction<T>(
+		new ResultOfFunction<T>(
 			() => array[indices])
 	)
 	{

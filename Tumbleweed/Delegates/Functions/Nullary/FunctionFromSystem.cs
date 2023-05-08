@@ -1,11 +1,11 @@
 namespace Tumbleweed.Delegates.Functions.Nullary;
 
-public class FunctionFromSystem<TResult> : INullaryFunction<TResult>
+public class FunctionFromSystem<TResult> : IFunction<TResult>
 {
 	public FunctionFromSystem(Func<TResult> function) =>
 		this.function = function;
 
-	public TResult Invoke() => function.Invoke();
+	public TResult Result => function.Invoke();
 	
 	private readonly Func<TResult> function;
 }

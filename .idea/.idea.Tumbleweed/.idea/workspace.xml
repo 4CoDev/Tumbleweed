@@ -51,21 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/thisischico/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/thisischico/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/thisischico/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/thisischico/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/thisischico/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/thisischico/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
+}</component>
+  <component name="RunManager" selected="Publish to folder.Publish TumbleGD to folder">
     <configuration name="Publish TumbleGD to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="2061793969843883114" uuid_low="-4681523822283700833" />
       <method v="2" />

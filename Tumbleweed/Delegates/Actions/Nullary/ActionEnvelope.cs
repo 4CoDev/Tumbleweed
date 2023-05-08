@@ -1,11 +1,12 @@
 namespace Tumbleweed.Delegates.Actions.Nullary;
 
-public abstract class ActionEnvelope : INullaryAction
+public abstract class ActionEnvelope : IAction
 {
-	protected ActionEnvelope(INullaryAction nullaryAction) =>
-		this.nullaryAction = nullaryAction;
+	protected ActionEnvelope(IAction action) =>
+		this.action = action;
 	
-	public void Invoke() => nullaryAction.Invoke();
+	public void Invoke() =>
+		action.Invoke();
 
-	private readonly INullaryAction nullaryAction;
+	private readonly IAction action;
 }

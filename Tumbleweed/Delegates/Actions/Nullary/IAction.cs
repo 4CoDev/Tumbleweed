@@ -1,6 +1,6 @@
 namespace Tumbleweed.Delegates.Actions.Nullary;
 
-public interface INullaryAction
+public interface IAction
 {
 	void Invoke();
 }

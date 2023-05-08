@@ -3,7 +3,7 @@ using Tumbleweed.Scalars;
 namespace Tumbleweed.Delegates.Functions.Unary;
 
 public sealed class FunctionFromSystem<TParameter, TResult> :
-	IUnaryFunction<TParameter, TResult>
+	IFunction<TParameter, TResult>
 {
 	public FunctionFromSystem
 	(
@@ -24,7 +24,7 @@ public sealed class FunctionFromSystem<TParameter, TResult> :
 	}
 
 
-	public TResult Invoke(TParameter parameter) =>
+	public TResult ResultWith(TParameter parameter) =>
 		function.Value.Invoke(parameter);
 
 	private readonly IScalar<Func<TParameter, TResult>> function;

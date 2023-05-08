@@ -19,14 +19,14 @@ public sealed class EqualityOfTwoFunctions<TResult> : BooleanEnvelope
 	
 	public EqualityOfTwoFunctions
 	(
-		INullaryFunction<TResult> first,
-		INullaryFunction<TResult> second
+		IFunction<TResult> first,
+		IFunction<TResult> second
 	) : base
 	(
 		new BooleanOfFunction(
 			() => new EqualityOfTwoNullables(
-				first.Invoke(),
-				second.Invoke()))
+				first.Result,
+				second.Result))
 	)
 	{
 	}

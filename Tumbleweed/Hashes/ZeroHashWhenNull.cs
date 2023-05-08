@@ -22,7 +22,7 @@ public sealed class ZeroHashWhenNull : ScalarEnvelope<Int32>
 	
 	public ZeroHashWhenNull(INullable<Object> nullable) : base
 	(
-		new ValueOfFunction<Int32>(
+		new ResultOfFunction<Int32>(
 			() => Function(nullable))
 	)
 	{

@@ -6,7 +6,7 @@ public sealed class ZOfSpatial<T> : ScalarEnvelope<T>
 {
 	public ZOfSpatial(ISpatial<T> spatial) : base
 	(
-		new ValueOfFunction<T>(
+		new ResultOfFunction<T>(
 			() => spatial.Z)
 	)
 	{

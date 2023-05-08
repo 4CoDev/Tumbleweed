@@ -7,7 +7,7 @@ public sealed class OriginOfTransform : ScalarEnvelope<Vector3>
 {
 	public OriginOfTransform(IScalar<Transform3D> transform) : base
 	(
-		new ValueOfFunction<Vector3>(
+		new ResultOfFunction<Vector3>(
 			() => transform.Value.Origin)
 	)
 	{

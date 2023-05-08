@@ -12,10 +12,10 @@ public sealed class MeshOfFunction : MeshEnvelope
 	{
 	}
 	
-	public MeshOfFunction(INullaryFunction<IMesh> function) : base
+	public MeshOfFunction(IFunction<IMesh> function) : base
 	(
 		new MeshOfScalar(
-			new ValueOfFunction<IMesh>(function))
+			new ResultOfFunction<IMesh>(function))
 	)
 	{
 	}

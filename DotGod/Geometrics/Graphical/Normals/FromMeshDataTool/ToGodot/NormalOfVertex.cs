@@ -26,7 +26,7 @@ public sealed class NormalOfVertex : ScalarEnvelope<Vector3>
 		IScalar<Int32> vertex
 	) : base
 	(
-		new ValueOfFunction<Vector3>(
+		new ResultOfFunction<Vector3>(
 			() => mesh.Value.GetVertexNormal(vertex.Value))
 	)
 	{

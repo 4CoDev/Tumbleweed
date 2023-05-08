@@ -14,7 +14,7 @@ public sealed class MeshOfNode : ScalarEnvelope<Mesh>
 	
 	public MeshOfNode(IScalar<MeshInstance3D> node) : base
 	(
-		new ValueOfFunction<Mesh>(
+		new ResultOfFunction<Mesh>(
 			() => node.Value.Mesh)
 	)
 	{

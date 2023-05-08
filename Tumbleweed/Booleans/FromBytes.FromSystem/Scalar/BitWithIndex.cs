@@ -19,7 +19,7 @@ public sealed class BitWithIndex : IScalar<IBoolean>
 			IScalar<Int32> positive = new PositiveInt32(index);
 			IScalar<Int32> bounded = new LessThenInt32(positive, new NumberOfBits());
 			return new BooleanFromSystem(
-				new ValueOfFunction<Boolean>(
+				new ResultOfFunction<Boolean>(
 					() => (@byte.Value & (1 << bounded.Value)) != 0));
 		}
 	}

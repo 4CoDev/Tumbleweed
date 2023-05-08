@@ -1,14 +1,12 @@
-using Tumbleweed.Hashes;
-using Tumbleweed.Strings.FromObjects;
-
 namespace Tumbleweed.Delegates.Actions.Unary;
 
-public class ActionFromSystem<T> : IUnaryAction<T>
+public class ActionFromSystem<T> : IAction<T>
 {
-	public ActionFromSystem(Action<T> @delegate) =>
-		this.@delegate = @delegate;
+	public ActionFromSystem(Action<T> action) =>
+		this.action = action;
 
-	public void Invoke(T parameter) => @delegate(parameter);
+	public void InvokeWith(T parameter) =>
+		action(parameter);
 
-	private readonly Action<T> @delegate;
+	private readonly Action<T> action;
 }
