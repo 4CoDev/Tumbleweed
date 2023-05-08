@@ -13,8 +13,8 @@ public sealed class IsEqualsToFractional : BooleanEnvelope
 	) : base
 	(
 		new IsEqualsToSingle(
-			new SingleFromFractional(first),
-			new SingleFromFractional(second))
+			new SingleFromReal(first),
+			new SingleFromReal(second))
 	)
 	{
 	}

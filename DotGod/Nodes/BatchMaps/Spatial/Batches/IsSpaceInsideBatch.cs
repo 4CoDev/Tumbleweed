@@ -1,5 +1,5 @@
-using DotGod.Nodes.BatchMaps.Spatial.Batches.Measurement;
-using DotGod.Nodes.BatchMaps.Spatial.Occupation;
+using DotGod.Nodes.BatchMaps.Spatial.Batches.Spaced;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces;
 using Tumbleweed.Booleans;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches;
@@ -8,13 +8,13 @@ public sealed class IsSpaceInsideBatch : BooleanEnvelope
 {
 	public IsSpaceInsideBatch
 	(
-		IMeasuredBatch batch,
-		IOccupiedSpace space
+		ISpacedBatch batch,
+		ISpace space
 	) : base
 	(
 		new IsSpaceInsideSpace(
 			space,
-			new SpaceOfMeasuredBatch(batch))
+			new SpaceOfBatch(batch))
 	)
 	{
 	}

@@ -5,16 +5,16 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches;
 
-public sealed class BatchOfScalar : ISpatialBatch
+public sealed class BatchOfScalar : IBatch
 {
-	public BatchOfScalar(IScalar<ISpatialBatch> scalar) =>
+	public BatchOfScalar(IScalar<IBatch> scalar) =>
 		this.scalar = scalar;
 
-	public INullable<IArray<ISpatialBatch>> Subbatches =>
+	public INullable<IArray<IBatch>> Subbatches =>
 		scalar.Value.Subbatches;
 
 	public ICollection<ISpatialEntity> Entities =>
 		scalar.Value.Entities;
 
-	private readonly IScalar<ISpatialBatch> scalar;
+	private readonly IScalar<IBatch> scalar;
 }

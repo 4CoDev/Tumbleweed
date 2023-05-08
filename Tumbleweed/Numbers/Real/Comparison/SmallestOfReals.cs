@@ -18,7 +18,7 @@ public sealed class SmallestOfReals : RealEnvelope
 	(
 		new RealFromSingle(
 			new SmallestOfSingles(
-				new SinglesFromFractionals(numbers)))
+				new SinglesFromReals(numbers)))
 	)
 	{
 	}

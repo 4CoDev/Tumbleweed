@@ -1,5 +1,5 @@
 using DotGod.Geometrics.Graphical.Meshes;
-using DotGod.Nodes.BatchMaps.Spatial.Occupation;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces;
 using Godot;
 using Tumbleweed.Nullability;
 
@@ -23,7 +23,7 @@ public abstract class EntityEnvelope : ISpatialEntity
 
 	public IMesh Mesh => entity.Mesh;
 
-	public IOccupiedSpace Occupation => entity.Occupation;
+	public ISpace Occupation => entity.Occupation;
 
 	private readonly ISpatialEntity entity;
 }

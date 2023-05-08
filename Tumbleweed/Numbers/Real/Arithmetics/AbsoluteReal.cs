@@ -10,7 +10,7 @@ public sealed class AbsoluteReal : RealEnvelope
 	(
 		new RealFromSingle(
 			new AbsoluteSingle(
-				new SingleFromFractional(real)))
+				new SingleFromReal(real)))
 	)
 	{
 	}

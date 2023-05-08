@@ -1,10 +1,10 @@
-using Tumbleweed.Numbers.Integers.Natural;
-
 namespace Tumbleweed.Arrays;
+
+using INaturalNumber = Numbers.Integers.Natural.INatural;
 
 public interface IArray<T>
 {
-	T this[IEnumerable<INatural> indices] { get; set; }
+	T this[IEnumerable<INaturalNumber> indices] { get; set; }
 	
-	IEnumerable<INatural> Size { get; }
+	IEnumerable<INaturalNumber> Size { get; }
 }

@@ -18,7 +18,7 @@ public sealed class SumOfReals : RealEnvelope
 	(
 		new RealFromSingle(
 			new SumOfSingles(
-				new SinglesFromFractionals(reals)))
+				new SinglesFromReals(reals)))
 	)
 	{
 	}

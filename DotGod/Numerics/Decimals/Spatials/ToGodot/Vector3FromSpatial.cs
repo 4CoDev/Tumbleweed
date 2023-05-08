@@ -18,8 +18,8 @@ public sealed class Vector3FromSpatial : ScalarEnvelope<Vector3>
 	private static Vector3 Result(ISpatial<IReal> spatial)
 	{
 		return new Vector3(
-			new SingleFromFractional(spatial.X).Value,
-			new SingleFromFractional(spatial.Y).Value,
-			new SingleFromFractional(spatial.Z).Value);
+			new SingleFromReal(spatial.X).Value,
+			new SingleFromReal(spatial.Y).Value,
+			new SingleFromReal(spatial.Z).Value);
 	}
 }

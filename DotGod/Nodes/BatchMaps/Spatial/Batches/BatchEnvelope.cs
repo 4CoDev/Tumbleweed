@@ -4,9 +4,9 @@ using Tumbleweed.Nullability;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches;
 
-public abstract class BatchEnvelope : ISpatialBatch
+public abstract class BatchEnvelope : IBatch
 {
-	protected BatchEnvelope(ISpatialBatch space) =>
+	protected BatchEnvelope(IBatch space) =>
 		this.space = space;
 
 	public override Boolean Equals(Object? @object) =>
@@ -18,11 +18,11 @@ public abstract class BatchEnvelope : ISpatialBatch
 	public override String? ToString() =>
 		space.ToString();
 
-	public INullable<IArray<ISpatialBatch>> Subbatches =>
+	public INullable<IArray<IBatch>> Subbatches =>
 		space.Subbatches;
 	
 	public ICollection<ISpatialEntity> Entities =>
 		space.Entities;
 
-	private readonly ISpatialBatch space;
+	private readonly IBatch space;
 }

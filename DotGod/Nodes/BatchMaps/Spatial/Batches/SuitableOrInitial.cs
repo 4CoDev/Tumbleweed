@@ -1,6 +1,7 @@
-using DotGod.Nodes.BatchMaps.Spatial.Batches.Measurement;
-using DotGod.Nodes.BatchMaps.Spatial.Occupation;
+using DotGod.Nodes.BatchMaps.Spatial.Batches.Spaced;
 using DotGod.Nodes.BatchMaps.Spatial.Entities;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces.Points;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches;
 
@@ -8,8 +9,20 @@ public sealed class SuitableOrInitial : BatchEnvelope
 {
 	public SuitableOrInitial
 	(
-		IMeasuredBatch initial,
-		IOccupiedSpace space
+		ISpacedBatch initial,
+		ISpatialEntity entity
+	) : this
+	(
+		initial,
+		new SpaceOfEntity(entity)
+	)
+	{
+	}
+	
+	public SuitableOrInitial
+	(
+		ISpacedBatch initial,
+		ISpace space
 	) : base
 	(
 		new BatchOfFunction(
@@ -18,12 +31,16 @@ public sealed class SuitableOrInitial : BatchEnvelope
 	{
 	}
 
-	private static ISpatialBatch Function
+	private static IBatch Function
 	(
-		IMeasuredBatch initial,
-		IOccupiedSpace space
+		ISpacedBatch initial,
+		ISpace space
 	)
 	{
-		throw new NotImplementedException();
+		ISpacedBatch subbatch =
+			new SubbatchWithPoint(initial, new FromPointOfSpace(space));
+		if (!new IsSpaceInsideBatch(subbatch, space).State) return initial;
+		if (new IsLeafBatch(subbatch).State) return subbatch;
+		return new SuitableOrInitial(subbatch, space);
 	}
 }

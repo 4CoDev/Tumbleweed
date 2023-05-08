@@ -1,4 +1,4 @@
-using DotGod.Nodes.BatchMaps.Spatial.Occupation;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities;
 

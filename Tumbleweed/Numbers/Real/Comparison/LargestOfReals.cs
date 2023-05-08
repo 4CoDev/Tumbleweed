@@ -18,7 +18,7 @@ public sealed class LargestOfReals : RealEnvelope
 	(
 		new RealFromSingle(
 			new LargestOfSingles(
-				new SinglesFromFractionals(numbers)))
+				new SinglesFromReals(numbers)))
 	)
 	{
 	}

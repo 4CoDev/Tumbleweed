@@ -6,7 +6,7 @@ namespace DotGod.Nodes.BatchMaps.Spatial.Entities;
 
 public sealed class EntitiesOfBatch : CollectionEnvelope<ISpatialEntity>
 {
-	public EntitiesOfBatch(ISpatialBatch batch) : base
+	public EntitiesOfBatch(IBatch batch) : base
 	(
 		new CollectionOfFunction<ISpatialEntity>(
 			() => batch.Entities)

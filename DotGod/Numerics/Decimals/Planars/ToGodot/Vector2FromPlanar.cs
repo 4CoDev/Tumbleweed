@@ -18,7 +18,7 @@ public sealed class Vector2FromPlanar : ScalarEnvelope<Vector2>
 	private static Vector2 Result(IPlanar<IReal> planar)
 	{
 		return new Vector2(
-			new SingleFromFractional(planar.X).Value,
-			new SingleFromFractional(planar.Y).Value);
+			new SingleFromReal(planar.X).Value,
+			new SingleFromReal(planar.Y).Value);
 	}
 }

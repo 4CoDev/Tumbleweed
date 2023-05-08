@@ -18,7 +18,7 @@ public sealed class ProductOfReals : RealEnvelope
 	(
 		new RealFromSingle(
 			new DifferenceOfSingles(
-				new SinglesFromFractionals(reals)))
+				new SinglesFromReals(reals)))
 	)
 	{
 	}

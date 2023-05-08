@@ -13,8 +13,8 @@ public sealed class IsLessThanOrEqualsToFractional : BooleanEnvelope
 	) : base
 	(
 		new IsLessThanOrEqualsToSingle(
-			new SingleFromFractional(first),
-			new SingleFromFractional(second))
+			new SingleFromReal(first),
+			new SingleFromReal(second))
 	)
 	{
 	}

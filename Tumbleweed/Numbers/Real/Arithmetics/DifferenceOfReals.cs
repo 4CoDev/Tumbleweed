@@ -18,7 +18,7 @@ public sealed class DifferenceOfReals : RealEnvelope
 	(
 		new RealFromSingle(
 			new DifferenceOfSingles(
-				new SinglesFromFractionals(real)))
+				new SinglesFromReals(real)))
 	)
 	{
 	}

@@ -1,6 +1,7 @@
 using DotGod.Numerics.Decimals.Spatials.FromGodot;
 using Godot;
 using Tumbleweed.Numbers.Integers.Natural;
+using Tumbleweed.Numbers.Integers.Natural.ToSystem;
 using Tumbleweed.Numbers.Integers.Signed.ToSystem.Ints32;
 using Tumbleweed.Numbers.Real;
 using Tumbleweed.Numbers.Spatial;

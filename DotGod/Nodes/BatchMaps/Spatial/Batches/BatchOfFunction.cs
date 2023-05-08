@@ -7,21 +7,21 @@ public sealed class BatchOfFunction : BatchEnvelope
 {
 	public BatchOfFunction
 	(
-		Func<ISpatialBatch> function
+		Func<IBatch> function
 	) : this
 	(
-		new FunctionFromSystem<ISpatialBatch>(function)
+		new FunctionFromSystem<IBatch>(function)
 	)
 	{
 	}
 	
 	public BatchOfFunction
 	(
-		INullaryFunction<ISpatialBatch> function
+		INullaryFunction<IBatch> function
 	) : base
 	(
 		new BatchOfScalar(
-			new ValueOfFunction<ISpatialBatch>(function))
+			new ValueOfFunction<IBatch>(function))
 	)
 	{
 	}

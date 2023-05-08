@@ -1,6 +1,6 @@
 using DotGod.Geometrics.Graphical.Meshes;
 using DotGod.Nodes.BatchMaps.Spatial.Entities.Equality;
-using DotGod.Nodes.BatchMaps.Spatial.Occupation;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces;
 using Godot;
 using Tumbleweed.Hashes;
 using Tumbleweed.Nullability;
@@ -14,7 +14,7 @@ public sealed class EntityWithValues : ISpatialEntity
 	(
 		INullable<Node> node,
 		IMesh mesh, 
-		IOccupiedSpace size
+		ISpace size
 	)
 	{
 		Node = node;
@@ -35,5 +35,5 @@ public sealed class EntityWithValues : ISpatialEntity
 
 	public IMesh Mesh { get; }
 
-	public IOccupiedSpace Occupation { get; }
+	public ISpace Occupation { get; }
 }

@@ -10,12 +10,12 @@ using Tumbleweed.Storages.Elements;
 namespace DotGod.Nodes.BatchMaps.Spatial.FromNodes;
 
 public sealed class SubbatchesOfNode :
-	NullableEnvelope<IArray<ISpatialBatch>>
+	NullableEnvelope<IArray<IBatch>>
 {
 	public SubbatchesOfNode(IScalar<Node3D> node) : base
 	(
-		new NullableOfStorageElement<IArray<ISpatialBatch>>(
-			new GlobalWithKey<INullable<IArray<ISpatialBatch>>>(
+		new NullableOfStorageElement<IArray<IBatch>>(
+			new GlobalWithKey<INullable<IArray<IBatch>>>(
 				node, "Subbatches"))
 	)
 	{

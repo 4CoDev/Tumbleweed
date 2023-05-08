@@ -1,6 +1,6 @@
 using DotGod.Geometrics.Graphical.Meshes;
 using DotGod.Nodes.BatchMaps.Spatial.Entities.Equality;
-using DotGod.Nodes.BatchMaps.Spatial.Occupation;
+using DotGod.Nodes.BatchMaps.Spatial.Spaces;
 using Godot;
 using Tumbleweed.Hashes;
 using Tumbleweed.Nullability;
@@ -29,7 +29,7 @@ public sealed class EntityOfScalar : ISpatialEntity
 	public IMesh Mesh =>
 		scalar.Value.Mesh;
 
-	public IOccupiedSpace Occupation =>
+	public ISpace Occupation =>
 		scalar.Value.Occupation;
 
 	private readonly IScalar<ISpatialEntity> scalar;

@@ -6,7 +6,7 @@ namespace DotGod.Nodes.BatchMaps.Spatial;
 
 public interface IBatchMap
 {
-	ISpatialBatch Batch { get; }
+	IBatch Batch { get; }
 	
 	ISpatial<IReal> Size { get; }
 }

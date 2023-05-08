@@ -9,12 +9,12 @@ using EntitiesOfBatch = DotGod.Nodes.BatchMaps.Spatial.Entities.FromNodes.Entiti
 
 namespace DotGod.Nodes.BatchMaps.Spatial.FromNodes;
 
-public sealed class BatchWithNode : ISpatialBatch
+public sealed class BatchWithNode : IBatch
 {
 	public BatchWithNode(IScalar<Node3D> node) =>
 		this.node = node;
 
-	public INullable<IArray<ISpatialBatch>> Subbatches =>
+	public INullable<IArray<IBatch>> Subbatches =>
 		new SubbatchesOfNode(node);
 
 	public ICollection<ISpatialEntity> Entities =>
