@@ -23,24 +23,25 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Geometrics/Graphical/Surfaces/FromArrayMeshes/FromGodot/SurfacesFromMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Geometrics/Graphical/Surfaces/SurfaceTools/ToGodot/SurfaceToolsWithSurfaces.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Geometrics/Graphical/Vertices/FromMeshDataTool/VertexWithIndex.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Geometrics/Graphical/Vertices/VerticesOfPolygon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Nodes/BatchMaps/Spatial/FromNodes/SubbatchesOfNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/thisischico/Documents/Projects/Tumbleweed/DotGod/Nodes/BatchMaps/Spatial/Spaces/Octants/OctantIndexWithPoint.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/thisischico/Documents/Projects/Tumbleweed/DotGod/Nodes/BatchMaps/Spatial/Spaces/Octants/OctantIndexWithPoint.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/thisischico/Documents/Projects/Tumbleweed/DotGod/Nodes/BatchMaps/Spatial/Spaces/Octants/OctantIndexWithPoint.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/thisischico/Documents/Projects/Tumbleweed/DotGod/Nodes/BatchMaps/Spatial/Spaces/Octants/OctantIndexWithPoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Nodes/FromTree/NodeOnPath`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Numerics/Decimals/Spatials/ToGodot/Vector3FromSpatial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Bytes/BytesFromBits.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Tumbleweed/Delegates/Functions/Binary/IBinaryFunction`3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tumbleweed/Delegates/Functions/Binary/IFunction`3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Enumerables/EnumerableOfFunction`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Enumerables/Lazy/LazyEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Numbers/Integers/Signed/OfSystem/Ints32/LessThenInts32.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Scalars/Equality/EqualityOfTwoNullables`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Strings/EmptyWhenNull.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c732a8d6d5c44fae8db730f32b95ebb4c40200/38/c27fbd40/String.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />

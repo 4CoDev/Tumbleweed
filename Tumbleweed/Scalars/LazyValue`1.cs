@@ -1,8 +1,8 @@
 using Tumbleweed.Booleans;
 using Tumbleweed.Hashes;
 using Tumbleweed.Mutables;
+using Tumbleweed.Objects.Strings;
 using Tumbleweed.Scalars.Equality;
-using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Scalars;
 
@@ -42,7 +42,7 @@ public sealed class LazyValue<T> : IScalar<T>
 		new ZeroHashWhenNull(Value).Value;
 
 	public override String? ToString() =>
-		new NullableFromNullable(Value).Value;
+		new StringFromNullableObject(Value).Value;
 
 	public T Value
 	{

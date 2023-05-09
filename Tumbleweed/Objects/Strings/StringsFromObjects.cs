@@ -1,6 +1,7 @@
 using Tumbleweed.Enumerables;
+using Tumbleweed.Strings;
 
-namespace Tumbleweed.Strings.FromObjects;
+namespace Tumbleweed.Objects.Strings;
 
 public sealed class StringsFromObjects : EnumerableEnvelope<String>
 {
@@ -16,7 +17,7 @@ public sealed class StringsFromObjects : EnumerableEnvelope<String>
 		new SelectedByExpression<Object, String>(
 			objects,
 			@object => new EmptyWhenNull(
-				new NullableFromObject(@object)).Value)
+				new StringFromObject(@object)).Value)
 	)
 	{
 	}

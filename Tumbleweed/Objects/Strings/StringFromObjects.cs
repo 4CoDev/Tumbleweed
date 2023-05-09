@@ -1,8 +1,9 @@
 using Tumbleweed.Enumerables;
+using Tumbleweed.Enumerables.Strings;
 using Tumbleweed.Scalars;
-using Tumbleweed.Strings.FromEnumerable;
+using Tumbleweed.Strings;
 
-namespace Tumbleweed.Strings.FromObjects;
+namespace Tumbleweed.Objects.Strings;
 
 public sealed class StringFromObjects : ScalarEnvelope<String>
 {

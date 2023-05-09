@@ -1,4 +1,4 @@
-using Tumbleweed.Strings.FromObjects;
+using Tumbleweed.Objects.Strings;
 
 namespace Tumbleweed.Mutables;
 
@@ -8,7 +8,7 @@ public sealed class MutableValue<T> : IMutable<T>
 		Variable = value;
 
 	public override String? ToString() =>
-		new NullableFromNullable(Variable).Value;
+		new StringFromNullableObject(Variable).Value;
 
 	public T Variable { get; set; }
 }

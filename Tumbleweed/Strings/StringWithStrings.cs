@@ -14,13 +14,6 @@ public sealed class StringWithStrings : ScalarEnvelope<String>
 	
 	public StringWithStrings(params IScalar<String>[] strings) : this
 	(
-		new EnumerableWithElements<IScalar<String>>(strings)
-	)
-	{
-	}
-
-	public StringWithStrings(IEnumerable<IScalar<String>> strings) : this
-	(
 		new ValuesOfScalars<String>(strings)
 	)
 	{

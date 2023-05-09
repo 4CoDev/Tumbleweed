@@ -25,7 +25,7 @@ public sealed class WordsWhenNulls : EnumerableEnvelope<String>
 	(
 		new SelectedByExpression<String?, String>(
 			nullables,
-			nullable => new WordWhenNull(nullable, word).Value)
+			nullable => new SpareWhenNull(nullable, word).Value)
 	)
 	{
 	}

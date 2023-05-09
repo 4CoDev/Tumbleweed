@@ -1,6 +1,6 @@
 using System.Collections;
 using Tumbleweed.Hashes;
-using Tumbleweed.Strings.FromObjects;
+using Tumbleweed.Objects.Strings;
 
 namespace Tumbleweed.Enumerables.Equality;
 

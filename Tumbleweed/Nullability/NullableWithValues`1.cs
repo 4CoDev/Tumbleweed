@@ -2,12 +2,12 @@ using Tumbleweed.Booleans;
 using Tumbleweed.Booleans.FromSystem;
 using Tumbleweed.Equality.ByValues;
 using Tumbleweed.Hashes;
+using Tumbleweed.Objects.Strings;
 using Tumbleweed.Scalars;
-using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Nullability;
 
-public sealed class NullableWithValues<T> : INullable<T> where T : notnull
+public sealed class NullableWithValues<T> : INullable<T>
 {
 	public NullableWithValues(T value, Boolean existing) : this
 	(
@@ -43,10 +43,10 @@ public sealed class NullableWithValues<T> : INullable<T> where T : notnull
 		new EqualityOfTwoNullables(Value, @object).State;
 
 	public override Int32 GetHashCode() =>
-		new HashOfObject(Value).Value;
+		new HashOfObject(Value!).Value;
 
 	public override String? ToString() =>
-		new NullableFromObject(Value).Value;
+		new StringFromObject(Value!).Value;
 
 	public T Value => value.Value;
 

@@ -4,7 +4,7 @@ using DotGod.Nodes.BatchMaps.Spatial.Spaces;
 using Godot;
 using Tumbleweed.Hashes;
 using Tumbleweed.Nullability;
-using Tumbleweed.Strings.FromObjects;
+using Tumbleweed.Objects.Strings;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities;
 

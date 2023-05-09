@@ -1,7 +1,7 @@
 using Tumbleweed.Delegates.Functions.Nullary;
 using Tumbleweed.Hashes;
+using Tumbleweed.Objects.Strings;
 using Tumbleweed.Scalars.Equality;
-using Tumbleweed.Strings.FromObjects;
 
 namespace Tumbleweed.Scalars;
 
@@ -24,7 +24,7 @@ public sealed class ResultOfFunction<T> : IScalar<T>
 		new HashOfNullable(Value).Value;
 
 	public override String? ToString() =>
-		new NullableFromNullable(Value).Value;
+		new StringFromNullableObject(Value).Value;
 
 	public T Value =>
 		function.Result;

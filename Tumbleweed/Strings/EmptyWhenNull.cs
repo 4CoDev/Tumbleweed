@@ -1,3 +1,5 @@
+using Tumbleweed.Nullability;
+using Tumbleweed.Nullability.FromSystem;
 using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Strings;
@@ -6,14 +8,14 @@ public sealed class EmptyWhenNull : ScalarEnvelope<String>
 {
 	public EmptyWhenNull(String? nullable) : this
 	(
-		new ScalarValue<String?>(nullable)
+		new NullableFromSystem<String>(nullable)
 	)
 	{
 	}
 	
-	public EmptyWhenNull(IScalar<String?> nullable) : base
+	public EmptyWhenNull(INullable<String> nullable) : base
 	(
-		new WordWhenNull(nullable, "")
+		new SpareWhenNull(nullable, "")
 	)
 	{
 	}
