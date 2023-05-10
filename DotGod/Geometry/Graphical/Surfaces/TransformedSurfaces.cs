@@ -1,0 +1,21 @@
+using Godot;
+using Tumbleweed.Enumerables;
+using Tumbleweed.Scalars;
+
+namespace DotGod.Geometry.Graphical.Surfaces;
+
+public sealed class TransformedSurfaces : EnumerableEnvelope<ISurface>
+{
+	public TransformedSurfaces
+	(
+		IEnumerable<ISurface> surfaces,
+		IScalar<Transform3D> transform
+	) : base
+	(
+		new SelectedByExpression<ISurface>(
+			surfaces,
+			surface => new TransformedSurface(surface, transform))
+	)
+	{
+	}
+}

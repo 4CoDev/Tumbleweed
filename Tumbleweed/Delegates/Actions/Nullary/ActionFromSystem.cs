@@ -1,5 +1,3 @@
-using Tumbleweed.Hashes;
-
 namespace Tumbleweed.Delegates.Actions.Nullary;
 
 public class ActionFromSystem : IAction

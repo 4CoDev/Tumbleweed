@@ -1,6 +1,6 @@
 using Tumbleweed.Booleans;
-using Tumbleweed.Hashes;
 using Tumbleweed.Mutables;
+using Tumbleweed.Objects.Hashes;
 using Tumbleweed.Objects.Strings;
 using Tumbleweed.Scalars.Equality;
 

@@ -1,5 +1,5 @@
-using DotGod.Geometrics.Graphical.Meshes;
-using DotGod.Geometrics.Graphical.Meshes.FromArrayMeshes.FromGodot;
+using DotGod.Geometry.Graphical.Meshes;
+using DotGod.Geometry.Graphical.Meshes.FromArrayMeshes.FromGodot;
 using Godot;
 using Tumbleweed.Scalars;
 

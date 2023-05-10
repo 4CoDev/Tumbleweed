@@ -1,6 +1,6 @@
 using Tumbleweed.Booleans;
-using Tumbleweed.Nullability;
-using Tumbleweed.Nullability.FromSystem;
+using Tumbleweed.Nullables;
+using Tumbleweed.Nullables.FromSystem;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities.Equality;
 

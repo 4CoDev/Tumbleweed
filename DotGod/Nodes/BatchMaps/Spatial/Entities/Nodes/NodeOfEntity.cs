@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Nullability;
+using Tumbleweed.Nullables;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities.Nodes;
 

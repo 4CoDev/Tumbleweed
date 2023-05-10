@@ -1,5 +1,5 @@
 using Tumbleweed.Delegates.Functions.Nullary;
-using Tumbleweed.Hashes;
+using Tumbleweed.Objects.Hashes;
 using Tumbleweed.Objects.Strings;
 using Tumbleweed.Scalars.Equality;
 

@@ -1,9 +1,9 @@
-using DotGod.Geometrics.Graphical.Meshes;
+using DotGod.Geometry.Graphical.Meshes;
 using Godot;
 using Tumbleweed.Booleans;
 using Tumbleweed.Booleans.Algebra;
 using Tumbleweed.Delegates.Functions.Nullary.Equality.ByValues;
-using Tumbleweed.Nullability;
+using Tumbleweed.Nullables;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities.Equality;
 

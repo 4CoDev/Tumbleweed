@@ -1,7 +1,7 @@
 using DotGod.Nodes.BatchMaps.Spatial.Entities.Nodes;
 using Godot;
 using Tumbleweed.Enumerables;
-using Tumbleweed.Nullability;
+using Tumbleweed.Nullables;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities.FromNodes.Nodes;

@@ -2,8 +2,8 @@ using DotGod.Nodes.BatchMaps.Spatial.Batches;
 using Godot;
 using Tumbleweed.Arrays;
 using Tumbleweed.Arrays.FromStorages;
-using Tumbleweed.Nullability;
-using Tumbleweed.Nullability.FromStorages;
+using Tumbleweed.Nullables;
+using Tumbleweed.Nullables.FromStorages;
 using Tumbleweed.Scalars;
 using Tumbleweed.Storages.Elements;
 

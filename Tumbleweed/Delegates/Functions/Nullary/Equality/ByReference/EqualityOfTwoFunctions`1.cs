@@ -1,5 +1,5 @@
 using Tumbleweed.Booleans;
-using Tumbleweed.Equality.ByReference;
+using Tumbleweed.Objects.Equality.ByReference;
 
 namespace Tumbleweed.Delegates.Functions.Nullary.Equality.ByReference;
 

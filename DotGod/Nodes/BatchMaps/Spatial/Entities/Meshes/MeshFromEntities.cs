@@ -1,4 +1,4 @@
-using DotGod.Geometrics.Graphical.Meshes;
+using DotGod.Geometry.Graphical.Meshes;
 using Tumbleweed.Enumerables;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Entities.Meshes;

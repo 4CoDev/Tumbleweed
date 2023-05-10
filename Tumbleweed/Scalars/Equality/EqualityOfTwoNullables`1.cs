@@ -1,7 +1,7 @@
 using Tumbleweed.Booleans;
-using Tumbleweed.Equality.ByReference;
-using Tumbleweed.Nullability;
-using Tumbleweed.Nullability.FromSystem;
+using Tumbleweed.Nullables;
+using Tumbleweed.Nullables.FromSystem;
+using Tumbleweed.Objects.Equality.ByReference;
 
 namespace Tumbleweed.Scalars.Equality;
 

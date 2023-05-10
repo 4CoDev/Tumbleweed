@@ -1,4 +1,4 @@
-using DotGod.Geometrics.Graphical.Meshes.ArrayMeshes.OfGodot;
+using DotGod.Geometry.Graphical.Meshes.ArrayMeshes.OfGodot;
 using Godot;
 using Tumbleweed.Scalars;
 

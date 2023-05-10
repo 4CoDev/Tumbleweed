@@ -3,7 +3,7 @@ using DotGod.Nodes.BatchMaps.Spatial.Entities;
 using Godot;
 using DotGod.Nodes.BatchMaps.Spatial.Entities.FromNodes;
 using Tumbleweed.Arrays;
-using Tumbleweed.Nullability;
+using Tumbleweed.Nullables;
 using Tumbleweed.Scalars;
 using EntitiesOfBatch = DotGod.Nodes.BatchMaps.Spatial.Entities.FromNodes.EntitiesOfBatch;
 

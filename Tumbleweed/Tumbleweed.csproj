@@ -13,13 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Geometry\Spatial\Polygons\Triangles\" />
       <Folder Include="ReadOnlySpans\ToSystem" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="Arrays\Linears\FromSystem\ArrayEnvelope`1.cs" />
-      <Compile Remove="Arrays\Linears\FromSystem\IArray`1.cs" />
-      <Compile Remove="Arrays\Reading\ArrayFromEnumerable`1.cs" />
     </ItemGroup>
 
 </Project>
