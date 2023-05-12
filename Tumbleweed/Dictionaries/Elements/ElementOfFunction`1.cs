@@ -1,5 +1,5 @@
-using Tumbleweed.Delegates.Functions.Nullary;
 using Tumbleweed.Scalars;
+using Tumbleweed.Subroutines.Functions.Nullary;
 
 namespace Tumbleweed.Dictionaries.Elements;
 

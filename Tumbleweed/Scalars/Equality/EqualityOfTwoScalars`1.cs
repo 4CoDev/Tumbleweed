@@ -1,5 +1,5 @@
 using Tumbleweed.Booleans;
-using Tumbleweed.Delegates.Functions.Nullary.Equality.ByValues;
+using Tumbleweed.Subroutines.Functions.Nullary.Equality.ByValues;
 
 namespace Tumbleweed.Scalars.Equality;
 

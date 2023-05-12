@@ -14,7 +14,11 @@ public sealed class SpareWhenNull : ScalarEnvelope<String>
 	{
 	}
 	
-	public SpareWhenNull(INullable<String> nullable, String spare) : this
+	public SpareWhenNull
+	(
+		INullable<String> nullable,
+		String spare
+	) : this
 	(
 		nullable,
 		new ScalarValue<String>(spare)
@@ -22,7 +26,11 @@ public sealed class SpareWhenNull : ScalarEnvelope<String>
 	{
 	}
 	
-	public SpareWhenNull(String? nullable, IScalar<String> spare) : this
+	public SpareWhenNull
+	(
+		String? nullable,
+		IScalar<String> spare
+	) : this
 	(
 		new NullableFromSystem<String>(nullable),
 		spare

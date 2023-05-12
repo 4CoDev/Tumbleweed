@@ -1,4 +1,4 @@
-using Tumbleweed.Delegates.Functions.Binary;
+using Tumbleweed.Subroutines.Functions.Binary;
 
 namespace Tumbleweed.Booleans.FromEnumerable;
 

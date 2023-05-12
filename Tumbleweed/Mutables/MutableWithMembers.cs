@@ -1,6 +1,6 @@
-using Tumbleweed.Delegates.Actions.Unary;
-using Tumbleweed.Delegates.Functions.Nullary;
 using Tumbleweed.Scalars;
+using Tumbleweed.Subroutines.Actions.Unary;
+using Tumbleweed.Subroutines.Functions.Nullary;
 
 namespace Tumbleweed.Mutables;
 
