@@ -4,7 +4,7 @@ using Tumbleweed.Numbers.Real.FromSystem;
 using Tumbleweed.Numbers.Spatial;
 using Tumbleweed.Scalars;
 
-namespace DotGod.Numerics.Decimals.Spatials.FromGodot;
+namespace DotGod.Numbers.Real.Spatials.FromGodot;
 
 public sealed class SpatialFromVector3 : SpatialEnvelope<IReal>
 {

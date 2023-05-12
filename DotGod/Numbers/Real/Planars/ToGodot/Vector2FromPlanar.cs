@@ -4,7 +4,7 @@ using Tumbleweed.Numbers.Real;
 using Tumbleweed.Numbers.Real.Binaries.ToSystem.Singles;
 using Tumbleweed.Scalars;
 
-namespace DotGod.Numerics.Decimals.Planars.ToGodot;
+namespace DotGod.Numbers.Real.Planars.ToGodot;
 
 public sealed class Vector2FromPlanar : ScalarEnvelope<Vector2>
 {

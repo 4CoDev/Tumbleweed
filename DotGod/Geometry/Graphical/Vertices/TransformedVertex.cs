@@ -1,4 +1,4 @@
-using DotGod.Numerics.Decimals.Spatials.FromGodot;
+using DotGod.Numbers.Real.Spatials.FromGodot;
 using Godot;
 using Tumbleweed.Scalars;
 

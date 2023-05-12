@@ -4,7 +4,7 @@ using Tumbleweed.Numbers.Real;
 using Tumbleweed.Numbers.Real.FromSystem;
 using Tumbleweed.Scalars;
 
-namespace DotGod.Numerics.Decimals.Planars.FromGodot;
+namespace DotGod.Numbers.Real.Planars.FromGodot;
 
 public sealed class PlanarFromVector2 : PlanarEnvelope<IReal>
 {

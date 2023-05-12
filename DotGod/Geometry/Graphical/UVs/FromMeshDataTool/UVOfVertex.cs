@@ -1,4 +1,4 @@
-using DotGod.Numerics.Decimals.Planars.FromGodot;
+using DotGod.Numbers.Real.Planars.FromGodot;
 using Godot;
 using Tumbleweed.Numbers.Integers.Natural;
 using Tumbleweed.Numbers.Integers.Natural.ToSystem;

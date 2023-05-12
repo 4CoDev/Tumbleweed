@@ -1,6 +1,6 @@
 using DotGod.Geometry.Graphical.Vertices;
-using DotGod.Numerics.Decimals.Planars.ToGodot;
-using DotGod.Numerics.Decimals.Spatials.ToGodot;
+using DotGod.Numbers.Real.Planars.ToGodot;
+using DotGod.Numbers.Real.Spatials.ToGodot;
 using Godot;
 using Tumbleweed.Scalars;
 
