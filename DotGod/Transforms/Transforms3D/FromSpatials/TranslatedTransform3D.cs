@@ -1,7 +1,7 @@
-using DotGod.Numbers.Real.Spatials.ToGodot;
+using DotGod.Vectors.Spatial.Godot;
 using Godot;
 using Tumbleweed.Numbers.Real;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Transforms.Transforms3D.FromSpatials;
@@ -16,7 +16,7 @@ public sealed class TranslatedTransform3D : ScalarEnvelope<Transform3D>
 	(
 		new FromVectors3.TranslatedTransform3D(
 			transform,
-			new Vector3FromSpatial(translation))
+			new Vector3FromPoint(translation))
 	)
 	{
 	}

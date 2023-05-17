@@ -1,5 +1,5 @@
 using Tumbleweed.Arrays;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using Tumbleweed.Scalars.FromArray.FromSpatial;
 using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 

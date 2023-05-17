@@ -1,5 +1,5 @@
 using Tumbleweed.Numbers.Real.FromCollection.FromSystem;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial;
 

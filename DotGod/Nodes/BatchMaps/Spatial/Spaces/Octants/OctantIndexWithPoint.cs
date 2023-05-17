@@ -3,7 +3,7 @@ using DotGod.Nodes.BatchMaps.Spatial.Spaces.Points;
 using Tumbleweed.Numbers.Integers.Natural.Spatial;
 using Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 using Tumbleweed.Numbers.Real.Spatial.Arithmetics.Rounding;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 using IRealNumber = Tumbleweed.Numbers.Real.IReal;
 

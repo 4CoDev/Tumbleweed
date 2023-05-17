@@ -1,4 +1,4 @@
-using DotGod.Geometry.Graphical.Meshes;
+using DotGod.Geometry.Spatial.Graphical.Meshes;
 using Godot;
 using Tumbleweed.Scalars;
 

@@ -2,7 +2,7 @@ using DotGod.Nodes.BatchMaps.Spatial.Batches.Spaced;
 using DotGod.Nodes.BatchMaps.Spatial.Spaces.Points;
 using Tumbleweed.Numbers.Real.Spatial;
 using Tumbleweed.Numbers.Real.Spatial.Arithmetics;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using IRealNumber = Tumbleweed.Numbers.Real.IReal;
 using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 

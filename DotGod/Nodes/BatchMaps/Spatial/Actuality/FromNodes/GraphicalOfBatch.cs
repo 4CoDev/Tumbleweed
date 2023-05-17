@@ -1,4 +1,4 @@
-using DotGod.Geometry.Graphical.Meshes;
+using DotGod.Geometry.Spatial.Graphical.Meshes;
 using DotGod.Nodes.BatchMaps.Actuality;
 using DotGod.Nodes.BatchMaps.Spatial.Entities.FromNodes;
 using DotGod.Nodes.BatchMaps.Spatial.Entities.Meshes;

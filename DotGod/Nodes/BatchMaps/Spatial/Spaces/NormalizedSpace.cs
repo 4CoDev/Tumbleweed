@@ -1,7 +1,7 @@
 using DotGod.Nodes.BatchMaps.Spatial.Spaces.Points;
 using Tumbleweed.Numbers.Real;
 using Tumbleweed.Numbers.Real.Spatial.Comparison;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Spaces;
 

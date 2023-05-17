@@ -1,4 +1,4 @@
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches;

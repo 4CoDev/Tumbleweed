@@ -13,8 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Geometry\Graphical\Polygons\Triangles\FromGodot" />
-      <Folder Include="Geometry\Graphical\Vertices\Indices\FromSurfaceTools" />
+      <Folder Include="Geometry\Spatial\Concave\" />
+      <Folder Include="Points\Planar\" />
     </ItemGroup>
 
 </Project>

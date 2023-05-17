@@ -1,6 +1,6 @@
 using Tumbleweed.Numbers.Real;
 using Tumbleweed.Numbers.Real.Spatial.Coordinates;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using NaturalNumberFromReal =
 	Tumbleweed.Numbers.Integers.Natural.NaturalFromReal;
 

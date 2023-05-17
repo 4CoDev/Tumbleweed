@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numbers.Spatial;
-using Tumbleweed.Numbers.Spatial.Coordinates;
+using Tumbleweed.Points.Spatial;
+using Tumbleweed.Points.Spatial.Coordinates;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Coordinates;
 

@@ -1,6 +1,6 @@
 using Tumbleweed.Arrays;
-using Tumbleweed.Numbers.Spatial;
-using Tumbleweed.Numbers.Spatial.ToEnumerables;
+using Tumbleweed.Points.Spatial;
+using Tumbleweed.Points.Spatial.ToEnumerables;
 using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 
 namespace Tumbleweed.Scalars.FromArray.FromSpatial;

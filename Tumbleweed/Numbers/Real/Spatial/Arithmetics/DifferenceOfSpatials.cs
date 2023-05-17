@@ -1,6 +1,6 @@
 using Tumbleweed.Numbers.Real.Arithmetics;
 using Tumbleweed.Numbers.Real.Spatial.Coordinates;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 

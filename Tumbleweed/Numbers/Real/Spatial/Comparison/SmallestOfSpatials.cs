@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numbers.Spatial;
-using Tumbleweed.Numbers.Spatial.FromEnumerables;
+using Tumbleweed.Points.Spatial;
+using Tumbleweed.Points.Spatial.FromEnumerables;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Comparison;
 

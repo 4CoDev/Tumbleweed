@@ -13,7 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Geometry\Spatial\Polygons\Triangles\" />
+      <Folder Include="Geometry\Spatial\Concave\" />
+      <Folder Include="Points\" />
       <Folder Include="ReadOnlySpans\ToSystem" />
     </ItemGroup>
 

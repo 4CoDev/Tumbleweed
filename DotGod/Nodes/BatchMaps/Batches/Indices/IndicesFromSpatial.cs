@@ -1,7 +1,7 @@
 using Tumbleweed.Numbers.Integers.Natural;
 using Tumbleweed.Numbers.Real;
 using Tumbleweed.Numbers.Real.Spatial.Coordinates;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Batches.Indices;
 

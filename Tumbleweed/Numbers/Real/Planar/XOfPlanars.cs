@@ -1,5 +1,5 @@
 using Tumbleweed.Enumerables;
-using Tumbleweed.Numbers.Planar;
+using Tumbleweed.Points.Planar;
 
 namespace Tumbleweed.Numbers.Real.Planar;
 

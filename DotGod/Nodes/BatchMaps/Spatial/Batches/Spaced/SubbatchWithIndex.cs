@@ -1,8 +1,8 @@
 using DotGod.Nodes.BatchMaps.Spatial.Spaces.Octants;
+using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Batches.Spaced;
 
-using Tumbleweed.Numbers.Spatial;
 using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 using UnspacedSubbatchWithIndex = Batches.SubbatchWithIndex;
 

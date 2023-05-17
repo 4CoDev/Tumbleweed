@@ -1,7 +1,7 @@
-using DotGod.Numbers.Real.Spatials.FromGodot;
+using DotGod.Vectors.Spatial.Points;
 using Godot;
 using Tumbleweed.Numbers.Real;
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using Tumbleweed.Scalars;
 
 namespace DotGod.Transforms.Transforms3D.Numerics.Decimals.Spatials;

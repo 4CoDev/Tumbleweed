@@ -1,4 +1,4 @@
-using Tumbleweed.Numbers.Spatial;
+using Tumbleweed.Points.Spatial;
 using IRealNumber = Tumbleweed.Numbers.Real.IReal;
 
 namespace Tumbleweed.Geometry.Spatial.Vertices;
