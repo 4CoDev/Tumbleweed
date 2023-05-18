@@ -8,7 +8,7 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Geometry.Spatial.Graphical.Translations.FromMeshDataTool;
 
-public sealed class TranslationOfVertex : SpatialEnvelope<IReal>
+public sealed class TranslationOfVertex : PointEnvelope<IReal>
 {
 	public TranslationOfVertex
 	(
@@ -28,7 +28,7 @@ public sealed class TranslationOfVertex : SpatialEnvelope<IReal>
 		IScalar<Int32> vertex
 	) : base
 	(
-		new SpatialFromVector3(
+		new PointFromVector3(
 			new ToGodot.TranslationOfVertex(mesh, vertex))
 	)
 	{

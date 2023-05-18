@@ -8,7 +8,7 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Geometry.Spatial.Graphical.UVs.FromMeshDataTool;
 
-public sealed class UVOfVertex : PlanarEnvelope<IReal>
+public sealed class UVOfVertex : PointEnvelope<IReal>
 {
 	public UVOfVertex
 	(
@@ -28,7 +28,7 @@ public sealed class UVOfVertex : PlanarEnvelope<IReal>
 		IScalar<Int32> vertex
 	) : base
 	(
-		new PlanarFromVector2(
+		new PointFromVector2(
 			new ToGodot.UVOfVertex(tool, vertex))
 	)
 	{

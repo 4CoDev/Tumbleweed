@@ -3,11 +3,11 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial;
 
-public sealed class SizeOfMap : SpatialEnvelope<IReal>
+public sealed class SizeOfMap : PointEnvelope<IReal>
 {
 	public SizeOfMap(IBatchMap map) : base
 	(
-		new SpatialOfFunction<IReal>(
+		new PointOfFunction<IReal>(
 			() => map.Size)
 	)
 	{

@@ -8,10 +8,10 @@ public sealed class XOfSpatials : EnumerableEnvelope<IReal>
 {
 	public XOfSpatials
 	(
-		IEnumerable<ISpatial<IReal>> spatials
+		IEnumerable<IPoint<IReal>> spatials
 	) : base
 	(
-		new XOfSpatials<IReal>(spatials)
+		new XOfPoints<IReal>(spatials)
 	)
 	{
 	}

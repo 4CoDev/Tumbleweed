@@ -13,7 +13,7 @@ public sealed class TransformedVertex : VertexEnvelope
 	) : base
 	(
 		new VertexWithValues(
-			new TransformedSpatial(vertex.Translation, transform),
+			new TransformedPoint(vertex.Translation, transform),
 			vertex.Normal,
 			vertex.Color,
 			vertex.UV)

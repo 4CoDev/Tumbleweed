@@ -8,8 +8,8 @@ public sealed class IsGreaterThanZ : BooleanEnvelope
 {
 	public IsGreaterThanZ
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	) : base
 	(
 		new IsGreaterThanFractional(

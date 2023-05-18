@@ -3,13 +3,13 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Comparison;
 
-public sealed class LargestOfTwoSpatials : ISpatial<IReal>
+public sealed class LargestOfTwoPoints : IPoint<IReal>
 {
 	
-	public LargestOfTwoSpatials
+	public LargestOfTwoPoints
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	)
 	{
 		this.first = first;
@@ -25,5 +25,5 @@ public sealed class LargestOfTwoSpatials : ISpatial<IReal>
 	public IReal Z =>
 		new LargestOfReals(first.Z, second.Z);
 
-	private readonly ISpatial<IReal> first, second;
+	private readonly IPoint<IReal> first, second;
 }

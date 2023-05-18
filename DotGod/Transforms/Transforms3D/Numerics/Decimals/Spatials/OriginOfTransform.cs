@@ -6,11 +6,11 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Transforms.Transforms3D.Numerics.Decimals.Spatials;
 
-public sealed class OriginOfTransform : SpatialEnvelope<IReal>
+public sealed class OriginOfTransform : PointEnvelope<IReal>
 {
 	public OriginOfTransform(IScalar<Transform3D> transform) : base
 	(
-		new SpatialFromVector3(
+		new PointFromVector3(
 			new Binaries.Spatials.OfGodot.OriginOfTransform(transform))
 	)
 	{

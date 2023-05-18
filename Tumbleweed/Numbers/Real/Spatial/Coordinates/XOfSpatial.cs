@@ -5,10 +5,10 @@ namespace Tumbleweed.Numbers.Real.Spatial.Coordinates;
 
 public sealed class XOfSpatial : RealEnvelope
 {
-	public XOfSpatial(ISpatial<IReal> spatial) : base
+	public XOfSpatial(IPoint<IReal> point) : base
 	(
 		new RealOfScalar(
-			new XOfSpatial<IReal>(spatial))
+			new XOfPoint<IReal>(point))
 	)
 	{
 	}

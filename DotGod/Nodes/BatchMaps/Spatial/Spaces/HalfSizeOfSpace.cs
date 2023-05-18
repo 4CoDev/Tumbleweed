@@ -4,7 +4,7 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Spaces;
 
-public sealed class HalfOfSpace : SpatialEnvelope<IReal>
+public sealed class HalfOfSpace : PointEnvelope<IReal>
 {
 	public HalfOfSpace(ISpace space) : base
 	(

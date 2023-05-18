@@ -10,7 +10,7 @@ public sealed class BatchWithIndex : BatchEnvelope
 	public BatchWithIndex
 	(
 		IArray<IBatch> array,
-		ISpatial<INaturalNumber> indices
+		IPoint<INaturalNumber> indices
 	) : base
 	(
 		new BatchOfScalar(

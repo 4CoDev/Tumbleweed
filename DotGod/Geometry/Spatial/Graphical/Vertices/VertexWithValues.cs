@@ -9,11 +9,8 @@ namespace DotGod.Geometry.Spatial.Graphical.Vertices;
 public sealed class VertexWithValues : IVertex
 {
 	public VertexWithValues
-	(
-		ISpatial<IReal> translation,
-		ISpatial<IReal> normal,
-		IScalar<Color> color,
-		IPlanar<IReal> uv
+	(Tumbleweed.Points.Spatial.IPoint<IReal> translation, Tumbleweed.Points.Spatial.IPoint<IReal> normal,
+		IScalar<Color> color, Tumbleweed.Points.Planar.IPoint<IReal> uv
 	)
 	{
 		Translation = translation;
@@ -22,11 +19,11 @@ public sealed class VertexWithValues : IVertex
 		UV = uv;
 	}
 	
-	public ISpatial<IReal> Translation { get; }
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Translation { get; }
 	
-	public ISpatial<IReal> Normal { get; }
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Normal { get; }
 	
 	public IScalar<Color> Color { get; }
 	
-	public IPlanar<IReal> UV { get; }
+	public Tumbleweed.Points.Planar.IPoint<IReal> UV { get; }
 }

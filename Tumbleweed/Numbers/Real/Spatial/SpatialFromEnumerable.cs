@@ -2,11 +2,11 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial;
 
-public sealed class SpatialFromEnumerable : SpatialEnvelope<IReal>
+public sealed class PointFromEnumerable : PointEnvelope<IReal>
 {
-	public SpatialFromEnumerable(IEnumerable<IReal> enumerable) : base
+	public PointFromEnumerable(IEnumerable<IReal> enumerable) : base
 	(
-		new SpatialFromCollection(
+		new PointFromCollection(
 			new List<IReal>(enumerable))
 	)
 	{

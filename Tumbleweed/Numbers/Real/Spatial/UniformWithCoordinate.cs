@@ -5,7 +5,7 @@ using Tumbleweed.Scalars;
 namespace Tumbleweed.Numbers.Real.Spatial;
 
 public sealed class UniformWithCoordinate :
-	SpatialEnvelope<IReal>
+	PointEnvelope<IReal>
 {
 	public UniformWithCoordinate
 	(
@@ -49,7 +49,7 @@ public sealed class UniformWithCoordinate :
 	
 	public UniformWithCoordinate(IReal coordinate) : base
 	(
-		new SpatialWithCoordinates(
+		new PointWithCoordinates(
 			coordinate,
 			coordinate,
 			coordinate)

@@ -4,11 +4,11 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Geometry.Spatial.Graphical.Translations;
 
-public sealed class TranslationOfVertex : SpatialEnvelope<IReal>
+public sealed class TranslationOfVertex : PointEnvelope<IReal>
 {
 	public TranslationOfVertex(IVertex vertex) : base
 	(
-		new SpatialOfFunction<IReal>(
+		new PointOfFunction<IReal>(
 			() => vertex.Translation)
 	)
 	{

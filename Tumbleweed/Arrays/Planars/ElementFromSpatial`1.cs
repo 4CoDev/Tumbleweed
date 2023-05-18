@@ -1,6 +1,6 @@
 using Tumbleweed.Numbers.Integers.Natural;
 using Tumbleweed.Points.Planar;
-using Tumbleweed.Points.Planar.ToEnumerables;
+using Tumbleweed.Points.Planar.Enumerables;
 using Tumbleweed.Scalars;
 using Tumbleweed.Scalars.FromArray;
 
@@ -11,7 +11,7 @@ public sealed class ElementFromPlanar<T> : ScalarEnvelope<T>
 	public ElementFromPlanar
 	(
 		IArray<T> array,
-		IPlanar<INatural> indices
+		IPoint<INatural> indices
 	) : base
 	(
 		new ScalarWithIndices<T>(

@@ -5,10 +5,10 @@ namespace Tumbleweed.Numbers.Integers.Natural.Spatial.Coordinates;
 
 public sealed class YOfSpatial : NaturalEnvelope
 {
-	public YOfSpatial(ISpatial<INatural> spatial) : base
+	public YOfSpatial(IPoint<INatural> point) : base
 	(
 		new NaturalOfScalar(
-			new YOfSpatial<INatural>(spatial))
+			new YOfPoint<INatural>(point))
 	)
 	{
 	}

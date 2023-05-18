@@ -4,11 +4,11 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 
-public sealed class QuotientByReal : SpatialEnvelope<IReal>
+public sealed class QuotientByReal : PointEnvelope<IReal>
 {
 	public QuotientByReal
 	(
-		ISpatial<IReal> dividend,
+		IPoint<IReal> dividend,
 		Single divisor
 	) : this
 	(
@@ -20,7 +20,7 @@ public sealed class QuotientByReal : SpatialEnvelope<IReal>
 	
 	public QuotientByReal
 	(
-		ISpatial<IReal> dividend,
+		IPoint<IReal> dividend,
 		IScalar<Single> divisor
 	) : this
 	(
@@ -32,7 +32,7 @@ public sealed class QuotientByReal : SpatialEnvelope<IReal>
 	
 	public QuotientByReal
 	(
-		ISpatial<IReal> dividend,
+		IPoint<IReal> dividend,
 		Double divisor
 	) : this
 	(
@@ -44,7 +44,7 @@ public sealed class QuotientByReal : SpatialEnvelope<IReal>
 	
 	public QuotientByReal
 	(
-		ISpatial<IReal> dividend,
+		IPoint<IReal> dividend,
 		IScalar<Double> divisor
 	) : this
 	(
@@ -56,11 +56,11 @@ public sealed class QuotientByReal : SpatialEnvelope<IReal>
 	
 	public QuotientByReal
 	(
-		ISpatial<IReal> dividend,
+		IPoint<IReal> dividend,
 		IReal divisor
 	) : base
 	(
-		new QuotientOfSpatials(
+		new QuotientOfPoints(
 			dividend,
 			new UniformWithCoordinate<IReal>(divisor))
 	)

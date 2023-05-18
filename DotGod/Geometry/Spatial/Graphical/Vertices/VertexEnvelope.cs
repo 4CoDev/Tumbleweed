@@ -13,13 +13,13 @@ public abstract class VertexEnvelope : IVertex
 		this.vertex = vertex;
 	}
 
-	public ISpatial<IReal> Translation => vertex.Translation;
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Translation => vertex.Translation;
 
-	public ISpatial<IReal> Normal => vertex.Normal;
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Normal => vertex.Normal;
 
 	public IScalar<Color> Color => vertex.Color;
 
-	public IPlanar<IReal> UV => vertex.UV;
+	public Tumbleweed.Points.Planar.IPoint<IReal> UV => vertex.UV;
 
 	private readonly IVertex vertex;
 }

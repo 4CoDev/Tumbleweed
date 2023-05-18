@@ -5,12 +5,12 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Spaces;
 
-public sealed class CenterOfSpace : SpatialEnvelope<IReal>
+public sealed class CenterOfSpace : PointEnvelope<IReal>
 {
 	public CenterOfSpace(ISpace space) : base
 	(
 		new QuotientByReal(
-			new SumOfSpatials(
+			new SumOfPoints(
 				new ToPointOfSpace(space),
 				new FromPointOfSpace(space)),
 			2)

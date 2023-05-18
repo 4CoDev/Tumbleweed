@@ -8,7 +8,7 @@ public sealed class SubbatchWithIndex : BatchEnvelope
 	public SubbatchWithIndex
 	(
 		IBatch batch,
-		ISpatial<INaturalNumber> index
+		IPoint<INaturalNumber> index
 	) : base
 	(
 		new FromArray.BatchWithIndex(

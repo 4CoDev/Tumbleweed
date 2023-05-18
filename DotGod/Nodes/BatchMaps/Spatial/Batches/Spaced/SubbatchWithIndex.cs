@@ -11,7 +11,7 @@ public sealed class SubbatchWithIndex : BatchEnvelope
 	public SubbatchWithIndex
 	(
 		ISpacedBatch batch,
-		ISpatial<INaturalNumber> index
+		IPoint<INaturalNumber> index
 	) : base
 	(
 		new BatchWithSpace(

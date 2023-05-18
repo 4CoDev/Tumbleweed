@@ -5,10 +5,10 @@ namespace Tumbleweed.Numbers.Integers.Natural.Spatial.Coordinates;
 
 public sealed class ZOfSpatial : NaturalEnvelope
 {
-	public ZOfSpatial(ISpatial<INatural> spatial) : base
+	public ZOfSpatial(IPoint<INatural> point) : base
 	(
 		new NaturalOfScalar(
-			new ZOfSpatial<INatural>(spatial))
+			new ZOfPoint<INatural>(point))
 	)
 	{
 	}

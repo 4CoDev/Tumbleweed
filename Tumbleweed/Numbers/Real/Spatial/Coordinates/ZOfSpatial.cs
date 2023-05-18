@@ -5,10 +5,10 @@ namespace Tumbleweed.Numbers.Real.Spatial.Coordinates;
 
 public sealed class ZOfSpatial : RealEnvelope
 {
-	public ZOfSpatial(ISpatial<IReal> spatial) : base
+	public ZOfSpatial(IPoint<IReal> point) : base
 	(
 		new RealOfScalar(
-			new ZOfSpatial<IReal>(spatial))
+			new ZOfPoint<IReal>(point))
 	)
 	{
 	}

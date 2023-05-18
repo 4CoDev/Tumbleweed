@@ -3,18 +3,18 @@ using Tumbleweed.Subroutines.Functions.Binary;
 namespace Tumbleweed.Points.Spatial.FromEnumerables;
 
 public sealed class AggregatedByExpression<TFrom, TTo>
-	: SpatialEnvelope<TTo>
+	: PointEnvelope<TTo>
 {
 	public AggregatedByExpression
 	(
 		IEnumerable<TFrom> from,
-		ISpatial<TTo> seed,
-		Func<ISpatial<TTo>, TFrom, ISpatial<TTo>> expression
+		IPoint<TTo> seed,
+		Func<IPoint<TTo>, TFrom, IPoint<TTo>> expression
 	) : this
 	(
 		from,
 		seed,
-		new FunctionFromSystem<ISpatial<TTo>, TFrom, ISpatial<TTo>>(expression)
+		new FunctionFromSystem<IPoint<TTo>, TFrom, IPoint<TTo>>(expression)
 	)
 	{
 	}
@@ -22,13 +22,13 @@ public sealed class AggregatedByExpression<TFrom, TTo>
 	public AggregatedByExpression
 	(
 		IEnumerable<TFrom> from,
-		ISpatial<TTo> seed,
-		IFunction<ISpatial<TTo>, TFrom, ISpatial<TTo>> 
+		IPoint<TTo> seed,
+		IFunction<IPoint<TTo>, TFrom, IPoint<TTo>> 
 		expression
 	) : base
 	(
-		new SpatialOfScalar<TTo>(
-			new Scalars.FromEnumerable.AggregatedByExpression<TFrom, ISpatial<TTo>>(
+		new PointOfScalar<TTo>(
+			new Scalars.FromEnumerable.AggregatedByExpression<TFrom, IPoint<TTo>>(
 					from,
 					seed,
 					expression))

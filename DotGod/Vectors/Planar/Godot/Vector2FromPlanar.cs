@@ -8,18 +8,18 @@ namespace DotGod.Vectors.Planar.Godot;
 
 public sealed class Vector2FromPlanar : ScalarEnvelope<Vector2>
 {
-	public Vector2FromPlanar(IPlanar<IReal> planar) : base
+	public Vector2FromPlanar(IPoint<IReal> point) : base
 	(
 		new ResultOfFunction<Vector2>(
-			() => Result(planar))
+			() => Result(point))
 	)
 	{
 	}
 
-	private static Vector2 Result(IPlanar<IReal> planar)
+	private static Vector2 Result(IPoint<IReal> point)
 	{
 		return new Vector2(
-			new SingleFromReal(planar.X).Value,
-			new SingleFromReal(planar.Y).Value);
+			new SingleFromReal(point.X).Value,
+			new SingleFromReal(point.Y).Value);
 	}
 }

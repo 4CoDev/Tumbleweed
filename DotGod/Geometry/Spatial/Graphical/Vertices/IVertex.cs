@@ -8,11 +8,11 @@ namespace DotGod.Geometry.Spatial.Graphical.Vertices;
 
 public interface IVertex
 {
-	ISpatial<IReal> Translation { get; }
+	Tumbleweed.Points.Spatial.IPoint<IReal> Translation { get; }
 
-	ISpatial<IReal> Normal { get; }
+	Tumbleweed.Points.Spatial.IPoint<IReal> Normal { get; }
 	
 	IScalar<Color> Color { get; }
-	
-	IPlanar<IReal> UV { get; }
+
+	Tumbleweed.Points.Planar.IPoint<IReal> UV { get; }
 }

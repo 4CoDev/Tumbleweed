@@ -1,6 +1,6 @@
 namespace Tumbleweed.Points.Spatial;
 
-public interface ISpatial<out T>
+public interface IPoint<out T>
 {
 	T X { get; }
 	

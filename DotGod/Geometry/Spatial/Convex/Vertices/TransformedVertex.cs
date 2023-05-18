@@ -14,7 +14,7 @@ public sealed class TransformedVertex : VertexEnvelope
 	) : base
 	(
 		new VertexWithTranslation(
-			new TransformedSpatial(
+			new TransformedPoint(
 				new TranslationOfVertex(vertex),
 				transform))
 	)

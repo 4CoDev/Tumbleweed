@@ -8,7 +8,7 @@ namespace DotGod.Vectors.Spatial.Godot;
 
 public sealed class Vector3FromPoint : ScalarEnvelope<Vector3>
 {
-	public Vector3FromPoint(ISpatial<IReal> point) : base
+	public Vector3FromPoint(IPoint<IReal> point) : base
 	(
 		new ResultOfFunction<Vector3>(
 			() => Result(point))
@@ -16,7 +16,7 @@ public sealed class Vector3FromPoint : ScalarEnvelope<Vector3>
 	{
 	}
 
-	private static Vector3 Result(ISpatial<IReal> point)
+	private static Vector3 Result(IPoint<IReal> point)
 	{
 		return new Vector3(
 			new SingleFromReal(point.X).Value,

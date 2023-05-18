@@ -3,11 +3,11 @@ using IRealNumber = Tumbleweed.Numbers.Real.IReal;
 
 namespace Tumbleweed.Geometry.Spatial.Vertices;
 
-public sealed class TranslationOfVertex : SpatialEnvelope<IRealNumber>
+public sealed class TranslationOfVertex : PointEnvelope<IRealNumber>
 {
 	public TranslationOfVertex(IVertex vertex) : base
 	(
-		new SpatialOfFunction<IRealNumber>(
+		new PointOfFunction<IRealNumber>(
 			() => vertex.Translation)
 	)
 	{

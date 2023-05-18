@@ -4,11 +4,11 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Geometry.Spatial.Graphical.Normals;
 
-public sealed class NormalOfVertex : SpatialEnvelope<IReal>
+public sealed class NormalOfVertex : PointEnvelope<IReal>
 {
 	public NormalOfVertex(IVertex vertex) : base
 	(
-		new SpatialOfFunction<IReal>(() => vertex.Normal)
+		new PointOfFunction<IReal>(() => vertex.Normal)
 	)
 	{
 	}

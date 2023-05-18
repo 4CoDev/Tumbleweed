@@ -5,8 +5,8 @@ namespace Tumbleweed.Geometry.Spatial.Vertices;
 
 public sealed class VertexWithTranslation : IVertex
 {
-	public VertexWithTranslation(ISpatial<IRealNumber> translation) =>
+	public VertexWithTranslation(IPoint<IRealNumber> translation) =>
 		Translation = translation;
 
-	public ISpatial<IRealNumber> Translation { get; }
+	public IPoint<IRealNumber> Translation { get; }
 }

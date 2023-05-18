@@ -2,9 +2,9 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Points.Spatial;
 
-public sealed class SpatialOfScalar<T> : ISpatial<T>
+public sealed class PointOfScalar<T> : IPoint<T>
 {
-	public SpatialOfScalar(IScalar<ISpatial<T>> scalar) =>
+	public PointOfScalar(IScalar<IPoint<T>> scalar) =>
 		this.scalar = scalar;
 	
 	public T X => scalar.Value.X;
@@ -13,5 +13,5 @@ public sealed class SpatialOfScalar<T> : ISpatial<T>
 
 	public T Z => scalar.Value.Z;
 
-	private readonly IScalar<ISpatial<T>> scalar;
+	private readonly IScalar<IPoint<T>> scalar;
 }

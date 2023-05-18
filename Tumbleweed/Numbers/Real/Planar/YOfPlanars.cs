@@ -5,9 +5,9 @@ namespace Tumbleweed.Numbers.Real.Planar;
 
 public sealed class YOfPlanars : EnumerableEnvelope<IReal>
 {
-	public YOfPlanars(IEnumerable<IPlanar<IReal>> planars) : base
+	public YOfPlanars(IEnumerable<IPoint<IReal>> planars) : base
 	(
-		new SelectedByExpression<IPlanar<IReal>, IReal>(
+		new SelectedByExpression<IPoint<IReal>, IReal>(
 			planars,
 			planar => planar.Y)
 	)

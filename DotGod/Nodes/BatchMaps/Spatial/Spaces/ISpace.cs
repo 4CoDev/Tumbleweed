@@ -5,7 +5,7 @@ namespace DotGod.Nodes.BatchMaps.Spatial.Spaces;
 
 public interface ISpace
 {
-	ISpatial<IReal> From { get; }
+	IPoint<IReal> From { get; }
 	
-	ISpatial<IReal> To { get; }
+	IPoint<IReal> To { get; }
 }

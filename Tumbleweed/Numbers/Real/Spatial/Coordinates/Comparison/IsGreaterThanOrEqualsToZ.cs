@@ -8,8 +8,8 @@ public sealed class IsGreaterThanOrEqualsToZ : BooleanEnvelope
 {
 	public IsGreaterThanOrEqualsToZ
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	) : base
 	(
 		new OrOfTwoBooleans(

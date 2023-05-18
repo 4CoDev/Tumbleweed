@@ -3,12 +3,12 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Comparison;
 
-public sealed class SmallestOfTwoSpatials : ISpatial<IReal>
+public sealed class SmallestOfTwoPoints : IPoint<IReal>
 {
-	public SmallestOfTwoSpatials
+	public SmallestOfTwoPoints
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	)
 	{
 		this.first = first;
@@ -24,5 +24,5 @@ public sealed class SmallestOfTwoSpatials : ISpatial<IReal>
 	public IReal Z =>
 		new SmallestOfReals(first.Z, second.Z);
 
-	private readonly ISpatial<IReal> first, second;
+	private readonly IPoint<IReal> first, second;
 }

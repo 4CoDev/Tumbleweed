@@ -4,34 +4,34 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 
-public sealed class DifferenceOfSpatials : SpatialEnvelope<IReal>
+public sealed class DifferenceOfPoints : PointEnvelope<IReal>
 {
-	public DifferenceOfSpatials
+	public DifferenceOfPoints
 	(
-		params ISpatial<IReal>[] spatials
+		params IPoint<IReal>[] spatials
 	) : this
 	(
-		new List<ISpatial<IReal>>(spatials)
+		new List<IPoint<IReal>>(spatials)
 	)
 	{
 	}
 
-	public DifferenceOfSpatials
+	public DifferenceOfPoints
 	(
-		IEnumerable<ISpatial<IReal>> spatials
+		IEnumerable<IPoint<IReal>> spatials
 	) : this
 	(
-		new List<ISpatial<IReal>>(spatials)
+		new List<IPoint<IReal>>(spatials)
 	)
 	{
 	}
 	
-	public DifferenceOfSpatials
+	public DifferenceOfPoints
 	(
-		ICollection<ISpatial<IReal>> spatials
+		ICollection<IPoint<IReal>> spatials
 	) : base
 	(
-		new SpatialWithCoordinates<IReal>(
+		new PointWithCoordinates<IReal>(
 			new DifferenceOfReals(new XOfSpatials(spatials)),
 			new DifferenceOfReals(new YOfSpatials(spatials)),
 			new DifferenceOfReals(new ZOfSpatials(spatials)))

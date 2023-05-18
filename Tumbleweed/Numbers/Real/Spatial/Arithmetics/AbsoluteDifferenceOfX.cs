@@ -8,8 +8,8 @@ public sealed class AbsoluteDifferenceOfX : RealEnvelope
 {
 	public AbsoluteDifferenceOfX
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	) : base
 	(
 		new AbsoluteDifferenceOfReals(

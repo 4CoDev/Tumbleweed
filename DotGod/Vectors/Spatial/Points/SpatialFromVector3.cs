@@ -6,18 +6,18 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Vectors.Spatial.Points;
 
-public sealed class SpatialFromVector3 : SpatialEnvelope<IReal>
+public sealed class PointFromVector3 : PointEnvelope<IReal>
 {
-	public SpatialFromVector3(Vector3 vector) : this
+	public PointFromVector3(Vector3 vector) : this
 	(
 		new ScalarValue<Vector3>(vector)
 	)
 	{
 	}
 
-	public SpatialFromVector3(IScalar<Vector3> vector) : base
+	public PointFromVector3(IScalar<Vector3> vector) : base
 	(
-		new SpatialWithCoordinates<IReal>(
+		new PointWithCoordinates<IReal>(
 			new RealFromSingle(vector.Value.X),
 			new RealFromSingle(vector.Value.Y),
 			new RealFromSingle(vector.Value.Z))

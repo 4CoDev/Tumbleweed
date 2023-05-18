@@ -2,17 +2,17 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial;
 
-public sealed class SpatialWithCoordinates :
-	SpatialEnvelope<IReal>
+public sealed class PointWithCoordinates :
+	PointEnvelope<IReal>
 {
-	public SpatialWithCoordinates
+	public PointWithCoordinates
 	(
 		IReal x,
 		IReal y,
 		IReal z
 	) : base
 	(
-		new SpatialWithCoordinates<IReal>(x, y, z)
+		new PointWithCoordinates<IReal>(x, y, z)
 	)
 	{
 	}

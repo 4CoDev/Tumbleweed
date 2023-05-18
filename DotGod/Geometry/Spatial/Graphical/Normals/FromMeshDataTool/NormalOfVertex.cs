@@ -8,7 +8,7 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Geometry.Spatial.Graphical.Normals.FromMeshDataTool;
 
-public sealed class NormalOfVertex : SpatialEnvelope<IReal>
+public sealed class NormalOfVertex : PointEnvelope<IReal>
 {
 	public NormalOfVertex
 	(
@@ -28,7 +28,7 @@ public sealed class NormalOfVertex : SpatialEnvelope<IReal>
 		IScalar<Int32> vertex
 	) : base
 	(
-		new SpatialFromVector3(
+		new PointFromVector3(
 			new ToGodot.NormalOfVertex(mesh, vertex))
 	)
 	{

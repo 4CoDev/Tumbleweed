@@ -2,9 +2,9 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Points.Spatial;
 
-public sealed class SpatialWithCoordinates<T> : ISpatial<T>
+public sealed class PointWithCoordinates<T> : IPoint<T>
 {
-	public SpatialWithCoordinates(T x, T y, T z) : this
+	public PointWithCoordinates(T x, T y, T z) : this
 	(
 		new ScalarValue<T>(x),
 		new ScalarValue<T>(y),
@@ -13,7 +13,7 @@ public sealed class SpatialWithCoordinates<T> : ISpatial<T>
 	{
 	}
 	
-	public SpatialWithCoordinates
+	public PointWithCoordinates
 	(
 		IScalar<T> x,
 		IScalar<T> y,

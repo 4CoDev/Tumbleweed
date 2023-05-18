@@ -4,15 +4,15 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 
-public sealed class ProductByReal : SpatialEnvelope<IReal>
+public sealed class ProductByReal : PointEnvelope<IReal>
 {
 	public ProductByReal
 	(
-		ISpatial<IReal> spatial,
+		IPoint<IReal> point,
 		Single single
 	) : this
 	(
-		spatial,
+		point,
 		new RealFromSingle(single)
 	)
 	{
@@ -20,11 +20,11 @@ public sealed class ProductByReal : SpatialEnvelope<IReal>
 	
 	public ProductByReal
 	(
-		ISpatial<IReal> spatial,
+		IPoint<IReal> point,
 		IScalar<Single> single
 	) : this
 	(
-		spatial,
+		point,
 		new RealFromSingle(single)
 	)
 	{
@@ -32,11 +32,11 @@ public sealed class ProductByReal : SpatialEnvelope<IReal>
 	
 	public ProductByReal
 	(
-		ISpatial<IReal> spatial,
+		IPoint<IReal> point,
 		Double @double
 	) : this
 	(
-		spatial,
+		point,
 		new RealFromDouble(@double)
 	)
 	{
@@ -44,11 +44,11 @@ public sealed class ProductByReal : SpatialEnvelope<IReal>
 	
 	public ProductByReal
 	(
-		ISpatial<IReal> spatial,
+		IPoint<IReal> point,
 		IScalar<Double> @double
 	) : this
 	(
-		spatial,
+		point,
 		new RealFromDouble(@double)
 	)
 	{
@@ -56,12 +56,12 @@ public sealed class ProductByReal : SpatialEnvelope<IReal>
 	
 	public ProductByReal
 	(
-		ISpatial<IReal> spatial,
+		IPoint<IReal> point,
 		IReal real
 	) : base
 	(
-		new QuotientOfSpatials(
-			spatial,
+		new QuotientOfPoints(
+			point,
 			new UniformWithCoordinate<IReal>(real))
 	)
 	{

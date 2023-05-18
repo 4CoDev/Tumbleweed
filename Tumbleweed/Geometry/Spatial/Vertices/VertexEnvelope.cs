@@ -17,7 +17,7 @@ public abstract class VertexEnvelope : IVertex
 	public override String? ToString() =>
 		vertex.ToString();
 
-	public ISpatial<IReal> Translation => vertex.Translation;
+	public IPoint<IReal> Translation => vertex.Translation;
 	
 	private readonly IVertex vertex;
 }

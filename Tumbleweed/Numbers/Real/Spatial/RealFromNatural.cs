@@ -8,11 +8,11 @@ using XOfNaturalSpatial = Integers.Natural.Spatial.Coordinates.XOfSpatial;
 using YOfNaturalSpatial = Integers.Natural.Spatial.Coordinates.YOfSpatial;
 using ZOfNaturalSpatial = Integers.Natural.Spatial.Coordinates.ZOfSpatial;
 
-public sealed class RealFromNatural : SpatialEnvelope<IReal>
+public sealed class RealFromNatural : PointEnvelope<IReal>
 {
-	public RealFromNatural(ISpatial<INatural> natural) : base
+	public RealFromNatural(IPoint<INatural> natural) : base
 	(
-		new SpatialWithCoordinates(
+		new PointWithCoordinates(
 			new RealNumberFromNatural(new XOfNaturalSpatial(natural)),
 			new RealNumberFromNatural(new YOfNaturalSpatial(natural)),
 			new RealNumberFromNatural(new ZOfNaturalSpatial(natural)))

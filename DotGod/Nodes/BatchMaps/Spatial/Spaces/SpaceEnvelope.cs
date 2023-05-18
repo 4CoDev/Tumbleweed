@@ -8,10 +8,10 @@ public abstract class SpaceEnvelope : ISpace
 	protected SpaceEnvelope(ISpace space) =>
 		this.space = space;
 
-	public ISpatial<IReal> From =>
+	public IPoint<IReal> From =>
 		space.From;
 
-	public ISpatial<IReal> To =>
+	public IPoint<IReal> To =>
 		space.To;
 
 	private readonly ISpace space;

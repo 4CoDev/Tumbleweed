@@ -3,25 +3,25 @@ using Tumbleweed.Points.Planar;
 
 namespace Tumbleweed.Numbers.Real.Planar.Arithmetics;
 
-public sealed class SumOfPlanars : PlanarEnvelope<IReal>
+public sealed class SumOfPoints : PointEnvelope<IReal>
 {
-	public SumOfPlanars(params IPlanar<IReal>[] planars) : this
+	public SumOfPoints(params IPoint<IReal>[] planars) : this
 	(
-		new List<IPlanar<IReal>>(planars)
+		new List<IPoint<IReal>>(planars)
 	)
 	{
 	}
 
-	public SumOfPlanars(IEnumerable<IPlanar<IReal>> planars) : this
+	public SumOfPoints(IEnumerable<IPoint<IReal>> planars) : this
 	(
-		new List<IPlanar<IReal>>(planars)
+		new List<IPoint<IReal>>(planars)
 	)
 	{
 	}
 	
-	public SumOfPlanars(ICollection<IPlanar<IReal>> planars) : base
+	public SumOfPoints(ICollection<IPoint<IReal>> planars) : base
 	(
-		new PlanarWithValues<IReal>(
+		new PointWithCoordinates<IReal>(
 			new SumOfReals(new XOfPlanars(planars)),
 			new SumOfReals(new YOfPlanars(planars)))
 	)

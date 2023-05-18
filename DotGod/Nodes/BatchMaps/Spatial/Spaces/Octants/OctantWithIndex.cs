@@ -10,7 +10,7 @@ public sealed class OctantWithIndex : SpaceEnvelope
 	public OctantWithIndex
 	(
 		ISpacedBatch batch,
-		ISpatial<INaturalNumber> index) : this
+		IPoint<INaturalNumber> index) : this
 	(
 		new SpaceOfBatch(batch),
 		index
@@ -21,7 +21,7 @@ public sealed class OctantWithIndex : SpaceEnvelope
 	public OctantWithIndex
 	(
 		ISpace space,
-		ISpatial<INaturalNumber> index) : base
+		IPoint<INaturalNumber> index) : base
 	(
 		new SpaceWithPoints(
 			new FromPointWithIndex(space, index),

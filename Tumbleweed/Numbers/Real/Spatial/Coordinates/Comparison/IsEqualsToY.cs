@@ -8,8 +8,8 @@ public sealed class IsEqualsToY : BooleanEnvelope
 {
 	public IsEqualsToY
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	) : base
 	(
 		new IsEqualsToFractional(

@@ -4,21 +4,21 @@ using Tumbleweed.Points.Spatial.FromEnumerables;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Comparison;
 
-public sealed class SmallestOfSpatials : SpatialEnvelope<IReal>
+public sealed class SmallestOfPoints : PointEnvelope<IReal>
 {
-	public SmallestOfSpatials
+	public SmallestOfPoints
 	(
-		params ISpatial<IReal>[] spatials
+		params IPoint<IReal>[] spatials
 	) : this
 	(
-		new EnumerableWithElements<ISpatial<IReal>>(spatials)
+		new EnumerableWithElements<IPoint<IReal>>(spatials)
 	)
 	{
 	}
 	
-	public SmallestOfSpatials
+	public SmallestOfPoints
 	(
-		IEnumerable<ISpatial<IReal>> spatials
+		IEnumerable<IPoint<IReal>> spatials
 	) : base
 	(
 		new AggregatedByExpression<IReal>(
@@ -28,12 +28,12 @@ public sealed class SmallestOfSpatials : SpatialEnvelope<IReal>
 	{
 	}
 
-	private static ISpatial<IReal> Expression
+	private static IPoint<IReal> Expression
 	(
-		ISpatial<IReal> smallest,
-		ISpatial<IReal> number
+		IPoint<IReal> smallest,
+		IPoint<IReal> number
 	) =>
 	(
-		new SmallestOfTwoSpatials(smallest, number)
+		new SmallestOfTwoPoints(smallest, number)
 	);
 }

@@ -8,17 +8,17 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Points.Spatial;
 
-public sealed class TransformedSpatial : SpatialEnvelope<IReal>
+public sealed class TransformedPoint : PointEnvelope<IReal>
 {
-	public TransformedSpatial
+	public TransformedPoint
 	(
-		ISpatial<IReal> spatial,
+		IPoint<IReal> point,
 		IScalar<Transform3D> transform
 	) : base
 	(
-		new SpatialFromVector3(
+		new PointFromVector3(
 			new OriginOfTransform(
-				new TranslatedTransform3D(transform, spatial)))
+				new TranslatedTransform3D(transform, point)))
 	)
 	{
 	}

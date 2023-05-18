@@ -4,14 +4,14 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics.Rounding;
 
-public sealed class NearestIntegerOfSpatial : SpatialEnvelope<IReal>
+public sealed class NearestIntegerOfPoint : PointEnvelope<IReal>
 {
-	public NearestIntegerOfSpatial(ISpatial<IReal> spatial) : base
+	public NearestIntegerOfPoint(IPoint<IReal> point) : base
 	(
-		new SpatialWithCoordinates(
-			new NearestIntegerOfReal(new XOfSpatial(spatial)),
-			new NearestIntegerOfReal(new YOfSpatial(spatial)),
-			new NearestIntegerOfReal(new ZOfSpatial(spatial)))
+		new PointWithCoordinates(
+			new NearestIntegerOfReal(new XOfSpatial(point)),
+			new NearestIntegerOfReal(new YOfSpatial(point)),
+			new NearestIntegerOfReal(new ZOfSpatial(point)))
 	)
 	{
 	}

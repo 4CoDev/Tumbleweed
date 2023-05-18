@@ -4,11 +4,11 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Geometry.Spatial.Graphical.Translations;
 
-public sealed class LazyTranslationOfVertex : SpatialEnvelope<IReal>
+public sealed class LazyTranslationOfVertex : PointEnvelope<IReal>
 {
 	public LazyTranslationOfVertex(IVertex vertex) : base
 	(
-		new LazySpatial<IReal>(
+		new LazyPoint<IReal>(
 			new TranslationOfVertex(vertex))
 	)
 	{

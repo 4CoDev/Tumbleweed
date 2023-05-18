@@ -2,9 +2,9 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Points.Planar;
 
-public sealed class PlanarWithValues<T> : IPlanar<T>
+public sealed class PointWithCoordinates<T> : IPoint<T>
 {
-	public PlanarWithValues(T x, T y) : this
+	public PointWithCoordinates(T x, T y) : this
 	(
 		new ScalarValue<T>(x),
 		new ScalarValue<T>(y)
@@ -12,7 +12,7 @@ public sealed class PlanarWithValues<T> : IPlanar<T>
 	{
 	}
 	
-	public PlanarWithValues(IScalar<T> x, IScalar<T> y)
+	public PointWithCoordinates(IScalar<T> x, IScalar<T> y)
 	{
 		this.x = x;
 		this.y = y;

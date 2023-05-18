@@ -4,34 +4,34 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 
-public sealed class SumOfSpatials : SpatialEnvelope<IReal>
+public sealed class SumOfPoints : PointEnvelope<IReal>
 {
-	public SumOfSpatials
+	public SumOfPoints
 	(
-		params ISpatial<IReal>[] spatials
+		params IPoint<IReal>[] spatials
 	) : this
 	(
-		new List<ISpatial<IReal>>(spatials)
+		new List<IPoint<IReal>>(spatials)
 	)
 	{
 	}
 
-	public SumOfSpatials
+	public SumOfPoints
 	(
-		IEnumerable<ISpatial<IReal>> spatials
+		IEnumerable<IPoint<IReal>> spatials
 	) : this
 	(
-		new List<ISpatial<IReal>>(spatials)
+		new List<IPoint<IReal>>(spatials)
 	)
 	{
 	}
 	
-	public SumOfSpatials
+	public SumOfPoints
 	(
-		ICollection<ISpatial<IReal>> spatials
+		ICollection<IPoint<IReal>> spatials
 	) : base
 	(
-		new SpatialWithCoordinates<IReal>(
+		new PointWithCoordinates<IReal>(
 			new SumOfReals(new XOfSpatials(spatials)),
 			new SumOfReals(new YOfSpatials(spatials)),
 			new SumOfReals(new ZOfSpatials(spatials)))

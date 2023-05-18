@@ -22,16 +22,16 @@ public sealed class VertexWithIndex : IVertex
 		this.vertex = vertex;
 	}
 
-	public ISpatial<IReal> Translation =>
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Translation =>
 		new TranslationOfVertex(mesh, vertex);
 
-	public ISpatial<IReal> Normal =>
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Normal =>
 		new NormalOfVertex(mesh, vertex);
 
 	public IScalar<Color> Color =>
 		new ColorFromMeshDataTool(mesh, vertex);
 
-	public IPlanar<IReal> UV =>
+	public Tumbleweed.Points.Planar.IPoint<IReal> UV =>
 		new UVOfVertex(mesh, vertex);
 
 	private readonly IScalar<MeshDataTool> mesh;

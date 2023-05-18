@@ -7,15 +7,15 @@ public sealed class SpaceWithPoints : ISpace
 {
 	public SpaceWithPoints
 	(
-		ISpatial<IReal> from,
-		ISpatial<IReal> to
+		IPoint<IReal> from,
+		IPoint<IReal> to
 	)
 	{
 		From = from;
 		To = to;
 	}
 
-	public ISpatial<IReal> From { get; }
+	public IPoint<IReal> From { get; }
 
-	public ISpatial<IReal> To { get; }
+	public IPoint<IReal> To { get; }
 }

@@ -3,14 +3,14 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Spaces.Points;
 
-public sealed class ToPointOfSpace : SpatialEnvelope<IReal>
+public sealed class ToPointOfSpace : PointEnvelope<IReal>
 {
 	public ToPointOfSpace
 	(
 		ISpace occupation
 	) : base
 	(
-		new SpatialOfFunction<IReal>(
+		new PointOfFunction<IReal>(
 			() => occupation.To)
 	)
 	{

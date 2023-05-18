@@ -13,13 +13,13 @@ public sealed class VertexOfScalar : IVertex
 		this.scalar = scalar;
 	}
 	
-	public ISpatial<IReal> Translation => scalar.Value.Translation;
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Translation => scalar.Value.Translation;
 
-	public ISpatial<IReal> Normal => scalar.Value.Normal;
+	public Tumbleweed.Points.Spatial.IPoint<IReal> Normal => scalar.Value.Normal;
 
 	public IScalar<Color> Color => scalar.Value.Color;
 
-	public IPlanar<IReal> UV => scalar.Value.UV;
+	public Tumbleweed.Points.Planar.IPoint<IReal> UV => scalar.Value.UV;
 
 	private readonly IScalar<IVertex> scalar;
 }

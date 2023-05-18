@@ -8,12 +8,12 @@ using INaturalNumber = Tumbleweed.Numbers.Integers.Natural.INatural;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Spaces.Octants.Points;
 
-public sealed class FromPointWithIndex : SpatialEnvelope<IRealNumber>
+public sealed class FromPointWithIndex : PointEnvelope<IRealNumber>
 {
 	public FromPointWithIndex
 	(
 		ISpacedBatch batch,
-		ISpatial<INaturalNumber> index
+		IPoint<INaturalNumber> index
 	) : this
 	(
 		new SpaceOfBatch(batch),
@@ -25,12 +25,12 @@ public sealed class FromPointWithIndex : SpatialEnvelope<IRealNumber>
 	public FromPointWithIndex
 	(
 		ISpace space,
-		ISpatial<INaturalNumber> index
+		IPoint<INaturalNumber> index
 	) : base
 	(
-		new SumOfSpatials(
+		new SumOfPoints(
 			new FromPointOfSpace(space),
-			new ProductOfSpatials(
+			new ProductOfPoints(
 				new HalfOfSpace(space),
 				new RealFromNatural(index)))
 	)

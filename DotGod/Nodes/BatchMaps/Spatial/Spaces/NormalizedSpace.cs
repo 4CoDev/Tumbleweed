@@ -10,15 +10,15 @@ public sealed class NormalizedSpace : ISpace
 	public NormalizedSpace(ISpace occupation) =>
 		this.occupation = occupation;
 
-	public ISpatial<IReal> From => 
+	public IPoint<IReal> From => 
 	(
-		new SmallestOfSpatials(
+		new SmallestOfPoints(
 			new BothPointsOfSpace(occupation))
 	);
 
-	public ISpatial<IReal> To => 
+	public IPoint<IReal> To => 
 	(
-		new LargestOfSpatials(
+		new LargestOfPoints(
 			new BothPointsOfSpace(occupation))
 	);
 

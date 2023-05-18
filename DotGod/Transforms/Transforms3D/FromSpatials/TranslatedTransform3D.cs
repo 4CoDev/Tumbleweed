@@ -11,7 +11,7 @@ public sealed class TranslatedTransform3D : ScalarEnvelope<Transform3D>
 	public TranslatedTransform3D
 	(
 		IScalar<Transform3D> transform,
-		ISpatial<IReal> translation
+		IPoint<IReal> translation
 	) : base
 	(
 		new FromVectors3.TranslatedTransform3D(

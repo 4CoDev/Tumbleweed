@@ -2,12 +2,12 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 
-public sealed class MinimumOfTwoSpatials : ISpatial<IReal>
+public sealed class MinimumOfTwoPoints : IPoint<IReal>
 {
-	public MinimumOfTwoSpatials
+	public MinimumOfTwoPoints
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	)
 	{
 		this.first = first;
@@ -20,5 +20,5 @@ public sealed class MinimumOfTwoSpatials : ISpatial<IReal>
 
 	public IReal Z => throw new NotImplementedException();
 
-	private readonly ISpatial<IReal> first, second;
+	private readonly IPoint<IReal> first, second;
 }

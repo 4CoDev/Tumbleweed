@@ -3,25 +3,25 @@ using Tumbleweed.Points.Planar;
 
 namespace Tumbleweed.Numbers.Real.Planar.Arithmetics;
 
-public sealed class QuotientOfPlanars : PlanarEnvelope<IReal>
+public sealed class QuotientOfPoints : PointEnvelope<IReal>
 {
-	public QuotientOfPlanars(params IPlanar<IReal>[] planars) : this
+	public QuotientOfPoints(params IPoint<IReal>[] planars) : this
 	(
-		new List<IPlanar<IReal>>(planars)
+		new List<IPoint<IReal>>(planars)
 	)
 	{
 	}
 
-	public QuotientOfPlanars(IEnumerable<IPlanar<IReal>> planars) : this
+	public QuotientOfPoints(IEnumerable<IPoint<IReal>> planars) : this
 	(
-		new List<IPlanar<IReal>>(planars)
+		new List<IPoint<IReal>>(planars)
 	)
 	{
 	}
 	
-	public QuotientOfPlanars(ICollection<IPlanar<IReal>> planars) : base
+	public QuotientOfPoints(ICollection<IPoint<IReal>> planars) : base
 	(
-		new PlanarWithValues<IReal>(
+		new PointWithCoordinates<IReal>(
 			new QuotientOfReals(new XOfPlanars(planars)),
 			new QuotientOfReals(new YOfPlanars(planars)))
 	)

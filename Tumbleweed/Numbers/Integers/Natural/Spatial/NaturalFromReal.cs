@@ -6,11 +6,11 @@ using NaturalNumberFromReal =
 
 namespace Tumbleweed.Numbers.Integers.Natural.Spatial;
 
-public sealed class NaturalFromReal : SpatialEnvelope<INatural>
+public sealed class NaturalFromReal : PointEnvelope<INatural>
 {
-	public NaturalFromReal(ISpatial<IReal> real) : base
+	public NaturalFromReal(IPoint<IReal> real) : base
 	(
-		new SpatialWithCoordinates(
+		new PointWithCoordinates(
 			new NaturalNumberFromReal(new XOfSpatial(real)),
 			new NaturalNumberFromReal(new YOfSpatial(real)),
 			new NaturalNumberFromReal(new ZOfSpatial(real)))

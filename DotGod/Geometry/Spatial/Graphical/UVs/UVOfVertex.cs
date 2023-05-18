@@ -4,11 +4,11 @@ using Tumbleweed.Points.Planar;
 
 namespace DotGod.Geometry.Spatial.Graphical.UVs;
 
-public sealed class UVOfVertex : PlanarEnvelope<IReal>
+public sealed class UVOfVertex : PointEnvelope<IReal>
 {
 	public UVOfVertex(IVertex vertex) : base
 	(
-		new PlanarOfFunction<IReal>(() => vertex.UV)
+		new PointOfFunction<IReal>(() => vertex.UV)
 	)
 	{
 	}

@@ -5,14 +5,14 @@ using Tumbleweed.Points.Spatial;
 
 namespace DotGod.Nodes.BatchMaps.Batches.Indices;
 
-public sealed class IndicesFromSpatial : SpatialEnvelope<INatural>
+public sealed class IndicesFromPoint : PointEnvelope<INatural>
 {
-	public IndicesFromSpatial(ISpatial<IReal> spatial) : base
+	public IndicesFromPoint(IPoint<IReal> point) : base
 	(
-		new SpatialWithCoordinates<INatural>(
-			new IndexFromFractional(new XOfSpatial(spatial)),
-			new IndexFromFractional(new YOfSpatial(spatial)),
-			new IndexFromFractional(new ZOfSpatial(spatial)))
+		new PointWithCoordinates<INatural>(
+			new IndexFromFractional(new XOfSpatial(point)),
+			new IndexFromFractional(new YOfSpatial(point)),
+			new IndexFromFractional(new ZOfSpatial(point)))
 	)
 	{
 	}

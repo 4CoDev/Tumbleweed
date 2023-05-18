@@ -4,17 +4,17 @@ using Tumbleweed.Points.Spatial;
 
 namespace Tumbleweed.Numbers.Real.Spatial.Arithmetics;
 
-public sealed class NegativeSpatial : SpatialEnvelope<IReal>
+public sealed class NegativePoint : PointEnvelope<IReal>
 {
-	public NegativeSpatial
+	public NegativePoint
 	(
-		ISpatial<IReal> spatial
+		IPoint<IReal> point
 	) : base
 	(
-		new SpatialWithCoordinates<IReal>(
-			new NegativeReal(new XOfSpatial(spatial)),
-			new NegativeReal(new YOfSpatial(spatial)),
-			new NegativeReal(new ZOfSpatial(spatial)))
+		new PointWithCoordinates<IReal>(
+			new NegativeReal(new XOfSpatial(point)),
+			new NegativeReal(new YOfSpatial(point)),
+			new NegativeReal(new ZOfSpatial(point)))
 	)
 	{
 	}

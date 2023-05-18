@@ -6,13 +6,13 @@ namespace DotGod.Nodes.BatchMaps.Spatial.Spaces;
 
 public sealed class SpaceFromSize : ISpace
 {
-	public SpaceFromSize(ISpatial<IReal> size) =>
+	public SpaceFromSize(IPoint<IReal> size) =>
 		half = new QuotientByReal(size, 2);
 
-	public ISpatial<IReal> From =>
-		new NegativeSpatial(half);
+	public IPoint<IReal> From =>
+		new NegativePoint(half);
 	
-	public ISpatial<IReal> To => half;
+	public IPoint<IReal> To => half;
 
-	private readonly ISpatial<IReal> half;
+	private readonly IPoint<IReal> half;
 }

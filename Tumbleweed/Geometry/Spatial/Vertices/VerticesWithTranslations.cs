@@ -8,10 +8,10 @@ public sealed class VerticesWithTranslations : EnumerableEnvelope<IVertex>
 {
 	public VerticesWithTranslations
 	(
-		IEnumerable<ISpatial<IReal>> translations
+		IEnumerable<IPoint<IReal>> translations
 	) : base
 	(
-		new SelectedByExpression<ISpatial<IReal>,IVertex>(
+		new SelectedByExpression<IPoint<IReal>,IVertex>(
 			translations,
 			translation => new VertexWithTranslation(translation))
 	)

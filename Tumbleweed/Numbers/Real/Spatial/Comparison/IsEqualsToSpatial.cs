@@ -9,8 +9,8 @@ public sealed class IsEqualsToSpatial : BooleanEnvelope
 {
 	public IsEqualsToSpatial
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	) : base
 	(
 		new AndOfBooleans(

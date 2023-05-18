@@ -8,8 +8,8 @@ public sealed class IsLessThanY : BooleanEnvelope
 {
 	public IsLessThanY
 	(
-		ISpatial<IReal> first,
-		ISpatial<IReal> second
+		IPoint<IReal> first,
+		IPoint<IReal> second
 	) : base
 	(
 		new IsLessThanFractional(

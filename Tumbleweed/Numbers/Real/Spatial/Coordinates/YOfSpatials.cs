@@ -8,10 +8,10 @@ public sealed class YOfSpatials : EnumerableEnvelope<IReal>
 {
 	public YOfSpatials
 	(
-		IEnumerable<ISpatial<IReal>> spatials
+		IEnumerable<IPoint<IReal>> spatials
 	) : base
 	(
-		new YOfSpatials<IReal>(spatials)
+		new YOfPoints<IReal>(spatials)
 	)
 	{
 	}

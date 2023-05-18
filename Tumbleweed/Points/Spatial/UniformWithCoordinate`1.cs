@@ -2,7 +2,7 @@ using Tumbleweed.Scalars;
 
 namespace Tumbleweed.Points.Spatial;
 
-public sealed class UniformWithCoordinate<T> : SpatialEnvelope<T>
+public sealed class UniformWithCoordinate<T> : PointEnvelope<T>
 {
 	public UniformWithCoordinate(T coordinate) : this
 	(
@@ -13,7 +13,7 @@ public sealed class UniformWithCoordinate<T> : SpatialEnvelope<T>
 	
 	public UniformWithCoordinate(IScalar<T> coordinate) : base
 	(
-		new SpatialWithCoordinates<T>(
+		new PointWithCoordinates<T>(
 			coordinate,
 			coordinate,
 			coordinate)

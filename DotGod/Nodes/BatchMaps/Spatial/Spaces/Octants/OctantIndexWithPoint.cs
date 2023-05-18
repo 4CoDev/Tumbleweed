@@ -9,12 +9,12 @@ using IRealNumber = Tumbleweed.Numbers.Real.IReal;
 
 namespace DotGod.Nodes.BatchMaps.Spatial.Spaces.Octants;
 
-public sealed class OctantIndexWithPoint : SpatialEnvelope<INaturalNumber>
+public sealed class OctantIndexWithPoint : PointEnvelope<INaturalNumber>
 {
 	public OctantIndexWithPoint
 	(
 		ISpacedBatch batch,
-		ISpatial<IRealNumber> point
+		IPoint<IRealNumber> point
 	) : this
 	(
 		new SpaceOfBatch(batch),
@@ -26,11 +26,11 @@ public sealed class OctantIndexWithPoint : SpatialEnvelope<INaturalNumber>
 	public OctantIndexWithPoint
 	(
 		ISpace space,
-		ISpatial<IRealNumber> point
+		IPoint<IRealNumber> point
 	) : this
 	(
 		new SizeOfSpace(space),
-		new DifferenceOfSpatials(
+		new DifferenceOfPoints(
 			point,
 			new FromPointOfSpace(space))
 	)
@@ -39,13 +39,13 @@ public sealed class OctantIndexWithPoint : SpatialEnvelope<INaturalNumber>
 
 	public OctantIndexWithPoint
 	(
-		ISpatial<IRealNumber> size,
-		ISpatial<IRealNumber> point
+		IPoint<IRealNumber> size,
+		IPoint<IRealNumber> point
 	) : base
 	(
 		new NaturalFromReal(
-			new NearestIntegerOfSpatial(
-				new QuotientOfSpatials(point, size)))
+			new NearestIntegerOfPoint(
+				new QuotientOfPoints(point, size)))
 	)
 	{
 	}

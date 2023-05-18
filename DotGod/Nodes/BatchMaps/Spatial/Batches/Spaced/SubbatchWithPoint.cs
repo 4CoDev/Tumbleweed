@@ -9,7 +9,7 @@ public sealed class SubbatchWithPoint : BatchEnvelope
 	public SubbatchWithPoint
 	(
 		ISpacedBatch batch,
-		ISpatial<IRealNumber> point
+		IPoint<IRealNumber> point
 	) : base
 	(
 		new SubbatchWithIndex(

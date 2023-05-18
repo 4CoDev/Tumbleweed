@@ -6,18 +6,18 @@ using Tumbleweed.Scalars;
 
 namespace DotGod.Vectors.Planar.Points;
 
-public sealed class PlanarFromVector2 : PlanarEnvelope<IReal>
+public sealed class PointFromVector2 : PointEnvelope<IReal>
 {
-	public PlanarFromVector2(Vector2 vector) : this
+	public PointFromVector2(Vector2 vector) : this
 	(
 		new ScalarValue<Vector2>(vector)
 	)
 	{
 	}
 
-	public PlanarFromVector2(IScalar<Vector2> vector) : base
+	public PointFromVector2(IScalar<Vector2> vector) : base
 	(
-		new PlanarWithValues<IReal>(
+		new PointWithCoordinates<IReal>(
 			new RealFromSingle(vector.Value.X),
 			new RealFromSingle(vector.Value.Y))
 	)

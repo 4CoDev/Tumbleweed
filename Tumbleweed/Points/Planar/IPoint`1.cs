@@ -1,6 +1,6 @@
 namespace Tumbleweed.Points.Planar;
 
-public interface IPlanar<out T>
+public interface IPoint<out T>
 {
 	T X { get; }
 	

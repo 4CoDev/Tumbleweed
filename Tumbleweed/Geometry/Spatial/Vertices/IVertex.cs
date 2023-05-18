@@ -5,5 +5,5 @@ namespace Tumbleweed.Geometry.Spatial.Vertices;
 
 public interface IVertex
 {
-	ISpatial<IRealNumber> Translation { get; }
+	IPoint<IRealNumber> Translation { get; }
 }
