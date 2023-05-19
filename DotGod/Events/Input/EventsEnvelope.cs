@@ -1,4 +1,5 @@
 using Tumbleweed.Events;
+using Tumbleweed.Events.Nullary;
 using Tumbleweed.Subroutines.Actions.Nullary;
 
 namespace DotGod.Events.Input;
