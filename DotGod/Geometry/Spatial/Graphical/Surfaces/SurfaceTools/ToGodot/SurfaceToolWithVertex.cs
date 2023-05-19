@@ -1,5 +1,5 @@
 using DotGod.Geometry.Spatial.Graphical.Vertices;
-using DotGod.Vectors.Planar.Godot;
+using DotGod.Vectors.Planar;
 using DotGod.Vectors.Spatial.Godot;
 using Godot;
 using Tumbleweed.Scalars;
