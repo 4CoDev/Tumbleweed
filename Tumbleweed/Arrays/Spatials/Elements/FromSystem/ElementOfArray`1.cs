@@ -42,27 +42,18 @@ public sealed class ElementOfArray<T> : IMutable<T>
 		this.indices = indices;
 	}
 
-	public T Variable
+	public T Value
 	{
-		get => Value;
-		set => MutateTo(value);
+		get => array.Value[
+			indices.ElementAt(0),
+			indices.ElementAt(1),
+			indices.ElementAt(2)];
+
+		set => array.Value[
+			indices.ElementAt(0),
+			indices.ElementAt(1),
+			indices.ElementAt(2)] = value;
 	}
-	
-	private T Value =>
-	(
-		array.Value[
-			indices.ElementAt(0),
-			indices.ElementAt(1),
-			indices.ElementAt(2)]
-	);
-	
-	private T MutateTo(T value) =>
-	(
-		array.Value[
-			indices.ElementAt(0),
-			indices.ElementAt(1),
-			indices.ElementAt(2)] = value
-	);
 
 	private readonly IScalar<T[,,]> array;
 	

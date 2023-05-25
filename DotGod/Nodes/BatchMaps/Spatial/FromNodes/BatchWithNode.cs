@@ -18,7 +18,7 @@ public sealed class BatchWithNode : IBatch
 		new SubbatchesOfNode(node);
 
 	public ICollection<ISpatialEntity> Entities =>
-		new Entities.FromNodes.EntitiesOfBatch(node);
+		new EntitiesOfBatch(node);
 
 	private readonly IScalar<Node3D> node;
 }

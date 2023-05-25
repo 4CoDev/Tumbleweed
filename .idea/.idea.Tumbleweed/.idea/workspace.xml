@@ -17,6 +17,7 @@
     <setting file="file://$PROJECT_DIR$/DotGod/Geometry/Spatial/Graphical/Vertices/VerticesOfPolygon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Iteration/Events/Subscriptions/ISubscriptions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Iteration/Events/Subscriptions/SubscriptionsWithSpecific.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Nodes/BatchMaps/Spatial/Batches/BatchNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Nodes/BatchMaps/Spatial/FromNodes/SubbatchesOfNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Nodes/FromTree/NodeOnPath`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Vectors/Spatial/Godot/Vector3FromPoint.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,7 +53,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
+  <component name="RunManager" selected="Publish to folder.Publish TumbleGD to folder">
     <configuration name="Publish TumbleGD to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="2061793969843883114" uuid_low="-4681523822283700833" />
       <method v="2" />

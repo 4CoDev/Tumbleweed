@@ -14,10 +14,10 @@ public abstract class MutableEnvelope<T> : IMutable<T>
 	public override String? ToString() =>
 		mutable.ToString();
 
-	public T Variable
+	public T Value
 	{
-		get => mutable.Variable;
-		set => mutable.Variable = value;
+		get => mutable.Value;
+		set => mutable.Value = value;
 	}
 
 	private readonly IMutable<T> mutable;

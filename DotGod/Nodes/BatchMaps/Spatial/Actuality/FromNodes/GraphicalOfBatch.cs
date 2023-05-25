@@ -21,7 +21,7 @@ public sealed class GraphicalOfBatch : ISpaceActuality
 
 	public void Update()
 	{
-		mesh.Variable =
+		mesh.Value =
 			new MeshFromEntities(
 				new EntitiesOfBatch(node));
 	}

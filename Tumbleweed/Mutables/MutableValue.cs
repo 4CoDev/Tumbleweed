@@ -5,10 +5,10 @@ namespace Tumbleweed.Mutables;
 public sealed class MutableValue<T> : IMutable<T>
 {
 	public MutableValue(T value) =>
-		Variable = value;
+		Value = value;
 
 	public override String ToString() =>
-		new StringFromNullableObject(Variable).Value;
+		new StringFromNullableObject(Value).Value;
 
-	public T Variable { get; set; }
+	public T Value { get; set; }
 }

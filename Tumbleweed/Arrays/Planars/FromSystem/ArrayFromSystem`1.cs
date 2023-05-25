@@ -18,8 +18,8 @@ public sealed class ArrayFromSystem<T> : IArray<T>
 
 	public T this[IEnumerable<INatural> indices]
 	{
-		get => new ElementOfArray<T>(array, indices).Variable;
-		set => new ElementOfArray<T>(array, indices).Variable = value;
+		get => new ElementOfArray<T>(array, indices).Value;
+		set => new ElementOfArray<T>(array, indices).Value = value;
 	}
 
 	public IEnumerable<INatural> Size =>

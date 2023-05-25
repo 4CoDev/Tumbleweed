@@ -42,7 +42,7 @@ public sealed class ElementOfArray<T> : IMutable<T>
 		this.indices = indices;
 	}
 
-	public T Variable
+	public T Value
 	{
 		get => array.Value[indices.ElementAt(0), indices.ElementAt(1)];
 		set => array.Value[indices.ElementAt(0), indices.ElementAt(1)] = value;

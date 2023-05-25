@@ -48,12 +48,12 @@ public sealed class LazyValue<T> : IScalar<T>
 	{
 		get
 		{
-			if (!cached.Variable.State)
+			if (!cached.Value.State)
 			{
-				cache.Variable = origin.Value;
-				cached.Variable = new True();
+				cache.Value = origin.Value;
+				cached.Value = new True();
 			}
-			return cache.Variable!;
+			return cache.Value!;
 		}
 	}
 
