@@ -1,7 +1,7 @@
 using Godot;
-using Tumbleweed.Numbers.Real;
-using Tumbleweed.Numbers.Real.FromSystem;
-using Tumbleweed.Scalars;
+using Tumbleweed.Number.Real;
+using Tumbleweed.Number.Real.FromSystem;
+using Tumbleweed.Scalar;
 
 namespace DotGod.Time;
 

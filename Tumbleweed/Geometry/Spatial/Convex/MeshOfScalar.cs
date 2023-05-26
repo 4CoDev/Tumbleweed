@@ -1,5 +1,5 @@
-using Tumbleweed.Geometry.Spatial.Vertices;
-using Tumbleweed.Scalars;
+using Tumbleweed.Geometry.Spatial.Vertex;
+using Tumbleweed.Scalar;
 
 namespace Tumbleweed.Geometry.Spatial.Convex;
 

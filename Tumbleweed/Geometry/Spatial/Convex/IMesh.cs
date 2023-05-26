@@ -1,4 +1,4 @@
-using Tumbleweed.Geometry.Spatial.Vertices;
+using Tumbleweed.Geometry.Spatial.Vertex;
 
 namespace Tumbleweed.Geometry.Spatial.Convex;
 

@@ -14,7 +14,7 @@
 
     <ItemGroup>
       <Folder Include="Geometry\Spatial\Concave\" />
-      <Folder Include="Points\Planar\" />
+      <Folder Include="Point\Planar\" />
     </ItemGroup>
 
 </Project>

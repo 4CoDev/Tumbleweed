@@ -14,8 +14,12 @@
 
     <ItemGroup>
       <Folder Include="Geometry\Spatial\Concave\" />
-      <Folder Include="Points\" />
-      <Folder Include="ReadOnlySpans\ToSystem" />
+      <Folder Include="Point\" />
+      <Folder Include="ReadOnlySpan\ToSystem" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="String\Nullable\StringFromSystem.cs" />
     </ItemGroup>
 
 </Project>

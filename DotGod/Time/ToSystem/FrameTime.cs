@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Scalars;
+using Tumbleweed.Scalar;
 
 namespace DotGod.Time.ToSystem;
 

@@ -1,7 +1,7 @@
-using DotGod.Geometry.Spatial.Convex.Vertices;
+using DotGod.Geometry.Spatial.Convex.Vertex;
 using Godot;
 using Tumbleweed.Geometry.Spatial.Convex;
-using Tumbleweed.Scalars;
+using Tumbleweed.Scalar;
 
 namespace DotGod.Geometry.Spatial.Convex;
 
