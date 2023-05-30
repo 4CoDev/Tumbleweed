@@ -1,8 +1,8 @@
 using DotGod._Node.BatchMap.Spatial.Batches.Spaced;
 using DotGod._Node.BatchMap.Spatial.Spaces.Points;
-using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real;
-using Tumbleweed.Point.Spatial.Real.Arithmetic;
+using Tumbleweed.Spatial.Point;
+using Tumbleweed.Spatial.Point.Real;
+using Tumbleweed.Spatial.Point.Real.Arithmetic;
 using IRealNumber = Tumbleweed.Number.Real.IReal;
 using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
 

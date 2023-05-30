@@ -1,6 +1,6 @@
 using Tumbleweed.Array;
-using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar.FromArray.FromSpatial;
+using Tumbleweed.Spatial.Point;
 using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
 
 namespace DotGod._Node.BatchMap.Spatial.Batches.FromArray;

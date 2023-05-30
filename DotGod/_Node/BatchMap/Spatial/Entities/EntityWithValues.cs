@@ -1,6 +1,6 @@
 using DotGod._Node.BatchMap.Spatial.Entities.Equality;
 using DotGod._Node.BatchMap.Spatial.Spaces;
-using DotGod.Geometry.Spatial.Graphical._Mesh;
+using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 using Godot;
 using Tumbleweed._Object.Hash;
 using Tumbleweed._Object.String;

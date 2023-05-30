@@ -1,5 +1,5 @@
 using Tumbleweed._Boolean;
-using Tumbleweed.Subroutine.Function.Nullary.Equality.ByValues;
+using Tumbleweed.Subroutine.Nullary.Function.Equality.ByValues;
 
 namespace Tumbleweed.Scalar.Equality;
 

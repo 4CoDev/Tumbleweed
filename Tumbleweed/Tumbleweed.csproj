@@ -13,9 +13,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Geometry\Spatial\Concave\" />
-      <Folder Include="Point\" />
+      <Folder Include="Linear\Array\" />
       <Folder Include="ReadOnlySpan\ToSystem" />
+      <Folder Include="Spatial\Concave\Geometry\" />
     </ItemGroup>
 
     <ItemGroup>

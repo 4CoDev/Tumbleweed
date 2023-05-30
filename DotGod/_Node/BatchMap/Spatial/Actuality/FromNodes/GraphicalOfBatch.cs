@@ -3,7 +3,7 @@ using DotGod._Node.BatchMap.Spatial.Entities.FromNodes;
 using DotGod._Node.BatchMap.Spatial.Entities.Meshes;
 using DotGod._Node.FromTree;
 using DotGod._Node.Mesh;
-using DotGod.Geometry.Spatial.Graphical._Mesh;
+using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 using Godot;
 using Tumbleweed.Mutable;
 using Tumbleweed.Scalar;

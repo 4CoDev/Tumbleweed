@@ -1,5 +1,5 @@
 using Tumbleweed.Dictionary;
-using Tumbleweed.Subroutine.Action.Nullary;
+using Tumbleweed.Subroutine.Nullary.Action;
 
 namespace Tumbleweed.Event.Nullary._Action;
 

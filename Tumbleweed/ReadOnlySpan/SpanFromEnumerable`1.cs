@@ -1,4 +1,4 @@
-using Tumbleweed.Array.Linear.ToSystem;
+using Tumbleweed.Linear.Array.ToSystem;
 using Tumbleweed.ReadOnlySpan.FromSystem;
 
 namespace Tumbleweed.ReadOnlySpan;

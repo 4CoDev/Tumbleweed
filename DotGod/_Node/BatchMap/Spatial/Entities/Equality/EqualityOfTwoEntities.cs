@@ -1,9 +1,9 @@
-using DotGod.Geometry.Spatial.Graphical._Mesh;
+using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 using Godot;
 using Tumbleweed._Boolean;
 using Tumbleweed._Boolean.Algebra;
 using Tumbleweed.Nullable;
-using Tumbleweed.Subroutine.Function.Nullary.Equality.ByValues;
+using Tumbleweed.Subroutine.Nullary.Function.Equality.ByValues;
 
 namespace DotGod._Node.BatchMap.Spatial.Entities.Equality;
 

@@ -1,4 +1,4 @@
-using Tumbleweed.Subroutine.Function.Nullary;
+using Tumbleweed.Subroutine.Nullary.Function;
 
 namespace Tumbleweed.Scalar;
 

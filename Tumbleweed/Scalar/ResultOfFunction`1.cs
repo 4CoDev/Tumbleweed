@@ -1,7 +1,7 @@
 using Tumbleweed._Object.Hash;
 using Tumbleweed._Object.String;
 using Tumbleweed.Scalar.Equality;
-using Tumbleweed.Subroutine.Function.Nullary;
+using Tumbleweed.Subroutine.Nullary.Function;
 
 namespace Tumbleweed.Scalar;
 

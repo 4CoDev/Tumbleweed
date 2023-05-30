@@ -13,8 +13,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Geometry\Spatial\Concave\" />
-      <Folder Include="Point\Planar\" />
+      <Folder Include="Spatial\Concave\" />
+      <Folder Include="Spatial\Geometry\Mesh\Vertex\" />
+      <Folder Include="Spatial\Vector\" />
     </ItemGroup>
 
 </Project>

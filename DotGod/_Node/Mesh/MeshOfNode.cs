@@ -1,5 +1,5 @@
-using DotGod.Geometry.Spatial.Graphical._Mesh;
-using DotGod.Geometry.Spatial.Graphical._Mesh.FromArrayMesh.FromGodot;
+using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
+using DotGod.Spatial.Graphical.Concave.Geometry._Mesh.FromArrayMesh.FromGodot;
 using Godot;
 using Tumbleweed.Scalar;
 

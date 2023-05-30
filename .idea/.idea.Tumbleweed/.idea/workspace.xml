@@ -33,6 +33,7 @@
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Number/Integer/Signed/OfSystem/_Int32/LessThenInts32.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Comparison/IsEqualsToPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Scalar/Equality/EqualityOfTwoNullables`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tumbleweed/Subroutine/Nullary/Action/ActionOfScalar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/_Byte/BytesFromBits.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/_Enumerable/EnumerableOfFunction`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/_Enumerable/Lazy/LazyEnumerable`1.cs" root0="FORCE_HIGHLIGHTING" />

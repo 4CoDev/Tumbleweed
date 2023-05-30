@@ -1,4 +1,4 @@
-using Tumbleweed.Point.Spatial;
+using Tumbleweed.Spatial.Point;
 
 namespace Tumbleweed.Number.Integer.Natural.Spatial;
 

@@ -1,6 +1,6 @@
 using Tumbleweed.Number.Real;
-using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real.Arithmetic;
+using Tumbleweed.Spatial.Point;
+using Tumbleweed.Spatial.Point.Real.Arithmetic;
 
 namespace DotGod._Node.BatchMap.Spatial.Spaces;
 

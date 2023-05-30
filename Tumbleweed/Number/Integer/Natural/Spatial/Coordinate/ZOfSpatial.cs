@@ -1,5 +1,5 @@
-using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Coordinate;
+using Tumbleweed.Spatial.Point;
+using Tumbleweed.Spatial.Point.Coordinate;
 
 namespace Tumbleweed.Number.Integer.Natural.Spatial.Coordinate;
 

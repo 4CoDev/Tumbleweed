@@ -1,6 +1,6 @@
 using DotGod._Node.BatchMap.Spatial.Spaces.Octants;
 using Tumbleweed.Number.Integer.Natural;
-using Tumbleweed.Point.Spatial;
+using Tumbleweed.Spatial.Point;
 
 namespace DotGod._Node.BatchMap.Spatial.Batches.Spaced;
 

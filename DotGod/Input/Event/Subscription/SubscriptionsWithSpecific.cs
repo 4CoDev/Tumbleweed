@@ -1,5 +1,5 @@
 using Tumbleweed.Event.Subscription;
-using Tumbleweed.Subroutine.Action.Nullary;
+using Tumbleweed.Subroutine.Nullary.Action;
 
 namespace DotGod.Input.Event.Subscription;
 

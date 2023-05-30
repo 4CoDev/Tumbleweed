@@ -1,5 +1,5 @@
 using DotGod._Node.BatchMap.Spatial.Spaces.Octants;
-using Tumbleweed.Point.Spatial;
+using Tumbleweed.Spatial.Point;
 using IRealNumber = Tumbleweed.Number.Real.IReal;
 
 namespace DotGod._Node.BatchMap.Spatial.Batches.Spaced;

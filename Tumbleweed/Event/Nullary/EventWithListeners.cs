@@ -1,6 +1,6 @@
 using Tumbleweed.Event.Nullary._Action;
 using Tumbleweed.Event.Subscription;
-using Tumbleweed.Subroutine.Action.Nullary;
+using Tumbleweed.Subroutine.Nullary.Action;
 
 namespace Tumbleweed.Event.Nullary;
 
