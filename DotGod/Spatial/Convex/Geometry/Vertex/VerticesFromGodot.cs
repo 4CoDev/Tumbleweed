@@ -1,11 +1,11 @@
-using DotGod.Spatial.Convex.Geometry.Mesh.Vertex.Godot;
+using DotGod.Spatial.Convex.Geometry.Vertex.Godot;
 using DotGod.Spatial.Vector.Point;
 using Godot;
 using Tumbleweed._Enumerable;
 using Tumbleweed.Scalar;
 using Tumbleweed.Spatial.Geometry.Vertex;
 
-namespace DotGod.Spatial.Convex.Geometry.Mesh.Vertex;
+namespace DotGod.Spatial.Convex.Geometry.Vertex;
 
 public sealed class VerticesFromGodot : EnumerableEnvelope<IVertex>
 {

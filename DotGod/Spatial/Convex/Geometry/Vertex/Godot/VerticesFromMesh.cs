@@ -2,7 +2,7 @@ using Godot;
 using Tumbleweed._Collection;
 using Tumbleweed.Scalar;
 
-namespace DotGod.Spatial.Convex.Geometry.Mesh.Vertex.Godot;
+namespace DotGod.Spatial.Convex.Geometry.Vertex.Godot;
 
 public sealed class VerticesFromMesh : CollectionEnvelope<Vector3>
 {

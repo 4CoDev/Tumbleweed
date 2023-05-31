@@ -1,5 +1,5 @@
 using DotGod._Node.BatchMap.Spatial.Spaces;
-using DotGod.Spatial.Geometry.Mesh.Vertex.Space;
+using DotGod.Spatial.Geometry.Vertex.Space;
 using Tumbleweed.Spatial.Convex.Geometry.Mesh;
 using Tumbleweed.Spatial.Convex.Geometry.Vertice;
 

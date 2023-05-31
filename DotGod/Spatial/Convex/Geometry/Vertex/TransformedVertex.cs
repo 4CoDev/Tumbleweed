@@ -3,7 +3,7 @@ using Godot;
 using Tumbleweed.Scalar;
 using Tumbleweed.Spatial.Geometry.Vertex;
 
-namespace DotGod.Spatial.Convex.Geometry.Mesh.Vertex;
+namespace DotGod.Spatial.Convex.Geometry.Vertex;
 
 public sealed class TransformedVertex : VertexEnvelope
 {

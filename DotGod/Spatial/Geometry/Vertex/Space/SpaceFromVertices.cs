@@ -2,7 +2,7 @@ using DotGod._Node.BatchMap.Spatial.Spaces;
 using Tumbleweed.Spatial.Geometry.Vertex;
 using Tumbleweed.Spatial.Geometry.Vertex.Comparison;
 
-namespace DotGod.Spatial.Geometry.Mesh.Vertex.Space;
+namespace DotGod.Spatial.Geometry.Vertex.Space;
 
 public sealed class SpaceFromVertices : SpaceEnvelope
 {
