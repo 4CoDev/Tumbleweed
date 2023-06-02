@@ -1,4 +1,4 @@
-using DotGod._Node.BatchMap.Spatial.Spaces;
+using DotGod.Spatial._Node.Batch.Spaces;
 using DotGod.Spatial.Convex.Geometry.Mesh;
 using DotGod.Spatial.Convex.Geometry.Mesh.Space;
 using Godot;

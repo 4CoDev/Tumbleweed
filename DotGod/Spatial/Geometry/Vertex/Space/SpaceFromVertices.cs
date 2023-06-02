@@ -1,4 +1,4 @@
-using DotGod._Node.BatchMap.Spatial.Spaces;
+using DotGod.Spatial._Node.Batch.Spaces;
 using Tumbleweed.Spatial.Geometry.Vertex;
 using Tumbleweed.Spatial.Geometry.Vertex.Comparison;
 
