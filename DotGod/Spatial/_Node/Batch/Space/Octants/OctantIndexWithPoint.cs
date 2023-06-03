@@ -1,4 +1,4 @@
-using DotGod.Spatial._Node.Batch.Spaces.Points;
+using DotGod.Spatial._Node.Batch.Space.Points;
 using DotGod.Spatial._Node.Spaced.Batch;
 using Tumbleweed.Number.Integer.Natural.Spatial;
 using Tumbleweed.Spatial.Point;
@@ -7,7 +7,7 @@ using Tumbleweed.Spatial.Point.Real.Arithmetic.Rounding;
 using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
 using IRealNumber = Tumbleweed.Number.Real.IReal;
 
-namespace DotGod.Spatial._Node.Batch.Spaces.Octants;
+namespace DotGod.Spatial._Node.Batch.Space.Octants;
 
 public sealed class OctantIndexWithPoint : PointEnvelope<INaturalNumber>
 {

@@ -1,5 +1,5 @@
 using DotGod.Spatial._Node.Batch;
-using DotGod.Spatial._Node.Batch.Spaces;
+using DotGod.Spatial._Node.Batch.Space;
 
 namespace DotGod.Spatial._Node.Spaced.Batch;
 

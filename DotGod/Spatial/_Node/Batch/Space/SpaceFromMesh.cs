@@ -1,9 +1,7 @@
-using DotGod.Spatial._Node.Batch.Spaces;
-using DotGod.Spatial.Geometry.Vertex.Space;
 using Tumbleweed.Spatial.Convex.Geometry.Mesh;
 using Tumbleweed.Spatial.Convex.Geometry.Vertice;
 
-namespace DotGod.Spatial.Convex.Geometry.Mesh.Space;
+namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class SpaceFromMesh : SpaceEnvelope
 {

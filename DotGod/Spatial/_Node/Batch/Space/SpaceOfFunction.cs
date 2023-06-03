@@ -1,7 +1,7 @@
 using Tumbleweed.Scalar;
 using Tumbleweed.Subroutine.Nullary.Function;
 
-namespace DotGod.Spatial._Node.Batch.Spaces;
+namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class SpaceOfFunction : SpaceEnvelope
 {

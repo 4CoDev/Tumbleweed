@@ -2,7 +2,7 @@ using Tumbleweed.Number.Real;
 using Tumbleweed.Spatial.Point;
 using Tumbleweed.Spatial.Point.Real.Arithmetic;
 
-namespace DotGod.Spatial._Node.Batch.Spaces;
+namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class HalfOfSpace : PointEnvelope<IReal>
 {

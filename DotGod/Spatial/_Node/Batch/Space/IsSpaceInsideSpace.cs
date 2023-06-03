@@ -1,9 +1,9 @@
-using DotGod.Spatial._Node.Batch.Spaces.Points;
+using DotGod.Spatial._Node.Batch.Space.Points;
 using Tumbleweed._Boolean;
 using Tumbleweed._Boolean.Algebra;
 using Tumbleweed.Spatial.Point.Real.Comparison;
 
-namespace DotGod.Spatial._Node.Batch.Spaces;
+namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class IsSpaceInsideSpace : BooleanEnvelope
 {

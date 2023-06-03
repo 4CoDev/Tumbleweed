@@ -1,7 +1,7 @@
 using Tumbleweed.Number.Real;
 using Tumbleweed.Spatial.Point;
 
-namespace DotGod.Spatial._Node.Batch.Spaces.Points;
+namespace DotGod.Spatial._Node.Batch.Space.Points;
 
 public sealed class FromPointOfSpace : PointEnvelope<IReal>
 {

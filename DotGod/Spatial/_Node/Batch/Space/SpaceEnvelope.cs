@@ -1,7 +1,7 @@
 using Tumbleweed.Number.Real;
 using Tumbleweed.Spatial.Point;
 
-namespace DotGod.Spatial._Node.Batch.Spaces;
+namespace DotGod.Spatial._Node.Batch.Space;
 
 public abstract class SpaceEnvelope : ISpace
 {

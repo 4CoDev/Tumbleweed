@@ -1,9 +1,9 @@
-using DotGod.Spatial._Node.Batch.Spaces.Octants.Points;
+using DotGod.Spatial._Node.Batch.Space.Octants.Points;
 using DotGod.Spatial._Node.Spaced.Batch;
 using Tumbleweed.Spatial.Point;
 using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
 
-namespace DotGod.Spatial._Node.Batch.Spaces.Octants;
+namespace DotGod.Spatial._Node.Batch.Space.Octants;
 
 public sealed class OctantWithIndex : SpaceEnvelope
 {

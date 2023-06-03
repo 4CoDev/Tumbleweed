@@ -1,6 +1,6 @@
 using DotGod.Spatial._Node.Batch;
 using DotGod.Spatial._Node.Batch.Entities;
-using DotGod.Spatial._Node.Batch.Spaces;
+using DotGod.Spatial._Node.Batch.Space;
 using Tumbleweed.Array;
 using Tumbleweed.Nullable;
 

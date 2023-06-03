@@ -1,9 +1,9 @@
-using DotGod.Spatial._Node.Batch.Spaces.Points;
+using DotGod.Spatial._Node.Batch.Space.Points;
 using Tumbleweed.Number.Real;
 using Tumbleweed.Spatial.Point;
 using Tumbleweed.Spatial.Point.Real.Comparison;
 
-namespace DotGod.Spatial._Node.Batch.Spaces;
+namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class NormalizedSpace : ISpace
 {

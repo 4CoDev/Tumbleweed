@@ -1,4 +1,4 @@
-using DotGod.Spatial._Node.Batch.Spaces.Octants;
+using DotGod.Spatial._Node.Batch.Space.Octants;
 using Tumbleweed.Number.Integer.Natural;
 using Tumbleweed.Spatial.Point;
 

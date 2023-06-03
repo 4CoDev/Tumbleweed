@@ -14,7 +14,6 @@
 
     <ItemGroup>
       <Folder Include="Spatial\Concave\" />
-      <Folder Include="Spatial\Geometry\Mesh\" />
       <Folder Include="Spatial\Vector\" />
       <Folder Include="_Node\Batch\Map\" />
     </ItemGroup>

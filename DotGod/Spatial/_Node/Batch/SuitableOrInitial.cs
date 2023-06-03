@@ -1,6 +1,6 @@
 using DotGod.Spatial._Node.Batch.Entities;
-using DotGod.Spatial._Node.Batch.Spaces;
-using DotGod.Spatial._Node.Batch.Spaces.Points;
+using DotGod.Spatial._Node.Batch.Space;
+using DotGod.Spatial._Node.Batch.Space.Points;
 using DotGod.Spatial._Node.Spaced.Batch;
 
 namespace DotGod.Spatial._Node.Batch;
