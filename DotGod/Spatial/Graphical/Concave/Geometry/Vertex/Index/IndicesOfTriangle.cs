@@ -1,19 +1,20 @@
-using Tumbleweed._Enumerable;
-using Tumbleweed._Enumerable.FromSystem;
+using Tumbleweed.Enumerable;
+
+using Tumbleweed.Enumerable.Nested.Item.Value.At.Index;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex.Index;
 
 public sealed class IndicesOfTriangle
-	: EnumerableEnvelope<Int32>
+	: Tumbleweed.Enumerable.Envelope<Int32>
 {
 	public IndicesOfTriangle
 	(
 		IEnumerable<Int32> indices,
-		IScalar<Int32> triangle
+		Any<Int32> triangle
 	) : base
 	(
-		new EnumerableAtIndex<Int32>(
+		new System<Int32>(
 			new GroupedIntoTriangles(indices),
 			triangle)
 	)

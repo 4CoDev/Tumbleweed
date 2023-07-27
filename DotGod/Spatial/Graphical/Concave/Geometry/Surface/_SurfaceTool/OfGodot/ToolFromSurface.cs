@@ -3,12 +3,12 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot;
 
-public sealed class ToolFromSurface : IScalar<SurfaceTool>
+public sealed class ToolFromSurface : Any<SurfaceTool>
 {
 	public ToolFromSurface
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	)
 	{
 		this.mesh = mesh;
@@ -25,7 +25,7 @@ public sealed class ToolFromSurface : IScalar<SurfaceTool>
 		}
 	}
 
-	private readonly IScalar<ArrayMesh> mesh;
+	private readonly Any<ArrayMesh> mesh;
 	
-	private readonly IScalar<Int32> surface;
+	private readonly Any<Int32> surface;
 }

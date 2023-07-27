@@ -1,31 +1,32 @@
 using Godot;
-using Tumbleweed.Number.Integer.Natural;
-using Tumbleweed.Number.Integer.Natural.ToSystem;
+using Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
+using Tumbleweed.Number.Natural;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Normal.FromMeshDataTool.ToGodot;
 
-public sealed class NormalOfVertex : ScalarEnvelope<Vector3>
+public sealed class NormalOfVertex : Envelope<Vector3>
 {
 	public NormalOfVertex
 	(
-		IScalar<MeshDataTool> tool,
-		INatural vertex
+		Any<MeshDataTool> tool,
+		Any vertex
 	) : this
 	(
 		tool,
-		new Int32FromNatural(vertex)
+		new One(vertex)
 	)
 	{
 	}
 
 	public NormalOfVertex
 	(
-		IScalar<MeshDataTool> mesh,
-		IScalar<Int32> vertex
+		Any<MeshDataTool> mesh,
+		Any<Int32> vertex
 	) : base
 	(
-		new ResultOfFunction<Vector3>(
+		new Tumbleweed.Scalar.Function.Result<Vector3>(
 			() => mesh.Value.GetVertexNormal(vertex.Value))
 	)
 	{

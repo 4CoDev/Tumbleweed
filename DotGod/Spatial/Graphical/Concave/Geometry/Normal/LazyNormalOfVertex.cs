@@ -1,14 +1,14 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Point.Spatial;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Normal;
 
-public sealed class LazyNormalOfVertex : PointEnvelope<IReal>
+public sealed class LazyNormalOfVertex : Envelope<Any>
 {
 	public LazyNormalOfVertex(IVertex vertex) : base
 	(
-		new LazyPoint<IReal>(
+		new Tumbleweed.Point.Spatial.Lazy<Any>(
 			new NormalOfVertex(vertex))
 	)
 	{

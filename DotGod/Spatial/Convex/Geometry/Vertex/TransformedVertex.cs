@@ -1,21 +1,25 @@
 using DotGod.Spatial.Point;
 using Godot;
+using Tumbleweed.Geometry.Spatial.Vertex;
+using Tumbleweed.Geometry.Spatial.Vertex.Translation;
+using Tumbleweed.Geometry.Spatial.Vertex.With;
+using Tumbleweed.Geometry.Spatial.Vertex.With.Translation;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Geometry.Vertex;
+using One = Tumbleweed.Geometry.Spatial.Vertex.With.Translation.One;
 
 namespace DotGod.Spatial.Convex.Geometry.Vertex;
 
-public sealed class TransformedVertex : VertexEnvelope
+public sealed class TransformedVertex : Envelope
 {
 	public TransformedVertex
 	(
-		IVertex vertex,
-		IScalar<Transform3D> transform
+		Any vertex,
+		Any<Transform3D> transform
 	) : base
 	(
-		new VertexWithTranslation(
+		new One(
 			new TransformedPoint(
-				new TranslationOfVertex(vertex),
+				new Tumbleweed.Geometry.Spatial.Vertex.Translation.One(vertex),
 				transform))
 	)
 	{

@@ -1,4 +1,5 @@
 using Tumbleweed.Nullable;
+using System = System;
 
 namespace Tumbleweed.Dictionary.Element;
 
@@ -7,16 +8,16 @@ public abstract class ElementEnvelope<T> : IDictionaryElement<T> where T : notnu
 	protected ElementEnvelope(IDictionaryElement<T> element) =>
 		this.element = element;
 
-	public override Boolean Equals(Object? @object) =>
+	public override System::Boolean Equals(System::Object? @object) =>
 		element.Equals(@object);
 
 	public override Int32 GetHashCode() =>
 		element.GetHashCode();
 
-	public override String? ToString() =>
+	public override System::String? ToString() =>
 		element.ToString();
 
-	public INullable<T> Nullability => element.Nullability;
+	public Any<T> Nullability => element.Nullability;
 
 	public void Remove() => element.Remove();
 

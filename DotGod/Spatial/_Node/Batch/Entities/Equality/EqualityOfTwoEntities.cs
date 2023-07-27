@@ -1,13 +1,14 @@
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using Godot;
-using Tumbleweed._Boolean;
-using Tumbleweed._Boolean.Algebra;
+using Tumbleweed.Boolean;
+using Tumbleweed.Boolean.Comparison.Both.Are;
 using Tumbleweed.Nullable;
-using Tumbleweed.Subroutine.Nullary.Function.Equality.ByValues;
+using Tumbleweed.Subroutine.Function.Nullary.Equality.Structural;
+using Tumbleweed.Subroutine.Function.Nullary.Equality.Structural.Of;
+using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
 
 namespace DotGod.Spatial._Node.Batch.Entities.Equality;
 
-public sealed class EqualityOfTwoEntities : BooleanEnvelope
+public sealed class EqualityOfTwoEntities : Tumbleweed.Boolean.Envelope
 {
 	public EqualityOfTwoEntities
 	(
@@ -27,11 +28,11 @@ public sealed class EqualityOfTwoEntities : BooleanEnvelope
 		ISpatialEntity second
 	) : base
 	(
-		new AndOfTwoBooleans(
-			new EqualityOfTwoFunctions<INullable<Node>>(
+		new True(
+			new Two<Any<Godot.Node>>(
 				() => first.Node,
 				() => second.Node),
-			new EqualityOfTwoFunctions<IMesh>(
+			new Two<IMesh>(
 				() => first.Mesh,
 				() => second.Mesh))
 	)

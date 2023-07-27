@@ -1,11 +1,11 @@
 using DotGod.Spatial._Node.Batch.Space.Points;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
-using Tumbleweed.Spatial.Point.Real.Arithmetic.Distance;
+using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Real.Arithmetic.Distance;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
-public sealed class SizeOfSpace : PointEnvelope<IReal>
+public sealed class SizeOfSpace : Envelope<Tumbleweed.Number.Real.Any>
 {
 	public SizeOfSpace(ISpace space) : base
 	(

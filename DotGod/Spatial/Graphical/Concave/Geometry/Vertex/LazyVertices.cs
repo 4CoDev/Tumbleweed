@@ -1,12 +1,12 @@
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 
-public sealed class LazyVertices : EnumerableEnvelope<IVertex>
+public sealed class LazyVertices : Envelope<IVertex>
 {
 	public LazyVertices(IEnumerable<IVertex> vertices) : base
 	(
-		new Tumbleweed._Enumerable.Lazy.SelectedByExpression<IVertex>(
+		new Tumbleweed.Enumerable.Lazy.Selected<IVertex>(
 			vertices,
 			vertex => new LazyVertex(vertex))
 	)

@@ -1,19 +1,19 @@
-using Tumbleweed.Event.Nullary;
-using Tumbleweed.Subroutine.Nullary.Action;
+using Tumbleweed.Event.Nullary.With;
+using NullaryProcedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace DotGod.Iteration.Event;
 
-public sealed class EventsWithListeners : EventsEnvelope
+public sealed class EventsWithListeners : Envelope
 {
 	public EventsWithListeners
 	(
-		IDictionary<Object, IAction> graphical,
-		IDictionary<Object, IAction> physical
+		IDictionary<Object, NullaryProcedure.Any> graphical,
+		IDictionary<Object, NullaryProcedure.Any> physical
 	) : base
 	(
 		new EventsWithSpecific(
-			new EventWithListeners(graphical),
-			new EventWithListeners(physical))
+			new Listeners(graphical),
+			new Listeners(physical))
 	)
 	{
 	}

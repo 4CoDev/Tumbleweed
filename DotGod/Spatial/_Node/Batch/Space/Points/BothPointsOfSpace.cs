@@ -1,15 +1,15 @@
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Point.Spatial;
+using Enumerable = Tumbleweed.Enumerable;
 
 namespace DotGod.Spatial._Node.Batch.Space.Points;
 
-public sealed class BothPointsOfSpace :
-	EnumerableEnvelope<IPoint<IReal>>
+public sealed class BothPointsOfSpace : Enumerable.Envelope<Any<Tumbleweed.Number.Real.Any>>
 {
 	public BothPointsOfSpace(ISpace occupation) : base
 	(
-		new EnumerableWithElements<IPoint<IReal>>(
+		new Enumerable::From.Array<Any<Tumbleweed.Number.Real.Any>>(
 			new FromPointOfSpace(occupation),
 			new ToPointOfSpace(occupation))
 	)

@@ -1,5 +1,6 @@
-using Tumbleweed.Scalar;
-using Tumbleweed.Subroutine.Nullary.Function;
+using Tumbleweed.Scalar.Function;
+using Tumbleweed.Subroutine.Function.Nullary;
+using Tumbleweed.Subroutine.Function.Nullary.From;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 
@@ -7,15 +8,15 @@ public sealed class MeshOfFunction : MeshEnvelope
 {
 	public MeshOfFunction(Func<IMesh> function) : this
 	(
-		new FunctionFromSystem<IMesh>(function)
+		new System<IMesh>(function)
 	)
 	{
 	}
 	
-	public MeshOfFunction(IFunction<IMesh> function) : base
+	public MeshOfFunction(Tumbleweed.Subroutine.Function.Nullary.Any<IMesh> function) : base
 	(
 		new MeshOfScalar(
-			new ResultOfFunction<IMesh>(function))
+			new Tumbleweed.Scalar.Function.Result<IMesh>(function))
 	)
 	{
 	}

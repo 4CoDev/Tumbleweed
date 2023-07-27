@@ -3,12 +3,12 @@ using Tumbleweed.Scalar;
 
 namespace DotGod._Color;
 
-public sealed class ColorFromMeshDataTool : IScalar<Color>
+public sealed class ColorFromMeshDataTool : Any<Color>
 {
 	public ColorFromMeshDataTool
 	(
-		IScalar<MeshDataTool> meshDataTool,
-		IScalar<Int32> vertex
+		Any<MeshDataTool> meshDataTool,
+		Any<Int32> vertex
 	)
 	{
 		this.meshDataTool = meshDataTool;
@@ -17,7 +17,7 @@ public sealed class ColorFromMeshDataTool : IScalar<Color>
 
 	public Color Value => meshDataTool.Value.GetVertexColor(vertex.Value);
 
-	private readonly IScalar<MeshDataTool> meshDataTool;
+	private readonly Any<MeshDataTool> meshDataTool;
 	
-	private readonly IScalar<Int32> vertex;
+	private readonly Any<Int32> vertex;
 }

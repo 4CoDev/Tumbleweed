@@ -1,17 +1,18 @@
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Function;
 
 namespace DotGod.Spatial._Node.Batch.Space.Points;
 
-public sealed class FromPointOfSpace : PointEnvelope<IReal>
+public sealed class FromPointOfSpace : Envelope<Tumbleweed.Number.Real.Any>
 {
 	public FromPointOfSpace
 	(
-		ISpace occupation
+		ISpace space
 	) : base
 	(
-		new PointOfFunction<IReal>(
-			() => occupation.From)
+		new Result<Tumbleweed.Number.Real.Any>(
+			() => space.From)
 	)
 	{
 	}

@@ -1,6 +1,7 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface;
 using Godot;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
@@ -14,7 +15,7 @@ public sealed class TransformedMesh : MeshEnvelope
 	) : this
 	(
 		mesh,
-		new ScalarValue<Transform3D>(transform)
+		new Tumbleweed.Scalar.Of.Value<Transform3D>(transform)
 	)
 	{
 	}
@@ -22,12 +23,12 @@ public sealed class TransformedMesh : MeshEnvelope
 	public TransformedMesh
 	(
 		IMesh mesh,
-		IScalar<Transform3D> transform
+		Any<Transform3D> transform
 	) : base
 	(
 		new MeshWithSurfaces(
 			new TransformedSurfaces(
-				new EnumerableOfFunction<ISurface>(
+				new Result<ISurface>(
 					() => mesh.Surfaces),
 				transform))
 	)

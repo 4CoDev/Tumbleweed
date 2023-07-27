@@ -4,7 +4,7 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.ToGodot;
 
-public sealed class MeshFromTumbleweed : ScalarEnvelope<Godot.ArrayMesh>
+public sealed class MeshFromTumbleweed : Envelope<Godot.ArrayMesh>
 {
 	public MeshFromTumbleweed(IMesh mesh) : base
 	(

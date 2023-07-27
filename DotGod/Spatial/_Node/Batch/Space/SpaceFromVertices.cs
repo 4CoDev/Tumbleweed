@@ -1,22 +1,23 @@
-using Tumbleweed.Spatial.Geometry.Vertex;
-using Tumbleweed.Spatial.Geometry.Vertex.Comparison;
+using Tumbleweed.Geometry.Spatial.Vertex;
+using Tumbleweed.Geometry.Spatial.Vertex.Comparison;
+using Tumbleweed.Geometry.Spatial.Vertex.Translation;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class SpaceFromVertices : SpaceEnvelope
 {
-	public SpaceFromVertices(IEnumerable<IVertex> vertices) : this
+	public SpaceFromVertices(IEnumerable<Tumbleweed.Geometry.Spatial.Vertex.Any> vertices) : this
 	(
-		new List<IVertex>(vertices)
+		new List<Tumbleweed.Geometry.Spatial.Vertex.Any>(vertices)
 	)
 	{
 	}
 	
-	public SpaceFromVertices(ICollection<IVertex> vertices) : base
+	public SpaceFromVertices(ICollection<Tumbleweed.Geometry.Spatial.Vertex.Any> vertices) : base
 	(
 		new SpaceWithPoints(
-			new TranslationOfVertex(new SmallestOfVertices(vertices)),
-			new TranslationOfVertex(new LargestOfVertices(vertices)))
+			new One(new Smallest(vertices)),
+			new One(new Largest(vertices)))
 	)
 	{
 	}

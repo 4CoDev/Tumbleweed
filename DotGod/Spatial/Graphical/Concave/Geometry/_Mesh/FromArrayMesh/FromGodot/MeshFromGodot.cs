@@ -9,12 +9,12 @@ public sealed class MeshFromGodot : MeshEnvelope
 {
 	public MeshFromGodot(Godot.Mesh mesh) : this
 	(
-		new ScalarValue<Godot.Mesh>(mesh)
+		new Tumbleweed.Scalar.Of.Value<Godot.Mesh>(mesh)
 	)
 	{
 	}
 	
-	public MeshFromGodot(IScalar<Godot.Mesh> mesh) : this
+	public MeshFromGodot(Any<Godot.Mesh> mesh) : this
 	(
 		new ArrayMeshFromMesh(mesh)
 	)
@@ -23,12 +23,12 @@ public sealed class MeshFromGodot : MeshEnvelope
 	
 	public MeshFromGodot(ArrayMesh mesh) : this
 	(
-		new ScalarValue<ArrayMesh>(mesh)
+		new Tumbleweed.Scalar.Of.Value<ArrayMesh>(mesh)
 	)
 	{
 	}
 	
-	public MeshFromGodot(IScalar<ArrayMesh> mesh) : base
+	public MeshFromGodot(Any<ArrayMesh> mesh) : base
 	(
 		new MeshWithSurfaces(
 			new SurfacesFromMesh(mesh))

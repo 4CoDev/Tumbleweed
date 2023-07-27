@@ -1,17 +1,18 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Spatial.Transform.FromVector3;
 
-public sealed class TranslatedTransform3D : ScalarEnvelope<Transform3D>
+public sealed class TranslatedTransform3D : Envelope<Transform3D>
 {
 	public TranslatedTransform3D
 	(
-		IScalar<Transform3D> transform,
-		IScalar<Vector3> translation
+		Any<Transform3D> transform,
+		Any<Vector3> translation
 	) : base
 	(
-		new ResultOfFunction<Transform3D>(
+		new Tumbleweed.Scalar.Function.Result<Transform3D>(
 			() => transform.Value.Translated(translation.Value))
 	)
 	{

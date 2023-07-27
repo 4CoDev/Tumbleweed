@@ -12,7 +12,7 @@ namespace DotGod.Spatial._Node.Batch.Actuality.FromNodes;
 
 public sealed class GraphicalOfBatch : ISpaceActuality
 {
-	public GraphicalOfBatch(IScalar<Node3D> node)
+	public GraphicalOfBatch(Tumbleweed.Scalar.Any<Node3D> node)
 	{
 		this.node = node;
 		mesh = new MutableOfNode(
@@ -26,7 +26,7 @@ public sealed class GraphicalOfBatch : ISpaceActuality
 				new EntitiesOfBatch(node));
 	}
 
-	private readonly IMutable<IMesh> mesh;
+	private readonly Tumbleweed.Mutable.Any<IMesh> mesh;
 
-	private readonly IScalar<Node3D> node;
+	private readonly Tumbleweed.Scalar.Any<Node3D> node;
 }

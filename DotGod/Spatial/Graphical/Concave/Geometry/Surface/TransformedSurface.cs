@@ -9,7 +9,7 @@ public sealed class TransformedSurface : SurfaceEnvelope
 	public TransformedSurface
 	(
 		ISurface surface,
-		IScalar<Transform3D> transform
+		Any<Transform3D> transform
 	) : base
 	(
 		new SurfaceWithValues(

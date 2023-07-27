@@ -4,13 +4,13 @@ namespace DotGod.Input.Event;
 
 public sealed class EventsWithSpecific : IEvents
 {
-	public EventsWithSpecific(IEvent handled, IEvent unhandled)
+	public EventsWithSpecific(Any handled, Any unhandled)
 	{
 		Handled = handled;
 		Unhandled = unhandled;
 	}
 
-	public IEvent Handled { get; }
+	public Any Handled { get; }
 
-	public IEvent Unhandled { get; }
+	public Any Unhandled { get; }
 }

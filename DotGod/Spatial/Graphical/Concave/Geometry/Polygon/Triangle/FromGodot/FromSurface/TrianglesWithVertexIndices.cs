@@ -1,21 +1,21 @@
 using Godot;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Polygon.Triangle.FromGodot.
 	FromSurface;
 
 public sealed class TrianglesWithVertexIndices
-	: EnumerableEnvelope<IPolygon>
+	: Tumbleweed.Enumerable.Envelope<IPolygon>
 {
 	public TrianglesWithVertexIndices
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface,
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface,
 		IEnumerable<IEnumerable<Int32>> triangles
 	) : base
 	(
-		new SelectedByExpression<IEnumerable<Int32>, IPolygon>(
+		new Selected<IEnumerable<Int32>, IPolygon>(
 			triangles,
 			vertices => Expression(mesh, surface, vertices))
 	)
@@ -24,8 +24,8 @@ public sealed class TrianglesWithVertexIndices
 
 	private static IPolygon Expression
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface,
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface,
 		IEnumerable<Int32> vertices
 	) =>
 	(

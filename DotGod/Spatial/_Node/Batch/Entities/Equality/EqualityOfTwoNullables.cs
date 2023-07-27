@@ -1,10 +1,12 @@
-using Tumbleweed._Boolean;
+using Tumbleweed.Boolean;
+using Tumbleweed.Boolean.Function;
 using Tumbleweed.Nullable;
-using Tumbleweed.Nullable.FromSystem;
+using Tumbleweed.Nullable.As;
+using Tumbleweed.Nullable.From.System;
 
 namespace DotGod.Spatial._Node.Batch.Entities.Equality;
 
-public sealed class EqualityOfTwoNullables : BooleanEnvelope
+public sealed class EqualityOfTwoNullables : Tumbleweed.Boolean.Envelope
 {
 	public EqualityOfTwoNullables
 	(
@@ -12,20 +14,20 @@ public sealed class EqualityOfTwoNullables : BooleanEnvelope
 		Object? second
 	) : this
 	(
-		new NullableFromSystem<Object>(first),
-		new NullableFromSystem<Object>(second)
+		new One<Object>(first),
+		new One<Object>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		INullable<Object> first,
-		INullable<Object> second
+		Any<Object> first,
+		Any<Object> second
 	) : this
 	(
-		new NullableAsType<ISpatialEntity>(first),
-		new NullableAsType<ISpatialEntity>(second)
+		new Type<ISpatialEntity>(first),
+		new Type<ISpatialEntity>(second)
 	)
 	{
 	}
@@ -36,31 +38,31 @@ public sealed class EqualityOfTwoNullables : BooleanEnvelope
 		ISpatialEntity? second
 	) : this
 	(
-		new NullableFromSystem<ISpatialEntity>(first),
-		new NullableFromSystem<ISpatialEntity>(second)
+		new One<ISpatialEntity>(first),
+		new One<ISpatialEntity>(second)
 	)
 	{
 	}
 	
 	public EqualityOfTwoNullables
 	(
-		INullable<ISpatialEntity> first,
-		INullable<ISpatialEntity> second
+		Any<ISpatialEntity> first,
+		Any<ISpatialEntity> second
 	) : base
 	(
-		new BooleanOfFunction(
+		new Tumbleweed.Boolean.Function.Result(
 			() => Function(first, second))
 	)
 	{
 	}
 
-	private static IBoolean Function
+	private static Tumbleweed.Boolean.Any Function
 	(
-		INullable<ISpatialEntity> first,
-		INullable<ISpatialEntity> second
+		Any<ISpatialEntity> first,
+		Any<ISpatialEntity> second
 	)
 	{
-		if (first.Existing.State && second.Existing.State)
+		if (first.HasValue.State && second.HasValue.State)
 			return new EqualityOfTwoEntities(first, second);
 		return new EqualityOfTwoNullables(first, second);
 	}

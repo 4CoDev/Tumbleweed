@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "GodotSharp/4.0.0-rc.1": {
+      "GodotSharp/4.1.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/GodotSharp.dll": {
@@ -18,14 +18,14 @@
     }
   },
   "libraries": {
-    "GodotSharp/4.0.0-rc.1": {
-      "sha512": "Pty10l6LAcCKepCG+LQkfonDMMDxYbn550ZZDg/0QkRq1aKv0bf6SGikYFxGN5JD/HRjljhpplGYyHdsFR7mBQ==",
+    "GodotSharp/4.1.0": {
+      "sha512": "V5Hed2RgqXWCtzQ9NwhohV4uK23unz2wPEUGc0zeYFVf00+OFF9nmrb2bbFiaRzdEMikMh8anXfzJPbmWyp+hw==",
       "type": "package",
-      "path": "godotsharp/4.0.0-rc.1",
+      "path": "godotsharp/4.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "godotsharp.4.0.0-rc.1.nupkg.sha512",
+        "godotsharp.4.1.0.nupkg.sha512",
         "godotsharp.nuspec",
         "lib/net6.0/GodotSharp.dll",
         "lib/net6.0/GodotSharp.xml"
@@ -34,7 +34,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "GodotSharp >= 4.0.0-rc.1"
+      "GodotSharp >= 4.1.0"
     ]
   },
   "packageFolders": {
@@ -81,7 +81,7 @@
         "dependencies": {
           "GodotSharp": {
             "target": "Package",
-            "version": "[4.0.0-rc.1, )"
+            "version": "[4.1.0, )"
           }
         },
         "imports": [

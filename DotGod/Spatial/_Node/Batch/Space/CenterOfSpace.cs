@@ -1,11 +1,11 @@
 using DotGod.Spatial._Node.Batch.Space.Points;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
-using Tumbleweed.Spatial.Point.Real.Arithmetic;
+using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Real.Arithmetic;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
-public sealed class CenterOfSpace : PointEnvelope<IReal>
+public sealed class CenterOfSpace : Envelope<Tumbleweed.Number.Real.Any>
 {
 	public CenterOfSpace(ISpace space) : base
 	(

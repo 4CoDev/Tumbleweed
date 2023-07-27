@@ -1,18 +1,17 @@
 using Godot;
-using Tumbleweed._Enumerable;
-using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.FromEnumerable;
+using Tumbleweed.Enumerable;
+using Scalar = Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Transform;
 
-public sealed class ProductOfTransforms : ScalarEnvelope<Transform3D>
+public sealed class ProductOfTransforms : Scalar.Envelope<Transform3D>
 {
 	public ProductOfTransforms
 	(
 		params Transform3D[] transforms
 	) : this
 	(
-		new EnumerableWithElements<Transform3D>(transforms)
+		new Concatenated<Transform3D>(transforms)
 	)
 	{
 	}
@@ -22,7 +21,7 @@ public sealed class ProductOfTransforms : ScalarEnvelope<Transform3D>
 		IEnumerable<Transform3D> transforms
 	) : base
 	(
-		new AggregatedByExpression<Transform3D>(
+		new Scalar.From.Enumerable.Aggregated<Transform3D>(
 			transforms,
 			Expression)
 	)

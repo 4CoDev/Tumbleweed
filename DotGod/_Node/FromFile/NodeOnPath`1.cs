@@ -1,21 +1,22 @@
 using DotGod.Resource.FromFiles.ToGodot;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod._Node.FromFile;
 
-public sealed class NodeOnPath<T> : ScalarEnvelope<T> where T : Node
+public sealed class NodeOnPath<T> : Envelope<T> where T : Node
 {
 	public NodeOnPath(String path) : this
 	(
-		new ScalarValue<String>(path)
+		new Tumbleweed.Scalar.Of.Value<String>(path)
 	)
 	{
 	}
 	
-	public NodeOnPath(IScalar<String> path) : base
+	public NodeOnPath(Any<String> path) : base
 	(
-		new ResultOfFunction<T>(
+		new Tumbleweed.Scalar.Function.Result<T>(
 			() => new ResourceOnPath<PackedScene>(path).Value.Instantiate<T>())
 	)
 	{

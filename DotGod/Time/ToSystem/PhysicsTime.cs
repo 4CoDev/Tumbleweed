@@ -1,20 +1,21 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Time.ToSystem;
 
-public sealed class PhysicsTime : ScalarEnvelope<Double>
+public sealed class PhysicsTime : Envelope<Double>
 {
 	public PhysicsTime(Node node) : this
 	(
-		new ScalarValue<Node>(node)
+		new Tumbleweed.Scalar.Of.Value<Node>(node)
 	)
 	{
 	}
 	
-	public PhysicsTime(IScalar<Node> node) : base
+	public PhysicsTime(Any<Node> node) : base
 	(
-		new ResultOfFunction<Double>(
+		new Tumbleweed.Scalar.Function.Result<Double>(
 			() => node.Value.GetPhysicsProcessDeltaTime())
 	)
 	{

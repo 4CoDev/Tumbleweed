@@ -1,20 +1,21 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod._Node.Path.FromSystem;
 
-public sealed class PathFromString : ScalarEnvelope<NodePath>
+public sealed class PathFromString : Envelope<NodePath>
 {
 	public PathFromString(String path) : this
 	(
-		new ScalarValue<String>(path)
+		new Tumbleweed.Scalar.Of.Value<String>(path)
 	)
 	{
 	}
 	
-	public PathFromString(IScalar<String> path) : base
+	public PathFromString(Any<String> path) : base
 	(
-		new ResultOfFunction<NodePath>(
+		new Tumbleweed.Scalar.Function.Result<NodePath>(
 			() => new NodePath(path.Value))
 	)
 	{

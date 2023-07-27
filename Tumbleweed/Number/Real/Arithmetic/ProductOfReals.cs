@@ -1,24 +1,26 @@
-using Tumbleweed._Enumerable;
-using Tumbleweed.Number.Real.Binary.Singles.Arithmetics;
-using Tumbleweed.Number.Real.Binary.ToSystem.Singles;
-using Tumbleweed.Number.Real.FromSystem;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System.Arithmetics;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System.From.Tumbleweed;
+using One = Tumbleweed.Number.Real.Binary.Precision.Single.From.System.One;
+
 
 namespace Tumbleweed.Number.Real.Arithmetic;
 
-public sealed class ProductOfReals : RealEnvelope
+public sealed class ProductOfReals : Envelope
 {
-	public ProductOfReals(params IReal[] reals) : this
+	public ProductOfReals(params Any[] reals) : this
 	(
-		new EnumerableWithElements<IReal>(reals)
+		new Concatenated<Any>(reals)
 	)
 	{
 	}
 	
-	public ProductOfReals(IEnumerable<IReal> reals) : base
+	public ProductOfReals(IEnumerable<Any> reals) : base
 	(
-		new RealFromSingle(
-			new DifferenceOfSingles(
-				new SinglesFromReals(reals)))
+		new One(
+			new Difference(
+				new Multiple(reals)))
 	)
 	{
 	}

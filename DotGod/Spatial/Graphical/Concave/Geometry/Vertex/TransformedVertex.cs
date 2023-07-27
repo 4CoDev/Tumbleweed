@@ -9,7 +9,7 @@ public sealed class TransformedVertex : VertexEnvelope
 	public TransformedVertex
 	(
 		IVertex vertex,
-		IScalar<Transform3D> transform
+		Any<Transform3D> transform
 	) : base
 	(
 		new VertexWithValues(

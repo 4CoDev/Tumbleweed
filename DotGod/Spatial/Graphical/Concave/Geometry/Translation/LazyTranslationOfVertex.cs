@@ -1,14 +1,14 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Point.Spatial;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Translation;
 
-public sealed class LazyTranslationOfVertex : PointEnvelope<IReal>
+public sealed class LazyTranslationOfVertex : Envelope<Any>
 {
 	public LazyTranslationOfVertex(IVertex vertex) : base
 	(
-		new LazyPoint<IReal>(
+		new Tumbleweed.Point.Spatial.Lazy<Any>(
 			new TranslationOfVertex(vertex))
 	)
 	{

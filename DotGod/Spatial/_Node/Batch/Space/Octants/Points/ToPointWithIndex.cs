@@ -1,21 +1,19 @@
-using DotGod.Spatial._Node.Spaced.Batch;
-using Tumbleweed.Spatial.Point;
-using Tumbleweed.Spatial.Point.Real;
-using Tumbleweed.Spatial.Point.Real.Arithmetic;
-using IRealNumber = Tumbleweed.Number.Real.IReal;
-using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
+using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Real;
+using Tumbleweed.Point.Spatial.Real.Arithmetic;
+using Tumbleweed.Point.Spatial.Real.From;
 
 namespace DotGod.Spatial._Node.Batch.Space.Octants.Points;
 
-public sealed class ToPointWithIndex : PointEnvelope<IRealNumber>
+public sealed class ToPointWithIndex : Envelope<Tumbleweed.Number.Real.Any>
 {
 	public ToPointWithIndex
 	(
-		ISpacedBatch batch,
-		IPoint<INaturalNumber> index
+		Spaced.Abstract.IBatch batch,
+		Any<Tumbleweed.Number.Natural.Any> index
 	) : this
 	(
-		new SpaceOfBatch(batch),
+		new Spaced.Batch.Space.Of.Batch(batch),
 		index
 	)
 	{
@@ -24,14 +22,14 @@ public sealed class ToPointWithIndex : PointEnvelope<IRealNumber>
 	public ToPointWithIndex
 	(
 		ISpace space,
-		IPoint<INaturalNumber> index
+		Any<Tumbleweed.Number.Natural.Any> index
 	) : base
 	(
 		new SumOfPoints(
 			new CenterOfSpace(space),
 			new ProductOfPoints(
 				new HalfOfSpace(space),
-				new RealFromNatural(index)))
+				new Natural(index)))
 	)
 	{
 	}

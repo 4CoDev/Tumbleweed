@@ -7,7 +7,7 @@ namespace DotGod._Godot.Spatial.Geometry.Space;
 
 public sealed class SpaceOfCollider : SpaceEnvelope
 {
-	public SpaceOfCollider(IScalar<CollisionShape3D> collider) : base
+	public SpaceOfCollider(Any<CollisionShape3D> collider) : base
 	(
 		new SpaceFromMesh(
 			new MeshOfCollider(collider))

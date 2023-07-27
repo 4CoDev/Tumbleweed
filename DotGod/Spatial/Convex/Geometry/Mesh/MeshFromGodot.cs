@@ -1,23 +1,25 @@
 using DotGod._Godot.Spatial.Convex.Geometry.Mesh;
 using DotGod.Spatial.Convex.Geometry.Vertex;
 using Godot;
+using Tumbleweed.Geometry.Spatial.Convex.Mesh;
+using Tumbleweed.Geometry.Spatial.Convex.Mesh.With;
+using Tumbleweed.Geometry.Spatial.Convex.Mesh.With.Vertex.Enumerable;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Convex.Geometry.Mesh;
 
 namespace DotGod.Spatial.Convex.Geometry.Mesh;
 
-public sealed class MeshFromGodot : MeshEnvelope
+public sealed class MeshFromGodot : Envelope
 {
 	public MeshFromGodot(Shape3D mesh) : this
 	(
-		new ScalarValue<Shape3D>(mesh)
+		new Tumbleweed.Scalar.Of.Value<Shape3D>(mesh)
 	)
 	{
 	}
 	
 	public MeshFromGodot
 	(
-		IScalar<Shape3D> mesh
+		Any<Shape3D> mesh
 	) : this
 	(
 		new MeshFromAbstract(mesh)
@@ -27,17 +29,17 @@ public sealed class MeshFromGodot : MeshEnvelope
 	
 	public MeshFromGodot(ConvexPolygonShape3D mesh) : this
 	(
-		new ScalarValue<ConvexPolygonShape3D>(mesh)
+		new Tumbleweed.Scalar.Of.Value<ConvexPolygonShape3D>(mesh)
 	)
 	{
 	}
 	
 	public MeshFromGodot
 	(
-		IScalar<ConvexPolygonShape3D> mesh
+		Any<ConvexPolygonShape3D> mesh
 	) : base
 	(
-		new MeshWithVertices(
+		new One(
 			new VerticesFromGodot(mesh))
 	)
 	{

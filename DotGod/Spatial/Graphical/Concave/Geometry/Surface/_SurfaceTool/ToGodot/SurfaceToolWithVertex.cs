@@ -7,9 +7,9 @@ using Tumbleweed.Scalar;
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.
 	ToGodot;
 
-public sealed class SurfaceToolWithVertex : IScalar<SurfaceTool>
+public sealed class SurfaceToolWithVertex : Any<SurfaceTool>
 {
-	public SurfaceToolWithVertex(IScalar<SurfaceTool> tool, IVertex vertex)
+	public SurfaceToolWithVertex(Any<SurfaceTool> tool, IVertex vertex)
 	{
 		this.tool = tool;
 		this.vertex = vertex;
@@ -28,7 +28,7 @@ public sealed class SurfaceToolWithVertex : IScalar<SurfaceTool>
 		}
 	}
 
-	private readonly IScalar<SurfaceTool> tool;
+	private readonly Any<SurfaceTool> tool;
 	
 	private readonly IVertex vertex;
 }

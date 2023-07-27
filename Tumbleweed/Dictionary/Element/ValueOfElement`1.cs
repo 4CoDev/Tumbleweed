@@ -1,15 +1,13 @@
 using Tumbleweed.Nullable;
-using Tumbleweed.Scalar;
 
 namespace Tumbleweed.Dictionary.Element;
 
-public sealed class ValueOfElement<T> :
-	ScalarEnvelope<T>
+public sealed class ValueOfElement<T> : Tumbleweed.Scalar.Envelope<T>
 	where T : notnull
 {
 	public ValueOfElement(IDictionaryElement<T> element) : base
 	(
-		new ValueOfNullable<T>(
+		new Value<T>(
 			new NullabilityOfElement<T>(element))
 	)
 	{

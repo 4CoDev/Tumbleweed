@@ -8,5 +8,5 @@ public interface ISurface
 {
 	IEnumerable<IPolygon> Polygons { get; }
 	
-	IScalar<Material> Material { get; }
+	Any<Material> Material { get; }
 }

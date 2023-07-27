@@ -3,7 +3,7 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
 
-public sealed class MeshFromSurfaceTools : ScalarEnvelope<Godot.ArrayMesh>
+public sealed class MeshFromSurfaceTools : Envelope<Godot.ArrayMesh>
 {
 	public MeshFromSurfaceTools
 	(
@@ -12,7 +12,7 @@ public sealed class MeshFromSurfaceTools : ScalarEnvelope<Godot.ArrayMesh>
 	(
 		new MeshWithSurfaceTools(
 			tools,
-			new ScalarOfNew<Godot.ArrayMesh>())
+			new Tumbleweed.Scalar.Of.New<Godot.ArrayMesh>())
 	)
 	{
 	}

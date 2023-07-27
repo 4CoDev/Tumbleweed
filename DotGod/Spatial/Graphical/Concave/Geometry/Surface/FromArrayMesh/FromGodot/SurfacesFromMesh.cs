@@ -1,15 +1,16 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface.Number.FromArrayMesh.ToSystem;
 using Godot;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface.FromArrayMesh.FromGodot;
 
-public sealed class SurfacesFromMesh : EnumerableEnvelope<ISurface>
+public sealed class SurfacesFromMesh : Tumbleweed.Enumerable.Envelope<ISurface>
 {
-	public SurfacesFromMesh(IScalar<ArrayMesh> mesh) : base
+	public SurfacesFromMesh(Any<ArrayMesh> mesh) : base
 	(
-		new EnumerableOfFunction<ISurface>(
+		new Result<ISurface>(
 			() => Function(mesh))
 	)
 	{
@@ -17,7 +18,7 @@ public sealed class SurfacesFromMesh : EnumerableEnvelope<ISurface>
 
 	private static IEnumerable<ISurface> Function
 	(
-		IScalar<ArrayMesh> mesh
+		Any<ArrayMesh> mesh
 	)
 	{
 		Int32 count = new SurfaceCountOfMesh(mesh).Value;

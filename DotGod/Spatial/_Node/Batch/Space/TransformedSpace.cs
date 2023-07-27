@@ -14,7 +14,7 @@ public sealed class TransformedSpace : SpaceEnvelope
 	) : this
 	(
 		space,
-		new ScalarValue<Transform3D>(transform)
+		new Tumbleweed.Scalar.Of.Value<Transform3D>(transform)
 	)
 	{
 	}
@@ -22,7 +22,7 @@ public sealed class TransformedSpace : SpaceEnvelope
 	public TransformedSpace
 	(
 		ISpace space,
-		IScalar<Transform3D> transform
+		Any<Transform3D> transform
 	) : base
 	(
 		new SpaceWithPoints(

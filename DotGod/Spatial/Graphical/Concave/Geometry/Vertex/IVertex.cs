@@ -1,17 +1,17 @@
 using Godot;
 using Tumbleweed.Number.Real;
+using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Point;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 
 public interface IVertex
 {
-	IPoint<IReal> Translation { get; }
+	Tumbleweed.Point.Spatial.Any<Any> Translation { get; }
 
-	IPoint<IReal> Normal { get; }
-	
-	IScalar<Color> Color { get; }
+	Tumbleweed.Point.Spatial.Any<Any> Normal { get; }
 
-	Tumbleweed.Planar.Point.IPoint<IReal> UV { get; }
+	Tumbleweed.Scalar.Any<Color> Color { get; }
+
+	Tumbleweed.Point.Planar.Any<Any> UV { get; }
 }

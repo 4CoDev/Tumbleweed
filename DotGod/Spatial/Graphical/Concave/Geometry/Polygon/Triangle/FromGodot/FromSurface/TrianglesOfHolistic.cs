@@ -1,20 +1,21 @@
 using Godot;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Polygon.Triangle.FromGodot.
 	FromSurface;
 
 public sealed class TrianglesOfHolistic
-	: EnumerableEnvelope<IPolygon>
+	: Tumbleweed.Enumerable.Envelope<IPolygon>
 {
 	public TrianglesOfHolistic
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	) : base
 	(
-		new EnumerableOfFunction<IPolygon>(
+		new Result<IPolygon>(
 			() => Function(mesh, surface))
 	)
 	{
@@ -22,8 +23,8 @@ public sealed class TrianglesOfHolistic
 
 	private static IEnumerable<IPolygon> Function
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	)
 	{
 		throw new NotImplementedException();

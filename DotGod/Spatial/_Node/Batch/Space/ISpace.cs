@@ -1,11 +1,11 @@
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Point.Spatial;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
 public interface ISpace
 {
-	IPoint<IReal> From { get; }
+	Any<Tumbleweed.Number.Real.Any> From { get; }
 	
-	IPoint<IReal> To { get; }
+	Any<Tumbleweed.Number.Real.Any> To { get; }
 }

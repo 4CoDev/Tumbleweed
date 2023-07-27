@@ -1,13 +1,14 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Polygon;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Enumerable.Function;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 
-public sealed class VerticesOfPolygon : EnumerableEnvelope<IVertex>
+public sealed class VerticesOfPolygon : Envelope<IVertex>
 {
 	public VerticesOfPolygon(IPolygon polygon) : base
 	(
-		new EnumerableOfFunction<IVertex>(
+		new Result<IVertex>(
 			() => polygon.Vertices)
 	)
 	{

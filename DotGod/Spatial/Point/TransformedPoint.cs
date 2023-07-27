@@ -3,17 +3,15 @@ using DotGod.Spatial.Transform.Number.Binary.Spatial.OfGodot;
 using DotGod.Spatial.Vector.Point;
 using Godot;
 using Tumbleweed.Number.Real;
+using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Point;
 
 namespace DotGod.Spatial.Point;
 
-public sealed class TransformedPoint : PointEnvelope<IReal>
+public sealed class TransformedPoint : Tumbleweed.Point.Spatial.Envelope<Any>
 {
 	public TransformedPoint
-	(
-		IPoint<IReal> point,
-		IScalar<Transform3D> transform
+	(Tumbleweed.Point.Spatial.Any<Any> point, Tumbleweed.Scalar.Any<Transform3D> transform
 	) : base
 	(
 		new PointFromVector3(

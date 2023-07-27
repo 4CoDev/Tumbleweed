@@ -3,7 +3,7 @@ using Tumbleweed.Scalar;
 namespace Tumbleweed.Dictionary.Scalar;
 
 public sealed class DictionaryFromEnumerable<TKey, TValue> :
-	IScalar<IDictionary<TKey, TValue>>
+	Any<IDictionary<TKey, TValue>>
 	where TKey : notnull
 {
 	public DictionaryFromEnumerable

@@ -1,13 +1,14 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Enumerable.Function;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Polygon;
 
-public sealed class PolygonsOfSurface : EnumerableEnvelope<IPolygon>
+public sealed class PolygonsOfSurface : Envelope<IPolygon>
 {
 	public PolygonsOfSurface(ISurface surface) : base
 	(
-		new EnumerableOfFunction<IPolygon>(
+		new Result<IPolygon>(
 			() => surface.Polygons)
 	)
 	{

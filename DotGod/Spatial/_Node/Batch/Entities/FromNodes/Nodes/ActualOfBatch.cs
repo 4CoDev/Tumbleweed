@@ -1,28 +1,26 @@
 using Godot;
-using Tumbleweed._Enumerable;
-using Tumbleweed.Nullable;
-using Tumbleweed.Scalar;
+using Tumbleweed.Enumerable;
+using Tumbleweed.Enumerable.Function;
 
 namespace DotGod.Spatial._Node.Batch.Entities.FromNodes.Nodes;
 
-public sealed class ActualOfBatch : EnumerableEnvelope<Node>
+public sealed class ActualOfBatch : Envelope<Godot.Node>
 {
-	public ActualOfBatch(IScalar<Node3D> space) : base
+	public ActualOfBatch(Tumbleweed.Scalar.Any<Node3D> space) : base
 	(
-		new EnumerableOfFunction<Node>(
+		new Result<Godot.Node>(
 			() => Function(space))
 	)
 	{
 	}
 
-	private static IEnumerable<Node> Function
-	(
-		IScalar<Node3D> space
+	private static IEnumerable<Godot.Node> Function
+	(Tumbleweed.Scalar.Any<Node3D> space
 	)
 	{
-		IEnumerable<INullable<Node>> nullables = new ActualNullablesOfBatch(space);
-		foreach (INullable<Node> nullable in nullables)
-			if (nullable.Existing.State)
+		IEnumerable<Tumbleweed.Nullable.Any<Godot.Node>> nullables = new ActualNullablesOfBatch(space);
+		foreach (Tumbleweed.Nullable.Any<Godot.Node> nullable in nullables)
+			if (nullable.HasValue.State)
 				yield return nullable.Value;
 	}
 }

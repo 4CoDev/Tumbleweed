@@ -13,7 +13,7 @@ public abstract class SurfaceEnvelope : ISurface
 
 	public IEnumerable<IPolygon> Polygons => surface.Polygons;
 
-	public IScalar<Material> Material => surface.Material;
+	public Any<Material> Material => surface.Material;
 
 	private readonly ISurface surface;
 }

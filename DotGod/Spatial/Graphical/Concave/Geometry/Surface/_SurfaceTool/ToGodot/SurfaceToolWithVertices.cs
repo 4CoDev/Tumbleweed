@@ -6,12 +6,12 @@ using Tumbleweed.Scalar;
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.
 	ToGodot;
 
-public sealed class SurfaceToolWithVertices : ScalarEnvelope<SurfaceTool>
+public sealed class SurfaceToolWithVertices : Envelope<SurfaceTool>
 {
 	public SurfaceToolWithVertices
 	(
 		IEnumerable<IVertex> vertices,
-		IScalar<SurfaceTool> origin
+		Any<SurfaceTool> origin
 	) : base
 	(
 		new AggregatedByExpression<IVertex>(
@@ -22,9 +22,9 @@ public sealed class SurfaceToolWithVertices : ScalarEnvelope<SurfaceTool>
 	{
 	}
 
-	private static IScalar<SurfaceTool> Expression
+	private static Any<SurfaceTool> Expression
 	(
-		IScalar<SurfaceTool> current,
+		Any<SurfaceTool> current,
 		IVertex vertex
 	) =>
 	(

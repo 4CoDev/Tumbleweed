@@ -9,12 +9,12 @@ public sealed class MeshOfNode : MeshEnvelope
 {
 	public MeshOfNode(MeshInstance3D node) : this
 	(
-		new ScalarValue<MeshInstance3D>(node)
+		new Tumbleweed.Scalar.Of.Value<MeshInstance3D>(node)
 	)
 	{
 	}
 
-	public MeshOfNode(IScalar<MeshInstance3D> node) : base
+	public MeshOfNode(Any<MeshInstance3D> node) : base
 	(
 		new MeshFromGodot(
 			new ToGodot.MeshOfNode(node))

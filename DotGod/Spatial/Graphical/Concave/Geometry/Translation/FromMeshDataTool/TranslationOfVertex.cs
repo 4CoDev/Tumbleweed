@@ -1,31 +1,30 @@
 using DotGod.Spatial.Vector.Point;
 using Godot;
-using Tumbleweed.Number.Integer.Natural;
-using Tumbleweed.Number.Integer.Natural.ToSystem;
+using Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
+
+using Tumbleweed.Number.Natural;
 using Tumbleweed.Number.Real;
+using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Point;
+using Any = Tumbleweed.Number.Real.Any;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Translation.FromMeshDataTool;
 
-public sealed class TranslationOfVertex : PointEnvelope<IReal>
+public sealed class TranslationOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 {
 	public TranslationOfVertex
-	(
-		IScalar<MeshDataTool> tool,
-		INatural vertex
+	(Tumbleweed.Scalar.Any<MeshDataTool> tool,
+		Tumbleweed.Number.Natural.Any vertex
 	) : this
 	(
 		tool,
-		new Int32FromNatural(vertex)
+		new One(vertex)
 	)
 	{
 	}
 	
 	public TranslationOfVertex
-	(
-		IScalar<MeshDataTool> mesh,
-		IScalar<Int32> vertex
+	(Tumbleweed.Scalar.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Any<Int32> vertex
 	) : base
 	(
 		new PointFromVector3(

@@ -8,12 +8,12 @@ public sealed class ChildrenOfNode : IList<Node>
 {
 	public ChildrenOfNode(Node parent) : this
 	(
-		new ScalarValue<Node>(parent)
+		new Tumbleweed.Scalar.Of.Value<Node>(parent)
 	)
 	{
 	}
 
-	public ChildrenOfNode(IScalar<Node> parent) =>
+	public ChildrenOfNode(Any<Node> parent) =>
 		this.parent = parent;
 
 	public IEnumerator<Node> GetEnumerator() =>
@@ -73,5 +73,5 @@ public sealed class ChildrenOfNode : IList<Node>
 		}
 	}
 
-	private readonly IScalar<Node> parent;
+	private readonly Any<Node> parent;
 }

@@ -8,12 +8,12 @@ public sealed class HolisticFromGodot : MeshEnvelope
 {
 	public HolisticFromGodot(ArrayMesh mesh) : this
 	(
-		new ScalarValue<ArrayMesh>(mesh)
+		new Tumbleweed.Scalar.Of.Value<ArrayMesh>(mesh)
 	)
 	{
 	}
 	
-	public HolisticFromGodot(IScalar<ArrayMesh> mesh) : base
+	public HolisticFromGodot(Any<ArrayMesh> mesh) : base
 	(
 		new MeshWithSurfaces(
 			new HolisticsFromMesh(mesh))

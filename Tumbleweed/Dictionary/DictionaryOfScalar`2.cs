@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using Tumbleweed.Scalar;
+using System = System;
 
 namespace Tumbleweed.Dictionary;
 
@@ -8,9 +9,9 @@ public sealed class DictionaryOfScalar<TKey, TValue> :
 	IDictionary<TKey, TValue>
 	where TKey : notnull
 {
-	public DictionaryOfScalar(IScalar<IDictionary<TKey, TValue>> scalar)
+	public DictionaryOfScalar(Any<IDictionary<TKey, TValue>> any)
 	{
-		this.scalar = scalar;
+		this.any = any;
 	}
 
 	IEnumerator IEnumerable.GetEnumerator()
@@ -20,67 +21,67 @@ public sealed class DictionaryOfScalar<TKey, TValue> :
 
 	public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
 	{
-		return scalar.Value.GetEnumerator();
+		return any.Value.GetEnumerator();
 	}
 
 	public void Add(KeyValuePair<TKey, TValue> item)
 	{
-		scalar.Value.Add(item);
+		any.Value.Add(item);
 	}
 
 	public void Clear()
 	{
-		scalar.Value.Clear();
+		any.Value.Clear();
 	}
 
-	public Boolean Contains(KeyValuePair<TKey, TValue> item)
+	public System::Boolean Contains(KeyValuePair<TKey, TValue> item)
 	{
-		return scalar.Value.Contains(item);
+		return any.Value.Contains(item);
 	}
 
 	public void CopyTo(KeyValuePair<TKey, TValue>[] array, Int32 arrayIndex)
 	{
-		scalar.Value.CopyTo(array, arrayIndex);
+		any.Value.CopyTo(array, arrayIndex);
 	}
 
-	public Boolean Remove(KeyValuePair<TKey, TValue> item)
+	public System::Boolean Remove(KeyValuePair<TKey, TValue> item)
 	{
-		return scalar.Value.Remove(item);
+		return any.Value.Remove(item);
 	}
 
-	public Int32 Count => scalar.Value.Count;
+	public Int32 Count => any.Value.Count;
 
-	public Boolean IsReadOnly => scalar.Value.IsReadOnly;
+	public System::Boolean IsReadOnly => any.Value.IsReadOnly;
 
 	public void Add(TKey key, TValue value)
 	{
-		scalar.Value.Add(key, value);
+		any.Value.Add(key, value);
 	}
 
-	public Boolean ContainsKey(TKey key)
+	public System::Boolean ContainsKey(TKey key)
 	{
-		return scalar.Value.ContainsKey(key);
+		return any.Value.ContainsKey(key);
 	}
 
-	public Boolean Remove(TKey key)
+	public System::Boolean Remove(TKey key)
 	{
-		return scalar.Value.Remove(key);
+		return any.Value.Remove(key);
 	}
 
-	public Boolean TryGetValue(TKey key, [MaybeNullWhen(false)] out TValue value)
+	public System::Boolean TryGetValue(TKey key, [MaybeNullWhen(false)] out TValue value)
 	{
-		return scalar.Value.TryGetValue(key, out value);
+		return any.Value.TryGetValue(key, out value);
 	}
 
 	public TValue this[TKey key]
 	{
-		get => scalar.Value[key];
-		set => scalar.Value[key] = value;
+		get => any.Value[key];
+		set => any.Value[key] = value;
 	}
 
-	public ICollection<TKey> Keys => scalar.Value.Keys;
+	public ICollection<TKey> Keys => any.Value.Keys;
 
-	public ICollection<TValue> Values => scalar.Value.Values;
+	public ICollection<TValue> Values => any.Value.Values;
 
-	private readonly IScalar<IDictionary<TKey, TValue>> scalar;
+	private readonly Any<IDictionary<TKey, TValue>> any;
 }

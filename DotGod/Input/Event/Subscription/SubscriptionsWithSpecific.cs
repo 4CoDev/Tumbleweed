@@ -1,5 +1,5 @@
 using Tumbleweed.Event.Subscription;
-using Tumbleweed.Subroutine.Nullary.Action;
+using Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace DotGod.Input.Event.Subscription;
 
@@ -7,8 +7,8 @@ public sealed class SubscriptionsWithSpecific : ISubscriptions
 {
 	public SubscriptionsWithSpecific
 	(
-		ISubscription<IAction> handled,
-		ISubscription<IAction> unhandled
+		Any<Any> handled,
+		Any<Any> unhandled
 	)
 	{
 		Handled = handled;
@@ -16,7 +16,7 @@ public sealed class SubscriptionsWithSpecific : ISubscriptions
 	}
 
 
-	public ISubscription<IAction> Handled { get; }
+	public Any<Any> Handled { get; }
 
-	public ISubscription<IAction> Unhandled { get; }
+	public Any<Any> Unhandled { get; }
 }

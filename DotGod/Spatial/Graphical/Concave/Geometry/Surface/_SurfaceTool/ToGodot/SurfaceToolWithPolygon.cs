@@ -6,12 +6,12 @@ using Tumbleweed.Scalar;
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.
 	ToGodot;
 
-public sealed class SurfaceToolWithPolygon : ScalarEnvelope<SurfaceTool>
+public sealed class SurfaceToolWithPolygon : Envelope<SurfaceTool>
 {
 	public SurfaceToolWithPolygon
 	(
 		IPolygon polygon,
-		IScalar<SurfaceTool> tool
+		Any<SurfaceTool> tool
 	) : base
 	(
 		new SurfaceToolWithVertices(

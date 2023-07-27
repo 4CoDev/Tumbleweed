@@ -3,12 +3,12 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Material.FromArrayMesh;
 
-public sealed class MaterialOfSurface : IScalar<Material>
+public sealed class MaterialOfSurface : Any<Material>
 {
 	public MaterialOfSurface
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	)
 	{
 		this.mesh = mesh;
@@ -17,7 +17,7 @@ public sealed class MaterialOfSurface : IScalar<Material>
 
 	public Material Value => mesh.Value.SurfaceGetMaterial(surface.Value);
 
-	private readonly IScalar<ArrayMesh> mesh;
+	private readonly Any<ArrayMesh> mesh;
 
-	private readonly IScalar<Int32> surface;
+	private readonly Any<Int32> surface;
 }

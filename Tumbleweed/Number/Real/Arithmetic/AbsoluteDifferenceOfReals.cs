@@ -1,22 +1,22 @@
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Number.Real.Arithmetic;
 
-public sealed class AbsoluteDifferenceOfReals : RealEnvelope
+public sealed class AbsoluteDifferenceOfReals : Envelope
 {
 	public AbsoluteDifferenceOfReals
 	(
-		params IReal[] reals
+		params Any[] reals
 	) : this
 	(
-		new EnumerableWithElements<IReal>(reals)
+		new Concatenated<Any>(reals)
 	)
 	{
 	}
 	
 	public AbsoluteDifferenceOfReals
 	(
-		IEnumerable<IReal> reals) : base
+		IEnumerable<Any> reals) : base
 	(
 		new AbsoluteReal(
 			new DifferenceOfReals(reals))

@@ -1,14 +1,14 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Planar.Point;
+using Tumbleweed.Point.Planar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.UV;
 
-public sealed class LazyUVOfVertex : PointEnvelope<IReal>
+public sealed class LazyUVOfVertex : Envelope<Any>
 {
 	public LazyUVOfVertex(IVertex vertex) : base
 	(
-		new LazyPoint<IReal>(
+		new Tumbleweed.Point.Planar.Lazy<Any>(
 			new UVOfVertex(vertex))
 	)
 	{

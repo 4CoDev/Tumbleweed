@@ -1,10 +1,10 @@
 using DotGod.Spatial._Node.Batch.Entities.Equality;
 using DotGod.Spatial._Node.Batch.Space;
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using Godot;
-using Tumbleweed._Object.Hash;
-using Tumbleweed._Object.String;
 using Tumbleweed.Nullable;
+using Tumbleweed.Object.Hash;
+using Tumbleweed.Object.String;
+using System = System;
 
 namespace DotGod.Spatial._Node.Batch.Entities;
 
@@ -12,7 +12,7 @@ public sealed class EntityWithValues : ISpatialEntity
 {
 	public EntityWithValues
 	(
-		INullable<Node> node,
+		Any<Godot.Node> node,
 		IMesh mesh, 
 		ISpace size
 	)
@@ -22,16 +22,16 @@ public sealed class EntityWithValues : ISpatialEntity
 		Occupation = size;
 	}
 
-	public override Boolean Equals(Object? @object) =>
+	public override Boolean Equals(System::Object? @object) =>
 		new EqualityOfTwoNullables(this, @object).State;
 
 	public override Int32 GetHashCode() =>
 		new HashFromObjects(Node, Mesh).Value;
 
-	public override String ToString() =>
+	public override System::String ToString() =>
 		new StringFromObjects(Node, Mesh).Value;
 
-	public INullable<Node> Node { get; }
+	public Any<Godot.Node> Node { get; }
 
 	public IMesh Mesh { get; }
 

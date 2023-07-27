@@ -1,16 +1,19 @@
-using Tumbleweed.Number.Real.Binary.Singles.Arithmetics;
-using Tumbleweed.Number.Real.Binary.ToSystem.Singles;
-using Tumbleweed.Number.Real.FromSystem;
+using Tumbleweed.Number.Real.Binary.Precision.Single.From.System;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System.Arithmetics;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System.From;
+using One = Tumbleweed.Number.Real.Binary.Precision.Single.From.System.One;
+
 
 namespace Tumbleweed.Number.Real.Arithmetic;
 
-public sealed class NegativeReal : RealEnvelope
+public sealed class NegativeReal : Envelope
 {
-	public NegativeReal(IReal real) : base
+	public NegativeReal(Any real) : base
 	(
-		new RealFromSingle(
-			new NegativeSingle(
-				new SingleFromReal(real)))
+		new One(
+			new Negative(
+				new Binary.Precision.Single.System.From.Tumbleweed.One(real)))
 	)
 	{
 	}

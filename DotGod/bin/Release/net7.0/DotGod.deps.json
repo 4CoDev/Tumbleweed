@@ -14,17 +14,17 @@
           "DotGod.dll": {}
         }
       },
-      "GodotSharp/4.0.0-rc.1": {
+      "GodotSharp/4.1.0": {
         "runtime": {
           "lib/net6.0/GodotSharp.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.0.0.0"
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
           }
         }
       },
       "Tumbleweed/1.0.0": {
         "dependencies": {
-          "GodotSharp": "4.0.0-rc.1"
+          "GodotSharp": "4.1.0"
         },
         "runtime": {
           "Tumbleweed.dll": {}
@@ -38,12 +38,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "GodotSharp/4.0.0-rc.1": {
+    "GodotSharp/4.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Pty10l6LAcCKepCG+LQkfonDMMDxYbn550ZZDg/0QkRq1aKv0bf6SGikYFxGN5JD/HRjljhpplGYyHdsFR7mBQ==",
-      "path": "godotsharp/4.0.0-rc.1",
-      "hashPath": "godotsharp.4.0.0-rc.1.nupkg.sha512"
+      "sha512": "sha512-V5Hed2RgqXWCtzQ9NwhohV4uK23unz2wPEUGc0zeYFVf00+OFF9nmrb2bbFiaRzdEMikMh8anXfzJPbmWyp+hw==",
+      "path": "godotsharp/4.1.0",
+      "hashPath": "godotsharp.4.1.0.nupkg.sha512"
     },
     "Tumbleweed/1.0.0": {
       "type": "project",

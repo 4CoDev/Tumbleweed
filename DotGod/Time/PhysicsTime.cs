@@ -1,22 +1,22 @@
 using Godot;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Number.Real.FromSystem;
+using Tumbleweed.Number.Real.Binary.Precision.Double.From.System;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Time;
 
-public sealed class PhysicsTime : RealEnvelope
+public sealed class PhysicsTime : Envelope
 {
 	public PhysicsTime(Node node) : this
 	(
-		new ScalarValue<Node>(node)
+		new Tumbleweed.Scalar.Of.Value<Node>(node)
 	)
 	{
 	}
 	
-	public PhysicsTime(IScalar<Node> node) : base
+	public PhysicsTime(Any<Node> node) : base
 	(
-		new RealFromDouble(
+		new One(
 			new ToSystem.PhysicsTime(node))
 	)
 	{

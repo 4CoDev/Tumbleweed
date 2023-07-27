@@ -3,12 +3,12 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._MeshDataTool.FromArrayMesh;
 
-public sealed class MeshDataToolFromSurface : IScalar<MeshDataTool>
+public sealed class MeshDataToolFromSurface : Any<MeshDataTool>
 {
 	public MeshDataToolFromSurface
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	)
 	{
 		this.mesh = mesh;
@@ -25,7 +25,7 @@ public sealed class MeshDataToolFromSurface : IScalar<MeshDataTool>
 		}
 	}
 
-	private readonly IScalar<ArrayMesh> mesh;
+	private readonly Any<ArrayMesh> mesh;
 	
-	private readonly IScalar<Int32> surface;
+	private readonly Any<Int32> surface;
 }

@@ -3,22 +3,22 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot;
 
-public sealed class ToolWithPrimitiveType : IScalar<SurfaceTool>
+public sealed class ToolWithPrimitiveType : Any<SurfaceTool>
 {
 	public ToolWithPrimitiveType
 	(
-		IScalar<Godot.Mesh.PrimitiveType> type
+		Any<Godot.Mesh.PrimitiveType> type
 	) : this
 	(
-		new ScalarOfNew<SurfaceTool>(), type
+		new Tumbleweed.Scalar.Of.New<SurfaceTool>(), type
 	)
 	{
 	}
 	
 	public ToolWithPrimitiveType
 	(
-		IScalar<SurfaceTool> origin,
-		IScalar<Godot.Mesh.PrimitiveType> type
+		Any<SurfaceTool> origin,
+		Any<Godot.Mesh.PrimitiveType> type
 	)
 	{
 		this.origin = origin;
@@ -35,7 +35,7 @@ public sealed class ToolWithPrimitiveType : IScalar<SurfaceTool>
 		}
 	}
 
-	private readonly IScalar<SurfaceTool> origin;
+	private readonly Any<SurfaceTool> origin;
 	
-	private readonly IScalar<Godot.Mesh.PrimitiveType> type;
+	private readonly Any<Godot.Mesh.PrimitiveType> type;
 }

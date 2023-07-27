@@ -1,21 +1,21 @@
 using Tumbleweed.Event.Subscription;
-using Tumbleweed.Subroutine.Nullary.Action;
+using NullaryProcedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace DotGod.Iteration.Event.Subscription;
 
-public sealed class SubscriptionsWithSpecific : ISubscriptions
+public sealed class SubscriptionsWithSpecific : Any
 {
 	public SubscriptionsWithSpecific
 	(
-		ISubscription<IAction> graphical,
-		ISubscription<IAction> physical
+		Any<NullaryProcedure.Any> graphical,
+		Any<NullaryProcedure.Any> physical
 	)
 	{
 		Graphical = graphical;
 		Physical = physical;
 	}
 	
-	public ISubscription<IAction> Graphical { get; }
+	public Any<NullaryProcedure.Any> Graphical { get; }
 
-	public ISubscription<IAction> Physical { get; }
+	public Any<NullaryProcedure.Any> Physical { get; }
 }

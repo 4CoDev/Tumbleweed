@@ -1,5 +1,5 @@
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Point.Spatial;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
@@ -7,15 +7,15 @@ public sealed class SpaceWithPoints : ISpace
 {
 	public SpaceWithPoints
 	(
-		IPoint<IReal> from,
-		IPoint<IReal> to
+		Any<Tumbleweed.Number.Real.Any> from,
+		Any<Tumbleweed.Number.Real.Any> to
 	)
 	{
 		From = from;
 		To = to;
 	}
 
-	public IPoint<IReal> From { get; }
+	public Any<Tumbleweed.Number.Real.Any> From { get; }
 
-	public IPoint<IReal> To { get; }
+	public Any<Tumbleweed.Number.Real.Any> To { get; }
 }

@@ -3,10 +3,11 @@ using DotGod.Spatial.Graphical.Concave.Geometry.Polygon;
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot.FromEnumerable;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Lazy;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.ToGodot;
 
-public sealed class SurfaceToolWithSurface : ScalarEnvelope<SurfaceTool>
+public sealed class SurfaceToolWithSurface : Envelope<SurfaceTool>
 {
 	public SurfaceToolWithSurface(ISurface surface) : base
 	(
@@ -19,13 +20,13 @@ public sealed class SurfaceToolWithSurface : ScalarEnvelope<SurfaceTool>
 	{
 	}
 
-	private static IScalar<SurfaceTool> Expression
+	private static Any<SurfaceTool> Expression
 	(
-		IScalar<SurfaceTool> current,
+		Any<SurfaceTool> current,
 		IPolygon polygon
 	) =>
 	(
-		new LazyValue<SurfaceTool>(
+		new OfValue<SurfaceTool>(
 			new SurfaceToolWithPolygon(polygon, current))
 	);
 }

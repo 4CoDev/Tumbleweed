@@ -9,17 +9,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="GodotSharp" Version="4.0.0-rc.1" />
+      <PackageReference Include="GodotSharp" Version="4.1.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Linear\Array\" />
-      <Folder Include="ReadOnlySpan\ToSystem" />
-      <Folder Include="Spatial\Concave\Geometry\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="String\Nullable\StringFromSystem.cs" />
+      <Folder Include="Array\Dimension\" />
+      <Folder Include="Boolean\Comparison\" />
+      <Folder Include="Geometry\Spatial\" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 
 namespace DotGod.Spatial._Node.Batch.Entities.Meshes;
 
@@ -11,7 +11,7 @@ public sealed class MeshFromEntities : MeshEnvelope
 	) : base
 	(
 		new MergedMeshes(
-			new SelectedByExpression<ISpatialEntity, IMesh>(
+			new Selected<ISpatialEntity, IMesh>(
 				entities,
 				entity => entity.Mesh))
 	)

@@ -3,9 +3,9 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot;
 
-public sealed class IndexedTool : IScalar<SurfaceTool>
+public sealed class IndexedTool : Any<SurfaceTool>
 {
-	public IndexedTool(IScalar<SurfaceTool> origin)
+	public IndexedTool(Any<SurfaceTool> origin)
 	{
 		this.origin = origin;
 	}
@@ -20,5 +20,5 @@ public sealed class IndexedTool : IScalar<SurfaceTool>
 		}
 	}
 
-	private readonly IScalar<SurfaceTool> origin;
+	private readonly Any<SurfaceTool> origin;
 }

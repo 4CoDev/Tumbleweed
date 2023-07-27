@@ -1,15 +1,14 @@
 using DotGod.Spatial._Node.Batch.Entities;
+using DotGod.Spatial._Node.Batch.Result.Of;
 using DotGod.Spatial._Node.Batch.Space;
-using DotGod.Spatial._Node.Batch.Space.Points;
-using DotGod.Spatial._Node.Spaced.Batch;
 
 namespace DotGod.Spatial._Node.Batch;
 
-public sealed class SuitableOrInitial : BatchEnvelope
+public sealed class SuitableOrInitial : Envelope
 {
 	public SuitableOrInitial
 	(
-		ISpacedBatch initial,
+		Spaced.Abstract.IBatch initial,
 		ISpatialEntity entity
 	) : this
 	(
@@ -21,26 +20,38 @@ public sealed class SuitableOrInitial : BatchEnvelope
 	
 	public SuitableOrInitial
 	(
-		ISpacedBatch initial,
+		Spaced.Abstract.IBatch initial,
 		ISpace space
 	) : base
 	(
-		new BatchOfFunction(
-			() => Function(initial, space))
+		new Conditional(
+			new Batch.Have.Subbatch.By.From.Point.Of.Space(initial, space),
+			new Function(() => Function(initial, space)),
+			initial)
 	)
 	{
 	}
 
-	private static IBatch Function
+	private static Any Function
 	(
-		ISpacedBatch initial,
+		Spaced.Abstract.IBatch initial,
+		ISpace space
+	) =>
+	(
+		Function(
+			initial,
+			new Spaced.Batch.Subbatch.By.From.Point.Of.Space(initial, space),
+			space)
+	);
+	
+	private static Any Function
+	(
+		Any initial,
+		Spaced.Abstract.IBatch subbatch,
 		ISpace space
 	)
 	{
-		ISpacedBatch subbatch =
-			new SubbatchWithPoint(initial, new FromPointOfSpace(space));
 		if (!new IsSpaceInsideBatch(subbatch, space).State) return initial;
-		if (new IsLeafBatch(subbatch).State) return subbatch;
 		return new SuitableOrInitial(subbatch, space);
 	}
 }

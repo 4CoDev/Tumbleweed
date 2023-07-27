@@ -1,20 +1,21 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Time.ToSystem;
 
-public sealed class FrameTime : ScalarEnvelope<Double>
+public sealed class FrameTime : Envelope<Double>
 {
 	public FrameTime(Node node) : this
 	(
-		new ScalarValue<Node>(node)
+		new Tumbleweed.Scalar.Of.Value<Node>(node)
 	)
 	{
 	}
 	
-	public FrameTime(IScalar<Node> node) : base
+	public FrameTime(Any<Node> node) : base
 	(
-		new ResultOfFunction<Double>(
+		new Tumbleweed.Scalar.Function.Result<Double>(
 			() => node.Value.GetProcessDeltaTime())
 	)
 	{

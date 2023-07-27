@@ -1,4 +1,5 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface;
+using System = System;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 
@@ -7,13 +8,13 @@ public abstract class MeshEnvelope : IMesh
 	protected MeshEnvelope(IMesh mesh) =>
 		this.mesh = mesh;
 
-	public override Boolean Equals(Object? @object) =>
+	public override Boolean Equals(System::Object? @object) =>
 		mesh.Equals(@object);
 
 	public override Int32 GetHashCode() =>
 		mesh.GetHashCode();
 
-	public override String? ToString() =>
+	public override System::String? ToString() =>
 		mesh.ToString();
 
 	public IEnumerable<ISurface> Surfaces =>

@@ -1,20 +1,21 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod._Node.Mesh.ToGodot;
 
-public sealed class MeshOfNode : ScalarEnvelope<Godot.Mesh>
+public sealed class MeshOfNode : Envelope<Godot.Mesh>
 {
 	public MeshOfNode(MeshInstance3D node) : this
 	(
-		new ScalarValue<MeshInstance3D>(node)
+		new Tumbleweed.Scalar.Of.Value<MeshInstance3D>(node)
 	)
 	{
 	}
 	
-	public MeshOfNode(IScalar<MeshInstance3D> node) : base
+	public MeshOfNode(Any<MeshInstance3D> node) : base
 	(
-		new ResultOfFunction<Godot.Mesh>(
+		new Tumbleweed.Scalar.Function.Result<Godot.Mesh>(
 			() => node.Value.Mesh)
 	)
 	{

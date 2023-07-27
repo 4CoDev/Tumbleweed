@@ -9,20 +9,20 @@ public sealed class HolisticWithIndex : SurfaceEnvelope
 {
 	public HolisticWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
+		Any<ArrayMesh> mesh,
 		Int32 index
 	) : this
 	(
 		mesh,
-		new ScalarValue<Int32>(index)
+		new Tumbleweed.Scalar.Of.Value<Int32>(index)
 	)
 	{
 	}
 	
 	public HolisticWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> index
+		Any<ArrayMesh> mesh,
+		Any<Int32> index
 	) : base
 	(
 		new SurfaceWithValues(

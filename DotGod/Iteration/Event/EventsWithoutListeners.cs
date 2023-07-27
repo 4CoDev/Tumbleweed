@@ -2,13 +2,13 @@ using Tumbleweed.Event.Nullary;
 
 namespace DotGod.Iteration.Event;
 
-public sealed class EventsWithoutListeners : EventsEnvelope
+public sealed class EventsWithoutListeners : Envelope
 {
 	public EventsWithoutListeners() : base
 	(
 		new EventsWithSpecific(
-			new EventWithoutListeners(),
-			new EventWithoutListeners())
+			new Empty(),
+			new Empty())
 	)
 	{
 	}

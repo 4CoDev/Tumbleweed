@@ -6,9 +6,9 @@ using Tumbleweed.Scalar;
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.ToGodot;
 
 public sealed class InitialSurfaceToolWithMaterial
-	: ScalarEnvelope<SurfaceTool>
+	: Envelope<SurfaceTool>
 {
-	public InitialSurfaceToolWithMaterial(IScalar<Material> material) : base
+	public InitialSurfaceToolWithMaterial(Any<Material> material) : base
 	(
 		new ToolWithMaterial(
 			new ToolWithPrimitiveType(new TrianglesType()),

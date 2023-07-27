@@ -5,11 +5,11 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 
 public sealed class MeshOfScalar : IMesh
 {
-	public MeshOfScalar(IScalar<IMesh> scalar) =>
-		this.scalar = scalar;
+	public MeshOfScalar(Any<IMesh> any) =>
+		this.any = any;
 
 	public IEnumerable<ISurface> Surfaces =>
-		scalar.Value.Surfaces;
+		any.Value.Surfaces;
 
-	private readonly IScalar<IMesh> scalar;
+	private readonly Any<IMesh> any;
 }

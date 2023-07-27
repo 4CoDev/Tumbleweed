@@ -1,17 +1,18 @@
 using Godot;
-using Tumbleweed._Collection;
-using Tumbleweed._Collection.FromStorages;
+using Tumbleweed.Collection;
+using Tumbleweed.Collection.FromStorages;
 using Tumbleweed.Scalar;
-using Tumbleweed.Storage.Element;
+using Tumbleweed.Storage.Record;
+using Tumbleweed.Storage.Record.By.Key;
 
 namespace DotGod.Spatial._Node.Batch.Entities.FromNodes;
 
 public sealed class EntitiesOfBatch : CollectionEnvelope<ISpatialEntity>
 {
-	public EntitiesOfBatch(IScalar<Node3D> node) : base
+	public EntitiesOfBatch(Tumbleweed.Scalar.Any<Node3D> node) : base
 	(
 		new CollectionOfElement<ISpatialEntity>(
-			new GlobalWithKey<ICollection<ISpatialEntity>>(
+			new Global<ICollection<ISpatialEntity>>(
 				node, "Entities"))
 	)
 	{

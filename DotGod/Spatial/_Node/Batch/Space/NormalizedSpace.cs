@@ -1,7 +1,7 @@
 using DotGod.Spatial._Node.Batch.Space.Points;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Spatial.Point;
-using Tumbleweed.Spatial.Point.Real.Comparison;
+using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Real.Comparison;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
@@ -10,13 +10,13 @@ public sealed class NormalizedSpace : ISpace
 	public NormalizedSpace(ISpace occupation) =>
 		this.occupation = occupation;
 
-	public IPoint<IReal> From => 
+	public Any<Tumbleweed.Number.Real.Any> From => 
 	(
 		new SmallestOfPoints(
 			new BothPointsOfSpace(occupation))
 	);
 
-	public IPoint<IReal> To => 
+	public Any<Tumbleweed.Number.Real.Any> To => 
 	(
 		new LargestOfPoints(
 			new BothPointsOfSpace(occupation))

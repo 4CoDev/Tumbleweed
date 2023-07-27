@@ -4,16 +4,16 @@ using Tumbleweed.Scalar;
 
 namespace DotGod._Node.Mesh.ToGodot;
 
-public sealed class ArrayMeshOfNode : ScalarEnvelope<ArrayMesh>
+public sealed class ArrayMeshOfNode : Envelope<ArrayMesh>
 {
 	public ArrayMeshOfNode(MeshInstance3D node) : this
 	(
-		new ScalarValue<MeshInstance3D>(node)
+		new Tumbleweed.Scalar.Of.Value<MeshInstance3D>(node)
 	)
 	{
 	}
 	
-	public ArrayMeshOfNode(IScalar<MeshInstance3D> node) : base
+	public ArrayMeshOfNode(Any<MeshInstance3D> node) : base
 	(
 		new ArrayMeshFromMesh(
 			new MeshOfNode(node))

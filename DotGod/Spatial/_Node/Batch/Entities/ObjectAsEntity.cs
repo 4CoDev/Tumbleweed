@@ -7,7 +7,7 @@ public sealed class ObjectAsEntity : EntityEnvelope
 	public ObjectAsEntity(Object @object) : base
 	(
 		new EntityOfScalar(
-			new ObjectAsType<ISpatialEntity>(@object))
+			new Tumbleweed.Object.Unpacked<ISpatialEntity>(@object))
 	)
 	{
 	}

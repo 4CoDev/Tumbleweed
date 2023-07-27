@@ -1,31 +1,32 @@
 using Godot;
-using Tumbleweed.Number.Integer.Natural;
-using Tumbleweed.Number.Integer.Natural.ToSystem;
+using Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
+using Tumbleweed.Number.Natural;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Translation.FromMeshDataTool.ToGodot;
 
-public sealed class TranslationOfVertex : ScalarEnvelope<Vector3>
+public sealed class TranslationOfVertex : Envelope<Vector3>
 {
 	public TranslationOfVertex
 	(
-		IScalar<MeshDataTool> tool,
-		INatural vertex
+		Any<MeshDataTool> tool,
+		Any vertex
 	) : this
 	(
 		tool,
-		new Int32FromNatural(vertex)
+		new One(vertex)
 	)
 	{
 	}
 	
 	public TranslationOfVertex
 	(
-		IScalar<MeshDataTool> mesh,
-		IScalar<Int32> vertex
+		Any<MeshDataTool> mesh,
+		Any<Int32> vertex
 	) : base
 	(
-		new ResultOfFunction<Vector3>(
+		new Tumbleweed.Scalar.Function.Result<Vector3>(
 			() => mesh.Value.GetVertex(vertex.Value))
 	)
 	{

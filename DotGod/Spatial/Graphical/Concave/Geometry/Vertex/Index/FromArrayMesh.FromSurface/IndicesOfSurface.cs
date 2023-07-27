@@ -1,19 +1,19 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot;
 using DotGod.Spatial.Graphical.Concave.Geometry.Vertex.Index.FromSurfaceTool.FromGodot;
 using Godot;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
 
 namespace
 	DotGod.Spatial.Graphical.Concave.Geometry.Vertex.Index.FromArrayMesh.
 	FromSurface;
 
-public sealed class IndicesOfSurface : EnumerableEnvelope<Int32>
+public sealed class IndicesOfSurface : Tumbleweed.Enumerable.Envelope<Int32>
 {
 	public IndicesOfSurface
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	) : base
 	(
 		new IndicesFromSurfaceTool(

@@ -1,15 +1,16 @@
-using Tumbleweed.Number.Integer.Signed.OfSystem._Int32;
+using Tumbleweed.Number.Integer.System.Medium.From;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Lazy;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh.ArrayType;
 
-public sealed class IndexArray : ScalarEnvelope<Int32>
+public sealed class IndexArray : Envelope<Int32>
 {
 	public IndexArray() : base
 	(
-		new LazyValue<Int32>(
-			new Int32From64(
-				new ObjectAsType<Int64>(
+		new OfValue<Int32>(
+			new Long(
+				new Tumbleweed.Object.Unpacked<Int64>(
 					Godot.Mesh.ArrayType.Index)))
 	)
 	{

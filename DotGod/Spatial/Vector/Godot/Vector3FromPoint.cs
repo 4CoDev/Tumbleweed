@@ -1,26 +1,29 @@
 using Godot;
 using Tumbleweed.Number.Real;
-using Tumbleweed.Number.Real.Binary.ToSystem.Singles;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System.From;
+using Tumbleweed.Number.Real.Binary.Precision.Single.System.From.Tumbleweed;
+using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Point;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Spatial.Vector.Godot;
 
-public sealed class Vector3FromPoint : ScalarEnvelope<Vector3>
+public sealed class Vector3FromPoint : Tumbleweed.Scalar.Envelope<Vector3>
 {
-	public Vector3FromPoint(IPoint<IReal> point) : base
+	public Vector3FromPoint(Tumbleweed.Point.Spatial.Any<Any> point) : base
 	(
-		new ResultOfFunction<Vector3>(
+		new Tumbleweed.Scalar.Function.Result<Vector3>(
 			() => Result(point))
 	)
 	{
 	}
 
-	private static Vector3 Result(IPoint<IReal> point) =>
+	private static Vector3 Result(Tumbleweed.Point.Spatial.Any<Any> point) =>
 	(
 		new Vector3(
-			new SingleFromReal(point.X).Value,
-			new SingleFromReal(point.Y).Value,
-			new SingleFromReal(point.Z).Value)
+			new One(point.X).Value,
+			new One(point.Y).Value,
+			new One(point.Z).Value)
 	);
 }

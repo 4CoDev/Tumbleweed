@@ -9,7 +9,7 @@ public sealed class SurfaceWithValues : ISurface
 	public SurfaceWithValues
 	(
 		IEnumerable<IPolygon> polygons,
-		IScalar<Material> material
+		Any<Material> material
 	)
 	{
 		Polygons = polygons;
@@ -18,5 +18,5 @@ public sealed class SurfaceWithValues : ISurface
 	
 	public IEnumerable<IPolygon> Polygons { get; }
 	
-	public IScalar<Material> Material { get; }
+	public Any<Material> Material { get; }
 }

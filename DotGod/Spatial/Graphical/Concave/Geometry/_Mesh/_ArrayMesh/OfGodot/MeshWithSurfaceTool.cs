@@ -3,15 +3,15 @@ using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
 
-public sealed class MeshWithSurfaceTool : IScalar<Godot.ArrayMesh>
+public sealed class MeshWithSurfaceTool : Any<Godot.ArrayMesh>
 {
 	public MeshWithSurfaceTool
 	(
 		SurfaceTool tool,
-		IScalar<Godot.ArrayMesh> mesh
+		Any<Godot.ArrayMesh> mesh
 	) : this
 	(
-		new ScalarValue<SurfaceTool>(tool),
+		new Tumbleweed.Scalar.Of.Value<SurfaceTool>(tool),
 		mesh
 	)
 	{
@@ -19,20 +19,20 @@ public sealed class MeshWithSurfaceTool : IScalar<Godot.ArrayMesh>
 	
 	public MeshWithSurfaceTool
 	(
-		IScalar<SurfaceTool> tool,
+		Any<SurfaceTool> tool,
 		Godot.ArrayMesh mesh
 	) : this
 	(
 		tool,
-		new ScalarValue<Godot.ArrayMesh>(mesh)
+		new Tumbleweed.Scalar.Of.Value<Godot.ArrayMesh>(mesh)
 	)
 	{
 	}
 	
 	public MeshWithSurfaceTool
 	(
-		IScalar<SurfaceTool> tool,
-		IScalar<Godot.ArrayMesh> mesh
+		Any<SurfaceTool> tool,
+		Any<Godot.ArrayMesh> mesh
 	)
 	{
 		this.tool = tool;
@@ -41,7 +41,7 @@ public sealed class MeshWithSurfaceTool : IScalar<Godot.ArrayMesh>
 
 	public Godot.ArrayMesh Value => tool.Value.Commit(mesh.Value);
 
-	private readonly IScalar<SurfaceTool> tool;
+	private readonly Any<SurfaceTool> tool;
 	
-	private readonly IScalar<Godot.ArrayMesh> mesh;
+	private readonly Any<Godot.ArrayMesh> mesh;
 }

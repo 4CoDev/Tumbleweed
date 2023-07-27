@@ -4,36 +4,34 @@ using DotGod.Spatial.Graphical.Concave.Geometry.Translation.FromMeshDataTool;
 using DotGod.Spatial.Graphical.Concave.Geometry.UV.FromMeshDataTool;
 using Godot;
 using Tumbleweed.Number.Real;
+using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Point;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex.FromMeshDataTool;
 
 public sealed class VertexWithIndex : IVertex
 {
 	public VertexWithIndex
-	(
-		IScalar<MeshDataTool> mesh,
-		IScalar<Int32> vertex
+	(Tumbleweed.Scalar.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Any<Int32> vertex
 	)
 	{
 		this.mesh = mesh;
 		this.vertex = vertex;
 	}
 
-	public IPoint<IReal> Translation =>
+	public Tumbleweed.Point.Spatial.Any<Any> Translation =>
 		new TranslationOfVertex(mesh, vertex);
 
-	public IPoint<IReal> Normal =>
+	public Tumbleweed.Point.Spatial.Any<Any> Normal =>
 		new NormalOfVertex(mesh, vertex);
 
-	public IScalar<Color> Color =>
+	public Tumbleweed.Scalar.Any<Color> Color =>
 		new ColorFromMeshDataTool(mesh, vertex);
 
-	public Tumbleweed.Planar.Point.IPoint<IReal> UV =>
+	public Tumbleweed.Point.Planar.Any<Any> UV =>
 		new UVOfVertex(mesh, vertex);
 
-	private readonly IScalar<MeshDataTool> mesh;
+	private readonly Tumbleweed.Scalar.Any<MeshDataTool> mesh;
 	
-	private readonly IScalar<Int32> vertex;
+	private readonly Tumbleweed.Scalar.Any<Int32> vertex;
 }

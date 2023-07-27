@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed._Enumerable;
+using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
 using VertexIndicesOfTriangles =
 	DotGod.Spatial.Graphical.Concave.Geometry.Vertex.Index.FromArrayMesh.FromSurface.IndicesOfTriangles;
@@ -8,12 +8,12 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry.Polygon.Triangle.FromGodot.
 	FromSurface;
 
 public sealed class TrianglesOfSurface
-	: EnumerableEnvelope<IPolygon>
+	: Tumbleweed.Enumerable.Envelope<IPolygon>
 {
 	public TrianglesOfSurface
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface
 	) : base
 	(
 		new TrianglesWithVertexIndices(

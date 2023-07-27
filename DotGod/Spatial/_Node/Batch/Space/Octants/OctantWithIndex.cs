@@ -1,7 +1,5 @@
 using DotGod.Spatial._Node.Batch.Space.Octants.Points;
-using DotGod.Spatial._Node.Spaced.Batch;
-using Tumbleweed.Spatial.Point;
-using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
+using Tumbleweed.Point.Spatial;
 
 namespace DotGod.Spatial._Node.Batch.Space.Octants;
 
@@ -9,10 +7,10 @@ public sealed class OctantWithIndex : SpaceEnvelope
 {
 	public OctantWithIndex
 	(
-		ISpacedBatch batch,
-		IPoint<INaturalNumber> index) : this
+		Spaced.Abstract.IBatch batch,
+		Any<Tumbleweed.Number.Natural.Any> index) : this
 	(
-		new SpaceOfBatch(batch),
+		new Spaced.Batch.Space.Of.Batch(batch),
 		index
 	)
 	{
@@ -21,7 +19,7 @@ public sealed class OctantWithIndex : SpaceEnvelope
 	public OctantWithIndex
 	(
 		ISpace space,
-		IPoint<INaturalNumber> index) : base
+		Any<Tumbleweed.Number.Natural.Any> index) : base
 	(
 		new SpaceWithPoints(
 			new FromPointWithIndex(space, index),

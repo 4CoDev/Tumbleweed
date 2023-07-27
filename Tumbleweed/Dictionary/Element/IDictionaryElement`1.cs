@@ -4,7 +4,7 @@ namespace Tumbleweed.Dictionary.Element;
 
 public interface IDictionaryElement<T> where T : notnull
 {
-	INullable<T> Nullability { get; }
+	Any<T> Nullability { get; }
 
 	void Remove();
 

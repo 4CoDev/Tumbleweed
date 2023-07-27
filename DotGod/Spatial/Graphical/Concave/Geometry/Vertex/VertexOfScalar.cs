@@ -1,24 +1,24 @@
 using Godot;
 using Tumbleweed.Number.Real;
+using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Spatial.Point;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 
 public sealed class VertexOfScalar : IVertex
 {
-	public VertexOfScalar(IScalar<IVertex> scalar)
+	public VertexOfScalar(Tumbleweed.Scalar.Any<IVertex> any)
 	{
-		this.scalar = scalar;
+		this.any = any;
 	}
 	
-	public IPoint<IReal> Translation => scalar.Value.Translation;
+	public Tumbleweed.Point.Spatial.Any<Any> Translation => any.Value.Translation;
 
-	public IPoint<IReal> Normal => scalar.Value.Normal;
+	public Tumbleweed.Point.Spatial.Any<Any> Normal => any.Value.Normal;
 
-	public IScalar<Color> Color => scalar.Value.Color;
+	public Tumbleweed.Scalar.Any<Color> Color => any.Value.Color;
 
-	public Tumbleweed.Planar.Point.IPoint<IReal> UV => scalar.Value.UV;
+	public Tumbleweed.Point.Planar.Any<Any> UV => any.Value.UV;
 
-	private readonly IScalar<IVertex> scalar;
+	private readonly Tumbleweed.Scalar.Any<IVertex> any;
 }

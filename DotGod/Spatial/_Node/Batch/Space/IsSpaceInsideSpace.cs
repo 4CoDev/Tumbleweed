@@ -1,11 +1,11 @@
 using DotGod.Spatial._Node.Batch.Space.Points;
-using Tumbleweed._Boolean;
-using Tumbleweed._Boolean.Algebra;
-using Tumbleweed.Spatial.Point.Real.Comparison;
+using Tumbleweed.Boolean;
+using Tumbleweed.Boolean.Comparison.Both.Are;
+using Tumbleweed.Point.Spatial.Real.Comparison;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
-public sealed class IsSpaceInsideSpace : BooleanEnvelope
+public sealed class IsSpaceInsideSpace : Tumbleweed.Boolean.Envelope
 {
 	public IsSpaceInsideSpace
 	(
@@ -13,7 +13,7 @@ public sealed class IsSpaceInsideSpace : BooleanEnvelope
 		ISpace external
 	) : base
 	(
-		new AndOfTwoBooleans(
+		new True(
 			new IsGreaterThanOrEqualsToPoint(
 				new FromPointOfSpace(@internal),
 				new FromPointOfSpace(external)),

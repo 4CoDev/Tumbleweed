@@ -1,18 +1,15 @@
-using Tumbleweed.Nullable;
-using Tumbleweed.Scalar;
-
 namespace Tumbleweed.Dictionary.Element;
 
 public sealed class ElementOfScalar<T> : IDictionaryElement<T> where T : notnull
 {
-	public ElementOfScalar(IScalar<IDictionaryElement<T>> scalar) =>
-		this.scalar = scalar;
+	public ElementOfScalar(Tumbleweed.Scalar.Any<IDictionaryElement<T>> any) =>
+		this.any = any;
 	
-	public INullable<T> Nullability => scalar.Value.Nullability;
+	public Nullable.Any<T> Nullability => any.Value.Nullability;
 
-	public void Remove() => scalar.Value.Remove();
+	public void Remove() => any.Value.Remove();
 
-	public void Place(T value) => scalar.Value.Place(value);
+	public void Place(T value) => any.Value.Place(value);
 	
-	private readonly IScalar<IDictionaryElement<T>> scalar;
+	private readonly Tumbleweed.Scalar.Any<IDictionaryElement<T>> any;
 }

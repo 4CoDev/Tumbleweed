@@ -1,4 +1,5 @@
-using Tumbleweed._Collection;
+using Tumbleweed.Collection;
+using System = System;
 
 namespace Tumbleweed.Dictionary;
 
@@ -6,7 +7,7 @@ public sealed class ValuesOfDictionary<T> : CollectionEnvelope<T>
 {
 	public ValuesOfDictionary
 	(
-		IDictionary<Object, T> dictionary
+		IDictionary<System::Object, T> dictionary
 	) : base
 	(
 		new CollectionOfFunction<T>(

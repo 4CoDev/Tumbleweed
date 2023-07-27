@@ -1,10 +1,10 @@
-using Tumbleweed._Collection;
+using Tumbleweed.Collection;
 
 namespace DotGod.Spatial._Node.Batch.Entities;
 
 public sealed class EntitiesOfBatch : CollectionEnvelope<ISpatialEntity>
 {
-	public EntitiesOfBatch(IBatch batch) : base
+	public EntitiesOfBatch(Any batch) : base
 	(
 		new CollectionOfFunction<ISpatialEntity>(
 			() => batch.Entities)

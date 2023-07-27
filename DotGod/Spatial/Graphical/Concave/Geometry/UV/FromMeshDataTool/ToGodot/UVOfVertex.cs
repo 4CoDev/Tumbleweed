@@ -1,31 +1,33 @@
 using Godot;
-using Tumbleweed.Number.Integer.Natural;
-using Tumbleweed.Number.Integer.Natural.ToSystem;
+using Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
+
+using Tumbleweed.Number.Natural;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Function;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.UV.FromMeshDataTool.ToGodot;
 
-public sealed class UVOfVertex : ScalarEnvelope<Vector2>
+public sealed class UVOfVertex : Envelope<Vector2>
 {
 	public UVOfVertex
 	(
-		IScalar<MeshDataTool> tool,
-		INatural vertex
+		Any<MeshDataTool> tool,
+		Any vertex
 	) : this
 	(
 		tool,
-		new Int32FromNatural(vertex)
+		new One(vertex)
 	)
 	{
 	}
 	
 	public UVOfVertex
 	(
-		IScalar<MeshDataTool> tool,
-		IScalar<Int32> vertex
+		Any<MeshDataTool> tool,
+		Any<Int32> vertex
 	) : base
 	(
-		new ResultOfFunction<Vector2>(
+		new Tumbleweed.Scalar.Function.Result<Vector2>(
 			() => tool.Value.GetVertexUV(vertex.Value))
 	)
 	{

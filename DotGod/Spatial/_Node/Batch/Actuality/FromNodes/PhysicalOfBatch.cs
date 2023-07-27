@@ -6,11 +6,11 @@ namespace DotGod.Spatial._Node.Batch.Actuality.FromNodes;
 
 public sealed class PhysicalOfBatch : ISpaceActuality
 {
-	public PhysicalOfBatch(IScalar<Node3D> node) =>
+	public PhysicalOfBatch(Any<Node3D> node) =>
 		this.node = node;
 	
 	public void Update() =>
 		throw new NotImplementedException();
 
-	private readonly IScalar<Node3D> node;
+	private readonly Any<Node3D> node;
 }

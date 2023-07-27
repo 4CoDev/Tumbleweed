@@ -1,23 +1,21 @@
 using DotGod.Spatial._Node.Batch.Space.Points;
-using DotGod.Spatial._Node.Spaced.Batch;
-using Tumbleweed.Number.Integer.Natural.Spatial;
-using Tumbleweed.Spatial.Point;
-using Tumbleweed.Spatial.Point.Real.Arithmetic;
-using Tumbleweed.Spatial.Point.Real.Arithmetic.Rounding;
-using INaturalNumber = Tumbleweed.Number.Integer.Natural.INatural;
-using IRealNumber = Tumbleweed.Number.Real.IReal;
+using Tumbleweed.Number.Natural.Point.Spatial;
+using Tumbleweed.Number.Natural.Point.Spatial.From;
+using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Real.Arithmetic;
+using Tumbleweed.Point.Spatial.Real.Arithmetic.Rounding;
 
 namespace DotGod.Spatial._Node.Batch.Space.Octants;
 
-public sealed class OctantIndexWithPoint : PointEnvelope<INaturalNumber>
+public sealed class OctantIndexWithPoint : Envelope<Tumbleweed.Number.Natural.Any>
 {
 	public OctantIndexWithPoint
 	(
-		ISpacedBatch batch,
-		IPoint<IRealNumber> point
+		Spaced.Abstract.IBatch batch,
+		Any<Tumbleweed.Number.Real.Any> point
 	) : this
 	(
-		new SpaceOfBatch(batch),
+		new Spaced.Batch.Space.Of.Batch(batch),
 		point
 	)
 	{
@@ -26,7 +24,7 @@ public sealed class OctantIndexWithPoint : PointEnvelope<INaturalNumber>
 	public OctantIndexWithPoint
 	(
 		ISpace space,
-		IPoint<IRealNumber> point
+		Any<Tumbleweed.Number.Real.Any> point
 	) : this
 	(
 		new SizeOfSpace(space),
@@ -39,11 +37,11 @@ public sealed class OctantIndexWithPoint : PointEnvelope<INaturalNumber>
 
 	public OctantIndexWithPoint
 	(
-		IPoint<IRealNumber> size,
-		IPoint<IRealNumber> point
+		Any<Tumbleweed.Number.Real.Any> size,
+		Any<Tumbleweed.Number.Real.Any> point
 	) : base
 	(
-		new NaturalFromReal(
+		new Real(
 			new NearestIntegerOfPoint(
 				new QuotientOfPoints(point, size)))
 	)

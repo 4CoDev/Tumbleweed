@@ -19,10 +19,10 @@ public sealed class DictionaryFromKeyEnumerable<TKey, TValue> :
 	
 	private DictionaryFromKeyEnumerable
 	(
-		IScalar<IDictionary<TKey, TValue>> scalar
+		Any<IDictionary<TKey, TValue>> any
 	) : base
 	(
-		new DictionaryOfScalar<TKey, TValue>(scalar)
+		new DictionaryOfScalar<TKey, TValue>(any)
 	)
 	{
 	}

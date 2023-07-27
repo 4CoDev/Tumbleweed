@@ -7,8 +7,8 @@ public sealed class EventsWithoutListeners : EventsEnvelope
 	public EventsWithoutListeners() : base
 	(
 		new EventsWithSpecific(
-			new EventWithoutListeners(),
-			new EventWithoutListeners())
+			new Empty(),
+			new Empty())
 	)
 	{
 	}

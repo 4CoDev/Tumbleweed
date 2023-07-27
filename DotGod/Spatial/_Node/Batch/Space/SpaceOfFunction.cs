@@ -1,5 +1,6 @@
-using Tumbleweed.Scalar;
-using Tumbleweed.Subroutine.Nullary.Function;
+using Tumbleweed.Scalar.Function;
+using Tumbleweed.Subroutine.Function.Nullary;
+using Tumbleweed.Subroutine.Function.Nullary.From;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
@@ -10,18 +11,17 @@ public sealed class SpaceOfFunction : SpaceEnvelope
 		Func<ISpace> function
 	) : this
 	(
-		new FunctionFromSystem<ISpace>(function)
+		new System<ISpace>(function)
 	)
 	{
 	}
 	
 	public SpaceOfFunction
-	(
-		IFunction<ISpace> function
+	(Tumbleweed.Subroutine.Function.Nullary.Any<ISpace> function
 	) : base
 	(
 		new SpaceOfScalar(
-			new ResultOfFunction<ISpace>(
+			new Tumbleweed.Scalar.Function.Result<ISpace>(
 				function))
 	)
 	{

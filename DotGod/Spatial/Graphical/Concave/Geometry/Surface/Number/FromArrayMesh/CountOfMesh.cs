@@ -1,15 +1,15 @@
 using Godot;
-using Tumbleweed.Number.Integer.Natural;
-using Tumbleweed.Number.Integer.Natural.FromSystem;
+using Tumbleweed.Number.Natural;
+using Tumbleweed.Number.Natural.From.System;
 using Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface.Number.FromArrayMesh;
 
-public sealed class CountOfMesh : NaturalEnvelope
+public sealed class CountOfMesh : Envelope
 {
-	public CountOfMesh(IScalar<ArrayMesh> mesh) : base
+	public CountOfMesh(Any<ArrayMesh> mesh) : base
 	(
-		new NaturalFromInt32(
+		new One(
 			new ToSystem.SurfaceCountOfMesh(mesh))
 	)
 	{

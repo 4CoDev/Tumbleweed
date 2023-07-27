@@ -9,37 +9,37 @@ public sealed class VertexWithIndex : VertexEnvelope
 {
 	public VertexWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
+		Any<ArrayMesh> mesh,
 		Int32 surface,
 		Int32 vertex
 	) : this
 	(
 		mesh,
-		new ScalarValue<Int32>(surface),
-		new ScalarValue<Int32>(vertex)
+		new Tumbleweed.Scalar.Of.Value<Int32>(surface),
+		new Tumbleweed.Scalar.Of.Value<Int32>(vertex)
 	)
 	{
 	}
 	
 	public VertexWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface,
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface,
 		Int32 vertex
 	) : this
 	(
 		mesh,
 		surface,
-		new ScalarValue<Int32>(vertex)
+		new Tumbleweed.Scalar.Of.Value<Int32>(vertex)
 	)
 	{
 	}
 	
 	public VertexWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> surface,
-		IScalar<Int32> vertex
+		Any<ArrayMesh> mesh,
+		Any<Int32> surface,
+		Any<Int32> vertex
 	) : base
 	(
 		new FromMeshDataTool.VertexWithIndex(

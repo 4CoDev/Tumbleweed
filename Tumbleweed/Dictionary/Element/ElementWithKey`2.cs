@@ -1,5 +1,5 @@
 using Tumbleweed.Nullable;
-using Tumbleweed.Nullable.FromSystem;
+using Tumbleweed.Nullable.From.System;
 
 namespace Tumbleweed.Dictionary.Element;
 
@@ -17,8 +17,8 @@ public sealed class ElementWithKey<TKey, TElement> :
 		this.key = key;
 	}
 
-	public INullable<TElement> Nullability =>
-		new NullableFromSystem<TElement>(dictionary[key]);
+	public Any<TElement> Nullability =>
+		new One<TElement>(dictionary[key]);
 
 	public void Remove() => dictionary.Remove(key);
 

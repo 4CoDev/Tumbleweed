@@ -1,11 +1,11 @@
 using Tumbleweed.Event.Subscription;
-using Tumbleweed.Subroutine.Nullary.Action;
+using Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace DotGod.Input.Event.Subscription;
 
 public interface ISubscriptions
 {
-	ISubscription<IAction> Handled { get; }
+	Any<Any> Handled { get; }
 	
-	ISubscription<IAction> Unhandled { get; }
+	Any<Any> Unhandled { get; }
 }

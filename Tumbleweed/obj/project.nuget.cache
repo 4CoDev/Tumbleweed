@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1EmnZZ25NhYDr0287ucbgv/85qZ3AYDT7cfysB9p5g73mk5Ofmk5db8v7M6ZdfjqB0+KahN5/SB+zdb/836cVQ==",
+  "dgSpecHash": "zXX9vF9+xGoUdlEQlDQWaN+fMfTCxd/zmYA/O7IVqOPYJ44fKyMQBY4wCckkzKv14/VN2PN36pioF/6hmCPYDQ==",
   "success": true,
   "projectFilePath": "/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/Tumbleweed.csproj",
   "expectedPackageFiles": [
-    "/Users/thisischico/.nuget/packages/godotsharp/4.0.0-rc.1/godotsharp.4.0.0-rc.1.nupkg.sha512"
+    "/Users/thisischico/.nuget/packages/godotsharp/4.1.0/godotsharp.4.1.0.nupkg.sha512"
   ],
   "logs": []
 }

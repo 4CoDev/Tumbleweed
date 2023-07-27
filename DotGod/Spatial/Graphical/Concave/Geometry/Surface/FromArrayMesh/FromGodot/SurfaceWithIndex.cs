@@ -9,19 +9,19 @@ public sealed class SurfaceWithIndex : SurfaceEnvelope
 {
 	public SurfaceWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
+		Any<ArrayMesh> mesh,
 		Int32 index
 	) : this
 	(
-		mesh, new ScalarValue<Int32>(index)
+		mesh, new Tumbleweed.Scalar.Of.Value<Int32>(index)
 	)
 	{
 	}
 	
 	public SurfaceWithIndex
 	(
-		IScalar<ArrayMesh> mesh,
-		IScalar<Int32> index
+		Any<ArrayMesh> mesh,
+		Any<Int32> index
 	) : base
 	(
 		new SurfaceWithValues(

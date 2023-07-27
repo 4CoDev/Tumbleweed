@@ -8,12 +8,12 @@ public sealed class TransformedOfNode : MeshEnvelope
 {
 	public TransformedOfNode(MeshInstance3D node) : this
 	(
-		new ScalarValue<MeshInstance3D>(node)
+		new Tumbleweed.Scalar.Of.Value<MeshInstance3D>(node)
 	)
 	{
 	}
 	
-	public TransformedOfNode(IScalar<MeshInstance3D> node) : base
+	public TransformedOfNode(Any<MeshInstance3D> node) : base
 	(
 		new TransformedMesh(
 			new MeshOfNode(node),

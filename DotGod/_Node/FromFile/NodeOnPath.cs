@@ -3,16 +3,16 @@ using Tumbleweed.Scalar;
 
 namespace DotGod._Node.FromFile;
 
-public sealed class NodeOnPath : ScalarEnvelope<Node> 
+public sealed class NodeOnPath : Envelope<Node> 
 {
 	public NodeOnPath(String path) : this
 	(
-		new ScalarValue<String>(path)
+		new Tumbleweed.Scalar.Of.Value<String>(path)
 	)
 	{
 	}
 	
-	public NodeOnPath(IScalar<String> path) : base
+	public NodeOnPath(Any<String> path) : base
 	(
 		new NodeOnPath<Node>(path)
 	)

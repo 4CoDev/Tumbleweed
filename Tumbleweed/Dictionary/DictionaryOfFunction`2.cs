@@ -1,5 +1,6 @@
-using Tumbleweed.Scalar;
-using Tumbleweed.Subroutine.Nullary.Function;
+using Tumbleweed.Scalar.Function;
+using Tumbleweed.Subroutine.Function.Nullary;
+using Tumbleweed.Subroutine.Function.Nullary.From;
 
 namespace Tumbleweed.Dictionary;
 
@@ -12,18 +13,17 @@ public sealed class DictionaryOfFunction<TKey, TValue> :
 		Func<IDictionary<TKey, TValue>> function
 	) : this
 	(
-		new FunctionFromSystem<IDictionary<TKey, TValue>>(function)
+		new System<IDictionary<TKey, TValue>>(function)
 	)
 	{
 	}
 	
 	public DictionaryOfFunction
-	(
-		IFunction<IDictionary<TKey, TValue>> function
+	(Subroutine.Function.Nullary.Any<IDictionary<TKey, TValue>> function
 	) : base
 	(
 		new DictionaryOfScalar<TKey, TValue>(
-			new ResultOfFunction<IDictionary<TKey, TValue>>(function))
+			new Tumbleweed.Scalar.Function.Result<IDictionary<TKey, TValue>>(function))
 	)
 	{
 	}

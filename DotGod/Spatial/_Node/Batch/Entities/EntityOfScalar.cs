@@ -1,36 +1,34 @@
 using DotGod.Spatial._Node.Batch.Entities.Equality;
 using DotGod.Spatial._Node.Batch.Space;
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using Godot;
-using Tumbleweed._Object.Hash;
-using Tumbleweed._Object.String;
-using Tumbleweed.Nullable;
-using Tumbleweed.Scalar;
+using Tumbleweed.Object.Hash;
+using Tumbleweed.Object.String;
+using System = System;
 
 namespace DotGod.Spatial._Node.Batch.Entities;
 
 public sealed class EntityOfScalar : ISpatialEntity
 {
-	public EntityOfScalar(IScalar<ISpatialEntity> scalar) =>
-		this.scalar = scalar;
+	public EntityOfScalar(Tumbleweed.Scalar.Any<ISpatialEntity> any) =>
+		this.any = any;
 	
-	public override Boolean Equals(Object? @object) =>
+	public override Boolean Equals(System::Object? @object) =>
 		new EqualityOfTwoNullables(this, @object).State;
 
 	public override Int32 GetHashCode() =>
 		new HashFromObjects(Node, Mesh).Value;
 
-	public override String ToString() =>
+	public override System::String ToString() =>
 		new StringFromObjects(Node, Mesh).Value;
 
-	public INullable<Node> Node =>
-		scalar.Value.Node;
+	public Tumbleweed.Nullable.Any<Godot.Node> Node =>
+		any.Value.Node;
 
 	public IMesh Mesh =>
-		scalar.Value.Mesh;
+		any.Value.Mesh;
 
 	public ISpace Occupation =>
-		scalar.Value.Occupation;
+		any.Value.Occupation;
 
-	private readonly IScalar<ISpatialEntity> scalar;
+	private readonly Tumbleweed.Scalar.Any<ISpatialEntity> any;
 }
