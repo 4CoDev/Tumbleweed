@@ -1,5 +1,7 @@
 using Tumbleweed.Number.Integer.System.Medium.Is.Positive;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using One = Tumbleweed.Number.Integer.System.Medium.Less.Then.One;
 using System = System;
 
@@ -20,7 +22,7 @@ public sealed class BitWithIndex : Any<Any>
 			Any<Int32> positive = new Statement(index);
 			Any<Int32> bounded = new One(positive, new NumberOfBits());
 			return new From.System.One(
-				new Tumbleweed.Scalar.Function.Result<global::System.Boolean>(
+				new Actual<global::System.Boolean>(
 					() => (@byte.Value & (1 << bounded.Value)) != 0));
 		}
 	}

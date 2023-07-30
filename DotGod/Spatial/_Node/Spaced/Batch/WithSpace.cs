@@ -2,7 +2,6 @@ using DotGod.Spatial._Node.Batch;
 using DotGod.Spatial._Node.Batch.Entities;
 using DotGod.Spatial._Node.Batch.Space;
 using Tumbleweed.Array;
-using Tumbleweed.Nullable;
 
 namespace DotGod.Spatial._Node.Spaced.Batch;
 
@@ -19,7 +18,7 @@ public sealed class WithSpace : Spaced.Abstract.IBatch
 		Space = space;
 	}
 	
-	public Tumbleweed.Array.Any<Tumbleweed.Nullable.Any<Any>> Subbatches { get; }
+	public Tumbleweed.Array.Any<Tumbleweed.Scalar.Nullable.Any<Any>> Subbatches { get; }
 
 	public ICollection<ISpatialEntity> Entities { get; }
 	

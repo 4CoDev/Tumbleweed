@@ -13,7 +13,7 @@ public class Aggregated : Envelope
 	) : base
 	(
 		new Value(
-			new TW.Scalar.From.Enumerable.Aggregated<Any>(
+			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any>(
 				from,
 				seed,
 				expression))

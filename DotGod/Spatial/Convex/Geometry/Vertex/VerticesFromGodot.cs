@@ -5,6 +5,9 @@ using Tumbleweed.Enumerable;
 using Tumbleweed.Geometry.Spatial.Vertex;
 using Tumbleweed.Geometry.Spatial.Vertex.With.Translation;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Convex.Geometry.Vertex;
 
@@ -15,7 +18,7 @@ public sealed class VerticesFromGodot : Tumbleweed.Enumerable.Envelope<Any>
 		ConvexPolygonShape3D shape
 	) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<ConvexPolygonShape3D>(shape)
+		new Value<ConvexPolygonShape3D>(shape)
 	)
 	{
 	}

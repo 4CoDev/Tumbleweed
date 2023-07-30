@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Natural = Tumbleweed.Number.Natural;
 using System = System;
 using Scalar = Tumbleweed.Scalar;
@@ -9,12 +12,12 @@ public sealed class Natural : Natural::Envelope
 {
 	public Natural(System::Double @double) : this
 	(
-		new Scalar::Of.Value<System::Double>(@double)
+		new Value<System::Double>(@double)
 	)
 	{
 	}
 	
-	public Natural(Scalar::Any<System::Double> @double) : base
+	public Natural(Any<System::Double> @double) : base
 	(
 		new Natural::With.Bits.New(
 			new Double::Bits(@double))

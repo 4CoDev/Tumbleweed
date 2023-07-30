@@ -2,7 +2,8 @@ using Godot;
 using Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
 using Tumbleweed.Number.Natural;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Translation.FromMeshDataTool.ToGodot;
 
@@ -26,7 +27,7 @@ public sealed class TranslationOfVertex : Envelope<Vector3>
 		Any<Int32> vertex
 	) : base
 	(
-		new Tumbleweed.Scalar.Function.Result<Vector3>(
+		new Actual<Vector3>(
 			() => mesh.Value.GetVertex(vertex.Value))
 	)
 	{

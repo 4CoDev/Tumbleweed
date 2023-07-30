@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Subroutine.Function.Nullary;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 
@@ -21,7 +21,7 @@ public sealed class SpaceOfFunction : SpaceEnvelope
 	) : base
 	(
 		new SpaceOfScalar(
-			new Tumbleweed.Scalar.Function.Result<ISpace>(
+			new Actual<ISpace>(
 				function))
 	)
 	{

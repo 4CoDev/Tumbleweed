@@ -1,5 +1,6 @@
-using Mutable = Tumbleweed.Mutable;
-using Scalar = Tumbleweed.Scalar;
+using Mutable = Tumbleweed.Scalar.Mutable;
+using Immutable = Tumbleweed.Scalar.Immutable;
+using System = System;
 
 namespace Tumbleweed.Array.Dimension.Linear.System.Item.At.Index;
 
@@ -7,8 +8,8 @@ public sealed class System<T> : Mutable::Any<T>
 {
 	public System
 	(
-		Scalar::Any<T[]> array,
-		Scalar::Any<Int32> index
+		Immutable::Any<T[]> array,
+		Immutable::Any<System::Int32> index
 	)
 	{
 		this.array = array;
@@ -21,7 +22,7 @@ public sealed class System<T> : Mutable::Any<T>
 		set => array.Value[index.Value] = value;
 	}
 
-	private readonly Tumbleweed.Scalar.Any<T[]> array;
+	private readonly Immutable::Any<T[]> array;
 	
-	private readonly Tumbleweed.Scalar.Any<Int32> index;
+	private readonly Immutable::Any<System::Int32> index;
 }

@@ -15,6 +15,7 @@
     <ItemGroup>
       <Folder Include="Array\Dimension\" />
       <Folder Include="Boolean\Comparison\" />
+      <Folder Include="Scalar\" />
       <Folder Include="Geometry\Spatial\" />
     </ItemGroup>
 

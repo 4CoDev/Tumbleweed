@@ -2,6 +2,9 @@ using Godot;
 using Tumbleweed.Number.Real;
 using Tumbleweed.Number.Real.Binary.Precision.Double.From.System;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Time;
 
@@ -9,7 +12,7 @@ public sealed class FrameTime : Envelope
 {
 	public FrameTime(Node node) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Node>(node)
+		new Value<Node>(node)
 	)
 	{
 	}

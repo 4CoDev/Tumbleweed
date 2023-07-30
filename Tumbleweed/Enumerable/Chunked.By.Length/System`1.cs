@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable;
 using Enumerable = Tumbleweed.Enumerable;
 using Scalar = Tumbleweed.Scalar;
 
@@ -8,7 +9,7 @@ public sealed class System<T> : Enumerable::Envelope<IEnumerable<T>>
 	public System
 	(
 		IEnumerable<T> enumerable,
-		Scalar::Any<Int32> size
+		Any<Int32> size
 	) : base
 	(
 		new Enumerable::Function.Result<IEnumerable<T>>(

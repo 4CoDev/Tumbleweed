@@ -1,10 +1,12 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Scalar = Tumbleweed.Scalar;
 using System = System;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 namespace Tumbleweed.Number.Real.Binary.Precision.Single.System.From.Bytes;
 
-public sealed class System : Scalar::Envelope<System::Single>
+public sealed class System : Envelope<System::Single>
 {
 	public System(IEnumerable<System::Byte> bytes) : this
 	(
@@ -15,7 +17,7 @@ public sealed class System : Scalar::Envelope<System::Single>
 	
 	public System(ReadOnlySpan::Any<System::Byte> bytes) : base
 	(
-		new Scalar::Function.Result<System::Single>(
+		new Actual<System::Single>(
 			() => Function(bytes))
 	)
 	{

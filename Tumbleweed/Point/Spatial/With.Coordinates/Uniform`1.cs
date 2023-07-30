@@ -1,3 +1,5 @@
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Point = Tumbleweed.Point.Spatial;
 using Scalar = Tumbleweed.Scalar;
 
@@ -7,12 +9,12 @@ public sealed class Uniform<T> : Point::Envelope<T>
 {
 	public Uniform(T coordinate) : this
 	(
-		new Scalar::Of.Value<T>(coordinate)
+		new Value<T>(coordinate)
 	)
 	{
 	}
 	
-	public Uniform(Scalar::Any<T> coordinate) : base
+	public Uniform(Tumbleweed.Scalar.Immutable.Any<T> coordinate) : base
 	(
 		new Point::With.Coordinates.Unique<T>(
 			coordinate,

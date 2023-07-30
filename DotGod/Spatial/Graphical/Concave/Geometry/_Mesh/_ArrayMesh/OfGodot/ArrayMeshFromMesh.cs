@@ -1,4 +1,5 @@
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
 

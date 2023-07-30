@@ -4,7 +4,7 @@ using TW = Tumbleweed;
 
 namespace Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
 
-public sealed class One : TW.Scalar.Envelope<Int32>
+public sealed class One : global::Tumbleweed.Scalar.Immutable.Envelope<Int32>
 {
 	public One(Number.Natural.Any numbers) : base
 	(

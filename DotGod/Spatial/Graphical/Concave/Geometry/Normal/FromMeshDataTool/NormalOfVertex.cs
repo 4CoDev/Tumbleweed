@@ -12,7 +12,7 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry.Normal.FromMeshDataTool;
 public sealed class NormalOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 {
 	public NormalOfVertex
-	(Tumbleweed.Scalar.Any<MeshDataTool> tool,
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> tool,
 		Tumbleweed.Number.Natural.Any vertex
 	) : this
 	(
@@ -23,7 +23,7 @@ public sealed class NormalOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 	}
 	
 	public NormalOfVertex
-	(Tumbleweed.Scalar.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Any<Int32> vertex
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Immutable.Any<Int32> vertex
 	) : base
 	(
 		new PointFromVector3(

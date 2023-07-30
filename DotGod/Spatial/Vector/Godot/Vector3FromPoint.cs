@@ -5,15 +5,15 @@ using Tumbleweed.Number.Real.Binary.Precision.Single.System.From;
 using Tumbleweed.Number.Real.Binary.Precision.Single.System.From.Tumbleweed;
 using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 
 namespace DotGod.Spatial.Vector.Godot;
 
-public sealed class Vector3FromPoint : Tumbleweed.Scalar.Envelope<Vector3>
+public sealed class Vector3FromPoint : Tumbleweed.Scalar.Immutable.Envelope<Vector3>
 {
 	public Vector3FromPoint(Tumbleweed.Point.Spatial.Any<Any> point) : base
 	(
-		new Tumbleweed.Scalar.Function.Result<Vector3>(
+		new Actual<Vector3>(
 			() => Result(point))
 	)
 	{

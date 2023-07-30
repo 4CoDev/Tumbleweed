@@ -1,15 +1,14 @@
-using Tumbleweed.Point.Spatial.Coordinate.Y.Actual;
-using Tumbleweed.Scalar.Lazy;
-using Scalar = Tumbleweed.Scalar;
+using Immutable = Tumbleweed.Scalar.Immutable;
+using Coordinate = Tumbleweed.Point.Spatial.Coordinate;
 
 namespace Tumbleweed.Point.Spatial.Coordinate.Y.Lazy;
 
-public sealed class One<T> : Scalar::Envelope<T>
+public sealed class One<T> : Immutable::Envelope<T>
 {
 	public One(Any<T> point) : base
 	(
-		new OfValue<T>(
-			new Actual.One<T>(point))
+		new Immutable::Lazy<T>(
+			new Coordinate::Y.Actual.One<T>(point))
 	)
 	{
 	}

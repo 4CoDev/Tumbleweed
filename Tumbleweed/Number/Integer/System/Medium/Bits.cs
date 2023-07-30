@@ -1,4 +1,7 @@
 using Tumbleweed.Boolean;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
 using Scalar = Tumbleweed.Scalar;
@@ -10,12 +13,12 @@ public sealed class Bits : Enumerable.Envelope<Boolean.Any>
 {
 	public Bits(System::Int32 integer) : this
 	(
-		new Scalar::Of.Value<System::Int32>(integer)
+		new Value<System::Int32>(integer)
 	)
 	{
 	}
 	
-	public Bits(Scalar::Any<System::Int32> integer) : base
+	public Bits(Any<System::Int32> integer) : base
 	(
 		new BitsOfBytes(
 			new Integer::Bytes(integer))

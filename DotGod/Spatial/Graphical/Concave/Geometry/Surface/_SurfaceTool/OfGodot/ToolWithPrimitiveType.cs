@@ -1,5 +1,7 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot;
 
@@ -10,7 +12,7 @@ public sealed class ToolWithPrimitiveType : Any<SurfaceTool>
 		Any<Godot.Mesh.PrimitiveType> type
 	) : this
 	(
-		new Tumbleweed.Scalar.Of.New<SurfaceTool>(), type
+		new New<SurfaceTool>(), type
 	)
 	{
 	}

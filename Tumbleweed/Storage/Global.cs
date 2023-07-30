@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Nullable;
 using System = System;
 
 namespace Tumbleweed.Storage;
@@ -7,7 +8,7 @@ public sealed class Global : Storage.Any
 	static Global() =>
 		Storage = new Empty();
 
-	public Nullable.Any<System::Object> ValueWith(System::Object key) =>
+	public Any<System::Object> ValueWith(System::Object key) =>
 		Storage.ValueWith(key);
 
 	public void Add(System::Object key, System::Object value) =>

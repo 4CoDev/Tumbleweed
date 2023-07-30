@@ -20,8 +20,7 @@ public sealed class Uniform : Point::Envelope<Real::Any>
 	}
 	
 	public Uniform
-	(
-		Scalar::Any<System::Single> coordinate
+	(Tumbleweed.Scalar.Immutable.Any<System::Single> coordinate
 	) : this
 	(
 		new Single::From.System.One(coordinate)
@@ -40,8 +39,7 @@ public sealed class Uniform : Point::Envelope<Real::Any>
 	}
 	
 	public Uniform
-	(
-		Scalar::Any<System::Double> coordinate
+	(Tumbleweed.Scalar.Immutable.Any<System::Double> coordinate
 	) : this
 	(
 		new Double::From.System.One(coordinate)

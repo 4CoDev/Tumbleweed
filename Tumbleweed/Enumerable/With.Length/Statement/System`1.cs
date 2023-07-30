@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
 using Scalar = Tumbleweed.Scalar;
@@ -14,7 +17,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Scalar::Of.Value<Int32>(length)
+		new Value<Int32>(length)
 	)
 	{
 	}
@@ -22,7 +25,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		IEnumerable<T> enumerable,
-		Scalar::Any<System::Int32> length
+		Any<System::Int32> length
 	) : base
 	(
 		new Collection::FromSystem.CollectionWithSize<T>(

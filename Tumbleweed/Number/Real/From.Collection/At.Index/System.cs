@@ -1,5 +1,6 @@
 using Tumbleweed.Number.Real.Function;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace Tumbleweed.Number.Real.From.Collection.At.Index;
 
@@ -12,7 +13,7 @@ public sealed class System : Envelope
 	) : this
 	(
 		decimals,
-		new global::Tumbleweed.Scalar.Of.Value<Int32>(index)
+		new global::Tumbleweed.Scalar.Immutable.With.Value<Int32>(index)
 	)
 	{
 	}

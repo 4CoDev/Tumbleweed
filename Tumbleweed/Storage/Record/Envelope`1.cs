@@ -1,6 +1,5 @@
 using Record = Tumbleweed.Storage.Record;
 using System = System;
-using Nullable = Tumbleweed.Nullable;
 
 namespace Tumbleweed.Storage.Record;
 
@@ -18,7 +17,7 @@ public abstract class Envelope<T> : Record::Any<T> where T : notnull
 	public override System::String? ToString() =>
 		record.ToString();
 
-	public Nullable::Any<T> Value =>
+	public Scalar.Nullable.Any<T> Value =>
 		record.Value;
 
 	public void Remove() =>

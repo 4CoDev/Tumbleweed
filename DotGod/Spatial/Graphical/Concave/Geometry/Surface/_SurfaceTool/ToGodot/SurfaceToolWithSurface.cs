@@ -3,7 +3,7 @@ using DotGod.Spatial.Graphical.Concave.Geometry.Polygon;
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot.FromEnumerable;
 using Godot;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Lazy;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.ToGodot;
 
@@ -26,7 +26,7 @@ public sealed class SurfaceToolWithSurface : Envelope<SurfaceTool>
 		IPolygon polygon
 	) =>
 	(
-		new OfValue<SurfaceTool>(
+		new Tumbleweed.Scalar.Immutable.Lazy<SurfaceTool>(
 			new SurfaceToolWithPolygon(polygon, current))
 	);
 }

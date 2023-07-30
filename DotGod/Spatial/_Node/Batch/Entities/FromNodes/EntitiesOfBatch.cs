@@ -9,7 +9,7 @@ namespace DotGod.Spatial._Node.Batch.Entities.FromNodes;
 
 public sealed class EntitiesOfBatch : CollectionEnvelope<ISpatialEntity>
 {
-	public EntitiesOfBatch(Tumbleweed.Scalar.Any<Node3D> node) : base
+	public EntitiesOfBatch(Tumbleweed.Scalar.Immutable.Any<Node3D> node) : base
 	(
 		new CollectionOfElement<ISpatialEntity>(
 			new Global<ICollection<ISpatialEntity>>(

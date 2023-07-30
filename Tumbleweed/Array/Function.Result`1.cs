@@ -1,6 +1,6 @@
 using Array = Tumbleweed.Array;
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Immutable = Tumbleweed.Scalar.Immutable;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
 
 // ReSharper disable once CheckNamespace
@@ -24,7 +24,9 @@ public sealed class Result<T> : Array::Envelope<T>
 	) : base
 	(
 		new Array::Scalar.Value<T>(
-			new Scalar::Function.Result<Array::Any<T>>(function))
+			new Immutable::Function.Result.Actual
+				<Array::Any<T>>
+				(function))
 	)
 	{
 	}

@@ -1,6 +1,7 @@
 using DotGod.Spatial._Node.Spaced.Abstract;
-using Tumbleweed.Nullable;
-using NullableSpacedBatchEnvelope = Tumbleweed.Nullable.Envelope<
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.With;
+using NullableSpacedBatchEnvelope = Tumbleweed.Scalar.Nullable.Envelope<
 		DotGod.Spatial._Node.Spaced.Abstract.IBatch>;
 using NaturalPoint = Tumbleweed.Point.Spatial.Any<
 		Tumbleweed.Number.Natural.Any>;
@@ -21,7 +22,7 @@ public sealed class Index : Envelope<IBatch>
 		NaturalPoint index
 	) : base
 	(
-		new Tumbleweed.Nullable.With.Members<IBatch>(
+		new Members<IBatch>(
 			new SubbatchOfBatchByIndex(batch, index),
 			new BatchHaveSubbatchByIndex(batch, index))
 	)

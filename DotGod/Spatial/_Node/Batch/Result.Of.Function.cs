@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Subroutine.Function.Nullary;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
@@ -24,7 +24,7 @@ public sealed class Function : Batch.Envelope
 	) : base
 	(
 		new Value.Of.Scalar(
-			new Tumbleweed.Scalar.Function.Result<Batch.Any>(function))
+			new Actual<Batch.Any>(function))
 	)
 	{
 	}

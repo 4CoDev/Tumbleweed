@@ -1,4 +1,4 @@
-using Tumbleweed.Nullable;
+using Tumbleweed.Scalar.Nullable;
 using System = System;
 
 namespace Tumbleweed.Dictionary.Element;

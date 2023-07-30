@@ -2,6 +2,7 @@ using Godot;
 using Tumbleweed.Number.Natural;
 using Tumbleweed.Number.Natural.From.System;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface.Number.FromArrayMesh;
 

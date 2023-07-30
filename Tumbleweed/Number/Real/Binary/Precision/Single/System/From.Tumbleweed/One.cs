@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable;
 using Scalar = Tumbleweed.Scalar;
 using System = System;
 using Real = Tumbleweed.Number.Real;
@@ -6,7 +7,7 @@ using Enumerable = Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Number.Real.Binary.Precision.Single.System.From.Tumbleweed;
 
-public sealed class One : Scalar::Envelope<System::Single>
+public sealed class One : Envelope<System::Single>
 {
 	public One(Real::Any real) : base
 	(

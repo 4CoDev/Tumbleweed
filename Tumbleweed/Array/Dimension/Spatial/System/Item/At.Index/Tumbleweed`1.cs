@@ -1,5 +1,5 @@
-using Mutable = Tumbleweed.Mutable;
-using Scalar = Tumbleweed.Scalar;
+using Mutable = Tumbleweed.Scalar.Mutable;
+using Immutable = Tumbleweed.Scalar.Immutable;
 using SCG = System.Collections.Generic;
 using Natural = Tumbleweed.Number.Natural;
 using SystemInteger = Tumbleweed.Number.Integer.System.Medium;
@@ -10,7 +10,7 @@ public sealed class Tumbleweed<T> : Mutable::Envelope<T>
 {
 	public Tumbleweed
 	(
-		Scalar::Any<T[,,]> array,
+		Immutable::Any<T[,,]> array,
 		SCG::IEnumerable<Natural::Any> indices
 	) : base
 	(

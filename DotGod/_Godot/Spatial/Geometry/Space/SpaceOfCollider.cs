@@ -2,6 +2,7 @@ using DotGod.Spatial._Node.Batch.Space;
 using DotGod.Spatial.Convex.Geometry.Mesh;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod._Godot.Spatial.Geometry.Space;
 

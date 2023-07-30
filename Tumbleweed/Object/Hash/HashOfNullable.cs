@@ -1,5 +1,7 @@
-using Tumbleweed.Nullable.From.System;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Nullable.From.System;
 
 namespace Tumbleweed.Object.Hash;
 
@@ -12,9 +14,9 @@ public sealed class HashOfNullable : Envelope<Int32>
 	{
 	}
 	
-	public HashOfNullable(Nullable.Any<System.Object> any) : base
+	public HashOfNullable(Scalar.Nullable.Any<System.Object> any) : base
 	(
-		new Scalar.Function.Result<Int32>(
+		new Actual<Int32>(
 			any.GetHashCode)
 	)
 	{

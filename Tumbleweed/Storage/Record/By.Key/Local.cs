@@ -24,7 +24,7 @@ public sealed class Local : Record.Any<System::Object>
 		this.key = key;
 	}
 
-	public Nullable.Any<System::Object> Value =>
+	public Scalar.Nullable.Any<System::Object> Value =>
 		storage.ValueWith(key);
 
 	public void Remove() =>

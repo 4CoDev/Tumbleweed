@@ -1,4 +1,6 @@
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 
 namespace Tumbleweed.Collection.Number.Integer.FromSystem;
 
@@ -10,7 +12,7 @@ public sealed class FlatIndexFromIndices : Envelope<Int32>
 		ICollection<Int32> dimensions
 	) : base
 	(
-		new Scalar.Function.Result<Int32>(() => Result(indices, dimensions))
+		new Actual<Int32>(() => Result(indices, dimensions))
 	)
 	{
 	}

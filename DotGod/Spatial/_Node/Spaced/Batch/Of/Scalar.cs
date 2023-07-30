@@ -7,10 +7,10 @@ namespace DotGod.Spatial._Node.Spaced.Batch.Of;
 
 public sealed class Scalar : Abstract.IBatch
 {
-	public Scalar(Tumbleweed.Scalar.Any<Abstract.IBatch> any) =>
+	public Scalar(Tumbleweed.Scalar.Immutable.Any<Abstract.IBatch> any) =>
 		this.any = any;
 
-	public Any<Tumbleweed.Nullable.Any<Any>> Subbatches =>
+	public Any<Tumbleweed.Scalar.Nullable.Any<Any>> Subbatches =>
 		any.Value.Subbatches;
 
 	public ICollection<ISpatialEntity> Entities =>
@@ -19,5 +19,5 @@ public sealed class Scalar : Abstract.IBatch
 	public ISpace Space =>
 		any.Value.Space;
 	
-	private readonly Tumbleweed.Scalar.Any<Abstract.IBatch> any;
+	private readonly Tumbleweed.Scalar.Immutable.Any<Abstract.IBatch> any;
 }

@@ -5,6 +5,9 @@ using Tumbleweed.Geometry.Spatial.Convex.Mesh;
 using Tumbleweed.Geometry.Spatial.Convex.Mesh.With;
 using Tumbleweed.Geometry.Spatial.Convex.Mesh.With.Vertex.Enumerable;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Convex.Geometry.Mesh;
 
@@ -12,7 +15,7 @@ public sealed class MeshFromGodot : Envelope
 {
 	public MeshFromGodot(Shape3D mesh) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Shape3D>(mesh)
+		new Value<Shape3D>(mesh)
 	)
 	{
 	}
@@ -29,7 +32,7 @@ public sealed class MeshFromGodot : Envelope
 	
 	public MeshFromGodot(ConvexPolygonShape3D mesh) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<ConvexPolygonShape3D>(mesh)
+		new Value<ConvexPolygonShape3D>(mesh)
 	)
 	{
 	}

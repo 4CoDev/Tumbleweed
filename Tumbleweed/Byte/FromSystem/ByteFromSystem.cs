@@ -3,6 +3,7 @@ using Tumbleweed.Boolean.FromByte.FromSystem;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace Tumbleweed.Byte.FromSystem;
 

@@ -11,7 +11,7 @@ namespace DotGod.Spatial.Point;
 public sealed class TransformedPoint : Tumbleweed.Point.Spatial.Envelope<Any>
 {
 	public TransformedPoint
-	(Tumbleweed.Point.Spatial.Any<Any> point, Tumbleweed.Scalar.Any<Transform3D> transform
+	(Tumbleweed.Point.Spatial.Any<Any> point, Tumbleweed.Scalar.Immutable.Any<Transform3D> transform
 	) : base
 	(
 		new PointFromVector3(

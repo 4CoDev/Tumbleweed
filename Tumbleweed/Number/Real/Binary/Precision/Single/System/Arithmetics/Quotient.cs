@@ -1,10 +1,11 @@
 using Tumbleweed.Enumerable;
+using Tumbleweed.Scalar.Immutable.From.Enumerable;
 using Scalar = Tumbleweed.Scalar;
 using System = System;
 
 namespace Tumbleweed.Number.Real.Binary.Precision.Single.System.Arithmetics;
 
-public sealed class Quotient : Scalar::Envelope<System::Single>
+public sealed class Quotient : Tumbleweed.Scalar.Immutable.Envelope<System::Single>
 {
 	public Quotient(params System::Single[] singles) : this
 	(
@@ -15,7 +16,7 @@ public sealed class Quotient : Scalar::Envelope<System::Single>
 
 	public Quotient(IEnumerable<System::Single> singles) : base
 	(
-		new Scalar::From.Enumerable.Aggregated<System::Single>(
+		new Aggregated<System::Single>(
 			singles,
 			0,
 			Expression)

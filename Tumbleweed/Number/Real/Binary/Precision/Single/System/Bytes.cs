@@ -4,6 +4,7 @@ using Tumbleweed.Enumerable.Function;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace Tumbleweed.Number.Real.Binary.Precision.Single.System;
 

@@ -3,7 +3,7 @@ using TW = Tumbleweed;
 
 namespace Tumbleweed.Number.Integer.System.Medium.From.Tumbleweed;
 
-public sealed class One : TW.Scalar.Envelope<Int32>
+public sealed class One : global::Tumbleweed.Scalar.Immutable.Envelope<Int32>
 {
 	public One(Integer.Any integer) : base
 	(

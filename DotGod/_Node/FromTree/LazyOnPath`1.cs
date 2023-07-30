@@ -1,7 +1,9 @@
 using DotGod._Node.Path.FromSystem;
 using Godot;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Lazy;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod._Node.FromTree;
 
@@ -9,7 +11,7 @@ public sealed class LazyOnPath<T> : Envelope<T> where T : Node
 {
 	public LazyOnPath(Node relation, String path) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Node>(relation),
+		new Value<Node>(relation),
 		path
 	)
 	{
@@ -17,7 +19,7 @@ public sealed class LazyOnPath<T> : Envelope<T> where T : Node
 	
 	public LazyOnPath(Any<Node> relation, String path) : this
 	(
-		relation, new Tumbleweed.Scalar.Of.Value<String>(path)
+		relation, new Value<String>(path)
 	)
 	{
 	}
@@ -31,7 +33,7 @@ public sealed class LazyOnPath<T> : Envelope<T> where T : Node
 	
 	public LazyOnPath(Any<Node> relation, NodePath path) : this
 	(
-		relation, new Tumbleweed.Scalar.Of.Value<NodePath>(path)
+		relation, new Value<NodePath>(path)
 	)
 	{
 	}
@@ -42,7 +44,7 @@ public sealed class LazyOnPath<T> : Envelope<T> where T : Node
 		Any<NodePath> path
 	) : base
 	(
-		new OfValue<T>(
+		new Tumbleweed.Scalar.Immutable.Lazy<T>(
 			new NodeOnPath<T>(relation, path))
 	)
 	{

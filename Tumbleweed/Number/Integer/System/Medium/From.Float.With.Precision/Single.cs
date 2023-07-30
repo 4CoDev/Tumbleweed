@@ -1,19 +1,23 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using TW = Tumbleweed;
 
 namespace Tumbleweed.Number.Integer.System.Medium.From.Float.With.Precision;
 
-public sealed class Single : TW.Scalar.Envelope<Int32>
+public sealed class Single : Envelope<Int32>
 {
 	public Single(global::System.Single single) : this
 	(
-		new TW.Scalar.Of.Value<global::System.Single>(single)
+		new Value<global::System.Single>(single)
 	)
 	{
 	}
 	
-	public Single(TW.Scalar.Any<global::System.Single> single) : base
+	public Single(Any<global::System.Single> single) : base
 	(
-		new TW.Scalar.Function.Result<Int32>(
+		new Actual<Int32>(
 			() => (Int32) single.Value)
 	)
 	{

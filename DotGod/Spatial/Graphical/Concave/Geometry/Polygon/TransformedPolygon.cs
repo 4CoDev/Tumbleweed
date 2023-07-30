@@ -3,6 +3,7 @@ using Godot;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Polygon;
 

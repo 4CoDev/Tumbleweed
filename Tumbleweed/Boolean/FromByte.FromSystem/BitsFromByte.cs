@@ -1,6 +1,7 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Scalar;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 using System = System;
 
 namespace Tumbleweed.Boolean.FromByte.FromSystem;
@@ -9,7 +10,7 @@ public sealed class BitsFromByte : Enumerable.Envelope<Any>
 {
 	public BitsFromByte(System::Byte @byte) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<System::Byte>(@byte)
+		new Tumbleweed.Scalar.Immutable.With.Value<System::Byte>(@byte)
 	)
 	{
 	}

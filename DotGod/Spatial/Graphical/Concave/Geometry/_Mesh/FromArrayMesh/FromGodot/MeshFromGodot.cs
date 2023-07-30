@@ -2,6 +2,9 @@ using DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface.FromArrayMesh.FromGodot;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh.FromArrayMesh.FromGodot;
 
@@ -9,7 +12,7 @@ public sealed class MeshFromGodot : MeshEnvelope
 {
 	public MeshFromGodot(Godot.Mesh mesh) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Godot.Mesh>(mesh)
+		new Value<Godot.Mesh>(mesh)
 	)
 	{
 	}
@@ -23,7 +26,7 @@ public sealed class MeshFromGodot : MeshEnvelope
 	
 	public MeshFromGodot(ArrayMesh mesh) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<ArrayMesh>(mesh)
+		new Value<ArrayMesh>(mesh)
 	)
 	{
 	}

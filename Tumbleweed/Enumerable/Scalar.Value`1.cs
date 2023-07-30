@@ -1,13 +1,14 @@
 using System = System;
 using Scalar = Tumbleweed.Scalar;
 using System.Collections;
+using Tumbleweed.Scalar.Immutable;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Enumerable.Scalar;
 
 public sealed class Value<T> : IEnumerable<T>
 {
-	public Value(Scalar::Any<IEnumerable<T>> scalar) =>
+	public Value(Any<IEnumerable<T>> scalar) =>
 		this.scalar = scalar;
 
 	IEnumerator IEnumerable.GetEnumerator() =>
@@ -30,5 +31,5 @@ public sealed class Value<T> : IEnumerable<T>
 	public override System::String? ToString() =>
 		scalar.Value.ToString();
 
-	private readonly Scalar::Any<IEnumerable<T>> scalar;
+	private readonly Any<IEnumerable<T>> scalar;
 }

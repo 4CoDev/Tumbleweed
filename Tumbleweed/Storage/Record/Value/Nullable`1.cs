@@ -1,11 +1,13 @@
+using Tumbleweed.Scalar.Nullable.Function;
+
 namespace Tumbleweed.Storage.Record.Value;
 
-public sealed class Nullable<T> : Nullable.Envelope<T>
+public sealed class Nullable<T> : Scalar.Nullable.Envelope<T>
 	where T : notnull
 {
 	public Nullable(Any<T> element) : base
 	(
-		new Nullable.Result.Of.Function<T>(
+		new Result<T>(
 			() => element.Value)
 	)
 	{

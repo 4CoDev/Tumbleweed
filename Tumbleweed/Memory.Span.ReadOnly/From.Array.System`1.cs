@@ -1,3 +1,5 @@
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 // ReSharper disable once CheckNamespace
@@ -7,12 +9,12 @@ public sealed class System<T> : ReadOnlySpan.Envelope<T>
 {
 	public System(T[] array) : this
 	(
-		new Scalar.Of.Value<T[]>(array)
+		new Value<T[]>(array)
 	)
 	{
 	}
 	
-	public System(Scalar.Any<T[]> array) : base
+	public System(Scalar.Immutable.Any<T[]> array) : base
 	(
 		new ReadOnlySpan.System.Function.Result<T>(
 			() => new ReadOnlySpan<T>(array.Value))

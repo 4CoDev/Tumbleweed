@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Enumerable = Tumbleweed.Enumerable;
 using Scalar = Tumbleweed.Scalar;
 
@@ -12,7 +13,7 @@ public sealed class Appended<T> : Enumerable::Envelope<T>
 	) : base
 	(
 		new Enumerable::Scalar.Value<T>(
-			new Scalar::Function.Result<IEnumerable<T>>(
+			new Actual<IEnumerable<T>>(
 				() => enumerable.Append(value)))
 	)
 	{

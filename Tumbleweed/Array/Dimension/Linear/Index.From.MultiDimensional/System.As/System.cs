@@ -5,7 +5,7 @@ using Collection = Tumbleweed.Collection;
 
 namespace Tumbleweed.Array.Dimension.Linear.Index.From.MultiDimensional.System.As;
 
-public sealed class System : Scalar::Envelope<System::Int32>
+public sealed class System : global::Tumbleweed.Scalar.Immutable.Envelope<System::Int32>
 {
 	public System
 	(

@@ -11,7 +11,7 @@ public interface IVertex
 
 	Tumbleweed.Point.Spatial.Any<Any> Normal { get; }
 
-	Tumbleweed.Scalar.Any<Color> Color { get; }
+	Tumbleweed.Scalar.Immutable.Any<Color> Color { get; }
 
 	Tumbleweed.Point.Planar.Any<Any> UV { get; }
 }

@@ -12,7 +12,7 @@ public sealed class Index : Envelope
 	) : base
 	(
 		new Value.Of.Scalar(
-			new Tumbleweed.Scalar.From.Array.Spatial.At.Index<Batch.Any>(
+			new Tumbleweed.Scalar.Immutable.From.Array.Spatial.At.Index<Batch.Any>(
 				array, 
 				indices))
 	)

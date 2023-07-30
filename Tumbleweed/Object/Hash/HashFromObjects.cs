@@ -1,9 +1,10 @@
 using System.Collections;
+using Tumbleweed.Scalar.Immutable;
 using Enumerable = Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Object.Hash;
 
-public sealed class HashFromObjects : Scalar.Envelope<Int32>
+public sealed class HashFromObjects : Envelope<Int32>
 {
 	public HashFromObjects
 	(

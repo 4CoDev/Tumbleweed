@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 using System = System;
 
 namespace Tumbleweed.Dictionary;

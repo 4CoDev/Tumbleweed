@@ -16,7 +16,7 @@ public abstract class VertexEnvelope : IVertex
 
 	public Tumbleweed.Point.Spatial.Any<Any> Normal => vertex.Normal;
 
-	public Tumbleweed.Scalar.Any<Color> Color => vertex.Color;
+	public Tumbleweed.Scalar.Immutable.Any<Color> Color => vertex.Color;
 
 	public Tumbleweed.Point.Planar.Any<Any> UV => vertex.UV;
 

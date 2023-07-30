@@ -1,4 +1,4 @@
-using Mutable = Tumbleweed.Mutable;
+using Mutable = Tumbleweed.Scalar.Mutable;
 using Array = Tumbleweed.Array;
 using SCG = System.Collections.Generic;
 using Natural = Tumbleweed.Number.Natural;

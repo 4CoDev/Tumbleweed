@@ -1,10 +1,12 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
+
 namespace Tumbleweed.Array.Dimension.Linear.System.Length;
 
-public sealed class System<T> : Tumbleweed.Scalar.Envelope<Int32>
+public sealed class System<T> : Tumbleweed.Scalar.Immutable.Envelope<Int32>
 {
-	public System(Tumbleweed.Scalar.Any<T[]> array) : base
+	public System(Tumbleweed.Scalar.Immutable.Any<T[]> array) : base
 	(
-		new Tumbleweed.Scalar.Function.Result<Int32>(
+		new Actual<Int32>(
 			() => array.Value.Length)
 	)
 	{

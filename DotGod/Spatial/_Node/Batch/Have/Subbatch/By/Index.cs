@@ -12,7 +12,7 @@ public sealed class Index : Tumbleweed.Boolean.Envelope
 		Any<Tumbleweed.Number.Natural.Any> index
 	) : base
 	(
-		new Tumbleweed.Nullable.Has.Value(
+		new Tumbleweed.Scalar.Nullable.Has.Value(
 			new Nullable.Subbatch.By.Index(batch, index))
 	)
 	{

@@ -1,10 +1,11 @@
+using Tumbleweed.Scalar.Immutable;
 using System = System;
 
 namespace Tumbleweed.String;
 
 public sealed class ScalarValue : Any
 {
-	public ScalarValue(Scalar.Any<Any> scalar) =>
+	public ScalarValue(Any<Any> scalar) =>
 		this.scalar = scalar;
 
 	public override System::Boolean Equals(System::Object? @object) =>
@@ -19,5 +20,5 @@ public sealed class ScalarValue : Any
 	public global::System.String Value =>
 		scalar.Value.Value;
 	
-	private readonly Scalar.Any<Any> scalar;
+	private readonly Any<Any> scalar;
 }

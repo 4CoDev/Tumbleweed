@@ -6,8 +6,7 @@ namespace Tumbleweed.Event.Subscription.Scalar;
 public sealed class Value<T> : Subscription.Any<T>
 {
 	public Value
-	(
-		Tumbleweed.Scalar.Any<Subscription.Any<T>> scalar
+	(Tumbleweed.Scalar.Immutable.Any<Subscription.Any<T>> scalar
 	)
 	{
 		this.scalar = scalar;
@@ -19,5 +18,5 @@ public sealed class Value<T> : Subscription.Any<T>
 	public void Subscribe(System::Object key, T reaction) =>
 		scalar.Value.Subscribe(key, reaction);
 
-	private readonly Tumbleweed.Scalar.Any<Subscription.Any<T>> scalar;
+	private readonly Tumbleweed.Scalar.Immutable.Any<Subscription.Any<T>> scalar;
 }

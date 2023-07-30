@@ -1,5 +1,8 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Tumbleweed.String;
 
 namespace Tumbleweed.Object.String;
@@ -13,7 +16,7 @@ public sealed class SparesWhenObjectsIsNull : Enumerable.Envelope<Any>
 	) : this
 	(
 		nullables,
-		new Tumbleweed.Scalar.Of.Value<System.String>(spare)
+		new Value<System.String>(spare)
 	)
 	{
 	}

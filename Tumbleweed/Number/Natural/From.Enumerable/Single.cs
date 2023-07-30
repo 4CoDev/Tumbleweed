@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.From.Enumerable;
 using TW = Tumbleweed;
 
 namespace Tumbleweed.Number.Natural.From.Enumerable;
@@ -10,7 +11,7 @@ public sealed class Single : Natural.Envelope
 	) : base
 	(
 		new Natural.Scalar.Value(
-			new TW.Scalar.From.Enumerable.Single<Any>(
+			new Single<Any>(
 				enumerable))
 	)
 	{

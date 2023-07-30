@@ -2,6 +2,7 @@ using DotGod.Spatial.Graphical.Concave.Geometry._Mesh.PrimitiveType;
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.OfGodot;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.ToGodot;
 

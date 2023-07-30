@@ -3,13 +3,14 @@ using DotGod.Spatial._Node.Batch.Space;
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
+using Tumbleweed.Scalar.Immutable;
 using System = System;
 
 namespace DotGod.Spatial._Node.Batch.Entities;
 
 public sealed class EntityOfScalar : ISpatialEntity
 {
-	public EntityOfScalar(Tumbleweed.Scalar.Any<ISpatialEntity> any) =>
+	public EntityOfScalar(Any<ISpatialEntity> any) =>
 		this.any = any;
 	
 	public override Boolean Equals(System::Object? @object) =>
@@ -21,7 +22,7 @@ public sealed class EntityOfScalar : ISpatialEntity
 	public override System::String ToString() =>
 		new StringFromObjects(Node, Mesh).Value;
 
-	public Tumbleweed.Nullable.Any<Godot.Node> Node =>
+	public Tumbleweed.Scalar.Nullable.Any<Godot.Node> Node =>
 		any.Value.Node;
 
 	public IMesh Mesh =>
@@ -30,5 +31,5 @@ public sealed class EntityOfScalar : ISpatialEntity
 	public ISpace Occupation =>
 		any.Value.Occupation;
 
-	private readonly Tumbleweed.Scalar.Any<ISpatialEntity> any;
+	private readonly Any<ISpatialEntity> any;
 }

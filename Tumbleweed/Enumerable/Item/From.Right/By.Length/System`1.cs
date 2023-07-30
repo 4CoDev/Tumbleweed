@@ -1,3 +1,7 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
@@ -14,7 +18,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Scalar::Of.Value<System::Int32>(length)
+		new Value<System::Int32>(length)
 	)
 	{
 	}
@@ -22,7 +26,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		SCG::IEnumerable<T> enumerable,
-		Scalar::Any<Int32> length
+		Any<Int32> length
 	) : this
 	(
 		new SCG::List<T>(enumerable),
@@ -34,11 +38,11 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		ICollection<T> collection,
-		Scalar::Any<Int32> length
+		Any<Int32> length
 	) : base
 	(
 		new Enumerable::Scalar.Value<T>(
-			new Scalar::Function.Result<SCG::IEnumerable<T>>(
+			new Actual<SCG::IEnumerable<T>>(
 				() => collection.Skip(collection.Count - length.Value)))
 	)
 	{

@@ -2,6 +2,7 @@ using Tumbleweed.Enumerable;
 
 using Tumbleweed.Enumerable.Nested.Item.Value.At.Index;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex.Index;
 

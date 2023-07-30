@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.From.System;
+
 namespace Tumbleweed.String.Spare.When.Null;
 
 public sealed class One : Envelope
@@ -16,7 +19,7 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Nullable.Any<System.String> nullable,
+		Any<System.String> nullable,
 		System.String spare
 	) : this
 	(
@@ -28,7 +31,7 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Nullable.Any<Any> nullable,
+		Any<Any> nullable,
 		System.String spare
 	) : this
 	(
@@ -44,7 +47,7 @@ public sealed class One : Envelope
 		Any spare
 	) : this
 	(
-		new Nullable.From.System.One<Any>(nullable),
+		new One<Any>(nullable),
 		spare
 	)
 	{
@@ -52,12 +55,12 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Nullable.Any<Any> nullable,
+		Any<Any> nullable,
 		Any spare
 	) : base
 	(
 		new ScalarValue(
-			new Scalar.Spare.When.Null<Any>(nullable, spare))
+			new Scalar.Nullable.Spare.When.Null<Any>(nullable, spare))
 	)
 	{
 	}

@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Subroutine.Function.Nullary;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 
@@ -16,7 +16,7 @@ public sealed class MeshOfFunction : MeshEnvelope
 	public MeshOfFunction(Tumbleweed.Subroutine.Function.Nullary.Any<IMesh> function) : base
 	(
 		new MeshOfScalar(
-			new Tumbleweed.Scalar.Function.Result<IMesh>(function))
+			new Actual<IMesh>(function))
 	)
 	{
 	}

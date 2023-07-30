@@ -21,7 +21,7 @@ public sealed class QuotientByReal : Envelope<Any>
 	
 	public QuotientByReal
 	(
-		Any<Any> dividend, Scalar::Any<Single> divisor
+		Any<Any> dividend, Tumbleweed.Scalar.Immutable.Any<Single> divisor
 	) : this
 	(
 		dividend,
@@ -44,7 +44,7 @@ public sealed class QuotientByReal : Envelope<Any>
 	
 	public QuotientByReal
 	(
-		Any<Any> dividend, Scalar::Any<Double> divisor
+		Any<Any> dividend, Tumbleweed.Scalar.Immutable.Any<Double> divisor
 	) : this
 	(
 		dividend,

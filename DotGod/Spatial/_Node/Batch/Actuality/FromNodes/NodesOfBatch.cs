@@ -3,6 +3,7 @@ using DotGod._Node.Children;
 using DotGod.Spatial._Node.Batch.Entities.FromNodes.Nodes;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial._Node.Batch.Actuality.FromNodes;
 

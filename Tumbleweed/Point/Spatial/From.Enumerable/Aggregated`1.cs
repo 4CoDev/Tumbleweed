@@ -38,7 +38,7 @@ public sealed class Aggregated<T> : Point::Envelope<T>
 	) : base
 	(
 		new Point::Scalar.Value<T>(
-			new Scalar::From.Enumerable.Aggregated<Any<T>>(
+			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any<T>>(
 				from,
 				seed,
 				expression))
@@ -73,7 +73,7 @@ public sealed class Aggregated<T> : Point::Envelope<T>
 	) : base
 	(
 		new Point::Scalar.Value<T>(
-			new Scalar::From.Enumerable.Aggregated<Point::Any<T>>(
+			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Point::Any<T>>(
 				from,
 				expression))
 	)

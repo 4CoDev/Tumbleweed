@@ -1,10 +1,13 @@
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.Function;
+
 namespace DotGod.Spatial._Node.Batch.Entities.Nodes;
 
-public sealed class NodeOfEntity : Tumbleweed.Nullable.Envelope<Godot.Node>
+public sealed class NodeOfEntity : Envelope<Godot.Node>
 {
 	public NodeOfEntity(ISpatialEntity entity) : base
 	(
-		new Tumbleweed.Nullable.Result.Of.Function<Godot.Node>(
+		new Result<Godot.Node>(
 			() => entity.Node)
 	)
 	{

@@ -1,6 +1,9 @@
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh._MeshDataTool.FromArrayMesh;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex.FromArrayMesh.
 	FromSurface;
@@ -15,8 +18,8 @@ public sealed class VertexWithIndex : VertexEnvelope
 	) : this
 	(
 		mesh,
-		new Tumbleweed.Scalar.Of.Value<Int32>(surface),
-		new Tumbleweed.Scalar.Of.Value<Int32>(vertex)
+		new Value<Int32>(surface),
+		new Value<Int32>(vertex)
 	)
 	{
 	}
@@ -30,7 +33,7 @@ public sealed class VertexWithIndex : VertexEnvelope
 	(
 		mesh,
 		surface,
-		new Tumbleweed.Scalar.Of.Value<Int32>(vertex)
+		new Value<Int32>(vertex)
 	)
 	{
 	}

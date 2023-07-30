@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable;
 using TW = Tumbleweed;
 
 // ReSharper disable once CheckNamespace
@@ -5,7 +6,7 @@ namespace Tumbleweed.Number.Integer.Scalar;
 
 public sealed class Value : Any
 {
-	public Value(TW.Scalar.Any<Integer.Any> scalar) =>
+	public Value(Any<Integer.Any> scalar) =>
 		this.scalar = scalar;
 
 	public Boolean.Any IsPositive =>
@@ -14,5 +15,5 @@ public sealed class Value : Any
 	public Natural.Any Natural =>
 		scalar.Value.Natural;
 
-	private readonly TW.Scalar.Any<Integer.Any> scalar;
+	private readonly Any<Integer.Any> scalar;
 }

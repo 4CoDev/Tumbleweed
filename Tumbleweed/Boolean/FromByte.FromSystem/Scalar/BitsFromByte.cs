@@ -1,4 +1,7 @@
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using System = System;
 
 namespace Tumbleweed.Boolean.FromByte.FromSystem.Scalar;
@@ -18,7 +21,7 @@ public sealed class BitsFromByte : Any<IEnumerable<Any>>
 			{
 				yield return new BooleanWithIndex(
 					@byte,
-					new Tumbleweed.Scalar.Of.Value<Int32>(position));
+					new Value<Int32>(position));
 			}
 		}
 	}

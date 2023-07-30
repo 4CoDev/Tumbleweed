@@ -1,6 +1,9 @@
 using System.Collections;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod._Node.Children;
 
@@ -8,7 +11,7 @@ public sealed class ChildrenOfNode : IList<Node>
 {
 	public ChildrenOfNode(Node parent) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Node>(parent)
+		new Value<Node>(parent)
 	)
 	{
 	}

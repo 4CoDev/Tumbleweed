@@ -1,6 +1,7 @@
 using DotGod.Spatial.Point;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 

@@ -9,7 +9,7 @@ public sealed class New<T> : Enumerable::Envelope<T>
 	public New(IEnumerable<T> enumerable) : base
 	(
 		new Enumerable::Scalar.Value<T>(
-			new Scalar::Lazy.Result.Of.Function<IEnumerable<T>>(
+			new Tumbleweed.Scalar.Immutable.Function.Result.Lazy<IEnumerable<T>>(
 				() => new SCG::List<T>(enumerable)))
 	)
 	{

@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.String;
 using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
 
@@ -16,7 +17,7 @@ public sealed class Result : Envelope
 	public Result(NullaryFunction.Any<Any> function) : base
 	(
 		new ScalarValue(
-			new Scalar.Function.Result<Any>(function))
+			new Actual<Any>(function))
 	)
 	{
 	}

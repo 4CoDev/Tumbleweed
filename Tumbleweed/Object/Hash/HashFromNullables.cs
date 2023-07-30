@@ -1,10 +1,11 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Nullable.From.System;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.From.System;
 
 namespace Tumbleweed.Object.Hash;
 
-public sealed class HashFromNullables : Scalar.Envelope<Int32>
+public sealed class HashFromNullables : Scalar.Immutable.Envelope<Int32>
 {
 	public HashFromNullables(params System.Object?[] objects) : this
 	(
@@ -20,14 +21,14 @@ public sealed class HashFromNullables : Scalar.Envelope<Int32>
 	{
 	}
 	
-	public HashFromNullables(params Nullable.Any<System.Object>[] objects) : this
+	public HashFromNullables(params Any<System.Object>[] objects) : this
 	(
-		new Concatenated<Nullable.Any<System.Object>>(objects)
+		new Concatenated<Any<System.Object>>(objects)
 	)
 	{
 	}
 	
-	public HashFromNullables(IEnumerable<Nullable.Any<System.Object>> objects) : base
+	public HashFromNullables(IEnumerable<Any<System.Object>> objects) : base
 	(
 		new HashFromHashes(
 			new ZeroHashesWhenNull(objects))

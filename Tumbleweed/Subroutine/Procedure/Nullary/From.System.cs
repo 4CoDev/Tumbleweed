@@ -1,20 +1,25 @@
 // ReSharper disable once CheckNamespace
+
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
+
 namespace Tumbleweed.Subroutine.Procedure.Nullary.From;
 
 public class System : Nullary.Any
 {
 	public System(Action procedure) : this
 	(
-		new Scalar.Of.Value<Action>(procedure)
+		new Value<Action>(procedure)
 	)
 	{
 	}
 	
-	public System(Scalar.Any<Action> function) =>
+	public System(Any<Action> function) =>
 		this.function = function;
 
 	public void Invoke() =>
 		function.Value();
 
-	private readonly Scalar.Any<Action> function;
+	private readonly Any<Action> function;
 }

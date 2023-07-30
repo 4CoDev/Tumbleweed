@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Real = Tumbleweed.Number.Real;
 using System = System;
 using Scalar = Tumbleweed.Scalar;
@@ -10,12 +13,12 @@ public sealed class One : Real::Envelope
 {
 	public One(System::Single single) : this
 	(
-		new Scalar::Of.Value<System::Single>(single)
+		new Value<System::Single>(single)
 	)
 	{
 	}
 
-	public One(Scalar::Any<System::Single> single) : base
+	public One(Any<System::Single> single) : base
 	(
 		new Real::With.Members(
 			new Single::Mantissa.As.Integer(single),

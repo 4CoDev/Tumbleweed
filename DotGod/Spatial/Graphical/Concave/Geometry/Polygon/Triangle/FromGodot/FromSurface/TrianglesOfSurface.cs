@@ -1,6 +1,7 @@
 using Godot;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 using VertexIndicesOfTriangles =
 	DotGod.Spatial.Graphical.Concave.Geometry.Vertex.Index.FromArrayMesh.FromSurface.IndicesOfTriangles;
 

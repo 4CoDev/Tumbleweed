@@ -13,7 +13,7 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry.Translation.FromMeshDataTool
 public sealed class TranslationOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 {
 	public TranslationOfVertex
-	(Tumbleweed.Scalar.Any<MeshDataTool> tool,
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> tool,
 		Tumbleweed.Number.Natural.Any vertex
 	) : this
 	(
@@ -24,7 +24,7 @@ public sealed class TranslationOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 	}
 	
 	public TranslationOfVertex
-	(Tumbleweed.Scalar.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Any<Int32> vertex
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Immutable.Any<Int32> vertex
 	) : base
 	(
 		new PointFromVector3(

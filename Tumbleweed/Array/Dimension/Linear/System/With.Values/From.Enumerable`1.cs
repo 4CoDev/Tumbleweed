@@ -1,7 +1,7 @@
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Array.Linear.System.With.Values.From;
 
-public sealed class Enumerable<T> : Tumbleweed.Scalar.Any<T[]>
+public sealed class Enumerable<T> : Tumbleweed.Scalar.Immutable.Any<T[]>
 {
 	public Enumerable(IEnumerable<T> enumerable)
 	{

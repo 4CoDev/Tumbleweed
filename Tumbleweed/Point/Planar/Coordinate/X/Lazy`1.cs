@@ -3,11 +3,11 @@ using Point = Tumbleweed.Point.Planar;
 
 namespace Tumbleweed.Point.Planar.Coordinate.X;
 
-public sealed class Lazy<T> : Scalar::Envelope<T>
+public sealed class Lazy<T> : Tumbleweed.Scalar.Immutable.Envelope<T>
 {
 	public Lazy(Point::Any<T> point) : base
 	(
-		new Scalar::Lazy.OfValue<T>(
+		new Tumbleweed.Scalar.Immutable.Lazy<T>(
 			new Normal<T>(point))
 	)
 	{

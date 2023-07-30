@@ -1,6 +1,7 @@
 using Tumbleweed.Boolean;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 using Enumerable = Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Byte.FromSystem;

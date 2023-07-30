@@ -1,21 +1,25 @@
 using Godot;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Scalar.Immutable.Nested;
+using Tumbleweed.Scalar.Immutable.Of;
 using Scalar = Tumbleweed.Scalar;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
 
-public sealed class MeshWithSurfaceTools : Scalar.Envelope<Godot.ArrayMesh>
+public sealed class MeshWithSurfaceTools : Envelope<Godot.ArrayMesh>
 {
 	public MeshWithSurfaceTools
 	(
 		IEnumerable<SurfaceTool> tools,
-		Tumbleweed.Scalar.Any<Godot.ArrayMesh> mesh
+		Any<Godot.ArrayMesh> mesh
 	) : base
 	(
-		new Scalar.Of.Nested<Godot.ArrayMesh>(
-			new Scalar.From.Enumerable.Aggregated
+		new Value<Godot.ArrayMesh>(
+			new Aggregated
 			<
 				SurfaceTool,
-				Scalar.Any<Godot.ArrayMesh>
+				Any<Godot.ArrayMesh>
 			>
 			(
 				tools,
@@ -26,9 +30,9 @@ public sealed class MeshWithSurfaceTools : Scalar.Envelope<Godot.ArrayMesh>
 	{
 	}
 
-	private static Scalar.Any<Godot.ArrayMesh> Expression
+	private static Any<Godot.ArrayMesh> Expression
 	(
-		Scalar.Any<Godot.ArrayMesh> mesh,
+		Any<Godot.ArrayMesh> mesh,
 		SurfaceTool tool
 	) =>
 	(

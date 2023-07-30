@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.From.Array.At;
 using Scalar = Tumbleweed.Scalar;
 using Array = Tumbleweed.Array;
 using Planar = Tumbleweed.Point.Planar;
@@ -6,7 +7,7 @@ using Natural = Tumbleweed.Number.Natural;
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Array.Planar.Item.At.Index;
 
-public sealed class Tumbleweed<T> : Scalar::Envelope<T>
+public sealed class Tumbleweed<T> : Tumbleweed.Scalar.Immutable.Envelope<T>
 {
 	public Tumbleweed
 	(
@@ -14,7 +15,7 @@ public sealed class Tumbleweed<T> : Scalar::Envelope<T>
 		Planar::Any<Natural::Any> index
 	) : base
 	(
-		new Scalar::From.Array.At.Indices<T>(
+		new Indices<T>(
 			array,
 			new Planar::Coordinate.Enumerable<Natural::Any>(index))
 	)

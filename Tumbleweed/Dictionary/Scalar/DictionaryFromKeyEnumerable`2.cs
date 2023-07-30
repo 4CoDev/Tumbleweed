@@ -1,4 +1,5 @@
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace Tumbleweed.Dictionary.Scalar;
 

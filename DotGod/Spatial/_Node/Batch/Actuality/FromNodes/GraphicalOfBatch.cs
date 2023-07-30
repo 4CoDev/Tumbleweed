@@ -5,14 +5,14 @@ using DotGod.Spatial._Node.Batch.Entities.FromNodes;
 using DotGod.Spatial._Node.Batch.Entities.Meshes;
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 using Godot;
-using Tumbleweed.Mutable;
-using Tumbleweed.Scalar;
+using Mutable = Tumbleweed.Scalar.Mutable;
+using Immutable = Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial._Node.Batch.Actuality.FromNodes;
 
 public sealed class GraphicalOfBatch : ISpaceActuality
 {
-	public GraphicalOfBatch(Tumbleweed.Scalar.Any<Node3D> node)
+	public GraphicalOfBatch(Immutable::Any<Node3D> node)
 	{
 		this.node = node;
 		mesh = new MutableOfNode(
@@ -26,7 +26,7 @@ public sealed class GraphicalOfBatch : ISpaceActuality
 				new EntitiesOfBatch(node));
 	}
 
-	private readonly Tumbleweed.Mutable.Any<IMesh> mesh;
+	private readonly Mutable::Any<IMesh> mesh;
 
-	private readonly Tumbleweed.Scalar.Any<Node3D> node;
+	private readonly Immutable::Any<Node3D> node;
 }

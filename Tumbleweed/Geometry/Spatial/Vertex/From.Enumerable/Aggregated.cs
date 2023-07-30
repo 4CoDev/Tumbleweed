@@ -38,7 +38,7 @@ public sealed class Aggregated : Vertex::Envelope
 	) : base
 	(
 		new Vertex::Scalar.Value(
-			new Scalar::From.Enumerable.Aggregated<Any>(
+			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any>(
 				from,
 				seed,
 				expression))
@@ -73,7 +73,7 @@ public sealed class Aggregated : Vertex::Envelope
 	) : base
 	(
 		new Vertex::Scalar.Value(
-			new Scalar::From.Enumerable.Aggregated<Vertex::Any>(
+			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Vertex::Any>(
 				from,
 				expression))
 	)

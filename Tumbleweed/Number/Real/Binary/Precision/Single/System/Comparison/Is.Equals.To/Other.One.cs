@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
 using Scalar = Tumbleweed.Scalar;
@@ -14,16 +17,16 @@ public sealed class One : Boolean.Envelope
 		System::Single second
 	) : this
 	(
-		new Scalar::Of.Value<System::Single>(first),
-		new Scalar::Of.Value<System::Single>(second)
+		new Value<System::Single>(first),
+		new Value<System::Single>(second)
 	)
 	{
 	}
 	
 	public One
 	(
-		Scalar::Any<System::Single> first,
-		Scalar::Any<System::Single> second
+		Any<System::Single> first,
+		Any<System::Single> second
 	) : base
 	(
 		new Boolean.From.System.One(

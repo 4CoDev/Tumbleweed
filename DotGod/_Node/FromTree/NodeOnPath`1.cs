@@ -1,7 +1,10 @@
 using DotGod._Node.Path.FromSystem;
 using Godot;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod._Node.FromTree;
 
@@ -9,7 +12,7 @@ public sealed class NodeOnPath<T> : Envelope<T> where T : Node
 {
 	public NodeOnPath(Node relation, String path) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Node>(relation),
+		new Value<Node>(relation),
 		path
 	)
 	{
@@ -17,7 +20,7 @@ public sealed class NodeOnPath<T> : Envelope<T> where T : Node
 	
 	public NodeOnPath(Any<Node> relation, String path) : this
 	(
-		relation, new Tumbleweed.Scalar.Of.Value<String>(path)
+		relation, new Value<String>(path)
 	)
 	{
 	}
@@ -31,7 +34,7 @@ public sealed class NodeOnPath<T> : Envelope<T> where T : Node
 	
 	public NodeOnPath(Any<Node> relation, NodePath path) : this
 	(
-		relation, new Tumbleweed.Scalar.Of.Value<NodePath>(path)
+		relation, new Value<NodePath>(path)
 	)
 	{
 	}
@@ -42,7 +45,7 @@ public sealed class NodeOnPath<T> : Envelope<T> where T : Node
 		Any<NodePath> path
 	) : base
 	(
-		new Tumbleweed.Scalar.Function.Result<T>(
+		new Actual<T>(
 			() => relation.Value.GetNode<T>(path.Value))
 	)
 	{

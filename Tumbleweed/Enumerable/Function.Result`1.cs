@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
@@ -24,7 +25,7 @@ public sealed class Result<T> : Enumerable::Envelope<T>
 	) : base
 	(
 		new Enumerable::Scalar.Value<T>(
-			new Scalar::Function.Result<IEnumerable<T>>(function))
+			new Actual<IEnumerable<T>>(function))
 	)
 	{
 	}

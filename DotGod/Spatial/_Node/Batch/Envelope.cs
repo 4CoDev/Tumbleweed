@@ -1,4 +1,5 @@
 using DotGod.Spatial._Node.Batch.Entities;
+using Tumbleweed.Scalar.Nullable;
 using System = System;
 
 namespace DotGod.Spatial._Node.Batch;
@@ -17,7 +18,7 @@ public abstract class Envelope : Batch.Any
 	public override System::String? ToString() =>
 		batch.ToString();
 
-	public Tumbleweed.Array.Any<Tumbleweed.Nullable.Any<Batch.Any>> Subbatches =>
+	public Tumbleweed.Array.Any<Any<Batch.Any>> Subbatches =>
 		batch.Subbatches;
 	
 	public ICollection<ISpatialEntity> Entities =>

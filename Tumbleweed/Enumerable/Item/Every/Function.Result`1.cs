@@ -1,3 +1,5 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
 using SCG = System.Collections.Generic;
@@ -25,9 +27,9 @@ public sealed class Result<T> : Enumerable::Envelope<T>
 	) : base
 	(
 		new Item::Every.Scalar.Value<T>(
-			new Enumerable::Selected<System::Func<T>, Scalar::Any<T>>(
+			new Enumerable::Selected<System::Func<T>, Any<T>>(
 				functions,
-				function => new Scalar::Function.Result<T>(function)))
+				function => new Actual<T>(function)))
 	)
 	{
 	}

@@ -1,8 +1,10 @@
 using Tumbleweed.Enumerable;
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.From.System;
 
 namespace Tumbleweed.String.Spare.When.Null;
 
-public sealed class Multiple : Envelope<Any>
+public sealed class Multiple : Enumerable.Envelope<Any>
 {
 	public Multiple
 	(
@@ -22,7 +24,7 @@ public sealed class Multiple : Envelope<Any>
 		Any spare
 	) : this
 	(
-		new Nullable.From.System.Multiple<Any>(nullables),
+		new Multiple<Any>(nullables),
 		spare
 	)
 	{
@@ -30,11 +32,11 @@ public sealed class Multiple : Envelope<Any>
 	
 	public Multiple
 	(
-		IEnumerable<Nullable.Any<Any>> nullables,
+		IEnumerable<Any<Any>> nullables,
 		Any spare
 	) : base
 	(
-		new Selected<Nullable.Any<Any>, Any>(
+		new Selected<Any<Any>, Any>(
 			nullables,
 			nullable => Expression(nullable, spare))
 	)
@@ -43,7 +45,7 @@ public sealed class Multiple : Envelope<Any>
 
 	private static Any Expression
 	(
-		Nullable.Any<Any> nullable,
+		Any<Any> nullable,
 		Any spare
 	) =>
 	(

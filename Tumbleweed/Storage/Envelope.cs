@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Nullable;
 using System = System;
 
 namespace Tumbleweed.Storage;
@@ -7,7 +8,7 @@ public abstract class Envelope : Storage.Any
 	protected Envelope(Storage.Any storage) =>
 		this.storage = storage;
 
-	public Nullable.Any<System::Object> ValueWith(System::Object key) =>
+	public Any<System::Object> ValueWith(System::Object key) =>
 		storage.ValueWith(key);
 
 	public void Add(System::Object key, System::Object value) =>

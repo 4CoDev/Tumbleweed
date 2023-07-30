@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
 using Object = Tumbleweed.Object;
@@ -23,8 +24,8 @@ public sealed class Two : Boolean::Envelope
 	
 	public Two
 	(
-		Scalar::Any<SC::IEnumerable> first,
-		Scalar::Any<SC::IEnumerable> second
+		Any<SC::IEnumerable> first,
+		Any<SC::IEnumerable> second
 	) : base
 	(
 		new Boolean::Function.Result(

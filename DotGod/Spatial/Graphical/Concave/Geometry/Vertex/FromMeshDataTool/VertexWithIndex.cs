@@ -12,7 +12,7 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex.FromMeshDataTool;
 public sealed class VertexWithIndex : IVertex
 {
 	public VertexWithIndex
-	(Tumbleweed.Scalar.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Any<Int32> vertex
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Immutable.Any<Int32> vertex
 	)
 	{
 		this.mesh = mesh;
@@ -25,13 +25,13 @@ public sealed class VertexWithIndex : IVertex
 	public Tumbleweed.Point.Spatial.Any<Any> Normal =>
 		new NormalOfVertex(mesh, vertex);
 
-	public Tumbleweed.Scalar.Any<Color> Color =>
+	public Tumbleweed.Scalar.Immutable.Any<Color> Color =>
 		new ColorFromMeshDataTool(mesh, vertex);
 
 	public Tumbleweed.Point.Planar.Any<Any> UV =>
 		new UVOfVertex(mesh, vertex);
 
-	private readonly Tumbleweed.Scalar.Any<MeshDataTool> mesh;
+	private readonly Tumbleweed.Scalar.Immutable.Any<MeshDataTool> mesh;
 	
-	private readonly Tumbleweed.Scalar.Any<Int32> vertex;
+	private readonly Tumbleweed.Scalar.Immutable.Any<Int32> vertex;
 }

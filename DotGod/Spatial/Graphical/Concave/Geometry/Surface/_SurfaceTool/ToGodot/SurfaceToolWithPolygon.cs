@@ -2,6 +2,7 @@ using DotGod.Spatial.Graphical.Concave.Geometry.Polygon;
 using DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface._SurfaceTool.
 	ToGodot;

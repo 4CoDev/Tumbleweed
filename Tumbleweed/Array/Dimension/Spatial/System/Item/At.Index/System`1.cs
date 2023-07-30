@@ -1,5 +1,5 @@
-using Mutable = Tumbleweed.Mutable;
-using Scalar = Tumbleweed.Scalar;
+using Mutable = Tumbleweed.Scalar.Mutable;
+using Immutable = Tumbleweed.Scalar.Immutable;
 using SCG = System.Collections.Generic;
 using System = System;
 
@@ -13,7 +13,7 @@ public sealed class System<T> : Mutable::Any<T>
 		SCG::IEnumerable<System::Int32> indices
 	) : this
 	(
-		new Scalar::Of.Value<T[,,]>(array),
+		new Immutable::With.Value<T[,,]>(array),
 		indices
 	)
 	{
@@ -21,7 +21,7 @@ public sealed class System<T> : Mutable::Any<T>
 	
 	public System
 	(
-		Scalar::Any<T[,,]> array,
+		Immutable::Any<T[,,]> array,
 		SCG::IEnumerable<System::Int32> indices
 	) : this
 	(
@@ -37,7 +37,7 @@ public sealed class System<T> : Mutable::Any<T>
 		SCG::ICollection<System::Int32> indices
 	) : this
 	(
-		new Scalar::Of.Value<T[,,]>(array),
+		new Immutable::With.Value<T[,,]>(array),
 		indices
 	)
 	{
@@ -45,7 +45,7 @@ public sealed class System<T> : Mutable::Any<T>
 	
 	public System
 	(
-		Scalar::Any<T[,,]> array,
+		Immutable::Any<T[,,]> array,
 		SCG::ICollection<System::Int32> indices
 	) 
 	{
@@ -66,7 +66,7 @@ public sealed class System<T> : Mutable::Any<T>
 			indices.ElementAt(2)] = value;
 	}
 
-	private readonly Scalar::Any<T[,,]> array;
+	private readonly Immutable::Any<T[,,]> array;
 	
 	private readonly SCG::ICollection<System::Int32> indices;
 }

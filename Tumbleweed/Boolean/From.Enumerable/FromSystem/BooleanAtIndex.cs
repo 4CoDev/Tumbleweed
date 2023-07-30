@@ -1,5 +1,8 @@
 using Tumbleweed.Boolean.Function;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace Tumbleweed.Boolean.From.Enumerable.FromSystem;
 
@@ -7,7 +10,7 @@ public sealed class BooleanAtIndex : Envelope
 {
 	public BooleanAtIndex(IEnumerable<Any> bits, Int32 index) : this
 	(
-		new List<Any>(bits), new Tumbleweed.Scalar.Of.Value<Int32>(index)
+		new List<Any>(bits), new Value<Int32>(index)
 	)
 	{
 	}
@@ -21,7 +24,7 @@ public sealed class BooleanAtIndex : Envelope
 	
 	public BooleanAtIndex(ICollection<Any> bits, Int32 index) : this
 	(
-		bits, new Tumbleweed.Scalar.Of.Value<Int32>(index)
+		bits, new Value<Int32>(index)
 	)
 	{
 	}

@@ -13,7 +13,7 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry.UV.FromMeshDataTool;
 public sealed class UVOfVertex : Tumbleweed.Point.Planar.Envelope<Any>
 {
 	public UVOfVertex
-	(Tumbleweed.Scalar.Any<MeshDataTool> tool,
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> tool,
 		Tumbleweed.Number.Natural.Any vertex
 	) : this
 	(
@@ -24,7 +24,7 @@ public sealed class UVOfVertex : Tumbleweed.Point.Planar.Envelope<Any>
 	}
 	
 	public UVOfVertex
-	(Tumbleweed.Scalar.Any<MeshDataTool> tool, Tumbleweed.Scalar.Any<Int32> vertex
+	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> tool, Tumbleweed.Scalar.Immutable.Any<Int32> vertex
 	) : base
 	(
 		new PointFromVector2(

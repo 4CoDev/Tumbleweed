@@ -1,4 +1,7 @@
 using Tumbleweed.Boolean.From.Enumerable;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
 using Scalar = Tumbleweed.Scalar;
@@ -11,12 +14,12 @@ public sealed class Positive : Boolean.Envelope
 {
 	public Positive(System::Single single) : this
 	(
-		new Scalar::Of.Value<System::Single>(single)
+		new Value<System::Single>(single)
 	)
 	{
 	}
 	
-	public Positive(Scalar::Any<System::Single> single) : base
+	public Positive(Any<System::Single> single) : base
 	(
 		new Last(
 			new Single::Bits(single))

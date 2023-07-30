@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Storage.Record.Of;
 using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
 
@@ -23,7 +23,7 @@ public sealed class Function<T> : Record.Envelope<T> where T : notnull
 	) : base
 	(
 		new Scalar<T>(
-			new Scalar.Function.Result<Record.Any<T>>(function))
+			new Actual<Record.Any<T>>(function))
 	)
 	{
 	}

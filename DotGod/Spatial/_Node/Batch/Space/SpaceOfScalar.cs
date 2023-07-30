@@ -6,7 +6,7 @@ namespace DotGod.Spatial._Node.Batch.Space;
 
 public sealed class SpaceOfScalar : ISpace
 {
-	public SpaceOfScalar(Tumbleweed.Scalar.Any<ISpace> any) =>
+	public SpaceOfScalar(Tumbleweed.Scalar.Immutable.Any<ISpace> any) =>
 		this.any = any;
 
 	public Tumbleweed.Point.Spatial.Any<Tumbleweed.Number.Real.Any> From =>
@@ -15,5 +15,5 @@ public sealed class SpaceOfScalar : ISpace
 	public Tumbleweed.Point.Spatial.Any<Tumbleweed.Number.Real.Any> To =>
 		any.Value.To;
 	
-	private readonly Tumbleweed.Scalar.Any<ISpace> any;
+	private readonly Tumbleweed.Scalar.Immutable.Any<ISpace> any;
 }

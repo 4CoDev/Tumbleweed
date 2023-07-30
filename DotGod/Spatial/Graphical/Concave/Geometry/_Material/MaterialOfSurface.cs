@@ -1,7 +1,8 @@
 using DotGod.Spatial.Graphical.Concave.Geometry.Surface;
 using Godot;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Material;
 
@@ -9,7 +10,7 @@ public sealed class MaterialOfSurface : Envelope<Material>
 {
 	public MaterialOfSurface(ISurface surface) : base
 	(
-			new Tumbleweed.Scalar.Function.Result<Material>(
+			new Actual<Material>(
 				() => surface.Material.Value)
 	)
 	{

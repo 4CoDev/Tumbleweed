@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Point = Tumbleweed.Point.Spatial;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
@@ -18,7 +19,7 @@ public sealed class Result<T> : Point::Envelope<T>
 	public Result(Function::Any<Point::Any<T>> function) : base
 	(
 		new Point::Scalar.Value<T>(
-			new Scalar::Function.Result<Point::Any<T>>(function))
+			new Actual<Point::Any<T>>(function))
 	)
 	{
 	}

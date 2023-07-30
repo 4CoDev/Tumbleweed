@@ -5,6 +5,7 @@ using Tumbleweed.Geometry.Spatial.Vertex.Translation;
 using Tumbleweed.Geometry.Spatial.Vertex.With;
 using Tumbleweed.Geometry.Spatial.Vertex.With.Translation;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 using One = Tumbleweed.Geometry.Spatial.Vertex.With.Translation.One;
 
 namespace DotGod.Spatial.Convex.Geometry.Vertex;

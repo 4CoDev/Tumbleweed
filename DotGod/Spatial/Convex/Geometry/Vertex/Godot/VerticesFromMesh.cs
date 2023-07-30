@@ -1,6 +1,9 @@
 using Godot;
 using Tumbleweed.Collection;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Convex.Geometry.Vertex.Godot;
 
@@ -8,7 +11,7 @@ public sealed class VerticesFromMesh : CollectionEnvelope<Vector3>
 {
 	public VerticesFromMesh(ConvexPolygonShape3D shape) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<ConvexPolygonShape3D>(shape)
+		new Value<ConvexPolygonShape3D>(shape)
 	)
 	{
 	}

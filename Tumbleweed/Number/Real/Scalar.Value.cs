@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable;
 using TW = Tumbleweed;
 
 // ReSharper disable once CheckNamespace
@@ -5,7 +6,7 @@ namespace Tumbleweed.Number.Real.Scalar;
 
 public sealed class Value : Real.Any
 {
-	public Value(TW.Scalar.Any<Real.Any> scalar) =>
+	public Value(Any<Real.Any> scalar) =>
 		this.scalar = scalar;
 	
 	public Integer.Any Mantissa =>
@@ -17,5 +18,5 @@ public sealed class Value : Real.Any
 	public Integer.Any Exponent =>
 		scalar.Value.Exponent;
 
-	private readonly TW.Scalar.Any<Real.Any> scalar;
+	private readonly Any<Real.Any> scalar;
 }

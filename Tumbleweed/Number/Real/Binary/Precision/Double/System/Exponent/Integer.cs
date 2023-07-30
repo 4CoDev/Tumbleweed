@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Integer = Tumbleweed.Number.Integer;
 using Scalar = Tumbleweed.Scalar;
 using System = System;
@@ -9,12 +12,12 @@ public sealed class Integer : Integer::Envelope
 {
 	public Integer(System::Double @double) : this
 	(
-		new Scalar::Of.Value<System::Double>(@double)
+		new Value<System::Double>(@double)
 	)
 	{
 	}
 	
-	public Integer(Scalar::Any<System::Double> @double) : base
+	public Integer(Any<System::Double> @double) : base
 	(
 		new Integer::With.Members(
 			new Exponent::Is.Positive(@double),

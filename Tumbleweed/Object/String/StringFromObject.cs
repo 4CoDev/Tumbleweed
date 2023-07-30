@@ -1,21 +1,23 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Nullable;
 using Tumbleweed.String;
 using Tumbleweed.String.From.System.Nullable;
 
 namespace Tumbleweed.Object.String;
 
-public sealed class StringFromObject : Nullable.Envelope<Any>
+public sealed class StringFromObject : Envelope<Any>
 {
 	public StringFromObject(System.Object @object) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<System.Object>(@object)
+		new Scalar.Immutable.With.Value<System.Object>(@object)
 	)
 	{
 	}
 	
-	public StringFromObject(Scalar.Any<System.Object> @object) : base
+	public StringFromObject(Scalar.Immutable.Any<System.Object> @object) : base
 	(
 		new One(
-			new Scalar.Function.Result<System.String?>(
+			new Actual<System.String?>(
 				() => @object.Value.ToString()))
 	)
 	{

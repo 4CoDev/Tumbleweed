@@ -1,5 +1,8 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
 
@@ -11,7 +14,7 @@ public sealed class MeshWithSurfaceTool : Any<Godot.ArrayMesh>
 		Any<Godot.ArrayMesh> mesh
 	) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<SurfaceTool>(tool),
+		new Value<SurfaceTool>(tool),
 		mesh
 	)
 	{
@@ -24,7 +27,7 @@ public sealed class MeshWithSurfaceTool : Any<Godot.ArrayMesh>
 	) : this
 	(
 		tool,
-		new Tumbleweed.Scalar.Of.Value<Godot.ArrayMesh>(mesh)
+		new Value<Godot.ArrayMesh>(mesh)
 	)
 	{
 	}

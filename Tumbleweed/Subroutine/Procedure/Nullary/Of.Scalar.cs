@@ -1,13 +1,16 @@
 // ReSharper disable once CheckNamespace
+
+using Tumbleweed.Scalar.Immutable;
+
 namespace Tumbleweed.Subroutine.Procedure.Nullary.Of;
 
 public sealed class Scalar : Nullary.Any
 {
-	public Scalar(Tumbleweed.Scalar.Any<Nullary.Any> action) =>
+	public Scalar(Any<Nullary.Any> action) =>
 		this.action = action;
 	
 	public void Invoke() =>
 		action.Value.Invoke();
 	
-	private readonly Tumbleweed.Scalar.Any<Nullary.Any> action;
+	private readonly Any<Nullary.Any> action;
 }

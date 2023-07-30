@@ -1,6 +1,8 @@
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.As;
+using Tumbleweed.Scalar.Nullable.From.System;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
-using Nullable = Tumbleweed.Nullable;
 using SC = System.Collections;
 
 namespace Tumbleweed.Enumerable.Equality.Structural.Of.Nullable;
@@ -13,20 +15,20 @@ public sealed class Two : Boolean::Envelope
 		System::Object? second
 	) : this
 	(
-		new Nullable::From.System.One<System::Object>(first),
-		new Nullable::From.System.One<System::Object>(second)
+		new One<System::Object>(first),
+		new One<System::Object>(second)
 	)
 	{
 	}
 	
 	public Two
 	(
-		Nullable::Any<System::Object> first,
-		Nullable::Any<System::Object> second
+		Any<System::Object> first,
+		Any<System::Object> second
 	) : this
 	(
-		new Nullable::As.Type<SC::IEnumerable>(first),
-		new Nullable::As.Type<SC::IEnumerable>(second)
+		new Type<SC::IEnumerable>(first),
+		new Type<SC::IEnumerable>(second)
 	)
 	{
 	}
@@ -37,16 +39,16 @@ public sealed class Two : Boolean::Envelope
 		SC::IEnumerable? second
 	) : this
 	(
-		new Nullable::From.System.One<SC::IEnumerable>(first),
-		new Nullable::From.System.One<SC::IEnumerable>(second)
+		new One<SC::IEnumerable>(first),
+		new One<SC::IEnumerable>(second)
 	)
 	{
 	}
 	
 	public Two
 	(
-		Nullable::Any<SC::IEnumerable> first,
-		Nullable::Any<SC::IEnumerable> second
+		Any<SC::IEnumerable> first,
+		Any<SC::IEnumerable> second
 	) : base
 	(
 		new Boolean::Function.Result(
@@ -57,8 +59,8 @@ public sealed class Two : Boolean::Envelope
 
 	private static Boolean::Any Function
 	(
-		Nullable::Any<SC::IEnumerable> first,
-		Nullable::Any<SC::IEnumerable> second
+		Any<SC::IEnumerable> first,
+		Any<SC::IEnumerable> second
 	)
 	{
 		if (ReferenceEquals(first, second))

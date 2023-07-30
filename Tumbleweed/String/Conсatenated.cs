@@ -1,4 +1,5 @@
 using Tumbleweed.Enumerable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.String.From.System.NonNullable;
 
 namespace Tumbleweed.String;
@@ -22,7 +23,7 @@ public sealed class Conсatenated : Envelope
 	public Conсatenated(IEnumerable<Any> strings) : base
 	(
 		new One(
-			new Scalar.Function.Result<System.String>(
+			new Actual<System.String>(
 				() => System.String.Concat(strings)))
 	)
 	{

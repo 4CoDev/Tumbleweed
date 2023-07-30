@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Subroutine.Function.Nullary;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 
@@ -23,7 +23,7 @@ public sealed class ElementOfFunction<T> :
 	) : base
 	(
 		new ElementOfScalar<T>(
-			new Tumbleweed.Scalar.Function.Result<IDictionaryElement<T>>(
+			new Actual<IDictionaryElement<T>>(
 				function))
 	)
 	{

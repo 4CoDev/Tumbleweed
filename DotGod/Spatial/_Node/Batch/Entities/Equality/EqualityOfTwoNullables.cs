@@ -1,8 +1,8 @@
 using Tumbleweed.Boolean;
 using Tumbleweed.Boolean.Function;
-using Tumbleweed.Nullable;
-using Tumbleweed.Nullable.As;
-using Tumbleweed.Nullable.From.System;
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.As;
+using Tumbleweed.Scalar.Nullable.From.System;
 
 namespace DotGod.Spatial._Node.Batch.Entities.Equality;
 

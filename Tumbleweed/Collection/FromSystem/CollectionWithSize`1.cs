@@ -1,4 +1,7 @@
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace Tumbleweed.Collection.FromSystem;
 
@@ -10,7 +13,7 @@ public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
 		Int32 size
 	) : this
 	(
-		collection, new Tumbleweed.Scalar.Of.Value<Int32>(size)
+		collection, new Value<Int32>(size)
 	)
 	{
 	}

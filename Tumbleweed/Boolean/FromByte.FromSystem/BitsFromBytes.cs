@@ -1,5 +1,6 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
 using System = System;
 using Enumerable = Tumbleweed.Enumerable;
 

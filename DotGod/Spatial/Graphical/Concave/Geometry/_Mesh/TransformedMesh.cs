@@ -3,6 +3,9 @@ using Godot;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
 
@@ -15,7 +18,7 @@ public sealed class TransformedMesh : MeshEnvelope
 	) : this
 	(
 		mesh,
-		new Tumbleweed.Scalar.Of.Value<Transform3D>(transform)
+		new Value<Transform3D>(transform)
 	)
 	{
 	}

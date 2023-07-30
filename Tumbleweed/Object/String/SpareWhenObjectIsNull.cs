@@ -1,4 +1,5 @@
-using Tumbleweed.Nullable.From.System;
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.From.System;
 using Tumbleweed.String;
 using Tumbleweed.String.From.System.NonNullable;
 
@@ -13,25 +14,25 @@ public sealed class SpareWhenObjectIsNull : Envelope
 	) : this
 	(
 		new One<System.Object>(@object),
-		new Tumbleweed.Scalar.Of.Value<System.String>(spare)
+		new Scalar.Immutable.With.Value<System.String>(spare)
 	)
 	{
 	}
 	
 	public SpareWhenObjectIsNull
-	(Nullable.Any<System.Object> @object,
+	(Any<System.Object> @object,
 		System.String spare
 	) : this
 	(
 		@object,
-		new Tumbleweed.Scalar.Of.Value<System.String>(spare)
+		new Scalar.Immutable.With.Value<System.String>(spare)
 	)
 	{
 	}
 	
 	public SpareWhenObjectIsNull
 	(
-		System.Object? @object, Scalar.Any<System.String> spare
+		System.Object? @object, Scalar.Immutable.Any<System.String> spare
 	) : this
 	(
 		new One<System.Object>(@object),
@@ -41,7 +42,7 @@ public sealed class SpareWhenObjectIsNull : Envelope
 	}
 	
 	public SpareWhenObjectIsNull
-	(Nullable.Any<System.Object> @object,
+	(Any<System.Object> @object,
 		Any spare
 	) : base
 	(

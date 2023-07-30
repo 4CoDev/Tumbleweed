@@ -2,6 +2,9 @@ using DotGod.Spatial.Graphical.Concave.Geometry._Material.FromArrayMesh;
 using DotGod.Spatial.Graphical.Concave.Geometry.Polygon.Triangle.FromGodot.FromSurface;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Surface.FromArrayMesh.FromGodot;
 
@@ -13,7 +16,7 @@ public sealed class SurfaceWithIndex : SurfaceEnvelope
 		Int32 index
 	) : this
 	(
-		mesh, new Tumbleweed.Scalar.Of.Value<Int32>(index)
+		mesh, new Value<Int32>(index)
 	)
 	{
 	}

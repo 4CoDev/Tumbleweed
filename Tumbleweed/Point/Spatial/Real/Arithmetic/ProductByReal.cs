@@ -21,8 +21,7 @@ public sealed class ProductByReal : Envelope<Any>
 	
 	public ProductByReal
 	(
-		Any<Any> point,
-		Scalar::Any<Single> single
+		Any<Any> point, Tumbleweed.Scalar.Immutable.Any<Single> single
 	) : this
 	(
 		point,
@@ -45,8 +44,7 @@ public sealed class ProductByReal : Envelope<Any>
 	
 	public ProductByReal
 	(
-		Any<Any> point,
-		Scalar::Any<Double> @double
+		Any<Any> point, Tumbleweed.Scalar.Immutable.Any<Double> @double
 	) : this
 	(
 		point,

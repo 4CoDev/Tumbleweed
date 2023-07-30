@@ -1,6 +1,9 @@
 using Godot;
 using Tumbleweed.Geometry.Spatial.Convex.Mesh;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using GodotMeshOfCollider = DotGod._Godot.Spatial.Geometry.Mesh.MeshOfCollider;
 
 namespace DotGod.Spatial.Convex.Geometry.Mesh;
@@ -9,7 +12,7 @@ public sealed class MeshOfCollider : Envelope
 {
 	public MeshOfCollider(CollisionShape3D collider) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<CollisionShape3D>(collider)
+		new Value<CollisionShape3D>(collider)
 	)
 	{
 	}

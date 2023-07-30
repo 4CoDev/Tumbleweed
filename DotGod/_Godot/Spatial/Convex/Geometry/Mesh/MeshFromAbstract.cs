@@ -1,5 +1,8 @@
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod._Godot.Spatial.Convex.Geometry.Mesh;
 
@@ -7,7 +10,7 @@ public sealed class MeshFromAbstract : Envelope<ConvexPolygonShape3D>
 {
 	public MeshFromAbstract(Shape3D @abstract) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Shape3D>(@abstract)
+		new Value<Shape3D>(@abstract)
 	)
 	{
 	}

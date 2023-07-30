@@ -1,14 +1,16 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Item.Every.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Scalar = Tumbleweed.Scalar;
 using System = System;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 namespace Tumbleweed.Number.Integer.System.Medium.From.Bytes;
 
-public sealed class System : Scalar::Envelope<System::Int32>
+public sealed class System : global::Tumbleweed.Scalar.Immutable.Envelope<System::Int32>
 {
-	public System(IEnumerable<Scalar::Any<System::Byte>> bytes) : this
+	public System(IEnumerable<Any<System::Byte>> bytes) : this
 	(
 		new Value<System::Byte>(bytes)
 	)
@@ -24,7 +26,7 @@ public sealed class System : Scalar::Envelope<System::Int32>
 	
 	public System(ReadOnlySpan::Any<System::Byte> bytes) : base
 	(
-		new Scalar::Function.Result<Int32>(
+		new Actual<Int32>(
 			() => Function((bytes)))
 	)
 	{

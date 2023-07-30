@@ -1,3 +1,5 @@
+using Tumbleweed.Scalar.Immutable.Function.Result;
+
 namespace Tumbleweed.List;
 
 public sealed class ListOfFunction<T> : ListEnvelope<T>
@@ -7,7 +9,7 @@ public sealed class ListOfFunction<T> : ListEnvelope<T>
 	) : base
 	(
 		new ListOfScalar<T>(
-			new Scalar.Function.Result<IList<T>>(function))
+			new Actual<IList<T>>(function))
 	)
 	{
 	}

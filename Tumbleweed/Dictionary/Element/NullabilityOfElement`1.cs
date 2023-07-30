@@ -1,4 +1,5 @@
-using Tumbleweed.Nullable;
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.Function;
 
 namespace Tumbleweed.Dictionary.Element;
 
@@ -8,7 +9,7 @@ public sealed class NullabilityOfElement<T> :
 {
 	public NullabilityOfElement(IDictionaryElement<T> element) : base
 	(
-		new Nullable.Result.Of.Function<T>(
+		new Result<T>(
 			() => element.Nullability)
 	)
 	{

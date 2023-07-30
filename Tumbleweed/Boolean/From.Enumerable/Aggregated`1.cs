@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.From.Enumerable;
 using TW = Tumbleweed;
 using BinaryFunction = Tumbleweed.Subroutine.Function.Binary;
 
@@ -35,7 +36,7 @@ public sealed class Aggregated<TFrom> : Envelope
 	) : base
 	(
 		new Boolean.Scalar.Value(
-			new TW.Scalar.From.Enumerable.Aggregated<TFrom, Any>(
+			new Aggregated<TFrom, Any>(
 				from,
 				seed,
 				expression))

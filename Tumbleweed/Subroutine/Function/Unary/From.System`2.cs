@@ -1,4 +1,7 @@
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Subroutine.Function.Unary.From;
@@ -11,14 +14,14 @@ public sealed class System<TParameter, TResult> :
 		Func<TParameter, TResult> function
 	) : this
 	(
-		new Scalar.Of.Value<Func<TParameter, TResult>>(function)
+		new Value<Func<TParameter, TResult>>(function)
 	)
 	{
 	}
 	
 	public System
 	(
-		Scalar.Any<Func<TParameter, TResult>> function
+		Any<Func<TParameter, TResult>> function
 	)
 	{
 		this.function = function;
@@ -28,5 +31,5 @@ public sealed class System<TParameter, TResult> :
 	public TResult ResultWith(TParameter parameter) =>
 		function.Value.Invoke(parameter);
 
-	private readonly Scalar.Any<Func<TParameter, TResult>> function;
+	private readonly Any<Func<TParameter, TResult>> function;
 }

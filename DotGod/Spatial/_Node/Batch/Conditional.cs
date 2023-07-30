@@ -1,5 +1,6 @@
 using Tumbleweed.Boolean;
 using Tumbleweed.Boolean.From.System;
+using Tumbleweed.Scalar.Immutable;
 using Scalar = Tumbleweed.Scalar;
 
 namespace DotGod.Spatial._Node.Batch;
@@ -28,7 +29,7 @@ public sealed class Conditional : Batch.Envelope
 	) : base
 	(
 		new Value.Of.Scalar(
-			new Scalar.Conditional<Batch.Any>(
+			new Conditional<Batch.Any>(
 				condition,
 				then,
 				otherwise))

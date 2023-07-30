@@ -1,3 +1,5 @@
+using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Scalar.Nullable.With;
 using System = System;
 
 // ReSharper disable once CheckNamespace
@@ -13,12 +15,12 @@ public sealed class Dictionary : Any
 		this.dictionary = dictionary;
 	}
 
-	public Nullable.Any<System::Object> ValueWith(System::Object key)
+	public Any<System::Object> ValueWith(System::Object key)
 	{
 		System::Boolean existing = dictionary.TryGetValue(
 			key,
 			out System::Object? value);
-		return new Nullable.With.Members<System::Object>(value!, existing);
+		return new Members<System::Object>(value!, existing);
 	}
 
 	public void Add(System::Object key, System::Object value) =>

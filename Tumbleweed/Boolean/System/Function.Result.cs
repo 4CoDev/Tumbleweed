@@ -1,10 +1,12 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using TW = Tumbleweed;
 using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Boolean.System.Function;
 
-public sealed class Result : TW.Scalar.Envelope<global::System.Boolean>
+public sealed class Result : Envelope<global::System.Boolean>
 {
 	public Result
 	(
@@ -21,7 +23,7 @@ public sealed class Result : TW.Scalar.Envelope<global::System.Boolean>
 		NullaryFunction.Any<global::System.Boolean> function
 	) : base
 	(
-		new TW.Scalar.Function.Result<global::System.Boolean>(function)
+		new Actual<global::System.Boolean>(function)
 	)
 	{
 	}

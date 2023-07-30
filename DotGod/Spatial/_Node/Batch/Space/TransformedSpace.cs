@@ -2,6 +2,9 @@ using DotGod.Spatial._Node.Batch.Space.Points;
 using DotGod.Spatial.Point;
 using Godot;
 using Tumbleweed.Scalar;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial._Node.Batch.Space;
 
@@ -14,7 +17,7 @@ public sealed class TransformedSpace : SpaceEnvelope
 	) : this
 	(
 		space,
-		new Tumbleweed.Scalar.Of.Value<Transform3D>(transform)
+		new Value<Transform3D>(transform)
 	)
 	{
 	}

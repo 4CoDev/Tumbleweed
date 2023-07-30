@@ -8,7 +8,7 @@ namespace DotGod.Spatial.Graphical.Concave.Geometry.Vertex;
 public sealed class VertexWithValues : IVertex
 {
 	public VertexWithValues
-	(Tumbleweed.Point.Spatial.Any<Any> translation, Tumbleweed.Point.Spatial.Any<Any> normal, Tumbleweed.Scalar.Any<Color> color, Tumbleweed.Point.Planar.Any<Any> uv
+	(Tumbleweed.Point.Spatial.Any<Any> translation, Tumbleweed.Point.Spatial.Any<Any> normal, Tumbleweed.Scalar.Immutable.Any<Color> color, Tumbleweed.Point.Planar.Any<Any> uv
 	)
 	{
 		Translation = translation;
@@ -21,7 +21,7 @@ public sealed class VertexWithValues : IVertex
 	
 	public Tumbleweed.Point.Spatial.Any<Any> Normal { get; }
 	
-	public Tumbleweed.Scalar.Any<Color> Color { get; }
+	public Tumbleweed.Scalar.Immutable.Any<Color> Color { get; }
 	
 	public Tumbleweed.Point.Planar.Any<Any> UV { get; }
 }

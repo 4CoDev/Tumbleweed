@@ -1,3 +1,6 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
@@ -15,8 +18,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Scalar::Of.Value<Int32>(from),
-		new Scalar::Of.Value<Int32>(to)
+		new Value<Int32>(from),
+		new Value<Int32>(to)
 	)
 	{
 	}
@@ -24,8 +27,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		SCG::IEnumerable<T> enumerable,
-		Scalar::Any<Int32> from,
-		Scalar::Any<Int32> to
+		Any<Int32> from,
+		Any<Int32> to
 	) : base
 	(
 		new Enumerable::Function.Result<T>(

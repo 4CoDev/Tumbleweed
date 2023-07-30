@@ -1,16 +1,18 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using TW = Tumbleweed;
 
 namespace Tumbleweed.Number.Integer.System.Medium.Less.Then;
 
-public sealed class One : TW.Scalar.Envelope<Int32>
+public sealed class One : Envelope<Int32>
 {
 	public One
 	(
-		TW.Scalar.Any<Int32> less,
-		TW.Scalar.Any<Int32> more
+		Any<Int32> less,
+		Any<Int32> more
 	) : base
 	(
-		new TW.Scalar.Function.Result<Int32>(
+		new Actual<Int32>(
 			() => Function(less, more))
 	)
 	{
@@ -18,8 +20,8 @@ public sealed class One : TW.Scalar.Envelope<Int32>
 
 	private static Int32 Function
 	(
-		TW.Scalar.Any<Int32> less,
-		TW.Scalar.Any<Int32> more
+		Any<Int32> less,
+		Any<Int32> more
 	)
 	{
 		if (less.Value < more.Value) return less.Value;

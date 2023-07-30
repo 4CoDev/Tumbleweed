@@ -1,20 +1,24 @@
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 using Scalar = Tumbleweed.Scalar;
 using System = System;
 
 namespace Tumbleweed.Object;
 
-public sealed class Unpacked<T> : Scalar::Envelope<T>
+public sealed class Unpacked<T> : Envelope<T>
 {
 	public Unpacked(System::Object @object) : this
 	(
-		new Scalar::Of.Value(@object)
+		new Value(@object)
 	)
 	{
 	}
 	
-	public Unpacked(Scalar::Any<System::Object> scalar) : base
+	public Unpacked(Any<System::Object> scalar) : base
 	(
-		new Scalar::Function.Result<T>(
+		new Actual<T>(
 			() => (T) scalar.Value)
 	)
 	{

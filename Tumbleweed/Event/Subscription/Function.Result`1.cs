@@ -1,5 +1,5 @@
 using Tumbleweed.Event.Subscription.Scalar;
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Subroutine.Function.Nullary;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 
@@ -20,7 +20,7 @@ public sealed class Result<T> : Envelope<T>
 	) : base
 	(
 		new Value<T>(
-			new Tumbleweed.Scalar.Function.Result<Any<T>>(function))
+			new Actual<Any<T>>(function))
 	)
 	{
 	}

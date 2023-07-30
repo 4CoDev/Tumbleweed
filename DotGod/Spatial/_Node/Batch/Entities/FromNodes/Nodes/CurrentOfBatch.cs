@@ -10,7 +10,7 @@ namespace DotGod.Spatial._Node.Batch.Entities.FromNodes.Nodes;
 
 public sealed class CurrentOfBatch : Tumbleweed.Enumerable.Envelope<Godot.Node>
 {
-	public CurrentOfBatch(Tumbleweed.Scalar.Any<Node3D> space) : base
+	public CurrentOfBatch(Tumbleweed.Scalar.Immutable.Any<Node3D> space) : base
 	(
 		new NonNullable<Godot.Node>(
 			new Global<IEnumerable<Godot.Node>>(

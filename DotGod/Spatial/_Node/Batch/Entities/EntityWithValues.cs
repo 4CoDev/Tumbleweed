@@ -1,9 +1,9 @@
 using DotGod.Spatial._Node.Batch.Entities.Equality;
 using DotGod.Spatial._Node.Batch.Space;
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using Tumbleweed.Nullable;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
+using Tumbleweed.Scalar.Nullable;
 using System = System;
 
 namespace DotGod.Spatial._Node.Batch.Entities;

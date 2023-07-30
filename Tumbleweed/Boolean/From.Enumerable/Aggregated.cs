@@ -33,7 +33,7 @@ public sealed class Aggregated
 	) : base
 	(
 		new Boolean.Scalar.Value(
-			new TW.Scalar.From.Enumerable.Aggregated<Any>(
+			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any>(
 				from,
 				expression))
 	)

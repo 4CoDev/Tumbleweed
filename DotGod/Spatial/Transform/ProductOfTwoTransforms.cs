@@ -1,6 +1,9 @@
 using Godot;
 using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Function;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Spatial.Transform;
 
@@ -12,8 +15,8 @@ public sealed class ProductOfTwoTransforms : Envelope<Transform3D>
 		Transform3D child
 	) : this
 	(
-		new Tumbleweed.Scalar.Of.Value<Transform3D>(parent),
-		new Tumbleweed.Scalar.Of.Value<Transform3D>(child)
+		new Value<Transform3D>(parent),
+		new Value<Transform3D>(child)
 	)
 	{
 	}
@@ -24,7 +27,7 @@ public sealed class ProductOfTwoTransforms : Envelope<Transform3D>
 		Any<Transform3D> child
 	) : base
 	(
-		new Tumbleweed.Scalar.Function.Result<Transform3D>(
+		new Actual<Transform3D>(
 			() => parent.Value * child.Value)
 	)
 	{
