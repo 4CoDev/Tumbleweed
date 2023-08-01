@@ -1,18 +1,19 @@
-using NullaryEvent = Tumbleweed.Event.Nullary;
-using NullaryProcedure = Tumbleweed.Subroutine.Procedure.Nullary;
+using List = Tumbleweed.Event.Listening.List;
+using Event = Tumbleweed.Event.Nullary;
+using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace Tumbleweed.Event.Nullary;
 
-public abstract class Envelope : NullaryEvent.Any
+public abstract class Envelope : Event::Any
 {
-	protected Envelope(NullaryEvent.Any @event) =>
+	protected Envelope(Event::Any @event) =>
 		this.@event = @event;
 
-	public Subscription.Any<NullaryProcedure.Any> Subscription =>
-		@event.Subscription;
+	public List::Any<Procedure::Any> Listeners =>
+		@event.Listeners;
 
 	public void Invoke() =>
 		@event.Invoke();
-	
-	private readonly NullaryEvent.Any @event;
+
+	private readonly Event::Any @event;
 }

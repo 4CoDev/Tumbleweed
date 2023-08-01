@@ -1,37 +1,39 @@
-using NullaryEvent = Tumbleweed.Event.Nullary;
-using NullaryProcedure = Tumbleweed.Subroutine.Procedure.Nullary;
+using Event = Tumbleweed.Event.Nullary;
+using List = Tumbleweed.Event.Listening.List;
+using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
+using System = System;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Event.Nullary.With;
 
-public sealed class Members : NullaryEvent.Any
+public sealed class Members : Event::Any
 {
 	public Members
 	(
-		Subscription.Any<NullaryProcedure.Any> subscription,
-		Action invoke
+		List::Any<Procedure::Any> subscription,
+		System::Action invoke
 	) : this
 	(
 		subscription,
-		new NullaryProcedure.From.System(invoke)
+		new Procedure::From.System(invoke)
 	)
 	{
 	}
 	
 	public Members
 	(
-		Subscription.Any<NullaryProcedure.Any> subscription,
-		NullaryProcedure.Any invoke
+		List::Any<Procedure::Any> subscription,
+		Procedure::Any invoke
 	)
 	{
-		Subscription = subscription;
+		Listeners = subscription;
 		this.invoke = invoke;
 	}
 	
-	public Subscription.Any<NullaryProcedure.Any> Subscription { get; }
+	public List::Any<Procedure::Any> Listeners { get; }
 
 	public void Invoke() =>
 		invoke.Invoke();
 	
-	private readonly NullaryProcedure.Any invoke;
+	private readonly Procedure::Any invoke;
 }

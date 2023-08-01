@@ -1,20 +1,22 @@
-using NullaryEvent = Tumbleweed.Event.Nullary;
-using NullaryProcedure = Tumbleweed.Subroutine.Procedure.Nullary;
+using Event = Tumbleweed.Event.Nullary;
+using SCG = System.Collections.Generic;
+using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 using System = System;
+using List = Tumbleweed.Event.Listening.List;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Event.Nullary.With;
 
-public sealed class Listeners : NullaryEvent.Envelope
+public sealed class Listeners : Event::Envelope
 {
 	public Listeners
 	(
-		IDictionary<System::Object, NullaryProcedure.Any> listeners
+		SCG::IDictionary<System::Object, Procedure::Any> listeners
 	) : base
 	(
-		new Members(
-			new Subscription.With.Dictionary<NullaryProcedure.Any>(listeners),
-			new Reaction.Of.Listeners(listeners))
+		new Event::With.Members(
+			new List::With.Dictionary<Procedure::Any>(listeners),
+			new Event::Reaction.Of.Listeners(listeners))
 	)
 	{
 	}

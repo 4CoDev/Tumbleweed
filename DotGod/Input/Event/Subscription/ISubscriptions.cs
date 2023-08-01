@@ -1,4 +1,4 @@
-using Tumbleweed.Event.Subscription;
+using Tumbleweed.Event.Listening.List;
 using Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace DotGod.Input.Event.Subscription;

@@ -1,15 +1,16 @@
-using NullaryEvent = Tumbleweed.Event.Nullary;
-using NullaryProcedure = Tumbleweed.Subroutine.Procedure.Nullary;
+using Nullary = Tumbleweed.Event.Nullary;
+using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
+using SCG = System.Collections.Generic;
 using System = System;
 
 namespace Tumbleweed.Event.Nullary;
 
-public sealed class Empty : NullaryEvent.Envelope
+public sealed class Empty : Nullary::Envelope
 {
 	public Empty() : base
 	(
-		new NullaryEvent.With.Listeners(
-			new Dictionary<System::Object, NullaryProcedure.Any>())
+		new Nullary::With.Listeners(
+			new SCG::Dictionary<System::Object, Procedure::Any>())
 	)
 	{
 	}

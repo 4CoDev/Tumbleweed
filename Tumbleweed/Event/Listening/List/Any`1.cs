@@ -1,6 +1,6 @@
 using System = System;
 
-namespace Tumbleweed.Event.Subscription;
+namespace Tumbleweed.Event.Listening.List;
 
 public interface Any<in T>
 {
