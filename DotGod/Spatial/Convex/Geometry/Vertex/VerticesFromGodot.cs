@@ -1,5 +1,4 @@
 using DotGod.Spatial.Convex.Geometry.Vertex.Godot;
-using DotGod.Spatial.Vector.Point;
 using Godot;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Geometry.Spatial.Vertex;
@@ -8,6 +7,7 @@ using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
+using Enumerable = DotGod.Point.Spatial.From.Vector.Enumerable;
 
 namespace DotGod.Spatial.Convex.Geometry.Vertex;
 
@@ -29,7 +29,7 @@ public sealed class VerticesFromGodot : Tumbleweed.Enumerable.Envelope<Any>
 	) : base
 	(
 		new Multiple(
-			new SpatialsFromVectors3(
+			new Enumerable(
 				new VerticesFromMesh(shape)))
 	)
 	{

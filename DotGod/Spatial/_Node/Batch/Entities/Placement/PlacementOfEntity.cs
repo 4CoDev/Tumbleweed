@@ -1,4 +1,4 @@
-using DotGod._Node.Batch.Entity.Placement;
+using DotGod.Node.Batch.Entity.Placement;
 using DotGod.Spatial._Node.Batch.Map;
 
 namespace DotGod.Spatial._Node.Batch.Entities.Placement;

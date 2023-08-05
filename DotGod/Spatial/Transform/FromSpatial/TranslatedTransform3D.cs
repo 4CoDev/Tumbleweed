@@ -1,4 +1,4 @@
-using DotGod.Spatial.Vector.Godot;
+using DotGod.Vector.Spatial.From.Point;
 using Godot;
 using Tumbleweed.Number.Real;
 using Tumbleweed.Point.Spatial;
@@ -14,7 +14,7 @@ public sealed class TranslatedTransform3D : Tumbleweed.Scalar.Immutable.Envelope
 	(
 		new FromVector3.TranslatedTransform3D(
 			transform,
-			new Vector3FromPoint(translation))
+			new One(translation))
 	)
 	{
 	}

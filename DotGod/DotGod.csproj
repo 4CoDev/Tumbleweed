@@ -13,10 +13,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Node\On.Path\" />
       <Folder Include="Spatial\Concave\" />
-      <Folder Include="Spatial\Vector\" />
       <Folder Include="Spatial\_Node\Conditional\" />
-      <Folder Include="_Node\Batch\Map\" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
-using DotGod._Node.Batch.Actuality;
-using DotGod._Node.Children;
+using DotGod.Node;
+using DotGod.Node.Batch.Actuality;
 using DotGod.Spatial._Node.Batch.Entities.FromNodes.Nodes;
 using Godot;
 using Tumbleweed.Scalar;
@@ -13,7 +13,7 @@ public sealed class NodesOfBatch : ISpaceActuality
 	{
 		current = new CurrentOfBatch(node);
 		actual = new ActualOfBatch(node);
-		children = new ChildrenOfNode(node);
+		children = new Children(node);
 	}
 
 	public void Update()

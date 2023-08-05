@@ -1,4 +1,4 @@
-using DotGod._Node.Children;
+using DotGod.Node;
 using Godot;
 using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;
@@ -19,7 +19,7 @@ public sealed class Node : Envelope<Node3D>
 	{
 		Node3D space = new Node3D { Name = "Space" };
 		MeshInstance3D mesh = new MeshInstance3D { Name = "Mesh" };
-		new ChildrenOfNode(space).Add(mesh);
+		new Children(space).Add(mesh);
 		return space;
 	}
 }

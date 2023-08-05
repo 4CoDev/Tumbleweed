@@ -1,4 +1,4 @@
-using DotGod._Node.Batch.Actuality;
+using DotGod.Node.Batch.Actuality;
 using Godot;
 using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;

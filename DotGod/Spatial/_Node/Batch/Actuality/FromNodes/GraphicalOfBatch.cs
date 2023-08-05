@@ -1,6 +1,6 @@
-using DotGod._Node.Batch.Actuality;
-using DotGod._Node.FromTree;
-using DotGod._Node.Mesh;
+using DotGod.Node.Batch.Actuality;
+using DotGod.Node.Mesh;
+using DotGod.Node.On.Path.From.Scene;
 using DotGod.Spatial._Node.Batch.Entities.FromNodes;
 using DotGod.Spatial._Node.Batch.Entities.Meshes;
 using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
@@ -15,8 +15,8 @@ public sealed class GraphicalOfBatch : ISpaceActuality
 	public GraphicalOfBatch(Immutable::Any<Node3D> node)
 	{
 		this.node = node;
-		mesh = new MutableOfNode(
-			new LazyOnPath<MeshInstance3D>(node, "Mesh"));
+		mesh = new DotGod.Node.Mesh.Mutable(
+			new DotGod.Node.On.Path.From.Scene.Lazy<MeshInstance3D>(node, "Mesh"));
 	}
 
 	public void Update()

@@ -1,4 +1,4 @@
-using DotGod.Spatial.Vector.Point;
+using DotGod.Point.Spatial.From.Vector;
 using Godot;
 using Tumbleweed.Number.Real;
 using Tumbleweed.Point.Spatial;
@@ -10,7 +10,7 @@ public sealed class OriginOfTransform : Tumbleweed.Point.Spatial.Envelope<Any>
 {
 	public OriginOfTransform(Tumbleweed.Scalar.Immutable.Any<Transform3D> transform) : base
 	(
-		new PointFromVector3(
+		new One(
 			new Binary.Spatial.OfGodot.OriginOfTransform(transform))
 	)
 	{

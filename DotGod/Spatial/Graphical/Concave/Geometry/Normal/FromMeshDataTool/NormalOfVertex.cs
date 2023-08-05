@@ -1,4 +1,3 @@
-using DotGod.Spatial.Vector.Point;
 using Godot;
 using Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed;
 using Tumbleweed.Number.Natural;
@@ -6,6 +5,7 @@ using Tumbleweed.Number.Real;
 using Tumbleweed.Point.Spatial;
 using Tumbleweed.Scalar;
 using Any = Tumbleweed.Number.Real.Any;
+using One = DotGod.Point.Spatial.From.Vector.One;
 
 namespace DotGod.Spatial.Graphical.Concave.Geometry.Normal.FromMeshDataTool;
 
@@ -17,7 +17,7 @@ public sealed class NormalOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 	) : this
 	(
 		tool,
-		new One(vertex)
+		new Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed.One(vertex)
 	)
 	{
 	}
@@ -26,7 +26,7 @@ public sealed class NormalOfVertex : Tumbleweed.Point.Spatial.Envelope<Any>
 	(Tumbleweed.Scalar.Immutable.Any<MeshDataTool> mesh, Tumbleweed.Scalar.Immutable.Any<Int32> vertex
 	) : base
 	(
-		new PointFromVector3(
+		new One(
 			new ToGodot.NormalOfVertex(mesh, vertex))
 	)
 	{

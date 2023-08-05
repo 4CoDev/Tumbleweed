@@ -1,4 +1,4 @@
-using DotGod.Resource.FromFiles.ToGodot;
+using DotGod.Resource.On.Path.From.File;
 using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Of;
@@ -17,7 +17,7 @@ public sealed class MeshOnPath : Envelope<Godot.ArrayMesh>
 	
 	public MeshOnPath(Any<String> path) : base
 	(
-		new ResourceOnPath<Godot.ArrayMesh>(path)
+		new Actual<Godot.ArrayMesh>(path)
 	)
 	{
 	}
