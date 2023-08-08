@@ -35,6 +35,8 @@
       <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.Polygon.Appended\" />
       <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.PrimitiveType.Set\" />
       <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.Vertex.Appended\" />
+      <Folder Include="Geometry\Spatial\Concave\Physical\" />
+      <Folder Include="Geometry\Spatial\Convex\Graphical\" />
       <Folder Include="Node\On.Path\" />
       <Folder Include="Node\Spatial\Conditional\" />
     </ItemGroup>

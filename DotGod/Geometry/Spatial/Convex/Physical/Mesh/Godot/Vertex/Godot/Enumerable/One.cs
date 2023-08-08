@@ -3,18 +3,18 @@ using Tumbleweed.Collection;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 
-namespace DotGod.Geometry.Spatial.Convex.Geometry.Vertex.Godot;
+namespace DotGod.Geometry.Spatial.Convex.Physical.Mesh.Godot.Vertex.Godot.Enumerable;
 
-public sealed class VerticesFromMesh : CollectionEnvelope<Vector3>
+public sealed class One : CollectionEnvelope<Vector3>
 {
-	public VerticesFromMesh(ConvexPolygonShape3D shape) : this
+	public One(ConvexPolygonShape3D shape) : this
 	(
 		new Value<ConvexPolygonShape3D>(shape)
 	)
 	{
 	}
 	
-	public VerticesFromMesh
+	public One
 	(
 		Any<ConvexPolygonShape3D> shape
 	) : base

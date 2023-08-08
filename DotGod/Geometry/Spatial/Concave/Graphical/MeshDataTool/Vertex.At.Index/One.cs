@@ -1,4 +1,4 @@
-using DotGod._Color;
+using DotGod.Geometry.Spatial.Concave.Graphical.MeshDataTool.Vertex.At.Index.Color;
 using DotGod.Geometry.Spatial.Concave.Graphical.Vertex;
 using Godot;
 
@@ -24,7 +24,7 @@ public sealed class One : Any
 		new Index.Normal.As.Point.One(mesh, vertex);
 
 	public Tumbleweed.Scalar.Immutable.Any<Color> Color =>
-		new ColorFromMeshDataTool(mesh, vertex);
+		new Index.Color.One(mesh, vertex);
 
 	public Tumbleweed.Point.Planar.Any<Tumbleweed.Number.Real.Any> UV =>
 		new Index.UV.As.Point.One(mesh, vertex);

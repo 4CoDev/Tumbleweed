@@ -3,7 +3,7 @@ using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 using Point = DotGod.Point.Spatial;
 
-namespace DotGod.Geometry.Spatial.Convex.Geometry.Vertex;
+namespace DotGod.Geometry.Spatial.Convex.Physical.Vertex;
 
 public sealed class Transformed : Vertex::Envelope
 {
