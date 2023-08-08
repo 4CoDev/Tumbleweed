@@ -1,6 +1,5 @@
 using Tumbleweed.Scalar.Immutable;
 using Vertex = Tumbleweed.Geometry.Spatial.Vertex;
-using Scalar = Tumbleweed.Scalar;
 using Point = Tumbleweed.Point.Spatial;
 using Real = Tumbleweed.Number.Real;
 

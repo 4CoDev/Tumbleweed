@@ -1,4 +1,4 @@
-using DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.OfGodot;
+using DotGod.Geometry.Spatial.Concave.Graphical.ArrayMesh.From.Mesh;
 using Godot;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
@@ -16,7 +16,7 @@ public sealed class ArrayMesh : Envelope<global::Godot.ArrayMesh>
 	
 	public ArrayMesh(Any<MeshInstance3D> node) : base
 	(
-		new ArrayMeshFromMesh(
+		new One(
 			new Mesh(node))
 	)
 	{

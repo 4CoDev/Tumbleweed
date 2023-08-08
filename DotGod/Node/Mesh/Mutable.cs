@@ -1,13 +1,12 @@
+using DotGod.Geometry.Spatial.Concave.Graphical.Mesh;
 using DotGod.Node.Mesh.Immutable.Untransformed;
-using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using DotGod.Spatial.Graphical.Concave.Geometry._Mesh._ArrayMesh.ToGodot;
 using Godot;
 using Tumbleweed.Scalar.Mutable;
 using Tumbleweed.Scalar.Mutable.With;
 
 namespace DotGod.Node.Mesh;
 
-public sealed class Mutable : Envelope<IMesh>
+public sealed class Mutable : Envelope<Any>
 {
 	public Mutable(MeshInstance3D node) : this
 	(
@@ -18,14 +17,14 @@ public sealed class Mutable : Envelope<IMesh>
 
 	public Mutable(Tumbleweed.Scalar.Immutable.Any<MeshInstance3D> node) : base
 	(
-		new Members<IMesh>(
+		new Members<Any>(
 			() => Accessor(node),
 			mesh => Mutator(node, mesh))
 	)
 	{
 	}
 
-	private static IMesh Accessor
+	private static Any Accessor
 	(Tumbleweed.Scalar.Immutable.Any<MeshInstance3D> node
 	) =>
 	(
@@ -34,9 +33,9 @@ public sealed class Mutable : Envelope<IMesh>
 	
 	private static void Mutator
 	(Tumbleweed.Scalar.Immutable.Any<MeshInstance3D> node,
-		IMesh mesh
+		Any mesh
 	)
 	{
-		node.Value.Mesh = new MeshFromTumbleweed(mesh).Value;
+		node.Value.Mesh = new DotGod.Geometry.Spatial.Concave.Graphical.ArrayMesh.From.Tumbleweed.One(mesh).Value;
 	}
 }

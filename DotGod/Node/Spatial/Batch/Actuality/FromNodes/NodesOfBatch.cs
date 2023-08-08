@@ -1,0 +1,28 @@
+using DotGod.Node.Batch.Actuality;
+using DotGod.Node.Spatial.Batch.Entities.FromNodes.Nodes;
+using Godot;
+using Tumbleweed.Scalar.Immutable;
+
+namespace DotGod.Node.Spatial.Batch.Actuality.FromNodes;
+
+public sealed class NodesOfBatch : ISpaceActuality
+{
+	public NodesOfBatch(Any<Node3D> node)
+	{
+		current = new CurrentOfBatch(node);
+		actual = new ActualOfBatch(node);
+		children = new Children(node);
+	}
+
+	public void Update()
+	{
+		foreach (Godot.Node entity in current) children.Remove(entity);
+		foreach (Godot.Node entity in actual) children.Add(entity);
+	}
+
+	private readonly IEnumerable<Godot.Node> current;
+
+	private readonly IEnumerable<Godot.Node> actual;
+	
+	private readonly ICollection<Godot.Node> children;
+}

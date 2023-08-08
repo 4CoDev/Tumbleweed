@@ -1,13 +1,13 @@
+using DotGod.Geometry.Spatial.Concave.Graphical.Mesh;
+using DotGod.Geometry.Spatial.Concave.Graphical.Mesh.From.Godot;
 using DotGod.Node.Mesh.Immutable.Untransformed.Godot;
-using DotGod.Spatial.Graphical.Concave.Geometry._Mesh;
-using DotGod.Spatial.Graphical.Concave.Geometry._Mesh.FromArrayMesh.FromGodot;
 using Godot;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Node.Mesh.Immutable.Untransformed;
 
-public sealed class Tumbleweed : MeshEnvelope
+public sealed class Tumbleweed : Envelope
 {
 	public Tumbleweed(MeshInstance3D node) : this
 	(
@@ -18,7 +18,7 @@ public sealed class Tumbleweed : MeshEnvelope
 
 	public Tumbleweed(Any<MeshInstance3D> node) : base
 	(
-		new MeshFromGodot(
+		new One(
 			new Godot.Mesh(node))
 	)
 	{

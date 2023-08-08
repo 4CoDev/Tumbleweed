@@ -1,5 +1,5 @@
-using DotGod.Spatial._Node.Batch.Space;
-using DotGod.Spatial.Convex.Geometry.Mesh;
+using DotGod.Geometry.Spatial.Convex.Geometry.Mesh;
+using DotGod.Node.Spatial.Batch.Space;
 using Godot;
 using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;

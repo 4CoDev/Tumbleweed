@@ -1,0 +1,34 @@
+using DotGod.Geometry.Spatial.Convex.Geometry.Vertex.Godot;
+using Godot;
+using Tumbleweed.Geometry.Spatial.Vertex;
+using Tumbleweed.Geometry.Spatial.Vertex.With.Translation;
+using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Scalar.Immutable.With;
+using Enumerable = DotGod.Point.Spatial.From.Vector.Enumerable;
+
+namespace DotGod.Geometry.Spatial.Convex.Geometry.Vertex;
+
+public sealed class VerticesFromGodot : Tumbleweed.Enumerable.Envelope<Any>
+{
+	public VerticesFromGodot
+	(
+		ConvexPolygonShape3D shape
+	) : this
+	(
+		new Value<ConvexPolygonShape3D>(shape)
+	)
+	{
+	}
+	
+	public VerticesFromGodot
+	(
+		Any<ConvexPolygonShape3D> shape
+	) : base
+	(
+		new Multiple(
+			new Enumerable(
+				new VerticesFromMesh(shape)))
+	)
+	{
+	}
+}
