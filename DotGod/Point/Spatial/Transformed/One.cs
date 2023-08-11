@@ -1,6 +1,6 @@
 using DotGod.Point.Spatial.From.Vector;
-using DotGod.Transform.Spatial.FromSpatial;
-using DotGod.Transform.Spatial.Number.Binary.Spatial.OfGodot;
+using DotGod.Transform.Spatial.Origin.Vector;
+using DotGod.Transform.Spatial.Translated.By.Point;
 using Godot;
 using Tumbleweed.Number.Real;
 
@@ -13,8 +13,8 @@ public sealed class One : Tumbleweed.Point.Spatial.Envelope<Any>
 	) : base
 	(
 		new From.Vector.One(
-			new OriginOfTransform(
-				new TranslatedTransform3D(transform, point)))
+			new Transform.Spatial.Origin.Vector.One(
+				new Transform.Spatial.Translated.By.Point.One(transform, point)))
 	)
 	{
 	}

@@ -4,17 +4,121 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment="" />
+    <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Collision/Space/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Collision/Space/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/DotGod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/DotGod.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Actuality/ActualityEnvelope.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Actuality/ISpaceActuality.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Entity/Placement/IEntityPlacement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Mesh/Immutable/Transformed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Dimension/Spatial/Mesh/Immutable/Transformed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Mesh/Immutable/Untransformed/Godot/ArrayMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Dimension/Spatial/Mesh/Immutable/Untransformed/Godot/ArrayMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Mesh/Immutable/Untransformed/Godot/Mesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Dimension/Spatial/Mesh/Immutable/Untransformed/Godot/Mesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Mesh/Immutable/Untransformed/Tumbleweed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Dimension/Spatial/Mesh/Immutable/Untransformed/Tumbleweed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Mesh/Mutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Dimension/Spatial/Mesh/Mutable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.File/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.File.On.Path/Actual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.File/Actual`1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.File.On.Path/Actual`1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.File/Lazy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.File.On.Path/Lazy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.File/Lazy`1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.File.On.Path/Lazy`1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.Scene/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Actual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.Scene/Actual`1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Actual`1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.Scene/Lazy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Lazy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/On.Path/From.Scene/Lazy`1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Lazy`1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Actuality/FromNodes/GraphicalOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Actuality/FromNodes/NodesOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Actuality/FromNodes/PhysicalOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Any.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Conditional.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/EntitiesOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/EntityEnvelope.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/EntityOfScalar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/EntityWithValues.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/Equality/EqualityOfTwoEntities.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/Equality/EqualityOfTwoNullables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/FromNodes/EntitiesOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/FromNodes/Nodes/ActualNullablesOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/FromNodes/Nodes/ActualOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/FromNodes/Nodes/CurrentOfBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/ISpatialEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/Meshes/MeshFromEntities.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/Nodes/NodeOfEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/ObjectAsEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/Placement/PlacementOfEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Entities/SpaceOfEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Envelope.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/From.Array.By.Index.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/FromNodes/BatchWithNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/FromNodes/SubbatchesOfNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Have/Subbatch/By/From/Point/Of/Space.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Have/Subbatch/By/Index.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Have/Subbatch/By/Point.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Map/IBatchMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Map/SizeOfMap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Node.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Result.Of.Function.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/CenterOfSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/HalfSizeOfSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/ISpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/IsSpaceInsideBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/IsSpaceInsideSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/NormalizedSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Octants/OctantIndexWithPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Octants/OctantWithIndex.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Octants/Points/FromPointWithIndex.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Octants/Points/ToPointWithIndex.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Points/BothPointsOfSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Points/FromPointOfSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/Points/ToPointOfSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SizeOfSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceEnvelope.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceFromMesh.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceFromSize.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceFromVertices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceOfFunction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceOfScalar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/SpaceWithPoints.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Space/TransformedSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Subbatch/By/Index.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Suitable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/SuitableOrInitial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Value.Of.Nullable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Batch/Value.Of.Scalar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Nullable/Spaced/Subbatch/Of/Batch/By/Index.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Nullable/Subbatch/Array/Of/Batch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Nullable/Subbatch/By/Index.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Abstract/IBatch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Envelope.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Of/Function.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Of/Scalar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Space/Of/Batch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Subbatch/By/From/Point/Of/Space.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Subbatch/By/Index.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/Subbatch/By/Point.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Batch/WithSpace.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Spaced/Conditional/Batch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Spatial/Transform/TransformOfNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Point/Spatial/Transformed/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Point/Spatial/Transformed/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Transform/Spatial/FromSpatial/TranslatedTransform3D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Transform/Spatial/FromVector3/TranslatedTransform3D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Transform/Spatial/Number/Binary/Spatial/OfGodot/OriginOfTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Transform/Spatial/Number/Real/Spatial/OriginOfTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Transform/Spatial/ProductOfTransforms.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Transform/Spatial/ProductOfTwoTransforms.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/DotGod/Geometry/Spatial/Concave/Graphical/Polygon/Vertex.Enumerable/One.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Iteration/Event/Subscription/Any.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Iteration/Event/Subscription/SubscriptionsWithSpecific.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotGod/Node/On.Path/From.Scene/Actual`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Space/Size/Half/One.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Actual`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Array/System/Unpacked.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Enumerable/From.Array`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Number/Real/Comparison/Largest/Multiple.cs" root0="FORCE_HIGHLIGHTING" />
@@ -24,13 +128,13 @@
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Binary/Envelope`2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Nullary/Envelope.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Nullary/Of.Scalar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c732a8d6d5c44fae8db730f32b95ebb4c40200/38/c27fbd40/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12777fc8c60ccaa6418271ef2ea6562485b67c10b3799e4e6062947118bf65/Object.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/68b06b8592b1287fd78f3ee68566d6a38d6e2f45b9a9e6ebd4d0e9972f7c29/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2KgVWq8MrsBUORU3w6bcyxKcpF9" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -38,21 +142,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/thisischico/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/thisischico/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/thisischico/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/thisischico/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/thisischico/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/thisischico/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Publish to folder.Publish TumbleGD to folder">
+}</component>
+  <component name="RunManager" selected="Publish to folder.Publish Tumbleweed to folder">
     <configuration name="Publish TumbleGD to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" target_framework="net6.0" uuid_high="2061793969843883114" uuid_low="-4681523822283700833" />
       <method v="2" />

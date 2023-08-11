@@ -13,43 +13,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\From.Tumbleweed\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\Material\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\Triangle\Vertex.Index.Enumerable\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\Vertex\Index\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\Count\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\Normal\As.Point\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\Normal\As.Vector\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\Translation\As.Point\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\Translation\As.Vector\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\UV\As.Point\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\UV\As.Vector\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\From.Enumerable\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\From.Mesh\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\Indexed\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\Tool.From.ArrayMesh.Surface\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\Vertex.Index\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.Material.Set\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.Polygon.Appended\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.PrimitiveType.Set\" />
-      <Folder Include="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\With.Vertex.Appended\" />
       <Folder Include="Geometry\Spatial\Concave\Physical\" />
       <Folder Include="Geometry\Spatial\Convex\Graphical\" />
-      <Folder Include="Node\On.Path\" />
-      <Folder Include="Node\Spatial\Conditional\" />
+      <Folder Include="Node\Dimension\" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\MeshDataTool\Vertex.At.Index\One.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\From.Surface\Enumerable.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\SurfaceTool\From.Surface\Initial.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\Enumerable.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\Triangle\Vertex.Index.Enumerable\Enumerable.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\Vertex\Enumerable.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\At.Index\Vertex\One.cs" />
-      <Compile Remove="Geometry\Spatial\Concave\Graphical\Godot\ArrayMesh\Surface\Count\Tumbleweed.cs" />
-    </ItemGroup>
-
 </Project>
