@@ -1,12 +1,12 @@
 using List = Tumbleweed.Event.Listening.List;
-using Event = Tumbleweed.Event.Nullary;
+using Event = Tumbleweed.Event;
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace Tumbleweed.Event.Nullary;
 
-public abstract class Envelope : Event::Any
+public abstract class Envelope : Event::Any<Procedure::Any>
 {
-	protected Envelope(Event::Any @event) =>
+	protected Envelope(Event::Any<Procedure::Any> @event) =>
 		this.@event = @event;
 
 	public List::Any<Procedure::Any> Listeners =>
@@ -15,5 +15,5 @@ public abstract class Envelope : Event::Any
 	public void Invoke() =>
 		@event.Invoke();
 
-	private readonly Event::Any @event;
+	private readonly Event::Any<Procedure::Any> @event;
 }

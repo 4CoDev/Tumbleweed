@@ -1,4 +1,4 @@
-using Event = Tumbleweed.Event.Nullary;
+using Event = Tumbleweed.Event;
 using List = Tumbleweed.Event.Listening.List;
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 using System = System;
@@ -6,7 +6,7 @@ using System = System;
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Event.Nullary.With;
 
-public sealed class Members : Event::Any
+public sealed class Members : Event::Any<Procedure::Any>
 {
 	public Members
 	(
