@@ -4,54 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment="Remove unused rounding classes">
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Empty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Listening.List/Any.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Listening.List/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Listening.List/With.Lists/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Member/Handled.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Member/Unhandled.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/With.Events/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/With.Listeners/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Any.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Empty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Listening.List/Any.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Listening.List/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Listening.List/With.Lists/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Member/Graphical.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Member/Physical.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/With.Events/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/With.Listeners/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Event/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Event/Function.Result/Actual.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Function.Result/Actual.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Scalar.Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Event/Scalar.Value/One.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/DotGod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/DotGod.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/EventsEnvelope.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/EventsWithListeners.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/EventsWithSpecific.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/EventsWithoutListeners.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/IEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Both.Event/Any.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/Subscription/ISubscriptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/Subscription/SubscriptionsEnvelope.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Input/Event/Subscription/SubscriptionsWithSpecific.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/Any.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/Envelope.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/EventsWithListeners.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/EventsWithSpecific.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/EventsWithoutListeners.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/Subscription/Any.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/Subscription/Envelope.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Iteration/Event/Subscription/SubscriptionsWithSpecific.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Any.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Empty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Empty.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Envelope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/Envelope.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/With.Listeners.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/With.Listeners.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/With.Members.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Event/Nullary/With.Members.cs" afterDir="false" />
-    </list>
+    <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment=".God events refactor" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,8 +16,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Listening.List/Any.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Group.Event/Listening.List/With.Lists/One.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Any.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Envelope.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Listening.List/Any.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Listening.List/Envelope.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Listening.List/With.Lists/One.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Member/Physical.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Geometry/Spatial/Concave/Graphical/Polygon/Vertex.Enumerable/One.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Space/Size/Half/One.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Actual`1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -129,6 +86,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Batch map refactoring" />
     <MESSAGE value="Remove unused rounding classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unused rounding classes" />
+    <MESSAGE value=".God events refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value=".God events refactor" />
   </component>
 </project>
