@@ -1,10 +1,10 @@
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Space;
 
-public sealed class One : Spatial.Space.Envelope
+public sealed class One : Tumbleweed.Geometry.Spatial.Aabb.Envelope
 {
 	public One(Any entity) : base
 	(
-		new Spatial.Space.Function.Result.One(
+		new Tumbleweed.Geometry.Spatial.Aabb.Function.Result.One(
 			() => entity.Occupation)
 	)
 	{

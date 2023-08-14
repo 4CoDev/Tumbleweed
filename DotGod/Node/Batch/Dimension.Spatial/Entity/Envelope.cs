@@ -30,7 +30,7 @@ public abstract class Envelope : Any
 	public GraphicalGeometry::Any Mesh =>
 		entity.Mesh;
 
-	public Spatial.Space.Any Occupation =>
+	public Tumbleweed.Geometry.Spatial.Aabb.Any Occupation =>
 		entity.Occupation;
 
 	private readonly Any entity;

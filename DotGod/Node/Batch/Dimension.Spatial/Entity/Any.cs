@@ -10,5 +10,5 @@ public interface Any
 	
 	GraphicalGeometry::Any Mesh { get; }
 	
-	Spatial.Space.Any Occupation { get; }
+	Tumbleweed.Geometry.Spatial.Aabb.Any Occupation { get; }
 }

@@ -12,7 +12,7 @@ public sealed class One : Any
 	(
 		Any<Godot.Node> node,
 		Geometry.Spatial.Concave.Graphical.Mesh.Any mesh, 
-		Spatial.Space.Any size
+		Tumbleweed.Geometry.Spatial.Aabb.Any size
 	)
 	{
 		Node = node;
@@ -33,5 +33,5 @@ public sealed class One : Any
 
 	public Geometry.Spatial.Concave.Graphical.Mesh.Any Mesh { get; }
 
-	public Spatial.Space.Any Occupation { get; }
+	public Tumbleweed.Geometry.Spatial.Aabb.Any Occupation { get; }
 }

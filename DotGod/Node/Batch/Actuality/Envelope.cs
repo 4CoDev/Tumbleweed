@@ -1,12 +1,14 @@
+using Actuality = DotGod.Node.Batch.Actuality;
+
 namespace DotGod.Node.Batch.Actuality;
 
 public abstract class Envelope : Any
 {
-	protected Envelope(Any actuality) =>
+	protected Envelope(Actuality::Any actuality) =>
 		this.actuality = actuality;
 	
 	public void Update() =>
 		actuality.Update();
 
-	private readonly Any actuality;
+	private readonly Actuality::Any actuality;
 }

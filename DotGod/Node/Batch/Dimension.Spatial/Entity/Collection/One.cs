@@ -4,7 +4,7 @@ namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Collection;
 
 public sealed class One : CollectionEnvelope<Any>
 {
-	public One(Unspaced.Any batch) : base
+	public One(Unmeasured.Any batch) : base
 	(
 		new CollectionOfFunction<Any>(
 			() => batch.Entities)
