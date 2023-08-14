@@ -5,14 +5,14 @@ namespace DotGod.Engine.Input.Event.Group;
 
 public abstract class Envelope : Any
 {
-	protected Envelope(Any events) =>
-		this.events = events;
+	protected Envelope(Any group) =>
+		this.group = group;
 	
 	public Event::Any<Procedure::Any> Handled =>
-		events.Handled;
+		group.Handled;
 
 	public Event::Any<Procedure::Any> Unhandled =>
-		events.Unhandled;
+		group.Unhandled;
 	
-	private readonly Any events;
+	private readonly Any group;
 }

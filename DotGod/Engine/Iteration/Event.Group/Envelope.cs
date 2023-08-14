@@ -5,14 +5,14 @@ namespace DotGod.Engine.Iteration.Event.Group;
 
 public abstract class Envelope : Any
 {
-	protected Envelope(Any events) =>
-		this.events = events;
+	protected Envelope(Any group) =>
+		this.group = group;
 	
 	public Event::Any<Procedure::Any> Graphical =>
-		events.Graphical;
+		group.Graphical;
 
 	public Event::Any<Procedure::Any> Physical =>
-		events.Physical;
+		group.Physical;
 	
-	private readonly Any events;
+	private readonly Any group;
 }
