@@ -5,22 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotGod/Application/Root.Node/With.Event.Group/Empty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Application/Root.Node/With.Event.Group/Specific.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Event.Group/Any.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Event.Group/Empty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Event.Group/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Event.Group/Member/Input.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Event.Group/Member/Iteration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Event.Group/With.Groups/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Event.Group/Function.Result/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Event.Group/Scalar.Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Function.Result/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Scalar.Value/One.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Action/Affect.By.Procedure/One.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Action/Place.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Action/Remove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Whole/One.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Specific/Action/Affect.By.Procedure/One.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Specific/Action/Place.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Specific/Action/Remove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Specific/Whole/One.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Batch/Measured.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Batch/Unmeasured.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Any.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Measured/With.Size.At.Center/One.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Entity/Placement/Envelope.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Entity/Placement/Member/Place.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Entity/Placement/Member/Remove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Entity/Placement/With.Members/One.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DotGod/DotGod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/DotGod.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Engine/Input/Event.Group/Envelope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Engine/Input/Event.Group/Envelope.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Envelope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Envelope.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Collection/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Member/Entity.Collection/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/One.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Any.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Any.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Size.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Size.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Any.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Any.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Bounding/Else.Initial/Aabb/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Bounding/Else.Initial/Aabb/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Bounding/Else.Initial/Entity/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Bounding/Else.Initial/Entity/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Bounding/Just/Aabb/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Bounding/Just/Aabb/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Bounding/Just/Entity/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Bounding/Just/Entity/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Conditional.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Conditional.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Envelope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Envelope.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/From.Unmeasured/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Measured/With.Aabb/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Function.Result/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Function.Result/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Have.Subbatch/Collided.By/Point/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Have.Subbatch/Collided.By/Point/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Have.Subbatch/Collided.By/Space.Point.A/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Have.Subbatch/Collided.By/Space.Point.A/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Is.Outside/Aabb/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Is.Outside/Aabb/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Member/Aabb/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Member/Aabb/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Scalar.Value/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Scalar.Value/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Subbatch/NonNullable/At.Index/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Subbatch/NonNullable/At.Index/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Subbatch/NonNullable/Collided.By/Point/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Subbatch/NonNullable/Collided.By/Point/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Subbatch/NonNullable/Collided.By/Space.Point.A/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Subbatch/NonNullable/Collided.By/Space.Point.A/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/Subbatch/Nullable.At.Index/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/Subbatch/Nullable.At.Index/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measured/With.Members/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Measured/With.Members/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Any.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Array.Item.Value.At.Index/From.Array.By.Index.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Array.Item.Value.At.Index/From.Array.By.Index.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Conditional.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Conditional.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Envelope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Envelope.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Function.Result/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Function.Result/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Have.Subbatch/At.Index/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Have.Subbatch/At.Index/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Scalar.Value/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Scalar.Value/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Subbatch/Array/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Subbatch/Array/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Subbatch/NonNullable.At.Index/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Subbatch/NonNullable.At.Index/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Unmeasured/Subbatch/Nullable.At.Index/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Subbatch/Nullable.At.Index/One.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +67,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DotGod/Application/Root/With.Event.Group/Specific.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Any.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Envelope.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Listening.List/Any.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,6 +74,11 @@
     <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Listening.List/With.Lists/One.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Engine/Iteration/Event.Group/Member/Physical.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Geometry/Spatial/Concave/Graphical/Polygon/Vertex.Enumerable/One.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Affect.By.Procedure/One.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Place.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Remove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Descendant/Whole/One.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Any.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DotGod/Node/From.Scene.On.Path/Actual`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Array/System/Unpacked.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tumbleweed/Enumerable/From.Array`1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,7 +113,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Color Scheme Font&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [

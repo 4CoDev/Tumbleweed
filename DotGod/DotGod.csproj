@@ -20,8 +20,7 @@
       <Folder Include="Geometry\Spatial\Aabb\" />
       <Folder Include="Geometry\Spatial\Concave\Physical\" />
       <Folder Include="Geometry\Spatial\Convex\Graphical\" />
-      <Folder Include="Node\Batch\Dimension.Spatial\Measured\Have.Subbatch\" />
-      <Folder Include="Node\Batch\Dimension.Spatial\Measured\Is.Outside\Other\" />
+      <Folder Include="Node\Batch\Dimension.Spatial\Measurement\" />
       <Folder Include="Node\Dimension\" />
     </ItemGroup>
 </Project>
