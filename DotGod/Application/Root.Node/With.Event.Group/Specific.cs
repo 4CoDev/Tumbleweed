@@ -26,38 +26,36 @@ public class Specific : Godot::Node
 	(
 		Engine::Event.Group.Any group,
 		Procedure::Binary.Any<Godot::Node, Engine::Event.Group.Any> action
-	) : this
-	(
-		new Engine::Event.Group.Member.Iteration(group),
-		new Engine::Event.Group.Member.Input(group),
-		action
 	)
 	{
-	}
-	
-	public Specific
-	(
-		Iteration::Event.Group.Any iteration,
-		Input::Event.Group.Any input,
-		Procedure::Binary.Any<Godot::Node, Engine::Event.Group.Any> action)
-	{
-		this.iteration = iteration;
-		this.input = input;
+		iteration = new Engine::Event.Group.Member.Iteration(group);
+		input = new Engine::Event.Group.Member.Input(group);
+		this.action = action;
+		this.group = group;
 	}
 
-	public override void _Process(System::Double delta) =>
+	public sealed override void _Process(System::Double delta) =>
 		iteration.Graphical.Invoke();
 
-	public override void _PhysicsProcess(System::Double delta) =>
+	public sealed override void _PhysicsProcess(System::Double delta) =>
 		iteration.Physical.Invoke();
 
 	private readonly Iteration::Event.Group.Any iteration;
 
-	public override void _Input(Godot::InputEvent @event) =>
+	public sealed override void _Input(Godot::InputEvent @event) =>
 		input.Handled.Invoke();
 
-	public override void _UnhandledInput(Godot::InputEvent @event) =>
+	public sealed override void _UnhandledInput(Godot::InputEvent @event) =>
 		input.Unhandled.Invoke();
 
 	private readonly Input::Event.Group.Any input;
+
+	public sealed override void _Ready() =>
+		action.InvokeWith(this, group);
+
+	private readonly
+		Procedure::Binary.Any<Godot::Node, Engine::Event.Group.Any>
+		action;
+	
+	private readonly Engine::Event.Group.Any group;
 }
