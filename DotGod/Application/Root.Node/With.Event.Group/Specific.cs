@@ -30,8 +30,7 @@ public class Specific : Godot::Node
 	{
 		iteration = new Engine::Event.Group.Member.Iteration(group);
 		input = new Engine::Event.Group.Member.Input(group);
-		this.action = action;
-		this.group = group;
+		action.InvokeWith(this, group);
 	}
 
 	public sealed override void _Process(System::Double delta) =>
@@ -49,13 +48,4 @@ public class Specific : Godot::Node
 		input.Unhandled.Invoke();
 
 	private readonly Input::Event.Group.Any input;
-
-	public sealed override void _Ready() =>
-		action.InvokeWith(this, group);
-
-	private readonly
-		Procedure::Binary.Any<Godot::Node, Engine::Event.Group.Any>
-		action;
-	
-	private readonly Engine::Event.Group.Any group;
 }
