@@ -3,7 +3,7 @@ using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Function.Result;
 using Tumbleweed.Scalar.Immutable.With;
 
-namespace DotGod.Collision.Mesh.Godot;
+namespace DotGod.Collision.Spatial.Mesh.Godot;
 
 public sealed class One : Envelope<Shape3D>
 {

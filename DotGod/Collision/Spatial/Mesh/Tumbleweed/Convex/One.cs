@@ -3,7 +3,7 @@ using Tumbleweed.Geometry.Spatial.Convex.Mesh;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 
-namespace DotGod.Collision.Mesh.Tumbleweed.Convex;
+namespace DotGod.Collision.Spatial.Mesh.Tumbleweed.Convex;
 
 public sealed class One : Envelope
 {
