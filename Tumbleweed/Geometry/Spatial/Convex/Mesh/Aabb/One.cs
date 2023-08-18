@@ -7,7 +7,7 @@ public sealed class One : Spatial.Aabb.Envelope
 	public One(global::Tumbleweed.Geometry.Spatial.Convex.Mesh.Any mesh) : base
 	(
 		new Spatial.Vertex.Enumerable.Aabb.One(
-			new Vertex.Enumerable(mesh))
+			new Member.Vertex.Enumerable(mesh))
 	)
 	{
 	}

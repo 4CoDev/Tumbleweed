@@ -15,8 +15,8 @@ public sealed class One : Spatial.Aabb.Envelope
 	public One(ICollection<Tumbleweed.Geometry.Spatial.Vertex.Any> vertices) : base
 	(
 		new Spatial.Aabb.With.Points.One(
-			new Tumbleweed.Geometry.Spatial.Vertex.Translation.One(new Smallest(vertices)),
-			new Tumbleweed.Geometry.Spatial.Vertex.Translation.One(new Largest(vertices)))
+			new Member.Translation.One(new Smallest(vertices)),
+			new Member.Translation.One(new Largest(vertices)))
 	)
 	{
 	}

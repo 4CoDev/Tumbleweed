@@ -2,7 +2,7 @@ using Point =  Tumbleweed.Point.Spatial;
 using Real = Tumbleweed.Number.Real;
 using Vertex = Tumbleweed.Geometry.Spatial.Vertex;
 
-namespace Tumbleweed.Geometry.Spatial.Vertex.Translation;
+namespace Tumbleweed.Geometry.Spatial.Vertex.Member.Translation;
 
 public sealed class One : Point::Envelope<Real::Any>
 {

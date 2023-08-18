@@ -4,7 +4,7 @@ using Real = Tumbleweed.Number.Real;
 using SCG = System.Collections.Generic;
 using Vertex = Tumbleweed.Geometry.Spatial.Vertex;
 
-namespace Tumbleweed.Geometry.Spatial.Vertex.Translation;
+namespace Tumbleweed.Geometry.Spatial.Vertex.Member.Translation;
 
 public sealed class Multiple : Enumerable::Envelope<Point::Any<Real::Any>>
 {

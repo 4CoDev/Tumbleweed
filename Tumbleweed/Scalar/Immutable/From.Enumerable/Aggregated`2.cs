@@ -24,9 +24,7 @@ public sealed class Aggregated<TFrom, TAccumulate>
 			TFrom,
 			TAccumulate
 		>
-		(
-			expression
-		)
+		(expression)
 	)
 	{
 	}

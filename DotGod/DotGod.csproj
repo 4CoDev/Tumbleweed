@@ -13,7 +13,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Collision\Spatial\" />
+      <Folder Include="Collision.Collider\Spatial.Geometry\" />
+      <Folder Include="Collision.Collider\Spatial.Geometry\Aabb\Transformed\" />
+      <Folder Include="Collision.Collider\Spatial.Geometry\Mesh\Transformed\Concave\" />
+      <Folder Include="Collision.Collider\Spatial.Geometry\Mesh\Untransformed\Concave\" />
       <Folder Include="Engine\Input\Handled\" />
       <Folder Include="Engine\Input\Unhandled\" />
       <Folder Include="Engine\Iteration\Graphical\" />
