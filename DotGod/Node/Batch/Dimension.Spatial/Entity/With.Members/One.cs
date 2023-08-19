@@ -17,7 +17,7 @@ public sealed class One : Any
 	{
 		Node = node;
 		Mesh = mesh;
-		Occupation = size;
+		Aabb = size;
 	}
 
 	public override Boolean Equals(System::Object? @object) =>
@@ -33,5 +33,5 @@ public sealed class One : Any
 
 	public Geometry.Spatial.Concave.Graphical.Mesh.Any Mesh { get; }
 
-	public Tumbleweed.Geometry.Spatial.Aabb.Any Occupation { get; }
+	public Tumbleweed.Geometry.Spatial.Aabb.Any Aabb { get; }
 }

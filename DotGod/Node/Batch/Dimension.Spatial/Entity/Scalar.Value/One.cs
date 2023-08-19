@@ -26,8 +26,8 @@ public sealed class One : Any
 	public Geometry.Spatial.Concave.Graphical.Mesh.Any Mesh =>
 		any.Value.Mesh;
 
-	public Tumbleweed.Geometry.Spatial.Aabb.Any Occupation =>
-		any.Value.Occupation;
+	public Tumbleweed.Geometry.Spatial.Aabb.Any Aabb =>
+		any.Value.Aabb;
 
 	private readonly Any<Any> any;
 }
