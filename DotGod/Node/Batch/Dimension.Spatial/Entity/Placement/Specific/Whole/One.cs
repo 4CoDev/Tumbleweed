@@ -1,5 +1,5 @@
 using Placement = DotGod.Node.Batch.Entity.Placement;
-using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured;
+using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 using Entity = DotGod.Node.Batch.Dimension.Spatial.Entity;
 using Action = DotGod.Node.Batch.Dimension.Spatial.Entity.Placement.Specific.Action;
 

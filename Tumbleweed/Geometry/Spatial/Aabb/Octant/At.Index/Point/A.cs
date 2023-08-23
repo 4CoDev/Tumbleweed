@@ -1,6 +1,6 @@
 using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real.Arithmetic;
-using Tumbleweed.Point.Spatial.Real.From;
+using Tumbleweed.Point.Spatial.Implementation.Real.Arithmetic;
+using Tumbleweed.Point.Spatial.Implementation.Real.From;
 using Actual = Tumbleweed.Geometry.Spatial.Aabb.Point.A.Actual;
 
 namespace Tumbleweed.Geometry.Spatial.Aabb.Octant.At.Index.Point;

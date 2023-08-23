@@ -5,47 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Empty.With.Size/Tumbleweed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Envelope.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Empty/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Subbatch/Array/Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/New/Snapshot.Filler/Null.Object.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/New/Snapshot.Filler/Scalar.Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/New/Snapshot.Filler/Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/New/Source.Filler/Null.Object.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/New/Source.Filler/Scalar.Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/New/Source.Filler/Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/Specific.Action.Filler/Function.Result/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/Specific.Action.Filler/Scalar.Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/Filling/Specific.Action.Filler/Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Snapshot.Filler/Null/Object.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Snapshot.Filler/Null/Pointer.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Snapshot.Filler/Scalar.Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Snapshot.Filler/Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Source.Filler/Null/Object.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Source.Filler/Null/Pointer.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Source.Filler/Scalar.Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/New/Source.Filler/Value.With.Size/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/Specific/Action.Filler/Function.Result/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/Specific/Action.Filler/Scalar.Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/Specific/Action.Filler/Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/Specific/Source.Filler/Scalar.Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/System/Filling/Specific/Source.Filler/Value/One.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Enumerable/Filled.By/Function.Result.With.Length/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Enumerable/Filled.By/Function.Result.With.Length/Tumbleweed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Enumerable/Filled.By/Scalar.Value.With.Length/System.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Enumerable/Filled.By/Scalar.Value.With.Length/Tumbleweed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Scalar/Immutable/With.Callback/Recurring.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tumbleweed/Scalar/Immutable/With.Callback/Single.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Empty.With.Size/System.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Base.Binary/Precision/Single/From.System/One.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Batch/Measured.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Batch/Measured.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Batch/Unmeasured.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Member/Batch/Unmeasured.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Array/Any`1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Array/Any`1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/From.System`1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Array/Dimension/Spatial/From.System`1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Enumerable/Unpacked.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Enumerable/Unboxed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Nullary/From.System.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Nullary/From.System.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Nullary/Of.Scalar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Subroutine/Procedure/Nullary/Of.Scalar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tumbleweed/Tumbleweed.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Tumbleweed.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Specific/Whole/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Entity/Placement/Specific/Whole/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Empty.With.Size/Tumbleweed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Map/Empty.With.Size/Tumbleweed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Is.Inside.Other/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Is.Inside.Other/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Normalized/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Normalized/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Octant/At.Index/Point/A.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Octant/At.Index/Point/A.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Octant/At.Index/Point/B.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Octant/At.Index/Point/B.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Octant/Collided.By.Point/Index/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Octant/Collided.By.Point/Index/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Point/Center.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Point/Center.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Size/Half/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Size/Half/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Size/Whole/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/Size/Whole/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/With.Size/At.Center/One.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Aabb/With.Size/At.Center/One.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Vertex/Comparison/Largest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Vertex/Comparison/Largest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Vertex/Comparison/Smallest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Geometry/Spatial/Vertex/Comparison/Smallest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Number/Natural/Point.Spatial/From.Real.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Number/Natural/Point.Spatial/From.Real.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/AbsoluteDifferenceOfX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/AbsoluteDifferenceOfX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/AbsoluteDifferenceOfY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/AbsoluteDifferenceOfY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/AbsoluteDifferenceOfZ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/AbsoluteDifferenceOfZ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/DifferenceOfSpatials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/DifferenceOfSpatials.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/Distance/L1BetweenPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/Distance/L1BetweenPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/MinimumOfTwoSpatials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/MinimumOfTwoSpatials.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/NegativeSpatial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/NegativeSpatial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/ProductByReal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/ProductByReal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/ProductOfSpatials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/ProductOfSpatials.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/QuotientByReal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/QuotientByReal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/QuotientOfSpatials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/QuotientOfSpatials.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/Rounding/NearestIntegerOfSpatial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/Rounding/NearestIntegerOfSpatial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Arithmetic/SumOfSpatials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Arithmetic/SumOfSpatials.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Comparison/IsEqualsToPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Comparison/IsEqualsToPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Comparison/IsGreaterThanOrEqualsToPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Comparison/IsGreaterThanOrEqualsToPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Comparison/IsLessThanOrEqualsToPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Comparison/IsLessThanOrEqualsToPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Comparison/LargestOfPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Comparison/LargestOfPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Comparison/SmallestOfPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Comparison/SmallestOfPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsEqualsToX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsEqualsToX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsEqualsToY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsEqualsToY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsEqualsToZ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsEqualsToZ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsGreaterThanOrEqualsToX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsGreaterThanOrEqualsToX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsGreaterThanOrEqualsToY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsGreaterThanOrEqualsToY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsGreaterThanOrEqualsToZ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsGreaterThanOrEqualsToZ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsGreaterThanX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsGreaterThanX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsGreaterThanY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsGreaterThanY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsGreaterThanZ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsGreaterThanZ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsLessThanOrEqualsToX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsLessThanOrEqualsToX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsLessThanOrEqualsToY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsLessThanOrEqualsToY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsLessThanOrEqualsToZ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsLessThanOrEqualsToZ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsLessThanX.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsLessThanX.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsLessThanY.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsLessThanY.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/Comparison/IsLessThanZ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/Comparison/IsLessThanZ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/XOfPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/XOfPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/XOfPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/XOfPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/YOfPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/YOfPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/YOfPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/YOfPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/ZOfPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/ZOfPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/Coordinate/ZOfPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/Coordinate/ZOfPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/From.Natural.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/From.Natural.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/With.Coordinates/Directly/Uniform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/With.Coordinates/Directly/Uniform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/With.Coordinates/Directly/Unique.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/With.Coordinates/Directly/Unique.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/With.Coordinates/From.Collection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/With.Coordinates/From.Collection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Real/With.Coordinates/From.Enumerable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tumbleweed/Point/Spatial/Implementation/Real/With.Coordinates/From.Enumerable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,5 +1,5 @@
 using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real.Coordinate;
+using Tumbleweed.Point.Spatial.Implementation.Real.Coordinate;
 using SpatialPoint = Tumbleweed.Number.Natural.Point.Spatial;
 
 // ReSharper disable once CheckNamespace

@@ -1,5 +1,5 @@
 using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real.Comparison;
+using Tumbleweed.Point.Spatial.Implementation.Real.Comparison;
 
 namespace Tumbleweed.Geometry.Spatial.Aabb.Normalized;
 

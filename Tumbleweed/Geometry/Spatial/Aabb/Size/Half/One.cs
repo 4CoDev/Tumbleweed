@@ -1,5 +1,5 @@
 using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real.Arithmetic;
+using Tumbleweed.Point.Spatial.Implementation.Real.Arithmetic;
 
 namespace Tumbleweed.Geometry.Spatial.Aabb.Size.Half;
 

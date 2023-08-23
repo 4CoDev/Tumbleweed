@@ -1,5 +1,5 @@
 using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Real.Arithmetic.Distance;
+using Tumbleweed.Point.Spatial.Implementation.Real.Arithmetic.Distance;
 using Actual = Tumbleweed.Geometry.Spatial.Aabb.Point.B.Actual;
 
 namespace Tumbleweed.Geometry.Spatial.Aabb.Size.Whole;
