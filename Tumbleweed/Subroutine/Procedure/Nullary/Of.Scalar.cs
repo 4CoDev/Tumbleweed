@@ -1,7 +1,6 @@
-// ReSharper disable once CheckNamespace
-
 using Tumbleweed.Scalar.Immutable;
 
+// ReSharper disable once CheckNamespace
 namespace Tumbleweed.Subroutine.Procedure.Nullary.Of;
 
 public sealed class Scalar : Nullary.Any

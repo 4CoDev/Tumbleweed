@@ -10,9 +10,7 @@ public interface Any<T>
 	[
 		SCG::IEnumerable<Natural::Any> indices
 	]
-	{
-		get;
-	}
+	{ get; }
 	
 	SCG::IEnumerable<Natural::Any> Size { get; }
 }

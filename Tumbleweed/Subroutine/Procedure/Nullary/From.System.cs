@@ -4,6 +4,7 @@ using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
 
+// ReSharper disable once CheckNamespace
 namespace Tumbleweed.Subroutine.Procedure.Nullary.From;
 
 public class System : Nullary.Any

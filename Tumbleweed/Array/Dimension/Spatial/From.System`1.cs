@@ -17,8 +17,11 @@ public sealed class System<T> : Array::Any<T>
 	{
 	}
 
-	public System(Immutable::Any<T[,,]> array) =>
+	public System(Immutable::Any<T[,,]> array)
+	{
+		Size = new SystemArray::Size.Tumbleweed<T>(array);
 		this.array = array;
+	}
 
 	public Mutable::Any<T> this
 	[
@@ -30,8 +33,7 @@ public sealed class System<T> : Array::Any<T>
 			indices)
 	);
 
-	public SCG::IEnumerable<Natural::Any> Size =>
-		new SystemArray::Size.Tumbleweed<T>(array);
+	public SCG::IEnumerable<Natural::Any> Size { get; }
 	
 	private readonly Immutable::Any<T[,,]> array;
 }
