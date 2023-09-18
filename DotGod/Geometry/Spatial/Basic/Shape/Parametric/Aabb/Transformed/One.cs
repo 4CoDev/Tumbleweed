@@ -4,7 +4,7 @@ using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 using Actual = Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Point.B.Actual;
 
-namespace DotGod.Geometry.Spatial.Basic.Aabb.Transformed;
+namespace DotGod.Geometry.Spatial.Basic.Shape.Parametric.Aabb.Transformed;
 
 public sealed class One : Envelope
 {
