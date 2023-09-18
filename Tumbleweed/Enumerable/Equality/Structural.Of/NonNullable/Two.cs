@@ -16,8 +16,8 @@ public sealed class Two : Boolean::Envelope
 		System::Object second
 	) : this
 	(
-		new Object::Unpacked<SC::IEnumerable>(first),
-		new Object::Unpacked<SC::IEnumerable>(second)
+		new Object.Casted.Convertee.Object<SC::IEnumerable>(first),
+		new Object.Casted.Convertee.Object<SC::IEnumerable>(second)
 	)
 	{
 	}

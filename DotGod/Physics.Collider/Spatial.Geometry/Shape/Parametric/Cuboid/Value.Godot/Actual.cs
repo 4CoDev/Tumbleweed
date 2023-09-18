@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.Casted.Convertee;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;
 
@@ -22,7 +23,7 @@ public sealed class Actual : Scalar::Envelope<Godot::BoxShape3D>
 		Scalar::Any<Godot::CollisionShape3D> collider
 	) : base
 	(
-		new Scalar::Unboxed<Godot::BoxShape3D>(
+		new Object<Godot::BoxShape3D>(
 			new Shape.Mesh.Untransformed.Convex.Godot.Actual(collider))
 	)
 	{

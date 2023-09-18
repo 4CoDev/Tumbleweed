@@ -1,4 +1,5 @@
 using DotGod.Node.Batch.Dimension.Spatial.Entity.Scalar.Value;
+using Tumbleweed.Object.Casted.Convertee;
 using System = System;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Object = Tumbleweed.Object;
@@ -17,7 +18,7 @@ public sealed class Unboxed : Envelope
 	public Unboxed(Scalar::Any<System::Object> scalar) : base
 	(
 		new One(
-			new Object::Unpacked<Any>(scalar))
+			new Object<Any>(scalar))
 	)
 	{
 	}

@@ -18,7 +18,7 @@ public sealed class One : Envelope<ConvexPolygonShape3D>
 		Any<Shape3D> @abstract
 	) : base
 	(
-		new global::Tumbleweed.Object.Unpacked<ConvexPolygonShape3D>(@abstract)
+		new global::Tumbleweed.Object.Casted.Convertee.Object<ConvexPolygonShape3D>(@abstract)
 	)
 	{
 	}

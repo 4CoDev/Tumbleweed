@@ -1,3 +1,4 @@
+using Tumbleweed.Object.Casted.Convertee;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using System = System;
 using Object = Tumbleweed.Object;
@@ -10,7 +11,7 @@ public sealed class Type<T> : Nullable::Envelope<T>
 	public Type(Nullable::Any<System::Object> origin) : base
 	(
 		new Nullable::With.Members<T>(
-			new Object::Unpacked<T>(origin),
+			new Object<T>(origin),
 			new Nullable::Has.Value(origin))
 	)
 	{

@@ -1,3 +1,4 @@
+using Tumbleweed.Object.Casted.Convertee;
 using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
 using Scalar = Tumbleweed.Scalar;
@@ -17,7 +18,7 @@ public sealed class Unpacked : Tumbleweed.Scalar.Immutable.Envelope<System::Arra
 	
 	public Unpacked(Tumbleweed.Scalar.Immutable.Any<System::Object> scalar) : base
 	(
-		new Object::Unpacked<System::Array>(scalar)
+		new Object<System::Array>(scalar)
 	)
 	{
 	}

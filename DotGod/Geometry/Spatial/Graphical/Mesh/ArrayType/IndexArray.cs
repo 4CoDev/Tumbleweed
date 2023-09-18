@@ -9,7 +9,7 @@ public sealed class IndexArray : Envelope<Int32>
 	(
 		new Tumbleweed.Scalar.Immutable.Lazy<Int32>(
 			new Long(
-				new Tumbleweed.Object.Unpacked<Int64>(
+				new Tumbleweed.Object.Casted.Convertee.Object<Int64>(
 					Godot.Mesh.ArrayType.Index)))
 	)
 	{

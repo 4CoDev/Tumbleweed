@@ -1,3 +1,4 @@
+using Tumbleweed.Scalar.Immutable.Casted.Convertee;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
 using Immutable = Tumbleweed.Scalar.Immutable;
@@ -13,8 +14,8 @@ public sealed class NonNullable<T> : Boolean::Envelope
 		System::Object second
 	) : this
 	(
-		new Immutable::Unboxed<T>(first),
-		new Immutable::Unboxed<T>(second)
+		new Object<T>(first),
+		new Object<T>(second)
 	)
 	{
 	}

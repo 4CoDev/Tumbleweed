@@ -14,7 +14,7 @@ public sealed class Type<T> : Immutable::Envelope<T>
 	) : base
 	(
 		new Value<T>(
-			new Object::Unpacked<Immutable::Any<T>>(scalar))
+			new Object.Casted.Convertee.Object<Immutable::Any<T>>(scalar))
 	)
 	{
 	}
