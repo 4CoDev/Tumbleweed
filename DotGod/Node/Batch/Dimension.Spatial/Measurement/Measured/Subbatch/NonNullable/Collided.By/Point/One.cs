@@ -1,4 +1,5 @@
 using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Subbatch.NonNullable.Collided.By.Point;
 
@@ -12,7 +13,7 @@ public sealed class One : Envelope
 	(
 		new At.Index.One(
 			batch,
-			new Tumbleweed.Geometry.Spatial.Aabb.Octant.Collided.By.Point.Index.One(
+			new Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Octant.Collided.By.Point.Index.One(
 				new Member.Aabb.One(batch),
 				point))
 	)

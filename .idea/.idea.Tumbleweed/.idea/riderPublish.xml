@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/bin/Release/net6.0/publish" />
         <option value="$PROJECT_DIR$/TumbleGD/bin/Release/net6.0/publish" />
         <option value="$PROJECT_DIR$/TumbleSystem/bin/Release/net6.0/publish" />
+        <option value="$PROJECT_DIR$/DotGod/bin/Release/net7.0" />
       </list>
     </option>
   </component>

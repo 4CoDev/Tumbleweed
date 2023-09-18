@@ -1,4 +1,4 @@
-using DotGod.Geometry.Spatial.Concave.Graphical.ArrayMesh.From.Mesh;
+using DotGod.Geometry.Spatial.Graphical.ArrayMesh.From.Mesh;
 using Godot;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;

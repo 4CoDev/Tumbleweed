@@ -1,5 +1,6 @@
 using Tumbleweed.Number.Real;
 using Tumbleweed.Number.Real.Arithmetic;
+using Tumbleweed.Number.Real.Arithmetic.Quotient.Scalar.Of;
 using Tumbleweed.Point.Planar.Real.Coordinate;
 using Tumbleweed.Point.Planar.With;
 
@@ -24,8 +25,8 @@ public sealed class QuotientOfPoints : Envelope<Any>
 	public QuotientOfPoints(ICollection<Any<Any>> points) : base
 	(
 		new Coordinates<Any>(
-			new QuotientOfReals(new X(points)),
-			new QuotientOfReals(new Y(points)))
+			new Multiple(new X(points)),
+			new Multiple(new Y(points)))
 	)
 	{
 	}

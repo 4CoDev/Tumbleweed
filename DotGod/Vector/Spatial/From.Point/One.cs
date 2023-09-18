@@ -1,3 +1,4 @@
+using Tumbleweed.Point.Spatial.Generic;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 using Point = Tumbleweed.Point.Spatial;
@@ -9,7 +10,7 @@ namespace DotGod.Vector.Spatial.From.Point;
 
 public sealed class One : Immutable::Envelope<Godot::Vector3>
 {
-	public One(Point::Any<Real::Any> point) : base
+	public One(Any<Real::Any> point) : base
 	(
 		new Immutable::Function.Result.Actual<Godot::Vector3>(
 			() => Result(point))
@@ -19,7 +20,7 @@ public sealed class One : Immutable::Envelope<Godot::Vector3>
 
 	private static Godot::Vector3 Result
 	(
-		Point::Any<Real::Any> point
+		Any<Real::Any> point
 	) =>
 	(
 		new Godot::Vector3(

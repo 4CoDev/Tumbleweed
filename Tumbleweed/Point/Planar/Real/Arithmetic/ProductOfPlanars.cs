@@ -1,5 +1,7 @@
 using Tumbleweed.Number.Real;
 using Tumbleweed.Number.Real.Arithmetic;
+using Tumbleweed.Number.Real.Arithmetic.Product;
+using Tumbleweed.Number.Real.Arithmetic.Product.Scalar.Of;
 using Tumbleweed.Point.Planar.Real.Coordinate;
 using Tumbleweed.Point.Planar.With;
 
@@ -24,8 +26,8 @@ public sealed class ProductOfPoints : Envelope<Any>
 	public ProductOfPoints(ICollection<Any<Any>> points) : base
 	(
 		new Coordinates<Any>(
-			new ProductOfReals(new X(points)),
-			new ProductOfReals(new Y(points)))
+			new Multiple(new X(points)),
+			new Multiple(new Y(points)))
 	)
 	{
 	}

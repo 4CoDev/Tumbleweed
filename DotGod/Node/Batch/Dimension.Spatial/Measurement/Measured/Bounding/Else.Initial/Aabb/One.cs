@@ -5,7 +5,7 @@ public sealed class One : Measured.Envelope
 	public One
 	(
 		Measured.Any initial,
-		Tumbleweed.Geometry.Spatial.Aabb.Any aabb
+		Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any aabb
 	) : base
 	(
 		new Measured.Conditional(
@@ -20,7 +20,7 @@ public sealed class One : Measured.Envelope
 	private static Measured.Any Function
 	(
 		Measured.Any initial,
-		Tumbleweed.Geometry.Spatial.Aabb.Any space
+		Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any space
 	) =>
 	(
 		Function(
@@ -33,7 +33,7 @@ public sealed class One : Measured.Envelope
 	(
 		Measured.Any initial,
 		Measured.Any subbatch,
-		Tumbleweed.Geometry.Spatial.Aabb.Any space
+		Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any space
 	)
 	{
 		if (!new Measured.Is.Outside.Aabb.One(subbatch, space).State) return initial;

@@ -5,7 +5,7 @@ public sealed class One : Measurement.Measured.Envelope
 	public One
 	(
 		Any batch,
-		Tumbleweed.Geometry.Spatial.Aabb.Any aabb
+		Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any aabb
 	) : base
 	(
 		new Measurement.Measured.With.Members.One

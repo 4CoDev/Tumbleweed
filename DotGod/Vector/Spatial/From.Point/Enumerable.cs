@@ -1,3 +1,4 @@
+using Tumbleweed.Point.Spatial.Generic;
 using Enumerable = Tumbleweed.Enumerable;
 using Godot = Godot;
 using SCG = System.Collections.Generic;
@@ -11,11 +12,11 @@ public sealed class Enumerable : Enumerable::Envelope<Godot::Vector3>
 {
 	public Enumerable
 	(
-		SCG::IEnumerable<Point::Any<Real::Any>> points
+		SCG::IEnumerable<Any<Real::Any>> points
 	) : base
 	(
 		new Enumerable::Selected
-			<Point::Any<Real::Any>, Godot::Vector3>
+			<Any<Real::Any>, Godot::Vector3>
 			(
 				points,
 				point => new Vector::From.Point.One(point).Value

@@ -1,3 +1,4 @@
+using Tumbleweed.Point.Spatial.Generic.Coordinate;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Array = Tumbleweed.Array;
 using Point = Tumbleweed.Point.Spatial;
@@ -10,13 +11,12 @@ public sealed class Index<T> : Immutable::Envelope<T>
 {
 	public Index
 	(
-		Array::Any<T> array,
-		Point::Any<Natural::Any> index
+		Array::Any<T> array, Point.Spatial.Generic.Any<Natural::Any> index
 	) : base
 	(
 		new Immutable::From.Array.At.Indices<T>(
 			array,
-			new Point::Coordinate.Enumerable<Natural::Any>(index))
+			new Enumerable<Natural::Any>(index))
 	)
 	{
 	}

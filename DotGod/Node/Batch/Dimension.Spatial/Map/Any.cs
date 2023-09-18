@@ -1,4 +1,5 @@
 using Tumbleweed.Point.Spatial;
+using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Map;
 

@@ -6,7 +6,7 @@ using Coordinate = DotGod.Vector.Spatial.Coordinate;
 
 namespace DotGod.Point.Spatial.From.Vector;
 
-public sealed class One : Point::Envelope<Real::Any>
+public sealed class One : Point::Generic.Envelope<Real::Any>
 {
 	public One(Godot::Vector3 vector) : this
 	(
@@ -17,7 +17,7 @@ public sealed class One : Point::Envelope<Real::Any>
 
 	public One(Scalar::Any<Godot::Vector3> vector) : base
 	(
-		new Point::With.Coordinates.Unique<Real::Any>(
+		new Point::Real.With.Coordinate.Definition.Unique(
 			new Coordinate::X.Tumbleweed.One(vector),
 			new Coordinate::X.Tumbleweed.One(vector),
 			new Coordinate::X.Tumbleweed.One(vector))

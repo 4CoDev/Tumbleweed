@@ -10,8 +10,7 @@ namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Source.Filler.Scalar.Va
 public sealed class System<T> : Array::Envelope<T>
 {
 	public System
-	(
-		Point::Any<System::Int32> size,
+	(Point.Spatial.Generic.Any<System::Int32> size,
 		Scalar::Any<T> filler
 	) : base
 	(

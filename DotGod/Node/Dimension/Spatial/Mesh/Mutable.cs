@@ -1,4 +1,5 @@
-using DotGod.Geometry.Spatial.Concave.Graphical.Mesh;
+using DotGod.Geometry.Spatial.Graphical.ArrayMesh.From.Tumbleweed;
+using DotGod.Geometry.Spatial.Graphical.Mesh;
 using Godot;
 using Tumbleweed.Scalar.Mutable;
 using Tumbleweed.Scalar.Mutable.With;
@@ -35,6 +36,6 @@ public sealed class Mutable : Envelope<Any>
 		Any mesh
 	)
 	{
-		node.Value.Mesh = new DotGod.Geometry.Spatial.Concave.Graphical.ArrayMesh.From.Tumbleweed.One(mesh).Value;
+		node.Value.Mesh = new One(mesh).Value;
 	}
 }

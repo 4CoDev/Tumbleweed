@@ -21,8 +21,19 @@
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Action.Filler\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Source.Filler\Function.Result\" />
       <Folder Include="Boolean\Comparison\" />
+      <Folder Include="Geometry\Spatial\Shape\Parametric\" />
+      <Folder Include="Number\Real\Arithmetic\Quotient\Enumerable.With\" />
+      <Folder Include="Point\Spatial\Integer\" />
+      <Folder Include="Point\Spatial\Real\Arithmetic\Absolute\" />
+      <Folder Include="Point\Spatial\Real\Arithmetic\Difference\Absolute.Of\" />
+      <Folder Include="Point\Spatial\Real\Arithmetic\Product\Scalar.With\" />
+      <Folder Include="Point\Spatial\Real\Arithmetic\Quotient\Enumerable.With\" />
+      <Folder Include="Point\Spatial\Real\Arithmetic\Quotient\Scalar\" />
+      <Folder Include="Point\Spatial\Real\Base.Binary\Precision\Double\" />
+      <Folder Include="Point\Spatial\Real\Coordinate\X\Arithmetic\Difference\Just.Of\" />
+      <Folder Include="Point\Spatial\Real\Coordinate\Y\Arithmetic\Difference\Just.Of\" />
+      <Folder Include="Point\Spatial\Real\Coordinate\Z\Arithmetic\Difference\Just.Of\" />
       <Folder Include="Scalar\" />
-      <Folder Include="Geometry\Spatial\" />
     </ItemGroup>
 
 

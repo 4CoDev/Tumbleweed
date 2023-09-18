@@ -1,5 +1,7 @@
 using Tumbleweed.Number.Real;
 using Tumbleweed.Number.Real.Arithmetic;
+using Tumbleweed.Number.Real.Arithmetic.Difference.Just;
+using Tumbleweed.Number.Real.Arithmetic.Difference.Just.Of;
 using Tumbleweed.Point.Planar.Real.Coordinate;
 using Tumbleweed.Point.Planar.With;
 
@@ -24,8 +26,8 @@ public sealed class DifferenceOfPoints : Envelope<Any>
 	public DifferenceOfPoints(ICollection<Any<Any>> points) : base
 	(
 		new Coordinates<Any>(
-			new DifferenceOfReals(new X(points)),
-			new DifferenceOfReals(new Y(points)))
+			new Multiple(new X(points)),
+			new Multiple(new Y(points)))
 	)
 	{
 	}

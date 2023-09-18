@@ -5,5 +5,5 @@ namespace Tumbleweed.Geometry.Spatial.Vertex;
 
 public interface Any
 {
-	Point::Any<Real::Any> Translation { get; }
+	Point::Generic.Any<Real::Any> Translation { get; }
 }

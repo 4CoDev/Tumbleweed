@@ -1,5 +1,6 @@
 using Tumbleweed.Number.Real;
 using Tumbleweed.Number.Real.Arithmetic;
+using Tumbleweed.Number.Real.Arithmetic.Sum.Scalar.Of;
 using Tumbleweed.Point.Planar.Real.Coordinate;
 using Tumbleweed.Point.Planar.With;
 
@@ -24,8 +25,8 @@ public sealed class SumOfPoints : Envelope<Any>
 	public SumOfPoints(ICollection<Any<Any>> points) : base
 	(
 		new Coordinates<Any>(
-			new SumOfReals(new X(points)),
-			new SumOfReals(new Y(points)))
+			new Multiple(new X(points)),
+			new Multiple(new Y(points)))
 	)
 	{
 	}

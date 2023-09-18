@@ -1,3 +1,5 @@
+using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Point.Spatial.Real.Base.Binary.Precision.Single.From.System;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 using Point = Tumbleweed.Point.Spatial;
 using System = System;
@@ -9,11 +11,11 @@ public sealed class System : Map::Envelope
 {
 	public System
 	(
-		Point::Any<System::Single> size
+		Any<System::Single> size
 	) : base
 	(
 		new Map::Empty.With.Size.Tumbleweed(
-			new RealPoint::Base.Binary.Precision.Single.From.System.One(size))
+			new One(size))
 	)
 	{
 	}

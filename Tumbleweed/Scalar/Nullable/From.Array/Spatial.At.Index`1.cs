@@ -11,8 +11,7 @@ public sealed class Index<T> : Nullable::Envelope<T>
 {
 	public Index
 	(
-		Array::Any<Nullable::Any<T>> array,
-		Point::Any<Natural::Any> indices
+		Array::Any<Nullable::Any<T>> array, Point.Spatial.Generic.Any<Natural::Any> indices
 	) : base
 	(
 		new Nullable::Scalar.Value.One<T>(

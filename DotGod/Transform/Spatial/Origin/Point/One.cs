@@ -1,10 +1,11 @@
 using DotGod.Point.Spatial.From.Vector;
 using Godot;
 using Tumbleweed.Number.Real;
+using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Transform.Spatial.Origin.Point;
 
-public sealed class One : Tumbleweed.Point.Spatial.Envelope<Any>
+public sealed class One : Envelope<Any>
 {
 	public One(Tumbleweed.Scalar.Immutable.Any<Transform3D> transform) : base
 	(

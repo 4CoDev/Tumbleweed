@@ -1,3 +1,4 @@
+using Tumbleweed.Point.Spatial.Generic;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 using Point = Tumbleweed.Point.Spatial;
@@ -13,7 +14,7 @@ public abstract class Envelope : Map::Any
 	public Batch::Any Batch =>
 		map.Batch;
 
-	public Point::Any<Real::Any> Size =>
+	public Any<Real::Any> Size =>
 		map.Size;
 	
 	private readonly Map::Any map;

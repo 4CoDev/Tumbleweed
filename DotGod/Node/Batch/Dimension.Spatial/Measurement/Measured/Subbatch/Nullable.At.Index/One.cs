@@ -1,6 +1,6 @@
 using Tumbleweed.Scalar.Nullable;
 using Tumbleweed.Scalar.Nullable.With;
-using NaturalPoint = Tumbleweed.Point.Spatial.Any<
+using NaturalPoint = Tumbleweed.Point.Spatial.Generic.Any<
 		Tumbleweed.Number.Natural.Any>;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Subbatch.Nullable.At.Index;

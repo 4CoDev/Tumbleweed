@@ -1,3 +1,4 @@
+using Tumbleweed.Point.Spatial.Generic;
 using Enumerable = Tumbleweed.Enumerable;
 using Point = Tumbleweed.Point.Spatial;
 using Real = Tumbleweed.Number.Real;
@@ -6,7 +7,7 @@ using Vertex = Tumbleweed.Geometry.Spatial.Vertex;
 
 namespace Tumbleweed.Geometry.Spatial.Vertex.Member.Translation;
 
-public sealed class Multiple : Enumerable::Envelope<Point::Any<Real::Any>>
+public sealed class Multiple : Enumerable::Envelope<Any<Real::Any>>
 {
 	public Multiple
 	(
@@ -16,7 +17,7 @@ public sealed class Multiple : Enumerable::Envelope<Point::Any<Real::Any>>
 		new Enumerable::Selected
 		<
 			Vertex::Any,
-			Point::Any<Real::Any>
+			Any<Real::Any>
 		>
 		(
 			vertices,

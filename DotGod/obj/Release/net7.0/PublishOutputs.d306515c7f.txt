@@ -1,0 +1,6 @@
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/DotGod.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/DotGod.deps.json
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/DotGod.pdb
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/GodotSharp.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/Tumbleweed.dll
+/Users/thisischico/Documents/Projects/Tumbleweed/DotGod/bin/Release/net7.0/Tumbleweed.pdb

@@ -1,3 +1,4 @@
+using Tumbleweed.Point.Spatial.Generic;
 using Vertex = Tumbleweed.Geometry.Spatial.Vertex;
 using System = System;
 using Point = Tumbleweed.Point.Spatial;
@@ -24,7 +25,7 @@ public abstract class Envelope : Vertex::Any
 	public override System::String? ToString() =>
 		vertex.ToString();
 
-	public Point::Any<Real::Any> Translation =>
+	public Any<Real::Any> Translation =>
 		vertex.Translation;
 	
 	private readonly Vertex::Any vertex;

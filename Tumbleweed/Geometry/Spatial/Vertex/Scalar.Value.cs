@@ -11,7 +11,7 @@ public sealed class Value : Vertex::Any
 	public Value(Any<Vertex::Any> vertex) =>
 		this.vertex = vertex;
 
-	public Point::Any<Real::Any> Translation =>
+	public Point.Spatial.Generic.Any<Real::Any> Translation =>
 		vertex.Value.Translation;
 
 	private readonly Any<Vertex::Any> vertex;

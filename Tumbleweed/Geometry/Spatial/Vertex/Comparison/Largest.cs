@@ -1,5 +1,5 @@
 using Tumbleweed.Geometry.Spatial.Vertex.With.Translation;
-using Tumbleweed.Point.Spatial.Implementation.Real.Comparison;
+using Tumbleweed.Point.Spatial.Real.Comparison;
 using Multiple = Tumbleweed.Geometry.Spatial.Vertex.Member.Translation.Multiple;
 using One = Tumbleweed.Geometry.Spatial.Vertex.With.Translation.One;
 
