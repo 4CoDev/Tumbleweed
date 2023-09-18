@@ -3,16 +3,16 @@ using Tumbleweed.Scalar.Immutable.With;
 
 namespace DotGod.Node.From.File.On.Path;
 
-public sealed class Lazy<T> : Envelope<T> where T : Godot.Node
+public sealed class Snapshot<T> : Envelope<T> where T : Godot.Node
 {
-	public Lazy(String path) : this
+	public Snapshot(String path) : this
 	(
 		new Value<String>(path)
 	)
 	{
 	}
 	
-	public Lazy(Any<String> path) : base
+	public Snapshot(Any<String> path) : base
 	(
 		new Tumbleweed.Scalar.Immutable.Lazy<T>(
 			new Actual<T>(path))
