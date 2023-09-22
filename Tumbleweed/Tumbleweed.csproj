@@ -21,7 +21,8 @@
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Action.Filler\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Source.Filler\Function.Result\" />
       <Folder Include="Boolean\Comparison\" />
-      <Folder Include="Geometry\Spatial\Shape\Parametric\" />
+      <Folder Include="Geometry\Planimetry\" />
+      <Folder Include="Geometry\Stereometry\Shape\Parametric\" />
       <Folder Include="Number\Real\Arithmetic\Quotient\Enumerable.With\" />
       <Folder Include="Point\Spatial\Integer\" />
       <Folder Include="Point\Spatial\Real\Arithmetic\Absolute\" />

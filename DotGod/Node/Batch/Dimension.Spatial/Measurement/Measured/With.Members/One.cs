@@ -8,7 +8,7 @@ public sealed class One : Any
 	(
 		Tumbleweed.Array.Any<Any<Unmeasured.Any>> subbatches,
 		ICollection<Entity.Any> entities,
-		Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any space
+		Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any space
 	)
 	{
 		Subbatches = subbatches;
@@ -20,5 +20,5 @@ public sealed class One : Any
 
 	public ICollection<Entity.Any> Entities { get; }
 
-	public Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any Aabb { get; }
+	public Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
 }

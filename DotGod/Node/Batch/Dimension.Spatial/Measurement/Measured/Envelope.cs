@@ -11,7 +11,7 @@ public abstract class Envelope : Any
 	public ICollection<Entity.Any> Entities =>
 		batch.Entities;
 
-	public Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any Aabb =>
+	public Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>
 		batch.Aabb;
 
 	private readonly Any batch;

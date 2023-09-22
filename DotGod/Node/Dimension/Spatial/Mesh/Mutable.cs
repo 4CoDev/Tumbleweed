@@ -1,5 +1,5 @@
-using DotGod.Geometry.Spatial.Graphical.ArrayMesh.From.Tumbleweed;
-using DotGod.Geometry.Spatial.Graphical.Mesh;
+using DotGod.Geometry.Stereometry.Graphical.ArrayMesh.From.Tumbleweed;
+using DotGod.Geometry.Stereometry.Graphical.Mesh;
 using Godot;
 using Tumbleweed.Scalar.Mutable;
 using Tumbleweed.Scalar.Mutable.With;

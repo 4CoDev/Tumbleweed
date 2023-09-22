@@ -1,6 +1,6 @@
-using DotGod.Geometry.Spatial.Basic.Shape.Mesh.Convex.Tumbleweed.From.Godot;
+using DotGod.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Tumbleweed.From.Godot;
 using Godot;
-using Tumbleweed.Geometry.Spatial.Shape.Mesh.Convex;
+using Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 

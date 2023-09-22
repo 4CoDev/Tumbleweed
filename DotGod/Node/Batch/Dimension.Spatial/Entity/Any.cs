@@ -7,7 +7,7 @@ public interface Any
 {
 	Nullable::Any<Godot::Node> Node { get; }
 	
-	Geometry.Spatial.Graphical.Mesh.Any Mesh { get; }
+	Geometry.Stereometry.Graphical.Mesh.Any Mesh { get; }
 	
-	Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any Aabb { get; }
+	Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
 }

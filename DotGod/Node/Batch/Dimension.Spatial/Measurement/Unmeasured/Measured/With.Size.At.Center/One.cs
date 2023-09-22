@@ -12,7 +12,7 @@ public sealed class One : Measurement.Measured.Envelope
 	(
 		new With.Aabb.One(
 			batch,
-			new Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.With.Size.At.Center.One(size))
+			new Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.With.Size.At.Center.One(size))
 	)
 	{
 	}

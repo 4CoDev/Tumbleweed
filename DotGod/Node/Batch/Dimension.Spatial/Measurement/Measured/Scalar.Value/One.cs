@@ -13,7 +13,7 @@ public sealed class One : Any
 	public ICollection<Entity.Any> Entities =>
 		any.Value.Entities;
 
-	public Tumbleweed.Geometry.Spatial.Shape.Parametric.Aabb.Any Aabb =>
+	public Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>
 		any.Value.Aabb;
 	
 	private readonly Tumbleweed.Scalar.Immutable.Any<Any> any;

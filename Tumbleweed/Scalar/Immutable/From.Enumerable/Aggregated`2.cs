@@ -3,7 +3,6 @@ using SCG = System.Collections.Generic;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Binary;
 
-// ReSharper disable once CheckNamespace
 namespace Tumbleweed.Scalar.Immutable.From.Enumerable;
 
 public sealed class Aggregated<TFrom, TAccumulate>
