@@ -4,7 +4,7 @@ using Tumbleweed.Scalar.Nullable.From.System;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 
-public sealed class EqualityOfTwoNullables : Tumbleweed.Boolean.Envelope
+public sealed class EqualityOfTwoNullables : Tumbleweed.Mathematics.Boolean.Envelope
 {
 	public EqualityOfTwoNullables
 	(
@@ -54,7 +54,7 @@ public sealed class EqualityOfTwoNullables : Tumbleweed.Boolean.Envelope
 	{
 	}
 
-	private static Tumbleweed.Boolean.Any Function
+	private static Tumbleweed.Mathematics.Boolean.Any Function
 	(
 		Any<Any> first,
 		Any<Any> second

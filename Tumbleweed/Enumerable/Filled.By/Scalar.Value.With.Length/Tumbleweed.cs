@@ -1,7 +1,9 @@
+using Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed;
+using Tumbleweed.Mathematics.Number.Natural;
 using Enumerable = Tumbleweed.Enumerable;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 using Scalar = Tumbleweed.Scalar.Immutable;
-using Integer = Tumbleweed.Number.Integer;
+using Integer = Tumbleweed.Mathematics.Number.Integer;
 
 namespace Tumbleweed.Enumerable.Filled.By.Scalar.Value.With.Length;
 
@@ -9,12 +11,12 @@ public sealed class Tumbleweed<T> : Enumerable::Envelope<T>
 {
 	public Tumbleweed
 	(
-		Natural::Any length,
+		Any length,
 		Scalar::Any<T> filler
 	) : base
 	(
 		new Enumerable::Filled.By.Scalar.Value.With.Length.System<T>(
-			new Integer::System.Medium.From.Natural.Tumbleweed.One(length),
+			new One(length),
 			filler)
 	)
 	{

@@ -1,8 +1,9 @@
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Generic.With.Coordinate.Definition;
 using Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.Of.Point;
-using One = Tumbleweed.Number.Real.Binary.Precision.Double.From.System.One;
+using One = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.From.System.One;
 
 namespace Tumbleweed.Point.Spatial.Real.Arithmetic.Product.Scalar.With.Number;
 
@@ -15,7 +16,7 @@ public sealed class Real : Envelope<Any>
 	) : this
 	(
 		point,
-		new Tumbleweed.Number.Real.Binary.Precision.Single.From.System.One(single)
+		new Mathematics.Number.Real.Binary.Precision.Single.From.System.One(single)
 	)
 	{
 	}
@@ -26,7 +27,7 @@ public sealed class Real : Envelope<Any>
 	) : this
 	(
 		point,
-		new Tumbleweed.Number.Real.Binary.Precision.Single.From.System.One(single)
+		new Mathematics.Number.Real.Binary.Precision.Single.From.System.One(single)
 	)
 	{
 	}

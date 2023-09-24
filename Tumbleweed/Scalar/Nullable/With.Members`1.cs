@@ -1,3 +1,5 @@
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.From.System;
 using Tumbleweed.Object.Equality.ByValues;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
@@ -14,12 +16,12 @@ public sealed class Members<T> : Nullable::Any<T>
 	public Members(T value, System::Boolean hasValue) : this
 	(
 		value,
-		new Boolean::From.System.One(hasValue)
+		new One(hasValue)
 	)
 	{
 	}
 	
-	public Members(T value, Boolean::Any hasValue) : this
+	public Members(T value, Any hasValue) : this
 	(
 		new Immutable::With.Value<T>(value),
 		hasValue
@@ -30,7 +32,7 @@ public sealed class Members<T> : Nullable::Any<T>
 	public Members
 	(
 		Immutable::Any<T> value,
-		Boolean::Any hasValue
+		Any hasValue
 	)
 	{
 		this.value = value;
@@ -50,5 +52,5 @@ public sealed class Members<T> : Nullable::Any<T>
 
 	private readonly Immutable::Any<T> value;
 
-	public Boolean::Any HasValue { get; }
+	public Any HasValue { get; }
 }

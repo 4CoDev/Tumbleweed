@@ -1,6 +1,7 @@
 using Godot;
 using Tumbleweed.Enumerable;
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial;
 using Tumbleweed.Point.Spatial.Generic;
 

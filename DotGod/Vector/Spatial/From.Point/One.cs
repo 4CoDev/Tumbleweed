@@ -1,16 +1,15 @@
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 using Point = Tumbleweed.Point.Spatial;
-using Real = Tumbleweed.Number.Real;
-using SystemRealFromTumbleweed =
-	Tumbleweed.Number.Real.Binary.Precision.Single.System.From.Tumbleweed;
+using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace DotGod.Vector.Spatial.From.Point;
 
 public sealed class One : Immutable::Envelope<Godot::Vector3>
 {
-	public One(Any<Real::Any> point) : base
+	public One(Any<Any> point) : base
 	(
 		new Immutable::Function.Result.Actual<Godot::Vector3>(
 			() => Result(point))
@@ -20,12 +19,12 @@ public sealed class One : Immutable::Envelope<Godot::Vector3>
 
 	private static Godot::Vector3 Result
 	(
-		Any<Real::Any> point
+		Any<Any> point
 	) =>
 	(
 		new Godot::Vector3(
-			new SystemRealFromTumbleweed::One(point.X).Value,
-			new SystemRealFromTumbleweed::One(point.Y).Value,
-			new SystemRealFromTumbleweed::One(point.Z).Value)
+			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From.Tumbleweed.One(point.X).Value,
+			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From.Tumbleweed.One(point.Y).Value,
+			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From.Tumbleweed.One(point.Z).Value)
 	);
 }

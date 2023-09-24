@@ -1,5 +1,6 @@
-using Tumbleweed.Number.Natural;
-using Tumbleweed.Number.Natural.From.System;
+using Tumbleweed.Mathematics.Number.Natural;
+using Tumbleweed.Mathematics.Number.Natural.From.System;
+using Tumbleweed.Mathematics.Number.Natural;
 
 namespace Tumbleweed.Array.Dimension.Linear.System.Length;
 

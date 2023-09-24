@@ -1,14 +1,16 @@
+using Tumbleweed.Mathematics.Number.Real;
+
 namespace DotGod.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.UV.As.Point;
 
-public sealed class One : Tumbleweed.Point.Planar.Envelope<Tumbleweed.Number.Real.Any>
+public sealed class One : Tumbleweed.Point.Planar.Envelope<Any>
 {
 	public One
 	(Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> tool,
-		Tumbleweed.Number.Natural.Any vertex
+		Tumbleweed.Mathematics.Number.Natural.Any vertex
 	) : this
 	(
 		tool,
-		new Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed.One(vertex)
+		new Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed.One(vertex)
 	)
 	{
 	}

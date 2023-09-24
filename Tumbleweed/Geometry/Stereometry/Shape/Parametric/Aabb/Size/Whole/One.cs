@@ -4,7 +4,7 @@ using Actual = Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Act
 
 namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Size.Whole;
 
-public sealed class One : Envelope<Tumbleweed.Number.Real.Any>
+public sealed class One : Envelope<Mathematics.Number.Real.Any>
 {
 	public One(Any space) : base
 	(

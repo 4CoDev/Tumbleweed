@@ -1,10 +1,11 @@
+using Tumbleweed.Mathematics.Number.Real;
 using Point = Tumbleweed.Point.Spatial;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using Single = Tumbleweed.Point.Spatial.Real.Base.Binary.Precision.Single;
 
 namespace Tumbleweed.Point.Spatial.Real.Literal;
 
-public sealed class Unit : Point::Generic.Envelope<Real::Any>
+public sealed class Unit : Point::Generic.Envelope<Any>
 {
 	public Unit() : base
 	(

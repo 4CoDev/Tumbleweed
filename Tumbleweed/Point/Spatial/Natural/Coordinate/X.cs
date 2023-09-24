@@ -1,5 +1,6 @@
-using Tumbleweed.Number.Natural;
-using Tumbleweed.Number.Natural.Scalar;
+using Tumbleweed.Mathematics.Number.Natural;
+using Tumbleweed.Mathematics.Number.Natural;
+using Tumbleweed.Mathematics.Number.Natural.Scalar;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Generic.Coordinate.X.Actual;
 

@@ -1,3 +1,5 @@
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.From.System;
 using Tumbleweed.Scalar.Immutable;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
@@ -8,7 +10,7 @@ using SCG = System.Collections.Generic;
 
 namespace Tumbleweed.Enumerable.Equality.Structural.Of.NonNullable;
 
-public sealed class Two : Boolean::Envelope
+public sealed class Two : Mathematics.Boolean.Envelope
 {
 	public Two
 	(
@@ -34,7 +36,7 @@ public sealed class Two : Boolean::Envelope
 	{
 	}
 
-	private static Boolean::Any Function
+	private static Any Function
 	(
 		SC::IEnumerable first,
 		SC::IEnumerable second
@@ -45,13 +47,13 @@ public sealed class Two : Boolean::Envelope
 			second.Cast<System::Object>())
 	);
 	
-	private static Boolean::Any Function
+	private static Any Function
 	(
 		SCG::IEnumerable<System::Object> first,
 		SCG::IEnumerable<System::Object> second
 	) =>
 	(
-		new Boolean::From.System.One(
+		new One(
 			first.SequenceEqual(second))
 	);
 }

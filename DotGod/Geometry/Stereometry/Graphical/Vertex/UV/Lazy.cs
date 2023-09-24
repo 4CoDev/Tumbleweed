@@ -2,11 +2,11 @@ using Tumbleweed.Point.Planar;
 
 namespace DotGod.Geometry.Stereometry.Graphical.Vertex.UV;
 
-public sealed class Lazy : Envelope<Tumbleweed.Number.Real.Any>
+public sealed class Lazy : Envelope<Tumbleweed.Mathematics.Number.Real.Any>
 {
 	public Lazy(Any vertex) : base
 	(
-		new Tumbleweed.Point.Planar.Lazy<Tumbleweed.Number.Real.Any>(
+		new Tumbleweed.Point.Planar.Lazy<Tumbleweed.Mathematics.Number.Real.Any>(
 			new Actual(vertex))
 	)
 	{

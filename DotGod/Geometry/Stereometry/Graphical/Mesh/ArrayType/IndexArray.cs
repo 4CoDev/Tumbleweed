@@ -1,4 +1,4 @@
-using Tumbleweed.Number.Integer.System.Medium.From;
+using Tumbleweed.Mathematics.Number.Integer.System.Medium.From;
 using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Geometry.Stereometry.Graphical.Mesh.ArrayType;

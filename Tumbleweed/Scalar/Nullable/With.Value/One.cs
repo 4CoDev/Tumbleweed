@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Boolean.Literal;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Boolean = Tumbleweed.Boolean;
@@ -17,7 +18,7 @@ public sealed class One<T> : Nullable::Envelope<T>
 	(
 		new Nullable::With.Members<T>(
 			value,
-			new Boolean::Literal.True()))
+			new True()))
 	{
 	}
 }

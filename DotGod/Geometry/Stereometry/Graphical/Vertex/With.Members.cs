@@ -2,7 +2,7 @@ using DotGod.Geometry.Stereometry.Graphical.Vertex;
 using Tumbleweed.Point.Spatial.Generic;
 using Vertex = DotGod.Geometry.Stereometry.Concave.Graphical.Vertex;
 using Point = Tumbleweed.Point;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 
@@ -13,10 +13,10 @@ public sealed class Members : Any
 {
 	public Members
 	(
-		Any<Real::Any> translation,
-		Any<Real::Any> normal,
+		Any<Tumbleweed.Mathematics.Number.Real.Any> translation,
+		Any<Tumbleweed.Mathematics.Number.Real.Any> normal,
 		Scalar::Any<Godot::Color> color,
-		Point::Planar.Any<Real::Any> uv
+		Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> uv
 	)
 	{
 		Translation = translation;
@@ -25,11 +25,11 @@ public sealed class Members : Any
 		UV = uv;
 	}
 	
-	public Any<Real::Any> Translation { get; }
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Translation { get; }
 	
-	public Any<Real::Any> Normal { get; }
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Normal { get; }
 	
 	public Scalar::Any<Godot::Color> Color { get; }
 	
-	public Point::Planar.Any<Real::Any> UV { get; }
+	public Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
 }

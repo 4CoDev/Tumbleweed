@@ -1,6 +1,7 @@
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.Literal;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using Boolean = Tumbleweed.Boolean;
-using Literal = Tumbleweed.Boolean.Literal;
 
 namespace Tumbleweed.Scalar.Nullable;
 
@@ -10,6 +11,6 @@ public sealed class Null<T> : Nullable::Any<T>
 		throw new NullReferenceException(
 			"That object does not exist");
 
-	public Boolean::Any HasValue =>
-		new Literal::False();
+	public Any HasValue =>
+		new False();
 }

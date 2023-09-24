@@ -1,4 +1,5 @@
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Planar.Real.From;
 
 // ReSharper disable once CheckNamespace

@@ -1,4 +1,5 @@
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 
 namespace Tumbleweed.Point.Spatial.Real.With.Coordinate;

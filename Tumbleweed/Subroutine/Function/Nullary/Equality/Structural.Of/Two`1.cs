@@ -1,5 +1,6 @@
 using Tumbleweed.Boolean;
 using Tumbleweed.Boolean.Function;
+using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Object.Equality.ByValues;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 

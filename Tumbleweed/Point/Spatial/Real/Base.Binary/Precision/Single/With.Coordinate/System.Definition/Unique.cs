@@ -1,11 +1,12 @@
+using Tumbleweed.Mathematics.Number.Real;
 using Point = Tumbleweed.Point.Spatial;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using System = System;
 using Scalar = Tumbleweed.Scalar.Immutable;
 
 namespace Tumbleweed.Point.Spatial.Real.Base.Binary.Precision.Single.With.Coordinate.System.Definition;
 
-public sealed class Unique : Point::Generic.Envelope<Real::Any>
+public sealed class Unique : Point::Generic.Envelope<Any>
 {
 	public Unique
 	(

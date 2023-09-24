@@ -3,7 +3,7 @@ using Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.With.Number;
 
 namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Size.Half;
 
-public sealed class One : Envelope<Tumbleweed.Number.Real.Any>
+public sealed class One : Envelope<Mathematics.Number.Real.Any>
 {
 	public One(Any space) : base
 	(

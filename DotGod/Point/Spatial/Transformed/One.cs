@@ -2,7 +2,8 @@ using DotGod.Point.Spatial.From.Vector;
 using DotGod.Transform.Spatial.Origin.Vector;
 using DotGod.Transform.Spatial.Translated.By.Point;
 using Godot;
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Point.Spatial.Transformed;

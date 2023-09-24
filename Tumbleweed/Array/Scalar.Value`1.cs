@@ -1,7 +1,8 @@
+using Tumbleweed.Mathematics.Number.Natural;
 using Array = Tumbleweed.Array;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Mutable = Tumbleweed.Scalar.Mutable;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 using SCG = System.Collections.Generic;
 
 // ReSharper disable once CheckNamespace
@@ -14,13 +15,13 @@ public sealed class Value<T> : Array::Any<T>
 
 	public Mutable::Any<T> this
 	[
-		SCG::IEnumerable<Natural::Any> indices
+		SCG::IEnumerable<Any> indices
 	] =>
 	(
 		scalar.Value[indices]
 	);
 
-	public SCG::IEnumerable<Natural::Any> Size =>
+	public SCG::IEnumerable<Any> Size =>
 		scalar.Value.Size;
 
 	private readonly Immutable::Any<Array::Any<T>> scalar;

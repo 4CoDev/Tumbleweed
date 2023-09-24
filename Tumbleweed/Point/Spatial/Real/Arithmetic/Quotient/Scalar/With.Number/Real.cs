@@ -1,8 +1,9 @@
-using Tumbleweed.Number.Real;
-using Tumbleweed.Number.Real.Binary.Precision.Double.From.System;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.From.System;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Generic.With.Coordinate.Definition;
-using Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.Of.Point;
+using Multiple = Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.Of.Point.Multiple;
 
 namespace Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.With.Number;
 
@@ -15,7 +16,7 @@ public sealed class Real : Envelope<Any>
 	) : this
 	(
 		dividend,
-		new Tumbleweed.Number.Real.Binary.Precision.Single.From.System.One(divisor)
+		new One(divisor)
 	)
 	{
 	}
@@ -26,7 +27,7 @@ public sealed class Real : Envelope<Any>
 	) : this
 	(
 		dividend,
-		new Tumbleweed.Number.Real.Binary.Precision.Single.From.System.One(divisor)
+		new One(divisor)
 	)
 	{
 	}
@@ -38,7 +39,7 @@ public sealed class Real : Envelope<Any>
 	) : this
 	(
 		dividend,
-		new One(divisor)
+		new Mathematics.Number.Real.Binary.Precision.Double.From.System.One(divisor)
 	)
 	{
 	}
@@ -49,7 +50,7 @@ public sealed class Real : Envelope<Any>
 	) : this
 	(
 		dividend,
-		new One(divisor)
+		new Mathematics.Number.Real.Binary.Precision.Double.From.System.One(divisor)
 	)
 	{
 	}

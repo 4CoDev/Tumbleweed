@@ -1,6 +1,6 @@
-using Tumbleweed.Number.Real;
-using Tumbleweed.Number.Real.Arithmetic;
-using Tumbleweed.Number.Real.Arithmetic.Quotient.Scalar.Of;
+using Tumbleweed.Mathematics.Arithmetic.Real.Quotient.Scalar.Of;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Planar.Real.Coordinate;
 using Tumbleweed.Point.Planar.With;
 

@@ -1,6 +1,6 @@
 using Tumbleweed.Point.Spatial.Generic;
 using System = System;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace Tumbleweed.Geometry.Stereometry.Vertex;
 
@@ -23,7 +23,7 @@ public abstract class Envelope : Any
 	public override System::String? ToString() =>
 		vertex.ToString();
 
-	public Any<Real::Any> Translation =>
+	public Any<Mathematics.Number.Real.Any> Translation =>
 		vertex.Translation;
 	
 	private readonly Any vertex;

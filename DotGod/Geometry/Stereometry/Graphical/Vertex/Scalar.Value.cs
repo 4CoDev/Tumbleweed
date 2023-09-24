@@ -3,7 +3,7 @@ using Tumbleweed.Point.Spatial.Generic;
 using Vertex = DotGod.Geometry.Stereometry.Concave.Graphical.Vertex;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Point = Tumbleweed.Point;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using Godot = Godot;
 
 // ReSharper disable once CheckNamespace
@@ -14,16 +14,16 @@ public sealed class Value : Any
 	public Value(Scalar::Any<Any> vertex) =>
 		this.vertex = vertex;
 	
-	public Any<Real::Any> Translation =>
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Translation =>
 		vertex.Value.Translation;
 
-	public Any<Real::Any> Normal =>
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Normal =>
 		vertex.Value.Normal;
 
 	public Scalar::Any<Godot::Color> Color =>
 		vertex.Value.Color;
 
-	public Point::Planar.Any<Real::Any> UV =>
+	public Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
 		vertex.Value.UV;
 
 	private readonly Scalar::Any<Any> vertex;

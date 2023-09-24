@@ -1,19 +1,20 @@
+using Tumbleweed.Mathematics.Number.Real;
 using Point = Tumbleweed.Point.Spatial;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace Tumbleweed.Point.Spatial.Real.With.Coordinate.Definition;
 
-public sealed class Unique : Point::Generic.Envelope<Real::Any>
+public sealed class Unique : Point::Generic.Envelope<Any>
 {
 	public Unique
 	(
-		Real::Any x,
-		Real::Any y,
-		Real::Any z
+		Any x,
+		Any y,
+		Any z
 	) : base
 	(
 		new Point::Generic.With.Coordinate.Definition.Unique
-			<Real::Any>
+			<Any>
 			(x, y, z)
 	)
 	{

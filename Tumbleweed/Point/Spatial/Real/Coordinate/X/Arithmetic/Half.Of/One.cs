@@ -1,16 +1,17 @@
-using Real = Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using Point = Tumbleweed.Point.Spatial;
 
 namespace Tumbleweed.Point.Spatial.Real.Coordinate.X.Arithmetic.Half.Of;
 
-public sealed class One : Real::Envelope
+public sealed class One : Envelope
 {
 	public One
 	(
-		Point::Generic.Any<Real::Any> point
+		Point::Generic.Any<Any> point
 	) : base
 	(
-		new Real::Arithmetic.Half.Of.One(
+		new Mathematics.Arithmetic.Real.Half.Of.One(
 			new Point::Real.Coordinate.X.Value.One(point))
 	)
 	{

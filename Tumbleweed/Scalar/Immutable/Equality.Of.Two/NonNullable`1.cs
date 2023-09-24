@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Scalar.Immutable.Casted.Convertee;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
@@ -6,7 +7,7 @@ using Function = Tumbleweed.Subroutine.Function.Nullary;
 
 namespace Tumbleweed.Scalar.Immutable.Equality.Of.Two;
 
-public sealed class NonNullable<T> : Boolean::Envelope
+public sealed class NonNullable<T> : Envelope
 {
 	public NonNullable
 	(

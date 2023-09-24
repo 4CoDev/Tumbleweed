@@ -1,3 +1,5 @@
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.From.System;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using System = System;
 using Boolean = Tumbleweed.Boolean;
@@ -13,7 +15,7 @@ public sealed class Conditional<T> : Immutable::Envelope<T>
 		T otherwise
 	) : this
 	(
-		new Boolean::From.System.One(condition),
+		new One(condition),
 		then,
 		otherwise
 	)
@@ -27,7 +29,7 @@ public sealed class Conditional<T> : Immutable::Envelope<T>
 		Immutable::Any<T> otherwise
 	) : this
 	(
-		new Boolean::From.System.One(condition),
+		new One(condition),
 		then,
 		otherwise
 	)
@@ -36,7 +38,7 @@ public sealed class Conditional<T> : Immutable::Envelope<T>
 
 	public Conditional
 	(
-		Boolean::Any condition,
+		Any condition,
 		T then,
 		T otherwise
 	) : this
@@ -50,7 +52,7 @@ public sealed class Conditional<T> : Immutable::Envelope<T>
 	
 	public Conditional
 	(
-		Boolean::Any condition,
+		Any condition,
 		Immutable::Any<T> then,
 		Immutable::Any<T> otherwise
 	) : base
@@ -63,7 +65,7 @@ public sealed class Conditional<T> : Immutable::Envelope<T>
 
 	private static T Function
 	(
-		Boolean::Any condition,
+		Any condition,
 		Immutable::Any<T> then,
 		Immutable::Any<T> otherwise
 	)

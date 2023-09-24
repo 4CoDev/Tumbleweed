@@ -1,5 +1,6 @@
-using Tumbleweed.Number.Integer;
-using Tumbleweed.Number.Integer.System.Medium.From.Tumbleweed;
+using Tumbleweed.Mathematics.Number.Integer;
+using Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Tumbleweed;
+using Tumbleweed.Mathematics.Number.Integer;
 
 namespace Tumbleweed.Collection;
 

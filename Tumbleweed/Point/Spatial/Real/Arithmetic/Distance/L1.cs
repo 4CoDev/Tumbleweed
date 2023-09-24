@@ -1,4 +1,5 @@
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Real.Coordinate.X.Arithmetic.Difference.Absolute.Of;
 using Tumbleweed.Point.Spatial.Real.Coordinate.Y.Arithmetic.Difference.Absolute.Of;

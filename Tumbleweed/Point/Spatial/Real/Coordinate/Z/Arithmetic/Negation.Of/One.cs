@@ -1,12 +1,13 @@
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 
 namespace Tumbleweed.Point.Spatial.Real.Coordinate.Z.Arithmetic.Negation.Of;
 
-public sealed class One : Number.Real.Envelope
+public sealed class One : Envelope
 {
-	public One(Any<Number.Real.Any> point) : base
+	public One(Any<Any> point) : base
 	(
-		new Number.Real.Arithmetic.Negation.Of.One(
+		new Mathematics.Arithmetic.Real.Negation.Of.One(
 			new Coordinate.Z.Value.One(point)))
 	{
 	}

@@ -3,11 +3,11 @@ using Tumbleweed.Point.Planar.Function;
 
 namespace DotGod.Geometry.Stereometry.Graphical.Vertex.UV;
 
-public sealed class Actual : Envelope<Tumbleweed.Number.Real.Any>
+public sealed class Actual : Envelope<Tumbleweed.Mathematics.Number.Real.Any>
 {
 	public Actual(Any vertex) : base
 	(
-		new Result<Tumbleweed.Number.Real.Any>(() => vertex.UV)
+		new Result<Tumbleweed.Mathematics.Number.Real.Any>(() => vertex.UV)
 	)
 	{
 	}

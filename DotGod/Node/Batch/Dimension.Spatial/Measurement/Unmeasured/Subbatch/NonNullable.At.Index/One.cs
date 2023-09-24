@@ -8,7 +8,7 @@ public sealed class One : Envelope
 	public One
 	(
 		Any batch,
-		Any<Tumbleweed.Number.Natural.Any> index
+		Any<Tumbleweed.Mathematics.Number.Natural.Any> index
 	) : base
 	(
 		new Scalar.Value.One(

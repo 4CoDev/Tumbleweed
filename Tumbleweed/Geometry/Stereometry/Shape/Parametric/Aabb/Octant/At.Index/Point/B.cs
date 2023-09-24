@@ -5,12 +5,12 @@ using Multiple = Tumbleweed.Point.Spatial.Real.Arithmetic.Sum.Scalar.Of.Multiple
 
 namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.At.Index.Point;
 
-public sealed class B : Envelope<Tumbleweed.Number.Real.Any>
+public sealed class B : Envelope<Mathematics.Number.Real.Any>
 {
 	public B
 	(
 		Any space,
-		Any<Tumbleweed.Number.Natural.Any> index
+		Any<Mathematics.Number.Natural.Any> index
 	) : base
 	(
 		new Multiple(

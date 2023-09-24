@@ -1,7 +1,8 @@
+using Tumbleweed.Mathematics.Number.Natural;
 using Array = Tumbleweed.Array;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Enumerable = Tumbleweed.Enumerable;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 using SystemArray = Tumbleweed.Array.Dimension.Linear.System;
 using SCG = System.Collections.Generic;
 using Mutable = Tumbleweed.Scalar.Mutable;
@@ -21,7 +22,7 @@ public sealed class System<T> : Array::Any<T>
 	public System(Immutable::Any<T[]> array) : this
 	(
 		array,
-		new Enumerable::SingleItem.New<Natural::Any>(
+		new Enumerable::SingleItem.New<Any>(
 			new SystemArray::Length.Tumbleweed<T>(array))
 	)
 	{
@@ -30,7 +31,7 @@ public sealed class System<T> : Array::Any<T>
 	private System
 	(
 		Immutable::Any<T[]> array,
-		SCG::IEnumerable<Natural::Any> size
+		SCG::IEnumerable<Any> size
 	)
 	{
 		this.array = array;
@@ -39,7 +40,7 @@ public sealed class System<T> : Array::Any<T>
 
 	public Mutable::Any<T> this
 	[
-		SCG::IEnumerable<Natural::Any> indices
+		SCG::IEnumerable<Any> indices
 	] =>
 	(
 		new SystemArray::Item.At.Index.Tumbleweed<T>(array, indices)
@@ -47,5 +48,5 @@ public sealed class System<T> : Array::Any<T>
 	
 	private readonly Immutable::Any<T[]> array;
 
-	public SCG::IEnumerable<Natural::Any> Size { get; }
+	public SCG::IEnumerable<Any> Size { get; }
 }

@@ -1,11 +1,11 @@
 using Tumbleweed.Point.Spatial.Generic;
 using Enumerable = Tumbleweed.Enumerable;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using SCG = System.Collections.Generic;
 
 namespace Tumbleweed.Geometry.Stereometry.Vertex.Member.Translation;
 
-public sealed class Multiple : Enumerable::Envelope<Any<Real::Any>>
+public sealed class Multiple : Enumerable::Envelope<Any<Mathematics.Number.Real.Any>>
 {
 	public Multiple
 	(
@@ -15,7 +15,7 @@ public sealed class Multiple : Enumerable::Envelope<Any<Real::Any>>
 		new Enumerable::Selected
 		<
 			Any,
-			Any<Real::Any>
+			Any<Mathematics.Number.Real.Any>
 		>
 		(
 			vertices,

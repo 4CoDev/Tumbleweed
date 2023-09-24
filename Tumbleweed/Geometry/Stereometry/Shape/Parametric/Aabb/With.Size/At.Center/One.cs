@@ -5,13 +5,13 @@ namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.With.Size.At.Cen
 
 public sealed class One : Any
 {
-	public One(Any<Tumbleweed.Number.Real.Any> size) =>
+	public One(Any<Mathematics.Number.Real.Any> size) =>
 		half = new Real(size, 2);
 
-	public Any<Tumbleweed.Number.Real.Any> A =>
+	public Any<Mathematics.Number.Real.Any> A =>
 		new Tumbleweed.Point.Spatial.Real.Arithmetic.Negation.Of.One(half);
 	
-	public Any<Tumbleweed.Number.Real.Any> B => half;
+	public Any<Mathematics.Number.Real.Any> B => half;
 
-	private readonly Any<Tumbleweed.Number.Real.Any> half;
+	private readonly Any<Mathematics.Number.Real.Any> half;
 }

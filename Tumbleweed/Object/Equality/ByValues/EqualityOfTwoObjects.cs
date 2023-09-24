@@ -1,6 +1,7 @@
 using Tumbleweed.Boolean;
-using Tumbleweed.Boolean.From.System;
 using Tumbleweed.Boolean.System.Function;
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.From.System;
 
 namespace Tumbleweed.Object.Equality.ByValues;
 

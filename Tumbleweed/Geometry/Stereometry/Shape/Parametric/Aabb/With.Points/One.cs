@@ -6,15 +6,15 @@ public sealed class One : Any
 {
 	public One
 	(
-		Any<Tumbleweed.Number.Real.Any> a,
-		Any<Tumbleweed.Number.Real.Any> b
+		Any<Mathematics.Number.Real.Any> a,
+		Any<Mathematics.Number.Real.Any> b
 	)
 	{
 		A = a;
 		B = b;
 	}
 
-	public Any<Tumbleweed.Number.Real.Any> A { get; }
+	public Any<Mathematics.Number.Real.Any> A { get; }
 
-	public Any<Tumbleweed.Number.Real.Any> B { get; }
+	public Any<Mathematics.Number.Real.Any> B { get; }
 }

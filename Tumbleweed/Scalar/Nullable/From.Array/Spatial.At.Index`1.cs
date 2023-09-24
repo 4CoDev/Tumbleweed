@@ -1,7 +1,8 @@
+using Tumbleweed.Mathematics.Number.Natural;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using Array = Tumbleweed.Array;
 using Point = Tumbleweed.Point.Spatial;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 using Immutable = Tumbleweed.Scalar.Immutable;
 
 // ReSharper disable once CheckNamespace
@@ -11,7 +12,7 @@ public sealed class Index<T> : Nullable::Envelope<T>
 {
 	public Index
 	(
-		Array::Any<Nullable::Any<T>> array, Point.Spatial.Generic.Any<Natural::Any> indices
+		Array::Any<Nullable::Any<T>> array, Point.Spatial.Generic.Any<Any> indices
 	) : base
 	(
 		new Nullable::Scalar.Value.One<T>(

@@ -1,20 +1,21 @@
+using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Generic.With.Coordinate.Definition;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 
 namespace Tumbleweed.Point.Spatial.Natural.With.Coordinate.Definition;
 
-public sealed class Coordinates : Envelope<Natural::Any>
+public sealed class Coordinates : Envelope<Any>
 {
 	public Coordinates
 	(
-		Natural::Any x,
-		Natural::Any y,
-		Natural::Any z
+		Any x,
+		Any y,
+		Any z
 	) : base
 	(
 		new Unique
-			<Natural::Any>
+			<Any>
 			(x, y, z)
 	)
 	{

@@ -3,12 +3,12 @@ using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Have.Subbatch.Collided.By.Point;
 
-public sealed class One : Tumbleweed.Boolean.Envelope
+public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
 {
 	public One
 	(
 		Measured.Any batch,
-		Any<Tumbleweed.Number.Real.Any> point
+		Any<Tumbleweed.Mathematics.Number.Real.Any> point
 	) : base
 	(
 		new Unmeasured.Have.Subbatch.At.Index.One(

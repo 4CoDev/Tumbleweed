@@ -1,4 +1,5 @@
-using Tumbleweed.Boolean.Comparison.All.Are;
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Comparison.Boolean.All.Are;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Real.Coordinate.X.Comparison;
 using Tumbleweed.Point.Spatial.Real.Coordinate.X.Comparison.Is.Greater.Than.Or.Equal.To.Specific;
@@ -6,12 +7,12 @@ using Tumbleweed.Point.Spatial.Real.Coordinate.Y.Comparison;
 using Tumbleweed.Point.Spatial.Real.Coordinate.Y.Comparison.Is.Greater.Than.Or.Equal.To.Specific;
 using Tumbleweed.Point.Spatial.Real.Coordinate.Z.Comparison;
 using Tumbleweed.Point.Spatial.Real.Coordinate.Z.Comparison.Is.Greater.Than.Or.Equal.To.Specific;
-using Any = Tumbleweed.Number.Real.Any;
+using Any = Tumbleweed.Mathematics.Number.Real.Any;
 using One = Tumbleweed.Point.Spatial.Real.Coordinate.Y.Comparison.Is.Greater.Than.Or.Equal.To.Specific.One;
 
 namespace Tumbleweed.Point.Spatial.Real.Comparison;
 
-public sealed class IsGreaterThanOrEqualsToPoint : Boolean.Envelope
+public sealed class IsGreaterThanOrEqualsToPoint : Envelope
 {
 	public IsGreaterThanOrEqualsToPoint
 	(

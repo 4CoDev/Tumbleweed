@@ -1,10 +1,10 @@
-using Tumbleweed.Boolean.Comparison.Both.Are;
+using Tumbleweed.Mathematics.Comparison.Boolean.Both.Are;
 using Tumbleweed.Point.Spatial.Real.Comparison;
 using Actual = Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Is.Inside.Other;
 
-public sealed class One : Tumbleweed.Boolean.Envelope
+public sealed class One : Mathematics.Boolean.Envelope
 {
 	public One
 	(

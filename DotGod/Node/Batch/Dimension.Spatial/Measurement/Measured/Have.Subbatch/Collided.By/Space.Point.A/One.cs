@@ -2,7 +2,7 @@ using Actual = Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point.A.Act
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Have.Subbatch.Collided.By.Space.Point.A;
 
-public sealed class One : Tumbleweed.Boolean.Envelope
+public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
 {
 	public One
 	(

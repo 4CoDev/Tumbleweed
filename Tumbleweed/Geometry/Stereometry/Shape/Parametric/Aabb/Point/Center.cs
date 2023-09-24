@@ -5,7 +5,7 @@ using Actual = Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Act
 
 namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point;
 
-public sealed class Center : Envelope<Tumbleweed.Number.Real.Any>
+public sealed class Center : Envelope<Mathematics.Number.Real.Any>
 {
 	public Center(Any space) : base
 	(

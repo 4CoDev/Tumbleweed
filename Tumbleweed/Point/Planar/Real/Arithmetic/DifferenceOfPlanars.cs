@@ -1,7 +1,6 @@
-using Tumbleweed.Number.Real;
-using Tumbleweed.Number.Real.Arithmetic;
-using Tumbleweed.Number.Real.Arithmetic.Difference.Just;
-using Tumbleweed.Number.Real.Arithmetic.Difference.Just.Of;
+using Tumbleweed.Mathematics.Arithmetic.Real.Difference.Just.Of;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Planar.Real.Coordinate;
 using Tumbleweed.Point.Planar.With;
 

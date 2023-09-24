@@ -2,7 +2,7 @@ using Tumbleweed.Point.Spatial.Generic;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 using Point = Tumbleweed.Point.Spatial;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Map.With.Members;
 
@@ -11,7 +11,7 @@ public sealed class One : Map::Any
 	public One
 	(
 		Batch::Any batch,
-		Any<Real::Any> size
+		Any<Tumbleweed.Mathematics.Number.Real.Any> size
 	)
 	{
 		Batch = batch;
@@ -20,5 +20,5 @@ public sealed class One : Map::Any
 
 	public Batch::Any Batch { get; }
 
-	public Any<Real::Any> Size { get; }
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Size { get; }
 }

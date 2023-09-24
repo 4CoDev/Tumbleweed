@@ -1,5 +1,6 @@
 using Tumbleweed.Boolean;
-using Tumbleweed.Boolean.Literal;
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.Literal;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
 using Tumbleweed.Scalar.Immutable.Equality.Of.Two;

@@ -1,14 +1,16 @@
-using Tumbleweed.Boolean.Comparison.Either.Is;
+using Tumbleweed.Mathematics.Comparison.Boolean.Either.Is;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
+using Envelope = Tumbleweed.Mathematics.Boolean.Envelope;
 
 namespace Tumbleweed.Point.Spatial.Real.Coordinate.X.Comparison.Is.Greater.Than.Or.Equal.To.Specific;
 
-public sealed class One : Boolean.Envelope
+public sealed class One : Envelope
 {
 	public One
 	(
-		Any<Number.Real.Any> first,
-		Any<Number.Real.Any> second
+		Any<Any> first,
+		Any<Any> second
 	) : base
 	(
 		new True(

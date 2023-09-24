@@ -1,9 +1,9 @@
-using Tumbleweed.Boolean.Comparison.Both.Are;
+using Tumbleweed.Mathematics.Comparison.Boolean.Both.Are;
 using Tumbleweed.Subroutine.Function.Nullary.Equality.Structural.Of;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 
-public sealed class EqualityOfTwoEntities : Tumbleweed.Boolean.Envelope
+public sealed class EqualityOfTwoEntities : Tumbleweed.Mathematics.Boolean.Envelope
 {
 	public EqualityOfTwoEntities
 	(

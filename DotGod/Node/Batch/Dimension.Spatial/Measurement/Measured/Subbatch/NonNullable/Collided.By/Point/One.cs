@@ -8,7 +8,7 @@ public sealed class One : Envelope
 	public One
 	(
 		Any batch,
-		Any<Tumbleweed.Number.Real.Any> point
+		Any<Tumbleweed.Mathematics.Number.Real.Any> point
 	) : base
 	(
 		new At.Index.One(

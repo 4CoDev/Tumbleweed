@@ -1,5 +1,6 @@
+using Tumbleweed.Mathematics.Number.Natural;
 using Array = Tumbleweed.Array;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 using Mutable = Tumbleweed.Scalar.Mutable;
 using SCG = System.Collections.Generic;
 
@@ -12,13 +13,13 @@ public abstract class Envelope<T> : Array::Any<T>
 
 	public Mutable::Any<T> this
 	[
-		SCG::IEnumerable<Natural::Any> indices
+		SCG::IEnumerable<Any> indices
 	] =>
 	(
 		array[indices]
 	);
 
-	public SCG::IEnumerable<Natural::Any> Size =>
+	public SCG::IEnumerable<Any> Size =>
 		array.Size;
 	
 	private readonly Array::Any<T> array;

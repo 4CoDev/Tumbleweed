@@ -1,5 +1,6 @@
 using Tumbleweed.Boolean;
 using Tumbleweed.Enumerable;
+using Tumbleweed.Mathematics.Boolean;
 
 namespace Tumbleweed.Byte;
 

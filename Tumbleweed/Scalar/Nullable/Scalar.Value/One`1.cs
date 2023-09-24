@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Boolean;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using System = System;
@@ -32,7 +33,7 @@ public sealed class One<T> : Nullable::Any<T>
 	public T Value =>
 		scalar.Value.Value;
 
-	public Boolean::Any HasValue =>
+	public Any HasValue =>
 		scalar.Value.HasValue;
 
 	private readonly Immutable::Any<Nullable::Any<T>> scalar;

@@ -20,10 +20,13 @@
       <Folder Include="Array\Dimension\Spatial\System\Filling\New\Source.Filler\Function.Result.With.Size\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Action.Filler\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Source.Filler\Function.Result\" />
-      <Folder Include="Boolean\Comparison\" />
       <Folder Include="Geometry\Planimetry\" />
       <Folder Include="Geometry\Stereometry\Shape\Parametric\" />
-      <Folder Include="Number\Real\Arithmetic\Quotient\Enumerable.With\" />
+      <Folder Include="Mathematics\Arithmetic\Natural\" />
+      <Folder Include="Mathematics\Arithmetic\Real\" />
+      <Folder Include="Mathematics\Comparison\Boolean\" />
+      <Folder Include="Mathematics\Comparison\Number\Integer\" />
+      <Folder Include="Mathematics\Comparison\Number\Natural\" />
       <Folder Include="Point\Spatial\Integer\" />
       <Folder Include="Point\Spatial\Real\Arithmetic\Absolute\" />
       <Folder Include="Point\Spatial\Real\Arithmetic\Difference\Absolute.Of\" />

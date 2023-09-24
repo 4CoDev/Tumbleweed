@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Object.Equality.ByReference;
 using Boolean = Tumbleweed.Boolean;
 using System = System;
@@ -6,7 +7,7 @@ using Immutable = Tumbleweed.Scalar.Immutable;
 
 namespace Tumbleweed.Scalar.Immutable.Equality.Of.Two;
 
-public sealed class Nullable<T> : Boolean::Envelope
+public sealed class Nullable<T> : Envelope
 {
 	public Nullable
 	(
@@ -56,7 +57,7 @@ public sealed class Nullable<T> : Boolean::Envelope
 	{
 	}
 
-	private static Boolean::Any Function
+	private static Any Function
 	(
 		Nullable::Any<Immutable::Any<T>> first,
 		Nullable::Any<Immutable::Any<T>> second

@@ -1,4 +1,4 @@
-using Tumbleweed.Boolean.From.System;
+using Tumbleweed.Mathematics.Boolean.From.System;
 using Tumbleweed.Scalar.Immutable;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured;
@@ -21,7 +21,7 @@ public sealed class Conditional : Envelope
 	
 	public Conditional
 	(
-		Tumbleweed.Boolean.Any condition,
+		Tumbleweed.Mathematics.Boolean.Any condition,
 		Any then,
 		Any otherwise
 	) : base

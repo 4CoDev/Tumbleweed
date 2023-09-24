@@ -1,5 +1,5 @@
-using Tumbleweed.Number.Real;
-using Tumbleweed.Number.Real.Arithmetic.Difference.Just.Of;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Generic.With.Coordinate.Definition;
 
@@ -33,9 +33,9 @@ public sealed class Multiple : Envelope<Any>
 	) : base
 	(
 		new Unique<Any>(
-			new Number.Real.Arithmetic.Difference.Just.Of.Multiple(new Coordinate.X.Value.Enumerable(spatials)),
-			new Number.Real.Arithmetic.Difference.Just.Of.Multiple(new Coordinate.Y.Value.Enumerable(spatials)),
-			new Number.Real.Arithmetic.Difference.Just.Of.Multiple(new Coordinate.Z.Value.Enumerable(spatials)))
+			new Mathematics.Arithmetic.Real.Difference.Just.Of.Multiple(new Coordinate.X.Value.Enumerable(spatials)),
+			new Mathematics.Arithmetic.Real.Difference.Just.Of.Multiple(new Coordinate.Y.Value.Enumerable(spatials)),
+			new Mathematics.Arithmetic.Real.Difference.Just.Of.Multiple(new Coordinate.Z.Value.Enumerable(spatials)))
 	)
 	{
 	}

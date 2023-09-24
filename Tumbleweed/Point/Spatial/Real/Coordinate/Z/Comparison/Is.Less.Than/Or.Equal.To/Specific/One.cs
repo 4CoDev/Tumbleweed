@@ -1,13 +1,14 @@
-using Tumbleweed.Boolean.Comparison.Either.Is;
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Comparison.Boolean.Either.Is;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Real.Coordinate.Z.Comparison.Is.Equal.To.Specific;
 using Tumbleweed.Point.Spatial.Real.Coordinate.Z.Comparison.Is.Less.Than.Just.Specific;
-using Any = Tumbleweed.Number.Real.Any;
+using Any = Tumbleweed.Mathematics.Number.Real.Any;
 using One = Tumbleweed.Point.Spatial.Real.Coordinate.Z.Comparison.Is.Less.Than.Just.Specific.One;
 
 namespace Tumbleweed.Point.Spatial.Real.Coordinate.Z.Comparison.Is.Less.Than.Or.Equal.To.Specific;
 
-public sealed class One : Boolean.Envelope
+public sealed class One : Envelope
 {
 	public One
 	(

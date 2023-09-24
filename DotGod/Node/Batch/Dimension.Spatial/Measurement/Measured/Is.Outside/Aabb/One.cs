@@ -1,6 +1,6 @@
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Is.Outside.Aabb;
 
-public sealed class One : Tumbleweed.Boolean.Envelope
+public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
 {
 	public One
 	(

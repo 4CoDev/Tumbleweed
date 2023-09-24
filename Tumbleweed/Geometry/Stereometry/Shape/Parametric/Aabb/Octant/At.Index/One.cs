@@ -8,7 +8,7 @@ public sealed class One : Envelope
 	public One
 	(
 		Any space,
-		Any<Tumbleweed.Number.Natural.Any> index) : base
+		Any<Mathematics.Number.Natural.Any> index) : base
 	(
 		new With.Points.One(
 			new A(space, index),

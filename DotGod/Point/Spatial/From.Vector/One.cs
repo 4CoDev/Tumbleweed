@@ -1,12 +1,13 @@
+using Tumbleweed.Mathematics.Number.Real;
 using Point = Tumbleweed.Point.Spatial;
-using Real = Tumbleweed.Number.Real;
+using Real = Tumbleweed.Mathematics.Number.Real;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Coordinate = DotGod.Vector.Spatial.Coordinate;
 
 namespace DotGod.Point.Spatial.From.Vector;
 
-public sealed class One : Point::Generic.Envelope<Real::Any>
+public sealed class One : Point::Generic.Envelope<Any>
 {
 	public One(Godot::Vector3 vector) : this
 	(

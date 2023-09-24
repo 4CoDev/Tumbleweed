@@ -7,7 +7,7 @@ public sealed class One : Measurement.Measured.Envelope
 	public One
 	(
 		Any batch,
-		Any<Tumbleweed.Number.Real.Any> size
+		Any<Tumbleweed.Mathematics.Number.Real.Any> size
 	) : base
 	(
 		new With.Aabb.One(

@@ -1,3 +1,5 @@
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.Literal;
 using Tumbleweed.Scalar.Nullable;
 using Tumbleweed.Scalar.Nullable.As;
 using Tumbleweed.Scalar.Nullable.From.System;
@@ -7,7 +9,7 @@ using SC = System.Collections;
 
 namespace Tumbleweed.Enumerable.Equality.Structural.Of.Nullable;
 
-public sealed class Two : Boolean::Envelope
+public sealed class Two : Mathematics.Boolean.Envelope
 {
 	public Two
 	(
@@ -57,16 +59,16 @@ public sealed class Two : Boolean::Envelope
 	{
 	}
 
-	private static Boolean::Any Function
+	private static Any Function
 	(
 		Any<SC::IEnumerable> first,
 		Any<SC::IEnumerable> second
 	)
 	{
 		if (ReferenceEquals(first, second))
-			return new Boolean::Literal.True();
+			return new True();
 		if (first.HasValue.State && second.HasValue.State)
 			return new NonNullable.Two(first.Value, second.Value);
-		return new Boolean::Literal.False();
+		return new False();
 	}
 }

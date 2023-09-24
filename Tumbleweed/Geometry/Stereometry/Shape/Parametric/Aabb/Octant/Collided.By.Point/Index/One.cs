@@ -5,12 +5,12 @@ using Real = Tumbleweed.Point.Spatial.Real.Arithmetic.Rounding.Nearest.As.Real;
 
 namespace Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.Collided.By.Point.Index;
 
-public sealed class One : Envelope<Tumbleweed.Number.Natural.Any>
+public sealed class One : Envelope<Mathematics.Number.Natural.Any>
 {
 	public One
 	(
 		Any aabb,
-		Any<Tumbleweed.Number.Real.Any> point
+		Any<Mathematics.Number.Real.Any> point
 	) : this
 	(
 		new Size.Whole.One(aabb),
@@ -23,11 +23,11 @@ public sealed class One : Envelope<Tumbleweed.Number.Natural.Any>
 
 	public One
 	(
-		Any<Tumbleweed.Number.Real.Any> size,
-		Any<Tumbleweed.Number.Real.Any> point
+		Any<Mathematics.Number.Real.Any> size,
+		Any<Mathematics.Number.Real.Any> point
 	) : base
 	(
-		new Number.Natural.Point.Spatial.From.Real(
+		new Mathematics.Number.Natural.Point.Spatial.From.Real(
 			new Real(
 				new Multiple(point, size)))
 	)

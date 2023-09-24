@@ -1,5 +1,6 @@
+using Tumbleweed.Mathematics.Number.Natural;
 using Enumerable = Tumbleweed.Enumerable;
-using Natural = Tumbleweed.Number.Natural;
+using Natural = Tumbleweed.Mathematics.Number.Natural;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
 using Scalar = Tumbleweed.Scalar.Immutable;
@@ -10,7 +11,7 @@ public sealed class Tumbleweed<T> : Enumerable::Envelope<T>
 {
 	public Tumbleweed
 	(
-		Natural::Any length,
+		Any length,
 		System::Func<T> filler
 	) : this
 	(
@@ -22,7 +23,7 @@ public sealed class Tumbleweed<T> : Enumerable::Envelope<T>
 	
 	public Tumbleweed
 	(
-		Natural::Any length,
+		Any length,
 		Function::Any<T> filler
 	) : base
 	(

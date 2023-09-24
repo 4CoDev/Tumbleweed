@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Boolean;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using System = System;
 using Boolean = Tumbleweed.Boolean;
@@ -26,7 +27,7 @@ public abstract class Envelope<T> : Nullable::Any<T>
 	public T Value =>
 		nullable.Value;
 
-	public Boolean::Any HasValue =>
+	public Any HasValue =>
 		nullable.HasValue;
 	
 	private readonly Nullable::Any<T> nullable;

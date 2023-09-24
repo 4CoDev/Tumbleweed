@@ -1,4 +1,5 @@
 using Tumbleweed.Boolean;
+using Tumbleweed.Mathematics.Boolean;
 
 namespace Tumbleweed.Object.Equality.ByReference;
 

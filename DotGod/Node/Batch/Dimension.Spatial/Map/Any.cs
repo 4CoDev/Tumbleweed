@@ -7,5 +7,5 @@ public interface Any
 {
 	Measurement.Unmeasured.Any Batch { get; }
 	
-	Any<Tumbleweed.Number.Real.Any> Size { get; }
+	Any<Tumbleweed.Mathematics.Number.Real.Any> Size { get; }
 }

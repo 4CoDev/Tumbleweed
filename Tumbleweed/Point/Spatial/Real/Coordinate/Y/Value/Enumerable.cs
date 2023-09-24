@@ -1,5 +1,6 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Point.Spatial.Generic;
 using Tumbleweed.Point.Spatial.Generic.Coordinate.Y.Actual;
 

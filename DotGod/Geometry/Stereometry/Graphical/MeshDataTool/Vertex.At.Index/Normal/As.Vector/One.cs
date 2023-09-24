@@ -1,5 +1,6 @@
 using Godot;
-using Tumbleweed.Number.Natural;
+using Tumbleweed.Mathematics.Number.Natural;
+using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Function.Result;
 
@@ -14,7 +15,7 @@ public sealed class One : Envelope<Vector3>
 	) : this
 	(
 		tool,
-		new Tumbleweed.Number.Integer.System.Medium.From.Natural.Tumbleweed.One(vertex)
+		new Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed.One(vertex)
 	)
 	{
 	}

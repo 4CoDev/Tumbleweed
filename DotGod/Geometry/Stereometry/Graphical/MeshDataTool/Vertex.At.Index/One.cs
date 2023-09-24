@@ -18,16 +18,16 @@ public sealed class One : Any
 		this.vertex = vertex;
 	}
 
-	public Any<Tumbleweed.Number.Real.Any> Translation =>
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Translation =>
 		new Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Translation.As.Point.One(mesh, vertex);
 
-	public Any<Tumbleweed.Number.Real.Any> Normal =>
+	public Any<Tumbleweed.Mathematics.Number.Real.Any> Normal =>
 		new Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Normal.As.Point.One(mesh, vertex);
 
 	public Tumbleweed.Scalar.Immutable.Any<Color> Color =>
 		new Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Color.One(mesh, vertex);
 
-	public Tumbleweed.Point.Planar.Any<Tumbleweed.Number.Real.Any> UV =>
+	public Tumbleweed.Point.Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
 		new Stereometry.Graphical.MeshDataTool.Vertex.At.Index.UV.As.Point.One(mesh, vertex);
 
 	private readonly Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> mesh;

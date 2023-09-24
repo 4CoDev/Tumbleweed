@@ -1,6 +1,7 @@
 using Tumbleweed.Boolean;
-using Tumbleweed.Boolean.System.From.Tumbleweed;
 using Tumbleweed.Byte.OfSystem;
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.System.From.Tumbleweed;
 using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;
 

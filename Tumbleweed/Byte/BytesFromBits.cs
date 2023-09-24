@@ -1,7 +1,8 @@
 using Tumbleweed.Boolean;
-using Tumbleweed.Boolean.FromByte.FromSystem;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Chunked.By.Length;
+using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.FromByte.FromSystem;
 
 namespace Tumbleweed.Byte;
 
