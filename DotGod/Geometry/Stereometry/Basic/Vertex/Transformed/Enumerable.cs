@@ -1,4 +1,4 @@
-using Tumbleweed.Geometry.Stereometry.Vertex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using Godot = Godot;

@@ -5,10 +5,10 @@ public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
 	public One
 	(
 		Any batch,
-		Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any aabb
+		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any aabb
 	) : base
 	(
-		new Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Is.Inside.Other.One(
+		new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Is.Inside.Other.One(
 			aabb,
 			new Member.Aabb.One(batch))
 	)

@@ -1,7 +1,7 @@
-using Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;
-using CuboidMesh = Tumbleweed.Geometry.Stereometry.Shape.Parametric.Cuboid.Mesh;
+using Cuboid = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Cuboid;
 
 namespace DotGod.Physics.Collider.Spatial.Geometry.Shape.Parametric.Cuboid.Mesh.Tumbleweed;
 
@@ -24,7 +24,7 @@ public sealed class Actual : Envelope
 		Scalar::Any<Godot::CollisionShape3D> collider
 	) : base
 	(
-		new global::Tumbleweed.Geometry.Stereometry.Shape.Parametric.Cuboid.Mesh.With.Origin.Center.Size.Definition.Tumbleweed(
+		new Cuboid::Mesh.With.Origin.Center.Size.Definition.Tumbleweed(
 			new Size.Tumbleweed(collider))
 	)
 	{

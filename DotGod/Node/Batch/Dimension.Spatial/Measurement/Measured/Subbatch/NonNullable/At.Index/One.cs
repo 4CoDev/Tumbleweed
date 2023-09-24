@@ -12,7 +12,7 @@ public sealed class One : Envelope
 	(
 		new Unmeasured.Measured.With.Aabb.One(
 			new Unmeasured.Subbatch.NonNullable.At.Index.One(batch, index),
-			new Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.At.Index.One(
+			new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.At.Index.One(
 				new Member.Aabb.One(batch),
 				index))
 	)

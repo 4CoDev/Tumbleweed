@@ -1,4 +1,4 @@
-using Tumbleweed.Geometry.Stereometry.Vertex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 using Vector = DotGod.Vector.Spatial;
@@ -10,7 +10,7 @@ public sealed class One : Scalar::Envelope<Godot::Vector3>
 	public One(Any vertex) : base
 	(
 		new Vector::From.Point.One(
-			new Tumbleweed.Geometry.Stereometry.Vertex.Member.Translation.One(vertex))
+			new Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation.One(vertex))
 	)
 	{
 	}

@@ -20,8 +20,6 @@
       <Folder Include="Array\Dimension\Spatial\System\Filling\New\Source.Filler\Function.Result.With.Size\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Action.Filler\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Source.Filler\Function.Result\" />
-      <Folder Include="Geometry\Planimetry\" />
-      <Folder Include="Geometry\Stereometry\Shape\Parametric\" />
       <Folder Include="Mathematics\Arithmetic\Natural\" />
       <Folder Include="Mathematics\Arithmetic\Real\" />
       <Folder Include="Mathematics\Comparison\Boolean\" />

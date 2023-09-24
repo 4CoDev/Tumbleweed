@@ -26,7 +26,7 @@ public sealed class One : Any
 	public Geometry.Stereometry.Graphical.Mesh.Any Mesh =>
 		any.Value.Mesh;
 
-	public Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>
+	public Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>
 		any.Value.Aabb;
 
 	private readonly Any<Any> any;

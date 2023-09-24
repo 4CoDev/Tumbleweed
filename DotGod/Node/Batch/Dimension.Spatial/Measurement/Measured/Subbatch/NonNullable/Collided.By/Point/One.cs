@@ -13,7 +13,7 @@ public sealed class One : Envelope
 	(
 		new At.Index.One(
 			batch,
-			new Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.Collided.By.Point.Index.One(
+			new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.Collided.By.Point.Index.One(
 				new Member.Aabb.One(batch),
 				point))
 	)

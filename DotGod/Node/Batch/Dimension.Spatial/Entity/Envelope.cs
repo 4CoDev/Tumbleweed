@@ -29,7 +29,7 @@ public abstract class Envelope : Any
 	public Geometry.Stereometry.Graphical.Mesh.Any Mesh =>
 		entity.Mesh;
 
-	public Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>
+	public Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>
 		entity.Aabb;
 
 	private readonly Any entity;

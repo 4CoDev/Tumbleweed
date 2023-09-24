@@ -1,5 +1,5 @@
-using Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex.Aabb;
-using Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Aabb;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 

@@ -1,5 +1,5 @@
-using Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex;
-using Enumerable = Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex.Member.Vertex.Whole.Enumerable;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex;
+using Enumerable = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Member.Vertex.Whole.Enumerable;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;
 
@@ -25,7 +25,7 @@ public sealed class One : Envelope
 		Scalar::Any<Godot::Transform3D> transform
 	) : base
 	(
-		new global::Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex.With.Vertex.Whole.Enumerable.One(
+		new global::Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.With.Vertex.Whole.Enumerable.One(
 			new Vertex.Transformed.Enumerable(
 				new Enumerable(mesh),
 				transform))

@@ -1,4 +1,4 @@
-using Tumbleweed.Geometry.Stereometry.Vertex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 using Point = DotGod.Point.Spatial;
@@ -25,9 +25,9 @@ public sealed class One : Envelope
 		Scalar::Any<Godot::Transform3D> transform
 	) : base
 	(
-		new Tumbleweed.Geometry.Stereometry.Vertex.With.Translation.One(
+		new Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.With.Translation.One(
 			new Point::Transformed.One(
-				new Tumbleweed.Geometry.Stereometry.Vertex.Member.Translation.One(vertex),
+				new Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation.One(vertex),
 				transform))
 	)
 	{

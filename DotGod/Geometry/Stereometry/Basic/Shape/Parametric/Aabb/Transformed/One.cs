@@ -1,8 +1,8 @@
 using Godot;
-using Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
-using Actual = Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
+using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace DotGod.Geometry.Stereometry.Basic.Shape.Parametric.Aabb.Transformed;
 
@@ -26,9 +26,9 @@ public sealed class One : Envelope
 		Any<Transform3D> transform
 	) : base
 	(
-		new Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.With.Points.One(
+		new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.With.Points.One(
 			new DotGod.Point.Spatial.Transformed.One(
-    new Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Point.A.Actual(space), 
+    new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.A.Actual(space), 
 			transform),
 			new DotGod.Point.Spatial.Transformed.One(new Actual(space), transform))
 	)

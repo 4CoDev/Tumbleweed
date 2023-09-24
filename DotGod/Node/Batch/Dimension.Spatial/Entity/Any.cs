@@ -9,5 +9,5 @@ public interface Any
 	
 	Geometry.Stereometry.Graphical.Mesh.Any Mesh { get; }
 	
-	Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
+	Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
 }

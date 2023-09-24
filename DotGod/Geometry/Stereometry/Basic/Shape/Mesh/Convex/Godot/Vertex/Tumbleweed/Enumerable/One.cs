@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Geometry.Stereometry.Vertex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 
@@ -22,7 +22,7 @@ public sealed class One : global::Tumbleweed.Enumerable.Envelope<Any>
 		Any<ConvexPolygonShape3D> shape
 	) : base
 	(
-		new global::Tumbleweed.Geometry.Stereometry.Vertex.With.Translation.Enumerable(
+		new global::Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.With.Translation.Enumerable(
 			new Point.Spatial.From.Vector.Enumerable(
 				new Godot.Enumerable.One(shape)))
 	)

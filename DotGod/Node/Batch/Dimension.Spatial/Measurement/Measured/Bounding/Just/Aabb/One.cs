@@ -5,7 +5,7 @@ public sealed class One : Measured.Envelope
 	public One
 	(
 		Measured.Any batch,
-		Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any aabb
+		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any aabb
 	) : base
 	(
 		new Measured.Function.Result.One(
@@ -17,7 +17,7 @@ public sealed class One : Measured.Envelope
 	private static Measured.Any Function
 	(
 		Measured.Any batch,
-		Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any space
+		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any space
 	)
 	{
 		if (!new Measured.Is.Outside.Aabb.One(batch, space).State)

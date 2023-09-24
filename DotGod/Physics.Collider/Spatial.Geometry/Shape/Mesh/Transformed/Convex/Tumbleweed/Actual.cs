@@ -1,5 +1,5 @@
 using DotGod.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Tumbleweed.Transformed;
-using Tumbleweed.Geometry.Stereometry.Shape.Mesh.Convex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using DGMesh = DotGod.Geometry.Stereometry.Basic.Shape.Mesh.Convex;

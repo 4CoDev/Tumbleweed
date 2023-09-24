@@ -1,6 +1,6 @@
 using DotGod.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Godot.With.Vertex.Translation.Point.Enumerable;
-using Tumbleweed.Geometry.Stereometry.Vertex;
-using Tumbleweed.Geometry.Stereometry.Vertex.Member.Translation;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
 using SCG = System.Collections.Generic;

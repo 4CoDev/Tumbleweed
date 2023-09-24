@@ -4,5 +4,5 @@ namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured;
 
 public interface Any : Batch::Unmeasured.Any
 {
-	Tumbleweed.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
+	Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
 }
