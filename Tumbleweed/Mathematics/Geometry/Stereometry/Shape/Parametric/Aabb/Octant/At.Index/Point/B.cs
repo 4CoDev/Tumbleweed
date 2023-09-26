@@ -1,7 +1,6 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point;
-using Tumbleweed.Point.Spatial.Generic;
-using Tumbleweed.Point.Spatial.Implementation.Real.From;
-using Multiple = Tumbleweed.Point.Spatial.Real.Arithmetic.Sum.Scalar.Of.Multiple;
+using Multiple = Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Arithmetic.Sum.Scalar.Of.Multiple;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.At.Index.Point;
 
@@ -15,9 +14,9 @@ public sealed class B : Envelope<Mathematics.Number.Real.Any>
 	(
 		new Multiple(
 			new Center(space),
-			new Tumbleweed.Point.Spatial.Real.Arithmetic.Product.Scalar.With.Point.Multiple(
+			new Stereometry.Point.Real.Arithmetic.Product.Scalar.With.Point.Multiple(
 				new Size.Half.One(space),
-				new Natural(index)))
+				new Stereometry.Point.Natural.As.Real.One(index)))
 	)
 	{
 	}

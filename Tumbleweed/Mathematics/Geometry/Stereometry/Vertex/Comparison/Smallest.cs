@@ -1,4 +1,4 @@
-using Tumbleweed.Point.Spatial.Real.Comparison;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Comparison;
 using Multiple = Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation.Multiple;
 using One = Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.With.Translation.One;
 

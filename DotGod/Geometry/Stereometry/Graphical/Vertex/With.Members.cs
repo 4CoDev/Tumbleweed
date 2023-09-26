@@ -1,5 +1,5 @@
 using DotGod.Geometry.Stereometry.Graphical.Vertex;
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Vertex = DotGod.Geometry.Stereometry.Concave.Graphical.Vertex;
 using Point = Tumbleweed.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
@@ -15,8 +15,7 @@ public sealed class Members : Any
 	(
 		Any<Tumbleweed.Mathematics.Number.Real.Any> translation,
 		Any<Tumbleweed.Mathematics.Number.Real.Any> normal,
-		Scalar::Any<Godot::Color> color,
-		Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> uv
+		Scalar::Any<Godot::Color> color, Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> uv
 	)
 	{
 		Translation = translation;
@@ -31,5 +30,5 @@ public sealed class Members : Any
 	
 	public Scalar::Any<Godot::Color> Color { get; }
 	
-	public Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
+	public Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
 }

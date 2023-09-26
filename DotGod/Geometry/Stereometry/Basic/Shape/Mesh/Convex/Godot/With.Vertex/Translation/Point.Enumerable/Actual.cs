@@ -11,7 +11,7 @@ public sealed class Actual : Scalar::Envelope<Godot::ConvexPolygonShape3D>
 {
 	public Actual
 	(
-		SCG::IEnumerable<global::Tumbleweed.Point.Spatial.Generic.Any<Any>> translations
+		SCG::IEnumerable<global::Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Any<Any>> translations
 	) : base
 	(
 		new Vector.Enumerable.Actual(

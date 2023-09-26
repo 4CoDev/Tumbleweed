@@ -1,5 +1,5 @@
-using Tumbleweed.Point.Spatial.Generic;
-using Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.With.Number;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Arithmetic.Quotient.Scalar.With.Number;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.With.Size.At.Center;
 
@@ -9,7 +9,7 @@ public sealed class One : Any
 		half = new Real(size, 2);
 
 	public Any<Mathematics.Number.Real.Any> A =>
-		new Tumbleweed.Point.Spatial.Real.Arithmetic.Negation.Of.One(half);
+		new Stereometry.Point.Real.Arithmetic.Negation.Of.One(half);
 	
 	public Any<Mathematics.Number.Real.Any> B => half;
 

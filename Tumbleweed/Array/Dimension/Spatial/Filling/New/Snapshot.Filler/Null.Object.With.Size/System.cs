@@ -1,6 +1,6 @@
 using Array = Tumbleweed.Array;
 using Nullable = Tumbleweed.Scalar.Nullable;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using System = System;
 using SystemSnapshot = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Snapshot;
 
@@ -9,7 +9,7 @@ namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Snapshot.Filler.Null.Ob
 public sealed class System<T> : Array::Envelope<Nullable::Any<T>>
 {
 	public System
-	(Point.Spatial.Generic.Any<System::Int32> size
+	(Mathematics.Geometry.Stereometry.Point.Generic.Any<System::Int32> size
 	) : base
 	(
 		new Array::Dimension.Spatial.From.System<Nullable::Any<T>>(

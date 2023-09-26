@@ -1,4 +1,4 @@
-using NaturalPoint = Tumbleweed.Point.Spatial.Generic.Any<Tumbleweed.Mathematics.Number.Natural.Any>;
+using NaturalPoint = Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Any<Tumbleweed.Mathematics.Number.Natural.Any>;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Subbatch.NonNullable.At.Index;
 

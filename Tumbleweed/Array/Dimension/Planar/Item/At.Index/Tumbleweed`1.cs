@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Geometry.Planimetry.Point.Coordinate;
 using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Scalar.Immutable.From.Array.At;
 using Scalar = Tumbleweed.Scalar;
@@ -12,13 +13,12 @@ public sealed class Tumbleweed<T> : Tumbleweed.Scalar.Immutable.Envelope<T>
 {
 	public Tumbleweed
 	(
-		Array::Any<T> array,
-		Planar::Any<Any> index
+		Array::Any<T> array, Mathematics.Geometry.Planimetry.Point.Any<Any> index
 	) : base
 	(
 		new Indices<T>(
 			array,
-			new Planar::Coordinate.Enumerable<Any>(index))
+			new Enumerable<Any>(index))
 	)
 	{
 	}

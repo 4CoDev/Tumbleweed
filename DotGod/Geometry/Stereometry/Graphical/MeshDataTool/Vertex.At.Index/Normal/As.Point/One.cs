@@ -1,4 +1,4 @@
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Any = Tumbleweed.Mathematics.Number.Real.Any;
 
 namespace DotGod.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Normal.As.Point;

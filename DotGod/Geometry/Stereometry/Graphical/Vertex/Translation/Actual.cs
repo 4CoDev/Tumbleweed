@@ -1,5 +1,5 @@
-using Tumbleweed.Point.Spatial.Function;
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Function.Result;
 
 namespace DotGod.Geometry.Stereometry.Graphical.Vertex.Translation;
 
@@ -7,7 +7,7 @@ public sealed class Actual : Envelope<Tumbleweed.Mathematics.Number.Real.Any>
 {
 	public Actual(Any vertex) : base
 	(
-		new Result<Tumbleweed.Mathematics.Number.Real.Any>(
+		new Actual<Tumbleweed.Mathematics.Number.Real.Any>(
 			() => vertex.Translation)
 	)
 	{

@@ -1,10 +1,11 @@
-using Point = Tumbleweed.Point.Spatial;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 
 public interface Any
 {
-	Point::Generic.Any<Mathematics.Number.Real.Any> A { get; }
+	Any<Mathematics.Number.Real.Any> A { get; }
 	
-	Point::Generic.Any<Mathematics.Number.Real.Any> B { get; }
+	Any<Mathematics.Number.Real.Any> B { get; }
 }

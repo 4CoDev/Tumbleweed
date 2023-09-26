@@ -1,5 +1,5 @@
-using Tumbleweed.Point.Spatial.Generic;
-using Tumbleweed.Point.Spatial.Real.Comparison;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Comparison;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Normalized;
 

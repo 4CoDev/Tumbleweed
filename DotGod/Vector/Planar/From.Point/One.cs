@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Geometry.Planimetry.Point;
 using Tumbleweed.Mathematics.Number.Real;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
@@ -8,7 +9,7 @@ namespace DotGod.Vector.Planar.From.Point;
 
 public sealed class One : Immutable::Envelope<Godot::Vector2>
 {
-	public One(Point::Any<Any> point) : base
+	public One(Any<Any> point) : base
 	(
 		new Immutable::Function.Result.Actual<Godot::Vector2>(
 			() => Result(point))
@@ -18,7 +19,7 @@ public sealed class One : Immutable::Envelope<Godot::Vector2>
 
 	private static Godot::Vector2 Result
 	(
-		Point::Any<Any> point
+		Any<Any> point
 	) =>
 	(
 		new Godot::Vector2(

@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Point = Tumbleweed.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Immutable = Tumbleweed.Scalar.Immutable;
@@ -7,11 +8,11 @@ namespace DotGod.Geometry.Stereometry.Graphical.Vertex;
 
 public interface Any
 {
-	Tumbleweed.Point.Spatial.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> Translation { get; }
+	Any<Tumbleweed.Mathematics.Number.Real.Any> Translation { get; }
 
-	Tumbleweed.Point.Spatial.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> Normal { get; }
+	Any<Tumbleweed.Mathematics.Number.Real.Any> Normal { get; }
 
 	Immutable::Any<Godot::Color> Color { get; }
 
-	Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
+	Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
 }

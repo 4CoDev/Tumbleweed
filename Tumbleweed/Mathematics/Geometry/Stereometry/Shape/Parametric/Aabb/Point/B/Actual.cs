@@ -1,5 +1,5 @@
-using Tumbleweed.Point.Spatial.Function;
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Function.Result;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B;
 
@@ -10,7 +10,7 @@ public sealed class Actual : Envelope<Mathematics.Number.Real.Any>
 		Any occupation
 	) : base
 	(
-		new Result<Mathematics.Number.Real.Any>(
+		new Actual<Mathematics.Number.Real.Any>(
 			() => occupation.B)
 	)
 	{

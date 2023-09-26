@@ -1,7 +1,7 @@
 using DotGod.Geometry.Stereometry.Concave.Graphical.Vertex;
 using DotGod.Geometry.Stereometry.Graphical.Vertex;
 using Godot;
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 
 // ReSharper disable once CheckNamespace
 namespace DotGod.Geometry.Stereometry.Concave.Graphical.MeshDataTool.Vertex.At;
@@ -27,7 +27,7 @@ public sealed class One : Any
 	public Tumbleweed.Scalar.Immutable.Any<Color> Color =>
 		new Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Color.One(mesh, vertex);
 
-	public Tumbleweed.Point.Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
+	public Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
 		new Stereometry.Graphical.MeshDataTool.Vertex.At.Index.UV.As.Point.One(mesh, vertex);
 
 	private readonly Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> mesh;

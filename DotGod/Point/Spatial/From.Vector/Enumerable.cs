@@ -1,9 +1,7 @@
 using Godot;
 using Tumbleweed.Enumerable;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Number.Real;
-using Tumbleweed.Mathematics.Number.Real;
-using Tumbleweed.Point.Spatial;
-using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Point.Spatial.From.Vector;
 

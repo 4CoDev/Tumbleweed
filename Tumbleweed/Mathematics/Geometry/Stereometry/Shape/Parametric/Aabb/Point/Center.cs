@@ -1,6 +1,6 @@
-using Tumbleweed.Point.Spatial.Generic;
-using Tumbleweed.Point.Spatial.Real.Arithmetic.Quotient.Scalar.With.Number;
-using Tumbleweed.Point.Spatial.Real.Arithmetic.Sum.Scalar.Of;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Arithmetic.Quotient.Scalar.With.Number;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Arithmetic.Sum.Scalar.Of;
 using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point;

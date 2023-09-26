@@ -1,7 +1,7 @@
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Map;

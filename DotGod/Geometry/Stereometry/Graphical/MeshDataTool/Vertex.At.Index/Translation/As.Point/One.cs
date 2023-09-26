@@ -1,5 +1,5 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Number.Real;
-using Tumbleweed.Point.Spatial.Generic;
 
 namespace DotGod.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Translation.As.Point;
 

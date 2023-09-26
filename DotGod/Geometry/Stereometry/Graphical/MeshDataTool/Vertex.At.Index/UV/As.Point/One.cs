@@ -1,8 +1,9 @@
+using Tumbleweed.Mathematics.Geometry.Planimetry.Point;
 using Tumbleweed.Mathematics.Number.Real;
 
 namespace DotGod.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.UV.As.Point;
 
-public sealed class One : Tumbleweed.Point.Planar.Envelope<Any>
+public sealed class One : Envelope<Any>
 {
 	public One
 	(Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> tool,

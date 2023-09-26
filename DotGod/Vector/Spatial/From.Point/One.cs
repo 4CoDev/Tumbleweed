@@ -1,8 +1,8 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Number.Real;
-using Tumbleweed.Point.Spatial.Generic;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace DotGod.Vector.Spatial.From.Point;

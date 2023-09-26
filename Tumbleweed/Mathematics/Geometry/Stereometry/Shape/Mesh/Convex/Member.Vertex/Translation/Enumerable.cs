@@ -1,11 +1,12 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation;
 using Enumerable = Tumbleweed.Enumerable;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Member.Vertex.Translation;
 
 public sealed class Enumerable :
-	Enumerable::Envelope<Point::Generic.Any<Mathematics.Number.Real.Any>>
+	Enumerable::Envelope<Any<Mathematics.Number.Real.Any>>
 {
 	public Enumerable(Any mesh) : base
 	(

@@ -1,5 +1,6 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Scalar = Tumbleweed.Scalar.Immutable;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 // ReSharper disable once CheckNamespace
@@ -10,7 +11,7 @@ public sealed class Value : Any
 	public Value(Scalar::Any<Any> vertex) =>
 		this.vertex = vertex;
 
-	public Point::Generic.Any<Real::Any> Translation =>
+	public Any<Real::Any> Translation =>
 		vertex.Value.Translation;
 
 	private readonly Scalar::Any<Any> vertex;

@@ -25,16 +25,7 @@
       <Folder Include="Mathematics\Comparison\Boolean\" />
       <Folder Include="Mathematics\Comparison\Number\Integer\" />
       <Folder Include="Mathematics\Comparison\Number\Natural\" />
-      <Folder Include="Point\Spatial\Integer\" />
-      <Folder Include="Point\Spatial\Real\Arithmetic\Absolute\" />
-      <Folder Include="Point\Spatial\Real\Arithmetic\Difference\Absolute.Of\" />
-      <Folder Include="Point\Spatial\Real\Arithmetic\Product\Scalar.With\" />
-      <Folder Include="Point\Spatial\Real\Arithmetic\Quotient\Enumerable.With\" />
-      <Folder Include="Point\Spatial\Real\Arithmetic\Quotient\Scalar\" />
-      <Folder Include="Point\Spatial\Real\Base.Binary\Precision\Double\" />
-      <Folder Include="Point\Spatial\Real\Coordinate\X\Arithmetic\Difference\Just.Of\" />
-      <Folder Include="Point\Spatial\Real\Coordinate\Y\Arithmetic\Difference\Just.Of\" />
-      <Folder Include="Point\Spatial\Real\Coordinate\Z\Arithmetic\Difference\Just.Of\" />
+      <Folder Include="Mathematics\Geometry\Stereometry\Point\Integer\" />
       <Folder Include="Scalar\" />
     </ItemGroup>
 

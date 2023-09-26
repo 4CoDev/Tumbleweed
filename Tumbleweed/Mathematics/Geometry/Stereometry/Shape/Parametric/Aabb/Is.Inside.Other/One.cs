@@ -1,5 +1,5 @@
 using Tumbleweed.Mathematics.Comparison.Boolean.Both.Are;
-using Tumbleweed.Point.Spatial.Real.Comparison;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Comparison;
 using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Is.Inside.Other;

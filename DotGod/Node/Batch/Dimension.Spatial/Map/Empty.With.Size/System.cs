@@ -1,9 +1,8 @@
-using Tumbleweed.Point.Spatial.Generic;
-using Tumbleweed.Point.Spatial.Real.Base.Binary.Precision.Single.From.System;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Base.Binary.Precision.Single.From.System;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using System = System;
-using RealPoint = Tumbleweed.Point.Spatial.Implementation.Real;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Map.Empty.With.Size;
 

@@ -1,4 +1,4 @@
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured.Array.Item.Value.At.Index;
 

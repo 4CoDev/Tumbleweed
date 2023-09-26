@@ -1,5 +1,7 @@
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.With.Coordinate.Definition;
 using Tumbleweed.Mathematics.Number.Real;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;
@@ -7,7 +9,7 @@ using Coordinate = DotGod.Vector.Spatial.Coordinate;
 
 namespace DotGod.Point.Spatial.From.Vector;
 
-public sealed class One : Point::Generic.Envelope<Any>
+public sealed class One : Envelope<Any>
 {
 	public One(Godot::Vector3 vector) : this
 	(
@@ -18,7 +20,7 @@ public sealed class One : Point::Generic.Envelope<Any>
 
 	public One(Scalar::Any<Godot::Vector3> vector) : base
 	(
-		new Point::Real.With.Coordinate.Definition.Unique(
+		new Unique(
 			new Coordinate::X.Tumbleweed.One(vector),
 			new Coordinate::X.Tumbleweed.One(vector),
 			new Coordinate::X.Tumbleweed.One(vector))

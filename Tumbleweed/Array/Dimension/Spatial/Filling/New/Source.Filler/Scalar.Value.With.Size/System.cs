@@ -1,5 +1,5 @@
 using Array = Tumbleweed.Array;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using System = System;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using SystemSource = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source;
@@ -10,7 +10,7 @@ namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Source.Filler.Scalar.Va
 public sealed class System<T> : Array::Envelope<T>
 {
 	public System
-	(Point.Spatial.Generic.Any<System::Int32> size,
+	(Mathematics.Geometry.Stereometry.Point.Generic.Any<System::Int32> size,
 		Scalar::Any<T> filler
 	) : base
 	(

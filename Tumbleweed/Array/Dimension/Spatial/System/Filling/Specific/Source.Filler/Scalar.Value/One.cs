@@ -1,5 +1,5 @@
 using Scalar = Tumbleweed.Scalar.Immutable;
-using Point = Tumbleweed.Point.Spatial;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using Action = Tumbleweed.Array.Dimension.Spatial.System.Filling.Specific.Action;
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 

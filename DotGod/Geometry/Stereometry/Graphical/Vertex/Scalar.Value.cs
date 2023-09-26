@@ -1,5 +1,5 @@
 using DotGod.Geometry.Stereometry.Graphical.Vertex;
-using Tumbleweed.Point.Spatial.Generic;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Vertex = DotGod.Geometry.Stereometry.Concave.Graphical.Vertex;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Point = Tumbleweed.Point;
@@ -23,7 +23,7 @@ public sealed class Value : Any
 	public Scalar::Any<Godot::Color> Color =>
 		vertex.Value.Color;
 
-	public Point::Planar.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
+	public Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
 		vertex.Value.UV;
 
 	private readonly Scalar::Any<Any> vertex;

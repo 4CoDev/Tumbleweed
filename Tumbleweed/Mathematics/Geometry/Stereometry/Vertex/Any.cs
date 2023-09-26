@@ -1,9 +1,10 @@
-using Point = Tumbleweed.Point.Spatial;
+using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 
 public interface Any
 {
-	Point::Generic.Any<Real::Any> Translation { get; }
+	Any<Real::Any> Translation { get; }
 }
