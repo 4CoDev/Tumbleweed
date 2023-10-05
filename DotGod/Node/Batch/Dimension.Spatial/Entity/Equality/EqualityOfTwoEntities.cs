@@ -27,7 +27,7 @@ public sealed class EqualityOfTwoEntities : Tumbleweed.Mathematics.Boolean.Envel
 			new Two<Tumbleweed.Scalar.Nullable.Any<Godot.Node>>(
 				() => first.Node,
 				() => second.Node),
-			new Two<Geometry.Stereometry.Graphical.Mesh.Any>(
+			new Two<Mathematics.Geometry.Stereometry.Graphical.Mesh.Any>(
 				() => first.Mesh,
 				() => second.Mesh))
 	)

@@ -23,7 +23,7 @@ public sealed class One : Any
 	public Tumbleweed.Scalar.Nullable.Any<Godot.Node> Node =>
 		any.Value.Node;
 
-	public Geometry.Stereometry.Graphical.Mesh.Any Mesh =>
+	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh =>
 		any.Value.Mesh;
 
 	public Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>

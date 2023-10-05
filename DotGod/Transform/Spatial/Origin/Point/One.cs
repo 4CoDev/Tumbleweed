@@ -1,4 +1,3 @@
-using DotGod.Point.Spatial.From.Vector;
 using Godot;
 using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Mathematics.Number.Real;
@@ -10,7 +9,7 @@ public sealed class One : Envelope<Any>
 {
 	public One(Tumbleweed.Scalar.Immutable.Any<Transform3D> transform) : base
 	(
-		new DotGod.Point.Spatial.From.Vector.One(
+		new Mathematics.Vector.Spatial.Tumbleweed.From.Godot.One(
 			new Vector.One(transform))
 	)
 	{

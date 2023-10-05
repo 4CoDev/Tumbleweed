@@ -26,7 +26,7 @@ public abstract class Envelope : Any
 	public Nullable::Any<Godot::Node> Node =>
 		entity.Node;
 
-	public Geometry.Stereometry.Graphical.Mesh.Any Mesh =>
+	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh =>
 		entity.Mesh;
 
 	public Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb =>

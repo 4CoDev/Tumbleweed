@@ -17,10 +17,7 @@
       <Folder Include="Engine\Input\Unhandled\" />
       <Folder Include="Engine\Iteration\Graphical\" />
       <Folder Include="Engine\Iteration\Physical\" />
-      <Folder Include="Geometry\Planimetry\" />
-      <Folder Include="Geometry\Stereometry\Basic\Shape\Parametric\Cube.Godot\" />
-      <Folder Include="Geometry\Stereometry\Basic\Shape\Parametric\Sphere\" />
-      <Folder Include="Geometry\Stereometry\Graphical\" />
+      <Folder Include="Mathematics\" />
       <Folder Include="Node\Batch\Dimension.Spatial\Measurement\" />
       <Folder Include="Node\Dimension\" />
       <Folder Include="Physics.Collider\Spatial.Geometry\Shape\Mesh\Untransformed\Concave\" />

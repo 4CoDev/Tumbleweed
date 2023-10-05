@@ -11,7 +11,7 @@ public sealed class One : Any
 	public One
 	(
 		Any<Godot.Node> node,
-		Geometry.Stereometry.Graphical.Mesh.Any mesh, 
+		Mathematics.Geometry.Stereometry.Graphical.Mesh.Any mesh, 
 		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any size
 	)
 	{
@@ -31,7 +31,7 @@ public sealed class One : Any
 
 	public Any<Godot.Node> Node { get; }
 
-	public Geometry.Stereometry.Graphical.Mesh.Any Mesh { get; }
+	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh { get; }
 
 	public Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
 }

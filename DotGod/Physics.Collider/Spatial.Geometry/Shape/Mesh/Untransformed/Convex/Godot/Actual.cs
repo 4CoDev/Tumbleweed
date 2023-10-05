@@ -1,7 +1,6 @@
-using DotGod.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Godot.From.Abstract;
+using DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Godot.From.Abstract;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
-using Mesh = DotGod.Geometry.Stereometry.Basic.Shape.Mesh.Convex;
 
 namespace DotGod.Physics.Collider.Spatial.Geometry.Shape.Mesh.Untransformed.Convex.Godot;
 
