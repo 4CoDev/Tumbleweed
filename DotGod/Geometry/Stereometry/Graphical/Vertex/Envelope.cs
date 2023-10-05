@@ -1,5 +1,4 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Point = Tumbleweed.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
@@ -20,7 +19,7 @@ public abstract class Envelope : Any
 	public Immutable::Any<Godot::Color> Color =>
 		vertex.Color;
 
-	public Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
+	public Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
 		vertex.UV;
 
 	private readonly Any vertex;

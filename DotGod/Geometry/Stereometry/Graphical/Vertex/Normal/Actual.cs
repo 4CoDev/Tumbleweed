@@ -1,5 +1,5 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Function.Result;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic.Function.Result;
 
 namespace DotGod.Geometry.Stereometry.Graphical.Vertex.Normal;
 

@@ -1,5 +1,4 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;

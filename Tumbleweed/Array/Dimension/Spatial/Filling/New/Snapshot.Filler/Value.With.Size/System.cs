@@ -1,5 +1,5 @@
 using Array = Tumbleweed.Array;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using System = System;
 using SystemSnapshot = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Snapshot;
 
@@ -8,8 +8,7 @@ namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Snapshot.Filler.Value.W
 public sealed class System<T> : Array::Envelope<T>
 {
 	public System
-	(
-		Point::Generic.Any<System::Int32> size,
+	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size,
 		T filler
 	) : base
 	(

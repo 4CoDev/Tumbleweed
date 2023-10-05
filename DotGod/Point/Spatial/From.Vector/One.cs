@@ -1,7 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.With.Coordinate.Definition;
 using Tumbleweed.Mathematics.Number.Real;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+using Tumbleweed.Mathematics.Vector.Spatial.Real.With.Coordinate.Definition;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;

@@ -1,6 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Literal;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Real.Literal;
+
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Cube.Mesh.With.Origin.Center.Literal;
 

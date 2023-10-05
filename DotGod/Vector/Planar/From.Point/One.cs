@@ -1,8 +1,8 @@
-using Tumbleweed.Mathematics.Geometry.Planimetry.Point;
 using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Vector.Planar;
+using Tumbleweed.Mathematics.Vector.Planar.Generic;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
-using Point = Tumbleweed.Point.Planar;
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 namespace DotGod.Vector.Planar.From.Point;

@@ -1,6 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.With.Vertex.Translation.Enumerable;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Arithmetic.Translated.Forward.Scalar.With.Point;
 
@@ -13,7 +13,7 @@ public sealed class Real : Envelope
 	) : base
   (
 	  new One(
-		  new Stereometry.Point.Real.Arithmetic.Sum.Enumerable.With.Point.Real(
+		  new Mathematics.Arithmetic.Vector.Spatial.Real.Sum.Enumerable.With.Point.Real(
 			 new Member.Vertex.Translation.Enumerable(mesh),
 			 point))
 	)

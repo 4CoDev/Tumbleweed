@@ -1,7 +1,7 @@
-using Tumbleweed.Mathematics.Geometry.Planimetry.Point;
-using Tumbleweed.Mathematics.Geometry.Planimetry.Point.With.Coordinate.Definition;
 using Tumbleweed.Mathematics.Number.Real;
-using Point = Tumbleweed.Point.Planar;
+using Tumbleweed.Mathematics.Vector.Planar;
+using Tumbleweed.Mathematics.Vector.Planar.Generic;
+using Tumbleweed.Mathematics.Vector.Planar.Generic.With.Coordinate.Definition;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Godot = Godot;
 using Scalar = Tumbleweed.Scalar.Immutable;

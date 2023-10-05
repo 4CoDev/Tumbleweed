@@ -1,6 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Arithmetic.Negation.Of;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Arithmetic.Vector.Spatial.Real.Negation.Of;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Arithmetic.Translated.Backward.Scalar.With.Point;
 

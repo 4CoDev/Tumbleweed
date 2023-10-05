@@ -1,6 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Planimetry.Point;
-using Tumbleweed.Mathematics.Geometry.Planimetry.Point.Function.Result;
-using Tumbleweed.Point.Planar;
+using Tumbleweed.Mathematics.Vector.Planar;
+using Tumbleweed.Mathematics.Vector.Planar.Generic;
+using Tumbleweed.Mathematics.Vector.Planar.Generic.Function.Result;
 
 namespace DotGod.Geometry.Stereometry.Graphical.Vertex.UV;
 

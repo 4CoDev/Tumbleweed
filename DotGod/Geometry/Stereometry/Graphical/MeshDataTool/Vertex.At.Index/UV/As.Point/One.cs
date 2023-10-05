@@ -1,5 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Planimetry.Point;
 using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Vector.Planar;
+using Tumbleweed.Mathematics.Vector.Planar.Generic;
 
 namespace DotGod.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.UV.As.Point;
 

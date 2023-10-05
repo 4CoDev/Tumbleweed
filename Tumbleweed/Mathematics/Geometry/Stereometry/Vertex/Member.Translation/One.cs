@@ -1,6 +1,5 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Function.Result;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic.Function.Result;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation;
 

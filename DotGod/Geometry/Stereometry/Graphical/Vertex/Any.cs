@@ -1,5 +1,4 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Point = Tumbleweed.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Godot = Godot;
@@ -14,5 +13,5 @@ public interface Any
 
 	Immutable::Any<Godot::Color> Color { get; }
 
-	Tumbleweed.Mathematics.Geometry.Planimetry.Point.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
+	Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
 }

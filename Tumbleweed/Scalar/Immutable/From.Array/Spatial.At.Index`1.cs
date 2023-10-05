@@ -1,8 +1,8 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Coordinate;
 using Tumbleweed.Mathematics.Number.Natural;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic.Coordinate;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Array = Tumbleweed.Array;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 
 // ReSharper disable once CheckNamespace
@@ -12,7 +12,7 @@ public sealed class Index<T> : Immutable::Envelope<T>
 {
 	public Index
 	(
-		Array::Any<T> array, Mathematics.Geometry.Stereometry.Point.Generic.Any<Any> index
+		Array::Any<T> array, Mathematics.Vector.Spatial.Generic.Any<Any> index
 	) : base
 	(
 		new Immutable::From.Array.At.Indices<T>(

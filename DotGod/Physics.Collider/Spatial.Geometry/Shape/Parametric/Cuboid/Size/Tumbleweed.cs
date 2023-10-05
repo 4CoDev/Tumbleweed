@@ -1,8 +1,7 @@
-using DotGod.Geometry.Stereometry.Basic.Shape.Parametric.Cuboid.Godot.Size.Point;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Godot = Godot;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using GeometryParametric = DotGod.Geometry.Stereometry.Basic.Shape.Parametric;
@@ -17,7 +16,8 @@ public sealed class Tumbleweed : Envelope<Any>
 		Scalar::Any<Godot::CollisionShape3D> collider
 	) : base
 	(
-		new Actual(
+		new DotGod.Geometry.Stereometry.Basic.Shape.Parametric.Cuboid.Godot.Size
+    .Tumbleweed.Actual(
 			new ColliderParametric::Cuboid.Value.Godot.Actual(collider))
 	)
 	{

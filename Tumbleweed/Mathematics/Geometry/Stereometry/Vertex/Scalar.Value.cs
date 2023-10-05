@@ -1,6 +1,6 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Scalar = Tumbleweed.Scalar.Immutable;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using Real = Tumbleweed.Mathematics.Number.Real;
 
 // ReSharper disable once CheckNamespace

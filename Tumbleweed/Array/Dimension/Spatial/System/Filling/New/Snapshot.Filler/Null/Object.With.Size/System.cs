@@ -1,6 +1,6 @@
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Nullable = Tumbleweed.Scalar.Nullable;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using System = System;
 using Source = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source;
 
@@ -9,7 +9,7 @@ namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Snapshot.Filler.
 public sealed class System<T> : Scalar::Envelope<Nullable::Any<T>[,,]>
 {
 	public System
-	(Mathematics.Geometry.Stereometry.Point.Generic.Any<System::Int32> size
+	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size
 	) : base
 	(
 		new Scalar::Lazy<Nullable::Any<T>[,,]>(

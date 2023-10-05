@@ -1,7 +1,7 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.Member.Translation;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Enumerable = Tumbleweed.Enumerable;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Member.Vertex.Translation;
 

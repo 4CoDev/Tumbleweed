@@ -1,7 +1,7 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Real.Arithmetic.Half.Of;
+using Tumbleweed.Mathematics.Arithmetic.Vector.Spatial.Real.Half.Of;
 using Tumbleweed.Mathematics.Number.Real;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Cuboid.Mesh.With.Origin.Center.Size.Definition;
 

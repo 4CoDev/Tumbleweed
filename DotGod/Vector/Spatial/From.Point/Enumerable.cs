@@ -1,9 +1,9 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
 using Tumbleweed.Mathematics.Number.Real;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Enumerable = Tumbleweed.Enumerable;
 using Godot = Godot;
 using SCG = System.Collections.Generic;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using Real = Tumbleweed.Mathematics.Number.Real;
 using Vector = DotGod.Vector.Spatial;
 

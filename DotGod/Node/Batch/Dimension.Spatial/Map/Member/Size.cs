@@ -1,6 +1,5 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic.Function.Result;
-
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic.Function.Result;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Map.Member;
 

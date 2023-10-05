@@ -1,5 +1,5 @@
 using Scalar = Tumbleweed.Scalar.Immutable;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+
 using System = System;
 
 namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source.Filler.Null.Pointer.With.Size;
@@ -7,7 +7,7 @@ namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source.Filler.Nu
 public sealed class System<T> : Scalar::Envelope<T[,,]>
 {
 	public System
-	(Mathematics.Geometry.Stereometry.Point.Generic.Any<System::Int32> size
+	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size
 	) : base
 	(
 		new Scalar::Function.Result.Actual<T[,,]>(

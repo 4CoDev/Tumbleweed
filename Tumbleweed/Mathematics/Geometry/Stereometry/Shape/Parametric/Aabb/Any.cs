@@ -1,5 +1,4 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
-using Point = Tumbleweed.Mathematics.Geometry.Stereometry.Point;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 

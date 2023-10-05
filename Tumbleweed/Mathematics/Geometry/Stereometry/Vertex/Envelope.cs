@@ -1,4 +1,4 @@
-using Tumbleweed.Mathematics.Geometry.Stereometry.Point.Generic;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
