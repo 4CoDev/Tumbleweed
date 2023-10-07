@@ -1,18 +1,17 @@
 using Tumbleweed.Enumerable;
 
-// ReSharper disable once CheckNamespace
-namespace Tumbleweed.Subroutine.Procedure.Nullary.Of;
+namespace Tumbleweed.Subroutine.Procedure.Nullary;
 
-public sealed class Procedures : Nullary.Envelope
+public sealed class Multicast : Nullary.Envelope
 {
-	public Procedures(params Nullary.Any[] procedures) : this
+	public Multicast(params Nullary.Any[] procedures) : this
 	(
 		new Concatenated<Any>(procedures)
 	)
 	{
 	}
 	
-	public Procedures(IEnumerable<Nullary.Any> actions) : base
+	public Multicast(IEnumerable<Nullary.Any> actions) : base
 	(
 		new From.System(
 			() => Result(actions))

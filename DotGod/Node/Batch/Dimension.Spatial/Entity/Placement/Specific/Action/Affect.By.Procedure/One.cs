@@ -1,3 +1,4 @@
+using Tumbleweed.Subroutine.Procedure.Nullary;
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 using Batch = DotGod.Node.Batch.Dimension.Spatial;
@@ -29,7 +30,7 @@ public sealed class One : Procedure::Envelope
 		Procedure::Any procedure
 	) : base
 	(
-		new Procedure::Of.Procedures(
+		new Multicast(
 			new Action::Remove(batch, entity),
 			procedure,
 			new Action::Place(batch, entity))
@@ -43,7 +44,7 @@ public sealed class One : Procedure::Envelope
 		Procedure::Any procedure
 	) : base
 	(
-		new Procedure::Of.Procedures(
+		new Multicast(
 			new Placement::Member.Remove(placement),
 			procedure,
 			new Placement::Member.Place(placement))

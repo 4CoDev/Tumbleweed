@@ -13,7 +13,7 @@ public sealed class Listeners : Procedure::Envelope
 		SCG::IDictionary<System::Object, Procedure::Any> listeners
 	) : base
 	(
-		new Procedure::Of.Procedures(
+		new Procedure.Multicast(
 			new ValuesOfDictionary<Procedure::Any>(listeners))
 	)
 	{
