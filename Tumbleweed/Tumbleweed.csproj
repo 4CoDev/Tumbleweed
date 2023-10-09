@@ -29,6 +29,7 @@
       <Folder Include="Mathematics\Comparison\Numerical\Real\Is.Greater.Than\Strictly\" />
       <Folder Include="Mathematics\Comparison\Vector\Planar\" />
       <Folder Include="Mathematics\Geometry\Planimetry\" />
+      <Folder Include="Mathematics\Geometry\Stereometry\Shape\Instance\" />
       <Folder Include="Mathematics\Vector\Spatial\Integer\" />
       <Folder Include="Scalar\" />
     </ItemGroup>
