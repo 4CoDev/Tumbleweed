@@ -19,6 +19,12 @@
       <Folder Include="Engine\Iteration\Physical\" />
       <Folder Include="Mathematics\" />
       <Folder Include="Node\Batch\Dimension.Spatial\Measurement\" />
-      <Folder Include="Node\Dimension\" />
+      <Folder Include="Node\Convas.Item\Control\" />
+      <Folder Include="Node\Convas.Item\Node2D\" />
+      <Folder Include="Node\Generic\" />
+      <Folder Include="Node\Member\" />
+      <Folder Include="Node\Node3D\CollisionShape3D\" />
+      <Folder Include="Node\Node3D\Member\Visibility\" />
+      <Folder Include="Node\Node3D\VisualInstance3D\GeometryInstance3D\MeshInstance3D.Member\" />
     </ItemGroup>
 </Project>
