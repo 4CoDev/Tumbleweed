@@ -17,7 +17,7 @@ public sealed class Node : Envelope<Godot.Node3D>
 	private static Godot.Node3D Function()
 	{
 		var space = new Godot.Node3D { Name = "Space" };
-		var mesh = new MeshInstance3D { Name = "Mesh" };
+		var mesh = new Godot.MeshInstance3D { Name = "Mesh" };
 		new Actual(space).Add(mesh);
 		return space;
 	}
