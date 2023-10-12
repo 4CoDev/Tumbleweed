@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cb4b5b4-4692-4aeb-9a1f-e9b2e1ebec91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Aabb/Transformed/Actual.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Aabb/Untransformed/Actual.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tumbleweed/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/DotGod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/DotGod.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Batch/Dimension.Spatial/Measurement/Unmeasured/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Abstract.Godot/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Abstract.Godot/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Mesh.Convex/Aabb/Untransformed/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Mesh.Convex/Aabb/Untransformed/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Mesh.Convex/As.Convex/Transformed/Godot/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Mesh.Convex/As.Convex/Transformed/Godot/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Mesh.Convex/As.Convex/Transformed/Tumbleweed/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Mesh.Convex/As.Convex/Transformed/Tumbleweed/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Mesh.Convex/As.Convex/Untransformed/Godot/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Mesh.Convex/As.Convex/Untransformed/Godot/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Mesh.Convex/As.Convex/Untransformed/Tumbleweed/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Mesh.Convex/As.Convex/Untransformed/Tumbleweed/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Parametric.Cuboid/Mesh.Tumbleweed/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Mesh.Tumbleweed/Actual.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Parametric.Cuboid/Size/Tumbleweed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Size/Tumbleweed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D/Shape/Specific.Origin/Parametric.Cuboid/Whole.Godot/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Whole.Godot/Actual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Whole.Godot/Actual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/Node/Node3D/CollisionShape3D.Shape/Specific.Origin/Parametric.Cuboid/Whole.Godot/Actual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/bin/Release/net7.0/DotGod.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/bin/Release/net7.0/DotGod.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/bin/Release/net7.0/DotGod.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/bin/Release/net7.0/DotGod.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/obj/Release/net7.0/DotGod.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/obj/Release/net7.0/DotGod.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DotGod/obj/Release/net7.0/DotGod.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DotGod/obj/Release/net7.0/DotGod.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
