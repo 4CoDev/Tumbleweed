@@ -1,4 +1,4 @@
-using Tumbleweed.Mathematics.Boolean.From.Enumerable.FromSystem;
+using Tumbleweed.Mathematics.Boolean.From.Enumerable.At.Index;
 using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Of;
@@ -22,7 +22,7 @@ public sealed class Positive : Boolean.Envelope
 	
 	public Positive(Any<System::Single> single) : base
 	(
-		new BooleanAtIndex(
+		new Boolean.From.Enumerable.At.Index.System(
 			new Bits(single),
 			30)
 	)
