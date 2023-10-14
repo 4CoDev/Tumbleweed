@@ -2,7 +2,7 @@ using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.From.System;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using System = System;
-using Boolean = Tumbleweed.Boolean;
+
 
 namespace Tumbleweed.Scalar.Immutable;
 

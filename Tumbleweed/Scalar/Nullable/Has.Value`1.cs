@@ -1,5 +1,6 @@
 using Tumbleweed.Mathematics.Boolean;
-using Boolean = Tumbleweed.Boolean;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
+
 using Nullable = Tumbleweed.Scalar.Nullable;
 using System = System;
 
@@ -13,7 +14,7 @@ public sealed class Value : Envelope
 		Nullable::Any<System::Object> nullable
 	) : base
 	(
-		new Boolean::Function.Result(
+		new Actual(
 			() => nullable.HasValue)
 	)
 	{

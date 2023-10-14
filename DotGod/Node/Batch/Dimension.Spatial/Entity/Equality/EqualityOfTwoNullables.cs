@@ -1,3 +1,4 @@
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Scalar.Nullable;
 using Tumbleweed.Scalar.Nullable.As;
 using Tumbleweed.Scalar.Nullable.From.System;
@@ -48,7 +49,7 @@ public sealed class EqualityOfTwoNullables : Tumbleweed.Mathematics.Boolean.Enve
 		Any<Any> second
 	) : base
 	(
-		new Tumbleweed.Boolean.Function.Result(
+		new Actual(
 			() => Function(first, second))
 	)
 	{

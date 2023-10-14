@@ -1,7 +1,8 @@
+using Tumbleweed.Mathematics.Boolean.System.Function.Result;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
-using Boolean = Tumbleweed.Boolean;
+
 using System = System;
 using Scalar = Tumbleweed.Scalar;
 
@@ -30,7 +31,7 @@ public sealed class One : Boolean.Envelope
 	) : base
 	(
 		new Boolean.From.System.One(
-			new Boolean::System.Function.Result(
+			new Actual(
 				() => second.Value < first.Value))
 	)
 	{

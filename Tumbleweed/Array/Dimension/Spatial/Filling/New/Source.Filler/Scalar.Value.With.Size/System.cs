@@ -1,3 +1,4 @@
+using Tumbleweed.Array.Dimension.Multi;
 using Array = Tumbleweed.Array;
 
 using System = System;
@@ -7,7 +8,7 @@ using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
 namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Source.Filler.Scalar.Value.With.Size;
 
-public sealed class System<T> : Array::Envelope<T>
+public sealed class System<T> : Envelope<T>
 {
 	public System
 	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size,

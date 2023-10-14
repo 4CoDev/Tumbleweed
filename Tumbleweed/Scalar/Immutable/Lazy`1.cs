@@ -1,4 +1,3 @@
-using Tumbleweed.Boolean;
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.Literal;
 using Tumbleweed.Object.Hash;

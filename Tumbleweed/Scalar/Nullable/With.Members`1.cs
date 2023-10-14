@@ -4,7 +4,7 @@ using Tumbleweed.Object.Equality.ByValues;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
 using Nullable = Tumbleweed.Scalar.Nullable;
-using Boolean = Tumbleweed.Boolean;
+
 using Immutable = Tumbleweed.Scalar.Immutable;
 using System = System;
 

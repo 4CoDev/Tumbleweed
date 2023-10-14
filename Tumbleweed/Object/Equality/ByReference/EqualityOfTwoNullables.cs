@@ -1,7 +1,7 @@
-using Tumbleweed.Boolean;
-using Tumbleweed.Boolean.Function;
+
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.From.System;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 
 namespace Tumbleweed.Object.Equality.ByReference;
 
@@ -13,7 +13,7 @@ public sealed class EqualityOfTwoNullables : Envelope
 		System.Object? second
 	) : base
 	(
-		new Result(
+		new Actual(
 			() => new One(
 				ReferenceEquals(first, second)))
 	)

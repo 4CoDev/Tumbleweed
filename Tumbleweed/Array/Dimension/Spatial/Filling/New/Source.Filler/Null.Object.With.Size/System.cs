@@ -1,3 +1,4 @@
+using Tumbleweed.Array.Dimension.Multi;
 using Array = Tumbleweed.Array;
 using Nullable = Tumbleweed.Scalar.Nullable;
 
@@ -6,7 +7,7 @@ using SystemSource = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Sourc
 
 namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Source.Filler.Null.Object.With.Size;
 
-public sealed class System<T> : Array::Envelope<Nullable::Any<T>>
+public sealed class System<T> : Envelope<Nullable::Any<T>>
 {
 	public System
 	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size

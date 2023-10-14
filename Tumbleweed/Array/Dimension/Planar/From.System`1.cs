@@ -1,3 +1,4 @@
+using Tumbleweed.Array.Dimension.Multi;
 using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
@@ -10,7 +11,7 @@ using Natural = Tumbleweed.Mathematics.Number.Natural;
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Array.Planar.From;
 
-public sealed class System<T> : Array::Any<T>
+public sealed class System<T> : Any<T>
 {
 	public System(T[,] array) : this
 	(

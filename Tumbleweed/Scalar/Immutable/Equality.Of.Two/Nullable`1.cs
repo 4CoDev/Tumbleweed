@@ -1,6 +1,7 @@
 using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Object.Equality.ByReference;
-using Boolean = Tumbleweed.Boolean;
+
 using System = System;
 using Nullable = Tumbleweed.Scalar.Nullable;
 using Immutable = Tumbleweed.Scalar.Immutable;
@@ -51,7 +52,7 @@ public sealed class Nullable<T> : Envelope
 		Nullable::Any<Immutable::Any<T>> second
 	) : base
 	(
-		new Boolean::Function.Result(
+		new Actual(
 			() => Function(first, second))
 	)
 	{

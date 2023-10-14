@@ -1,6 +1,6 @@
-using Tumbleweed.Boolean;
-using Tumbleweed.Boolean.Function;
+
 using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Object.Equality.ByValues;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 
@@ -26,7 +26,7 @@ public sealed class Two<TResult> : Envelope
 		Any<TResult> second
 	) : base
 	(
-		new Result(
+		new Actual(
 			() => new EqualityOfTwoNullables(
 				first.Result,
 				second.Result))

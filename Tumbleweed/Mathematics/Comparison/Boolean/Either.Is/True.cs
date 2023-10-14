@@ -1,6 +1,7 @@
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.From.System;
-using Boolean = Tumbleweed.Boolean;
+using Tumbleweed.Mathematics.Boolean.System.Function.Result;
+
 
 namespace Tumbleweed.Mathematics.Comparison.Boolean.Either.Is;
 
@@ -13,7 +14,7 @@ public sealed class True : Envelope
 	) : base
 	(
 		new One(
-			new Boolean::System.Function.Result(
+			new Actual(
 				() => first.State || second.State))
 	)
 	{

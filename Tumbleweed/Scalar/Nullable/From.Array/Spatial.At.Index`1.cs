@@ -11,8 +11,7 @@ namespace Tumbleweed.Scalar.Nullable.From.Array.Spatial.At;
 public sealed class Index<T> : Nullable::Envelope<T>
 {
 	public Index
-	(
-		Array::Any<Nullable::Any<T>> array, Mathematics.Vector.Spatial.Generic.Any<Any> indices
+	(Tumbleweed.Array.Dimension.Multi.Any<Nullable::Any<T>> array, Mathematics.Vector.Spatial.Generic.Any<Any> indices
 	) : base
 	(
 		new Nullable::Scalar.Value.One<T>(

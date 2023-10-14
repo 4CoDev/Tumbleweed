@@ -5,7 +5,7 @@ namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured.Array.Item.
 public sealed class One : Envelope
 {
 	public One
-	(Tumbleweed.Array.Any<Any> array, Any<Tumbleweed.Mathematics.Number.Natural.Any> indices
+	(Tumbleweed.Array.Dimension.Multi.Any<Any> array, Any<Tumbleweed.Mathematics.Number.Natural.Any> indices
 	) : base
 	(
 		new Scalar.Value.One(

@@ -11,8 +11,7 @@ namespace Tumbleweed.Scalar.Immutable.From.Array.Spatial.At;
 public sealed class Index<T> : Immutable::Envelope<T>
 {
 	public Index
-	(
-		Array::Any<T> array, Mathematics.Vector.Spatial.Generic.Any<Any> index
+	(Tumbleweed.Array.Dimension.Multi.Any<T> array, Mathematics.Vector.Spatial.Generic.Any<Any> index
 	) : base
 	(
 		new Immutable::From.Array.At.Indices<T>(

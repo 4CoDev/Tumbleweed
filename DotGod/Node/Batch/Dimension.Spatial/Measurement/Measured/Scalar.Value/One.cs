@@ -1,4 +1,5 @@
 using Tumbleweed.Array;
+using Tumbleweed.Array.Dimension.Multi;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Scalar.Value;
 

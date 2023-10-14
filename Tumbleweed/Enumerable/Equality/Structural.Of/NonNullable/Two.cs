@@ -1,7 +1,8 @@
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.From.System;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Scalar.Immutable;
-using Boolean = Tumbleweed.Boolean;
+
 using System = System;
 using Object = Tumbleweed.Object;
 using Scalar = Tumbleweed.Scalar;
@@ -30,7 +31,7 @@ public sealed class Two : Mathematics.Boolean.Envelope
 		Any<SC::IEnumerable> second
 	) : base
 	(
-		new Boolean::Function.Result(
+		new Actual(
 			() => Function(first.Value, second.Value))
 	)
 	{

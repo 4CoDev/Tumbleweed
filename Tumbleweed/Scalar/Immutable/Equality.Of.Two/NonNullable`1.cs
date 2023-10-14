@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Scalar.Immutable.Casted.Convertee;
-using Boolean = Tumbleweed.Boolean;
+
 using System = System;
 using Immutable = Tumbleweed.Scalar.Immutable;
 using Function = Tumbleweed.Subroutine.Function.Nullary;

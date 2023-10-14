@@ -17,7 +17,7 @@ public abstract class Envelope : Any
 	public override System::String? ToString() =>
 		batch.ToString();
 
-	public Tumbleweed.Array.Any<Any<Any>> Subbatches =>
+	public Tumbleweed.Array.Dimension.Multi.Any<Any<Any>> Subbatches =>
 		batch.Subbatches;
 	
 	public ICollection<Entity.Any> Entities =>

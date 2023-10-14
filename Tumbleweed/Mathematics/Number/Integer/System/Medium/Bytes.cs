@@ -1,4 +1,4 @@
-using Tumbleweed.Byte.FromSystem;
+using Tumbleweed.Byte.From.System;
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
@@ -17,7 +17,7 @@ public sealed class Bytes : Enumerable.Envelope<IEnumerable<Boolean.Any>>
 	
 	public Bytes(Any<System::Int32> integer) : base
 	(
-		new BytesFromSystem(
+		new Multiple(
 			new Result<System::Byte>(
 				() => BitConverter.GetBytes(integer.Value)))
 	)

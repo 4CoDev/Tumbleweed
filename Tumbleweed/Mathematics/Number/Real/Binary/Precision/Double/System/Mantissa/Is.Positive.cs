@@ -3,7 +3,7 @@ using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
-using Boolean = Tumbleweed.Boolean;
+
 using System = System;
 using Scalar = Tumbleweed.Scalar;
 using Double = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;

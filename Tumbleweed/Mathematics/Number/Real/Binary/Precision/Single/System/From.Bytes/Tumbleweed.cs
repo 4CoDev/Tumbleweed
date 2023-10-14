@@ -1,4 +1,4 @@
-using Tumbleweed.Byte.ToSystem;
+using Tumbleweed.Byte.System.From.Boolean.Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.With.Length.Statement;
 using Tumbleweed.Scalar.Immutable;
 using System = System;
@@ -11,7 +11,7 @@ public sealed class Tumbleweed : Envelope<System::Single>
 	(
 		new System(
 			new System<System::Byte>(
-				new BytesFromChunkedBits(bytes),
+				new Chunked(bytes),
 				4))
 	)
 	{

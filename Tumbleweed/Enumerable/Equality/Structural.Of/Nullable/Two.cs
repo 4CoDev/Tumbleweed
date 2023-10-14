@@ -1,9 +1,10 @@
 using Tumbleweed.Mathematics.Boolean;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Mathematics.Boolean.Literal;
 using Tumbleweed.Scalar.Nullable;
 using Tumbleweed.Scalar.Nullable.As;
 using Tumbleweed.Scalar.Nullable.From.System;
-using Boolean = Tumbleweed.Boolean;
+
 using System = System;
 using SC = System.Collections;
 
@@ -53,7 +54,7 @@ public sealed class Two : Mathematics.Boolean.Envelope
 		Any<SC::IEnumerable> second
 	) : base
 	(
-		new Boolean::Function.Result(
+		new Actual(
 			() => Function(first, second))
 	)
 	{

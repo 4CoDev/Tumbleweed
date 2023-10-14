@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.Literal;
 using Nullable = Tumbleweed.Scalar.Nullable;
-using Boolean = Tumbleweed.Boolean;
+
 
 namespace Tumbleweed.Scalar.Nullable;
 

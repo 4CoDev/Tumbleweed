@@ -1,4 +1,5 @@
 using Tumbleweed.Byte;
+using Tumbleweed.Byte.Multiple.From.Bit.Enumerable;
 using Tumbleweed.Enumerable.With.Length.Statement;
 using Tumbleweed.Scalar.Immutable;
 using TW = Tumbleweed;
@@ -11,7 +12,7 @@ public sealed class New : Envelope<global::System.Int32>
 	public New(IEnumerable<Boolean.Any> bits) : base
 	(
 		new Mathematics.Number.Integer.System.Medium.From.Bytes.Tumbleweed(
-			new BytesFromBits(
+			new Linear(
 				new System<Boolean.Any>(bits, 32)))
 	)
 	{

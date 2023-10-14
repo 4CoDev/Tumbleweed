@@ -1,4 +1,3 @@
-using Tumbleweed.Boolean;
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Scalar.Immutable;
 using System = System;

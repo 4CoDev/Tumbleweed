@@ -1,4 +1,4 @@
-using Tumbleweed.Boolean.Function;
+using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 
@@ -29,7 +29,7 @@ public sealed class System : Envelope
 	
 	public System(ICollection<Any> bits, Any<Int32> index) : base
 	(
-		new Result(
+		new Actual(
 			() => bits.ElementAt(index.Value))
 	)
 	{
