@@ -19,7 +19,6 @@
       <Folder Include="Array\Dimension\Spatial\System\Filling\New\Source.Filler\Function.Result.With.Size\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Action.Filler\" />
       <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Source.Filler\Function.Result\" />
-      <Folder Include="Byte\One.From.Bit\Enumerable\" />
       <Folder Include="Mathematics\Arithmetic\Numerical\Natural\" />
       <Folder Include="Mathematics\Arithmetic\Vector\Planar\" />
       <Folder Include="Mathematics\Arithmetic\Vector\Spatial\Real\" />

@@ -1,10 +1,9 @@
-using Tumbleweed.Byte.From.System;
 using Tumbleweed.Enumerable.Function;
+using Tumbleweed.Information.Measurement.Byte.From.System;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
 
 using System = System;
-using Byte = Tumbleweed.Byte;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;
 

@@ -1,7 +1,7 @@
-using Tumbleweed.Byte.One.From.Bit.Collection;
 using Tumbleweed.Enumerable;
+using Tumbleweed.Information.Measurement.Byte.One.From.Bit.Collection;
 
-namespace Tumbleweed.Byte.Multiple.From.Bit.Enumerable;
+namespace Tumbleweed.Information.Measurement.Byte.Multiple.From.Bit.Enumerable;
 
 public sealed class Chunked
 	: Envelope<IEnumerable<Mathematics.Boolean.Any>>

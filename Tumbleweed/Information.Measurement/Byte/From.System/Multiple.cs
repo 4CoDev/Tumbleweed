@@ -2,7 +2,7 @@ using Tumbleweed.Enumerable;
 using Tumbleweed.Scalar.Immutable;
 using Enumerable = Tumbleweed.Enumerable;
 
-namespace Tumbleweed.Byte.From.System;
+namespace Tumbleweed.Information.Measurement.Byte.From.System;
 
 public sealed class Multiple : Enumerable.Envelope<IEnumerable<Mathematics.Boolean.Any>>
 {

@@ -3,7 +3,7 @@ using Tumbleweed.Enumerable.Item.Every.Scalar;
 using Tumbleweed.Scalar.Immutable;
 using System = System;
 
-namespace Tumbleweed.Byte.System.From.Boolean.Tumbleweed.Enumerable;
+namespace Tumbleweed.Information.Measurement.Byte.System.From.Boolean.Tumbleweed.Enumerable;
 
 public sealed class Chunked : global::Tumbleweed.Enumerable.Envelope<System::Byte>
 {

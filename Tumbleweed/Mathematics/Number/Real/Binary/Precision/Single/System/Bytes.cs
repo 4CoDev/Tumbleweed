@@ -1,5 +1,5 @@
-using Tumbleweed.Byte.From.System;
 using Tumbleweed.Enumerable.Function;
+using Tumbleweed.Information.Measurement.Byte.From.System;
 using Tumbleweed.Scalar.Immutable;
 using System = System;
 

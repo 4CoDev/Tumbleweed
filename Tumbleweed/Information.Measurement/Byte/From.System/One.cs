@@ -2,7 +2,7 @@ using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Mathematics.Boolean.FromByte.FromSystem;
 using Tumbleweed.Scalar.Immutable;
 
-namespace Tumbleweed.Byte.From.System;
+namespace Tumbleweed.Information.Measurement.Byte.From.System;
 
 public sealed class One : Enumerable.Envelope<Mathematics.Boolean.Any>
 {

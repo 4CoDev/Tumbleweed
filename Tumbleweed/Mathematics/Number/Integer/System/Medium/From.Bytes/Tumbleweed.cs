@@ -1,9 +1,7 @@
-using Tumbleweed.Byte.System.From.Boolean.Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.With.Length.Statement;
+using Tumbleweed.Information.Measurement.Byte.System.From.Boolean.Tumbleweed.Enumerable;
 using Tumbleweed.Scalar.Immutable;
 using System = System;
-
-using Byte = Tumbleweed.Byte;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Bytes;
 

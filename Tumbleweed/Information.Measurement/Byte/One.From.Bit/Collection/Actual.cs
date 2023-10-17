@@ -1,7 +1,7 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Function;
 
-namespace Tumbleweed.Byte.One.From.Bit.Collection;
+namespace Tumbleweed.Information.Measurement.Byte.One.From.Bit.Collection;
 
 public sealed class Actual : Envelope<Mathematics.Boolean.Any>
 {

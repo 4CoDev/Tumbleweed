@@ -1,7 +1,7 @@
 using Tumbleweed.Scalar.Immutable;
 using System = System;
 
-namespace Tumbleweed.Byte.System.From.Boolean.System;
+namespace Tumbleweed.Information.Measurement.Byte.System.From.Boolean.System;
 
 public sealed class Collection : Any<global::System.Byte>
 {

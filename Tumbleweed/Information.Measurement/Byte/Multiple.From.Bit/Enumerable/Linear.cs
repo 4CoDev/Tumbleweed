@@ -2,7 +2,7 @@ using Tumbleweed.Enumerable;
 using Tumbleweed.Enumerable.Chunked.By.Length;
 using Tumbleweed.Mathematics.Boolean.FromByte.FromSystem;
 
-namespace Tumbleweed.Byte.Multiple.From.Bit.Enumerable;
+namespace Tumbleweed.Information.Measurement.Byte.Multiple.From.Bit.Enumerable;
 
 public sealed class Linear : Envelope<IEnumerable<Mathematics.Boolean.Any>>
 {
