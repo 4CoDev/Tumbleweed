@@ -1,10 +1,12 @@
 using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.With;
+using Boolean = Tumbleweed.Mathematics.Boolean;
+using Collection = Tumbleweed.Collection;
 
 namespace Tumbleweed.Mathematics.Boolean.From.Enumerable.At.Index;
 
-public sealed class System : Envelope
+public sealed class System : Boolean::Envelope
 {
 	public System(IEnumerable<Any> bits, Int32 index) : this
 	(
@@ -29,8 +31,10 @@ public sealed class System : Envelope
 	
 	public System(ICollection<Any> bits, Any<Int32> index) : base
 	(
-		new Actual(
-			() => bits.ElementAt(index.Value))
+		new Boolean::Scalar.Value.Actual(
+			new Collection::Item.At.Index.System.One
+				<Boolean::Any>
+				(bits, index))
 	)
 	{
 	}

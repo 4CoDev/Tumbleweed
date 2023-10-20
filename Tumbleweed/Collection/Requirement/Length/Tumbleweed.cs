@@ -1,18 +1,17 @@
 using Tumbleweed.Mathematics.Number.Integer;
 using Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Tumbleweed;
-using Tumbleweed.Mathematics.Number.Integer;
 
-namespace Tumbleweed.Collection;
+namespace Tumbleweed.Collection.Requirement.Length;
 
-public sealed class CollectionWithSize<T> : CollectionEnvelope<T>
+public sealed class Tumbleweed<T> : Envelope<T>
 {
-	public CollectionWithSize
+	public Tumbleweed
 	(
 		ICollection<T> collection,
 		Any size
 	) : base
 	(
-		new FromSystem.CollectionWithSize<T>(
+		new System<T>(
 			collection,
 			new One(size))
 	)

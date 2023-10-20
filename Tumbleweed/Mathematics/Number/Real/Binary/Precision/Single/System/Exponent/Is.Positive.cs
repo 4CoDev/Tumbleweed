@@ -1,3 +1,5 @@
+using Godot;
+using Tumbleweed.Mathematics.Boolean.From.Enumerable;
 using Tumbleweed.Mathematics.Boolean.From.Enumerable.At.Index;
 using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System;
 using Tumbleweed.Scalar.Immutable;
@@ -22,9 +24,8 @@ public sealed class Positive : Boolean.Envelope
 	
 	public Positive(Any<System::Single> single) : base
 	(
-		new Boolean.From.Enumerable.At.Index.System(
-			new Bits(single),
-			30)
+			new Last(
+				new Bits(single))
 	)
 	{
 	}

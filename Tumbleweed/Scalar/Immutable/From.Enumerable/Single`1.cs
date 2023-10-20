@@ -12,7 +12,7 @@ public sealed class Single<T> : Immutable::Envelope<T>
 	) : base
 	(
 		new Immutable::From.Enumerable.At.Index.System<T>(
-			new Enumerable::With.Length.Statement.System<T>(
+			new Enumerable::Requirement.Length.System<T>(
 				enumerable,
 				1),
 			0)

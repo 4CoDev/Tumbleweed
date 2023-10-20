@@ -4,7 +4,7 @@ using Tumbleweed.Scalar.Immutable.Function.Result;
 
 namespace Tumbleweed.Collection.Number.Integer.FromSystem;
 
-public sealed class FlatIndexFromIndices : Envelope<Int32>
+public sealed class FlatIndexFromIndices : Tumbleweed.Scalar.Immutable.Envelope<Int32>
 {
 	public FlatIndexFromIndices
 	(

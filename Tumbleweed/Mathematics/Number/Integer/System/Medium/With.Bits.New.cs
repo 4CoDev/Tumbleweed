@@ -1,4 +1,4 @@
-using Tumbleweed.Enumerable.With.Length.Statement;
+using Tumbleweed.Enumerable.Requirement.Length;
 using Tumbleweed.Information.Measurement.Byte.Multiple.From.Bit.Enumerable;
 using Tumbleweed.Scalar.Immutable;
 using TW = Tumbleweed;

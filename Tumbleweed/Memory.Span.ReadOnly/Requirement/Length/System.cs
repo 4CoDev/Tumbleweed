@@ -1,13 +1,11 @@
-using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
-// ReSharper disable once CheckNamespace
-namespace Tumbleweed.Memory.Span.ReadOnly.With.Size;
+namespace Tumbleweed.Memory.Span.ReadOnly.Requirement.Length;
 
-public sealed class Statement<T> : ReadOnlySpan.Envelope<T>
+public sealed class System<T> : ReadOnlySpan.Envelope<T>
 {
-	public Statement
+	public System
 	(
 		ReadOnlySpan.Any<T> span,
 		Int32 size
@@ -19,9 +17,10 @@ public sealed class Statement<T> : ReadOnlySpan.Envelope<T>
 	{
 	}
 	
-	public Statement
+	public System
 	(
-		ReadOnlySpan.Any<T> span, Scalar.Immutable.Any<Int32> size
+		ReadOnlySpan.Any<T> span,
+		Scalar.Immutable.Any<Int32> size
 	) : base
 	(
 		new ReadOnlySpan.Function.Result<T>(

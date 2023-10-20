@@ -1,9 +1,7 @@
 using Tumbleweed.Mathematics.Number.Integer;
 using Enumerable = Tumbleweed.Enumerable;
-using Collection = Tumbleweed.Collection;
-using Integer = Tumbleweed.Mathematics.Number.Integer;
 
-namespace Tumbleweed.Enumerable.With.Length.Statement;
+namespace Tumbleweed.Enumerable.Requirement.Length;
 
 public sealed class Tumbleweed<T> : Enumerable::Envelope<T>
 {
@@ -13,7 +11,7 @@ public sealed class Tumbleweed<T> : Enumerable::Envelope<T>
 		Any length
 	) : base
 	(
-		new Collection::CollectionWithSize<T>(
+		new Collection.Requirement.Length.Tumbleweed<T>(
 			new List<T>(enumerable),
 			length)
 	)

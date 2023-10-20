@@ -1,5 +1,6 @@
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Enumerable.Item.Every.Scalar;
+using Tumbleweed.Memory.Span.ReadOnly.Requirement.Length;
 using Tumbleweed.Scalar.Immutable.Function.Result;
 using System = System;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
@@ -33,6 +34,6 @@ public sealed class System : global::Tumbleweed.Scalar.Immutable.Envelope<System
 	private static Int32 Function(ReadOnlySpan::Any<System::Byte> bytes) =>
 	(
 		BitConverter.ToInt32(
-			new ReadOnlySpan::With.Size.Statement<System::Byte>(bytes, 4).Value)
+			new System<System::Byte>(bytes, 4).Value)
 	);
 }

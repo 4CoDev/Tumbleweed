@@ -1,12 +1,9 @@
 using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
 using Tumbleweed.Scalar.Immutable.With;
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
-using Scalar = Tumbleweed.Scalar;
-using Collection = Tumbleweed.Collection;
 
-namespace Tumbleweed.Enumerable.With.Length.Statement;
+namespace Tumbleweed.Enumerable.Requirement.Length;
 
 public sealed class System<T> : Enumerable::Envelope<T>
 {
@@ -28,7 +25,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 		Any<System::Int32> length
 	) : base
 	(
-		new Collection::FromSystem.CollectionWithSize<T>(
+		new Collection.Requirement.Length.System<T>(
 			new List<T>(enumerable),
 			length)
 	)

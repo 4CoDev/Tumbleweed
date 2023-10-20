@@ -3,9 +3,9 @@ using System = System;
 
 namespace Tumbleweed.List;
 
-public abstract class ListEnvelope<T> : IList<T>
+public abstract class Envelope<T> : IList<T>
 {
-	protected ListEnvelope(IList<T> list) =>
+	protected Envelope(IList<T> list) =>
 		this.list = list;
 	
 	public IEnumerator<T> GetEnumerator() =>

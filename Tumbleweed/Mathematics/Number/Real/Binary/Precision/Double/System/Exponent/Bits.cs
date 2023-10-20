@@ -11,7 +11,7 @@ public sealed class Bits : Enumerable.Envelope<Boolean.Any>
 		new System<Boolean.Any>(
 			new System.Bits(@double),
 			52,
-			61)
+			62)
 	)
 	{
 	}

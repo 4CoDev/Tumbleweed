@@ -2,9 +2,9 @@ using System.Collections;
 
 namespace Tumbleweed.Collection;
 
-public abstract class CollectionEnvelope<T> : ICollection<T>
+public abstract class Envelope<T> : ICollection<T>
 {
-	protected CollectionEnvelope(ICollection<T> collection)
+	protected Envelope(ICollection<T> collection)
 	{
 		this.collection = collection;
 	}

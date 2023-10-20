@@ -1,13 +1,12 @@
 using System.Collections;
-using Tumbleweed.Scalar;
 using Tumbleweed.Scalar.Immutable;
 using System = System;
 
-namespace Tumbleweed.List;
+namespace Tumbleweed.List.Scalar.Value;
 
-public sealed class ListOfScalar<T> : IList<T>
+public sealed class Actual<T> : IList<T>
 {
-	public ListOfScalar(Any<IList<T>> any) =>
+	public Actual(Any<IList<T>> any) =>
 		this.any = any;
 	
 	public IEnumerator<T> GetEnumerator() =>

@@ -1,16 +1,17 @@
 using Tumbleweed.Collection;
+using Tumbleweed.Collection.Function.Result;
 using System = System;
 
 namespace Tumbleweed.Dictionary;
 
-public sealed class ValuesOfDictionary<T> : CollectionEnvelope<T>
+public sealed class ValuesOfDictionary<T> : Envelope<T>
 {
 	public ValuesOfDictionary
 	(
 		IDictionary<System::Object, T> dictionary
 	) : base
 	(
-		new CollectionOfFunction<T>(
+		new Actual<T>(
 			() => dictionary.Values)
 	)
 	{

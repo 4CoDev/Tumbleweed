@@ -34,7 +34,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 		new Enumerable::Function.Result<T>(
 			() => enumerable
 				.Skip(from.Value)
-				.Take(to.Value - from.Value + 1))
+				.Take(to.Value - from.Value))
 	)
 	{
 	}

@@ -1,3 +1,4 @@
+using Tumbleweed.Collection.Without.Item;
 using Enumerable =  Tumbleweed.Enumerable;
 using Collection = Tumbleweed.Collection;
 
@@ -7,7 +8,7 @@ public sealed class Last<T> : Enumerable::Envelope<T>
 {
 	public Last(IEnumerable<T> enumerable) : base
 	(
-		new Collection::WithoutLastElement<T>(
+		new Collection.Without.Item.Last<T>(
 			new List<T>(enumerable))
 	)
 	{

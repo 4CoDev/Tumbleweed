@@ -1,4 +1,4 @@
-using Tumbleweed.Enumerable.With.Length.Statement;
+using Tumbleweed.Enumerable.Requirement.Length;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Polygon.Triangle.With.Vertex.Enumerable;
 
