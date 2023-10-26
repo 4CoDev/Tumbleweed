@@ -1,3 +1,4 @@
+using Godot;
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 

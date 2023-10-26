@@ -1,4 +1,7 @@
-using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured;
+using Vector = Tumbleweed.Mathematics.Vector.Spatial;
+using Number = Tumbleweed.Mathematics.Number;
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Subbatch.NonNullable.Collided.By.Point;
 
@@ -6,13 +9,13 @@ public sealed class One : Envelope
 {
 	public One
 	(
-		Any batch,
-		Any<Tumbleweed.Mathematics.Number.Real.Any> point
+		Batch::Any batch,
+		Vector::Generic.Any<Number::Real.Any> point
 	) : base
 	(
 		new At.Index.One(
 			batch,
-			new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.Collided.By.Point.Index.One(
+			new Aabb::Octant.Collided.By.Point.Index.One(
 				new Member.Aabb.One(batch),
 				point))
 	)

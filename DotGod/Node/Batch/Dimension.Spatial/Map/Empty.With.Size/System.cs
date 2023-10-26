@@ -1,5 +1,5 @@
-using Tumbleweed.Mathematics.Vector.Spatial.Generic;
-using Tumbleweed.Mathematics.Vector.Spatial.Real.Base.Binary.Precision.Single.From.System;
+using Godot;
+using Vector = Tumbleweed.Mathematics.Vector.Spatial;
 using Map = DotGod.Node.Batch.Dimension.Spatial.Map;
 
 using System = System;
@@ -10,11 +10,11 @@ public sealed class System : Map::Envelope
 {
 	public System
 	(
-		Any<System::Single> size
+		Vector::Generic.Any<System::Single> size
 	) : base
 	(
 		new Map::Empty.With.Size.Tumbleweed(
-			new One(size))
+			new Vector::Real.Base.Binary.Precision.Single.From.System.One(size))
 	)
 	{
 	}

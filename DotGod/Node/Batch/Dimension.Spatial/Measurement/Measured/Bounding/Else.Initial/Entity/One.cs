@@ -10,7 +10,7 @@ public sealed class One : Unmeasured.Envelope
 	(
 		new Else.Initial.Aabb.One(
 			initial,
-			new Spatial.Entity.Space.One(entity))
+			new Spatial.Entity.Aabb.One(entity))
 	)
 	{
 	}

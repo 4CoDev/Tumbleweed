@@ -18,6 +18,7 @@
       <Folder Include="Engine\Iteration\Graphical\" />
       <Folder Include="Engine\Iteration\Physical\" />
       <Folder Include="Mathematics\" />
+      <Folder Include="Node\Batch\Dimension.Spatial\Entity\Placement.On\Batch\" />
       <Folder Include="Node\Batch\Dimension.Spatial\Measurement\" />
       <Folder Include="Node\Convas.Item\Control\" />
       <Folder Include="Node\Convas.Item\Node2D\" />

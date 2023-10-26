@@ -10,7 +10,7 @@ public sealed class One : Measured.Envelope
 	(
 		new Aabb.One(
 			batch,
-			new Spatial.Entity.Space.One(entity))
+			new Spatial.Entity.Aabb.One(entity))
 	)
 	{
 	}

@@ -20,7 +20,7 @@ public sealed class One : Envelope
 		new Real::With.Members(
 			new Single.System.Mantissa.Integer(single),
 			new Base.As.Integer(),
-			new Single::Exponent.As.Integer(single))
+			new Single::Exponent.Integer(single))
 	)
 	{
 	}

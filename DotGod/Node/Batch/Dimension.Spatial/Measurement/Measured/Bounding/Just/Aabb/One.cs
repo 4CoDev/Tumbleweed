@@ -1,3 +1,5 @@
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
+
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Bounding.Just.Aabb;
 
 public sealed class One : Measured.Envelope
@@ -5,7 +7,7 @@ public sealed class One : Measured.Envelope
 	public One
 	(
 		Measured.Any batch,
-		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any aabb
+		Aabb::Any aabb
 	) : base
 	(
 		new Measured.Function.Result.One(
@@ -17,7 +19,7 @@ public sealed class One : Measured.Envelope
 	private static Measured.Any Function
 	(
 		Measured.Any batch,
-		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any space
+		Aabb::Any space
 	)
 	{
 		if (!new Measured.Is.Outside.Aabb.One(batch, space).State)

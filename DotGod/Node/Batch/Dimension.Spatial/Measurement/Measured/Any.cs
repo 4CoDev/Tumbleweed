@@ -1,8 +1,9 @@
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement;
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured;
 
 public interface Any : Batch::Unmeasured.Any
 {
-	Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
+	Aabb::Any Aabb { get; }
 }

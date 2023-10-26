@@ -1,4 +1,4 @@
-using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.A.Actual;
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Have.Subbatch.Collided.By.Space.Point.A;
 
@@ -7,12 +7,12 @@ public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
 	public One
 	(
 		Measured.Any batch,
-		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any space
+		Aabb::Any aabb
 	) : base
 	(
 		new Collided.By.Point.One(
 			batch,
-			new Actual(space))
+			new Aabb::Point.A.Actual(aabb))
 	)
 	{
 	}

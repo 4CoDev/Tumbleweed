@@ -19,5 +19,4 @@ public sealed class One : Scalar::Envelope<System::Single>
 	)
 	{
 	}
-
 }

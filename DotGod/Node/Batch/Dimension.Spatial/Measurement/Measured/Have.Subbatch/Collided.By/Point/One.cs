@@ -1,18 +1,22 @@
-using Tumbleweed.Mathematics.Vector.Spatial.Generic;
+using Godot;
+using Boolean = Tumbleweed.Mathematics.Boolean;
+using Vector = Tumbleweed.Mathematics.Vector.Spatial;
+using Number = Tumbleweed.Mathematics.Number;
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Have.Subbatch.Collided.By.Point;
 
-public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
+public sealed class One : Boolean::Envelope
 {
 	public One
 	(
 		Measured.Any batch,
-		Any<Tumbleweed.Mathematics.Number.Real.Any> point
+		Vector::Generic.Any<Number::Real.Any> point
 	) : base
 	(
 		new Unmeasured.Have.Subbatch.At.Index.One(
 			batch,
-			new Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Octant.Collided.By.Point.Index.One(
+			new Aabb::Octant.Collided.By.Point.Index.One(
 				new Measured.Member.Aabb.One(batch),
 				point))
 	)

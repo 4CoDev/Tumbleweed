@@ -23,7 +23,7 @@ public sealed class System : Envelope
 		Any<Int32> index
 	) : base
 	(
-		new Result(
+		new Function.Result.Actual(
 			() => decimals.ElementAt(index.Value))
 	)
 	{

@@ -1,23 +1,36 @@
+using Number = Tumbleweed.Mathematics.Number;
 using Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed;
 
 public sealed class Multiple : Envelope<Int32>
 {
-	public Multiple(params global::Tumbleweed.Mathematics.Number.Natural.Any[] numbers) : this
+	public Multiple
 	(
-		new Concatenated<global::Tumbleweed.Mathematics.Number.Natural.Any>(numbers)
+		params Number::Natural.Any[] numbers
+	) : this
+	(
+		new Concatenated<Number::Natural.Any>(numbers)
 	)
 	{
 	}
 
-	public Multiple(IEnumerable<global::Tumbleweed.Mathematics.Number.Natural.Any> numbers) : base
+	public Multiple
 	(
-		new Selected<global::Tumbleweed.Mathematics.Number.Natural.Any, Int32>(
+		IEnumerable<Number::Natural.Any> numbers
+	) : base
+	(
+		new Selected<Number::Natural.Any, Int32>(
 			numbers,
-			number => new global::Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed.One(number).Value)
+			Expression)
 	)
 	{
 	}
+
+	private static Int32 Expression
+	(
+		Number::Natural.Any number
+	) =>
+		new Number::Integer.System.Medium.From.Natural.Tumbleweed.One(number).Value;
 
 }

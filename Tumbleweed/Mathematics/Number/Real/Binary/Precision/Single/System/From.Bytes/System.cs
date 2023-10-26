@@ -1,4 +1,4 @@
-using Tumbleweed.Memory.Span.ReadOnly.Requirement.Length;
+using Tumbleweed.Memory.Span.ReadOnly;
 using Scalar = Tumbleweed.Scalar.Immutable;
 using Tumbleweed.Scalar.Immutable.Function.Result;
 using System = System;
@@ -29,6 +29,8 @@ public sealed class System : Scalar::Envelope<System::Single>
 	) =>
 	(
 		BitConverter.ToSingle(
-			new System<System::Byte>(bytes, 4).Value)
+			new ReadOnlySpan::Requirement.Length.System
+				<System::Byte>
+				(bytes, 4).Value)
 	);
 }
