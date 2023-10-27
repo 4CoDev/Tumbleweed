@@ -22,7 +22,7 @@ public sealed class One : Measured.Envelope
 		Aabb::Any space
 	)
 	{
-		if (!new Measured.Is.Outside.Aabb.One(batch, space).State)
+		if (new Measured.Is.Outside.Aabb.One(batch, space).State)
 			throw new InvalidOperationException(
 				"The space is not inside the batch.");
 		return new Else.Initial.Aabb.One(batch, space);

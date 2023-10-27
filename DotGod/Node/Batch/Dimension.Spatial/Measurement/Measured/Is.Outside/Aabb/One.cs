@@ -12,9 +12,8 @@ public sealed class One : Boolean::Envelope
 		Aabb::Any aabb
 	) : base
 	(
-		new Aabb::Is.Inside.Other.One(
-			aabb,
-			new Member.Aabb.One(batch))
+		new Boolean::Not(
+			new Batch::Is.Inside.Aabb.One(batch, aabb))
 	)
 	{
 	}

@@ -40,7 +40,7 @@ public sealed class One : Measured.Envelope
 		Aabb::Any aabb
 	)
 	{
-		if (!new Measured.Is.Outside.Aabb.One(subbatch, aabb).State)
+		if (new Measured.Is.Outside.Aabb.One(subbatch, aabb).State)
 			return initial;
 		return new Bounding.Else.Initial.Aabb.One(subbatch, aabb);
 	}
