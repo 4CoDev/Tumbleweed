@@ -1,24 +1,24 @@
 using Tumbleweed.Scalar.Immutable;
 using System = System;
 
-namespace Tumbleweed.String;
+namespace Tumbleweed.String.Scalar.Value;
 
-public sealed class ScalarValue : Any
+public sealed class Actual : Any
 {
-	public ScalarValue(Any<Any> scalar) =>
+	public Actual(Any<Any> scalar) =>
 		this.scalar = scalar;
 
 	public override System::Boolean Equals(System::Object? @object) =>
-		Value.Equals(@object);
+		AsSystem.Equals(@object);
 
 	public override Int32 GetHashCode() =>
-		Value.GetHashCode();
+		AsSystem.GetHashCode();
 
 	public override global::System.String ToString() =>
-		Value;
+		AsSystem;
 
-	public global::System.String Value =>
-		scalar.Value.Value;
+	public global::System.String AsSystem =>
+		scalar.Value.AsSystem;
 	
 	private readonly Any<Any> scalar;
 }

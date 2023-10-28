@@ -16,8 +16,8 @@ public abstract class Envelope : Any
 	public override global::System.String? ToString() =>
 		@string.ToString();
 
-	public global::System.String Value =>
-		@string.Value;
+	public global::System.String AsSystem =>
+		@string.AsSystem;
 	
 	private readonly Any @string;
 }

@@ -16,7 +16,7 @@ public sealed class One : Any
 	public One(Any<global::System.String> @string) =>
 		this.@string = @string;
 	
-	public global::System.String Value =>
+	public global::System.String AsSystem =>
 		@string.Value;
 	
 	private readonly Any<global::System.String> @string;

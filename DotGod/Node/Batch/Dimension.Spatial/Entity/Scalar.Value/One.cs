@@ -18,7 +18,7 @@ public sealed class One : Any
 		new HashFromObjects(Node, Mesh).Value;
 
 	public override System::String ToString() =>
-		new StringFromObjects(Node, Mesh).Value;
+		new StringFromObjects(Node, Mesh).AsSystem;
 
 	public Tumbleweed.Scalar.Nullable.Any<Godot.Node> Node =>
 		any.Value.Node;

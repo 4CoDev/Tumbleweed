@@ -23,7 +23,7 @@ public sealed class Equatable : SC::IEnumerable
 		new Object::Hash.HashFromObjects(enumerable).Value;
 
 	public override System::String ToString() =>
-		new Object::String.StringFromObjects(enumerable).Value;
+		new Object::String.StringFromObjects(enumerable).AsSystem;
 
 	public SC::IEnumerator GetEnumerator() =>
 		enumerable.GetEnumerator();

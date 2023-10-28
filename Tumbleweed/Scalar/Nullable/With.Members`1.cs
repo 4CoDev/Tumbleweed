@@ -46,7 +46,7 @@ public sealed class Members<T> : Nullable::Any<T>
 		new HashOfObject(Value!).Value;
 
 	public override System::String ToString() =>
-		new StringFromObject(Value!).Value.Value;
+		new StringFromObject(Value!).Value.AsSystem;
 
 	public T Value => value.Value;
 

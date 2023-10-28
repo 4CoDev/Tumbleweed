@@ -59,8 +59,10 @@ public sealed class One : Envelope
 		Any spare
 	) : base
 	(
-		new ScalarValue(
-			new Scalar.Nullable.Spare.When.Null<Any>(nullable, spare))
+		new String.Scalar.Value.Actual(
+			new Tumbleweed.Scalar.Nullable.Spare.When.Null<Any>(
+				nullable,
+				spare))
 	)
 	{
 	}

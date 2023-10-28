@@ -27,7 +27,7 @@ public sealed class One : Any
 		new HashFromObjects(Node, Mesh).Value;
 
 	public override System::String ToString() =>
-		new StringFromObjects(Node, Mesh).Value;
+		new StringFromObjects(Node, Mesh).AsSystem;
 
 	public Any<Godot.Node> Node { get; }
 

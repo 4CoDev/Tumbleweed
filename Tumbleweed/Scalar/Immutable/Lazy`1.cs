@@ -47,7 +47,7 @@ public sealed class Lazy<T> : Immutable::Any<T>
 		new ZeroHashWhenNull(Value).Value;
 
 	public override System::String? ToString() =>
-		new StringFromAnyObject(Value).Value.Value;
+		new StringFromAnyObject(Value).Value.AsSystem;
 
 	public T Value
 	{

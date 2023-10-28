@@ -10,7 +10,7 @@ public sealed class One<T> : Mutable::Any<T>
 		Value = value;
 
 	public override System::String ToString() =>
-		new StringFromAnyObject(Value).Value.Value;
+		new StringFromAnyObject(Value).Value.AsSystem;
 
 	public T Value { get; set; }
 }

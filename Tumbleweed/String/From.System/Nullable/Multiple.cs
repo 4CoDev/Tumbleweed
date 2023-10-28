@@ -1,36 +1,40 @@
-using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.System;
-using TW = Tumbleweed;
+using Enumerable = Tumbleweed.Enumerable;
+using Scalar = Tumbleweed.Scalar;
+using String = Tumbleweed.String;
+using System = System;
 
 namespace Tumbleweed.String.From.System.Nullable;
 
-public sealed class Multiple : Enumerable.Envelope<
-		Any<Any>>
+public sealed class Multiple : 
+	Enumerable::Envelope<
+		Scalar::Nullable.Any<
+			String::Any>>
 {
 	public Multiple
 	(
-		IEnumerable<global::System.String?> nullables
+		IEnumerable<System::String?> nullables
 	) : this
 	(
-		new Multiple<global::System.String>(nullables)
+		new Scalar::Nullable.From.System.Multiple
+			<System::String>
+			(nullables)
 	)
 	{
 	}
 	
 	public Multiple
 	(
-		IEnumerable<Any<global::System.String>> nullables
+		IEnumerable<Scalar::Nullable.Any<System::String>> nullables
 	) : base
 	(
-		new Selected
+		new Enumerable::Selected
 		<
-			Any<global::System.String>,
-			Any<Any>
+			Scalar::Nullable.Any<System::String>,
+			Scalar::Nullable.Any<String::Any>
 		>
 		(
 			nullables,
-			nullable => new One(nullable)
+			nullable => new String::From.System.Nullable.One(nullable)
 		)
 	)
 	{

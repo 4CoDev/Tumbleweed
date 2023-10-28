@@ -1,35 +1,40 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.System;
-using Tumbleweed.Scalar.Nullable.With;
-using TW = Tumbleweed;
-using Value = Tumbleweed.Scalar.Nullable.Has.Value;
+using Scalar = Tumbleweed.Scalar;
+using String = Tumbleweed.String;
+using System = System;
 
 namespace Tumbleweed.String.From.System.Nullable;
 
-public sealed class One : Envelope<Any>
+public sealed class One : Scalar::Nullable.Envelope<String::Any>
 {
-	public One(global::System.String? nullable) : this
+	public One(System::String? nullable) : this
 	(
-		new One<global::System.String>(nullable)
-	)
-	{
-	}
-	
-	public One(Scalar.Immutable.Any<global::System.String?> nullable) : this
-	(
-		new One<global::System.String>(nullable)
+		new Scalar::Nullable.From.System.One
+			<System::String>
+			(nullable)
 	)
 	{
 	}
 	
 	public One
 	(
-		Any<global::System.String> nullables
+		Scalar::Immutable.Any<System::String?> nullable
+	) : this
+	(
+		 new Scalar::Nullable.From.System.One
+			 <System::String>
+			 (nullable)
+	)
+	{
+	}
+	
+	public One
+	(
+		Scalar::Nullable.Any<System::String> nullables
 	) : base
 	(
-		new Members<Any>(
+		new Scalar::Nullable.With.Members<String::Any>(
 			new NonNullable.One(nullables),
-			new Value(nullables))
+			new Tumbleweed.Scalar.Nullable.Has.Value(nullables))
 	)
 	{
 	}
