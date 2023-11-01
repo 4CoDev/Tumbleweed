@@ -1,6 +1,6 @@
 using Godot;
 using Tumbleweed.Enumerable.Function;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Polygon.Transformed;
 

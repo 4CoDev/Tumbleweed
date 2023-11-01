@@ -1,8 +1,8 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 
 namespace Tumbleweed.Mathematics.Vector.Planar.Generic.Coordinate.Y;
 
-public sealed class Normal<T> : Tumbleweed.Scalar.Immutable.Envelope<T>
+public sealed class Normal<T> : Tumbleweed.Property.Output.Envelope<T>
 {
 	public Normal(Any<T> point) : base
 	(

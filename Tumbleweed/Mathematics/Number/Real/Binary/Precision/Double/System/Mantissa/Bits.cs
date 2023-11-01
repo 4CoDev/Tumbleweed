@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerable.Item.From.Left.By.Length;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System.Mantissa;

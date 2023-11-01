@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Enumerable;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.Difference;
 

@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using Enumerable = DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.At.Index.Triangle.Vertex.Index.Enumerable.Enumerable;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Polygon.Triangle.FromGodot.

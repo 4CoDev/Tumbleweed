@@ -1,10 +1,10 @@
 using Tumbleweed.Mathematics.Comparison.Boolean.Either.Is;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using Comparison = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.
 	Comparison;
 

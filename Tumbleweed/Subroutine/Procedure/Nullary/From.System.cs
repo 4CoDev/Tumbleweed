@@ -1,8 +1,8 @@
 // ReSharper disable once CheckNamespace
 
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Subroutine.Procedure.Nullary.From;

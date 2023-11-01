@@ -1,12 +1,11 @@
 using Godot;
-using Mutable = Tumbleweed.Scalar.Mutable;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property;
 using SCG = System.Collections.Generic;
 using System = System;
 
 namespace Tumbleweed.Array.Dimension.Spatial.System.Item.At.Index;
 
-public sealed class System<T> : Mutable::Any<T>
+public sealed class System<T> : Property::Transput.Any<T>
 {
 	public System
 	(
@@ -14,7 +13,7 @@ public sealed class System<T> : Mutable::Any<T>
 		SCG::IEnumerable<System::Int32> indices
 	) : this
 	(
-		new Immutable::With.Value<T[,,]>(array),
+		new Property::Output.With.Value<T[,,]>(array),
 		indices
 	)
 	{
@@ -22,7 +21,7 @@ public sealed class System<T> : Mutable::Any<T>
 	
 	public System
 	(
-		Immutable::Any<T[,,]> array,
+		Property::Output.Any<T[,,]> array,
 		SCG::IEnumerable<System::Int32> indices
 	) : this
 	(
@@ -38,7 +37,7 @@ public sealed class System<T> : Mutable::Any<T>
 		SCG::ICollection<System::Int32> indices
 	) : this
 	(
-		new Immutable::With.Value<T[,,]>(array),
+		new Property::Output.With.Value<T[,,]>(array),
 		indices
 	)
 	{
@@ -46,7 +45,7 @@ public sealed class System<T> : Mutable::Any<T>
 	
 	public System
 	(
-		Immutable::Any<T[,,]> array,
+		Property::Output.Any<T[,,]> array,
 		SCG::ICollection<System::Int32> indices
 	) 
 	{
@@ -67,7 +66,7 @@ public sealed class System<T> : Mutable::Any<T>
 			indices.ElementAt(2)] = value;
 	}
 
-	private readonly Immutable::Any<T[,,]> array;
+	private readonly Property::Output.Any<T[,,]> array;
 	
 	private readonly SCG::ICollection<System::Int32> indices;
 }

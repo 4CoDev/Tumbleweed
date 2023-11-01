@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.With.PrimitiveType.Set;
 

@@ -1,14 +1,14 @@
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using String = Tumbleweed.String;
 using System = System;
 
 namespace Tumbleweed.String.From.System.Nullable;
 
-public sealed class One : Scalar::Nullable.Envelope<String::Any>
+public sealed class One : Property::Nullable.Envelope<String::Any>
 {
 	public One(System::String? nullable) : this
 	(
-		new Scalar::Nullable.From.System.One
+		new Property::Nullable.From.System.One
 			<System::String>
 			(nullable)
 	)
@@ -17,10 +17,10 @@ public sealed class One : Scalar::Nullable.Envelope<String::Any>
 	
 	public One
 	(
-		Scalar::Immutable.Any<System::String?> nullable
+		Property::Output.Any<System::String?> nullable
 	) : this
 	(
-		 new Scalar::Nullable.From.System.One
+		 new Property::Nullable.From.System.One
 			 <System::String>
 			 (nullable)
 	)
@@ -29,12 +29,12 @@ public sealed class One : Scalar::Nullable.Envelope<String::Any>
 	
 	public One
 	(
-		Scalar::Nullable.Any<System::String> nullables
+		Property::Nullable.Any<System::String> nullables
 	) : base
 	(
-		new Scalar::Nullable.With.Members<String::Any>(
+		new Property::Nullable.With.Members<String::Any>(
 			new NonNullable.One(nullables),
-			new Tumbleweed.Scalar.Nullable.Has.Value(nullables))
+			new Tumbleweed.Property.Nullable.Has.Value(nullables))
 	)
 	{
 	}

@@ -1,5 +1,5 @@
 using Tumbleweed.Mathematics.Boolean;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;

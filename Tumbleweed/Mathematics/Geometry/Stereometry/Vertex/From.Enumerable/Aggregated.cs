@@ -36,8 +36,8 @@ public sealed class Aggregated : Envelope
 		Function::Any<Any, Any, Any> expression
 	) : base
 	(
-		new Vertex::Scalar.Value(
-			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any>(
+		new Vertex::Property.Value(
+			new Tumbleweed.Property.Output.From.Enumerable.Aggregated<Any>(
 				from,
 				seed,
 				expression))
@@ -71,8 +71,8 @@ public sealed class Aggregated : Envelope
 		Function::Any<Any, Any, Any> expression
 	) : base
 	(
-		new Vertex::Scalar.Value(
-			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any>(
+		new Vertex::Property.Value(
+			new Tumbleweed.Property.Output.From.Enumerable.Aggregated<Any>(
 				from,
 				expression))
 	)

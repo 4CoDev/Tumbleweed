@@ -1,20 +1,20 @@
 using Group = DotGod.Engine.Input.Event.Group;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Event = Tumbleweed.Event;
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
-namespace DotGod.Engine.Input.Event.Group.Scalar.Value;
+namespace DotGod.Engine.Input.Event.Group.Property.Value;
 
 public sealed class One : Group::Any
 {
-	public One(Scalar::Any<Group::Any> scalar) =>
-		this.scalar = scalar;
+	public One(Property::Any<Group::Any> property) =>
+		this.property = property;
 
 	public Event::Any<Procedure::Any> Handled =>
-		scalar.Value.Handled;
+		property.Value.Handled;
 
 	public Event::Any<Procedure::Any> Unhandled =>
-		scalar.Value.Unhandled;
+		property.Value.Unhandled;
 
-	private readonly Scalar::Any<Group::Any> scalar;
+	private readonly Property::Any<Group::Any> property;
 }

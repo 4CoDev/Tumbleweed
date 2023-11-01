@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Parametric.Aabb.Transformed;

@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Boolean.Function.Result;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using Boolean = Tumbleweed.Mathematics.Boolean;
 using Collection = Tumbleweed.Collection;
 
@@ -31,7 +31,7 @@ public sealed class System : Boolean::Envelope
 	
 	public System(ICollection<Any> bits, Any<Int32> index) : base
 	(
-		new Boolean::Scalar.Value.Actual(
+		new Boolean::Property.Value.Actual(
 			new Collection::Item.At.Index.System.One
 				<Boolean::Any>
 				(bits, index))

@@ -1,6 +1,6 @@
-using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Property;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.From.Enumerable;
 
 namespace Tumbleweed.Object.Hash;
 

@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Enumerable.Function;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using Enumerable = DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface.Transformed.Enumerable;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh.Transformed;

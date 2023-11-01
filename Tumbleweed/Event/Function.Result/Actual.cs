@@ -1,7 +1,7 @@
 using Event = Tumbleweed.Event;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Event.Function.Result;
 
@@ -22,8 +22,8 @@ public sealed class Actual<T> : Event::Envelope<T>
 		Function::Any<Event::Any<T>> function
 	) : base
 	(
-		new Event::Scalar.Value.One<T>(
-			new Scalar::Function.Result.Actual
+		new Event::Property.Value.One<T>(
+			new Property::Function.Result.Actual
 				<Event::Any<T>>
 				(function))
 	)

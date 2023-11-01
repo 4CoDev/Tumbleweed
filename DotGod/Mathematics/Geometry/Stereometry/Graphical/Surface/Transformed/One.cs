@@ -1,5 +1,5 @@
 using Godot;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface.Transformed;
 

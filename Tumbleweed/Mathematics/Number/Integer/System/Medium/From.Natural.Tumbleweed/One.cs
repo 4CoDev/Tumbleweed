@@ -1,13 +1,13 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Mathematics.Boolean.Literal;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using Number = Tumbleweed.Mathematics.Number;
 using Enumerable = Tumbleweed.Enumerable;
 using Boolean = Tumbleweed.Mathematics.Boolean;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed;
 
-public sealed class One : Scalar::Immutable.Envelope<Int32>
+public sealed class One : Property::Output.Envelope<Int32>
 {
 	public One
 	(

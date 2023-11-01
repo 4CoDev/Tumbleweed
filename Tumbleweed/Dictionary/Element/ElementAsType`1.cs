@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.As;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.As;
 using System = System;
 
 namespace Tumbleweed.Dictionary.Element;

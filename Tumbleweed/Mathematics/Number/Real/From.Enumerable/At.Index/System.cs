@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Mathematics.Number.Real.From.Enumerable.At.Index;
 
@@ -11,7 +11,7 @@ public sealed class System : Envelope
 	) : this
 	(
 		decimals,
-		new global::Tumbleweed.Scalar.Immutable.With.Value<Int32>(index)
+		new global::Tumbleweed.Property.Output.With.Value<Int32>(index)
 	)
 	{
 	}

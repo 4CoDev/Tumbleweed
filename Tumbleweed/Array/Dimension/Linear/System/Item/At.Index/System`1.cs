@@ -1,15 +1,14 @@
-using Mutable = Tumbleweed.Scalar.Mutable;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property;
 using System = System;
 
 namespace Tumbleweed.Array.Dimension.Linear.System.Item.At.Index;
 
-public sealed class System<T> : Mutable::Any<T>
+public sealed class System<T> : Property::Transput.Any<T>
 {
 	public System
 	(
-		Immutable::Any<T[]> array,
-		Immutable::Any<System::Int32> index
+		Property::Output.Any<T[]> array,
+		Property::Output.Any<System::Int32> index
 	)
 	{
 		this.array = array;
@@ -22,7 +21,7 @@ public sealed class System<T> : Mutable::Any<T>
 		set => array.Value[index.Value] = value;
 	}
 
-	private readonly Immutable::Any<T[]> array;
+	private readonly Property::Output.Any<T[]> array;
 	
-	private readonly Immutable::Any<System::Int32> index;
+	private readonly Property::Output.Any<System::Int32> index;
 }

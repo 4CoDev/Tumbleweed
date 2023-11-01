@@ -1,6 +1,6 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.System;
+using Tumbleweed.Property.Output.Function.Result;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.From.System;
 using Tumbleweed.String;
 using Tumbleweed.String.From.System.Nullable;
 

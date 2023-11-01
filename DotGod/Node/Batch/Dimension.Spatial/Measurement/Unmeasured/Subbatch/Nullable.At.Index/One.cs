@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.Array.Spatial.At;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.From.Array.Spatial.At;
 using NaturalPoint = Tumbleweed.Mathematics.Vector.Spatial.Generic.Any<
 		Tumbleweed.Mathematics.Number.Natural.Any>;
 

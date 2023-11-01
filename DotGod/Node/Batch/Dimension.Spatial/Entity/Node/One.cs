@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.Function;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.Function;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Node;
 

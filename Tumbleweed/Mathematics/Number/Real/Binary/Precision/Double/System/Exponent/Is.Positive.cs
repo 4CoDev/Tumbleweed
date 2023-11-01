@@ -1,10 +1,10 @@
 using Tumbleweed.Mathematics.Boolean.From.Enumerable.At.Index;
 using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using System = System;
 using Double = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;
 

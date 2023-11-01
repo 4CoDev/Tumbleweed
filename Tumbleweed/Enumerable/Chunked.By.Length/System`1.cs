@@ -1,6 +1,6 @@
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using Enumerable = Tumbleweed.Enumerable;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 
 namespace Tumbleweed.Enumerable.Chunked.By.Length;
 

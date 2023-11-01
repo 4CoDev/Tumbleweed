@@ -7,7 +7,7 @@ public sealed class One : Envelope<Any>
 {
 	public One
 	(
-		Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> tool,
+		Tumbleweed.Property.Output.Any<Godot.MeshDataTool> tool,
 		Tumbleweed.Mathematics.Number.Natural.Any vertex
 	) : this
 	(
@@ -18,7 +18,7 @@ public sealed class One : Envelope<Any>
 	}
 	
 	public One
-	(Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> mesh, Tumbleweed.Scalar.Immutable.Any<Int32> vertex
+	(Tumbleweed.Property.Output.Any<Godot.MeshDataTool> mesh, Tumbleweed.Property.Output.Any<Int32> vertex
 	) : base
 	(
 		new Mathematics.Vector.Spatial.Tumbleweed.From.Godot.One(

@@ -1,10 +1,10 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Property.Output.From.Enumerable;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.Arithmetics;
 
-public sealed class Difference : Tumbleweed.Scalar.Immutable.Envelope<System::Single>
+public sealed class Difference : Tumbleweed.Property.Output.Envelope<System::Single>
 {
 	public Difference(params System::Single[] singles) : this
 	(

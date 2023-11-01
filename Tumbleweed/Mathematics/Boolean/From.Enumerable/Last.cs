@@ -1,5 +1,5 @@
-using Tumbleweed.Mathematics.Boolean.Scalar.Value;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Mathematics.Boolean.Property.Value;
+using Tumbleweed.Property.Output.From.Enumerable;
 
 namespace Tumbleweed.Mathematics.Boolean.From.Enumerable;
 

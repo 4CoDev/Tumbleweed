@@ -1,6 +1,6 @@
 using Godot;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using String = DotGod.Node.Path.From.String;
 
 namespace DotGod.Node.Generic.From.Scene.On.Path;
@@ -42,7 +42,7 @@ public sealed class Actual<T> : Envelope<T> where T : Godot.Node
 		Any<NodePath> path
 	) : base
 	(
-		new Tumbleweed.Scalar.Immutable.Function.Result.Actual<T>(
+		new Tumbleweed.Property.Output.Function.Result.Actual<T>(
 			() => relation.Value.GetNode<T>(path.Value))
 	)
 	{

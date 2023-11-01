@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 using Tumbleweed.Subroutine.Function.Nullary;
 using Tumbleweed.Subroutine.Function.Nullary.From;
 

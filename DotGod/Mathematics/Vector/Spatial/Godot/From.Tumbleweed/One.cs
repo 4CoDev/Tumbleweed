@@ -1,14 +1,14 @@
 using Tumbleweed.Mathematics.Number.Real;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Godot = Godot;
 
 namespace DotGod.Mathematics.Vector.Spatial.Godot.From.Tumbleweed;
 
-public sealed class One : Immutable::Envelope<Godot::Vector3>
+public sealed class One : Property::Envelope<Godot::Vector3>
 {
 	public One(global::Tumbleweed.Mathematics.Vector.Spatial.Generic.Any<Any> point) : base
 	(
-		new Immutable::Function.Result.Actual<Godot::Vector3>(
+		new Property::Function.Result.Actual<Godot::Vector3>(
 			() => Result(point))
 	)
 	{

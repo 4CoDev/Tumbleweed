@@ -2,7 +2,7 @@ using Tumbleweed.Array.Dimension.Multi;
 using Array = Tumbleweed.Array;
 
 using System = System;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using SystemSource = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source;
 
 namespace Tumbleweed.Array.Dimension.Spatial.Filling.New.Source.Filler.Value.With.Size;

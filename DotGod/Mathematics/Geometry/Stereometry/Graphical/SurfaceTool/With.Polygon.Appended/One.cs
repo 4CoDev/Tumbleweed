@@ -1,5 +1,5 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Polygon;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using Enumerable = DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.With.Vertex.Appended.Enumerable;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.With.Polygon.

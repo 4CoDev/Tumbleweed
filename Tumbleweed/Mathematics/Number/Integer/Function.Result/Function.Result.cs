@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
 
 namespace Tumbleweed.Mathematics.Number.Integer.Function.Result;
@@ -15,7 +15,7 @@ public sealed class Actual : Envelope
 	
 	public Actual(NullaryFunction.Any<Any> function) : base
 	(
-		new Scalar.Value.Actual(
+		new Property.Value.Actual(
 			new Actual<Any>(function))
 	)
 	{

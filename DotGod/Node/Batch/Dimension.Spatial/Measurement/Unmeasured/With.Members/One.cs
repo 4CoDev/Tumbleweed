@@ -1,7 +1,7 @@
 using Tumbleweed.Array.Dimension.Multi;
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 using Array = Tumbleweed.Array;
-using Nullable = Tumbleweed.Scalar.Nullable;
+using Nullable = Tumbleweed.Property.Nullable;
 using SCG = System.Collections.Generic;
 using Entity = DotGod.Node.Batch.Dimension.Spatial.Entity;
 

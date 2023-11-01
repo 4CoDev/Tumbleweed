@@ -1,7 +1,5 @@
-using Tumbleweed.Array.Dimension.Multi.Scalar.Value.Actual;
-using Array = Tumbleweed.Array;
 using System = System;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
 
 namespace Tumbleweed.Array.Dimension.Multi.Function.Result;
@@ -23,8 +21,8 @@ public sealed class Actual<T> : Envelope<T>
 		Function::Any<Any<T>> function
 	) : base
 	(
-		new Scalar.Value.Actual.Actual<T>(
-			new Immutable::Function.Result.Actual
+		new Property.Value.Actual<T>(
+			new Property::Function.Result.Actual
 				<Any<T>>
 				(function))
 	)

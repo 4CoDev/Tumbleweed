@@ -1,7 +1,7 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.At.Index;
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface;
 using Tumbleweed.Enumerable.Function;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface;
 

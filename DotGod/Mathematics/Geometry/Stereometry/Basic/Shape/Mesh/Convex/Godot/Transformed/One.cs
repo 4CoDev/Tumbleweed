@@ -1,9 +1,9 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Godot = Godot;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Godot.Transformed;
 
-public sealed class One : Scalar::Envelope<Godot::ConvexPolygonShape3D>
+public sealed class One : Property::Envelope<Godot::ConvexPolygonShape3D>
 {
 	public One
 	(
@@ -12,7 +12,7 @@ public sealed class One : Scalar::Envelope<Godot::ConvexPolygonShape3D>
 	) : this
 	(
 		mesh,
-		new Scalar::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value<Godot::Transform3D>(transform)
 	)
 	{
 	}
@@ -20,7 +20,7 @@ public sealed class One : Scalar::Envelope<Godot::ConvexPolygonShape3D>
 	public One
 	(
 		Godot::ConvexPolygonShape3D mesh,
-		Scalar::Any<Godot::Transform3D> transform
+		Property::Any<Godot::Transform3D> transform
 	) : base
 	(
 		new From.Tumbleweed.One(

@@ -7,7 +7,7 @@ namespace DotGod.Mathematics.Vector.Spatial.Tumbleweed.Transformed;
 public sealed class One : Envelope<Any>
 {
 	public One
-	(Any<Any> point, global::Tumbleweed.Scalar.Immutable.Any<Transform3D> transform
+	(Any<Any> point, global::Tumbleweed.Property.Output.Any<Transform3D> transform
 	) : base
 	(
 		new From.Godot.One(

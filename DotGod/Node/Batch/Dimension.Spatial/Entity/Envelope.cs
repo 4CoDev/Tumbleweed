@@ -1,5 +1,5 @@
 using System = System;
-using Nullable = Tumbleweed.Scalar.Nullable;
+using Nullable = Tumbleweed.Property.Nullable;
 using Godot = Godot;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity;

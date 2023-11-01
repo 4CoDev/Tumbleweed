@@ -2,7 +2,7 @@ using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using Godot = Godot;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Vertex.Transformed;
 
@@ -15,7 +15,7 @@ public sealed class Enumerable : Enumerable::Envelope<Any>
 	) : this
 	(
 		vertices,
-		new Scalar::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value<Godot::Transform3D>(transform)
 	)
 	{
 	}
@@ -23,7 +23,7 @@ public sealed class Enumerable : Enumerable::Envelope<Any>
 	public Enumerable
 	(
 		SCG::IEnumerable<Any> vertices,
-		Scalar::Any<Godot::Transform3D> transform
+		Property::Any<Godot::Transform3D> transform
 	) : base
 	(
 		new Enumerable::Selected<Any>(

@@ -1,8 +1,8 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 
 namespace Tumbleweed.Mathematics.Vector.Spatial.Generic.Coordinate.X.Actual;
 
-public sealed class One<T> : Tumbleweed.Scalar.Immutable.Envelope<T>
+public sealed class One<T> : Tumbleweed.Property.Output.Envelope<T>
 {
 	public One(Any<T> point) : base
 	(

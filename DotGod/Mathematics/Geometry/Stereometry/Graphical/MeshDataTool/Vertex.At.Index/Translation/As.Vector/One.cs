@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Mathematics.Number.Natural;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Translation.As.Vector;
 

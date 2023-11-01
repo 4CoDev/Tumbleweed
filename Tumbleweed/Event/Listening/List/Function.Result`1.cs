@@ -1,7 +1,7 @@
 using List = Tumbleweed.Event.Listening.List;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Event.Listening.List.Function;
@@ -26,7 +26,7 @@ public sealed class Result<T> : List::Envelope<T>
 	) : base
 	(
 		new List::Scalar.Value<T>(
-			new Immutable::Function.Result.Actual
+			new Property::Function.Result.Actual
 				<List::Any<T>>
 				(function))
 	)

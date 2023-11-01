@@ -1,15 +1,15 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Enumerable.Item.Every.Scalar;
+using Property = Tumbleweed.Property.Output;
+using Tumbleweed.Enumerable.Item.Every.Property;
 using Tumbleweed.Memory.Span.ReadOnly.Requirement.Length;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 using System = System;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Bytes;
 
-public sealed class System : global::Tumbleweed.Scalar.Immutable.Envelope<System::Int32>
+public sealed class System : global::Tumbleweed.Property.Output.Envelope<System::Int32>
 {
-	public System(IEnumerable<Scalar::Any<System::Byte>> bytes) : this
+	public System(IEnumerable<Property::Any<System::Byte>> bytes) : this
 	(
 		new Value<System::Byte>(bytes)
 	)

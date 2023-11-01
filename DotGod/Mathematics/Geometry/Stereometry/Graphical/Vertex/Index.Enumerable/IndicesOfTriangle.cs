@@ -1,5 +1,5 @@
 using Tumbleweed.Enumerable.Nested.Item.Value.At.Index;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Vertex.Index.Enumerable;
 

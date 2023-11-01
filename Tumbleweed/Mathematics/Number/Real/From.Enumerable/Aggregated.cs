@@ -1,4 +1,4 @@
-using Tumbleweed.Mathematics.Number.Real.Scalar;
+using Tumbleweed.Mathematics.Number.Real.Property;
 
 namespace Tumbleweed.Mathematics.Number.Real.From.Enumerable;
 
@@ -12,7 +12,7 @@ public class Aggregated : Envelope
 	) : base
 	(
 		new Value(
-			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any>(
+			new Tumbleweed.Property.Output.From.Enumerable.Aggregated<Any>(
 				from,
 				seed,
 				expression))

@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.System;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.From.System;
 
 namespace Tumbleweed.String.Empty.When.Null;
 

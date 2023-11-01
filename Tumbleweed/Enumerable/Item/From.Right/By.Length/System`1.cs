@@ -1,11 +1,11 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 
 namespace Tumbleweed.Enumerable.Item.From.Right.By.Length;
 
@@ -41,7 +41,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 		Any<Int32> length
 	) : base
 	(
-		new Enumerable::Scalar.Value<T>(
+		new Enumerable::Property.Value<T>(
 			new Actual<SCG::IEnumerable<T>>(
 				() => collection.Skip(collection.Count - length.Value)))
 	)

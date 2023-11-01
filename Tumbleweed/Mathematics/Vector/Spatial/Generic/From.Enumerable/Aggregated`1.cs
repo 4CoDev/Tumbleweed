@@ -1,4 +1,4 @@
-using Tumbleweed.Mathematics.Vector.Spatial.Generic.Scalar.Value;
+using Tumbleweed.Mathematics.Vector.Spatial.Generic.Property.Value;
 using SCG = System.Collections.Generic;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Binary;
@@ -37,7 +37,7 @@ public sealed class Aggregated<T> : Envelope<T>
 	) : base
 	(
 		new Actual<T>(
-			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any<T>>(
+			new Tumbleweed.Property.Output.From.Enumerable.Aggregated<Any<T>>(
 				from,
 				seed,
 				expression))
@@ -72,7 +72,7 @@ public sealed class Aggregated<T> : Envelope<T>
 	) : base
 	(
 		new Actual<T>(
-			new Tumbleweed.Scalar.Immutable.From.Enumerable.Aggregated<Any<T>>(
+			new Tumbleweed.Property.Output.From.Enumerable.Aggregated<Any<T>>(
 				from,
 				expression))
 	)

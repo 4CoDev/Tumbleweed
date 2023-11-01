@@ -1,5 +1,5 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.From.Tumbleweed;
 

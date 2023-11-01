@@ -1,24 +1,24 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using System = System;
 
 namespace Tumbleweed.Object.Casted.Convertee;
 
-public sealed class Object<T> : Scalar::Envelope<T>
+public sealed class Object<T> : Property::Envelope<T>
 {
 	public Object(System::Object convertee) : this
 	(
-		new Scalar::With.Value(convertee)
+		new Property::With.Value(convertee)
 	)
 	{
 	}
 	
 	public Object
 	(
-		Scalar::Any<System::Object> scalar
+		Property::Any<System::Object> property
 	) : base
 	(
-		new Scalar::Function.Result.Actual<T>(
-			() => (T) scalar.Value)
+		new Property::Function.Result.Actual<T>(
+			() => (T) property.Value)
 	)
 	{
 	}

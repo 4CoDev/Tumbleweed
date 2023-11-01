@@ -1,11 +1,11 @@
 using Tumbleweed.Enumerable.Without.Item;
 using Tumbleweed.Mathematics.Number.Integer.System.Medium;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using Integer = Tumbleweed.Mathematics.Number.Integer.System.Medium;
 
 // ReSharper disable once CheckNamespace

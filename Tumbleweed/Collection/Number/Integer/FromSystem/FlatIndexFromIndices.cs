@@ -1,10 +1,10 @@
-using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 
 namespace Tumbleweed.Collection.Number.Integer.FromSystem;
 
-public sealed class FlatIndexFromIndices : Tumbleweed.Scalar.Immutable.Envelope<Int32>
+public sealed class FlatIndexFromIndices : Tumbleweed.Property.Output.Envelope<Int32>
 {
 	public FlatIndexFromIndices
 	(

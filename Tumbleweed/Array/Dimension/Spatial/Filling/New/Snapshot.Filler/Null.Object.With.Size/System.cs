@@ -1,6 +1,6 @@
 using Tumbleweed.Array.Dimension.Multi;
 using Array = Tumbleweed.Array;
-using Nullable = Tumbleweed.Scalar.Nullable;
+using Nullable = Tumbleweed.Property.Nullable;
 
 using System = System;
 using SystemSnapshot = Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Snapshot;

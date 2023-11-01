@@ -1,9 +1,9 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Enumerable.Item.From.Left.By.Length;
 
@@ -16,7 +16,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Scalar::With.Value<Int32>(length)
+		new Property::With.Value<Int32>(length)
 	)
 	{
 	}
@@ -24,7 +24,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		SCG::IEnumerable<T> enumerable,
-		Scalar::Any<System::Int32> length
+		Property::Any<System::Int32> length
 	) : this
 	(
 		new SCG::List<T>(enumerable),
@@ -36,10 +36,10 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		SCG::ICollection<T> list,
-		Scalar::Any<Int32> length
+		Property::Any<Int32> length
 	) : base
 	(
-		new Enumerable::Scalar.Value<T>(
+		new Enumerable::Property.Value<T>(
 			new Actual<SCG::IEnumerable<T>>(
 				() => list.Take(length.Value)))
 	)

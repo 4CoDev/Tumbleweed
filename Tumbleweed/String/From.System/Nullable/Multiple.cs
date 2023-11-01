@@ -1,5 +1,5 @@
 using Enumerable = Tumbleweed.Enumerable;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using String = Tumbleweed.String;
 using System = System;
 
@@ -7,7 +7,7 @@ namespace Tumbleweed.String.From.System.Nullable;
 
 public sealed class Multiple : 
 	Enumerable::Envelope<
-		Scalar::Nullable.Any<
+		Property::Nullable.Any<
 			String::Any>>
 {
 	public Multiple
@@ -15,7 +15,7 @@ public sealed class Multiple :
 		IEnumerable<System::String?> nullables
 	) : this
 	(
-		new Scalar::Nullable.From.System.Multiple
+		new Property::Nullable.From.System.Multiple
 			<System::String>
 			(nullables)
 	)
@@ -24,13 +24,13 @@ public sealed class Multiple :
 	
 	public Multiple
 	(
-		IEnumerable<Scalar::Nullable.Any<System::String>> nullables
+		IEnumerable<Property::Nullable.Any<System::String>> nullables
 	) : base
 	(
 		new Enumerable::Selected
 		<
-			Scalar::Nullable.Any<System::String>,
-			Scalar::Nullable.Any<String::Any>
+			Property::Nullable.Any<System::String>,
+			Property::Nullable.Any<String::Any>
 		>
 		(
 			nullables,

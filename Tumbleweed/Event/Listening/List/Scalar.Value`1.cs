@@ -1,5 +1,5 @@
 using List = Tumbleweed.Event.Listening.List;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using System = System;
 
 // ReSharper disable once CheckNamespace
@@ -9,17 +9,17 @@ public sealed class Value<T> : List::Any<T>
 {
 	public Value
 	(
-		Immutable::Any<List::Any<T>> scalar
+		Property::Any<List::Any<T>> property
 	)
 	{
-		this.scalar = scalar;
+		this.property = property;
 	}
 
 	public void Unsubscribe(System::Object key) =>
-		scalar.Value.Unsubscribe(key);
+		property.Value.Unsubscribe(key);
 
 	public void Subscribe(System::Object key, T reaction) =>
-		scalar.Value.Subscribe(key, reaction);
+		property.Value.Subscribe(key, reaction);
 
-	private readonly Immutable::Any<List::Any<T>> scalar;
+	private readonly Property::Any<List::Any<T>> property;
 }

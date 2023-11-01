@@ -1,5 +1,5 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.From.Enumerable;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using Actual = DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface.Material.Actual;
 using Any = DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface.Any;
 
@@ -24,7 +24,7 @@ public sealed class One : Envelope<Godot.SurfaceTool>
 		Polygon.Any polygon
 	) =>
 	(
-		new Tumbleweed.Scalar.Immutable.Lazy<Godot.SurfaceTool>(
+		new Tumbleweed.Property.Output.Lazy<Godot.SurfaceTool>(
 			new With.Polygon.Appended.One(polygon, current))
 	);
 }

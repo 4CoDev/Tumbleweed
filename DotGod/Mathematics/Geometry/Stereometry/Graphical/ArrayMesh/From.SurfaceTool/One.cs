@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
 using Enumerable = DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.With.SurfaceTool.Appended.Enumerable;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.From.SurfaceTool;

@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Enumerable.Item.Every.Scalar;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Enumerable.Item.Every.Property;
+using Tumbleweed.Property.Output;
 using System = System;
 
 namespace Tumbleweed.Information.Measurement.Byte.System.From.Boolean.Tumbleweed.Enumerable;

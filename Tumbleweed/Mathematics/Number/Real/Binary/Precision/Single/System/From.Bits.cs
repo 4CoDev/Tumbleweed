@@ -1,6 +1,6 @@
 using Tumbleweed.Information.Measurement.Byte.Multiple.From.Bit.Enumerable;
-using Tumbleweed.Scalar.Immutable;
-using Scalar = Tumbleweed.Scalar;
+using Tumbleweed.Property.Output;
+using Property = Tumbleweed.Property;
 using System = System;
 
 using Single = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System;

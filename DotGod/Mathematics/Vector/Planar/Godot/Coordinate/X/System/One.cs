@@ -1,21 +1,21 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using System = System;
 using Godot = Godot;
 
 namespace DotGod.Mathematics.Vector.Planar.Godot.Coordinate.X.System;
 
-public sealed class One : Scalar::Envelope<System::Single>
+public sealed class One : Property::Envelope<System::Single>
 {
 	public One(Godot::Vector2 vector) : this
 	(
-		new Scalar::With.Value<Godot::Vector2>(vector)
+		new Property::With.Value<Godot::Vector2>(vector)
 	)
 	{
 	}
 	
-	public One(Scalar::Any<Godot::Vector2> vector) : base
+	public One(Property::Any<Godot::Vector2> vector) : base
 	(
-		new Scalar::Function.Result.Actual<System::Single>(
+		new Property::Function.Result.Actual<System::Single>(
 			() => vector.Value.X)
 	)
 	{

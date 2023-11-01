@@ -22,7 +22,7 @@ public sealed class Real : Envelope<Any>
 	
 	public Real
 	(
-		Any<Any> dividend, Tumbleweed.Scalar.Immutable.Any<Single> divisor
+		Any<Any> dividend, Tumbleweed.Property.Output.Any<Single> divisor
 	) : this
 	(
 		dividend,
@@ -45,7 +45,7 @@ public sealed class Real : Envelope<Any>
 	
 	public Real
 	(
-		Any<Any> dividend, Tumbleweed.Scalar.Immutable.Any<Double> divisor
+		Any<Any> dividend, Tumbleweed.Property.Output.Any<Double> divisor
 	) : this
 	(
 		dividend,

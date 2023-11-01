@@ -1,7 +1,7 @@
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Information.Measurement.Byte.From.System;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 
 using System = System;
 

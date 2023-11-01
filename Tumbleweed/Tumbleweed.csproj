@@ -30,7 +30,6 @@
       <Folder Include="Mathematics\Geometry\Planimetry\" />
       <Folder Include="Mathematics\Geometry\Stereometry\Shape\Instance\" />
       <Folder Include="Mathematics\Vector\Spatial\Integer\" />
-      <Folder Include="Scalar\" />
     </ItemGroup>
 
 

@@ -1,8 +1,7 @@
 using Tumbleweed.Array.Dimension.Multi;
 using Tumbleweed.Mathematics.Number.Natural;
 using Array = Tumbleweed.Array;
-using Immutable = Tumbleweed.Scalar.Immutable;
-using Mutable = Tumbleweed.Scalar.Mutable;
+using Property = Tumbleweed.Property;
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using SCG = System.Collections.Generic;
 using SystemArray = Tumbleweed.Array.Dimension.Spatial.System;
@@ -14,18 +13,18 @@ public sealed class System<T> : Any<T>
 {
 	public System(T[,,] array) : this
 	(
-		new Immutable::With.Value<T[,,]>(array)
+		new Property::Output.With.Value<T[,,]>(array)
 	)
 	{
 	}
 
-	public System(Immutable::Any<T[,,]> array)
+	public System(Property::Output.Any<T[,,]> array)
 	{
 		Size = new SystemArray::Size.Tumbleweed<T>(array);
 		this.array = array;
 	}
 
-	public Mutable::Any<T> this
+	public Property::Transput.Any<T> this
 	[
 		SCG::IEnumerable<Any> indices
 	] =>
@@ -37,5 +36,5 @@ public sealed class System<T> : Any<T>
 
 	public SCG::IEnumerable<Any> Size { get; }
 	
-	private readonly Immutable::Any<T[,,]> array;
+	private readonly Property::Output.Any<T[,,]> array;
 }

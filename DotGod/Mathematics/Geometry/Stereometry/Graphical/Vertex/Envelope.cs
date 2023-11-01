@@ -1,4 +1,4 @@
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Godot = Godot;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Vertex;
@@ -14,7 +14,7 @@ public abstract class Envelope : Any
 	public Tumbleweed.Mathematics.Vector.Spatial.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> Normal =>
 		vertex.Normal;
 
-	public Immutable::Any<Godot::Color> Color =>
+	public Property::Any<Godot::Color> Color =>
 		vertex.Color;
 
 	public Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>

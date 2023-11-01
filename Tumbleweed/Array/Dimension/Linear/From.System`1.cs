@@ -1,12 +1,11 @@
 using Tumbleweed.Array.Dimension.Multi;
 using Tumbleweed.Mathematics.Number.Natural;
 using Array = Tumbleweed.Array;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property;
 using Enumerable = Tumbleweed.Enumerable;
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using SystemArray = Tumbleweed.Array.Dimension.Linear.System;
 using SCG = System.Collections.Generic;
-using Mutable = Tumbleweed.Scalar.Mutable;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Array.Linear.From;
@@ -15,12 +14,12 @@ public sealed class System<T> : Any<T>
 {
 	public System(params T[] array) : this
 	(
-		new Immutable::With.Value<T[]>(array)
+		new Property::Output.With.Value<T[]>(array)
 	)
 	{
 	}
 
-	public System(Immutable::Any<T[]> array) : this
+	public System(Property::Output.Any<T[]> array) : this
 	(
 		array,
 		new Enumerable::SingleItem.New<Any>(
@@ -31,7 +30,7 @@ public sealed class System<T> : Any<T>
 	
 	private System
 	(
-		Immutable::Any<T[]> array,
+		Property::Output.Any<T[]> array,
 		SCG::IEnumerable<Any> size
 	)
 	{
@@ -39,7 +38,7 @@ public sealed class System<T> : Any<T>
 		Size = size;
 	}
 
-	public Mutable::Any<T> this
+	public Property::Transput.Any<T> this
 	[
 		SCG::IEnumerable<Any> indices
 	] =>
@@ -47,7 +46,7 @@ public sealed class System<T> : Any<T>
 		new SystemArray::Item.At.Index.Tumbleweed<T>(array, indices)
 	);
 	
-	private readonly Immutable::Any<T[]> array;
+	private readonly Property::Output.Any<T[]> array;
 
 	public SCG::IEnumerable<Any> Size { get; }
 }

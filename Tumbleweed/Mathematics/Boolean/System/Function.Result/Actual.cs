@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 using NullaryFunction = Tumbleweed.Subroutine.Function.Nullary;
 
 namespace Tumbleweed.Mathematics.Boolean.System.Function.Result;

@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.System;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.From.System;
 using Tumbleweed.String;
 using Tumbleweed.String.From.System.NonNullable;
 
@@ -14,7 +14,7 @@ public sealed class SpareWhenObjectIsNull : Envelope
 	) : this
 	(
 		new One<System.Object>(@object),
-		new Scalar.Immutable.With.Value<System.String>(spare)
+		new Property.Output.With.Value<System.String>(spare)
 	)
 	{
 	}
@@ -25,14 +25,14 @@ public sealed class SpareWhenObjectIsNull : Envelope
 	) : this
 	(
 		@object,
-		new Scalar.Immutable.With.Value<System.String>(spare)
+		new Property.Output.With.Value<System.String>(spare)
 	)
 	{
 	}
 	
 	public SpareWhenObjectIsNull
 	(
-		System.Object? @object, Scalar.Immutable.Any<System.String> spare
+		System.Object? @object, Property.Output.Any<System.String> spare
 	) : this
 	(
 		new One<System.Object>(@object),

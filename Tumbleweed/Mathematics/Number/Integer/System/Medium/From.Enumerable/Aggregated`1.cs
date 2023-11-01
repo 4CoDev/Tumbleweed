@@ -1,6 +1,6 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
-using Tumbleweed.Scalar.Immutable.Nested;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.From.Enumerable;
+using Tumbleweed.Property.Output.Nested;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Enumerable;
 

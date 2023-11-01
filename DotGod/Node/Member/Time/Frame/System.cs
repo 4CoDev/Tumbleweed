@@ -1,21 +1,21 @@
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using System = System;
 using Godot = Godot;
 
 namespace DotGod.Node.Member.Time.Frame;
 
-public sealed class System : Immutable::Envelope<System::Double>
+public sealed class System : Property::Envelope<System::Double>
 {
 	public System(Godot::Node node) : this
 	(
-		new Immutable::With.Value<Godot::Node>(node)
+		new Property::With.Value<Godot::Node>(node)
 	)
 	{
 	}
 	
-	public System(Immutable::Any<Godot::Node> node) : base
+	public System(Property::Any<Godot::Node> node) : base
 	(
-		new Immutable::Function.Result.Actual<System::Double>(
+		new Property::Function.Result.Actual<System::Double>(
 			() => node.Value.GetProcessDeltaTime())
 	)
 	{

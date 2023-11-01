@@ -1,6 +1,6 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh.PrimitiveType;
 using Godot;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.From.Surface;
 

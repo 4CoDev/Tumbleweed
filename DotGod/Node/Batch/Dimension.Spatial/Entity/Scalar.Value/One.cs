@@ -1,10 +1,10 @@
 using DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using System = System;
 
-namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Scalar.Value;
+namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Property.Value;
 
 public sealed class One : Any
 {
@@ -20,7 +20,7 @@ public sealed class One : Any
 	public override System::String ToString() =>
 		new StringFromObjects(Node, Mesh).AsSystem;
 
-	public Tumbleweed.Scalar.Nullable.Any<Godot.Node> Node =>
+	public Tumbleweed.Property.Nullable.Any<Godot.Node> Node =>
 		any.Value.Node;
 
 	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh =>

@@ -1,5 +1,5 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Polygon.Triangle.FromGodot.
 	FromSurface;

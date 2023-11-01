@@ -1,6 +1,6 @@
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.Specific.Action.Filler.Function.Result;
 
@@ -12,7 +12,7 @@ public sealed class One<T> : Procedure::Envelope
 		Function::Any<T> filler
 	) : this
 	(
-		new Scalar::With.Value<T[,,]>(array),
+		new Property::With.Value<T[,,]>(array),
 		filler
 	)
 	{
@@ -20,13 +20,13 @@ public sealed class One<T> : Procedure::Envelope
 	
 	public One
 	(
-		Scalar::Any<T[,,]> array,
+		Property::Any<T[,,]> array,
 		Function::Any<T> filler
 	) : base
 	(
-		new Scalar.Value.One<T>(
+		new Property.Value.One<T>(
 			array,
-			new Scalar::Function.Result.Actual<T>(filler))
+			new Property::Function.Result.Actual<T>(filler))
 	)
 	{
 	}

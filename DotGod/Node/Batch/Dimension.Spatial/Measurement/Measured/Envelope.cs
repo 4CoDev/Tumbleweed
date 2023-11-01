@@ -7,7 +7,7 @@ public abstract class Envelope : Any
 	protected Envelope(Any batch) =>
 		this.batch = batch;
 
-	public Any<Tumbleweed.Scalar.Nullable.Any<Unmeasured.Any>> Subbatches =>
+	public Any<Tumbleweed.Property.Nullable.Any<Unmeasured.Any>> Subbatches =>
 		batch.Subbatches;
 
 	public ICollection<Entity.Any> Entities =>

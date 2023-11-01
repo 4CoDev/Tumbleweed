@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 
 namespace Tumbleweed.Mathematics.Number.Natural.From.System;
 

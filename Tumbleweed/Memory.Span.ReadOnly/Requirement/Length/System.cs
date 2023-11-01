@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output.With;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 namespace Tumbleweed.Memory.Span.ReadOnly.Requirement.Length;
@@ -20,7 +20,7 @@ public sealed class System<T> : ReadOnlySpan.Envelope<T>
 	public System
 	(
 		ReadOnlySpan.Any<T> span,
-		Scalar.Immutable.Any<Int32> size
+		Property.Output.Any<Int32> size
 	) : base
 	(
 		new ReadOnlySpan.Function.Result<T>(
@@ -31,7 +31,7 @@ public sealed class System<T> : ReadOnlySpan.Envelope<T>
 
 	private static ReadOnlySpan.Any<T> Function
 	(
-		ReadOnlySpan.Any<T> span, Scalar.Immutable.Any<Int32> size
+		ReadOnlySpan.Any<T> span, Property.Output.Any<Int32> size
 	)
 	{
 		if (span.Value.Length == size.Value) return span;

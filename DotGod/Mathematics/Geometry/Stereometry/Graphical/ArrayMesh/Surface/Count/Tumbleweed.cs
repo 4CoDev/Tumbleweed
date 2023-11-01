@@ -1,5 +1,5 @@
 using Tumbleweed.Mathematics.Number.Natural.From.System;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.Count;
 

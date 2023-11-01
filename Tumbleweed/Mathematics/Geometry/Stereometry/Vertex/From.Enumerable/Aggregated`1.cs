@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Property.Output.From.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Binary;
@@ -31,7 +31,7 @@ public sealed class Aggregated<T> : Envelope
 		expression
 	) : base
 	(
-		new Vertex::Scalar.Value(
+		new Vertex::Property.Value(
 			new Aggregated<T, Any>(
 				from,
 				seed,

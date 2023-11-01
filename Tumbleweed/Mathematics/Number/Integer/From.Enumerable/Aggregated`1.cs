@@ -1,5 +1,5 @@
-using Tumbleweed.Mathematics.Number.Integer.Scalar.Value;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Mathematics.Number.Integer.Property.Value;
+using Tumbleweed.Property.Output.From.Enumerable;
 
 namespace Tumbleweed.Mathematics.Number.Integer.From.Enumerable;
 

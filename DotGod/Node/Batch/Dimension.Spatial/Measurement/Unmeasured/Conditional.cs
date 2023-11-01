@@ -1,5 +1,5 @@
 using Tumbleweed.Mathematics.Boolean.From.System;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 
@@ -26,7 +26,7 @@ public sealed class Conditional : Envelope
 		Any otherwise
 	) : base
 	(
-		new Scalar.Value.One(
+		new Property.Value.One(
 			new Conditional<Any>(
 				condition,
 				then,

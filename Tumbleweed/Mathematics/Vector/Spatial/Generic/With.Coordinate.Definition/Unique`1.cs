@@ -1,4 +1,4 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Mathematics.Vector.Spatial.Generic.With.Coordinate.Definition;
 
@@ -6,18 +6,18 @@ public sealed class Unique<T> : Any<T>
 {
 	public Unique(T x, T y, T z) : this
 	(
-		new Scalar::With.Value<T>(x),
-		new Scalar::With.Value<T>(y),
-		new Scalar::With.Value<T>(z)
+		new Property::With.Value<T>(x),
+		new Property::With.Value<T>(y),
+		new Property::With.Value<T>(z)
 	)
 	{
 	}
 	
 	public Unique
 	(
-		Scalar::Any<T> x,
-		Scalar::Any<T> y,
-		Scalar::Any<T> z
+		Property::Any<T> x,
+		Property::Any<T> y,
+		Property::Any<T> z
 	)
 	{
 		this.x = x;
@@ -27,13 +27,13 @@ public sealed class Unique<T> : Any<T>
 
 	public T X => x.Value;
 
-	private readonly Scalar::Any<T> x;
+	private readonly Property::Any<T> x;
 
 	public T Y => y.Value;
 	
-	private readonly Scalar::Any<T> y;
+	private readonly Property::Any<T> y;
 
 	public T Z => z.Value;
 	
-	private readonly Scalar::Any<T> z;
+	private readonly Property::Any<T> z;
 }

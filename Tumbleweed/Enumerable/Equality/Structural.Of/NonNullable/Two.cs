@@ -1,11 +1,11 @@
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.From.System;
 using Tumbleweed.Mathematics.Boolean.Function.Result;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 using System = System;
 using Object = Tumbleweed.Object;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using SC = System.Collections;
 using SCG = System.Collections.Generic;
 

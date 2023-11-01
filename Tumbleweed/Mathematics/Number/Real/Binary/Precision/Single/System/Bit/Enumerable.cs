@@ -1,4 +1,4 @@
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using Tumbleweed.Mathematics.Boolean;
 using System = System;
 
@@ -8,7 +8,7 @@ public sealed class Enumerable : Tumbleweed.Enumerable.Envelope<Boolean.Any>
 {
 	public Enumerable(System::Single single) : this
 	(
-		new Scalar::Immutable.With.Value
+		new Property::Output.With.Value
 			<System::Single>
 			(single)
 	)
@@ -17,7 +17,7 @@ public sealed class Enumerable : Tumbleweed.Enumerable.Envelope<Boolean.Any>
     
 	public Enumerable
 	(
-		Scalar::Immutable.Any<System::Single> single
+		Property::Output.Any<System::Single> single
 	) : base
 	(
 		new BitsOfBytes(

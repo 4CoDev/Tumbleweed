@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using System = System;
 
 namespace Tumbleweed.Information.Measurement.Byte.System.From.Boolean.System;

@@ -8,8 +8,8 @@ public sealed class One : Envelope
 	(Tumbleweed.Array.Dimension.Multi.Any<Any> array, Any<Tumbleweed.Mathematics.Number.Natural.Any> indices
 	) : base
 	(
-		new Scalar.Value.One(
-			new Tumbleweed.Scalar.Immutable.From.Array.Spatial.At.Index<Any>(
+		new Property.Value.One(
+			new Tumbleweed.Property.Output.From.Array.Spatial.At.Index<Any>(
 				array, 
 				indices))
 	)

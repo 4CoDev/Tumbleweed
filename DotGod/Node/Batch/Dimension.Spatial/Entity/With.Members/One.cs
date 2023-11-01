@@ -1,7 +1,9 @@
 using DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
-using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Property.Nullable;
+using Mesh = DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh;
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 using System = System;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity.With.Members;
@@ -11,13 +13,13 @@ public sealed class One : Any
 	public One
 	(
 		Any<Godot.Node> node,
-		Mathematics.Geometry.Stereometry.Graphical.Mesh.Any mesh, 
-		Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any size
+		Mesh::Any mesh, 
+		Aabb::Any aabb
 	)
 	{
 		Node = node;
 		Mesh = mesh;
-		Aabb = size;
+		Aabb = aabb;
 	}
 
 	public override Boolean Equals(System::Object? @object) =>
@@ -31,7 +33,7 @@ public sealed class One : Any
 
 	public Any<Godot.Node> Node { get; }
 
-	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh { get; }
+	public Mesh::Any Mesh { get; }
 
-	public Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Any Aabb { get; }
+	public Aabb::Any Aabb { get; }
 }

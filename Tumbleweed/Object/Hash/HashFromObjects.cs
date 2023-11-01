@@ -1,5 +1,5 @@
 using System.Collections;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using Enumerable = Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Object.Hash;

@@ -1,4 +1,4 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Mathematics.Vector.Spatial.Generic.With.Coordinate.Definition;
 
@@ -6,12 +6,12 @@ public sealed class Uniform<T> : Envelope<T>
 {
 	public Uniform(T coordinate) : this
 	(
-		new Scalar::With.Value<T>(coordinate)
+		new Property::With.Value<T>(coordinate)
 	)
 	{
 	}
 	
-	public Uniform(Scalar::Any<T> coordinate) : base
+	public Uniform(Property::Any<T> coordinate) : base
 	(
 		new Unique<T>(
 			coordinate,

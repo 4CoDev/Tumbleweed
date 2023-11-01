@@ -1,10 +1,10 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.Comparison;
 
-public sealed class Smallest : Tumbleweed.Scalar.Immutable.Envelope<System::Single>
+public sealed class Smallest : Tumbleweed.Property.Output.Envelope<System::Single>
 {
 	public Smallest(params System::Single[] singles) : this
 	(

@@ -1,6 +1,6 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh.ArrayType;
 using Tumbleweed.Enumerable.Function;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using GodotArray = Godot.Collections.Array;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.Vertex.

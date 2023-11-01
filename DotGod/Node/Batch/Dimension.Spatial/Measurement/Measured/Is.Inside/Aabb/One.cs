@@ -19,8 +19,8 @@ public sealed class One : Boolean::Envelope
 	)
 	{
 		var aabb1 = new Batch::Member.Aabb.One(batch);
-		var a = aabb1.A;
-		var b = aabb1.B;
+		var a = aabb.A;
+		var b = aabb.B;
 		GD.Print(
 			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
 				.Tumbleweed.One(a.X).Value);

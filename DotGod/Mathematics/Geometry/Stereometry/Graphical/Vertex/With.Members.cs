@@ -2,7 +2,7 @@ using DotGod.Mathematics.Geometry.Stereometry.Graphical.Vertex;
 using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Vertex = DotGod.Geometry.Stereometry.Concave.Graphical.Vertex;
 using Real = Tumbleweed.Mathematics.Number.Real;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Godot = Godot;
 
 // ReSharper disable once CheckNamespace
@@ -14,7 +14,7 @@ public sealed class Members : Any
 	(
 		Any<Tumbleweed.Mathematics.Number.Real.Any> translation,
 		Any<Tumbleweed.Mathematics.Number.Real.Any> normal,
-		Scalar::Any<Godot::Color> color, Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> uv
+		Property::Any<Godot::Color> color, Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> uv
 	)
 	{
 		Translation = translation;
@@ -27,7 +27,7 @@ public sealed class Members : Any
 	
 	public Any<Tumbleweed.Mathematics.Number.Real.Any> Normal { get; }
 	
-	public Scalar::Any<Godot::Color> Color { get; }
+	public Property::Any<Godot::Color> Color { get; }
 	
 	public Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> UV { get; }
 }

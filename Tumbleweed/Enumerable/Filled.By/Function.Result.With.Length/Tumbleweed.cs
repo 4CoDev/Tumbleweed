@@ -3,7 +3,7 @@ using Enumerable = Tumbleweed.Enumerable;
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Enumerable.Filled.By.Function.Result.With.Length;
 
@@ -27,9 +27,9 @@ public sealed class Tumbleweed<T> : Enumerable::Envelope<T>
 		Function::Any<T> filler
 	) : base
 	(
-		new Enumerable::Filled.By.Scalar.Value.With.Length.Tumbleweed<T>(
+		new Enumerable::Filled.By.Property.Value.With.Length.Tumbleweed<T>(
 			length,
-			new Scalar::Function.Result.Actual<T>(filler))
+			new Property::Function.Result.Actual<T>(filler))
 	)
 	{
 	}

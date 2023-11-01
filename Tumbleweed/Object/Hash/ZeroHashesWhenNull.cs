@@ -1,5 +1,5 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Nullable;
+using Tumbleweed.Property.Nullable;
 
 namespace Tumbleweed.Object.Hash;
 

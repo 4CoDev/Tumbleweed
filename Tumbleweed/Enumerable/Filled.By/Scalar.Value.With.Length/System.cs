@@ -1,19 +1,19 @@
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using SCG = System.Collections.Generic;
 
-namespace Tumbleweed.Enumerable.Filled.By.Scalar.Value.With.Length;
+namespace Tumbleweed.Enumerable.Filled.By.Property.Value.With.Length;
 
 public sealed class System<T> : Enumerable::Envelope<T>
 {
 	public System
 	(
 		System::Int32 length,
-		Scalar::Any<T> filler
+		Property::Any<T> filler
 	) : this
 	(
-		new Scalar::With.Value<System::Int32>(length),
+		new Property::With.Value<System::Int32>(length),
 		filler
 	)
 	{
@@ -21,8 +21,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	
 	public System
 	(
-		Scalar::Any<System::Int32> length,
-		Scalar::Any<T> filler
+		Property::Any<System::Int32> length,
+		Property::Any<T> filler
 	) : base
 	(
 		new Enumerable::Function.Result<T>(
@@ -33,8 +33,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 
 	private static SCG::IEnumerable<T> Function
 	(
-		Scalar::Any<System::Int32> length,
-		Scalar::Any<T> filler
+		Property::Any<System::Int32> length,
+		Property::Any<T> filler
 	) =>
 	(
 		Function(length.Value, filler)
@@ -43,7 +43,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	private static SCG::IEnumerable<T> Function
 	(
 		System::Int32 length,
-		Scalar::Any<T> filler
+		Property::Any<T> filler
 	)
 	{
 		for (Int32 i = 0; i < length; i++)

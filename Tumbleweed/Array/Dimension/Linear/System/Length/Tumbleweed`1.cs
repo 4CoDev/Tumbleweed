@@ -6,7 +6,7 @@ namespace Tumbleweed.Array.Dimension.Linear.System.Length;
 
 public sealed class Tumbleweed<T> : Envelope
 {
-	public Tumbleweed(Tumbleweed.Scalar.Immutable.Any<T[]> array) : base
+	public Tumbleweed(Tumbleweed.Property.Output.Any<T[]> array) : base
 	(
 		new One(
 			new System<T>(array))

@@ -1,7 +1,7 @@
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using SCG = System.Collections.Generic;
 
 namespace Tumbleweed.Enumerable.Filled.By.Function.Result.With.Length;
@@ -14,7 +14,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 		Function::Any<T> filler
 	) : this
 	(
-		new Scalar::With.Value<System::Int32>(size),
+		new Property::With.Value<System::Int32>(size),
 		filler
 	)
 	{
@@ -22,13 +22,13 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	
 	public System
 	(
-		Scalar::Any<System::Int32> size,
+		Property::Any<System::Int32> size,
 		Function::Any<T> filler
 	) : base
 	(
-		new Enumerable::Filled.By.Scalar.Value.With.Length.System<T>(
+		new Enumerable::Filled.By.Property.Value.With.Length.System<T>(
 			size,
-			new Scalar::Function.Result.Actual<T>(filler))
+			new Property::Function.Result.Actual<T>(filler))
 	)
 	{
 	}

@@ -1,6 +1,6 @@
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Mathematics.Vector.Planar.Generic.Function.Result;
 
@@ -21,8 +21,8 @@ public sealed class Actual<T> : Envelope<T>
 		Function::Any<Any<T>> function
 	) : base
 	(
-		new Scalar.Value.Actual<T>(
-			new Scalar::Function.Result.Actual<Any<T>>(function))
+		new Property.Value.Actual<T>(
+			new Property::Function.Result.Actual<Any<T>>(function))
 	)
 	{
 	}

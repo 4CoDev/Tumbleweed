@@ -1,6 +1,6 @@
 using Godot;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 
 namespace DotGod.Resource.On.Path.From.File;
 
@@ -15,7 +15,7 @@ public sealed class Actual<T> : Envelope<T> where T : class
 	
 	public Actual(Any<String> path) : base
 	(
-		new Tumbleweed.Scalar.Immutable.Function.Result.Actual<T>(
+		new Tumbleweed.Property.Output.Function.Result.Actual<T>(
 			() => ResourceLoader.Load<T>(path.Value))
 	)
 	{

@@ -1,7 +1,7 @@
 using DotGod.Node.Member.Children;
 using Godot;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 

@@ -1,6 +1,6 @@
 using DotGod.Resource.On.Path.From.File;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.From.File.On.Path;
 

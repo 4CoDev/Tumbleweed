@@ -22,7 +22,7 @@ public sealed class Real : Envelope<Any>
 	
 	public Real
 	(
-		Any<Any> point, Tumbleweed.Scalar.Immutable.Any<Single> single
+		Any<Any> point, Tumbleweed.Property.Output.Any<Single> single
 	) : this
 	(
 		point,
@@ -45,7 +45,7 @@ public sealed class Real : Envelope<Any>
 	
 	public Real
 	(
-		Any<Any> point, Tumbleweed.Scalar.Immutable.Any<Double> @double
+		Any<Any> point, Tumbleweed.Property.Output.Any<Double> @double
 	) : this
 	(
 		point,

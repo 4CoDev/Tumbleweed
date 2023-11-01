@@ -1,19 +1,17 @@
 using Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Natural.Tumbleweed;
-using Tumbleweed.Mathematics.Number.Natural;
-using Mutable = Tumbleweed.Scalar.Mutable;
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property;
 using SCG = System.Collections.Generic;
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using SystemInteger = Tumbleweed.Mathematics.Number.Integer.System.Medium;
 
 namespace Tumbleweed.Array.Dimension.Spatial.System.Item.At.Index;
 
-public sealed class Tumbleweed<T> : Mutable::Envelope<T>
+public sealed class Tumbleweed<T> : Property::Transput.Envelope<T>
 {
 	public Tumbleweed
 	(
-		Immutable::Any<T[,,]> array,
-		SCG::IEnumerable<Any> indices
+		Property::Output.Any<T[,,]> array,
+		SCG::IEnumerable<Natural::Any> indices
 	) : base
 	(
 		new System<T>(

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
-using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property;
+using Tumbleweed.Property.Output;
 using System = System;
 
 namespace Tumbleweed.Dictionary;

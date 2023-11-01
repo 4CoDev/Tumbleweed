@@ -1,7 +1,7 @@
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Enumerable.Slice.In.Range;
 
@@ -15,8 +15,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		origin,
-		new Scalar::With.Value<Int32>(start),
-		new Scalar::With.Value<Int32>(end)
+		new Property::With.Value<Int32>(start),
+		new Property::With.Value<Int32>(end)
 	)
 	{
 	}
@@ -24,8 +24,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	public System
 	(
 		SCG::IEnumerable<T> origin,
-		Scalar::Any<Int32> start,
-		Scalar::Any<Int32> end
+		Property::Any<Int32> start,
+		Property::Any<Int32> end
 	) : base
 	(
 		new Enumerable::Function.Result<T>(
@@ -37,8 +37,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	private static SCG::IEnumerable<T> Function
 	(
 		SCG::IEnumerable<T> origin,
-		Scalar::Any<Int32> start,
-		Scalar::Any<Int32> end
+		Property::Any<Int32> start,
+		Property::Any<Int32> end
 	) =>
 	(
 		Function(origin, start.Value, end.Value)

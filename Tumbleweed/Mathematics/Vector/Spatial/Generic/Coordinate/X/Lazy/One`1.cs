@@ -1,12 +1,12 @@
-using Immutable = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Mathematics.Vector.Spatial.Generic.Coordinate.X.Lazy;
 
-public sealed class One<T> : Immutable::Envelope<T>
+public sealed class One<T> : Property::Envelope<T>
 {
 	public One(Any<T> point) : base
 	(
-		new Immutable::Lazy<T>(
+		new Property::Lazy<T>(
 			new Actual.One<T>(point))
 	)
 	{

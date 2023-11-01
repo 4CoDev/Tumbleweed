@@ -1,11 +1,11 @@
 using Tumbleweed.Mathematics.Number.Integer;
 using Tumbleweed.Mathematics.Number.Integer.With.Member;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 using Integer = Tumbleweed.Mathematics.Number.Integer;
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 using Mantissa = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System.Mantissa;
 
 // ReSharper disable once CheckNamespace

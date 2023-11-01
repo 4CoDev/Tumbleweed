@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 using Tumbleweed.String;
 using Tumbleweed.String.From.System.NonNullable;
 using System = System;

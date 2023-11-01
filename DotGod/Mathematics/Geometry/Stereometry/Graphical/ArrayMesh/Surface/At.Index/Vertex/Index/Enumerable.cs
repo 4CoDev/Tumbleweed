@@ -1,5 +1,5 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.SurfaceTool.Tool.From.ArrayMesh.Surface;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.At.Index.Vertex.Index;
 

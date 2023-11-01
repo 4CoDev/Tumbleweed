@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Boolean.Function.Result;
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.As;
-using Tumbleweed.Scalar.Nullable.From.System;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.As;
+using Tumbleweed.Property.Nullable.From.System;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 

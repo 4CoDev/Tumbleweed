@@ -1,6 +1,6 @@
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 using Enumerable = Tumbleweed.Enumerable;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 
 namespace Tumbleweed.Enumerable;
 
@@ -12,7 +12,7 @@ public sealed class Appended<T> : Enumerable::Envelope<T>
 		T value
 	) : base
 	(
-		new Enumerable::Scalar.Value<T>(
+		new Enumerable::Property.Value<T>(
 			new Actual<IEnumerable<T>>(
 				() => enumerable.Append(value)))
 	)

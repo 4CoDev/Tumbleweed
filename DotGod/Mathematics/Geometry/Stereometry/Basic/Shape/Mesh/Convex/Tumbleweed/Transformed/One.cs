@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex;
 using Enumerable = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.Member.Vertex.Whole.Enumerable;
 using Godot = Godot;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Tumbleweed.Transformed;
 
@@ -14,7 +14,7 @@ public sealed class One : Envelope
 	) : this
 	(
 		mesh,
-		new Scalar::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value<Godot::Transform3D>(transform)
 	)
 	{
 	}
@@ -22,7 +22,7 @@ public sealed class One : Envelope
 	public One
 	(
 		Any mesh,
-		Scalar::Any<Godot::Transform3D> transform
+		Property::Any<Godot::Transform3D> transform
 	) : base
 	(
 		new global::Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Mesh.Convex.With.Vertex.Whole.Enumerable.One(

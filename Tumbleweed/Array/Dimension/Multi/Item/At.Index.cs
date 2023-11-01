@@ -1,10 +1,10 @@
 using Tumbleweed.Mathematics.Number.Natural;
-using Mutable = Tumbleweed.Scalar.Mutable;
+using Property = Tumbleweed.Property.Transput;
 using SCG = System.Collections.Generic;
 
 namespace Tumbleweed.Array.Dimension.Multi.Item;
 
-public sealed class Index<T> : Mutable::Envelope<T>
+public sealed class Index<T> : Property::Envelope<T>
 {
 	public Index
 	(
@@ -12,7 +12,7 @@ public sealed class Index<T> : Mutable::Envelope<T>
 		SCG::IEnumerable<Any> indices
 	) : base
 	(
-		new Mutable::Function.Result<T>(
+		new Property::Function.Result<T>(
 			() => array[indices])
 	)
 	{

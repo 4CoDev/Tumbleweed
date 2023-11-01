@@ -10,7 +10,7 @@ public sealed class One : Envelope
 		Any<Tumbleweed.Mathematics.Number.Natural.Any> index
 	) : base
 	(
-		new Scalar.Value.One(
+		new Property.Value.One(
 			new Nullable.At.Index.One(batch, index))
 	)
 	{

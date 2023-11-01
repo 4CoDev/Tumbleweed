@@ -1,17 +1,17 @@
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
-namespace Tumbleweed.Array.Dimension.Spatial.Filling.Specific.Action.Filler.Scalar.Value;
+namespace Tumbleweed.Array.Dimension.Spatial.Filling.Specific.Action.Filler.Property.Value;
 
 public sealed class One<T> : Procedure::Envelope
 {
 	public One
 	(
 		T[,,] array,
-		Scalar::Any<T> filler
+		Property::Any<T> filler
 	) : this
 	(
-		new Scalar::With.Value<T[,,]>(array),
+		new Property::With.Value<T[,,]>(array),
 		filler
 	)
 	{
@@ -19,8 +19,8 @@ public sealed class One<T> : Procedure::Envelope
 	
 	public One
 	(
-		Scalar::Any<T[,,]> array,
-		Scalar::Any<T> filler
+		Property::Any<T[,,]> array,
+		Property::Any<T> filler
 	) : base
 	(
 		new Procedure::From.System(
@@ -31,8 +31,8 @@ public sealed class One<T> : Procedure::Envelope
 
 	private static void Procedure
 	(
-		Scalar::Any<T[,,]> array,
-		Scalar::Any<T> filler
+		Property::Any<T[,,]> array,
+		Property::Any<T> filler
 	)
 	{
 		Procedure(array.Value, filler);
@@ -41,7 +41,7 @@ public sealed class One<T> : Procedure::Envelope
 	private static void Procedure
 	(
 		T[,,] array,
-		Scalar::Any<T> filler
+		Property::Any<T> filler
 	)
 	{
 		for (Int32 x = 0; x < array.GetLength(0); x++)

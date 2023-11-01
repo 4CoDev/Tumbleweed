@@ -1,5 +1,5 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using Enumerable = Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Information.Measurement.Byte.From.System;
@@ -8,7 +8,7 @@ public sealed class Multiple : Enumerable.Envelope<IEnumerable<Mathematics.Boole
 {
 	public Multiple(IEnumerable<global::System.Byte> bytes) : this
 	(
-		new Enumerable::Item.Every.Scalar.Of.Value<global::System.Byte>(bytes)
+		new Enumerable::Item.Every.Property.Of.Value<global::System.Byte>(bytes)
 	)
 	{
 	}

@@ -1,9 +1,9 @@
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Mathematics.Boolean.Literal;
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.As;
-using Tumbleweed.Scalar.Nullable.From.System;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.As;
+using Tumbleweed.Property.Nullable.From.System;
 
 using System = System;
 using SC = System.Collections;

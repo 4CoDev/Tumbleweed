@@ -1,10 +1,10 @@
 using Tumbleweed.Object.Casted.Convertee;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output.With;
 using System = System;
 
 namespace Tumbleweed.Array.Dimension.Multi.System.Casted.Convertee;
 
-public sealed class Object : Tumbleweed.Scalar.Immutable.Envelope<System::Array>
+public sealed class Object : Tumbleweed.Property.Output.Envelope<System::Array>
 {
 	public Object(System::Object @object) : this
 	(
@@ -13,9 +13,9 @@ public sealed class Object : Tumbleweed.Scalar.Immutable.Envelope<System::Array>
 	{
 	}
 	
-	public Object(Tumbleweed.Scalar.Immutable.Any<System::Object> scalar) : base
+	public Object(Tumbleweed.Property.Output.Any<System::Object> property) : base
 	(
-		new Object<System::Array>(scalar)
+		new Object<System::Array>(property)
 	)
 	{
 	}

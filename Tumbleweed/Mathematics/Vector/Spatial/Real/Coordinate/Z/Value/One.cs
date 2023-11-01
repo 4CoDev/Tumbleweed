@@ -8,7 +8,7 @@ public sealed class One : Envelope
 {
 	public One(Any<Any> point) : base
 	(
-		new Mathematics.Number.Real.Scalar.Value(
+		new Mathematics.Number.Real.Property.Value(
 			new One<Any>(point))
 	)
 	{

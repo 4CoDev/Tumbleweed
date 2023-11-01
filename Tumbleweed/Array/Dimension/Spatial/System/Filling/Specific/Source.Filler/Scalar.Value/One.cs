@@ -1,21 +1,21 @@
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 using Action = Tumbleweed.Array.Dimension.Spatial.System.Filling.Specific.Action;
 using Procedure = Tumbleweed.Subroutine.Procedure.Nullary;
 
-namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.Specific.Source.Filler.Scalar.Value;
+namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.Specific.Source.Filler.Property.Value;
 
-public sealed class One<T> : Scalar::Envelope<T[,,]>
+public sealed class One<T> : Property::Envelope<T[,,]>
 {
 	public One
 	(
-		Scalar::Any<T[,,]> array,
-		Scalar::Any<T> filler
+		Property::Any<T[,,]> array,
+		Property::Any<T> filler
 	) : base
 	(
-		new Scalar::With.Callback.Recurring<T[,,]>(
+		new Property::With.Callback.Recurring<T[,,]>(
 			array,
-			new Action::Filler.Scalar.Value.One<T>(array, filler))
+			new Action::Filler.Property.Value.One<T>(array, filler))
 	)
 	{
 	}

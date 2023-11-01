@@ -2,7 +2,7 @@ using Tumbleweed.Enumerable;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Tumbleweed;
 
-public sealed class One : global::Tumbleweed.Scalar.Immutable.Envelope<Int32>
+public sealed class One : global::Tumbleweed.Property.Output.Envelope<Int32>
 {
 	public One(global::Tumbleweed.Mathematics.Number.Integer.Any integer) : base
 	(

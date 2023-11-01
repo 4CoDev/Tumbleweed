@@ -1,10 +1,10 @@
 using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Godot = Godot;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Vertex.Member.Translation.Vector;
 
-public sealed class One : Scalar::Envelope<Godot::Vector3>
+public sealed class One : Property::Envelope<Godot::Vector3>
 {
 	public One(Any vertex) : base
 	(

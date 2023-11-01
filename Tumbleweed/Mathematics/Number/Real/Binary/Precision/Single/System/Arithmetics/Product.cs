@@ -1,10 +1,10 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
+using Tumbleweed.Property.Output.From.Enumerable;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.Arithmetics;
 
-public sealed class Product : Tumbleweed.Scalar.Immutable.Envelope<System::Single>
+public sealed class Product : Tumbleweed.Property.Output.Envelope<System::Single>
 {
 	public Product(params System::Single[] singles) : this
 	(

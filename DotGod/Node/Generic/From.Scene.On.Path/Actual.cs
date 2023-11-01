@@ -1,6 +1,6 @@
 using Godot;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using String = DotGod.Node.Path.From.String;
 
 namespace DotGod.Node.Generic.From.Scene.On.Path;

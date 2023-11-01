@@ -1,6 +1,6 @@
 using Tumbleweed.Enumerable.Requirement.Length;
 using Tumbleweed.Information.Measurement.Byte.Multiple.From.Bit.Enumerable;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 using TW = Tumbleweed;
 
 // ReSharper disable once CheckNamespace

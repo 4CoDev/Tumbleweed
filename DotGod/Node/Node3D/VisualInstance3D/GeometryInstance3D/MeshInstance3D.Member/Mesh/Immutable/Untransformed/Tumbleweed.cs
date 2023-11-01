@@ -1,7 +1,7 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh;
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh.From.Godot;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 
 namespace DotGod.Node.Node3D.VisualInstance3D.GeometryInstance3D.MeshInstance3D.Member.Mesh.Immutable.Untransformed;
 

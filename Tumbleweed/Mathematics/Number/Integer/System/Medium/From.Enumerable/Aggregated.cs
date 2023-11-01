@@ -1,4 +1,4 @@
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Enumerable;
 

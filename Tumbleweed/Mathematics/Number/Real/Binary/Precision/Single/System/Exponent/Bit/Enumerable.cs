@@ -1,7 +1,7 @@
 using Enumerable = Tumbleweed.Enumerable;
 using Boolean = Tumbleweed.Mathematics.Boolean;
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.Exponent.Bit;
 
@@ -9,7 +9,7 @@ public sealed class Enumerable : Enumerable::Envelope<Boolean::Any>
 {
 	public Enumerable(System::Single single) : this
 	(
-		new Scalar::Immutable.With.Value
+		new Property::Output.With.Value
 			<System::Single>
 			(single)
 	)
@@ -18,7 +18,7 @@ public sealed class Enumerable : Enumerable::Envelope<Boolean::Any>
 	
 	public Enumerable
 	(
-		Scalar::Immutable.Any<System::Single> single
+		Property::Output.Any<System::Single> single
 	) : base
 	(
 		new Enumerable::Slice.In.Range.System

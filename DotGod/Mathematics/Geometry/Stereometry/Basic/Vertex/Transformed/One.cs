@@ -1,5 +1,5 @@
 using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Godot = Godot;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Vertex.Transformed;
@@ -13,7 +13,7 @@ public sealed class One : Envelope
 	) : this
 	(
 		vertex,
-		new Scalar::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value<Godot::Transform3D>(transform)
 	)
 	{
 	}
@@ -21,7 +21,7 @@ public sealed class One : Envelope
 	public One
 	(
 		Any vertex,
-		Scalar::Any<Godot::Transform3D> transform
+		Property::Any<Godot::Transform3D> transform
 	) : base
 	(
 		new Tumbleweed.Mathematics.Geometry.Stereometry.Vertex.With.Translation.One(

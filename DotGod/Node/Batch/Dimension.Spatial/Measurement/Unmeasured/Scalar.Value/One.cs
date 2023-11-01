@@ -1,17 +1,17 @@
 using Tumbleweed.Array.Dimension.Multi;
 
-namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured.Scalar.Value;
+namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured.Property.Value;
 
 public sealed class One : Any
 {
-	public One(Tumbleweed.Scalar.Immutable.Any<Any> scalar) =>
-		this.scalar = scalar;
+	public One(Tumbleweed.Property.Output.Any<Any> property) =>
+		this.property = property;
 
-	public Any<Tumbleweed.Scalar.Nullable.Any<Any>> Subbatches =>
-		scalar.Value.Subbatches;
+	public Any<Tumbleweed.Property.Nullable.Any<Any>> Subbatches =>
+		property.Value.Subbatches;
 
 	public ICollection<Entity.Any> Entities =>
-		scalar.Value.Entities;
+		property.Value.Entities;
 
-	private readonly Tumbleweed.Scalar.Immutable.Any<Any> scalar;
+	private readonly Tumbleweed.Property.Output.Any<Any> property;
 }

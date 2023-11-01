@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property;
+using Tumbleweed.Property.Output;
 
 namespace Tumbleweed.Dictionary.Scalar;
 

@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Number.Integer;
 using Tumbleweed.Mathematics.Number.Integer.From.System;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output.Function.Result;
 
 namespace Tumbleweed.Mathematics.Arithmetic.Numerical.Integer;
 

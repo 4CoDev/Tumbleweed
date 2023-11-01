@@ -1,8 +1,8 @@
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 using Enumerable = Tumbleweed.Enumerable;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 
 namespace Tumbleweed.Enumerable.From.Array.Spatial;
 

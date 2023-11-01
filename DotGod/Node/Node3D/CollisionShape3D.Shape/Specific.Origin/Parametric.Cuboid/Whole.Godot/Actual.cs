@@ -1,17 +1,17 @@
 using Godot = Godot;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 using Object = Tumbleweed.Object;
 
 namespace DotGod.Node.Node3D.CollisionShape3D.Shape.Specific.Origin.Parametric.Cuboid.Whole.Godot;
 
-public sealed class Actual : Scalar::Envelope<Godot::BoxShape3D>
+public sealed class Actual : Property::Envelope<Godot::BoxShape3D>
 {
 	public Actual
 	(
 		Godot::CollisionShape3D collider
 	) : this
 	(
-		new Scalar::With.Value
+		new Property::With.Value
 			<Godot::CollisionShape3D>
 			(collider)
 	)
@@ -20,7 +20,7 @@ public sealed class Actual : Scalar::Envelope<Godot::BoxShape3D>
 	
 	public Actual
 	(
-		Scalar::Any<Godot::CollisionShape3D> collider
+		Property::Any<Godot::CollisionShape3D> collider
 	) : base
 	(
 		new Object::Casted.Convertee.Object<Godot::BoxShape3D>(

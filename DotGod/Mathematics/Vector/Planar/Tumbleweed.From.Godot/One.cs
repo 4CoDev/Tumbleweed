@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Number.Real;
 using Tumbleweed.Mathematics.Vector.Planar.Generic.With.Coordinate.Definition;
 using Godot = Godot;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Vector.Planar.Tumbleweed.From.Godot;
 
@@ -9,12 +9,12 @@ public sealed class One : global::Tumbleweed.Mathematics.Vector.Planar.Generic.E
 {
 	public One(Godot::Vector2 vector) : this
 	(
-		new Scalar::With.Value<Godot::Vector2>(vector)
+		new Property::With.Value<Godot::Vector2>(vector)
 	)
 	{
 	}
 
-	public One(Scalar::Any<Godot::Vector2> vector) : base
+	public One(Property::Any<Godot::Vector2> vector) : base
 	(
 		new Unique<Any>(
 			new Planar.Godot.Coordinate.X.Tumbleweed.One(vector),

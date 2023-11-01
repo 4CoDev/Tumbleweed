@@ -1,11 +1,11 @@
 using Godot;
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable.From.Enumerable;
-using Scalar = Tumbleweed.Scalar;
+using Tumbleweed.Property.Output.From.Enumerable;
+using Property = Tumbleweed.Property;
 
 namespace DotGod.Transform.Spatial.Product;
 
-public sealed class Multiple : Scalar.Immutable.Envelope<Transform3D>
+public sealed class Multiple : Property::Output.Envelope<Transform3D>
 {
 	public Multiple
 	(

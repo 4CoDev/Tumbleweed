@@ -1,7 +1,7 @@
 using Group = DotGod.Engine.Iteration.Event.Group;
 using System = System;
 using Function = Tumbleweed.Subroutine.Function.Nullary;
-using Scalar = Tumbleweed.Scalar.Immutable;
+using Property = Tumbleweed.Property.Output;
 
 namespace DotGod.Engine.Iteration.Event.Group.Function.Result;
 
@@ -16,8 +16,8 @@ public sealed class One : Group::Envelope
 	
 	public One(Function::Any<Group::Any> function) : base
 	(
-		new Group::Scalar.Value.One(
-			new Scalar::Function.Result.Actual
+		new Group::Property.Value.One(
+			new Property::Function.Result.Actual
 				<Group::Any>
 				(function))
 	)

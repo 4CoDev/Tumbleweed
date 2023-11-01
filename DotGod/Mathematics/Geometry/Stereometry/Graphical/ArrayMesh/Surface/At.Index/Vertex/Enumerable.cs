@@ -1,6 +1,6 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Vertex;
 using Tumbleweed.Enumerable;
-using Tumbleweed.Scalar.Immutable;
+using Tumbleweed.Property.Output;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.At.Index.
 	Vertex;

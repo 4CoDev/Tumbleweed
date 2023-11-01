@@ -7,7 +7,7 @@ namespace DotGod.Transform.Spatial.Origin.Point;
 
 public sealed class One : Envelope<Any>
 {
-	public One(Tumbleweed.Scalar.Immutable.Any<Transform3D> transform) : base
+	public One(Tumbleweed.Property.Output.Any<Transform3D> transform) : base
 	(
 		new Mathematics.Vector.Spatial.Tumbleweed.From.Godot.One(
 			new Vector.One(transform))

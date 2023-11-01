@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Number.Integer.System.Medium.Is.Positive;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 using One = Tumbleweed.Mathematics.Number.Integer.System.Medium.Less.Then.One;
 using System = System;
 

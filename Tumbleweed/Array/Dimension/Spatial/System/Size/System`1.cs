@@ -1,8 +1,8 @@
-using Tumbleweed.Scalar.Immutable.Of;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output.Of;
+using Tumbleweed.Property.Output.With;
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
-using Scalar = Tumbleweed.Scalar;
+using Property = Tumbleweed.Property;
 
 namespace Tumbleweed.Array.Dimension.Spatial.System.Size;
 
@@ -15,7 +15,7 @@ public sealed class System<T> : Enumerable::Envelope<System::Int32>
 	{
 	}
 	
-	public System(Tumbleweed.Scalar.Immutable.Any<T[,,]> array) : base
+	public System(Tumbleweed.Property.Output.Any<T[,,]> array) : base
 	(
 		new Enumerable::Item.Every.Function.Result<Int32>(
 			() => array.Value.GetLength(0),

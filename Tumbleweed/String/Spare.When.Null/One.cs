@@ -1,5 +1,5 @@
-using Tumbleweed.Scalar.Nullable;
-using Tumbleweed.Scalar.Nullable.From.System;
+using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Nullable.From.System;
 
 namespace Tumbleweed.String.Spare.When.Null;
 
@@ -59,8 +59,8 @@ public sealed class One : Envelope
 		Any spare
 	) : base
 	(
-		new String.Scalar.Value.Actual(
-			new Tumbleweed.Scalar.Nullable.Spare.When.Null<Any>(
+		new String.Property.Value.Actual(
+			new Tumbleweed.Property.Nullable.Spare.When.Null<Any>(
 				nullable,
 				spare))
 	)

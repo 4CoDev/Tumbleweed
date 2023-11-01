@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Number.Integer.With.Member;
-using Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.With;
+using Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.With;
 using Integer = Tumbleweed.Mathematics.Number.Integer;
 using System = System;
 using Exponent = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System.Exponent;

@@ -10,8 +10,8 @@ public sealed class One : Any
 {
 	public One
 	(
-		Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> mesh,
-		Tumbleweed.Scalar.Immutable.Any<Int32> vertex
+		Tumbleweed.Property.Output.Any<Godot.MeshDataTool> mesh,
+		Tumbleweed.Property.Output.Any<Int32> vertex
 	)
 	{
 		this.mesh = mesh;
@@ -24,13 +24,13 @@ public sealed class One : Any
 	public Any<Tumbleweed.Mathematics.Number.Real.Any> Normal =>
 		new Mathematics.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Normal.As.Point.One(mesh, vertex);
 
-	public Tumbleweed.Scalar.Immutable.Any<Color> Color =>
+	public Tumbleweed.Property.Output.Any<Color> Color =>
 		new Mathematics.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.Color.One(mesh, vertex);
 
 	public Tumbleweed.Mathematics.Vector.Planar.Generic.Any<Tumbleweed.Mathematics.Number.Real.Any> UV =>
 		new Mathematics.Geometry.Stereometry.Graphical.MeshDataTool.Vertex.At.Index.UV.As.Point.One(mesh, vertex);
 
-	private readonly Tumbleweed.Scalar.Immutable.Any<Godot.MeshDataTool> mesh;
+	private readonly Tumbleweed.Property.Output.Any<Godot.MeshDataTool> mesh;
 	
-	private readonly Tumbleweed.Scalar.Immutable.Any<Int32> vertex;
+	private readonly Tumbleweed.Property.Output.Any<Int32> vertex;
 }

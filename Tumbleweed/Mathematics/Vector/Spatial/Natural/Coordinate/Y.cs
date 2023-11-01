@@ -1,5 +1,5 @@
 using Tumbleweed.Mathematics.Number.Natural;
-using Tumbleweed.Mathematics.Number.Natural.Scalar;
+using Tumbleweed.Mathematics.Number.Natural.Property;
 using Tumbleweed.Mathematics.Vector.Spatial.Generic;
 using Tumbleweed.Mathematics.Vector.Spatial.Generic.Coordinate.Y.Actual;
 

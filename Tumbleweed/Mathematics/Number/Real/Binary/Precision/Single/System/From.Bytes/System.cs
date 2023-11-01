@@ -1,12 +1,12 @@
 using Tumbleweed.Memory.Span.ReadOnly;
-using Scalar = Tumbleweed.Scalar.Immutable;
-using Tumbleweed.Scalar.Immutable.Function.Result;
+using Property = Tumbleweed.Property.Output;
+using Tumbleweed.Property.Output.Function.Result;
 using System = System;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 namespace Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From.Bytes;
 
-public sealed class System : Scalar::Envelope<System::Single>
+public sealed class System : Property::Envelope<System::Single>
 {
 	public System(IEnumerable<System::Byte> bytes) : this
 	(
