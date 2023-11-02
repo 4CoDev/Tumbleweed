@@ -6,7 +6,7 @@ public sealed class Uniform<T> : Envelope<T>
 {
 	public Uniform(T coordinate) : this
 	(
-		new Property::With.Value<T>(coordinate)
+		new Property::With.Value.One<T>(coordinate)
 	)
 	{
 	}

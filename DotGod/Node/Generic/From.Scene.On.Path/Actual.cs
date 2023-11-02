@@ -1,6 +1,6 @@
 using Godot;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using String = DotGod.Node.Path.From.String;
 
 namespace DotGod.Node.Generic.From.Scene.On.Path;
@@ -9,7 +9,7 @@ public sealed class Actual : Envelope<Godot.Node>
 {
 	public Actual(Godot.Node relation, System.String path) : this
 	(
-		new Value<Godot.Node>(relation),
+		new One<Godot.Node>(relation),
 		path
 	)
 	{
@@ -18,7 +18,7 @@ public sealed class Actual : Envelope<Godot.Node>
 	public Actual(Any<Godot.Node> relation, System.String path) : this
 	(
 		relation,
-		new Value<System.String>(path)
+		new One<System.String>(path)
 	)
 	{
 	}
@@ -34,7 +34,7 @@ public sealed class Actual : Envelope<Godot.Node>
 	public Actual(Any<Godot.Node> relation, NodePath path) : this
 	(
 		relation,
-		new Value<NodePath>(path)
+		new One<NodePath>(path)
 	)
 	{
 	}

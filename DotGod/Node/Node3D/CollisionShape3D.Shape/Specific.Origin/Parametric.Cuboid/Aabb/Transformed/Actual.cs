@@ -13,7 +13,7 @@ public sealed class Actual : TumbleweedAabb::Envelope
 		Godot::CollisionShape3D collider
 	) : this
 	(
-		new Property::With.Value
+		new Property::With.Value.One
 			<Godot::CollisionShape3D>
 			(collider)
 	)

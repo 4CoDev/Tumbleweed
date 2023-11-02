@@ -9,7 +9,7 @@ public sealed class Mutable : Envelope<Any>
 {
 	public Mutable(Godot.MeshInstance3D node) : this
 	(
-		new Tumbleweed.Property.Output.With.Value<Godot.MeshInstance3D>(node)
+		new Tumbleweed.Property.Output.With.Value.One<Godot.MeshInstance3D>(node)
 	)
 	{
 	}

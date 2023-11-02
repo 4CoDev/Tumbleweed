@@ -11,7 +11,7 @@ public sealed class Recurring<T> : Property::Envelope<T>
 		Procedure::Any callback
 	) : this
 	(
-		new Property::With.Value<T>(value),
+		new Property::With.Value.One<T>(value),
 		callback
 	)
 	{

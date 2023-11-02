@@ -13,7 +13,7 @@ public sealed class Null<T> : Property::Envelope<T>
 	) : this
 	(
 		nullable,
-		new Property::With.Value<T>(spare)
+		new Property::With.Value.One<T>(spare)
 	)
 	{
 	}

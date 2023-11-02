@@ -11,7 +11,7 @@ public sealed class System : Envelope
 	) : this
 	(
 		decimals,
-		new global::Tumbleweed.Property.Output.With.Value<Int32>(index)
+		new global::Tumbleweed.Property.Output.With.Value.One<Int32>(index)
 	)
 	{
 	}

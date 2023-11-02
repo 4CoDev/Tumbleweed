@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Boolean.From.Enumerable;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.Is.Positive;
@@ -9,7 +9,7 @@ public sealed class State : Boolean.Envelope
 {
 	public State(System::Int32 integer) : this
 	(
-		new Value<System::Int32>(integer)
+		new One<System::Int32>(integer)
 	)
 	{
 	}

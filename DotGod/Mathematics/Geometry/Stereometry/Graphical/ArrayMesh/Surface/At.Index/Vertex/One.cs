@@ -1,6 +1,6 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Vertex;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.At.Index.
 	Vertex;
@@ -15,8 +15,8 @@ public sealed class One : Envelope
 	) : this
 	(
 		mesh,
-		new Value<Int32>(surface),
-		new Value<Int32>(vertex)
+		new One<Int32>(surface),
+		new One<Int32>(vertex)
 	)
 	{
 	}
@@ -30,7 +30,7 @@ public sealed class One : Envelope
 	(
 		mesh,
 		surface,
-		new Value<Int32>(vertex)
+		new One<Int32>(vertex)
 	)
 	{
 	}

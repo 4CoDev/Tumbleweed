@@ -8,7 +8,7 @@ public sealed class Enumerable : Tumbleweed.Enumerable.Envelope<Boolean.Any>
 {
 	public Enumerable(System::Single single) : this
 	(
-		new Property::With.Value<System::Single>(single)
+		new Property::With.Value.One<System::Single>(single)
 	)
 	{
 	}

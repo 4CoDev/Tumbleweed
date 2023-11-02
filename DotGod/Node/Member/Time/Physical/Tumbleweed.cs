@@ -9,7 +9,7 @@ public sealed class Tumbleweed : Envelope
 {
 	public Tumbleweed(Godot::Node node) : this
 	(
-		new Property::With.Value<Godot::Node>(node)
+		new Property::With.Value.One<Godot::Node>(node)
 	)
 	{
 	}

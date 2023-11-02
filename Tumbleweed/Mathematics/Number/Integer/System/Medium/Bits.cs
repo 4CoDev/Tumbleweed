@@ -1,7 +1,7 @@
 
 using Tumbleweed.Mathematics.Boolean;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium;
@@ -10,7 +10,7 @@ public sealed class Bits : Enumerable.Envelope<Boolean.Any>
 {
 	public Bits(System::Int32 integer) : this
 	(
-		new Value<System::Int32>(integer)
+		new One<System::Int32>(integer)
 	)
 	{
 	}

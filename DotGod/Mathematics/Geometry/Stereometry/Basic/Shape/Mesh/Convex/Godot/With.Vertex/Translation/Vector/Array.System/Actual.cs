@@ -10,7 +10,7 @@ public sealed class Actual : Property::Envelope<Godot::ConvexPolygonShape3D>
 		params Godot::Vector3[] translations
 	) : this
 	(
-		new Property::With.Value<Godot::Vector3[]>(translations)
+		new Property::With.Value.One<Godot::Vector3[]>(translations)
 	)
 	{
 	}

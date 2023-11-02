@@ -1,7 +1,7 @@
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Information.Measurement.Byte.From.System;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 using System = System;
 
@@ -11,7 +11,7 @@ public sealed class Bytes : Enumerable.Envelope<IEnumerable<Boolean.Any>>
 {
 	public Bytes(System::Double @double) : this
 	(
-		new Value<System::Double>(@double)
+		new One<System::Double>(@double)
 	)
 	{
 	}

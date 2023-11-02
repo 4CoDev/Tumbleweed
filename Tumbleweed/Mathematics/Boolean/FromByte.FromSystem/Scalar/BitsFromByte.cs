@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Boolean.FromByte.FromSystem.Scalar;
@@ -19,7 +19,7 @@ public sealed class BitsFromByte : Any<IEnumerable<Any>>
 			{
 				yield return new BooleanWithIndex(
 					@byte,
-					new Value<Int32>(position));
+					new One<Int32>(position));
 			}
 		}
 	}

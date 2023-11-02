@@ -15,7 +15,7 @@ public sealed class Enumerable : Enumerable::Envelope<Any>
 	) : this
 	(
 		vertices,
-		new Property::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value.One<Godot::Transform3D>(transform)
 	)
 	{
 	}

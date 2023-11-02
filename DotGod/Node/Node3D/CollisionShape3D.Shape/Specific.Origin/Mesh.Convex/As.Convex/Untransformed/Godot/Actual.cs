@@ -8,7 +8,7 @@ public sealed class Actual : Property::Envelope<Godot::ConvexPolygonShape3D>
 {
 	public Actual(Godot::CollisionShape3D collider) : this
 	(
-		new Property::With.Value
+		new Property::With.Value.One
 			<Godot::CollisionShape3D>
 			(collider)
 	)

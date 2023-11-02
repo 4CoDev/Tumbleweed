@@ -1,4 +1,4 @@
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 namespace Tumbleweed.Memory.Span.ReadOnly.Requirement.Length;
@@ -12,7 +12,7 @@ public sealed class System<T> : ReadOnlySpan.Envelope<T>
 	) : this
 	(
 		span,
-		new Value<Int32>(size)
+		new One<Int32>(size)
 	)
 	{
 	}

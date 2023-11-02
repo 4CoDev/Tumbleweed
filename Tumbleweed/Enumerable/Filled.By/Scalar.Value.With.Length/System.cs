@@ -13,7 +13,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 		Property::Any<T> filler
 	) : this
 	(
-		new Property::With.Value<System::Int32>(length),
+		new Property::With.Value.One<System::Int32>(length),
 		filler
 	)
 	{

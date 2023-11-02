@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace Tumbleweed.Mathematics.Boolean.From.System;
 
@@ -7,7 +7,7 @@ public sealed class One : Any
 {
 	public One(global::System.Boolean boolean) : this
 	(
-		new Value<global::System.Boolean>(boolean)
+		new One<global::System.Boolean>(boolean)
 	)
 	{
 	}

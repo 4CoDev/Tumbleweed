@@ -7,7 +7,7 @@ public sealed class Actual : Property::Envelope<Vector3>
 {
 	public Actual(BoxShape3D cuboid) : this
 	(
-		new Property::With.Value<BoxShape3D>(cuboid)
+		new Property::With.Value.One<BoxShape3D>(cuboid)
 	)
 	{
 	}

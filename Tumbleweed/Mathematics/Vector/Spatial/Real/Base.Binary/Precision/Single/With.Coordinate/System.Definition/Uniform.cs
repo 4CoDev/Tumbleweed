@@ -11,7 +11,7 @@ public sealed class Uniform : Generic.Envelope<Any>
 		System::Single coordinate
 	) : this
 	(
-		new Property::With.Value
+		new Property::With.Value.One
 			<System::Single>
 			(coordinate)
 	)

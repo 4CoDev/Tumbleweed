@@ -9,7 +9,7 @@ public sealed class One<T> : Nullable::Envelope<T>
 {
 	public One(T value) : this
 	(
-		new Property::With.Value<T>(value)
+		new Property::With.Value.One<T>(value)
 	)
 	{
 	}

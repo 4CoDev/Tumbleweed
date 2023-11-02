@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Vertex;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Godot.Vertex.Tumbleweed.Enumerable;
 
@@ -12,7 +12,7 @@ public sealed class One : global::Tumbleweed.Enumerable.Envelope<Any>
 		ConvexPolygonShape3D shape
 	) : this
 	(
-		new Value<ConvexPolygonShape3D>(shape)
+		new One<ConvexPolygonShape3D>(shape)
 	)
 	{
 	}

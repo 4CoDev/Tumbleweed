@@ -13,7 +13,7 @@ public sealed class System<T> : Property::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Property::With.Value<System::Int32>(index)
+		new Property::With.Value.One<System::Int32>(index)
 	)
 	{
 	}

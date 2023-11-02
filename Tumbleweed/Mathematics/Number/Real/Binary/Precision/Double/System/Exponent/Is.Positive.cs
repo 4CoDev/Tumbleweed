@@ -2,7 +2,7 @@ using Tumbleweed.Mathematics.Boolean.From.Enumerable.At.Index;
 using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 using Property = Tumbleweed.Property;
 using System = System;
@@ -15,7 +15,7 @@ public sealed class Positive : Boolean.Envelope
 {
 	public Positive(System::Double @double) : this
 	(
-		new Value<System::Double>(@double)
+		new One<System::Double>(@double)
 	)
 	{
 	}

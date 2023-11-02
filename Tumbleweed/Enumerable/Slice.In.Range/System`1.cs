@@ -15,8 +15,8 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		origin,
-		new Property::With.Value<Int32>(start),
-		new Property::With.Value<Int32>(end)
+		new Property::With.Value.One<Int32>(start),
+		new Property::With.Value.One<Int32>(end)
 	)
 	{
 	}

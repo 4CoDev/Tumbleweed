@@ -7,7 +7,7 @@ public sealed class Length : Property::Envelope<System::Int32>
 {
 	public Length() : base
 	(
-		new Property::With.Value<System::Int32>(23)
+		new Property::With.Value.One<System::Int32>(23)
 	)
 	{
 	}

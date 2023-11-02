@@ -1,6 +1,6 @@
 using Godot;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Resource.On.Path.From.File;
 
@@ -8,7 +8,7 @@ public sealed class Actual<T> : Envelope<T> where T : class
 {
 	public Actual(String path) : this
 	(
-		new Value<String>(path)
+		new One<String>(path)
 	)
 	{
 	}

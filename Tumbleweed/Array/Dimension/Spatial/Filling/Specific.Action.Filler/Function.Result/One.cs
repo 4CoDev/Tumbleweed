@@ -12,7 +12,7 @@ public sealed class One<T> : Procedure::Envelope
 		Function::Any<T> filler
 	) : this
 	(
-		new Property::With.Value<T[,,]>(array),
+		new Property::With.Value.One<T[,,]>(array),
 		filler
 	)
 	{

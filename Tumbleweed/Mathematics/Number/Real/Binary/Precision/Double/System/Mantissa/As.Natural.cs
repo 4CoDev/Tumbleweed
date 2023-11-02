@@ -2,7 +2,7 @@ using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Mathematics.Number.Real.Binary.Precision.Double.System;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using System = System;
 using Property = Tumbleweed.Property;
@@ -18,7 +18,7 @@ public sealed class Natural : Number.Natural.Envelope
 		System::Double @double
 	) : this
 	(
-		new Value<System::Double>(@double)
+		new One<System::Double>(@double)
 	)
 	{
 	}

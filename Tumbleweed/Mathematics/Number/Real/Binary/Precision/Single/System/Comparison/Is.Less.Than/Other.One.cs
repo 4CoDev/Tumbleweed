@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Boolean.System.Function.Result;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 using System = System;
 using Property = Tumbleweed.Property;
@@ -18,8 +18,8 @@ public sealed class One : Boolean.Envelope
 		System::Single larger
 	) : this
 	(
-		new Value<System::Single>(smaller),
-		new Value<System::Single>(larger)
+		new One<System::Single>(smaller),
+		new One<System::Single>(larger)
 	)
 	{
 	}

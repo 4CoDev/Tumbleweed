@@ -7,7 +7,7 @@ public sealed class One<T> : Property::Envelope<T>
 	public One(ICollection<T> collection, Int32 index) : this
 	(
 		collection,
-		new Property::With.Value<Int32>(index)
+		new Property::With.Value.One<Int32>(index)
 	)
 	{
 	}

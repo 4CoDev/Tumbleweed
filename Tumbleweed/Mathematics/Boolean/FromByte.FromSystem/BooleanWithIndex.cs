@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Boolean.Property.Value;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using System = System;
 
 namespace Tumbleweed.Mathematics.Boolean.FromByte.FromSystem;
@@ -9,7 +9,7 @@ public sealed class BooleanWithIndex : Envelope
 {
 	public BooleanWithIndex(Any<System::Byte> @byte, Int32 index) : this
 	(
-		@byte, new Value<Int32>(index)
+		@byte, new One<Int32>(index)
 	)
 	{
 	}

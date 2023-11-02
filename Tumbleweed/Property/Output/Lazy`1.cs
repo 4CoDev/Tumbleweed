@@ -3,7 +3,7 @@ using Tumbleweed.Mathematics.Boolean.Literal;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
 using Tumbleweed.Property.Output.Equality.Of.Two;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Tumbleweed.Property.Transput.With.Value;
 using Property = Tumbleweed.Property.Output;
 using System = System;
@@ -14,7 +14,7 @@ public sealed class Lazy<T> : Property::Any<T>
 {
 	public Lazy(T origin) : this
 	(
-		new Value<T>(origin)
+		new Tumbleweed.Property.Output.With.Value.One<T>(origin)
 	)
 	{
 	}
@@ -22,8 +22,8 @@ public sealed class Lazy<T> : Property::Any<T>
 	public Lazy(Property::Any<T> origin) : this
 	(
 		origin,
-		new One<T?>(default),
-		new One<Any>(new False())
+		new Transput.With.Value.One<T?>(default),
+		new Transput.With.Value.One<Any>(new False())
 	)
 	{
 	}

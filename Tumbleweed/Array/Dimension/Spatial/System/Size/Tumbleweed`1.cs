@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Mathematics.Number.Natural.From.System;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Enumerable = Tumbleweed.Enumerable;
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using Property = Tumbleweed.Property;
@@ -12,7 +12,7 @@ public sealed class Tumbleweed<T> : Enumerable::Envelope<Any>
 {
 	public Tumbleweed(T[,,] array) : this
 	(
-		new Value<T[,,]>(array)
+		new One<T[,,]>(array)
 	)
 	{
 	}

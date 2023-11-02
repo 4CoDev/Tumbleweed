@@ -1,6 +1,6 @@
 using Tumbleweed.Mathematics.Boolean.Function.Result;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Boolean = Tumbleweed.Mathematics.Boolean;
 using Collection = Tumbleweed.Collection;
 
@@ -10,7 +10,7 @@ public sealed class System : Boolean::Envelope
 {
 	public System(IEnumerable<Any> bits, Int32 index) : this
 	(
-		new List<Any>(bits), new Value<Int32>(index)
+		new List<Any>(bits), new One<Int32>(index)
 	)
 	{
 	}
@@ -24,7 +24,7 @@ public sealed class System : Boolean::Envelope
 	
 	public System(ICollection<Any> bits, Int32 index) : this
 	(
-		bits, new Value<Int32>(index)
+		bits, new One<Int32>(index)
 	)
 	{
 	}

@@ -2,7 +2,7 @@
 
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Subroutine.Procedure.Nullary.From;
@@ -11,7 +11,7 @@ public class System : Nullary.Any
 {
 	public System(Action procedure) : this
 	(
-		new Value<Action>(procedure)
+		new One<Action>(procedure)
 	)
 	{
 	}

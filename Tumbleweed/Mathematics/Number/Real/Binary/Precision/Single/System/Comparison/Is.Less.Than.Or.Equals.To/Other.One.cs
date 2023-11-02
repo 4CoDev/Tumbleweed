@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Comparison.Boolean.Either.Is;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 using System = System;
 using Property = Tumbleweed.Property;
@@ -19,8 +19,8 @@ public sealed class One : Boolean.Envelope
 		System::Single second
 	) : this
 	(
-		new Value<System::Single>(first),
-		new Value<System::Single>(second)
+		new One<System::Single>(first),
+		new One<System::Single>(second)
 	)
 	{
 	}

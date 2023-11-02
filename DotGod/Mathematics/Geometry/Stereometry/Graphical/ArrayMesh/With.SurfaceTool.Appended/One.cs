@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.With.SurfaceTool.Appended;
 
@@ -11,7 +11,7 @@ public sealed class One : Any<Godot.ArrayMesh>
 		Any<Godot.ArrayMesh> mesh
 	) : this
 	(
-		new Value<Godot.SurfaceTool>(tool),
+		new One<Godot.SurfaceTool>(tool),
 		mesh
 	)
 	{
@@ -24,7 +24,7 @@ public sealed class One : Any<Godot.ArrayMesh>
 	) : this
 	(
 		tool,
-		new Value<Godot.ArrayMesh>(mesh)
+		new One<Godot.ArrayMesh>(mesh)
 	)
 	{
 	}

@@ -1,6 +1,6 @@
 using Tumbleweed.Collection.Function.Result;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace Tumbleweed.Collection.Requirement.Length;
 
@@ -12,7 +12,7 @@ public sealed class System<T> : Envelope<T>
 		Int32 size
 	) : this
 	(
-		collection, new Value<Int32>(size)
+		collection, new One<Int32>(size)
 	)
 	{
 	}

@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace Tumbleweed.Mathematics.Number.Natural.From.System;
 
@@ -7,7 +7,7 @@ public sealed class One : Tumbleweed.Mathematics.Number.Natural.Envelope
 {
 	public One(Int32 integer) : this
 	(
-		new Value<Int32>(integer)
+		new One<Int32>(integer)
 	)
 	{
 	}

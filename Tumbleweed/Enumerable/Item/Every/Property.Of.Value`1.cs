@@ -13,7 +13,7 @@ public sealed class Value<T> : Enumerable::Envelope<Any<T>>
 		new Enumerable::Selected<T, Any<T>>
 		(
 			enumerable,
-			value => new Tumbleweed.Property.Output.With.Value<T>(value)
+			value => new Tumbleweed.Property.Output.With.Value.One<T>(value)
 		)
 	)
 	{

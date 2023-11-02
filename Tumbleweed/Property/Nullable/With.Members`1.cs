@@ -23,7 +23,7 @@ public sealed class Members<T> : Nullable::Any<T>
 	
 	public Members(T value, Any hasValue) : this
 	(
-		new Property::With.Value<T>(value),
+		new Property::With.Value.One<T>(value),
 		hasValue
 	)
 	{

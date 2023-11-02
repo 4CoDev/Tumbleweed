@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Enumerable.Function;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Enumerable = DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface.Transformed.Enumerable;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh.Transformed;
@@ -15,7 +15,7 @@ public sealed class One : Envelope
 	) : this
 	(
 		mesh,
-		new Value<Transform3D>(transform)
+		new One<Transform3D>(transform)
 	)
 	{
 	}

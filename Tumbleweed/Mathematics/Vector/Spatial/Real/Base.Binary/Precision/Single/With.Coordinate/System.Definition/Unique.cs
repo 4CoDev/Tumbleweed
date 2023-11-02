@@ -15,9 +15,9 @@ public sealed class Unique : Generic.Envelope<Any>
 		System::Single z
 	) : this
 	(
-		new Property::With.Value<System::Single>(x),
-		new Property::With.Value<System::Single>(y),
-		new Property::With.Value<System::Single>(z)
+		new Property::With.Value.One<System::Single>(x),
+		new Property::With.Value.One<System::Single>(y),
+		new Property::With.Value.One<System::Single>(z)
 	)
 	{
 	}

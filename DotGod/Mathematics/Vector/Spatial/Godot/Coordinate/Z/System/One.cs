@@ -8,7 +8,7 @@ public sealed class One : Property::Envelope<System::Single>
 {
 	public One(Godot::Vector3 vector) : this
 	(
-		new Property::With.Value<Godot::Vector3>(vector)
+		new Property::With.Value.One<Godot::Vector3>(vector)
 	)
 	{
 	}

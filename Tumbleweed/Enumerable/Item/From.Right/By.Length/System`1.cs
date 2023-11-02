@@ -1,7 +1,7 @@
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Function.Result;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Enumerable = Tumbleweed.Enumerable;
 using SCG = System.Collections.Generic;
 using System = System;
@@ -18,7 +18,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Value<System::Int32>(length)
+		new One<System::Int32>(length)
 	)
 	{
 	}

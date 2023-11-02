@@ -14,7 +14,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 		Function::Any<T> filler
 	) : this
 	(
-		new Property::With.Value<System::Int32>(size),
+		new Property::With.Value.One<System::Int32>(size),
 		filler
 	)
 	{

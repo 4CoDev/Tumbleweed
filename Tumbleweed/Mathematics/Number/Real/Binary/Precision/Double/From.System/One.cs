@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using System = System;
 
@@ -9,7 +9,7 @@ public sealed class One : Envelope
 {
 	public One(System::Double @double) : this
 	(
-		new Value<System::Double>(@double)
+		new One<System::Double>(@double)
 	)
 	{
 	}

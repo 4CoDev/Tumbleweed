@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using ReadOnlySpan = Tumbleweed.Memory.Span.ReadOnly;
 
 // ReSharper disable once CheckNamespace
@@ -9,7 +9,7 @@ public sealed class System<T> : ReadOnlySpan.Envelope<T>
 {
 	public System(T[] array) : this
 	(
-		new Value<T[]>(array)
+		new One<T[]>(array)
 	)
 	{
 	}

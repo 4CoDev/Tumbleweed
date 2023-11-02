@@ -1,6 +1,6 @@
 using System.Collections;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Node.Member.Children;
 
@@ -8,7 +8,7 @@ public sealed class Actual : IList<Godot.Node>
 {
 	public Actual(Godot.Node parent) : this
 	(
-		new Value<Godot.Node>(parent)
+		new One<Godot.Node>(parent)
 	)
 	{
 	}

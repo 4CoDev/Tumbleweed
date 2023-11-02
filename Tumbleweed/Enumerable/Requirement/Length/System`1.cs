@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Enumerable = Tumbleweed.Enumerable;
 using System = System;
 
@@ -14,7 +14,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Value<Int32>(length)
+		new One<Int32>(length)
 	)
 	{
 	}

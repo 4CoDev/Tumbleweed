@@ -1,7 +1,7 @@
 using Tumbleweed.Array.Dimension.Multi;
 using Tumbleweed.Mathematics.Number.Natural;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Array = Tumbleweed.Array;
 using Property = Tumbleweed.Property;
 using SystemArray = Tumbleweed.Array.Dimension.Planar.System;
@@ -15,7 +15,7 @@ public sealed class System<T> : Any<T>
 {
 	public System(T[,] array) : this
 	(
-		new Value<T[,]>(array)
+		new One<T[,]>(array)
 	)
 	{
 	}

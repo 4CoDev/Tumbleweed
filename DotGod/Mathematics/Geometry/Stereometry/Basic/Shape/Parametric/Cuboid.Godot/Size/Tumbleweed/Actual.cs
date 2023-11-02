@@ -9,7 +9,7 @@ public sealed class Actual : global::Tumbleweed.Mathematics.Vector.Spatial.Gener
 {
 	public Actual(Godot::BoxShape3D cuboid) : this
 	(
-		new Property::With.Value<Godot::BoxShape3D>(cuboid)
+		new Property::With.Value.One<Godot::BoxShape3D>(cuboid)
 	)
 	{
 	}

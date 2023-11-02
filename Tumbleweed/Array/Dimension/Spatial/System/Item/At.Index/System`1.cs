@@ -13,7 +13,7 @@ public sealed class System<T> : Property::Transput.Any<T>
 		SCG::IEnumerable<System::Int32> indices
 	) : this
 	(
-		new Property::Output.With.Value<T[,,]>(array),
+		new Property::Output.With.Value.One<T[,,]>(array),
 		indices
 	)
 	{
@@ -37,7 +37,7 @@ public sealed class System<T> : Property::Transput.Any<T>
 		SCG::ICollection<System::Int32> indices
 	) : this
 	(
-		new Property::Output.With.Value<T[,,]>(array),
+		new Property::Output.With.Value.One<T[,,]>(array),
 		indices
 	)
 	{

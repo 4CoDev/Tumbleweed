@@ -9,7 +9,7 @@ public sealed class StringFromObject : Envelope<Any>
 {
 	public StringFromObject(System.Object @object) : this
 	(
-		new Property.Output.With.Value<System.Object>(@object)
+		new Property.Output.With.Value.One<System.Object>(@object)
 	)
 	{
 	}

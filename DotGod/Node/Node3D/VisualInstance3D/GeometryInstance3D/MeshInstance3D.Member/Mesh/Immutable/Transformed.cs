@@ -1,7 +1,7 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh;
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh.Transformed;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Node.Node3D.VisualInstance3D.GeometryInstance3D.MeshInstance3D.Member.Mesh.Immutable;
 
@@ -9,7 +9,7 @@ public sealed class Transformed : Envelope
 {
 	public Transformed(Godot.MeshInstance3D node) : this
 	(
-		new Value<Godot.MeshInstance3D>(node)
+		new One<Godot.MeshInstance3D>(node)
 	)
 	{
 	}

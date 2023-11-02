@@ -14,7 +14,7 @@ public sealed class SpareWhenObjectIsNull : Envelope
 	) : this
 	(
 		new One<System.Object>(@object),
-		new Property.Output.With.Value<System.String>(spare)
+		new Property.Output.With.Value.One<System.String>(spare)
 	)
 	{
 	}
@@ -25,7 +25,7 @@ public sealed class SpareWhenObjectIsNull : Envelope
 	) : this
 	(
 		@object,
-		new Property.Output.With.Value<System.String>(spare)
+		new Property.Output.With.Value.One<System.String>(spare)
 	)
 	{
 	}

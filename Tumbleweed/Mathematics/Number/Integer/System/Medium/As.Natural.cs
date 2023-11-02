@@ -2,7 +2,7 @@ using Tumbleweed.Enumerable.Without.Item;
 using Tumbleweed.Mathematics.Number.Integer.System.Medium;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 using System = System;
 using Property = Tumbleweed.Property;
@@ -15,7 +15,7 @@ public sealed class Natural : Enumerable.Envelope<Boolean.Any>
 {
 	public Natural(System::Int32 integer) : this
 	(
-		new Value<System::Int32>(integer)
+		new One<System::Int32>(integer)
 	)
 	{
 	}

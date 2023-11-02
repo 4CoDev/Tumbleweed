@@ -6,9 +6,9 @@ public sealed class Unique<T> : Any<T>
 {
 	public Unique(T x, T y, T z) : this
 	(
-		new Property::With.Value<T>(x),
-		new Property::With.Value<T>(y),
-		new Property::With.Value<T>(z)
+		new Property::With.Value.One<T>(x),
+		new Property::With.Value.One<T>(y),
+		new Property::With.Value.One<T>(z)
 	)
 	{
 	}

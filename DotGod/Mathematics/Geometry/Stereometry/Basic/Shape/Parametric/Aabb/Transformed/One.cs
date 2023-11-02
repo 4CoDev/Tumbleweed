@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Parametric.Aabb.Transformed;
@@ -15,7 +15,7 @@ public sealed class One : Envelope
 	) : this
 	(
 		space,
-		new Value<Transform3D>(transform)
+		new One<Transform3D>(transform)
 	)
 	{
 	}

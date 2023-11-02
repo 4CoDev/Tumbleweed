@@ -1,6 +1,6 @@
 using Godot;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Basic.Shape.Mesh.Convex.Godot.From.Abstract;
 
@@ -8,7 +8,7 @@ public sealed class One : Envelope<ConvexPolygonShape3D>
 {
 	public One(Shape3D @abstract) : this
 	(
-		new Value<Shape3D>(@abstract)
+		new One<Shape3D>(@abstract)
 	)
 	{
 	}

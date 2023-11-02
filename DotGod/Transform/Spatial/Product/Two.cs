@@ -1,7 +1,7 @@
 using Godot;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Function.Result;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Transform.Spatial.Product;
 
@@ -13,8 +13,8 @@ public sealed class Two : Envelope<Transform3D>
 		Transform3D child
 	) : this
 	(
-		new Value<Transform3D>(parent),
-		new Value<Transform3D>(child)
+		new One<Transform3D>(parent),
+		new One<Transform3D>(child)
 	)
 	{
 	}

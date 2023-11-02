@@ -1,6 +1,6 @@
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Function.Result;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace Tumbleweed.Mathematics.Number.Integer.System.Medium.From.Float.With.Precision;
 
@@ -8,7 +8,7 @@ public sealed class Single : Envelope<Int32>
 {
 	public Single(global::System.Single single) : this
 	(
-		new Value<global::System.Single>(single)
+		new One<global::System.Single>(single)
 	)
 	{
 	}

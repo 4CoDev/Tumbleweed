@@ -12,7 +12,7 @@ public sealed class One : Property::Envelope<Godot::ConvexPolygonShape3D>
 	) : this
 	(
 		mesh,
-		new Property::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value.One<Godot::Transform3D>(transform)
 	)
 	{
 	}

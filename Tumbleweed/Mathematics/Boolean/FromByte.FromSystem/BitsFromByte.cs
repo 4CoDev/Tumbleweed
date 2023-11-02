@@ -8,7 +8,7 @@ public sealed class BitsFromByte : Enumerable.Envelope<Any>
 {
 	public BitsFromByte(System::Byte @byte) : this
 	(
-		new Tumbleweed.Property.Output.With.Value<System::Byte>(@byte)
+		new Tumbleweed.Property.Output.With.Value.One<System::Byte>(@byte)
 	)
 	{
 	}

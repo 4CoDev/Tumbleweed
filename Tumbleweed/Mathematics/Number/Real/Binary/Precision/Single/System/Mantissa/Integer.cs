@@ -8,7 +8,7 @@ public sealed class Integer : Number.Integer.Envelope
 {
 	public Integer(System::Single single) : this
 	(
-		new Property::With.Value<System::Single>(single)
+		new Property::With.Value.One<System::Single>(single)
 	)
 	{
 	}

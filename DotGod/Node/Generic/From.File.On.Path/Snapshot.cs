@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Node.Generic.From.File.On.Path;
 
@@ -7,7 +7,7 @@ public sealed class Snapshot : Envelope<Godot.Node>
 {
 	public Snapshot(String path) : this
 	(
-		new Value<String>(path)
+		new One<String>(path)
 	)
 	{
 	}

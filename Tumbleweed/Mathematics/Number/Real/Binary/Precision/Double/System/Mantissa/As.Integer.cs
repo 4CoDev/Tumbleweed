@@ -2,7 +2,7 @@ using Tumbleweed.Mathematics.Number.Integer;
 using Tumbleweed.Mathematics.Number.Integer.With.Member;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Integer = Tumbleweed.Mathematics.Number.Integer;
 using System = System;
 using Property = Tumbleweed.Property;
@@ -15,7 +15,7 @@ public sealed class Integer : Number.Integer.Envelope
 {
 	public Integer(System::Double @double) : this
 	(
-		new Value<System::Double>(@double)
+		new One<System::Double>(@double)
 	)
 	{
 	}

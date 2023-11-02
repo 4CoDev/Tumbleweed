@@ -16,7 +16,7 @@ public sealed class System<T> : Enumerable::Envelope<T>
 	) : this
 	(
 		enumerable,
-		new Property::With.Value<Int32>(length)
+		new Property::With.Value.One<Int32>(length)
 	)
 	{
 	}

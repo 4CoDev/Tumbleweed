@@ -1,5 +1,5 @@
 using Tumbleweed.Object.Casted.Convertee;
-using Tumbleweed.Property.Output.With;
+using Property = Tumbleweed.Property.Output;
 using System = System;
 
 namespace Tumbleweed.Array.Dimension.Multi.System.Casted.Convertee;
@@ -8,7 +8,7 @@ public sealed class Object : Tumbleweed.Property.Output.Envelope<System::Array>
 {
 	public Object(System::Object @object) : this
 	(
-		new Value(@object)
+		new Property::With.Value.One<System::Object>(@object)
 	)
 	{
 	}

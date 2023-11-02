@@ -9,7 +9,7 @@ public sealed class One : global::Tumbleweed.Mathematics.Vector.Spatial.Generic.
 {
 	public One(Godot::Vector3 vector) : this
 	(
-		new Property::With.Value<Godot::Vector3>(vector)
+		new Property::With.Value.One<Godot::Vector3>(vector)
 	)
 	{
 	}

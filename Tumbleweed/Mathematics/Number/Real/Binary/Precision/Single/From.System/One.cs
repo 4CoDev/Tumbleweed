@@ -1,5 +1,5 @@
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Real = Tumbleweed.Mathematics.Number.Real;
 using System = System;
 using Single = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System;
@@ -10,7 +10,7 @@ public sealed class One : Envelope
 {
 	public One(System::Single single) : this
 	(
-		new Value<System::Single>(single)
+		new One<System::Single>(single)
 	)
 	{
 	}

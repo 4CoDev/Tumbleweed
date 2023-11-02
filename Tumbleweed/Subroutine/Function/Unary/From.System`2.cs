@@ -1,7 +1,7 @@
 using Tumbleweed.Property;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 // ReSharper disable once CheckNamespace
 namespace Tumbleweed.Subroutine.Function.Unary.From;
@@ -14,7 +14,7 @@ public sealed class System<TParameter, TResult> :
 		Func<TParameter, TResult> function
 	) : this
 	(
-		new Value<Func<TParameter, TResult>>(function)
+		new One<Func<TParameter, TResult>>(function)
 	)
 	{
 	}

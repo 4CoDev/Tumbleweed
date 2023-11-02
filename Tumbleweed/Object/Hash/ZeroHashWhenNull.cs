@@ -2,7 +2,7 @@ using Tumbleweed.Property;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Function.Result;
 using Tumbleweed.Property.Output.Of;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 using Tumbleweed.Property.Nullable.From.System;
 
 namespace Tumbleweed.Object.Hash;
@@ -11,14 +11,14 @@ public sealed class ZeroHashWhenNull : Envelope<Int32>
 {
 	public ZeroHashWhenNull(System.Object? nullable) : this
 	(
-		new Value<System.Object?>(nullable)
+		new Property.Output.With.Value.One<System.Object?>(nullable)
 	)
 	{
 	}
 	
 	public ZeroHashWhenNull(Any<System.Object?> nullable) : this
 	(
-		new One<System.Object>(nullable)
+		new Property.Nullable.From.System.One<System.Object>(nullable)
 	)
 	{
 	}

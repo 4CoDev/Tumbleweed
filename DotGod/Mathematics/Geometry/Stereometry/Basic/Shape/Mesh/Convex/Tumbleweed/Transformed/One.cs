@@ -14,7 +14,7 @@ public sealed class One : Envelope
 	) : this
 	(
 		mesh,
-		new Property::With.Value<Godot::Transform3D>(transform)
+		new Property::With.Value.One<Godot::Transform3D>(transform)
 	)
 	{
 	}

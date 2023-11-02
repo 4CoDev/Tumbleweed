@@ -1,7 +1,7 @@
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Polygon.Triangle.FromGodot.FromSurface;
 using DotGod.Mathematics.Geometry.Stereometry.Graphical.Surface;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace DotGod.Mathematics.Geometry.Stereometry.Graphical.ArrayMesh.Surface.At.Index;
 
@@ -13,7 +13,7 @@ public sealed class One : Envelope
 		Int32 index
 	) : this
 	(
-		mesh, new Value<Int32>(index)
+		mesh, new One<Int32>(index)
 	)
 	{
 	}

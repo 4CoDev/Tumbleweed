@@ -1,7 +1,7 @@
 using Tumbleweed.Mathematics.Number.Integer.System.Medium.Is.Positive;
 using Tumbleweed.Mathematics.Number.Integer.With.Member;
 using Tumbleweed.Property.Output;
-using Tumbleweed.Property.Output.With;
+using Tumbleweed.Property.Output.With.Value;
 
 namespace Tumbleweed.Mathematics.Number.Integer.From.System;
 
@@ -9,7 +9,7 @@ public class One : Tumbleweed.Mathematics.Number.Integer.Envelope
 {
 	public One(global::System.Int32 integer) : this
 	(
-		new Value<Int32>(integer)
+		new One<Int32>(integer)
 	)
 	{
 	}

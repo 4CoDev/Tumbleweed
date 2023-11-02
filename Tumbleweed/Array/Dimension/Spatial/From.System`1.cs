@@ -13,7 +13,7 @@ public sealed class System<T> : Any<T>
 {
 	public System(T[,,] array) : this
 	(
-		new Property::Output.With.Value<T[,,]>(array)
+		new Property::Output.With.Value.One<T[,,]>(array)
 	)
 	{
 	}

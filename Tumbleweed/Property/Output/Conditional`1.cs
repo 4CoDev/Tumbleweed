@@ -44,8 +44,8 @@ public sealed class Conditional<T> : Property::Envelope<T>
 	) : this
 	(
 		condition,
-		new Property::With.Value<T>(then),
-		new Property::With.Value<T>(otherwise)
+		new Property::With.Value.One<T>(then),
+		new Property::With.Value.One<T>(otherwise)
 	)
 	{
 	}

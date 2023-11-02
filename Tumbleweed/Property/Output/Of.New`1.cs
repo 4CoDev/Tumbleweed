@@ -7,7 +7,7 @@ public sealed class New<T> : Property::Envelope<T> where T : new()
 {
 	public New() : base
 	(
-		new Property::With.Value<T>(new T())
+		new Property::With.Value.One<T>(new T())
 	)
 	{
 	}

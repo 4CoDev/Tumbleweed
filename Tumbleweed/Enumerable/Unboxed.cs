@@ -10,7 +10,9 @@ public sealed class Unboxed : Enumerable::Envelope
 {
 	public Unboxed(System::Object @object) : this
 	(
-		new Property::With.Value(@object)
+		new Property::With.Value.One
+			<System::Object>
+			(@object)
 	)
 	{
 	}

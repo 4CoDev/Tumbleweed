@@ -7,7 +7,9 @@ public sealed class Object<T> : Property::Envelope<T>
 {
 	public Object(System::Object convertee) : this
 	(
-		new Property::With.Value(convertee)
+		new Property::With.Value.One
+			<System::Object>
+			(convertee)
 	)
 	{
 	}

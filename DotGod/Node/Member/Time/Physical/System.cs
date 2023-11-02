@@ -8,7 +8,7 @@ public sealed class System : Property::Envelope<System::Double>
 {
 	public System(Godot::Node node) : this
 	(
-		new Property::With.Value<Godot::Node>(node)
+		new Property::With.Value.One<Godot::Node>(node)
 	)
 	{
 	}
