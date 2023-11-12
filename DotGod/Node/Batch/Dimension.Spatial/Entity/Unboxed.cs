@@ -1,4 +1,4 @@
-using DotGod.Node.Batch.Dimension.Spatial.Entity.Property.Value;
+using DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 using Tumbleweed.Object.Casted.Convertee;
 using System = System;
 using Property = Tumbleweed.Property.Output;

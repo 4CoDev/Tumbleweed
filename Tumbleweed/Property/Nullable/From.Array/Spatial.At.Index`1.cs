@@ -1,7 +1,5 @@
-using Tumbleweed.Mathematics.Number.Natural;
 using Nullable = Tumbleweed.Property.Nullable;
 using Array = Tumbleweed.Array;
-
 using Natural = Tumbleweed.Mathematics.Number.Natural;
 using Property = Tumbleweed.Property.Output;
 
@@ -11,7 +9,9 @@ namespace Tumbleweed.Property.Nullable.From.Array.Spatial.At;
 public sealed class Index<T> : Nullable::Envelope<T>
 {
 	public Index
-	(Tumbleweed.Array.Dimension.Multi.Any<Nullable::Any<T>> array, Mathematics.Vector.Spatial.Generic.Any<Any> indices
+	(
+		Array::Dimension.Multi.Any<Nullable::Any<T>> array,
+		Mathematics.Vector.Spatial.Generic.Any<Natural::Any> indices
 	) : base
 	(
 		new Nullable::Property.Value.One<T>(

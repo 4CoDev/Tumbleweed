@@ -17,7 +17,6 @@ public sealed class Product : Tumbleweed.Property.Output.Envelope<System::Single
 	(
 		new Aggregated<System::Single>(
 			singles,
-			0,
 			Expression)
 	)
 	{

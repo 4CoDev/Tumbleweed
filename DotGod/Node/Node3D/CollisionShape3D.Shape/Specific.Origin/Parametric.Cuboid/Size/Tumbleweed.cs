@@ -10,6 +10,18 @@ public sealed class Tumbleweed : Vector::Envelope<Number::Real.Any>
 {
 	public Tumbleweed
 	(
+		Godot::CollisionShape3D collider
+	) : this
+	(
+		new Property::With.Value.One
+			<Godot::CollisionShape3D>
+			(collider)
+	)
+	{
+	}
+	
+	public Tumbleweed
+	(
 		Property::Any<Godot::CollisionShape3D> collider
 	) : base
 	(

@@ -18,8 +18,8 @@ public sealed class One : global::Tumbleweed.Mathematics.Vector.Spatial.Generic.
 	(
 		new Unique(
 			new Spatial.Godot.Coordinate.X.Tumbleweed.One(vector),
-			new Spatial.Godot.Coordinate.X.Tumbleweed.One(vector),
-			new Spatial.Godot.Coordinate.X.Tumbleweed.One(vector))
+			new Spatial.Godot.Coordinate.Y.Tumbleweed.One(vector),
+			new Spatial.Godot.Coordinate.Z.Tumbleweed.One(vector))
 	)
 	{
 	}

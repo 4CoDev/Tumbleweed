@@ -18,26 +18,5 @@ public sealed class One : Boolean::Envelope
 			new Batch::Member.Aabb.One(batch))
 	)
 	{
-		var aabb1 = new Batch::Member.Aabb.One(batch);
-		var a = aabb.A;
-		var b = aabb.B;
-		GD.Print(
-			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
-				.Tumbleweed.One(a.X).Value);
-		GD.Print(
-			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
-				.Tumbleweed.One(a.Y).Value);
-		GD.Print(
-			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
-				.Tumbleweed.One(a.Z).Value);
-		GD.Print(
-			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
-				.Tumbleweed.One(b.X).Value);
-		GD.Print(
-			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
-				.Tumbleweed.One(b.Y).Value);
-		GD.Print(
-			new Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.System.From
-				.Tumbleweed.One(b.Z).Value);
 	}
 }

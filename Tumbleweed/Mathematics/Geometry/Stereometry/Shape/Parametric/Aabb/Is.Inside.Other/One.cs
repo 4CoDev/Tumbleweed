@@ -1,24 +1,26 @@
-using Tumbleweed.Mathematics.Comparison.Boolean.Both.Are;
+using Godot;
+using Boolean = Tumbleweed.Mathematics.Boolean;
+using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
+using Comparison = Tumbleweed.Mathematics.Comparison.Boolean;
 using Tumbleweed.Mathematics.Comparison.Vector.Spatial.Real;
-using Actual = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Point.B.Actual;
 
 namespace Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb.Is.Inside.Other;
 
-public sealed class One : Mathematics.Boolean.Envelope
+public sealed class One : Boolean::Envelope
 {
 	public One
 	(
-		Any @internal,
-		Any external
+		Aabb::Any @internal,
+		Aabb::Any external
 	) : base
 	(
-		new True(
+		new Comparison::Both.Are.True(
 			new IsGreaterThanOrEqualsToPoint(
 				new Point.A.Actual(@internal),
 				new Point.A.Actual(external)),
 			new IsLessThanOrEqualsToPoint(
-				new Actual(@internal),
-				new Actual(external)))
+				new Point.B.Actual(@internal),
+				new Point.B.Actual(external)))
 	)
 	{
 	}

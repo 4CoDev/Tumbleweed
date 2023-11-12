@@ -1,3 +1,4 @@
+using Godot;
 using Godot = Godot;
 using Property = Tumbleweed.Property.Output;
 using Object = Tumbleweed.Object;

@@ -1,5 +1,5 @@
 using Property = Tumbleweed.Property.Output;
-
+using Vector = Tumbleweed.Mathematics.Vector.Spatial;
 using System = System;
 
 namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source.Filler.Null.Pointer.With.Size;
@@ -7,11 +7,12 @@ namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Source.Filler.Nu
 public sealed class System<T> : Property::Envelope<T[,,]>
 {
 	public System
-	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size
+	(
+		Vector::Generic.Any<System::Int32> size
 	) : base
 	(
 		new Property::Function.Result.Actual<T[,,]>(
-    () => new T[size.X, size.X, size.Z])
+    () => new T[size.X, size.Y, size.Z])
 	)
 	{
 	}

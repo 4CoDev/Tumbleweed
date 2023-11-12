@@ -32,7 +32,7 @@ public sealed class One : Boolean.Envelope
 	(
 		new Boolean.From.System.One(
 			new Actual(
-				() => larger.Value < smaller.Value))
+				() => smaller.Value < larger.Value))
 	)
 	{
 	}

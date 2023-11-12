@@ -12,10 +12,28 @@ public sealed class One<T> : Property::Envelope<T[,,]>
 		T filler
 	) : base
 	(
-		new Property::With.Callback.Recurring<T[,,]>(
-			array,
-			new Action::Filler.Value.One<T>(array, filler))
+		new Property::Function.Result.Actual<T[,,]>(
+			() => Function(array, filler))
 	)
 	{
+	}
+	
+	private static T[,,] Function
+	(
+		Property::Any<T[,,]> array,
+		T filler
+	) =>
+	(
+		Function(array.Value, filler)
+	);
+
+	private static T[,,] Function
+	(
+		T[,,] array,
+		T filler
+	)
+	{
+		new Action::Filler.Value.One<T>(array, filler).Invoke();
+		return array;
 	}
 }

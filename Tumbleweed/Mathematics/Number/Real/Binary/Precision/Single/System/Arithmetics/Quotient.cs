@@ -1,3 +1,4 @@
+using Godot;
 using Tumbleweed.Enumerable;
 using Tumbleweed.Property.Output.From.Enumerable;
 using System = System;
@@ -17,7 +18,6 @@ public sealed class Quotient : Tumbleweed.Property.Output.Envelope<System::Singl
 	(
 		new Aggregated<System::Single>(
 			singles,
-			0,
 			Expression)
 	)
 	{

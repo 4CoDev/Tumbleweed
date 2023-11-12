@@ -17,7 +17,6 @@ public sealed class Difference : Tumbleweed.Property.Output.Envelope<System::Sin
 	(
 		new Aggregated<System::Single>(
 			singles,
-			0,
 			Expression)
 	)
 	{

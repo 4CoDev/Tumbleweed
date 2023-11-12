@@ -9,7 +9,8 @@ namespace Tumbleweed.Array.Dimension.Spatial.System.Filling.New.Snapshot.Filler.
 public sealed class System<T> : Property::Envelope<Nullable::Any<T>[,,]>
 {
 	public System
-	(Mathematics.Vector.Spatial.Generic.Any<System::Int32> size
+	(
+		Mathematics.Vector.Spatial.Generic.Any<System::Int32> size
 	) : base
 	(
 		new Property::Lazy<Nullable::Any<T>[,,]>(

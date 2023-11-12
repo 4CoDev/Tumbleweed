@@ -1,7 +1,7 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Mathematics.Number.Real;
 using Envelope = Tumbleweed.Mathematics.Number.Real.Envelope;
-using One = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single.From.System.One;
+using Number = Tumbleweed.Mathematics.Number.Real.Binary.Precision.Single;
 
 
 namespace Tumbleweed.Mathematics.Arithmetic.Numerical.Real.Quotient.Scalar.Of;
@@ -17,9 +17,9 @@ public sealed class Multiple : Envelope
 	
 	public Multiple(IEnumerable<Any> reals) : base
 	(
-		new One(
-			new Number.Real.Binary.Precision.Single.System.Arithmetics.Difference(
-				new Number.Real.Binary.Precision.Single.System.From.Tumbleweed.Multiple(reals)))
+		new Number::From.System.One(
+			new Number::System.Arithmetics.Quotient(
+				new Number::System.From.Tumbleweed.Multiple(reals)))
 	)
 	{
 	}

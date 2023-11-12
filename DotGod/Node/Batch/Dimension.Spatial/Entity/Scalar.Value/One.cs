@@ -1,10 +1,9 @@
-using DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
 using Tumbleweed.Property.Output;
 using System = System;
 
-namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Property.Value;
+namespace DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 
 public sealed class One : Any
 {
