@@ -1,59 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "GodotSharp/4.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/GodotSharp.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/GodotSharp.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Tumbleweed/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "GodotSharp": "4.1.0"
-        },
-        "compile": {
-          "bin/placeholder/Tumbleweed.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Tumbleweed.dll": {}
-        }
-      }
-    }
+    "net7.0": {}
   },
-  "libraries": {
-    "GodotSharp/4.1.0": {
-      "sha512": "V5Hed2RgqXWCtzQ9NwhohV4uK23unz2wPEUGc0zeYFVf00+OFF9nmrb2bbFiaRzdEMikMh8anXfzJPbmWyp+hw==",
-      "type": "package",
-      "path": "godotsharp/4.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "godotsharp.4.1.0.nupkg.sha512",
-        "godotsharp.nuspec",
-        "lib/net6.0/GodotSharp.dll",
-        "lib/net6.0/GodotSharp.xml"
-      ]
-    },
-    "Tumbleweed/1.0.0": {
-      "type": "project",
-      "path": "../Tumbleweed/Tumbleweed.csproj",
-      "msbuildProject": "../Tumbleweed/Tumbleweed.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "Tumbleweed >= 1.0.0"
-    ]
+    "net7.0": []
   },
   "packageFolders": {
     "/Users/thisischico/.nuget/packages/": {},
@@ -84,11 +36,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/Tumbleweed.csproj": {
-              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Tumbleweed/Tumbleweed.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

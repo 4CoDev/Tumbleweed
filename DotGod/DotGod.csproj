@@ -9,10 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Tumbleweed\Tumbleweed.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Folder Include="Engine\Input\Handled\" />
       <Folder Include="Engine\Input\Unhandled\" />
       <Folder Include="Engine\Iteration\Graphical\" />

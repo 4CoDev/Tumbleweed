@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Tumbleweed.Object.String</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Enumerable.String\Enumerable.String.csproj" />
+      <ProjectReference Include="..\String.From.System\String.From.System.csproj" />
+      <ProjectReference Include="..\String.Operation\String.Operation.csproj" />
+      <ProjectReference Include="..\String\String.csproj" />
+    </ItemGroup>
+
+</Project>

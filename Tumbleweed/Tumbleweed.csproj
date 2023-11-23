@@ -13,23 +13,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Array\Dimension\Spatial\Filling\New\Snapshot.Filler\Function.Result.With.Size\" />
-      <Folder Include="Array\Dimension\Spatial\Filling\New\Source.Filler\Function.Result.With.Size\" />
-      <Folder Include="Array\Dimension\Spatial\System\Filling\New\Snapshot.Filler\Function.Result.With.Size\" />
-      <Folder Include="Array\Dimension\Spatial\System\Filling\New\Source.Filler\Function.Result.With.Size\" />
-      <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Action.Filler\" />
-      <Folder Include="Array\Dimension\Spatial\System\Filling\Specific\Source.Filler\Function.Result\" />
-      <Folder Include="Mathematics\Arithmetic\Numerical\Natural\" />
-      <Folder Include="Mathematics\Arithmetic\Vector\Planar\" />
-      <Folder Include="Mathematics\Arithmetic\Vector\Spatial\Real\" />
-      <Folder Include="Mathematics\Comparison\Boolean\" />
-      <Folder Include="Mathematics\Comparison\Numerical\Integer\" />
-      <Folder Include="Mathematics\Comparison\Numerical\Natural\" />
-      <Folder Include="Mathematics\Comparison\Numerical\Real\Is.Greater.Than\Strictly\" />
-      <Folder Include="Mathematics\Comparison\Vector\Planar\" />
-      <Folder Include="Mathematics\Geometry\Planimetry\" />
-      <Folder Include="Mathematics\Geometry\Stereometry\Shape\Instance\" />
-      <Folder Include="Mathematics\Vector\Spatial\Integer\" />
+      <Folder Include="Mathematics\Arithmetic\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Subroutine\Subroutine.csproj" />
     </ItemGroup>
 
 

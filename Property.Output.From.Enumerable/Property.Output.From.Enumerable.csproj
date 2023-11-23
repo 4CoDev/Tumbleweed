@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Tumbleweed.Property.Output.From.Enumerable</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Enumerable\Enumerable.csproj" />
+	  <ProjectReference Include="..\Mathematics.Number\Mathematics.Number.csproj" />
+	  <ProjectReference Include="..\Property.Output.Function.Result\Property.Output.Function.Result.csproj" />
+	  <ProjectReference Include="..\Property.Output\Property.Output.csproj" />
+	</ItemGroup>
+
+</Project>

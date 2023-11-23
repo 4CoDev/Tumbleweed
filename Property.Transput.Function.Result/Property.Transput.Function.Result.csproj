@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Tumbleweed.Property.Transput.Function.Result</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Property.Output\Property.Output.csproj" />
+	  <ProjectReference Include="..\Property.Transput\Property.Transput.csproj" />
+	  <ProjectReference Include="..\Subroutine\Subroutine.csproj" />
+	</ItemGroup>
+
+</Project>

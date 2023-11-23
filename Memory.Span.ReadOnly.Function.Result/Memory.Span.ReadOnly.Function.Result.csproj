@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Tumbleweed.Memory.Span.ReadOnly.Function.Result</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Memory.Span.ReadOnly\Memory.Span.ReadOnly.csproj" />
+      <ProjectReference Include="..\Subroutine\Subroutine.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Tumbleweed.Collection.Property.Value</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Collection.Function.Result\Collection.Function.Result.csproj" />
+      <ProjectReference Include="..\Collection\Collection.csproj" />
+      <ProjectReference Include="..\Property.Output\Property.Output.csproj" />
+    </ItemGroup>
+
+</Project>

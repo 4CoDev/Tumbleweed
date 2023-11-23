@@ -14,6 +14,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Subroutine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Subroutine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Subroutine.dll": {}
+        }
       }
     }
   },
@@ -30,11 +40,17 @@
         "lib/net6.0/GodotSharp.dll",
         "lib/net6.0/GodotSharp.xml"
       ]
+    },
+    "Subroutine/1.0.0": {
+      "type": "project",
+      "path": "../Subroutine/Subroutine.csproj",
+      "msbuildProject": "../Subroutine/Subroutine.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "GodotSharp >= 4.1.0"
+      "GodotSharp >= 4.1.0",
+      "Subroutine >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -66,7 +82,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

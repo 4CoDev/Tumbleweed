@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Equality/Equality.csproj": {}
+  },
+  "projects": {
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Boolean/Boolean.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Boolean/Boolean.csproj",
+        "projectName": "Boolean",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Boolean/Boolean.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Boolean/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Equality/Equality.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Equality/Equality.csproj",
+        "projectName": "Equality",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Equality/Equality.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Equality/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/thisischico/Documents/Projects/Tumbleweed/Boolean/Boolean.csproj": {
+                "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Boolean/Boolean.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

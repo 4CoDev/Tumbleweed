@@ -1,0 +1,285 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Enumerable/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Property.Output": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Enumerable.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enumerable.dll": {}
+        }
+      },
+      "Mathematics.Boolean/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Mathematics.Boolean.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.Boolean.dll": {}
+        }
+      },
+      "Object.Equality/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Mathematics.Boolean": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Object.Equality.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Object.Equality.dll": {}
+        }
+      },
+      "Property.Nullable/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Mathematics.Boolean": "1.0.0",
+          "Property.Output": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Property.Nullable.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Property.Nullable.dll": {}
+        }
+      },
+      "Property.Nullable.From.System/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Enumerable": "1.0.0",
+          "Property.Nullable": "1.0.0",
+          "Property.Output": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Property.Nullable.From.System.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Property.Nullable.From.System.dll": {}
+        }
+      },
+      "Property.Output/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Subroutine": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Property.Output.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Property.Output.dll": {}
+        }
+      },
+      "String/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/String.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/String.dll": {}
+        }
+      },
+      "String.From.System/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Enumerable": "1.0.0",
+          "Property.Nullable.From.System": "1.0.0",
+          "String": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/String.From.System.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/String.From.System.dll": {}
+        }
+      },
+      "String.Function.Result/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "String": "1.0.0",
+          "Subroutine": "1.0.0",
+          "Subroutine.Function.Nullary.Equality": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/String.Function.Result.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/String.Function.Result.dll": {}
+        }
+      },
+      "Subroutine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Subroutine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Subroutine.dll": {}
+        }
+      },
+      "Subroutine.Function.Nullary.Equality/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Mathematics.Boolean": "1.0.0",
+          "Object.Equality": "1.0.0",
+          "Subroutine": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Subroutine.Function.Nullary.Equality.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Subroutine.Function.Nullary.Equality.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Enumerable/1.0.0": {
+      "type": "project",
+      "path": "../Enumerable/Enumerable.csproj",
+      "msbuildProject": "../Enumerable/Enumerable.csproj"
+    },
+    "Mathematics.Boolean/1.0.0": {
+      "type": "project",
+      "path": "../Mathematics.Boolean/Mathematics.Boolean.csproj",
+      "msbuildProject": "../Mathematics.Boolean/Mathematics.Boolean.csproj"
+    },
+    "Object.Equality/1.0.0": {
+      "type": "project",
+      "path": "../Object.Equality/Object.Equality.csproj",
+      "msbuildProject": "../Object.Equality/Object.Equality.csproj"
+    },
+    "Property.Nullable/1.0.0": {
+      "type": "project",
+      "path": "../Property.Nullable/Property.Nullable.csproj",
+      "msbuildProject": "../Property.Nullable/Property.Nullable.csproj"
+    },
+    "Property.Nullable.From.System/1.0.0": {
+      "type": "project",
+      "path": "../Property.Nullable.From.System/Property.Nullable.From.System.csproj",
+      "msbuildProject": "../Property.Nullable.From.System/Property.Nullable.From.System.csproj"
+    },
+    "Property.Output/1.0.0": {
+      "type": "project",
+      "path": "../Property.Output/Property.Output.csproj",
+      "msbuildProject": "../Property.Output/Property.Output.csproj"
+    },
+    "String/1.0.0": {
+      "type": "project",
+      "path": "../String/String.csproj",
+      "msbuildProject": "../String/String.csproj"
+    },
+    "String.From.System/1.0.0": {
+      "type": "project",
+      "path": "../String.From.System/String.From.System.csproj",
+      "msbuildProject": "../String.From.System/String.From.System.csproj"
+    },
+    "String.Function.Result/1.0.0": {
+      "type": "project",
+      "path": "../String.Function.Result/String.Function.Result.csproj",
+      "msbuildProject": "../String.Function.Result/String.Function.Result.csproj"
+    },
+    "Subroutine/1.0.0": {
+      "type": "project",
+      "path": "../Subroutine/Subroutine.csproj",
+      "msbuildProject": "../Subroutine/Subroutine.csproj"
+    },
+    "Subroutine.Function.Nullary.Equality/1.0.0": {
+      "type": "project",
+      "path": "../Subroutine.Function.Nullary.Equality/Subroutine.Function.Nullary.Equality.csproj",
+      "msbuildProject": "../Subroutine.Function.Nullary.Equality/Subroutine.Function.Nullary.Equality.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "String >= 1.0.0",
+      "String.From.System >= 1.0.0",
+      "String.Function.Result >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/thisischico/.nuget/packages/": {},
+    "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Enumerable.String/Enumerable.String.csproj",
+      "projectName": "Enumerable.String",
+      "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Enumerable.String/Enumerable.String.csproj",
+      "packagesPath": "/Users/thisischico/.nuget/packages/",
+      "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Enumerable.String/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+        "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/thisischico/Documents/Projects/Tumbleweed/String.From.System/String.From.System.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/String.From.System/String.From.System.csproj"
+            },
+            "/Users/thisischico/Documents/Projects/Tumbleweed/String.Function.Result/String.Function.Result.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/String.Function.Result/String.Function.Result.csproj"
+            },
+            "/Users/thisischico/Documents/Projects/Tumbleweed/String/String.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/String/String.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

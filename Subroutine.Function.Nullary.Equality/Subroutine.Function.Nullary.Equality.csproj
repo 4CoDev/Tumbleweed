@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Tumbleweed.Subroutine.Function.Nullary.Equality</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Mathematics.Boolean\Mathematics.Boolean.csproj" />
+      <ProjectReference Include="..\Object.Equality\Object.Equality.csproj" />
+      <ProjectReference Include="..\Subroutine\Subroutine.csproj" />
+    </ItemGroup>
+
+</Project>

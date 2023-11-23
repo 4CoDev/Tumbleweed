@@ -1,0 +1,311 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Requirement/Memory.Span.ReadOnly.Requirement.csproj": {}
+  },
+  "projects": {
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj",
+        "projectName": "Array",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Array/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Function.Result/Memory.Span.ReadOnly.Function.Result.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Function.Result/Memory.Span.ReadOnly.Function.Result.csproj",
+        "projectName": "Memory.Span.ReadOnly.Function.Result",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Function.Result/Memory.Span.ReadOnly.Function.Result.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Function.Result/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj": {
+                "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj"
+              },
+              "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj": {
+                "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Requirement/Memory.Span.ReadOnly.Requirement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Requirement/Memory.Span.ReadOnly.Requirement.csproj",
+        "projectName": "Memory.Span.ReadOnly.Requirement",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Requirement/Memory.Span.ReadOnly.Requirement.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Requirement/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Function.Result/Memory.Span.ReadOnly.Function.Result.csproj": {
+                "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly.Function.Result/Memory.Span.ReadOnly.Function.Result.csproj"
+              },
+              "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj": {
+                "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj",
+        "projectName": "Memory.Span.ReadOnly",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/Memory.Span.ReadOnly.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Memory.Span.ReadOnly/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj": {
+                "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj",
+        "projectName": "Subroutine",
+        "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/Subroutine.csproj",
+        "packagesPath": "/Users/thisischico/.nuget/packages/",
+        "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Subroutine/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+          "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
