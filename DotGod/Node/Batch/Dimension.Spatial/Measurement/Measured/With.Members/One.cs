@@ -1,4 +1,4 @@
-using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Option;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.With.Members;
 

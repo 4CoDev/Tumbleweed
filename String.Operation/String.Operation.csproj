@@ -9,8 +9,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Enumerable\Enumerable.csproj" />
-      <ProjectReference Include="..\Property.Nullable.From.System\Property.Nullable.From.System.csproj" />
-      <ProjectReference Include="..\Property.Nullable.Spare.When.Null\Property.Nullable.Spare.When.Null.csproj" />
+      <ProjectReference Include="..\Property.Option.From.System\Property.Option.From.System.csproj" />
+      <ProjectReference Include="..\Property.Option.Spare.When.Empty\Property.Option.Spare.When.Empty.csproj" />
       <ProjectReference Include="..\Property.Output.Function.Result\Property.Output.Function.Result.csproj" />
       <ProjectReference Include="..\String.From.System\String.From.System.csproj" />
       <ProjectReference Include="..\String.Property.Value\String.Property.Value.csproj" />

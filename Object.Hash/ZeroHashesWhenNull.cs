@@ -1,5 +1,5 @@
 using Tumbleweed.Enumerable;
-using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Option;
 
 namespace Tumbleweed.Object.Hash;
 
@@ -12,7 +12,7 @@ public sealed class ZeroHashesWhenNull : Enumerable.Envelope<Int32>
 	(
 		new Selected<Any<System.Object>, Int32>(
 			nullables,
-			nullable => new ZeroHashWhenNull(nullable).Value)
+			option => new ZeroHashWhenNull(option).Value)
 	)
 	{
 	}

@@ -66,7 +66,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String.Function.Result", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String.Property.Value", "String.Property.Value\String.Property.Value.csproj", "{382AAC36-90B5-4565-A6EE-263196B794CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Nullable.From.System", "Property.Nullable.From.System\Property.Nullable.From.System.csproj", "{BABF7BDC-EB02-4238-B1A8-AAA08C203A12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Option.From.System", "Property.Option.From.System\Property.Option.From.System.csproj", "{BABF7BDC-EB02-4238-B1A8-AAA08C203A12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Property", "Property", "{BA721255-6DA0-46B1-B6BF-4B6737B61D3B}"
 EndProject
@@ -94,7 +94,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Output", "Property
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Transput", "Property.Transput\Property.Transput.csproj", "{E15DA519-B350-4013-A902-9C7720969EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Nullable", "Property.Nullable\Property.Nullable.csproj", "{7D1F38A7-7245-4C34-9A04-304E93DB8A4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Option", "Property.Option\Property.Option.csproj", "{7D1F38A7-7245-4C34-9A04-304E93DB8A4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Output.Casted.Convertee", "Property.Output.Casted.Convertee\Property.Output.Casted.Convertee.csproj", "{E2CCDAEF-5928-4663-8CB3-F6952F58FFFF}"
 EndProject
@@ -102,7 +102,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Property.Output", "Property
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Property.Transput", "Property.Transput", "{F29E92CD-0159-43EA-9782-A7DC884881F0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Property.Nullable", "Property.Nullable", "{3D6F5835-67D8-4E8B-B1D8-F29F5CD771ED}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Property.Option", "Property.Option", "{3D6F5835-67D8-4E8B-B1D8-F29F5CD771ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Output.Snapshot", "Property.Output.Snapshot\Property.Output.Snapshot.csproj", "{C37FE2DA-F3A5-4C47-A468-F60337A0A0EA}"
 EndProject
@@ -122,11 +122,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Transput.Output.Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Transput.With.Member.Definition", "Property.Transput.With.Member.Definition\Property.Transput.With.Member.Definition.csproj", "{6EFCD7CA-C785-4267-AA7A-514AE050F7D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Nullable.Casted.Convertee", "Property.Nullable.Casted.Convertee\Property.Nullable.Casted.Convertee.csproj", "{C70CAFD2-5B84-4F3E-8EDF-2DA57DE44956}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Option.Casted.Convertee", "Property.Option.Casted.Convertee\Property.Option.Casted.Convertee.csproj", "{C70CAFD2-5B84-4F3E-8EDF-2DA57DE44956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Nullable.From.Array", "Property.Nullable.From.Array\Property.Nullable.From.Array.csproj", "{2F457EBE-8C3F-4985-8798-6B1B85D4C3E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Option.From.Array", "Property.Option.From.Array\Property.Option.From.Array.csproj", "{2F457EBE-8C3F-4985-8798-6B1B85D4C3E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Nullable.Spare.When.Null", "Property.Nullable.Spare.When.Null\Property.Nullable.Spare.When.Null.csproj", "{4F573120-365D-421B-82B2-E084023071D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Property.Option.Spare.When.Empty", "Property.Option.Spare.When.Empty\Property.Option.Spare.When.Empty.csproj", "{4F573120-365D-421B-82B2-E084023071D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

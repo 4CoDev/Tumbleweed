@@ -19,7 +19,7 @@ public sealed class One : Any
 	public override System::String ToString() =>
 		new StringFromObjects(Node, Mesh).AsSystem;
 
-	public Tumbleweed.Property.Nullable.Any<Godot.Node> Node =>
+	public Tumbleweed.Property.Option.Any<Godot.Node> Node =>
 		any.Value.Node;
 
 	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh =>

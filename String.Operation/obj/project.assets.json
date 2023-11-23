@@ -35,7 +35,7 @@
           "bin/placeholder/Property.Input.dll": {}
         }
       },
-      "Property.Nullable/1.0.0": {
+      "Property.Option/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -43,39 +43,39 @@
           "Property.Output": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Property.Nullable.dll": {}
+          "bin/placeholder/Property.Option.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Property.Nullable.dll": {}
+          "bin/placeholder/Property.Option.dll": {}
         }
       },
-      "Property.Nullable.From.System/1.0.0": {
+      "Property.Option.From.System/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Enumerable": "1.0.0",
-          "Property.Nullable": "1.0.0",
+          "Property.Option": "1.0.0",
           "Property.Output": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Property.Nullable.From.System.dll": {}
+          "bin/placeholder/Property.Option.From.System.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Property.Nullable.From.System.dll": {}
+          "bin/placeholder/Property.Option.From.System.dll": {}
         }
       },
-      "Property.Nullable.Spare.When.Null/1.0.0": {
+      "Property.Option.Spare.When.Empty/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Property.Nullable": "1.0.0",
+          "Property.Option": "1.0.0",
           "Property.Output.Function.Result": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Property.Nullable.Spare.When.Null.dll": {}
+          "bin/placeholder/Property.Option.Spare.When.Empty.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Property.Nullable.Spare.When.Null.dll": {}
+          "bin/placeholder/Property.Option.Spare.When.Empty.dll": {}
         }
       },
       "Property.Output/1.0.0": {
@@ -110,8 +110,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Mathematics.Boolean": "1.0.0",
-          "Property.Nullable": "1.0.0",
-          "Property.Nullable.From.System": "1.0.0",
+          "Property.Option": "1.0.0",
+          "Property.Option.From.System": "1.0.0",
           "Property.Output": "1.0.0",
           "Property.Transput": "1.0.0"
         },
@@ -152,7 +152,7 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Enumerable": "1.0.0",
-          "Property.Nullable.From.System": "1.0.0",
+          "Property.Option.From.System": "1.0.0",
           "String": "1.0.0"
         },
         "compile": {
@@ -204,20 +204,20 @@
       "path": "../Property.Input/Property.Input.csproj",
       "msbuildProject": "../Property.Input/Property.Input.csproj"
     },
-    "Property.Nullable/1.0.0": {
+    "Property.Option/1.0.0": {
       "type": "project",
-      "path": "../Property.Nullable/Property.Nullable.csproj",
-      "msbuildProject": "../Property.Nullable/Property.Nullable.csproj"
+      "path": "../Property.Option/Property.Option.csproj",
+      "msbuildProject": "../Property.Option/Property.Option.csproj"
     },
-    "Property.Nullable.From.System/1.0.0": {
+    "Property.Option.From.System/1.0.0": {
       "type": "project",
-      "path": "../Property.Nullable.From.System/Property.Nullable.From.System.csproj",
-      "msbuildProject": "../Property.Nullable.From.System/Property.Nullable.From.System.csproj"
+      "path": "../Property.Option.From.System/Property.Option.From.System.csproj",
+      "msbuildProject": "../Property.Option.From.System/Property.Option.From.System.csproj"
     },
-    "Property.Nullable.Spare.When.Null/1.0.0": {
+    "Property.Option.Spare.When.Empty/1.0.0": {
       "type": "project",
-      "path": "../Property.Nullable.Spare.When.Null/Property.Nullable.Spare.When.Null.csproj",
-      "msbuildProject": "../Property.Nullable.Spare.When.Null/Property.Nullable.Spare.When.Null.csproj"
+      "path": "../Property.Option.Spare.When.Empty/Property.Option.Spare.When.Empty.csproj",
+      "msbuildProject": "../Property.Option.Spare.When.Empty/Property.Option.Spare.When.Empty.csproj"
     },
     "Property.Output/1.0.0": {
       "type": "project",
@@ -263,8 +263,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Enumerable >= 1.0.0",
-      "Property.Nullable.From.System >= 1.0.0",
-      "Property.Nullable.Spare.When.Null >= 1.0.0",
+      "Property.Option.From.System >= 1.0.0",
+      "Property.Option.Spare.When.Empty >= 1.0.0",
       "Property.Output.Function.Result >= 1.0.0",
       "String >= 1.0.0",
       "String.From.System >= 1.0.0",
@@ -304,11 +304,11 @@
             "/Users/thisischico/Documents/Projects/Tumbleweed/Enumerable/Enumerable.csproj": {
               "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Enumerable/Enumerable.csproj"
             },
-            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable.From.System/Property.Nullable.From.System.csproj": {
-              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable.From.System/Property.Nullable.From.System.csproj"
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.System/Property.Option.From.System.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.System/Property.Option.From.System.csproj"
             },
-            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable.Spare.When.Null/Property.Nullable.Spare.When.Null.csproj": {
-              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable.Spare.When.Null/Property.Nullable.Spare.When.Null.csproj"
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.Spare.When.Empty/Property.Option.Spare.When.Empty.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.Spare.When.Empty/Property.Option.Spare.When.Empty.csproj"
             },
             "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Output.Function.Result/Property.Output.Function.Result.csproj": {
               "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Output.Function.Result/Property.Output.Function.Result.csproj"

@@ -35,7 +35,7 @@
           "bin/placeholder/Property.Input.dll": {}
         }
       },
-      "Property.Nullable/1.0.0": {
+      "Property.Option/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -43,25 +43,25 @@
           "Property.Output": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Property.Nullable.dll": {}
+          "bin/placeholder/Property.Option.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Property.Nullable.dll": {}
+          "bin/placeholder/Property.Option.dll": {}
         }
       },
-      "Property.Nullable.From.System/1.0.0": {
+      "Property.Option.From.System/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Enumerable": "1.0.0",
-          "Property.Nullable": "1.0.0",
+          "Property.Option": "1.0.0",
           "Property.Output": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Property.Nullable.From.System.dll": {}
+          "bin/placeholder/Property.Option.From.System.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Property.Nullable.From.System.dll": {}
+          "bin/placeholder/Property.Option.From.System.dll": {}
         }
       },
       "Property.Output/1.0.0": {
@@ -120,15 +120,15 @@
       "path": "../Property.Input/Property.Input.csproj",
       "msbuildProject": "../Property.Input/Property.Input.csproj"
     },
-    "Property.Nullable/1.0.0": {
+    "Property.Option/1.0.0": {
       "type": "project",
-      "path": "../Property.Nullable/Property.Nullable.csproj",
-      "msbuildProject": "../Property.Nullable/Property.Nullable.csproj"
+      "path": "../Property.Option/Property.Option.csproj",
+      "msbuildProject": "../Property.Option/Property.Option.csproj"
     },
-    "Property.Nullable.From.System/1.0.0": {
+    "Property.Option.From.System/1.0.0": {
       "type": "project",
-      "path": "../Property.Nullable.From.System/Property.Nullable.From.System.csproj",
-      "msbuildProject": "../Property.Nullable.From.System/Property.Nullable.From.System.csproj"
+      "path": "../Property.Option.From.System/Property.Option.From.System.csproj",
+      "msbuildProject": "../Property.Option.From.System/Property.Option.From.System.csproj"
     },
     "Property.Output/1.0.0": {
       "type": "project",
@@ -149,8 +149,8 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Mathematics.Boolean >= 1.0.0",
-      "Property.Nullable >= 1.0.0",
-      "Property.Nullable.From.System >= 1.0.0",
+      "Property.Option >= 1.0.0",
+      "Property.Option.From.System >= 1.0.0",
       "Property.Output >= 1.0.0",
       "Property.Transput >= 1.0.0"
     ]
@@ -188,11 +188,11 @@
             "/Users/thisischico/Documents/Projects/Tumbleweed/Mathematics.Boolean/Mathematics.Boolean.csproj": {
               "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Mathematics.Boolean/Mathematics.Boolean.csproj"
             },
-            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable.From.System/Property.Nullable.From.System.csproj": {
-              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable.From.System/Property.Nullable.From.System.csproj"
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.System/Property.Option.From.System.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.System/Property.Option.From.System.csproj"
             },
-            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable/Property.Nullable.csproj": {
-              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Nullable/Property.Nullable.csproj"
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option/Property.Option.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option/Property.Option.csproj"
             },
             "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Output/Property.Output.csproj": {
               "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Output/Property.Output.csproj"

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Tumbleweed.Property.Option.Casted.Convertee</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Object.Casted.Convertee\Object.Casted.Convertee.csproj" />
+	  <ProjectReference Include="..\Property.Option\Property.Option.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,7 +1,7 @@
 using Enumerable = Tumbleweed.Enumerable;
 using String = Tumbleweed.String;
 using System = System;
-using Nullable = Tumbleweed.Property.Nullable;
+using Option = Tumbleweed.Property.Option;
 
 namespace Tumbleweed.String.Operation.Spare.When.Null;
 
@@ -13,7 +13,7 @@ public sealed class Multiple : Enumerable::Envelope<String::Any>
 		System::String spare
 	) : this
 	(
-		new From.System.Nullable.Multiple(nullables),
+		new From.System.Option.Multiple(nullables),
 		new From.System.NonNullable.One(spare)
 	)
 	{
@@ -25,7 +25,7 @@ public sealed class Multiple : Enumerable::Envelope<String::Any>
 		String::Any spare
 	) : this
 	(
-		new Nullable::From.System.Multiple<String::Any>(nullables),
+		new Option::From.System.Multiple<String::Any>(nullables),
 		spare
 	)
 	{
@@ -33,24 +33,24 @@ public sealed class Multiple : Enumerable::Envelope<String::Any>
 	
 	public Multiple
 	(
-		IEnumerable<Nullable::Any<String::Any>> nullables,
+		IEnumerable<Option::Any<String::Any>> nullables,
 		String::Any spare
 	) : base
 	(
 		new Enumerable::Selected
-			<Nullable::Any<String::Any>, String::Any>(
+			<Option::Any<String::Any>, String::Any>(
 			nullables,
-			nullable => Expression(nullable, spare))
+			option => Expression(option, spare))
 	)
 	{
 	}
 
 	private static Any Expression
 	(
-		Nullable::Any<String::Any> nullable,
+		Option::Any<String::Any> option,
 		String::Any spare
 	) =>
 	(
-		new One(nullable, spare)
+		new One(option, spare)
 	);
 }

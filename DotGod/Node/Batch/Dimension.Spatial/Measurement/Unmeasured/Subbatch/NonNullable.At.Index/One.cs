@@ -11,7 +11,7 @@ public sealed class One : Envelope
 	) : base
 	(
 		new Property.Value.One(
-			new Nullable.At.Index.One(batch, index))
+			new Option.At.Index.One(batch, index))
 	)
 	{
 	}

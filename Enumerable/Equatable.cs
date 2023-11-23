@@ -1,4 +1,4 @@
-using Tumbleweed.Enumerable.Equality.Structural.Of.Nullable;
+using Tumbleweed.Enumerable.Equality.Structural.Of.Option;
 using SC = System.Collections;
 using System = System;
 using Equality = Tumbleweed.Enumerable.Equality;

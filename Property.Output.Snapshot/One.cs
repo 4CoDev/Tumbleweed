@@ -1,6 +1,6 @@
 using Output = Tumbleweed.Property.Output;
 using Transput = Tumbleweed.Property.Transput;
-using Nullable = Tumbleweed.Property.Nullable;
+using Option = Tumbleweed.Property.Option;
 
 namespace Tumbleweed.Property.Output.Snapshot;
 
@@ -17,8 +17,8 @@ public sealed class One<T> : Output::Any<T>
 	(
 		origin,
 		new Transput::With.Value.One
-			<Nullable::Any<T>>
-			(new Nullable::Null<T>())
+			<Option::Any<T>>
+			(new Option::Empty<T>())
 	)
 	{
 	}
@@ -26,7 +26,7 @@ public sealed class One<T> : Output::Any<T>
 	public One
 	(
 		Output::Any<T> origin,
-		Transput::Any<Nullable::Any<T>> cache
+		Transput::Any<Option::Any<T>> cache
 	)
 	{
 		this.cache = cache;
@@ -38,12 +38,12 @@ public sealed class One<T> : Output::Any<T>
 		get
 		{
 			if (cache.Value.HasValue.State) return cache.Value.Value!;
-			cache.Value = new Nullable::With.Value.One<T>(origin.Value);
+			cache.Value = new Option::With.Value.One<T>(origin.Value);
 			return cache.Value.Value;
 		}
 	}
 
-	private readonly Transput::Any<Nullable::Any<T>> cache;
+	private readonly Transput::Any<Option::Any<T>> cache;
 
 	private readonly Output::Any<T> origin;
 }

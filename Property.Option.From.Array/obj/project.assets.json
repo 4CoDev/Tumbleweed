@@ -1,0 +1,203 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Array/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Array.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Array.dll": {}
+        }
+      },
+      "Mathematics.Boolean/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Mathematics.Boolean.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.Boolean.dll": {}
+        }
+      },
+      "Mathematics.Number/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Mathematics.Number.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.Number.dll": {}
+        }
+      },
+      "Mathematics.Vector/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Mathematics.Vector.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.Vector.dll": {}
+        }
+      },
+      "Property.Option/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Mathematics.Boolean": "1.0.0",
+          "Property.Output": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Property.Option.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Property.Option.dll": {}
+        }
+      },
+      "Property.Output/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Subroutine": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Property.Output.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Property.Output.dll": {}
+        }
+      },
+      "Subroutine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Subroutine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Subroutine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Array/1.0.0": {
+      "type": "project",
+      "path": "../Array/Array.csproj",
+      "msbuildProject": "../Array/Array.csproj"
+    },
+    "Mathematics.Boolean/1.0.0": {
+      "type": "project",
+      "path": "../Mathematics.Boolean/Mathematics.Boolean.csproj",
+      "msbuildProject": "../Mathematics.Boolean/Mathematics.Boolean.csproj"
+    },
+    "Mathematics.Number/1.0.0": {
+      "type": "project",
+      "path": "../Mathematics.Number/Mathematics.Number.csproj",
+      "msbuildProject": "../Mathematics.Number/Mathematics.Number.csproj"
+    },
+    "Mathematics.Vector/1.0.0": {
+      "type": "project",
+      "path": "../Mathematics.Vector/Mathematics.Vector.csproj",
+      "msbuildProject": "../Mathematics.Vector/Mathematics.Vector.csproj"
+    },
+    "Property.Option/1.0.0": {
+      "type": "project",
+      "path": "../Property.Option/Property.Option.csproj",
+      "msbuildProject": "../Property.Option/Property.Option.csproj"
+    },
+    "Property.Output/1.0.0": {
+      "type": "project",
+      "path": "../Property.Output/Property.Output.csproj",
+      "msbuildProject": "../Property.Output/Property.Output.csproj"
+    },
+    "Subroutine/1.0.0": {
+      "type": "project",
+      "path": "../Subroutine/Subroutine.csproj",
+      "msbuildProject": "../Subroutine/Subroutine.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Array >= 1.0.0",
+      "Mathematics.Number >= 1.0.0",
+      "Mathematics.Vector >= 1.0.0",
+      "Property.Option >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/thisischico/.nuget/packages/": {},
+    "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.Array/Property.Option.From.Array.csproj",
+      "projectName": "Property.Option.From.Array",
+      "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.Array/Property.Option.From.Array.csproj",
+      "packagesPath": "/Users/thisischico/.nuget/packages/",
+      "outputPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option.From.Array/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/Users/thisischico/Library/Application Support/Godot/mono/GodotNuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/thisischico/.nuget/NuGet/NuGet.Config",
+        "/Users/thisischico/.nuget/NuGet/config/Godot.Offline.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Array/Array.csproj"
+            },
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Mathematics.Number/Mathematics.Number.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Mathematics.Number/Mathematics.Number.csproj"
+            },
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Mathematics.Vector/Mathematics.Vector.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Mathematics.Vector/Mathematics.Vector.csproj"
+            },
+            "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option/Property.Option.csproj": {
+              "projectPath": "/Users/thisischico/Documents/Projects/Tumbleweed/Property.Option/Property.Option.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

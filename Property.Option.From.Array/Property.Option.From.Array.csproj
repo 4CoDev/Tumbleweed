@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Tumbleweed.Property.Option.From.Array</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Array\Array.csproj" />
+	  <ProjectReference Include="..\Mathematics.Number\Mathematics.Number.csproj" />
+	  <ProjectReference Include="..\Mathematics.Vector\Mathematics.Vector.csproj" />
+	  <ProjectReference Include="..\Property.Option\Property.Option.csproj" />
+	</ItemGroup>
+
+</Project>

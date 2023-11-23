@@ -1,7 +1,7 @@
 using Tumbleweed.Property.Output.Function.Result;
-using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Option;
 using Tumbleweed.String;
-using Tumbleweed.String.From.System.Nullable;
+using Tumbleweed.String.From.System.Option;
 
 namespace Tumbleweed.Object.String;
 

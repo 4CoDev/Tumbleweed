@@ -1,7 +1,7 @@
 using DotGod.Node.Batch.Dimension.Spatial.Entity.Equality;
 using Tumbleweed.Object.Hash;
 using Tumbleweed.Object.String;
-using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Option;
 using Mesh = DotGod.Mathematics.Geometry.Stereometry.Graphical.Mesh;
 using Aabb = Tumbleweed.Mathematics.Geometry.Stereometry.Shape.Parametric.Aabb;
 using System = System;

@@ -1,26 +1,26 @@
 using Tumbleweed.Property;
 using Tumbleweed.Property.Output;
 using Tumbleweed.Property.Output.Function.Result;
-using Tumbleweed.Property.Nullable.From.System;
+using Tumbleweed.Property.Option.From.System;
 
 namespace Tumbleweed.Object.Hash;
 
 public sealed class HashOfNullable : Envelope<Int32>
 {
-	public HashOfNullable(System.Object? nullable) : this
+	public HashOfNullable(System.Object? option) : this
 	(
-		new One<System.Object>(nullable)
+		new One<System.Object>(option)
 	)
 	{
 	}
 	
 	public HashOfNullable
 	(
-		Property.Nullable.Any<System.Object> nullable
+		Property.Option.Any<System.Object> option
 	) : base
 	(
 		new Actual<Int32>(
-			nullable.GetHashCode)
+			option.GetHashCode)
 	)
 	{
 	}

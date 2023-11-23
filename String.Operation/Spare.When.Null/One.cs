@@ -1,5 +1,5 @@
-using Tumbleweed.Property.Nullable;
-using Tumbleweed.Property.Nullable.From.System;
+using Tumbleweed.Property.Option;
+using Tumbleweed.Property.Option.From.System;
 
 namespace Tumbleweed.String.Operation.Spare.When.Null;
 
@@ -7,11 +7,11 @@ public sealed class One : Envelope
 {
 	public One
 	(
-		System.String? nullable,
+		System.String? option,
 		System.String spare
 	) : this
 	(
-		new From.System.Nullable.One(nullable),
+		new From.System.Option.One(option),
 		new From.System.NonNullable.One(spare)
 	)
 	{
@@ -19,11 +19,11 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Any<System.String> nullable,
+		Any<System.String> option,
 		System.String spare
 	) : this
 	(
-		new From.System.Nullable.One(nullable),
+		new From.System.Option.One(option),
 		spare
 	)
 	{
@@ -31,11 +31,11 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Any<Any> nullable,
+		Any<Any> option,
 		System.String spare
 	) : this
 	(
-		nullable,
+		option,
 		new From.System.NonNullable.One(spare)
 	)
 	{
@@ -43,11 +43,11 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Any? nullable,
+		Any? option,
 		Any spare
 	) : this
 	(
-		new One<Any>(nullable),
+		new One<Any>(option),
 		spare
 	)
 	{
@@ -55,13 +55,13 @@ public sealed class One : Envelope
 	
 	public One
 	(
-		Any<Any> nullable,
+		Any<Any> option,
 		Any spare
 	) : base
 	(
 		new String.Property.Value.Actual(
-			new Tumbleweed.Property.Nullable.Spare.When.Null.One<Any>(
-				nullable,
+			new Tumbleweed.Property.Option.Spare.When.Null.One<Any>(
+				option,
 				spare))
 	)
 	{

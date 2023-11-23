@@ -1,9 +1,9 @@
-using Tumbleweed.Property.Nullable;
-using Tumbleweed.Property.Nullable.With;
+using Tumbleweed.Property.Option;
+using Tumbleweed.Property.Option.With;
 using NaturalPoint = Tumbleweed.Mathematics.Vector.Spatial.Generic.Any<
 		Tumbleweed.Mathematics.Number.Natural.Any>;
 
-namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Subbatch.Nullable.At.Index;
+namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Measured.Subbatch.Option.At.Index;
 
 public sealed class One : Envelope<Any>
 {

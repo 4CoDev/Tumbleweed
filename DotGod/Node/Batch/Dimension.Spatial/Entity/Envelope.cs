@@ -1,5 +1,5 @@
 using System = System;
-using Nullable = Tumbleweed.Property.Nullable;
+using Option = Tumbleweed.Property.Option;
 using Godot = Godot;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Entity;
@@ -23,7 +23,7 @@ public abstract class Envelope : Any
 	public override System::String? ToString() =>
 		entity.ToString();
 
-	public Nullable::Any<Godot::Node> Node =>
+	public Option::Any<Godot::Node> Node =>
 		entity.Node;
 
 	public Mathematics.Geometry.Stereometry.Graphical.Mesh.Any Mesh =>

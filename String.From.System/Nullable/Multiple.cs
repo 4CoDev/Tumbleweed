@@ -3,11 +3,11 @@ using Property = Tumbleweed.Property;
 using String = Tumbleweed.String;
 using System = System;
 
-namespace Tumbleweed.String.From.System.Nullable;
+namespace Tumbleweed.String.From.System.Option;
 
 public sealed class Multiple : 
 	Enumerable::Envelope<
-		Property::Nullable.Any<
+		Property::Option.Any<
 			String::Any>>
 {
 	public Multiple
@@ -15,7 +15,7 @@ public sealed class Multiple :
 		IEnumerable<System::String?> nullables
 	) : this
 	(
-		new Property::Nullable.From.System.Multiple
+		new Property::Option.From.System.Multiple
 			<System::String>
 			(nullables)
 	)
@@ -24,17 +24,17 @@ public sealed class Multiple :
 	
 	public Multiple
 	(
-		IEnumerable<Property::Nullable.Any<System::String>> nullables
+		IEnumerable<Property::Option.Any<System::String>> nullables
 	) : base
 	(
 		new Enumerable::Selected
 		<
-			Property::Nullable.Any<System::String>,
-			Property::Nullable.Any<String::Any>
+			Property::Option.Any<System::String>,
+			Property::Option.Any<String::Any>
 		>
 		(
 			nullables,
-			nullable => new String::From.System.Nullable.One(nullable)
+			option => new String::From.System.Option.One(option)
 		)
 	)
 	{

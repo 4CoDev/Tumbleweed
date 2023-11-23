@@ -1,4 +1,4 @@
-using Tumbleweed.Property.Nullable;
+using Tumbleweed.Property.Option;
 using System = System;
 
 namespace DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;

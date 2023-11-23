@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Tumbleweed.Property.Option.Spare.When.Null</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Property.Option\Property.Option.csproj" />
+	  <ProjectReference Include="..\Property.Output.Function.Result\Property.Output.Function.Result.csproj" />
+	</ItemGroup>
+
+</Project>

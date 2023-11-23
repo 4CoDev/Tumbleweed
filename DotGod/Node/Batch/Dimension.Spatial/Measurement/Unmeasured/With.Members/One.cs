@@ -1,7 +1,7 @@
 using Tumbleweed.Array.Dimension.Multi;
 using Batch = DotGod.Node.Batch.Dimension.Spatial.Measurement.Unmeasured;
 using Array = Tumbleweed.Array;
-using Nullable = Tumbleweed.Property.Nullable;
+using Option = Tumbleweed.Property.Option;
 using SCG = System.Collections.Generic;
 using Entity = DotGod.Node.Batch.Dimension.Spatial.Entity;
 
@@ -11,7 +11,7 @@ public sealed class One : Batch::Any
 {
 	public One
 	(
-		Any<Nullable::Any<Batch::Any>> subbatches,
+		Any<Option::Any<Batch::Any>> subbatches,
 		SCG::ICollection<Entity::Any> entities
 	)
 	{
@@ -19,7 +19,7 @@ public sealed class One : Batch::Any
 		Entities = entities;
 	}
 
-	public Any<Nullable::Any<Batch::Any>> Subbatches { get; }
+	public Any<Option::Any<Batch::Any>> Subbatches { get; }
 
 	public SCG::ICollection<Entity::Any> Entities { get;}
 }

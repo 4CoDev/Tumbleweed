@@ -10,8 +10,8 @@ public sealed class One : Tumbleweed.Mathematics.Boolean.Envelope
 		Any<Tumbleweed.Mathematics.Number.Natural.Any> index
 	) : base
 	(
-		new Tumbleweed.Property.Nullable.Has.Value(
-			new Unmeasured.Subbatch.Nullable.At.Index.One(batch, index))
+		new Tumbleweed.Property.Option.Has.Value(
+			new Unmeasured.Subbatch.Option.At.Index.One(batch, index))
 	)
 	{
 	}

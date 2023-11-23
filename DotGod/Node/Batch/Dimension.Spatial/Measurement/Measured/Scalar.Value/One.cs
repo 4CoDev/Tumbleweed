@@ -8,7 +8,7 @@ public sealed class One : Any
 	public One(Tumbleweed.Property.Output.Any<Any> any) =>
 		this.any = any;
 
-	public Any<Tumbleweed.Property.Nullable.Any<Unmeasured.Any>> Subbatches =>
+	public Any<Tumbleweed.Property.Option.Any<Unmeasured.Any>> Subbatches =>
 		any.Value.Subbatches;
 
 	public ICollection<Entity.Any> Entities =>

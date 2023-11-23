@@ -30,17 +30,17 @@ public sealed class SparesWhenObjectsIsNull :
 	(
 		new Selected<System.Object?, String::Any>(
 			nullables,
-			nullable => Expression(nullable, spare))
+			option => Expression(option, spare))
 	)
 	{
 	}
 	
 	private static String::Any Expression
 	(
-		System.Object? nullable,
+		System.Object? option,
 		Any<System.String> spare
 	) =>
 	(
-		new SpareWhenObjectIsNull(nullable, spare)
+		new SpareWhenObjectIsNull(option, spare)
 	);
 }

@@ -9,8 +9,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Enumerable\Enumerable.csproj" />
-      <ProjectReference Include="..\Property.Nullable.From.System\Property.Nullable.From.System.csproj" />
-      <ProjectReference Include="..\Property.Nullable\Property.Nullable.csproj" />
+      <ProjectReference Include="..\Property.Option.From.System\Property.Option.From.System.csproj" />
+      <ProjectReference Include="..\Property.Option\Property.Option.csproj" />
       <ProjectReference Include="..\Property.Output\Property.Output.csproj" />
     </ItemGroup>
 

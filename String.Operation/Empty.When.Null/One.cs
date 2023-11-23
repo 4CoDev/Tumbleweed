@@ -1,27 +1,27 @@
-using Tumbleweed.Property.Nullable;
-using Tumbleweed.Property.Nullable.From.System;
+using Tumbleweed.Property.Option;
+using Tumbleweed.Property.Option.From.System;
 
 namespace Tumbleweed.String.Operation.Empty.When.Null;
 
 public sealed class One : Envelope
 {
-	public One(System.String? nullable) : this
+	public One(System.String? option) : this
 	(
-		new One<System.String>(nullable)
+		new One<System.String>(option)
 	)
 	{
 	}
 	
-	public One(Any<System.String> nullable) : this
+	public One(Any<System.String> option) : this
 	(
-		new From.System.Nullable.One(nullable)
+		new From.System.Option.One(option)
 	)
 	{
 	}
 	
-	public One(Any<Any> nullable) : base
+	public One(Any<Any> option) : base
 	(
-		new Spare.When.Null.One(nullable, "")
+		new Spare.When.Null.One(option, "")
 	)
 	{
 	}

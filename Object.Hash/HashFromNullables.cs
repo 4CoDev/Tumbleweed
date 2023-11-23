@@ -1,7 +1,7 @@
 using Tumbleweed.Enumerable;
 using Tumbleweed.Property;
-using Tumbleweed.Property.Nullable;
-using Tumbleweed.Property.Nullable.From.System;
+using Tumbleweed.Property.Option;
+using Tumbleweed.Property.Option.From.System;
 
 namespace Tumbleweed.Object.Hash;
 
